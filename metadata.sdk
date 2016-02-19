@@ -1,0 +1,16 @@
+[Runtime]
+name=org.kde.Sdk
+runtime=org.kde.Platform/x86_64/master
+sdk=org.kde.Sdk/x86_64/master
+
+[Extension org.freedesktop.Platform.GL]
+version=1.2
+directory=lib/GL
+
+[Extension org.freedesktop.Platform.Timezones]
+version=1.2
+directory=share/zoneinfo
+
+[Environment]
+GST_PLUGIN_PATH=/app/lib/gstreamer-1.0
+LD_LIBRARY_PATH=/app/lib:/usr/lib/GL

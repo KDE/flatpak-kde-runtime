@@ -1,0 +1,39 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 15ecead..308db4d 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -28,7 +28,6 @@ find_package(KF5ConfigWidgets ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5Crash ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5DesignerPlugin ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5GlobalAccel ${KF5_DEP_VERSION} REQUIRED)
+-find_package(KF5DocTools ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5GuiAddons ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5I18n ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5IconThemes ${KF5_DEP_VERSION} REQUIRED)
+@@ -44,6 +43,8 @@ find_package(KF5XmlGui ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5DBusAddons ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KDED ${KF5_DEP_VERSION} REQUIRED)
+ 
++find_package(KF5DocTools ${KF5_DEP_VERSION})
++
+ if(WIN32)
+     find_package(KDEWin REQUIRED)
+ endif()
+@@ -150,13 +151,15 @@ install(
+ 
+ 
+ 
+-if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
++if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po" AND KF5DocTools_FOUND)
+     ki18n_install(po)
+     kdoctools_install(po)
+ endif()
+ add_subdirectory(cmake)
+ add_subdirectory(data)
+-add_subdirectory(docs)
++if (KF5DocTools_FOUND)
++    add_subdirectory(docs)
++endif()
+ add_subdirectory(src)
+ 
+ if (BUILD_TESTING)

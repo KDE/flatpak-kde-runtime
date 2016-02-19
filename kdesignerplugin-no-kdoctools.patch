@@ -1,0 +1,31 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index bbec850..380f17a 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -29,7 +29,7 @@ set(KF5_VERSION "5.20.0") # handled by release scripts
+ set(KF5_DEP_VERSION "5.19.0") # handled by release scripts
+ find_package(KF5CoreAddons ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5Config ${KF5_DEP_VERSION} REQUIRED)
+-find_package(KF5DocTools ${KF5_DEP_VERSION} REQUIRED)
++find_package(KF5DocTools ${KF5_DEP_VERSION})
+ 
+ find_package(KF5Completion ${KF5_DEP_VERSION})
+ set_package_properties(KF5Completion PROPERTIES TYPE OPTIONAL
+@@ -89,10 +89,15 @@ remove_definitions(-DQT_NO_CAST_FROM_ASCII)
+ 
+ set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5DesignerPlugin")
+ 
+-add_subdirectory(docs)
++if(KF5DocTools_FOUND)
++    add_subdirectory(docs)
++endif()
++
+ if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
+     ecm_install_po_files_as_qm(po)
+-    kdoctools_install(po)
++    if(KF5DocTools_FOUND)
++        kdoctools_install(po)
++    endif()
+ endif()
+ 
+ add_subdirectory(src)
