@@ -15,10 +15,8 @@
     "cleanup": [ "/cache",
                  "/man",
                  "/share/man",
-                 "/share/gtk-doc",
-                 "/share/devhelp",
                  "/lib/systemd",
-                 "*.la", "*.a"],
+                 "*.la"],
     "cleanup-commands": [ "touch -d @0 /usr/share/fonts",
                           "touch -d @0 /usr/share/fonts/*",
                           "fc-cache -fs"
@@ -27,14 +25,13 @@
                           "/share/aclocal",
                           "/share/pkgconfig",
                           "/lib/pkgconfig",
-                          "/share/gir-1.0",
-                          "/share/vala"
+                          "*.a"
                         ],
     "build-options" : {},
     "modules": [
         {
             "name": "qt5-qtbase",
-            "cleanup": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
             "config-opts": [ "--confirm-license", "--opensource",
                              "--release", "--shared",
                              "-platform", "linux-g++",
@@ -71,7 +68,7 @@
         },
         {
             "name": "qt5-qttools",
-            "cleanup": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 {
                     "type": "archive",
@@ -87,7 +84,7 @@
         },
         {
             "name": "qt5-qtdeclarative",
-            "cleanup": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 {
                     "type": "archive",
@@ -103,7 +100,7 @@
         },
         {
             "name": "qt5-qtscript",
-            "cleanup": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 {
                     "type": "archive",
@@ -119,7 +116,7 @@
         },
         {
             "name": "qt5-qtwebkit",
-            "cleanup": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 {
                     "type": "archive",
@@ -135,7 +132,7 @@
         },
         {
             "name": "qt5-qtsvg",
-            "cleanup": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 {
                     "type": "archive",
@@ -151,7 +148,7 @@
         },
         {
             "name": "qt5-qtx11extras",
-            "cleanup": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 {
                     "type": "archive",
@@ -167,7 +164,7 @@
         },
         {
             "name": "qt5-qtxmlpatterns",
-            "cleanup": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 {
                     "type": "archive",
@@ -180,11 +177,11 @@
                     "dest-filename": "configure"
                 }
             ]
-        }
+        },
         //////////////////////////////////
-        ,
         {
             "name": "extra-cmake-modules",
+            "cleanup-platform": ["*"],
             "cmake": true,
             "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/extra-cmake-modules.git", "branch": "v5.19.0" } ]
