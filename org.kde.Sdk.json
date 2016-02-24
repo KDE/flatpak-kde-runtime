@@ -323,6 +323,27 @@
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kxmlgui.git", "branch": "v5.19.0" } ]
         },
         {
+            "name": "perl-uri-escape",
+            "cleanup-platform": ["*"],
+            "sources": [{
+                    "type": "archive",
+                    "url": "http://cpan.metacpan.org/authors/id/E/ET/ETHER/URI-1.71.tar.gz",
+                    "sha256": "9c8eca0d7f39e74bbc14706293e653b699238eeb1a7690cc9c136fb8c2644115"
+                },
+                {
+                    "type": "script",
+                    "commands": [ "perl Makefile.PL INSTALLDIRS=vendor"],
+                    "dest-filename": "configure"
+                }
+            ]
+        },
+        {
+            "name": "kdoctools",
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "cmake": true,
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdoctools.git", "branch": "v5.19.0" } ]
+        },
+        {
             "name": "kpackage",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
             "cmake": true,
