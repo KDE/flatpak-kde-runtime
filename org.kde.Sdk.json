@@ -531,12 +531,6 @@
             "cmake": true,
             "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kpty.git", "branch": "v5.19.0" } ]
-        },
-        {
-            "name": "kdesu",
-            "cmake": true,
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdesu.git", "branch": "v5.19.0" } ]
         }
     ]
 }
