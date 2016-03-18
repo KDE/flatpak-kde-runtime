@@ -8,7 +8,7 @@ do
             \"name\": \"$v\",
             \"cmake\": true,
             \"builddir\": true,
-            \"config-opts\": [\"-DKDE_INSTALL_LIBDIR=lib\"],
+            \"config-opts\": [\"-DCMAKE_INSTALL_LIBDIR=lib\"],
             \"sources\": [ { \"type\": \"git\", \"url\": \"git://anongit.kde.org/$v.git\", \"branch\": \"v5.19.0\" } ]
         }"
 done
