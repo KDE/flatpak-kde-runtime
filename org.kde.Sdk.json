@@ -60,23 +60,13 @@
 
                              "-archdatadir", "/usr/lib/"
                            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://download.qt.io/official_releases/qt/5.5/5.5.1/submodules/qtbase-opensource-src-5.5.1.tar.xz",
-                    "sha256": "dfa4e8a4d7e4c6b69285e7e8833eeecd819987e1bdbe5baa6b6facd4420de916"
-                }
-            ]
+            "sources": [ { "type": "git", "url": "git://code.qt.io/qt/qtbase.git", "branch": "v5.6.0" } ]
         },
         {
-            "name": "qt5-qttools",
+            "name": "qt5-qtdeclarative",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://download.qt.io/official_releases/qt/5.5/5.5.1/submodules/qttools-opensource-src-5.5.1.tar.xz",
-                    "sha256": "4361f6ce49717058160908297841a18b94645cec593d1b48fb126c9d06c87bfd"
-                },
+                { "type": "git", "url": "git://code.qt.io/qt/qtdeclarative.git", "branch": "v5.6.0" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -85,14 +75,10 @@
             ]
         },
         {
-            "name": "qt5-qtdeclarative",
+            "name": "qt5-qttools",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://download.qt.io/official_releases/qt/5.5/5.5.1/submodules/qtdeclarative-opensource-src-5.5.1.tar.xz",
-                    "sha256": "5fd14eefb83fff36fb17681693a70868f6aaf6138603d799c16466a094b26791"
-                },
+                { "type": "git", "url": "git://code.qt.io/qt/qttools.git", "branch": "v5.6.0" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -104,11 +90,7 @@
             "name": "qt5-qtscript",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://download.qt.io/official_releases/qt/5.5/5.5.1/submodules/qtscript-opensource-src-5.5.1.tar.xz",
-                    "sha256": "cd46dddd998f22bcb06447e0407fef81f7052f25bc770b1c27625654cee828fd"
-                },
+                { "type": "git", "url": "git://code.qt.io/qt/qtscript.git", "branch": "v5.6.0" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -120,11 +102,7 @@
             "name": "qt5-qtwebkit",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://download.qt.io/official_releases/qt/5.5/5.5.1/submodules/qtwebkit-opensource-src-5.5.1.tar.xz",
-                    "sha256": "77583f9dbd3e6ad874386df71b165dc3ce88efdabbc6e5d97a959ee2187d6d69"
-                },
+                { "type": "git", "url": "git://code.qt.io/qt/qtwebkit.git", "branch": "5.6" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -136,11 +114,7 @@
             "name": "qt5-qtsvg",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://download.qt.io/official_releases/qt/5.5/5.5.1/submodules/qtsvg-opensource-src-5.5.1.tar.xz",
-                    "sha256": "f7f588be48befd9ccab5a6086832551b8899e8bed9e603ddea979581e05a91c7"
-                },
+                { "type": "git", "url": "git://code.qt.io/qt/qtsvg.git", "branch": "v5.6.0" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -152,11 +126,7 @@
             "name": "qt5-qtx11extras",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://download.qt.io/official_releases/qt/5.5/5.5.1/submodules/qtx11extras-opensource-src-5.5.1.tar.xz",
-                    "sha256": "6387a01d972b62e1ad39e5a25e07d0492200f62fc87cf4366122085aeeebeb65"
-                },
+                { "type": "git", "url": "git://code.qt.io/qt/qtx11extras.git", "branch": "v5.6.0" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -170,8 +140,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/official_releases/qt/5.5/5.5.1/submodules/qtxmlpatterns-opensource-src-5.5.1.tar.xz",
-                    "sha256": "b537eb0252988e3805a32a16c65038973371d647baf246fdf703bde725d0e8ec"
+                    "url": "http://download.qt.io/archive/qt/5.6/5.6.0/submodules/qtxmlpatterns-opensource-src-5.6.0.tar.xz",
+                    "sha256": "baed1b3bd3f010b8c4a96b4ca7a595b665d43d2e5758b55a364dbc9f2ac819d4"
                 },
                 {
                     "type": "script",
@@ -185,141 +155,141 @@
             "name": "extra-cmake-modules",
             "cleanup-platform": ["*"],
             "cmake": true,
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/extra-cmake-modules.git", "branch": "v5.19.0" } ]
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/extra-cmake-modules.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kwidgetsaddons",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwidgetsaddons.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwidgetsaddons.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "ki18n",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/ki18n.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/ki18n.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kconfig",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kconfig.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kconfig.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "breeze-icons",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze-icons.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze-icons.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "attica",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/attica.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/attica.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kguiaddons",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kguiaddons.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kguiaddons.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kcoreaddons",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcoreaddons.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcoreaddons.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kauth",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kauth.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kauth.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "karchive",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib", "-DCMAKE_DISABLE_FIND_PACKAGE_Qt5Test=TRUE"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib", "-DCMAKE_DISABLE_FIND_PACKAGE_Qt5Test=TRUE"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/karchive.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/karchive.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kcodecs",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcodecs.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcodecs.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kconfigwidgets",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kconfigwidgets.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kconfigwidgets.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kitemviews",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kitemviews.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kitemviews.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kiconthemes",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kiconthemes.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kiconthemes.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kwindowsystem",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwindowsystem.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwindowsystem.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kcrash",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcrash.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcrash.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kdbusaddons",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdbusaddons.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdbusaddons.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kglobalaccel",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kglobalaccel.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kglobalaccel.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kservice",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
             "builddir": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kservice.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kservice.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "sonnet",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/sonnet.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/sonnet.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kcompletion",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcompletion.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcompletion.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "ktextwidgets",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/ktextwidgets.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/ktextwidgets.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kxmlgui",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kxmlgui.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kxmlgui.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "perl-uri-escape",
@@ -338,61 +308,51 @@
         },
         {
             "name": "kdoctools",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdoctools.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdoctools.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kpackage",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kpackage.git", "branch": "v5.19.0" },
-                {
-                    "type": "patch",
-                    "path": "kpackage-no-kdoctools.patch"
-                } 
-            ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kpackage.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kbookmarks",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kbookmarks.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kbookmarks.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "phonon",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib", "-DPHONON_BUILD_PHONON4QT5=ON"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib", "-DPHONON_BUILD_PHONON4QT5=ON"],
             "cmake": true,
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon.git", "branch": "master" } ]
         },
         {
             "name": "knotifications",
             "cmake": true,
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/knotifications.git", "branch": "v5.19.0" } ]
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/knotifications.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kwallet",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwallet.git", "branch": "v5.19.0" },
-                {
-                    "type": "patch",
-                    "path": "kwallet-no-kdoctools.patch"
-                } 
-            ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwallet.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kjobwidgets",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kjobwidgets.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kjobwidgets.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "solid",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/solid.git", "branch": "v5.19.0" },
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/solid.git", "branch": "v5.20.0" },
                 {
                     "type": "patch",
                     "path": "solid-no-udev.patch"
@@ -401,135 +361,137 @@
         {
             "name": "kio",
             "cmake": true,
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kio.git", "branch": "v5.19.0" } ]
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kio.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kparts",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kparts.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kparts.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kdewebkit",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdewebkit.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdewebkit.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kplotting",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kplotting.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kplotting.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kdesignerplugin",
             "cmake": true,
             "builddir": true,
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdesignerplugin.git", "branch": "v5.19.0" },
-                {
-                    "type": "patch",
-                    "path": "kdesignerplugin-no-kdoctools.patch"
-                } ]
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdesignerplugin.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kinit",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kinit.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kinit.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kded",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kded.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kded.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kunitconversion",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kunitconversion.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kunitconversion.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kdeclarative",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdeclarative.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdeclarative.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kcmutils",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcmutils.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcmutils.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "knotifyconfig",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
             "builddir": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/knotifyconfig.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/knotifyconfig.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "knewstuff",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/knewstuff.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/knewstuff.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kidletime",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kidletime.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kidletime.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "threadweaver",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/threadweaver.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/threadweaver.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kitemmodels",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kitemmodels.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kitemmodels.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kxmlrpcclient",
             "cmake": true,
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kxmlrpcclient.git", "branch": "v5.19.0" } ]
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kxmlrpcclient.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kdnssd",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdnssd.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdnssd.git", "branch": "v5.20.0" } ]
         },
         {
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "name": "ktexteditor",
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/ktexteditor.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/ktexteditor.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "frameworkintegration",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
             "builddir": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/frameworkintegration.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/frameworkintegration.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kemoticons",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kemoticons.git", "branch": "v5.19.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kemoticons.git", "branch": "v5.20.0" } ]
         },
         {
             "name": "kpty",
             "cmake": true,
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DKDE_INSTALL_LIBDIR=lib"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kpty.git", "branch": "v5.19.0" } ]
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kpty.git", "branch": "v5.20.0" } ]
+        },
+        {
+            "name": "breeze",
+            "cmake": true,
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib", "-DWITH_DECORATIONS=OFF" ],
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git" } ]
         }
     ]
 }
