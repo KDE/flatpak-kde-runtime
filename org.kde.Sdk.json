@@ -36,8 +36,8 @@
                              "--release", "--shared",
                              "-platform", "linux-g++",
                              "-optimized-qmake",
-                             "-verbose",
                              "-nomake", "examples",
+                             "-nomake", "tests",
                              "-system-harfbuzz",
                              "-system-sqlite",
                              "-no-alsa",
@@ -56,7 +56,9 @@
                              "-no-linuxfb",
                              "-no-kms",
                              "-no-cups",
-                             "-system-proxies"
+                             "-system-proxies",
+
+                             "-archdatadir", "/usr/lib/"
                            ],
             "sources": [
                 {
