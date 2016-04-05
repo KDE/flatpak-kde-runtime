@@ -9,12 +9,10 @@ repo:
 	ostree init --mode=archive-z2 --repo=repo
 
 remotes:
-	xdg-app remote-delete --user gnome-nightly 
-	xdg-app remote-delete --user gnome
 	wget http://209.132.179.2/keys/nightly.gpg
-	xdg-app remote-add --user --gpg-import=nightly.gpg gnome-nightly http://sdk.gnome.org/nightly/repo/
 	wget http://sdk.gnome.org/keys/gnome-sdk.gpg
-	xdg-app remote-add --user --gpg-import=gnome-sdk.gpg gnome http://sdk.gnome.org/repo/
+	xdg-app remote-delete --user gnome-nightly; xdg-app remote-add --user --gpg-import=nightly.gpg gnome-nightly http://sdk.gnome.org/nightly/repo/
+	xdg-app remote-delete --user gnome; xdg-app remote-add --user --gpg-import=gnome-sdk.gpg gnome http://sdk.gnome.org/repo/
 	rm *.gpg
 
 deps:
