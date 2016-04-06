@@ -2,13 +2,13 @@ REPO=repo
 
 all: repo org.kde.Sdk.json
 	rm -rf sdk
-	xdg-app-builder --ccache --require-changes --repo=$REPO --subject="build of org.kde.Sdk, `date`" ${EXPORT_ARGS} sdk org.kde.Sdk.json
+	xdg-app-builder --ccache --require-changes --repo=$(REPO) --subject="build of org.kde.Sdk, `date`" ${EXPORT_ARGS} sdk org.kde.Sdk.json
 
 finish: all
 	xdg-app update
 
 repo:
-	ostree init --mode=archive-z2 --repo=$REPO
+	ostree init --mode=archive-z2 --repo=$(REPO)
 
 remotes:
 	wget http://209.132.179.2/keys/nightly.gpg
