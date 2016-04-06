@@ -1,4 +1,5 @@
 REPO=repo
+ARGS="--user"
 
 all: repo org.kde.Sdk.json
 	rm -rf sdk
@@ -13,11 +14,11 @@ repo:
 remotes:
 	wget http://209.132.179.2/keys/nightly.gpg
 	wget http://sdk.gnome.org/keys/gnome-sdk.gpg
-	xdg-app remote-add --user --gpg-import=nightly.gpg gnome-nightly http://sdk.gnome.org/nightly/repo/
-	xdg-app remote-add --user --gpg-import=gnome-sdk.gpg gnome http://sdk.gnome.org/repo/
+	xdg-app remote-add $(ARGS) --gpg-import=nightly.gpg gnome-nightly http://sdk.gnome.org/nightly/repo/
+	xdg-app remote-add $(ARGS) --gpg-import=gnome-sdk.gpg gnome http://sdk.gnome.org/repo/
 	rm *.gpg
 
 deps:
-	xdg-app install --user gnome-nightly org.freedesktop.Platform 1.4
-	xdg-app install --user gnome-nightly org.freedesktop.Sdk 1.4
-	xdg-app install --user gnome-nightly org.freedesktop.Platform.Locale 1.4
+	xdg-app install $(ARGS) gnome-nightly org.freedesktop.Platform 1.4
+	xdg-app install $(ARGS) gnome-nightly org.freedesktop.Sdk 1.4
+	xdg-app install $(ARGS) gnome-nightly org.freedesktop.Platform.Locale 1.4
