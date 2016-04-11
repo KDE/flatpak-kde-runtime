@@ -19,7 +19,7 @@ remotes:
 	rm *.gpg
 
 deps:
-	xdg-app install $(ARGS) gnome-nightly org.freedesktop.Platform 1.4
-	xdg-app install $(ARGS) gnome-nightly org.freedesktop.Sdk 1.4
-	xdg-app install $(ARGS) gnome-nightly org.freedesktop.Sdk.Locale 1.4
-	xdg-app install $(ARGS) gnome-nightly org.freedesktop.Platform.Locale 1.4
+	xdg-app install $(ARGS) gnome-nightly org.freedesktop.Platform 1.4; true
+	xdg-app install $(ARGS) gnome-nightly org.freedesktop.Sdk 1.4; true
+	xdg-app install $(ARGS) gnome-nightly org.freedesktop.Sdk.Locale 1.4; true
+	xdg-app install $(ARGS) gnome-nightly org.freedesktop.Platform.Locale 1.4; true
