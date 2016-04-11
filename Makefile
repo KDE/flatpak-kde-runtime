@@ -3,7 +3,7 @@ TMP=sdk
 ARGS="--user"
 
 all: $(REPO)/config org.kde.Sdk.json
-	rm -rf $TMP
+	rm -rf $(TMP)
 	xdg-app-builder --ccache --require-changes --repo=$(REPO) --subject="build of org.kde.Sdk, `date`" ${EXPORT_ARGS} $(TMP) org.kde.Sdk.json
 
 finish: all
