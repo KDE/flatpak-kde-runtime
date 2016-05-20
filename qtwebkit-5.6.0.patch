@@ -6,5 +6,5 @@ index d3a37eb..0be656f 100644
  QMAKEPATH += $$PWD/Tools/qmake $$MODULE_QMAKE_OUTDIR
  load(qt_build_config)
  
--MODULE_VERSION = 5.6.1
+-MODULE_VERSION = 5.6.2
 +MODULE_VERSION = 5.6.0
