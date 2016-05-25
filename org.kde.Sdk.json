@@ -148,6 +148,18 @@
             ]
         },
         {
+            "name": "qt5-qtsensors",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "sources": [
+                { "type": "git", "url": "git://code.qt.io/qt/qtsensors.git", "branch": "v5.6.0" },
+                {
+                    "type": "script",
+                    "commands": [ "qmake" ],
+                    "dest-filename": "configure"
+                }
+            ]
+        },
+        {
             "name": "qt5-qtxmlpatterns",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
