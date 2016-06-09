@@ -529,6 +529,12 @@
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git" } ]
         },
         {
+            "name": "kf5wayland",
+            "cmake": true,
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib" ],
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kf5wayland.git" } ]
+        },
+        {
             "name": "plasma-integration",
             "cmake": true,
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
