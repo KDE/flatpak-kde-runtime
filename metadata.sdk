@@ -14,5 +14,3 @@ directory=share/zoneinfo
 [Environment]
 GST_PLUGIN_PATH=/app/lib/gstreamer-1.0
 LD_LIBRARY_PATH=/app/lib:/usr/lib/GL
-QT_PLUGIN_PATH=/app/lib64/plugins
-KDE_FORK_SLAVES=1
