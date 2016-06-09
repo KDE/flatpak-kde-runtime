@@ -103,6 +103,7 @@
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 { "type": "git", "url": "git://code.qt.io/qt/qtwebkit.git", "branch": "5.6" },
+                { "type": "patch", "path": "qtwebkit-version.patch" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
