@@ -523,16 +523,16 @@
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kpty.git", "branch": "v5.22.0" } ]
         },
         {
+            "name": "kwayland",
+            "cmake": true,
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib" ],
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland.git", "branch": "v5.22.0" } ]
+        },
+        {
             "name": "breeze",
             "cmake": true,
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib", "-DWITH_DECORATIONS=OFF" ],
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git" } ]
-        },
-        {
-            "name": "kwayland",
-            "cmake": true,
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland.git" } ]
         },
         {
             "name": "plasma-integration",
