@@ -6,6 +6,9 @@ all: $(REPO)/config org.kde.Sdk.json
 	rm -rf $(TMP)
 	flatpak-builder --ccache --require-changes --repo=$(REPO) --subject="build of org.kde.Sdk, `date`" ${EXPORT_ARGS} $(TMP) org.kde.Sdk.json
 
+export:
+	flatpak build-update-repo ~/morespace/zappdata/repo/ ${EXPORT_ARGS}
+
 $(REPO)/config:
 	ostree init --mode=archive-z2 --repo=$(REPO)
 
