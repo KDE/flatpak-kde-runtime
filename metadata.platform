@@ -15,5 +15,6 @@ directory=share/zoneinfo
 GI_TYPELIB_PATH=/app/lib/girepository-1.0
 GST_PLUGIN_PATH=/app/lib/gstreamer-1.0
 LD_LIBRARY_PATH=/app/lib:/usr/lib/GL
-QT_PLUGIN_PATH=/app/lib64/plugins
+QT_PLUGIN_PATH=/app/lib64/plugins:/app/lib/plugins
+QML2_IMPORT_PATH=/app/lib64/qml:/app/lib/qml
 KDE_FORK_SLAVES=1
