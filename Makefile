@@ -14,7 +14,7 @@ $(REPO)/config:
 
 remotes:
 	wget http://sdk.gnome.org/keys/gnome-sdk.gpg
-	flatpak remote-add $(ARGS) --gpg-import=gnome-sdk.gpg gnome http://sdk.gnome.org/repo/
+	flatpak remote-add $(ARGS) --gpg-import=gnome-sdk.gpg gnome http://sdk.gnome.org/repo/ --if-not-exists
 	rm *.gpg
 
 deps:
