@@ -25,3 +25,6 @@ deps:
 
 check:
 	json-glib-validate *.json
+
+clean:
+	rm -rf $(TMP) .flatpak-builder
