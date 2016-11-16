@@ -99,6 +99,52 @@
             ]
         },
         {
+
+            "name": "qt5-webchannel",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "sources": [
+                { "type": "git", "url": "git://code.qt.io/qt/qtwebchannel.git", "branch": "5.7.1" },
+                {
+                    "type": "script",
+                    "commands": [ "qmake" ],
+                    "dest-filename": "configure"
+                }
+            ]
+        },
+        {   "name": "alsa-lib",
+            "sources": [
+                { "type": "git", "url": "git://git.alsa-project.org/alsa-lib.git", "branch": "v1.1.2" },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "libtoolize --force --copy --automake",
+                        "aclocal",
+                        "autoheader",
+                        "automake --foreign --copy --add-missing",
+                        "autoconf"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "pciutils",
+            "no-autogen": true,
+            "make-args": ["SHARED=yes", "ZLIB=no", "PREFIX=/usr"],
+            "post-install": [
+                "make install-pcilib",
+                "make install-lib"
+            ],
+            "sources": [
+                { "type": "git", "url": "https://kernel.googlesource.com/pub/scm/utils/pciutils/pciutils", "branch": "v3.5.2" },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "sed -i 's@PREFIX=/usr/local@PREFIX=/usr@' Makefile"
+                    ]
+                }
+            ]
+        },
+        {
             "name": "qt5-qtwebengine",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
