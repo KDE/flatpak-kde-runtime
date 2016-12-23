@@ -1,0 +1,14 @@
+diff --git a/src/core/gyp_run.pro b/src/core/gyp_run.pro
+index c583845e..a65d5a29 100644
+--- a/src/core/gyp_run.pro
++++ b/src/core/gyp_run.pro
+@@ -144,6 +144,9 @@ contains(WEBENGINE_CONFIG, reduce_binary_size): GYP_CONFIG += release_optimize=s
+     GYP_CONFIG += qt_install_translations=\"$$[QT_INSTALL_TRANSLATIONS/get]\"
+ }
+ 
++# Disable Udev
++GYP_CONFIG += use_udev=0
++
+ # Append additional platform options defined in GYP_CONFIG
+ for (config, GYP_CONFIG): GYP_ARGS += "-D $$config"
+ 
