@@ -76,7 +76,12 @@
         },
         {
             "name": "qt5-qttools",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [
+                "/mkspecs",
+                "/bin/assistant", "/bin/qhelpgenerator", "/bin/qcollectiongenerator", "/bin/qhelpconverter", "/bin/pixeltool", "/bin/designer",
+                "/bin/lrelease", "/bin/lupdate", "/bin/lconvert", "/bin/linguist", "/bin/qdoc", "/bin/qtattributionsscanner",
+                "/bin/qtplugininfo", "/bin/qtdiag", "/bin/qdbusviewer"
+            ],
             "sources": [
                 { "type": "git", "url": "git://code.qt.io/qt/qttools.git", "branch": "v5.7.1" },
                 {
