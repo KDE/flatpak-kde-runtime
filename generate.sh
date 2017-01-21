@@ -1,10 +1,10 @@
-make EXPORT_ARGS="--gpg-sign=61C45BED"
+make EXPORT_ARGS="--gpg-sign=61C45BED" all export #--generate-static-deltas
 built=$?
-kdeconnect-cli -d ce25f4e532ef3c25 --ping-msg "flatpak built: $?"
-
 if [ $built -eq 0 ]
 then
+    echo "uploading to darwini.kde.org"
     rsync -a repo/  distribute@darwini.kde.org:/srv/www/distribute.kde.org/flatpak-testing/
-    kdeconnect-cli -d ce25f4e532ef3c25 --ping-msg "flatpak done: $?"
+else
+    echo "didn't upload"
 fi
  
