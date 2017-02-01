@@ -18,10 +18,10 @@ remotes:
 	rm *.gpg
 
 deps:
-	flatpak install $(ARGS) gnome org.freedesktop.Platform 1.4; true
-	flatpak install $(ARGS) gnome org.freedesktop.Sdk 1.4; true
 	flatpak install $(ARGS) gnome org.freedesktop.Sdk.Locale 1.4; true
 	flatpak install $(ARGS) gnome org.freedesktop.Platform.Locale 1.4; true
+	flatpak install $(ARGS) gnome org.freedesktop.Platform 1.4; true
+	flatpak install $(ARGS) gnome org.freedesktop.Sdk 1.4; true
 
 check:
 	json-glib-validate *.json
