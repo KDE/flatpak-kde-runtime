@@ -645,6 +645,11 @@
             "cmake": true,
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-integration.git", "branch": "Plasma/5.8" } ]
+        },
+        {
+            "name": "flatpak-platform-plugin",
+            "cmake": true,
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/flatpak-platform-plugin.git" } ]
         }
     ]
 }
