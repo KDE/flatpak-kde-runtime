@@ -314,12 +314,6 @@
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kconfig.git", "branch": "v5.31.0" } ]
         },
         {
-            "name": "breeze-icons",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
-            "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze-icons.git", "branch": "v5.31.0" } ]
-        },
-        {
             "name": "attica",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
@@ -633,6 +627,12 @@
             "cmake": true,
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib" ],
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland.git", "branch": "v5.31.0" } ]
+        },
+        {
+            "name": "breeze-icons",
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
+            "cmake": true,
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze-icons.git", "branch": "v5.31.0" } ]
         },
         {
             "name": "breeze",
