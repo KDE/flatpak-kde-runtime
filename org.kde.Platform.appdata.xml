@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="runtime">
+  <id>org.kde.Platform</id>
+  <metadata_license>CC0</metadata_license>
+  <!-- FIXME -->
+  <project_license>GPL-2.0+</project_license>
+  <name>KDE Application Platform version master</name>
+  <summary>Shared libraries used by KDE applications</summary>
+  <url type="homepage">http://www.kde.org/</url>
+  <project_group>KDE</project_group>
+</component>

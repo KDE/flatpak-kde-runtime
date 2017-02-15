@@ -650,6 +650,28 @@
             "name": "flatpak-platform-plugin",
             "cmake": true,
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/flatpak-platform-plugin.git" } ]
+        },
+        {
+            "name": "os-release",
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "os-release"
+                },
+                {
+                    "type": "file",
+                    "path": "org.kde.Sdk.appdata.xml"
+                },
+                {
+                    "type": "file",
+                    "path": "org.kde.Platform.appdata.xml"
+                },
+                {
+                    "type": "file",
+                    "path": "os-release-configure",
+                    "dest-filename": "configure"
+                }
+            ]
         }
     ]
 }
