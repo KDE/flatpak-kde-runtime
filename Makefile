@@ -13,9 +13,7 @@ $(REPO)/config:
 	ostree init --mode=archive-z2 --repo=$(REPO)
 
 remotes:
-	wget http://sdk.gnome.org/keys/gnome-sdk.gpg
-	flatpak remote-add $(ARGS) --gpg-import=gnome-sdk.gpg gnome http://sdk.gnome.org/repo/ --if-not-exists
-	rm *.gpg
+	flatpak remote-add $(ARGS) gnome --from https://sdk.gnome.org/gnome.flatpakrepo --if-not-exists
 
 deps:
 	flatpak install $(ARGS) gnome org.freedesktop.Sdk.Locale 1.4; true
