@@ -16,10 +16,10 @@ remotes:
 	flatpak remote-add $(ARGS) gnome --from https://sdk.gnome.org/gnome.flatpakrepo --if-not-exists
 
 deps:
-	flatpak install $(ARGS) gnome org.freedesktop.Platform.Locale 1.4; true
-	flatpak install $(ARGS) gnome org.freedesktop.Sdk.Locale 1.4; true
-	flatpak install $(ARGS) gnome org.freedesktop.Platform 1.4; true
-	flatpak install $(ARGS) gnome org.freedesktop.Sdk 1.4; true
+	flatpak install $(ARGS) gnome org.freedesktop.Platform.Locale 1.6; true
+	flatpak install $(ARGS) gnome org.freedesktop.Sdk.Locale 1.6; true
+	flatpak install $(ARGS) gnome org.freedesktop.Platform 1.6; true
+	flatpak install $(ARGS) gnome org.freedesktop.Sdk 1.6; true
 
 check:
 	json-glib-validate *.json

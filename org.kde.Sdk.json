@@ -6,7 +6,7 @@
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
     "initial-debug": "org.freedesktop.Debug",
-    "runtime-version": "1.4",
+    "runtime-version": "1.6",
     "writable-sdk": true,
     "sdk-extensions": ["org.freedesktop.Sdk.Locale"],
     "platform-extensions": ["org.freedesktop.Platform.Locale"],
@@ -155,19 +155,6 @@
             "sources": [
                 { "type": "git", "url": "git://code.qt.io/qt/qtwebengine.git", "branch": "v5.7.1" },
                 { "type": "patch", "path": "qtwebengine-no-udev.patch" },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
-                }
-            ]
-        },
-        {
-            "name": "qt5-qtwebkit",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
-            "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtwebkit.git", "branch": "5.7" },
-                { "type": "patch", "path": "qtwebkit-version.patch" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -514,12 +501,6 @@
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kparts.git", "branch": "v5.31.0" } ]
-        },
-        {
-            "name": "kdewebkit",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
-            "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdewebkit.git", "branch": "v5.31.0" } ]
         },
         {
             "name": "kplotting",
