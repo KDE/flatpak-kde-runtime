@@ -83,6 +83,8 @@
                              "-no-pch",
                              "-no-rpath",
                              "-no-separate-debug-info",
+                             "-no-reduce-relocations",
+                             "-no-use-gold-linker",
                              "-no-directfb",
                              "-no-linuxfb",
                              "-no-kms",
