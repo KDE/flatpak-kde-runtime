@@ -322,6 +322,22 @@
                 }
             ]
         },
+        {
+            "name": "qt5-connectivity",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "git://code.qt.io/qt/qtconnectivity.git",
+                    "branch": "v5.7.1"
+                },
+                {
+                    "type": "script",
+                    "commands": [ "qmake" ],
+                    "dest-filename": "configure"
+                }
+            ]
+        },
         //////////////////////////////////
         {
             "name": "extra-cmake-modules",
