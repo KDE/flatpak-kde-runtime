@@ -1,9 +1,10 @@
 REPO=repo
 TMP=sdk
 ARGS="--user"
+ARCH?=$(shell flatpak --default-arch)
 
 all: $(REPO)/config org.kde.Sdk.json
-	flatpak-builder --force-clean --require-changes --ccache --repo=$(REPO) --subject="build of org.kde.Sdk, `date`" ${EXPORT_ARGS} $(TMP) org.kde.Sdk.json
+	flatpak-builder --arch=$(ARCH) --force-clean --require-changes --ccache --repo=$(REPO) --subject="build of org.kde.Sdk, `date`" ${EXPORT_ARGS} $(TMP) org.kde.Sdk.json
 
 export:
 	flatpak build-update-repo $(REPO) ${EXPORT_ARGS}
