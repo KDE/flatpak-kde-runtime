@@ -192,7 +192,7 @@
                     "type": "file",
                     "path": "qtwebengine.qmake.conf",
                     "dest-filename": ".qmake.conf"
-                }
+                },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
