@@ -188,11 +188,7 @@
             "sources": [
                 { "type": "git", "url": "git://code.qt.io/qt/qtwebengine.git", "branch": "v5.7.1" },
                 { "type": "patch", "path": "qtwebengine-no-udev.patch" },
-                {
-                    "type": "file",
-                    "path": "qtwebengine.qmake.conf",
-                    "dest-filename": ".qmake.conf"
-                },
+                { "type": "patch", "path": "qtwebengine-qmake.conf.patch" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],

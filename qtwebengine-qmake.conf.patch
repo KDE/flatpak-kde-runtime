@@ -1,0 +1,23 @@
+diff --git a/.qmake.conf b/.qmake.conf
+index a988f0fa..c2dba76e 100644
+--- a/.qmake.conf
++++ b/.qmake.conf
+@@ -8,3 +8,18 @@ load(qt_build_config)
+ CONFIG += warning_clean
+ 
+ MODULE_VERSION = 5.9.0
++
++QMAKE_CFLAGS -= -g
++QMAKE_CFLAGS -= -gstabs
++QMAKE_CXXFLAGS -= -g
++QMAKE_CXXFLAGS -= -gstabs
++QT_CONFIG -= force_debug_info
++QT_CONFIG -= separate_debug_info
++
++QMAKE_CXXFLAGS += --param ggc-min-expand=20
++QMAKE_CFLAGS += --param ggc-min-expand=20
++QMAKE_LFLAGS -= Wl,--gc-sections
++QMAKE_LFLAGS -= -fuse-ld=gold
++QMAKE_LFLAGS += -fuse-ld=bfd
++
++WEBENGINE_CONFIG+=reduce_binary_size
