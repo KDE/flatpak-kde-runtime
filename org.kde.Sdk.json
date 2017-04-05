@@ -314,8 +314,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.7/5.7.1/submodules/qtxmlpatterns-opensource-src-5.7.1.tar.xz",
-                    "sha256": "a805938c2ab1379d7dc83dcec606edd7950b5155c073b9eb53c53e62deb5f8e5"
+                    "url": "http://download.qt.io/archive/qt/5.8/5.8.0/submodules/qtxmlpatterns-opensource-src-5.8.0.tar.xz",
+                    "sha256": "7bffa65ea52e54fb1314b45222888612d55eaf51a936a6119b8756266439da04"
                 },
                 {
                     "type": "script",
