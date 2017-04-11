@@ -18,6 +18,6 @@ index 9d4004a0..b07c1dec 100644
 +QMAKE_CFLAGS += --param ggc-min-expand=20
 +QMAKE_LFLAGS -= Wl,--gc-sections
 +QMAKE_LFLAGS -= -fuse-ld=gold
-+QMAKE_LFLAGS += -fuse-ld=bfd
++QMAKE_LFLAGS += -fuse-ld=bfd -Wl,--as-needed -Wl,--gc-sections -Wl,--no-keep-memory
 +
 +WEBENGINE_CONFIG+=reduce_binary_size
