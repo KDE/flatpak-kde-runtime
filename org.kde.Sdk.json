@@ -729,6 +729,12 @@
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-integration.git", "branch": "Plasma/5.9" } ]
         },
         {
+            "name": "kwayland-integration",
+            "cmake": true,
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland-integration.git", "branch": "Plasma/5.9" } ]
+        },
+        {
             "name": "flatpak-platform-plugin",
             "cmake": true,
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/flatpak-platform-plugin.git" } ]
