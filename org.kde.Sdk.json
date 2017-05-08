@@ -736,7 +736,7 @@
                 { "type": "git", "url": "git://anongit.kde.org/plasma-maliit-framework.git" },
                 {
                     "type": "script",
-                    "commands": [ "qmake", "-makefile", "CONFIG+=qt5-inputcontext", "CONFIG+=enable-dbus-activation", "CONFIG+=notests", "CONFIG+=nodoc" ],
+                    "commands": [ "qmake", "-makefile", "CONFIG+=qt5-inputcontext", "CONFIG-=nohwkeyboard", "CONFIG+=enable-dbus-activation", "CONFIG+=notests", "CONFIG+=nodoc" ],
                     "dest-filename": "configure" }
             ]
         },
