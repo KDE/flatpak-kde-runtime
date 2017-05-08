@@ -454,7 +454,10 @@
             "name": "kdbusaddons",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "cmake": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdbusaddons.git", "branch": "v5.33.0" } ]
+            "sources": [
+                { "type": "git", "url": "git://anongit.kde.org/kdbusaddons.git", "branch": "v5.33.0" },
+                { "type": "patch", "path": "multiple-service-name-D5775.patch" }
+            ]
         },
         {
             "name": "kservice",
