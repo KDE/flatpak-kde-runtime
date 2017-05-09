@@ -372,6 +372,16 @@
         },
         //////////////////////////////////
         {
+            "name": "libdbusmenu-qt",
+            "cmake": true,
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
+            "sources": [
+                { "type": "git", "url": "git://anongit.kde.org/plasma-workspace.git", "path": "libdbusmenuqt", "branch": "Plasma/5.9" },
+                { "type": "patch", "path": "libdbusmenu-split.patch" }
+            ]
+        },
+        //////////////////////////////////
+        {
             "name": "extra-cmake-modules",
             "cleanup-platform": ["*"],
             "cmake": true,
@@ -714,6 +724,7 @@
             "cmake": true,
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze-icons.git", "branch": "v5.33.0" } ]
         },
+        //////////////////////////////////
         {
             "name": "breeze",
             "cmake": true,
@@ -731,15 +742,6 @@
             "cmake": true,
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland-integration.git", "branch": "Plasma/5.9" } ]
-        },
-        {
-            "name": "libdbusmenu-qt",
-            "cmake": true,
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
-            "sources": [
-                { "type": "git", "url": "git://anongit.kde.org/plasma-workspace.git", "path": "libdbusmenuqt", "branch": "Plasma/5.9" },
-                { "type": "patch", "path": "libdbusmenu-split.patch" }
-            ]
         },
         {
             "name": "flatpak-platform-plugin",
