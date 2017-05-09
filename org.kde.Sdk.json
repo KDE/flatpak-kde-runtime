@@ -374,9 +374,9 @@
         {
             "name": "libdbusmenuqt",
             "cmake": true,
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib", "-DWITH_DOC=OFF"],
             "sources": [
-                { "type": "bzr", "url": "http://bazaar.launchpad.net/~dbusmenu-team/libdbusmenu-qt/trunk/" },
-                { "type": "script", "commands": [ "qmake" ], "dest-filename": "configure" }
+                { "type": "bzr", "url": "http://bazaar.launchpad.net/~dbusmenu-team/libdbusmenu-qt/trunk/" }
             ]
         },
         //////////////////////////////////
