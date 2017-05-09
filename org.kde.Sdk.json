@@ -372,12 +372,11 @@
         },
         //////////////////////////////////
         {
-            "name": "libdbusmenu-qt",
+            "name": "libdbusmenuqt",
             "cmake": true,
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "sources": [
-                { "type": "git", "url": "git://anongit.kde.org/plasma-workspace.git", "path": "libdbusmenuqt", "branch": "Plasma/5.9" },
-                { "type": "patch", "path": "libdbusmenu-split.patch" }
+                { "type": "bzr", "url": "http://bazaar.launchpad.net/~dbusmenu-team/libdbusmenu-qt/trunk/" },
+                { "type": "script", "commands": [ "qmake" ], "dest-filename": "configure" }
             ]
         },
         //////////////////////////////////
