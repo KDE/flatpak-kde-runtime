@@ -744,19 +744,19 @@
             "name": "breeze",
             "cmake": true,
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib", "-DWITH_DECORATIONS=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git", "branch": "Plasma/5.9" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git", "branch": "Plasma/5.10" } ]
         },
         {
             "name": "plasma-integration",
             "cmake": true,
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-integration.git", "branch": "Plasma/5.9" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-integration.git", "branch": "Plasma/5.10" } ]
         },
         {
             "name": "kwayland-integration",
             "cmake": true,
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland-integration.git", "branch": "Plasma/5.9" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland-integration.git", "branch": "Plasma/5.10" } ]
         },
         {
             "name": "flatpak-platform-plugin",
