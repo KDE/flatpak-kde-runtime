@@ -370,6 +370,22 @@
                 }
             ]
         },
+        {
+            "name": "qt5-virtualkeyboard",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "git://code.qt.io/qt/qtvirtualkeyboard.git",
+                    "branch": "v5.8.0"
+                },
+                {
+                    "type": "script",
+                    "commands": [ "qmake" ],
+                    "dest-filename": "configure"
+                }
+            ]
+        },
         //////////////////////////////////
         {
             "name": "libdbusmenuqt",
