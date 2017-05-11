@@ -358,6 +358,31 @@
                 }
             ]
         },
+        {
+            "name": "qt5-virtualkeyboard",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "git://code.qt.io/qt/qtvirtualkeyboard.git",
+                    "branch": "v5.8.0"
+                },
+                {
+                    "type": "script",
+                    "commands": [ "qmake" ],
+                    "dest-filename": "configure"
+                }
+            ]
+        },
+        //////////////////////////////////
+        {
+            "name": "libdbusmenuqt",
+            "cmake": true,
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib", "-DWITH_DOC=OFF"],
+            "sources": [
+                { "type": "bzr", "url": "http://bazaar.launchpad.net/~dbusmenu-team/libdbusmenu-qt/trunk/" }
+            ]
+        },
         //////////////////////////////////
         {
             "name": "extra-cmake-modules",
@@ -705,6 +730,7 @@
             "cmake": true,
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze-icons.git", "branch": "v5.33.0" } ]
         },
+        //////////////////////////////////
         {
             "name": "breeze",
             "cmake": true,
