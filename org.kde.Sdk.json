@@ -602,7 +602,7 @@
             "name": "kio",
             "cmake": true,
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kio.git", "branch": "v5.33.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kio.git", "branch": "v5.34.0" } ]
         },
         {
             "name": "kparts",
