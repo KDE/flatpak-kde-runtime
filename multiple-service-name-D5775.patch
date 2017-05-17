@@ -1,7 +1,7 @@
 diff --git a/src/kdbusservice.cpp b/src/kdbusservice.cpp
 --- a/src/kdbusservice.cpp
 +++ b/src/kdbusservice.cpp
-@@ -94,8 +94,18 @@
+@@ -94,8 +94,16 @@
          objectPath.replace(QLatin1Char('-'), QLatin1Char('_')); // see spec change at https://bugs.freedesktop.org/show_bug.cgi?id=95129
  
          if (options & Multiple) {
@@ -15,10 +15,8 @@ diff --git a/src/kdbusservice.cpp b/src/kdbusservice.cpp
 +                }
 +            }
 +
-+            if (!inSandbox) {
-+                const QString pid = QString::number(QCoreApplication::applicationPid());
-+                d->serviceName += QLatin1Char('-') + pid;
-+            }
++            const QString uniqueId = inSandbox ? QDBusConnection::sessionBus().baseService().replace(QRegularExpression(QStringLiteral("[\\.:]")), QStringLiteral("_")) : QString::number(QCoreApplication::applicationPid());
++            d->serviceName += QStringLiteral(".kdbus-") + uniqueId;
          }
  
          QDBusConnection::sessionBus().registerObject(QStringLiteral("/MainApplication"), QCoreApplication::instance(),
