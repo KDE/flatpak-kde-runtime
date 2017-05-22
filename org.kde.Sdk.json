@@ -775,6 +775,9 @@
         },
         {
             "name": "os-release",
+            "post-install": [
+                "mkdir -p /usr/share/runtime/lib/plugins/"
+            ],
             "sources": [
                 {
                     "type": "file",
