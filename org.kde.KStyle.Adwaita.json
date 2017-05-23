@@ -11,7 +11,7 @@
         {
             "name": "adwaita-qt",
             "cmake": true,
-            "config-opts": ["-DQT_PLUGINS_DIR=/app/share/runtime/lib/plugins/adwaita" ],
+            "config-opts": ["-DQT_PLUGINS_DIR=/usr/share/runtime/lib/plugins/Adwaita"],
             "sources": [
                 {
                     "type": "git",
