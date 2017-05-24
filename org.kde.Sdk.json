@@ -37,6 +37,11 @@
         "--extension=org.kde.KStyle=no-autodownload=true",
         "--extension=org.kde.KStyle=version=master",
         "--extension=org.kde.KStyle=merge-dirs=styles",
+        "--extension=org.kde.PlatformTheme=directory=share/runtime/lib/plugins/",
+        "--extension=org.kde.PlatformTheme=subdirectories=true",
+        "--extension=org.kde.PlatformTheme=no-autodownload=true",
+        "--extension=org.kde.PlatformTheme=version=master",
+        "--extension=org.kde.PlatformTheme=merge-dirs=platformthemes",
         "--env=GI_TYPELIB_PATH=/app/lib/girepository-1.0",
         "--env=GST_PLUGIN_SYSTEM_PATH=/app/lib/gstreamer-1.0:/usr/lib/extensions/gstreamer-1.0:/usr/lib/gstreamer-1.0",
         "--env=XDG_DATA_DIRS=/app/share:/usr/share:/usr/share/runtime/share",
@@ -101,6 +106,7 @@
                              "-no-kms",
                              "-no-cups",
                              "-system-proxies",
+                             "-gtk",
 
                              "-archdatadir", "/usr/lib/"
                            ],

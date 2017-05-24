@@ -1,0 +1,28 @@
+diff --git a/src/gnomehintssettings.cpp b/src/gnomehintssettings.cpp
+index 3708a5c..388e7a9 100644
+--- a/src/gnomehintssettings.cpp
++++ b/src/gnomehintssettings.cpp
+@@ -52,8 +52,22 @@ GnomeHintsSettings::GnomeHintsSettings()
+     : QObject(0)
+     , m_gtkThemeDarkVariant(false)
+     , m_palette(nullptr)
+-    , m_settings(g_settings_new("org.gnome.desktop.interface"))
+ {
++    bool inSandbox = false;
++    if (!qEnvironmentVariableIsEmpty("XDG_RUNTIME_DIR")) {
++        const QString runtimeDir = qgetenv("XDG_RUNTIME_DIR");
++        if (!runtimeDir.isEmpty()) {
++            inSandbox = QFileInfo::exists(runtimeDir + QLatin1String("/flatpak-info"));
++        }
++    }
++
++    if (inSandbox) {
++        GSettingsSchemaSource *schema = g_settings_schema_source_new_from_directory("/usr/share/runtime/lib/plugins/QGnomePlatform/share/glib-2.0/schemas/", g_settings_schema_source_get_default(), true, nullptr);
++        m_settings = g_settings_new_full(g_settings_schema_source_lookup(schema, "org.gnome.desktop.interface", true), nullptr, nullptr);
++    } else {
++        m_settings = g_settings_new("org.gnome.desktop.interface");
++    }
++
+     gtk_init(nullptr, nullptr);
+ 
+     // Set log handler to suppress false GtkDialog warnings
