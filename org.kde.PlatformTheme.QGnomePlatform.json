@@ -8,7 +8,7 @@
     "appstream-compose": false,
     "separate-locales": false,
     "build-options" : {
-        "prefix": "/usr/share/runtime/lib/plugins/QGnomePlatform",
+        "prefix": "/usr/share/runtime/lib/plugins/QGnomePlatform"
     },
     "modules": [
         {
