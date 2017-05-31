@@ -48,6 +48,10 @@
         "--env=QT_PLUGIN_PATH=/app/lib64/plugins:/app/lib/plugins:/usr/share/runtime/lib/plugins",
         "--env=QML2_IMPORT_PATH=/app/lib64/qml:/app/lib/qml",
         "--env=KDE_FORK_SLAVES=1",
+        "--env=XDG_CONFIG_DIRS=$XDG_CONFIG_DIRS:~/.config",
+        "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
+        "--filesystem=~/.config/kdeglobals:ro",
+        "--filesystem=~/.config/dconf:ro",
         "--sdk=org.kde.Sdk//master",
         "--runtime=org.kde.Platform//master"
     ],
