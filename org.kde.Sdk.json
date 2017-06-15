@@ -2,7 +2,7 @@
     "build-runtime": true,
     "id": "org.kde.Sdk",
     "id-platform": "org.kde.Platform",
-    "branch": "master",
+    "branch": "5.9",
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
     "runtime-version": "1.6",
