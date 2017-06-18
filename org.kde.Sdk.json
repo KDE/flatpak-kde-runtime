@@ -592,10 +592,7 @@
             "name": "knotifications",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
-            "sources": [
-                { "type": "git", "url": "git://anongit.kde.org/knotifications.git", "branch": "v5.35.0" },
-                { "type": "patch", "path": "knotifications-D5970.diff" }
-            ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/knotifications.git", "branch": "v5.35.0" } ]
         },
         {
             "name": "kwallet",
