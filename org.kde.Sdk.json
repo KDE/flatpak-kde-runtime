@@ -222,6 +222,7 @@
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 { "type": "git", "url": "git://code.qt.io/qt/qtwebengine.git", "branch": "v5.9.1" },
+                { "type": "patch", "path": "qtwebengine-no-udev.patch" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
