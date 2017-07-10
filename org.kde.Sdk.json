@@ -14,8 +14,6 @@
         "org.freedesktop.Platform.GStreamer",
         "org.freedesktop.Platform.Icontheme",
         "org.freedesktop.Sdk.Extension",
-        "org.freedesktop.kde.KStyle",
-        "org.freedesktop.kde.PlatformTheme"
     ],
     "finish-args": [
         "--env=GI_TYPELIB_PATH=/app/lib/girepository-1.0",
@@ -29,7 +27,18 @@
         "--filesystem=xdg-run/dconf",
         "--filesystem=~/.config/dconf:ro",
         "--sdk=org.kde.Sdk//master",
-        "--runtime=org.kde.Platform//master"
+        "--runtime=org.kde.Platform//master",
+        "--extension=org.kde.KStyle=directory=share/runtime/lib/plugins/",
+        "--extension=org.kde.KStyle=subdirectories=true",
+        "--extension=org.kde.KStyle=no-autodownload=true",
+        "--extension=org.kde.KStyle=version=master",
+        "--extension=org.kde.KStyle=merge-dirs=styles",
+        "--extension=org.kde.PlatformTheme=directory=share/runtime/lib/plugins/",
+        "--extension=org.kde.PlatformTheme=subdirectories=true",
+        "--extension=org.kde.PlatformTheme=no-autodownload=true",
+        "--extension=org.kde.PlatformTheme=version=master",
+        "--extension=org.kde.PlatformTheme=merge-dirs=platformthemes"
+
     ],
     "cleanup": [ "/cache",
                  "/man",
