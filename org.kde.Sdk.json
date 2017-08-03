@@ -392,6 +392,22 @@
                 }
             ]
         },
+        {
+            "name": "qt5-qtserialport",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "git://code.qt.io/qt/qtserialport.git",
+                    "branch": "v5.9.1"
+                },
+                {
+                    "type": "script",
+                    "commands": [ "qmake" ],
+                    "dest-filename": "configure"
+                }
+            ]
+        },
         //////////////////////////////////
         {
             "name": "libdbusmenuqt",
