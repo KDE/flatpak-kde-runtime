@@ -23,6 +23,7 @@ deps:
 	flatpak install --arch=$(ARCH) $(ARGS) gnome org.freedesktop.Platform 1.6; true
 	flatpak install --arch=$(ARCH) $(ARGS) gnome org.freedesktop.Sdk 1.6; true
 	flatpak install --arch=$(ARCH) $(ARGS) gnome org.freedesktop.Sdk.Debug 1.6; true
+	flatpak install --arch=$(ARCH) $(ARGS) gnome org.freedesktop.Sdk.Docs 1.6; true
 
 check:
 	json-glib-validate *.json

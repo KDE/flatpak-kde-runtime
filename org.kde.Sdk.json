@@ -6,7 +6,7 @@
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
     "runtime-version": "1.6",
-    "sdk-extensions": ["org.freedesktop.Sdk.Debug", "org.freedesktop.Sdk.Locale"],
+    "sdk-extensions": ["org.freedesktop.Sdk.Debug", "org.freedesktop.Sdk.Locale", "org.freedesktop.Sdk.Docs"],
     "platform-extensions": ["org.freedesktop.Platform.Locale"],
     "inherit-extensions": [
         "org.freedesktop.Platform.GL",
@@ -16,6 +16,14 @@
         "org.freedesktop.Sdk.Extension",
         "org.freedesktop.Platform.VAAPI.Intel"
     ],
+    "add-extensions": {
+        "org.gnome.Sdk.Docs" : {
+            "directory": "share/runtime/docs",
+            "bundle": true,
+            "autodelete": true,
+            "no-autodownload": true
+        }
+    },
     "finish-args": [
         "--env=GI_TYPELIB_PATH=/app/lib/girepository-1.0",
         "--env=GST_PLUGIN_SYSTEM_PATH=/app/lib/gstreamer-1.0:/usr/lib/extensions/gstreamer-1.0:/usr/lib/gstreamer-1.0",
