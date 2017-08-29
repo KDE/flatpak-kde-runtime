@@ -17,7 +17,7 @@
         "org.freedesktop.Platform.VAAPI.Intel"
     ],
     "add-extensions": {
-        "org.gnome.Sdk.Docs" : {
+        "org.kde.Sdk.Docs" : {
             "directory": "share/runtime/docs",
             "bundle": true,
             "autodelete": true,
