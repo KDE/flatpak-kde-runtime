@@ -9,7 +9,7 @@ all: $(REPO)/config $(foreach file, $(wildcard *.json), $(subst .json,.app,$(fil
 	flatpak-builder --arch=$(ARCH) --force-clean --require-changes --ccache --repo=$(REPO) --subject="build of org.kde.Sdk, `date`" ${EXPORT_ARGS} $(TMP) $<
 
 export:
-	flatpak build-update-repo $(REPO) ${EXPORT_ARGS}
+	flatpak build-update-repo $(REPO) ${EXPORT_ARGS} --generate-static-deltas
 
 $(REPO)/config:
 	ostree init --mode=archive-z2 --repo=$(REPO)
