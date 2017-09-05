@@ -781,6 +781,12 @@
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland.git", "branch": "v5.37.0" } ]
         },
         {
+            "name": "kirigami",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kirigami.git", "branch": "v5.37.0" } ]
+        },
+        {
             "name": "breeze-icons",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "buildsystem": "cmake-ninja",
