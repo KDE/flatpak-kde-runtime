@@ -782,6 +782,7 @@
         },
         {
             "name": "kirigami",
+            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib", "-DPLASMA_ENABLED=OFF"],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kirigami.git", "branch": "v5.37.0" } ]
