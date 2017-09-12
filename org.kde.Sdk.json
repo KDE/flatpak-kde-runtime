@@ -224,7 +224,7 @@
                 { "type": "patch", "path": "qtwebengine-no-udev.patch" },
                 {
                     "type": "script",
-                    "commands": [ "qmake" ],
+                    "commands": [ "qmake", "CONFIG+=release" ],
                     "dest-filename": "configure"
                 }
             ]
