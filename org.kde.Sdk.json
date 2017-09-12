@@ -427,7 +427,7 @@
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib", "-DWITH_DOC=OFF"],
             "sources": [
-                { "type": "bzr", "url": "http://bazaar.launchpad.net/~dbusmenu-team/libdbusmenu-qt/trunk/" }
+                { "type": "bzr", "url": "http://bazaar.launchpad.net/~dbusmenu-team/libdbusmenu-qt/trunk/", "revision": "0.9.3+16.04.20160218-0ubuntu1" }
             ]
         },
         //////////////////////////////////
@@ -602,7 +602,7 @@
             "name": "phonon",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib", "-DPHONON_BUILD_PHONON4QT5=ON"],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon.git", "branch": "master" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon.git", "branch": "v4.9.0" } ]
         },
         {
             "name": "knotifications",
