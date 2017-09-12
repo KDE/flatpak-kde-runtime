@@ -190,21 +190,6 @@
                 }
             ]
         },
-        {   "name": "alsa-lib",
-            "sources": [
-                { "type": "git", "url": "git://git.alsa-project.org/alsa-lib.git", "branch": "v1.1.2" },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "libtoolize --force --copy --automake",
-                        "aclocal",
-                        "autoheader",
-                        "automake --foreign --copy --add-missing",
-                        "autoconf"
-                    ]
-                }
-            ]
-        },
         {
             "name": "pciutils",
             "no-autogen": true,
