@@ -58,7 +58,8 @@
                           "touch -d @0 /usr/share/fonts/*",
                           "fc-cache -fs"
                         ],
-    "cleanup-platform": [ "/include",
+    "cleanup-platform": [ "/share/runtime/docs",
+                          "/include",
                           "/share/aclocal",
                           "/share/pkgconfig",
                           "/lib/pkgconfig",
