@@ -784,19 +784,19 @@
             "name": "breeze",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib", "-DWITH_DECORATIONS=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git", "branch": "Plasma/5.10" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git", "branch": "Plasma/5.11" } ]
         },
         {
             "name": "plasma-integration",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-integration.git", "branch": "Plasma/5.10" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-integration.git", "branch": "Plasma/5.11" } ]
         },
         {
             "name": "kwayland-integration",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland-integration.git", "branch": "Plasma/5.10" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland-integration.git", "branch": "Plasma/5.11" } ]
         },
         {
             "name": "phonon-gstreamer",
