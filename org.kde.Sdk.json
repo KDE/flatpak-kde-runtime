@@ -799,6 +799,11 @@
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland-integration.git", "branch": "Plasma/5.10" } ]
         },
         {
+            "name": "phonon-gstreamer",
+            "buildsystem": "cmake-ninja",
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon-gstreamer.git", "branch": "4.9" } ]
+        },
+        {
             "name": "flatpak-platform-plugin",
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/flatpak-platform-plugin.git" } ]
