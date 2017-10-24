@@ -122,7 +122,7 @@
                              "-archdatadir", "/usr/lib/"
                            ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtbase.git", "branch": "v5.9.1" },
+                { "type": "git", "url": "git://code.qt.io/qt/qtbase.git", "branch": "v5.9.2" },
                 {
                     "type": "shell",
                     "commands": [ "mv configure configure.qt" ]
@@ -141,7 +141,7 @@
             "name": "qt5-qtdeclarative",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtdeclarative.git", "branch": "v5.9.1" },
+                { "type": "git", "url": "git://code.qt.io/qt/qtdeclarative.git", "branch": "v5.9.2" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -158,7 +158,7 @@
                 "/bin/qtplugininfo", "/bin/qtdiag", "/bin/qdbusviewer"
             ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qttools.git", "branch": "v5.9.1" },
+                { "type": "git", "url": "git://code.qt.io/qt/qttools.git", "branch": "v5.9.2" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -170,7 +170,7 @@
             "name": "qt5-qtscript",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtscript.git", "branch": "v5.9.1" },
+                { "type": "git", "url": "git://code.qt.io/qt/qtscript.git", "branch": "v5.9.2" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -183,7 +183,7 @@
             "name": "qt5-webchannel",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtwebchannel.git", "branch": "v5.9.1" },
+                { "type": "git", "url": "git://code.qt.io/qt/qtwebchannel.git", "branch": "v5.9.2" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -221,7 +221,7 @@
                 }
             ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtwebengine.git", "branch": "v5.9.1" },
+                { "type": "git", "url": "git://code.qt.io/qt/qtwebengine.git", "branch": "v5.9.2" },
                 { "type": "patch", "path": "qtwebengine-no-udev.patch" },
                 {
                     "type": "script",
@@ -234,7 +234,7 @@
             "name": "qt5-qtsvg",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtsvg.git", "branch": "v5.9.1" },
+                { "type": "git", "url": "git://code.qt.io/qt/qtsvg.git", "branch": "v5.9.2" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -246,7 +246,7 @@
             "name": "qt5-qtx11extras",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtx11extras.git", "branch": "v5.9.1" },
+                { "type": "git", "url": "git://code.qt.io/qt/qtx11extras.git", "branch": "v5.9.2" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -258,7 +258,7 @@
             "name": "qt5-qtmultimedia",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtmultimedia.git", "branch": "v5.9.1" },
+                { "type": "git", "url": "git://code.qt.io/qt/qtmultimedia.git", "branch": "v5.9.2" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -270,7 +270,7 @@
             "name": "qt5-qtsensors",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtsensors.git", "branch": "v5.9.1" },
+                { "type": "git", "url": "git://code.qt.io/qt/qtsensors.git", "branch": "v5.9.2" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -282,7 +282,7 @@
             "name": "qt5-qtquickcontrols",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtquickcontrols.git", "branch": "v5.9.1" },
+                { "type": "git", "url": "git://code.qt.io/qt/qtquickcontrols.git", "branch": "v5.9.2" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -294,7 +294,7 @@
             "name": "qt5-qtquickcontrols2",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtquickcontrols2.git", "branch": "v5.9.1" },
+                { "type": "git", "url": "git://code.qt.io/qt/qtquickcontrols2.git", "branch": "v5.9.2" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -306,7 +306,7 @@
             "name": "qt5-qtlocation",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtlocation.git", "branch": "v5.9.1" },
+                { "type": "git", "url": "git://code.qt.io/qt/qtlocation.git", "branch": "v5.9.2" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -318,7 +318,7 @@
             "name": "qt5-qtgraphicaleffects",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtgraphicaleffects.git", "branch": "v5.9.1" },
+                { "type": "git", "url": "git://code.qt.io/qt/qtgraphicaleffects.git", "branch": "v5.9.2" },
                 {
                     "type": "script",
                     "commands": [ "qmake" ],
@@ -332,8 +332,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.1/submodules/qtxmlpatterns-opensource-src-5.9.1.tar.xz",
-                    "sha256": "b584686496ad1b1b3426d642bd705cab3fc02313b067a33d1b826a27aee29c24"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.2/submodules/qtxmlpatterns-opensource-src-5.9.2.tar.xz",
+                    "sha256": "0aa6aa83087d5754cfefaa3d119454009fc2dd5f266c1eb2ea7a434cef22d34e"
                 },
                 {
                     "type": "script",
@@ -349,7 +349,7 @@
                 {
                     "type": "git",
                     "url": "git://code.qt.io/qt/qtimageformats.git",
-                    "branch": "v5.9.1"
+                    "branch": "v5.9.2"
                 },
                 {
                     "type": "script",
@@ -365,7 +365,7 @@
                 {
                     "type": "git",
                     "url": "git://code.qt.io/qt/qtconnectivity.git",
-                    "branch": "v5.9.1"
+                    "branch": "v5.9.2"
                 },
                 {
                     "type": "script",
@@ -381,7 +381,7 @@
                 {
                     "type": "git",
                     "url": "git://code.qt.io/qt/qtwayland.git",
-                    "branch": "v5.9.1"
+                    "branch": "v5.9.2"
                 },
                 {
                     "type": "script",
@@ -397,7 +397,7 @@
                 {
                     "type": "git",
                     "url": "git://code.qt.io/qt/qtvirtualkeyboard.git",
-                    "branch": "v5.9.1"
+                    "branch": "v5.9.2"
                 },
                 {
                     "type": "script",
@@ -413,7 +413,7 @@
                 {
                     "type": "git",
                     "url": "git://code.qt.io/qt/qtserialport.git",
-                    "branch": "v5.9.1"
+                    "branch": "v5.9.2"
                 },
                 {
                     "type": "script",
