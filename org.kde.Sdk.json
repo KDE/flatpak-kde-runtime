@@ -816,6 +816,12 @@
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/flatpak-platform-plugin.git" } ]
         },
         {
+            "name": "fcitx-platforminputcontext",
+            "buildsystem": "cmake-ninja",
+            "config-opts": ["-DENABLE_LIBRARY=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
+            "sources": [ { "type": "git", "url": "https://github.com/fcitx/fcitx-qt5", "branch": "1.2.1" } ]
+        },
+        {
             "name": "os-release",
             "post-install": [
                 "mkdir -p /usr/share/runtime/lib/plugins/"
