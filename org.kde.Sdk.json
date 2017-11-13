@@ -128,6 +128,10 @@
                     "commands": [ "mv configure configure.qt" ]
                 },
                 {
+                    "type": "patch",
+                    "path": "qtbase-flatpak-portals.patch"
+                },
+                {
                     "type": "script",
                     "commands": [
                         "processed=`sed -e 's/--/-/g ; s/=/ /g' <<< $@`",
