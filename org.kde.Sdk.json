@@ -22,6 +22,20 @@
             "bundle": true,
             "autodelete": true,
             "no-autodownload": true
+        },
+        "org.kde.KStyle" : {
+            "directory": "share/runtime/lib/plugins/",
+            "subdirectories": true,
+            "no-autodownload": true,
+            "version": "5.9",
+            "merge-dirs": "styles"
+        },
+        "org.kde.PlatformTheme" : {
+            "directory": "share/runtime/lib/plugins/",
+            "subdirectories": true,
+            "no-autodownload": true,
+            "version": "5.9",
+            "merge-dirs": "platformthemes"
         }
     },
     "finish-args": [
@@ -37,18 +51,7 @@
         "--filesystem=xdg-run/dconf",
         "--filesystem=~/.config/dconf:ro",
         "--sdk=org.kde.Sdk//5.9",
-        "--runtime=org.kde.Platform//5.9",
-        "--extension=org.kde.KStyle=directory=share/runtime/lib/plugins/",
-        "--extension=org.kde.KStyle=subdirectories=true",
-        "--extension=org.kde.KStyle=no-autodownload=true",
-        "--extension=org.kde.KStyle=version=5.9",
-        "--extension=org.kde.KStyle=merge-dirs=styles",
-        "--extension=org.kde.PlatformTheme=directory=share/runtime/lib/plugins/",
-        "--extension=org.kde.PlatformTheme=subdirectories=true",
-        "--extension=org.kde.PlatformTheme=no-autodownload=true",
-        "--extension=org.kde.PlatformTheme=version=5.9",
-        "--extension=org.kde.PlatformTheme=merge-dirs=platformthemes"
-
+        "--runtime=org.kde.Platform//5.9"
     ],
     "cleanup": [ "/cache",
                  "/man",
@@ -144,18 +147,15 @@
         },
         {
             "name": "qt5-qtdeclarative",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtdeclarative.git", "branch": "v5.9.2" },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
-                }
+                { "type": "git", "url": "git://code.qt.io/qt/qtdeclarative.git", "branch": "v5.9.2" }
             ]
         },
         {
             "name": "qt5-qttools",
+            "buildsystem": "qmake",
             "cleanup-platform": [
                 "/mkspecs",
                 "/bin/assistant", "/bin/qhelpgenerator", "/bin/qcollectiongenerator", "/bin/qhelpconverter", "/bin/pixeltool", "/bin/designer",
@@ -163,37 +163,24 @@
                 "/bin/qtplugininfo", "/bin/qtdiag", "/bin/qdbusviewer"
             ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qttools.git", "branch": "v5.9.2" },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
-                }
+                { "type": "git", "url": "git://code.qt.io/qt/qttools.git", "branch": "v5.9.2" }
             ]
         },
         {
             "name": "qt5-qtscript",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtscript.git", "branch": "v5.9.2" },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
-                }
+                { "type": "git", "url": "git://code.qt.io/qt/qtscript.git", "branch": "v5.9.2" }
             ]
         },
         {
 
             "name": "qt5-webchannel",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtwebchannel.git", "branch": "v5.9.2" },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
-                }
+                { "type": "git", "url": "git://code.qt.io/qt/qtwebchannel.git", "branch": "v5.9.2" }
             ]
         },
         {
@@ -216,6 +203,7 @@
         },
         {
             "name": "qt5-qtwebengine",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "modules": [
                 {
@@ -228,202 +216,141 @@
             "sources": [
                 { "type": "git", "url": "git://code.qt.io/qt/qtwebengine.git", "branch": "v5.9.2" },
                 { "type": "patch", "path": "qtwebengine-no-udev.patch" },
-                {
-                    "type": "script",
-                    "commands": [ "qmake", "CONFIG+=release" ],
-                    "dest-filename": "configure"
-                }
             ]
         },
         {
             "name": "qt5-qtsvg",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtsvg.git", "branch": "v5.9.2" },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
-                }
+                { "type": "git", "url": "git://code.qt.io/qt/qtsvg.git", "branch": "v5.9.2" }
             ]
         },
         {
             "name": "qt5-qtx11extras",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtx11extras.git", "branch": "v5.9.2" },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
-                }
+                { "type": "git", "url": "git://code.qt.io/qt/qtx11extras.git", "branch": "v5.9.2" }
             ]
         },
         {
             "name": "qt5-qtmultimedia",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtmultimedia.git", "branch": "v5.9.2" },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
-                }
+                { "type": "git", "url": "git://code.qt.io/qt/qtmultimedia.git", "branch": "v5.9.2" }
             ]
         },
         {
             "name": "qt5-qtsensors",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtsensors.git", "branch": "v5.9.2" },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
-                }
+                { "type": "git", "url": "git://code.qt.io/qt/qtsensors.git", "branch": "v5.9.2" }
             ]
         },
         {
             "name": "qt5-qtquickcontrols",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtquickcontrols.git", "branch": "v5.9.2" },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
-                }
+                { "type": "git", "url": "git://code.qt.io/qt/qtquickcontrols.git", "branch": "v5.9.2" }
             ]
         },
         {
             "name": "qt5-qtquickcontrols2",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtquickcontrols2.git", "branch": "v5.9.2" },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
-                }
+                { "type": "git", "url": "git://code.qt.io/qt/qtquickcontrols2.git", "branch": "v5.9.2" }
             ]
         },
         {
             "name": "qt5-qtlocation",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtlocation.git", "branch": "v5.9.2" },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
-                }
+                { "type": "git", "url": "git://code.qt.io/qt/qtlocation.git", "branch": "v5.9.2" }
             ]
         },
         {
             "name": "qt5-qtgraphicaleffects",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "git://code.qt.io/qt/qtgraphicaleffects.git", "branch": "v5.9.2" },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
-                }
+                { "type": "git", "url": "git://code.qt.io/qt/qtgraphicaleffects.git", "branch": "v5.9.2" }
             ]
         },
         {
             "name": "qt5-qtxmlpatterns",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 {
                     "type": "archive",
                     "url": "http://download.qt.io/archive/qt/5.9/5.9.2/submodules/qtxmlpatterns-opensource-src-5.9.2.tar.xz",
                     "sha256": "0aa6aa83087d5754cfefaa3d119454009fc2dd5f266c1eb2ea7a434cef22d34e"
-                },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
                 }
             ]
         },
         {
             "name": "qt5-qtimageformats",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 {
                     "type": "git",
                     "url": "git://code.qt.io/qt/qtimageformats.git",
                     "branch": "v5.9.2"
-                },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
                 }
             ]
         },
         {
             "name": "qt5-connectivity",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 {
                     "type": "git",
                     "url": "git://code.qt.io/qt/qtconnectivity.git",
                     "branch": "v5.9.2"
-                },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
                 }
             ]
         },
         {
             "name": "qt5-wayland",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 {
                     "type": "git",
                     "url": "git://code.qt.io/qt/qtwayland.git",
                     "branch": "v5.9.2"
-                },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
                 }
             ]
         },
         {
             "name": "qt5-virtualkeyboard",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 {
                     "type": "git",
                     "url": "git://code.qt.io/qt/qtvirtualkeyboard.git",
                     "branch": "v5.9.2"
-                },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
                 }
             ]
         },
         {
             "name": "qt5-qtserialport",
+            "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
                 {
                     "type": "git",
                     "url": "git://code.qt.io/qt/qtserialport.git",
                     "branch": "v5.9.2"
-                },
-                {
-                    "type": "script",
-                    "commands": [ "qmake" ],
-                    "dest-filename": "configure"
                 }
             ]
         },
