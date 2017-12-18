@@ -46,7 +46,6 @@
         "--env=QML2_IMPORT_PATH=/app/lib64/qml:/app/lib/qml",
         "--env=KDE_FORK_SLAVES=1",
         "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
-        "--env=QT_QPA_PLATFORMTHEME=flatpak",
         "--filesystem=xdg-config/kdeglobals:ro",
         "--filesystem=xdg-run/dconf",
         "--filesystem=~/.config/dconf:ro",
@@ -137,7 +136,11 @@
                 },
                 {
                     "type": "patch",
-                    "path": "qtbase-flatpak-portals.patch"
+                    "path": "qtbase-flatpak-portals-filechooser.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "qtbase-flatpak-portals-services.patch"
                 },
                 {
                     "type": "script",
@@ -801,12 +804,6 @@
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib", "-DPHONON_BUILD_PHONON4QT5=ON"],
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon-gstreamer.git", "branch": "4.9" } ]
-        },
-        {
-            "name": "flatpak-platform-plugin",
-            "buildsystem": "cmake-ninja",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/flatpak-platform-plugin.git" } ]
         },
         {
             "name": "fcitx-platforminputcontext",
