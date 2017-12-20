@@ -416,6 +416,18 @@
                 }
             ]
         },
+        {
+            "name": "qt5-qtwebsockets",
+            "buildsystem": "qmake",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.3/submodules/qtwebsockets-opensource-src-5.9.3.tar.xz",
+                    "sha256": "ce069dff5b552bc6039bcf17e211d2c8837757e2194773bb54054105866111de"
+                }
+            ]
+        },
         //////////////////////////////////
         {
             "name": "libdbusmenuqt",

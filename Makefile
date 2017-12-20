@@ -28,5 +28,9 @@ deps:
 check:
 	json-glib-validate *.json
 
+%.clean: %.json
+	json-glib-validate $<
+	flatpak-builder --force-clean --arch=$(ARCH) --download-only ${EXPORT_ARGS} app $<
+
 clean:
 	rm -rf $(TMP) .flatpak-builder
