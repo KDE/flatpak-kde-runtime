@@ -22,7 +22,7 @@ Change-Id: I4de1402434ba7cbcc805eab51c30f84f8ba0c5c5
 Reviewed-by: Thiago Macieira <thiago.macieira@intel.com>
 
 diff --git a/src/gui/kernel/qguiapplication.cpp b/src/gui/kernel/qguiapplication.cpp
-index 37fbfe679d..5004582c5f 100644
+index b26567a..762e0d3 100644
 --- a/src/gui/kernel/qguiapplication.cpp
 +++ b/src/gui/kernel/qguiapplication.cpp
 @@ -53,6 +53,7 @@
@@ -49,7 +49,7 @@ index 37fbfe679d..5004582c5f 100644
  // Using aggregate initialization instead of ctor so we can have a POD global static
  #define Q_WINDOW_GEOMETRY_SPECIFICATION_INITIALIZER { Qt::TopLeftCorner, -1, -1, -1, -1 }
 
-@@ -1179,16 +1189,21 @@ static void init_platform(const QString &pluginArgument, const QString &platform
+@@ -1173,16 +1183,21 @@ static void init_platform(const QString &pluginArgument, const QString &platform
      if (!platformThemeName.isEmpty())
          themeNames.append(platformThemeName);
 
@@ -74,7 +74,7 @@ index 37fbfe679d..5004582c5f 100644
      // create a theme
      if (!QGuiApplicationPrivate::platform_theme) {
          for (const QString &themeName : qAsConst(themeNames)) {
-@@ -1199,7 +1214,7 @@ static void init_platform(const QString &pluginArgument, const QString &platform
+@@ -1193,7 +1208,7 @@ static void init_platform(const QString &pluginArgument, const QString &platform
          // No error message; not having a theme plugin is allowed.
      }
 
@@ -85,7 +85,7 @@ index 37fbfe679d..5004582c5f 100644
 
 diff --git a/src/plugins/platformthemes/flatpak/flatpak.json b/src/plugins/platformthemes/flatpak/flatpak.json
 new file mode 100644
-index 0000000000..71f834fd08
+index 0000000..71f834f
 --- /dev/null
 +++ b/src/plugins/platformthemes/flatpak/flatpak.json
 @@ -0,0 +1,3 @@
@@ -94,7 +94,7 @@ index 0000000000..71f834fd08
 +}
 diff --git a/src/plugins/platformthemes/flatpak/flatpak.pro b/src/plugins/platformthemes/flatpak/flatpak.pro
 new file mode 100644
-index 0000000000..1e5dbb7a6c
+index 0000000..1e5dbb7
 --- /dev/null
 +++ b/src/plugins/platformthemes/flatpak/flatpak.pro
 @@ -0,0 +1,17 @@
@@ -117,7 +117,7 @@ index 0000000000..1e5dbb7a6c
 +        qflatpakfiledialog.cpp
 diff --git a/src/plugins/platformthemes/flatpak/main.cpp b/src/plugins/platformthemes/flatpak/main.cpp
 new file mode 100644
-index 0000000000..7888eed8b2
+index 0000000..7888eed
 --- /dev/null
 +++ b/src/plugins/platformthemes/flatpak/main.cpp
 @@ -0,0 +1,65 @@
@@ -188,10 +188,10 @@ index 0000000000..7888eed8b2
 +#include "main.moc"
 diff --git a/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp b/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
 new file mode 100644
-index 0000000000..0dadb9a2f1
+index 0000000..1a24015
 --- /dev/null
 +++ b/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
-@@ -0,0 +1,347 @@
+@@ -0,0 +1,352 @@
 +/****************************************************************************
 +**
 +** Copyright (C) 2017 Red Hat, Inc
@@ -341,61 +341,7 @@ index 0000000000..0dadb9a2f1
 +    setDirectory(options()->initialDirectory());
 +}
 +
-+bool QFlatpakFileDialog::defaultNameFilterDisables() const
-+{
-+    return false;
-+}
-+
-+void QFlatpakFileDialog::setDirectory(const QUrl &directory)
-+{
-+    Q_D(QFlatpakFileDialog);
-+
-+    d->directory = directory.path();
-+}
-+
-+QUrl QFlatpakFileDialog::directory() const
-+{
-+    Q_D(const QFlatpakFileDialog);
-+
-+    return d->directory;
-+}
-+
-+void QFlatpakFileDialog::selectFile(const QUrl &filename)
-+{
-+    Q_D(QFlatpakFileDialog);
-+
-+    d->selectedFiles << filename.path();
-+}
-+
-+QList<QUrl> QFlatpakFileDialog::selectedFiles() const
-+{
-+    Q_D(const QFlatpakFileDialog);
-+
-+    QList<QUrl> files;
-+    for (const QString &file : d->selectedFiles) {
-+        files << QUrl(file);
-+    }
-+    return files;
-+}
-+
-+void QFlatpakFileDialog::setFilter()
-+{
-+    // TODO
-+}
-+
-+void QFlatpakFileDialog::selectNameFilter(const QString &filter)
-+{
-+    Q_UNUSED(filter);
-+    // TODO
-+}
-+
-+QString QFlatpakFileDialog::selectedNameFilter() const
-+{
-+    // TODO
-+    return QString();
-+}
-+
-+void QFlatpakFileDialog::exec()
++void QFlatpakFileDialog::openPortal()
 +{
 +    Q_D(const QFlatpakFileDialog);
 +
@@ -499,7 +445,64 @@ index 0000000000..0dadb9a2f1
 +                                                  SLOT(gotResponse(uint,QVariantMap)));
 +        }
 +    });
++}
 +
++bool QFlatpakFileDialog::defaultNameFilterDisables() const
++{
++    return false;
++}
++
++void QFlatpakFileDialog::setDirectory(const QUrl &directory)
++{
++    Q_D(QFlatpakFileDialog);
++
++    d->directory = directory.path();
++}
++
++QUrl QFlatpakFileDialog::directory() const
++{
++    Q_D(const QFlatpakFileDialog);
++
++    return d->directory;
++}
++
++void QFlatpakFileDialog::selectFile(const QUrl &filename)
++{
++    Q_D(QFlatpakFileDialog);
++
++    d->selectedFiles << filename.path();
++}
++
++QList<QUrl> QFlatpakFileDialog::selectedFiles() const
++{
++    Q_D(const QFlatpakFileDialog);
++
++    QList<QUrl> files;
++    for (const QString &file : d->selectedFiles) {
++        files << QUrl(file);
++    }
++    return files;
++}
++
++void QFlatpakFileDialog::setFilter()
++{
++    // TODO
++}
++
++void QFlatpakFileDialog::selectNameFilter(const QString &filter)
++{
++    Q_UNUSED(filter);
++    // TODO
++}
++
++QString QFlatpakFileDialog::selectedNameFilter() const
++{
++    // TODO
++    return QString();
++}
++
++void QFlatpakFileDialog::exec()
++{
 +    // HACK we have to avoid returning until we emit that the dialog was accepted or rejected
 +    QEventLoop loop;
 +    loop.connect(this, SIGNAL(accept()), SLOT(quit()));
@@ -521,6 +524,8 @@ index 0000000000..0dadb9a2f1
 +    d->modal = windowModality != Qt::NonModal;
 +    d->winId = parent ? parent->winId() : 0;
 +
++    openPortal();
++
 +    return true;
 +}
 +
@@ -541,10 +546,10 @@ index 0000000000..0dadb9a2f1
 +QT_END_NAMESPACE
 diff --git a/src/plugins/platformthemes/flatpak/qflatpakfiledialog_p.h b/src/plugins/platformthemes/flatpak/qflatpakfiledialog_p.h
 new file mode 100644
-index 0000000000..256f35f7a6
+index 0000000..f3e195f
 --- /dev/null
 +++ b/src/plugins/platformthemes/flatpak/qflatpakfiledialog_p.h
-@@ -0,0 +1,105 @@
+@@ -0,0 +1,106 @@
 +/****************************************************************************
 +**
 +** Copyright (C) 2017 Red Hat, Inc
@@ -637,6 +642,7 @@ index 0000000000..256f35f7a6
 +
 +private:
 +    void initializeDialog();
++    void openPortal();
 +
 +    QScopedPointer<QFlatpakFileDialogPrivate> d_ptr;
 +};
@@ -652,7 +658,7 @@ index 0000000000..256f35f7a6
 +
 diff --git a/src/plugins/platformthemes/flatpak/qflatpaktheme.cpp b/src/plugins/platformthemes/flatpak/qflatpaktheme.cpp
 new file mode 100644
-index 0000000000..04abd707e1
+index 0000000..04abd70
 --- /dev/null
 +++ b/src/plugins/platformthemes/flatpak/qflatpaktheme.cpp
 @@ -0,0 +1,254 @@
@@ -912,7 +918,7 @@ index 0000000000..04abd707e1
 +QT_END_NAMESPACE
 diff --git a/src/plugins/platformthemes/flatpak/qflatpaktheme.h b/src/plugins/platformthemes/flatpak/qflatpaktheme.h
 new file mode 100644
-index 0000000000..fcaac5b673
+index 0000000..fcaac5b
 --- /dev/null
 +++ b/src/plugins/platformthemes/flatpak/qflatpaktheme.h
 @@ -0,0 +1,90 @@
@@ -1007,7 +1013,7 @@ index 0000000000..fcaac5b673
 +
 +#endif // QFLATPAKTHEME_H
 diff --git a/src/plugins/platformthemes/platformthemes.pro b/src/plugins/platformthemes/platformthemes.pro
-index 0e2812bed3..ebf92ba9d5 100644
+index 0e2812b..ebf92ba 100644
 --- a/src/plugins/platformthemes/platformthemes.pro
 +++ b/src/plugins/platformthemes/platformthemes.pro
 @@ -1,4 +1,6 @@
@@ -1017,3 +1023,4 @@ index 0e2812bed3..ebf92ba9d5 100644
 +qtConfig(dbus): SUBDIRS += flatpak
 +
  qtHaveModule(widgets):qtConfig(gtk3): SUBDIRS += gtk3
+
