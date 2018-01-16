@@ -52,15 +52,11 @@
         "--sdk=org.kde.Sdk//5.9",
         "--runtime=org.kde.Platform//5.9"
     ],
-    "cleanup": [ "/cache",
-                 "/man",
+    "cleanup": [ "/man",
                  "/share/man",
                  "/lib/systemd",
                  "*.la"],
-    "cleanup-commands": [ "touch -d @0 /usr/share/fonts",
-                          "touch -d @0 /usr/share/fonts/*",
-                          "fc-cache -fs"
-                        ],
+    "cleanup-commands": [ "/usr/libexec/freedesktop-post.sh" ],
     "cleanup-platform": [ "/share/runtime/docs",
                           "/include",
                           "/share/aclocal",
@@ -68,11 +64,7 @@
                           "/lib/pkgconfig",
                           "*.a"
                         ],
-    "cleanup-platform-commands": [ "touch -d @0 /usr/share/fonts",
-                                   "touch -d @0 /usr/share/fonts/*",
-                                   "fc-cache -fs",
-                                   "ldconfig -C /usr/etc/ld.so.cache"
-                                 ],
+    "cleanup-platform-commands": [ "/usr/libexec/freedesktop-post.sh" ],
     "build-options" : {
         "cflags": "-O2 -g -fstack-protector-strong -D_FORTIFY_SOURCE=2",
         "cxxflags": "-O2 -g -fstack-protector-strong -D_FORTIFY_SOURCE=2",
