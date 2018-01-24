@@ -15,15 +15,15 @@ $(REPO)/config:
 	ostree init --mode=archive-z2 --repo=$(REPO)
 
 remotes:
-	flatpak remote-add $(ARGS) gnome --from https://sdk.gnome.org/gnome.flatpakrepo --if-not-exists
+	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 deps:
-	flatpak install --arch=$(ARCH) $(ARGS) gnome org.freedesktop.Platform.Locale 1.6; true
-	flatpak install --arch=$(ARCH) $(ARGS) gnome org.freedesktop.Sdk.Locale 1.6; true
-	flatpak install --arch=$(ARCH) $(ARGS) gnome org.freedesktop.Platform 1.6; true
-	flatpak install --arch=$(ARCH) $(ARGS) gnome org.freedesktop.Sdk 1.6; true
-	flatpak install --arch=$(ARCH) $(ARGS) gnome org.freedesktop.Sdk.Debug 1.6; true
-	flatpak install --arch=$(ARCH) $(ARGS) gnome org.freedesktop.Sdk.Docs 1.6; true
+	flatpak install --arch=$(ARCH) $(ARGS) flathub org.freedesktop.Platform.Locale 1.6; true
+	flatpak install --arch=$(ARCH) $(ARGS) flathub org.freedesktop.Sdk.Locale 1.6; true
+	flatpak install --arch=$(ARCH) $(ARGS) flathub org.freedesktop.Platform 1.6; true
+	flatpak install --arch=$(ARCH) $(ARGS) flathub org.freedesktop.Sdk 1.6; true
+	flatpak install --arch=$(ARCH) $(ARGS) flathub org.freedesktop.Sdk.Debug 1.6; true
+	flatpak install --arch=$(ARCH) $(ARGS) flathub org.freedesktop.Sdk.Docs 1.6; true
 
 check:
 	json-glib-validate *.json
