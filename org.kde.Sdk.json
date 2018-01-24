@@ -14,7 +14,7 @@
         "org.freedesktop.Platform.GStreamer",
         "org.freedesktop.Platform.Icontheme",
         "org.freedesktop.Sdk.Extension",
-        "org.freedesktop.Platform.VAAPI.Intel"
+        "org.freedesktop.Platform.VAAPI.Intel",
         "org.freedesktop.Platform.ffmpeg",
         "org.gtk.Gtk3theme"
     ],
