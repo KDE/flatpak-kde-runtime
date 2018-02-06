@@ -203,13 +203,13 @@
         {
             "name": "pciutils",
             "no-autogen": true,
-            "make-args": ["SHARED=yes", "ZLIB=no", "PREFIX=/usr"],
+            "make-args": ["SHARED=no", "ZLIB=no", "PREFIX=/usr"],
             "post-install": [
                 "make install-pcilib",
                 "make install-lib"
             ],
             "sources": [
-                { "type": "git", "url": "https://kernel.googlesource.com/pub/scm/utils/pciutils/pciutils", "branch": "v3.5.2" },
+                { "type": "git", "url": "https://kernel.googlesource.com/pub/scm/utils/pciutils/pciutils", "branch": "v3.5.6" },
                 {
                     "type": "shell",
                     "commands": [
