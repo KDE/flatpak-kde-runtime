@@ -29,14 +29,14 @@
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
-            "version": "5.9",
+            "version": "5.10",
             "merge-dirs": "styles"
         },
         "org.kde.PlatformTheme" : {
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
-            "version": "5.9",
+            "version": "5.10",
             "merge-dirs": "platformthemes"
         }
     },
@@ -51,8 +51,8 @@
         "--filesystem=xdg-config/kdeglobals:ro",
         "--filesystem=xdg-run/dconf",
         "--filesystem=~/.config/dconf:ro",
-        "--sdk=org.kde.Sdk//5.9",
-        "--runtime=org.kde.Platform//5.9"
+        "--sdk=org.kde.Sdk//5.10",
+        "--runtime=org.kde.Platform//5.10"
     ],
     "cleanup": [ "/man",
                  "/share/man",
