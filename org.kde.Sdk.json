@@ -29,6 +29,7 @@
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
+            "download-if": "active-gtk-theme",
             "version": "5.10",
             "merge-dirs": "styles"
         },
@@ -37,6 +38,7 @@
             "subdirectories": true,
             "no-autodownload": true,
             "version": "5.10",
+            "download-if": "on-gnome-platform",
             "merge-dirs": "platformthemes"
         }
     },
