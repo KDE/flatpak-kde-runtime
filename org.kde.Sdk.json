@@ -130,11 +130,11 @@
                 },
                 {
                     "type": "patch",
-                    "path": "qtbase-flatpak-portals-filechooser.patch"
+                    "path": "patch/qtbase-flatpak-portals-filechooser.patch"
                 },
                 {
                     "type": "patch",
-                    "path": "qtbase-flatpak-portals-services.patch"
+                    "path": "patch/qtbase-flatpak-portals-services.patch"
                 },
                 {
                     "type": "script",
@@ -238,7 +238,7 @@
                 },
                 {
                     "type": "patch",
-                    "path": "qtwebengine-no-udev.patch"
+                    "path": "patch/qtwebengine-no-udev.patch"
                 }
             ]
         },
@@ -628,7 +628,7 @@
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib"],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/solid.git", "branch": "v5.43.0" },
-                { "type": "patch", "path": "solid-no-udev.patch" }
+                { "type": "patch", "path": "patch/solid-no-udev.patch" }
             ]
         },
         {
