@@ -383,7 +383,8 @@
                     "type": "archive",
                     "url": "http://download.qt.io/archive/qt/5.9/5.9.3/submodules/qtwayland-opensource-src-5.9.3.tar.xz",
                     "sha256": "308e8c44b0ad13520868365d72786d3e3f0b384da99ee72ba543cd866f655f6d"
-                }
+                },
+                { "type": "patch", "path": "patch/qtwayland-compose.patch" }
             ]
         },
         {
