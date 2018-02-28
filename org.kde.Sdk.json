@@ -30,14 +30,16 @@
             "subdirectories": true,
             "no-autodownload": true,
             "version": "5.9",
-            "merge-dirs": "styles"
+            "merge-dirs": "styles",
+            "download-if": "active-gtk-theme"
         },
         "org.kde.PlatformTheme" : {
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
             "version": "5.9",
-            "merge-dirs": "platformthemes"
+            "merge-dirs": "platformthemes",
+            "download-if": "on-gnome-platform"
         }
     },
     "finish-args": [
