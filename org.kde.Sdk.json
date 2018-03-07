@@ -426,6 +426,18 @@
                 }
             ]
         },
+        {
+            "name": "qt5-qtcharts",
+            "buildsystem": "qmake",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.4/submodules/qtcharts-opensource-src-5.9.4.tar.xz",
+                    "sha256": "75f72983fde6720a093d5f065d33f47e77a4bd2188ae9d41ebb9a4fcc459d3e7"
+                }
+            ]
+        },
         //////////////////////////////////
         {
             "name": "libdbusmenuqt",
