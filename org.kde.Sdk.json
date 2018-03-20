@@ -53,6 +53,7 @@
         "--filesystem=xdg-config/kdeglobals:ro",
         "--filesystem=xdg-run/dconf",
         "--filesystem=~/.config/dconf:ro",
+        "--talk-name=com.canonical.AppMenu.Registrar",
         "--sdk=org.kde.Sdk//5.9",
         "--runtime=org.kde.Platform//5.9"
     ],
