@@ -1,4 +1,4 @@
-From 2b4f1466fa868db8177909ffbccd458048eae322 Mon Sep 17 00:00:00 2001
+From bd94548f5185a98395c8935ce1edd377ac723743 Mon Sep 17 00:00:00 2001
 From: Jan Grulich <jgrulich@redhat.com>
 Date: Thu, 5 Apr 2018 10:47:14 +0200
 Subject: Avoid multiple connections to same response in FileChooser portal
@@ -13,15 +13,23 @@ where you can specify token to be used when creating Request objects.
 Change-Id: Ie6569700c48e05fcefa4d5c22c921410f87ea7ae
 
 diff --git a/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp b/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
-index 1a24015ce5..aedc2f062a 100644
+index 1a24015ce5..186084abd4 100644
 --- a/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
 +++ b/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
+@@ -51,6 +51,7 @@
+ #include <QMetaType>
+ #include <QMimeType>
+ #include <QMimeDatabase>
++#include <QRandomGenerator>
+ #include <QWindow>
+ 
+ QT_BEGIN_NAMESPACE
 @@ -231,6 +232,8 @@ void QFlatpakFileDialog::openPortal()
      if (!filterList.isEmpty())
          options.insert(QLatin1String("filters"), QVariant::fromValue(filterList));
-
-+    options.insert(QLatin1String("handle_token"), QStringLiteral("qt%1").arg(qrand()));
+ 
++    options.insert(QLatin1String("handle_token"), QStringLiteral("qt%1").arg(QRandomGenerator::global()->generate()));
 +
      // TODO choices a(ssa(ss)s)
      // List of serialized combo boxes to add to the file chooser.
-
+ 
