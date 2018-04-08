@@ -1,0 +1,27 @@
+From 2b4f1466fa868db8177909ffbccd458048eae322 Mon Sep 17 00:00:00 2001
+From: Jan Grulich <jgrulich@redhat.com>
+Date: Thu, 5 Apr 2018 10:47:14 +0200
+Subject: Avoid multiple connections to same response in FileChooser portal
+
+When not specified, xdg-desktop-portal keeps using same Request object
+over and over when returning response, causing multiple connections
+to same slot on same DBus object. While this is not problem when using
+FileDialog just once, it is a problem for QML FileDialog which is
+usually reused. For this purpose x-d-p provides handle_token option
+where you can specify token to be used when creating Request objects.
+
+Change-Id: Ie6569700c48e05fcefa4d5c22c921410f87ea7ae
+
+diff --git a/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp b/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
+index 1a24015ce5..aedc2f062a 100644
+--- a/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
++++ b/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
+@@ -231,6 +232,8 @@ void QFlatpakFileDialog::openPortal()
+     if (!filterList.isEmpty())
+         options.insert(QLatin1String("filters"), QVariant::fromValue(filterList));
+
++    options.insert(QLatin1String("handle_token"), QStringLiteral("qt%1").arg(qrand()));
++
+     // TODO choices a(ssa(ss)s)
+     // List of serialized combo boxes to add to the file chooser.
+
