@@ -144,6 +144,10 @@
                     "path": "patch/qtbase-flatpak-portals-filechooser-avoid-multiple-connections.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "patch/qtbase-portal-openuri.patch"
+                },
+                {
                     "type": "script",
                     "commands": [
                         "processed=`sed -e 's/--/-/g ; s/=/ /g' <<< $@`",
