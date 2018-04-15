@@ -395,7 +395,8 @@
                     "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtwayland-everywhere-src-5.10.1.tar.xz",
                     "sha256": "f5a7643a5ebcdc50d02b293191e675f387f67dc360c27bf6f94345372fba6356"
                 },
-                { "type": "patch", "path": "patch/qtwayland-compose.patch" }
+                { "type": "patch", "path": "patch/qtwayland-compose.patch" },
+                { "type": "patch", "path": "patch/qtwayland-connectscreen.patch" }
             ]
         },
         {
