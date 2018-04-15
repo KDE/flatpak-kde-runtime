@@ -395,8 +395,7 @@
                     "url": "http://download.qt.io/archive/qt/5.9/5.9.5/submodules/qtwayland-opensource-src-5.9.5.tar.xz",
                     "sha256": "c4224196f2866230a4a177a6fc74c494e4db8624de1ca4d568371521f294e247"
                 },
-                { "type": "patch", "path": "patch/qtwayland-compose.patch" },
-                { "type": "patch", "path": "patch/qtwayland-connectscreen.patch" }
+                { "type": "patch", "path": "patch/qtwayland-compose.patch" }
             ]
         },
         {
