@@ -2,7 +2,7 @@
     "build-runtime": true,
     "id": "org.kde.Sdk",
     "id-platform": "org.kde.Platform",
-    "branch": "5.10",
+    "branch": "5.11",
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
     "runtime-version": "1.6",
@@ -29,7 +29,7 @@
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
-            "version": "5.10",
+            "version": "5.11",
             "merge-dirs": "styles",
             "download-if": "active-gtk-theme"
         },
@@ -37,7 +37,7 @@
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
-            "version": "5.10",
+            "version": "5.11",
             "merge-dirs": "platformthemes",
             "download-if": "on-gnome-platform"
         }
@@ -54,8 +54,8 @@
         "--filesystem=xdg-run/dconf",
         "--filesystem=~/.config/dconf:ro",
         "--talk-name=com.canonical.AppMenu.Registrar",
-        "--sdk=org.kde.Sdk//5.10",
-        "--runtime=org.kde.Platform//5.10"
+        "--sdk=org.kde.Sdk//5.11",
+        "--runtime=org.kde.Platform//5.11"
     ],
     "cleanup": [ "/man",
                  "/share/man",
@@ -79,6 +79,20 @@
         }
     },
     "modules": [
+        {
+            "name": "harfbuzz",
+            "config-opts": ["--disable-static",
+                            "--with-gobject",
+                            "--with-graphite2"
+                           ],
+            "sources": [
+                 {
+                     "type": "archive",
+                     "url": "https://www.freedesktop.org/software/harfbuzz/release/harfbuzz-1.7.6.tar.bz2",
+                     "sha256": "da7bed39134826cd51e57c29f1dfbe342ccedb4f4773b1c951ff05ff383e2e9b"
+                 }
+            ]
+        },
         {
             "name": "qt5-qtbase",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
@@ -124,24 +138,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtbase-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "d8660e189caa5da5142d5894d328b61a4d3ee9750b76d61ad74e4eee8765a969"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtbase-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "ed6e46db84f7d34923ab4eae165c63e05ab3cfa9d19a73d3f57b4e7bfd41de66"
                 },
                 {
                     "type": "shell",
                     "commands": [ "mv configure configure.qt" ]
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtbase-flatpak-portals-filechooser.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtbase-flatpak-portals-services.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtbase-flatpak-portals-filechooser-avoid-multiple-connections.patch"
                 },
                 {
                     "type": "patch",
@@ -164,8 +166,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtdeclarative-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "3af9ed51bce5b5c6f04c4a67a6008f98765ccde897c43fff670621ab70789553"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtdeclarative-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "eea9378b17b1c16d3b5235629b9128349bf98cba7d9c61122653d976b25f57c0"
                 }
             ]
         },
@@ -181,8 +183,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qttools-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "f1ea441e5fe138756e6de3b60ab7d8d3051799eabe85a9408c995dfd4d048a53"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qttools-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "9d93ca84272cdf9031913cb3a6876716aa8a174e91693839f0de0ea3dd3a67d9"
                 }
             ]
         },
@@ -193,8 +195,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtscript-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "e0618af7cb1f1f30d292c04cf484e3507cf6f4815f79870e35d2b0ce7ac9532d"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtscript-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "25926ae733b31baac7af51f489ad26570d4f4f02ad4892a4a82babae5f5168c5"
                 }
             ]
         },
@@ -206,26 +208,20 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtwebchannel-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "c22c449fecb052597d12f8dd59498db39767037f9098123f3defc04eb20a3764"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtwebchannel-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "b0761a3b8260bae7f76bf26626ccd1d4ee92541d7c5d53d1958c88b9f92dca15"
                 }
             ]
         },
         {
-            "name": "pciutils",
-            "no-autogen": true,
-            "make-args": ["SHARED=no", "ZLIB=no", "PREFIX=/usr"],
-            "post-install": [
-                "make install-pcilib",
-                "make install-lib"
-            ],
+            "name": "qt5-qtlocation",
+            "buildsystem": "qmake",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
             "sources": [
-                { "type": "git", "url": "https://kernel.googlesource.com/pub/scm/utils/pciutils/pciutils", "branch": "v3.5.6" },
                 {
-                    "type": "shell",
-                    "commands": [
-                        "sed -i 's@PREFIX=/usr/local@PREFIX=/usr@' Makefile"
-                    ]
+                    "type": "archive",
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtlocation-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "28f6911e3f00173005c0348c0b59f45e59ccda7feae724b1a6b8929021968c1c"
                 }
             ]
         },
@@ -234,6 +230,24 @@
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
             "modules": [
+                {
+                    "name": "pciutils",
+                    "no-autogen": true,
+                    "make-args": ["SHARED=no", "ZLIB=no", "PREFIX=/usr"],
+                    "post-install": [
+                        "make install-pcilib",
+                        "make install-lib"
+                    ],
+                    "sources": [
+                        { "type": "git", "url": "https://kernel.googlesource.com/pub/scm/utils/pciutils/pciutils", "branch": "v3.5.6" },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "sed -i 's@PREFIX=/usr/local@PREFIX=/usr@' Makefile"
+                            ]
+                        }
+                    ]
+                },
                 {
                     "name": "opus",
                     "sources": [
@@ -244,8 +258,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtwebengine-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "12644f8d2ba8354a2a533d5a7f3f5139c6ff168c2f51aa3e21b701db6dbc01de"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtwebengine-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "5dd754d603c66d36e93b96b4f7c24a6e6269ae6a1682a524b8baa664d5c44b45"
                 },
                 {
                     "type": "patch",
@@ -260,8 +274,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtsvg-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "00e00c04abcc8363cf7d94ca8b16af61840995a4af23685d49fa4ccafa1c7f5a"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtsvg-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "4b8efe60678a37c731356cc146886360e5852a1cd4a8ba6339fb950a2e7d1f54"
                 }
             ]
         },
@@ -272,8 +286,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtx11extras-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "c38a371fd50b2da976ed809230678284f029cefb02d240253dcbb3d575dc97b4"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtx11extras-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "116690a9b4e14267d8be0a252dae3c7a807a8b31b9c831dfb51735c683e96b8f"
                 }
             ]
         },
@@ -284,8 +298,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtmultimedia-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "a1fa98015ee5a6b81f2d337abc98d8b297c6718f7714a1f13fccfd2934c23649"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtmultimedia-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "ef5328f111ed2d27eff16e50febb66d1480e99f6a6df703f2ab8c650040f9d3c"
                 }
             ]
         },
@@ -296,8 +310,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtsensors-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "bb0df76c0e53cf2b39d10dbf0964706a264413aae74a4596119143ab4d165c96"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtsensors-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "0fc4e6d6b3281610551226cb6ffd9ef4e61b2f3bd0b7b1302135b03b5b16e2ab"
                 }
             ]
         },
@@ -308,8 +322,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtquickcontrols-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "d231a1993dc6a3f0dbc60a21d01fc0be15b0c26e881bd0631573952ea61682b7"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtquickcontrols-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "26627d592193094c65f842d5dd20c771d77c554591b9375659b03945dc8af107"
                 }
             ]
         },
@@ -320,20 +334,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtquickcontrols2-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "5dc64a1b901e418b76fd3bf65dfa87a0cb11338741fb8970211c1df6df0e604a"
-                }
-            ]
-        },
-        {
-            "name": "qt5-qtlocation",
-            "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtlocation-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "5e5cc05517c701a2c8ebba1fbe3ddff2b6b90d5aa554d307b1c477fe0cfd72c9"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtquickcontrols2-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "feac87e9a6ecff47bd8c18baffb93f4cea9ebb86014f817bfafe62da88454ac3"
                 }
             ]
         },
@@ -344,8 +346,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtgraphicaleffects-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "3f3b0631b579630bf58e99f3ca0d8dfdb6a44153c63cf90ac9e07041b4b1847f"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtgraphicaleffects-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "727846c9d8985be402f573ea28995f4a2bc13847a6d9deeca32d1e1e0421f977"
                 }
             ]
         },
@@ -356,8 +358,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtxmlpatterns-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "3cdef59ce96a796606e5adc5756c63c8607fb29b281fddb38acee3e674d5e9fe"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtxmlpatterns-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "19a378cba26e243ebb97c29a9ec02499c5eb49f2672fbcc8415e1b70d415d28e"
                 }
             ]
         },
@@ -368,8 +370,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtimageformats-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "2804baa2779eae015096820e233d7f86bb7fde9853b7c9150a321a453422a283"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtimageformats-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "58406fef507a9f1e1cd97c0834b94d0a6484e19f5dea796a3b7b58fafff11e70"
                 }
             ]
         },
@@ -380,8 +382,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtconnectivity-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "652821dc6819658ec4bc1a6bf149fd7a61008748ff4745b54f038ccf276d3ec9"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtconnectivity-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "cd2e53b1a7bee098b651cbedcecf0717036ae4bec5de0daf3a0038a50b2e1873"
                 }
             ]
         },
@@ -392,11 +394,9 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtwayland-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "f5a7643a5ebcdc50d02b293191e675f387f67dc360c27bf6f94345372fba6356"
-                },
-                { "type": "patch", "path": "patch/qtwayland-compose.patch" },
-                { "type": "patch", "path": "patch/qtwayland-connectscreen.patch" }
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtwayland-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "68814e8f207f3a90cae29ae49ce2c1f4bf9d06709a7a7962adf23120f1644127"
+                }
             ]
         },
         {
@@ -406,8 +406,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtvirtualkeyboard-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "4319f90e68a571974d03f39507dde548971412e31f971081ca7eaf388187d52e"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtvirtualkeyboard-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "914de601a81b32acdddc572d3ade41129b018f3693d9cecdc5dad32424913cbd"
                 }
             ]
         },
@@ -418,8 +418,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtserialport-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "08e4cb13bbf165eb99857301f3cffe280a4946ff58a34ccc542ad1f790194a9e"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtserialport-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "85eef7533a18fce59551fe26bb0055dd290d5d33cbb313fcb8e5daf8b40c6eb1"
                 }
             ]
         },
@@ -430,8 +430,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtwebsockets-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "6ecf790955ffe42dce731e10557f4ba625e359e867953d73f7fb453c0bad53ea"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtwebsockets-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "7d5845805bec42de121ecc063ee40ac1438975adcec395c6af97cfd5bb3539b7"
                 }
             ]
         },
@@ -442,8 +442,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.10/5.10.1/submodules/qtcharts-everywhere-src-5.10.1.tar.xz",
-                    "sha256": "4f0d577bf73dd2bbb2765c2cfb493a2d68790fc2c64f42544d31dba806321ec9"
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.0/submodules/qtcharts-everywhere-src-5.11.0.tar.xz",
+                    "sha256": "c46e12beeaabf731ce918c7508d8ab62ae3b675870992faf36878268da4ee351"
                 }
             ]
         },
@@ -628,7 +628,7 @@
             "name": "phonon",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_INSTALL_LIBDIR=lib", "-DPHONON_BUILD_PHONON4QT5=ON"],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon.git", "branch": "4.9" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon.git", "branch": "v4.10.1" } ]
         },
         {
             "name": "knotifications",
