@@ -1,0 +1,200 @@
+From 528c5a461684d03e59cc01769e24ab115f030c5a Mon Sep 17 00:00:00 2001
+From: Jan Grulich <jgrulich@redhat.com>
+Date: Wed, 23 May 2018 09:06:46 +0200
+Subject: Open native file dialog inside sandbox when opening directories
+
+Flatpak FileChooser portal doesn't support opening and exporting
+directories to the sandbox as it's not technically possible. Files are
+simply exported through document-portal, but directories are a different
+story. We have to, in case we want to open a directory, use native file
+dialog provided by platform theme we have loaded into flatpak platform
+theme. Applications which need to open directories to be able to work,
+like IDEs, music players, will have enabled access ho host's filesystem
+anyway so it's fine to open a file dialog inside sandbox.
+
+[ChangeLog][Linux] QFileDialog will use the native dialogs provided by
+the platform theme instead of trying to use Flatpak portal to select
+directories.
+
+Change-Id: I0716193bb9878aa621b8ca88506f87c72f690887
+
+diff --git a/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp b/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
+index 186084abd4..d352294972 100644
+--- a/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
++++ b/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
+@@ -101,6 +101,10 @@ const QDBusArgument &operator >>(const QDBusArgument &arg, QFlatpakFileDialog::F
+ class QFlatpakFileDialogPrivate
+ {
+ public:
++    QFlatpakFileDialogPrivate(QPlatformFileDialogHelper *nativeFileDialog)
++        : nativeFileDialog(nativeFileDialog)
++    { }
++
+     WId winId = 0;
+     bool modal = false;
+     bool multipleFiles = false;
+@@ -111,12 +115,19 @@ public:
+     QStringList nameFilters;
+     QStringList mimeTypesFilters;
+     QStringList selectedFiles;
++    QPlatformFileDialogHelper *nativeFileDialog = nullptr;
+ };
+ 
+-QFlatpakFileDialog::QFlatpakFileDialog()
++QFlatpakFileDialog::QFlatpakFileDialog(QPlatformFileDialogHelper *nativeFileDialog)
+     : QPlatformFileDialogHelper()
+-    , d_ptr(new QFlatpakFileDialogPrivate)
++    , d_ptr(new QFlatpakFileDialogPrivate(nativeFileDialog))
+ {
++    Q_D(QFlatpakFileDialog);
++
++    if (d->nativeFileDialog) {
++        connect(d->nativeFileDialog, SIGNAL(accept()), this, SIGNAL(accept()));
++        connect(d->nativeFileDialog, SIGNAL(reject()), this, SIGNAL(reject()));
++    }
+ }
+ 
+ QFlatpakFileDialog::~QFlatpakFileDialog()
+@@ -127,6 +138,9 @@ void QFlatpakFileDialog::initializeDialog()
+ {
+     Q_D(QFlatpakFileDialog);
+ 
++    if (d->nativeFileDialog)
++        d->nativeFileDialog->setOptions(options());
++
+     if (options()->fileMode() == QFileDialogOptions::ExistingFiles)
+         d->multipleFiles = true;
+ 
+@@ -265,6 +279,9 @@ void QFlatpakFileDialog::setDirectory(const QUrl &directory)
+ {
+     Q_D(QFlatpakFileDialog);
+ 
++    if (d->nativeFileDialog)
++        d->nativeFileDialog->setDirectory(directory);
++
+     d->directory = directory.path();
+ }
+ 
+@@ -272,6 +289,9 @@ QUrl QFlatpakFileDialog::directory() const
+ {
+     Q_D(const QFlatpakFileDialog);
+ 
++    if (d->nativeFileDialog && options()->fileMode() == QFileDialogOptions::Directory)
++        return d->nativeFileDialog->directory();
++
+     return d->directory;
+ }
+ 
+@@ -279,6 +299,9 @@ void QFlatpakFileDialog::selectFile(const QUrl &filename)
+ {
+     Q_D(QFlatpakFileDialog);
+ 
++    if (d->nativeFileDialog)
++        d->nativeFileDialog->selectFile(filename);
++
+     d->selectedFiles << filename.path();
+ }
+ 
+@@ -286,6 +309,9 @@ QList<QUrl> QFlatpakFileDialog::selectedFiles() const
+ {
+     Q_D(const QFlatpakFileDialog);
+ 
++    if (d->nativeFileDialog && options()->fileMode() == QFileDialogOptions::Directory)
++        return d->nativeFileDialog->selectedFiles();
++
+     QList<QUrl> files;
+     for (const QString &file : d->selectedFiles) {
+         files << QUrl(file);
+@@ -295,13 +321,18 @@ QList<QUrl> QFlatpakFileDialog::selectedFiles() const
+ 
+ void QFlatpakFileDialog::setFilter()
+ {
+-    // TODO
++    Q_D(QFlatpakFileDialog);
++
++    if (d->nativeFileDialog)
++        d->nativeFileDialog->setFilter();
+ }
+ 
+ void QFlatpakFileDialog::selectNameFilter(const QString &filter)
+ {
+-    Q_UNUSED(filter);
+-    // TODO
++    Q_D(QFlatpakFileDialog);
++
++    if (d->nativeFileDialog)
++        d->nativeFileDialog->selectNameFilter(filter);
+ }
+ 
+ QString QFlatpakFileDialog::selectedNameFilter() const
+@@ -312,6 +343,13 @@ QString QFlatpakFileDialog::selectedNameFilter() const
+ 
+ void QFlatpakFileDialog::exec()
+ {
++    Q_D(QFlatpakFileDialog);
++
++    if (d->nativeFileDialog && options()->fileMode() == QFileDialogOptions::Directory) {
++        d->nativeFileDialog->exec();
++        return;
++    }
++
+     // HACK we have to avoid returning until we emit that the dialog was accepted or rejected
+     QEventLoop loop;
+     loop.connect(this, SIGNAL(accept()), SLOT(quit()));
+@@ -321,18 +359,24 @@ void QFlatpakFileDialog::exec()
+ 
+ void QFlatpakFileDialog::hide()
+ {
++    Q_D(QFlatpakFileDialog);
++
++    if (d->nativeFileDialog)
++        d->nativeFileDialog->hide();
+ }
+ 
+ bool QFlatpakFileDialog::show(Qt::WindowFlags windowFlags, Qt::WindowModality windowModality, QWindow *parent)
+ {
+     Q_D(QFlatpakFileDialog);
+-    Q_UNUSED(windowFlags);
+ 
+     initializeDialog();
+ 
+     d->modal = windowModality != Qt::NonModal;
+     d->winId = parent ? parent->winId() : 0;
+ 
++    if (d->nativeFileDialog && options()->fileMode() == QFileDialogOptions::Directory)
++        return d->nativeFileDialog->show(windowFlags, windowModality, parent);
++
+     openPortal();
+ 
+     return true;
+diff --git a/src/plugins/platformthemes/flatpak/qflatpakfiledialog_p.h b/src/plugins/platformthemes/flatpak/qflatpakfiledialog_p.h
+index f3e195faa0..bd1dae209d 100644
+--- a/src/plugins/platformthemes/flatpak/qflatpakfiledialog_p.h
++++ b/src/plugins/platformthemes/flatpak/qflatpakfiledialog_p.h
+@@ -69,7 +69,7 @@ public:
+     };
+     typedef QVector<Filter> FilterList;
+ 
+-    QFlatpakFileDialog();
++    QFlatpakFileDialog(QPlatformFileDialogHelper *nativeFileDialog = nullptr);
+     ~QFlatpakFileDialog();
+ 
+     bool defaultNameFilterDisables() const override;
+diff --git a/src/plugins/platformthemes/flatpak/qflatpaktheme.cpp b/src/plugins/platformthemes/flatpak/qflatpaktheme.cpp
+index 6c5e1389cf..142d91a00b 100644
+--- a/src/plugins/platformthemes/flatpak/qflatpaktheme.cpp
++++ b/src/plugins/platformthemes/flatpak/qflatpaktheme.cpp
+@@ -130,8 +130,12 @@ QPlatformDialogHelper* QFlatpakTheme::createPlatformDialogHelper(DialogType type
+ {
+     Q_D(const QFlatpakTheme);
+ 
+-    if (type == FileDialog)
++    if (type == FileDialog) {
++        if (d->baseTheme->usePlatformNativeDialog(type))
++            return new QFlatpakFileDialog(static_cast<QPlatformFileDialogHelper*>(d->baseTheme->createPlatformDialogHelper(type)));
++
+         return new QFlatpakFileDialog;
++    }
+ 
+     return d->baseTheme->createPlatformDialogHelper(type);
+ }

@@ -148,6 +148,10 @@
                     "path": "patch/qtbase-portal-openuri.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "patch/qtbase-flatpak-portals-filechooser-use-native-for-directories.patch"
+                },
+                {
                     "type": "script",
                     "commands": [
                         "processed=`sed -e 's/--/-/g ; s/=/ /g' <<< $@`",
