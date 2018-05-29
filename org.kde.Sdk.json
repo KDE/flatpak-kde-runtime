@@ -154,6 +154,10 @@
                     "path": "patch/qtbase-flatpak-portals-filechooser-use-native-for-directories.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "patch/qtbase-scalefactor.patch"
+                },
+                {
                     "type": "script",
                     "commands": [
                         "processed=`sed -e 's/--/-/g ; s/=/ /g' <<< $@`",

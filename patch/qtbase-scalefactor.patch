@@ -1,0 +1,40 @@
+From 23b139038a1dc9a769a358ab112453abcdd39290 Mon Sep 17 00:00:00 2001
+From: Mathieu Velten <matmaul@gmail.com>
+Date: Sat, 3 Mar 2018 12:23:51 +0100
+Subject: xcb: round down the scale factor for values < 0.8
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+This solves huge UI on some (most ?) HD 13 inches that have
+a calculated scale factor around 1.75.
+
+Task-number: QTBUG-53022 QTBUG-57211
+Change-Id: I6cc22d3e47d38cb1d5a0daf5646a936256664e48
+Reviewed-by: Mårten Nordheim <marten.nordheim@qt.io>
+Reviewed-by: Frederik Gladhorn <frederik.gladhorn@qt.io>
+---
+ src/plugins/platforms/xcb/qxcbscreen.cpp | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+diff --git a/src/plugins/platforms/xcb/qxcbscreen.cpp b/src/plugins/platforms/xcb/qxcbscreen.cpp
+index df458e85d7..e1bd8eb752 100644
+--- a/src/plugins/platforms/xcb/qxcbscreen.cpp
++++ b/src/plugins/platforms/xcb/qxcbscreen.cpp
+@@ -750,7 +750,12 @@ void QXcbScreen::updateGeometry(const QRect &geometry, uint8_t rotation)
+         m_sizeMillimeters = sizeInMillimeters(geometry.size(), virtualDpi());
+ 
+     qreal dpi = geometry.width() / physicalSize().width() * qreal(25.4);
+-    m_pixelDensity = qMax(1, qRound(dpi/96));
++    qreal rawFactor = dpi/96;
++    int roundedFactor = qFloor(rawFactor);
++    // Round up for .8 and higher. This favors "small UI" over "large UI".
++    if (rawFactor - roundedFactor >= 0.8)
++        roundedFactor = qCeil(rawFactor);
++    m_pixelDensity = qMax(1, roundedFactor);
+     m_geometry = geometry;
+     m_availableGeometry = geometry & m_virtualDesktop->workArea();
+     QWindowSystemInterface::handleScreenGeometryChange(QPlatformScreen::screen(), m_geometry, m_availableGeometry);
+-- 
+cgit v1.1-6-g87c4
+
