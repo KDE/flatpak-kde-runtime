@@ -1,0 +1,67 @@
+From a72c47c16e18a6625ef2c782bddafd120848459e Mon Sep 17 00:00:00 2001
+From: Jan Grulich <jgrulich@redhat.com>
+Date: Wed, 6 Jun 2018 17:22:38 +0200
+Subject: Keep native file dialog updated with current options
+
+When doing calls on native file dialog, we might end up calling an
+implementation which will cause crash in case we don't have all options
+loaded in the native file dialog. Imagine scenario when you want to save
+a file, it sets acceptMode() to QFileDialogOptions::AcceptSave, which is
+set to our flatpak file dialog, but not passed through to the native one
+loaded inside. Then method calls like selectFile() might crash, like
+in case of Gtk3 dialog, because its implementation asks for acceptMode,
+but it's not set yet and thus we end up with crash.
+
+Change-Id: I7a4239cb8b46ff6b08e2cfc1dd6abb9d9600aef8
+
+diff --git a/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp b/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
+index ce835eaa23..6ea8242d8a 100644
+--- a/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
++++ b/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
+@@ -279,8 +279,10 @@ void QFlatpakFileDialog::setDirectory(const QUrl &directory)
+ {
+     Q_D(QFlatpakFileDialog);
+ 
+-    if (d->nativeFileDialog)
++    if (d->nativeFileDialog) {
++        d->nativeFileDialog->setOptions(options());
+         d->nativeFileDialog->setDirectory(directory);
++    }
+ 
+     d->directory = directory.path();
+ }
+@@ -299,8 +301,10 @@ void QFlatpakFileDialog::selectFile(const QUrl &filename)
+ {
+     Q_D(QFlatpakFileDialog);
+ 
+-    if (d->nativeFileDialog)
++    if (d->nativeFileDialog) {
++        d->nativeFileDialog->setOptions(options());
+         d->nativeFileDialog->selectFile(filename);
++    }
+ 
+     d->selectedFiles << filename.path();
+ }
+@@ -323,16 +327,20 @@ void QFlatpakFileDialog::setFilter()
+ {
+     Q_D(QFlatpakFileDialog);
+ 
+-    if (d->nativeFileDialog)
++    if (d->nativeFileDialog) {
++        d->nativeFileDialog->setOptions(options());
+         d->nativeFileDialog->setFilter();
++    }
+ }
+ 
+ void QFlatpakFileDialog::selectNameFilter(const QString &filter)
+ {
+     Q_D(QFlatpakFileDialog);
+ 
+-    if (d->nativeFileDialog)
++    if (d->nativeFileDialog) {
++        d->nativeFileDialog->setOptions(options());
+         d->nativeFileDialog->selectNameFilter(filter);
++    }
+ }
+ 
+ QString QFlatpakFileDialog::selectedNameFilter() const

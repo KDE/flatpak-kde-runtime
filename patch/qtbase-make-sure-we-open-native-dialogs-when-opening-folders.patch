@@ -5,11 +5,7 @@ Subject: Make sure we open native dialogs when opening folders inside sandbox
 
 We have to take obsoleted QFileDialog::DirectoryOnly file mode option
 into account, because it is actually used, even internally in Qt when
-using static QFileDialog::getExistingDirectory() method. We also have to
-reload options of the native dialog when setFilter() is called, as some
-native dialogs may apply the configuration when this function is called
-and when options are not set, we get a crash. This is a case of gtk3
-fila dialog.
+using static QFileDialog::getExistingDirectory() method.
 
 Change-Id: I6cdd35ae4724a1d889a0fb1c3555dc3ca4f3bf4d
 
@@ -20,34 +16,25 @@ index ce835eaa23..b170abbdf6 100644
 @@ -289,7 +289,7 @@ QUrl QFlatpakFileDialog::directory() const
  {
      Q_D(const QFlatpakFileDialog);
- 
+
 -    if (d->nativeFileDialog && options()->fileMode() == QFileDialogOptions::Directory)
 +    if (d->nativeFileDialog && (options()->fileMode() == QFileDialogOptions::Directory || options()->fileMode() == QFileDialogOptions::DirectoryOnly))
          return d->nativeFileDialog->directory();
- 
+
      return d->directory;
 @@ -309,7 +309,7 @@ QList<QUrl> QFlatpakFileDialog::selectedFiles() const
  {
      Q_D(const QFlatpakFileDialog);
- 
+
 -    if (d->nativeFileDialog && options()->fileMode() == QFileDialogOptions::Directory)
 +    if (d->nativeFileDialog && (options()->fileMode() == QFileDialogOptions::Directory || options()->fileMode() == QFileDialogOptions::DirectoryOnly))
          return d->nativeFileDialog->selectedFiles();
- 
+
      QList<QUrl> files;
-@@ -323,6 +323,8 @@ void QFlatpakFileDialog::setFilter()
- {
-     Q_D(QFlatpakFileDialog);
- 
-+    initializeDialog();
-+
-     if (d->nativeFileDialog)
-         d->nativeFileDialog->setFilter();
- }
 @@ -345,7 +347,7 @@ void QFlatpakFileDialog::exec()
  {
      Q_D(QFlatpakFileDialog);
- 
+
 -    if (d->nativeFileDialog && options()->fileMode() == QFileDialogOptions::Directory) {
 +    if (d->nativeFileDialog && (options()->fileMode() == QFileDialogOptions::Directory || options()->fileMode() == QFileDialogOptions::DirectoryOnly)) {
          d->nativeFileDialog->exec();
@@ -56,9 +43,9 @@ index ce835eaa23..b170abbdf6 100644
 @@ -374,7 +376,7 @@ bool QFlatpakFileDialog::show(Qt::WindowFlags windowFlags, Qt::WindowModality wi
      d->modal = windowModality != Qt::NonModal;
      d->winId = parent ? parent->winId() : 0;
- 
+
 -    if (d->nativeFileDialog && options()->fileMode() == QFileDialogOptions::Directory)
 +    if (d->nativeFileDialog && (options()->fileMode() == QFileDialogOptions::Directory || options()->fileMode() == QFileDialogOptions::DirectoryOnly))
          return d->nativeFileDialog->show(windowFlags, windowModality, parent);
- 
+
      openPortal();
