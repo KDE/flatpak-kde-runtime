@@ -156,6 +156,10 @@
                     "path": "patch/qtbase-make-sure-we-open-native-dialogs-when-opening-folders.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "patch/qtbase-filechooser-dialog-dont-crash-when-using-native-dialog.patch"
+                },
+                {
                     "type": "script",
                     "commands": [
                         "processed=`sed -e 's/--/-/g ; s/=/ /g' <<< $@`",
