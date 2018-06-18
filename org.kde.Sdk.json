@@ -458,6 +458,18 @@
                 }
             ]
         },
+        {
+            "name": "qt5-qt3d",
+            "buildsystem": "qmake",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.6/submodules/qt3d-opensource-src-5.9.6.tar.xz",
+                    "sha256": "c89cbc12fde5a279e5b127651a194cae75003ba8113f9e7e7b24e67495ecff09"
+                }
+            ]
+        },
 
         {
             "name": "libdbusmenuqt",
