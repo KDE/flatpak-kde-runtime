@@ -1,5 +1,4 @@
 #
-# <one line to give the program's name and a brief idea of what it does.>
 # Copyright 2018  Aleix Pol Gonzalez <aleixpol@kde.org>
 # 
 # This program is free software; you can redistribute it and/or
@@ -35,15 +34,29 @@ def calculate_sha256(url):
     return sha256.hexdigest()
 
 def processModule(module):
+    replace = {}
     for source in module['sources']:
         if source['type'] == 'archive':
             sha = calculate_sha256(source['url'])
             if sha != source['sha256']:
                 print("new sha", source, sha)
+                replace[source['sha256']] = sha
+        break
+    return replace
 
 if __name__ == "__main__":
+    content = ""
     with open("org.kde.Sdk.json", 'r') as sdkfile:
-        value = json.load(sdkfile)
+        content = sdkfile.read()
 
-        pool = multiprocessing.Pool(14)
-        pool.map(processModule, value['modules'])
+    value = json.loads(content)
+
+    pool = multiprocessing.Pool(6)
+    replacements = pool.map(processModule, value['modules'])
+
+    for repl in replacements:
+        for (a, b) in repl.items():
+            content = content.replace(a, b, 1)
+
+    with open("org.kde.Sdk.json", 'w') as sdkfile:
+        sdkfile.write(content)
