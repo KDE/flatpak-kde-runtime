@@ -4,7 +4,7 @@
     "runtime": "org.freedesktop.Sdk",
     "build-extension": true,
     "sdk": "org.freedesktop.Sdk",
-    "runtime-version": "1.6",
+    "runtime-version": "18.08",
     "sdk-extensions": [],
     "separate-locales": false,
     "cleanup": [ "/share/info", "/share/man" ],
