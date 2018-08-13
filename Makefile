@@ -15,7 +15,7 @@ $(REPO)/config:
 	ostree init --mode=archive-z2 --repo=$(REPO)
 
 remotes:
-	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+	flatpak remote-add --if-not-exists $(ARGS) flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 deps:
 	flatpak install --arch=$(ARCH) $(ARGS) flathub org.freedesktop.Platform.Locale 1.6; true
