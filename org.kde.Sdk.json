@@ -624,8 +624,8 @@
             "cleanup-platform": ["*"],
             "sources": [{
                     "type": "archive",
-                    "url": "http://cpan.metacpan.org/authors/id/E/ET/ETHER/URI-1.71.tar.gz",
-                    "sha256": "9c8eca0d7f39e74bbc14706293e653b699238eeb1a7690cc9c136fb8c2644115"
+                    "url": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/URI-1.74.tar.gz",
+                    "sha256": "a9c254f45f89cb1dd946b689dfe433095404532a4543bdaab0b71ce0fdcdd53d"
                 },
                 {
                     "type": "script",
@@ -868,7 +868,7 @@
             "name": "fcitx-platforminputcontext",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_LIBRARY=OFF" ],
-            "sources": [ { "type": "git", "url": "https://github.com/fcitx/fcitx-qt5", "branch": "1.2.1" } ]
+            "sources": [ { "type": "git", "url": "https://github.com/fcitx/fcitx-qt5", "branch": "1.2.3" } ]
         },
         {
             "name": "os-release",
