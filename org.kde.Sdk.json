@@ -475,6 +475,18 @@
                 }
             ]
         },
+        {
+            "name": "qt5-qtspeech",
+            "buildsystem": "qmake",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://download.qt.io/archive/qt/5.11/5.11.2/submodules/qtspeech-everywhere-src-5.11.2.tar.xz",
+                    "sha256": "0abd6f9672cbea3597e88db99813d7a4d7d379b89f6be352f44a9313bcc81d84"
+                }
+            ]
+        },
 
         {
             "name": "libdbusmenuqt",
