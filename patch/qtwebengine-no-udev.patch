@@ -2,13 +2,11 @@ diff --git a/src/core/config/desktop_linux.pri b/src/core/config/desktop_linux.p
 index 9918e1bb..54abf300 100644
 --- a/src/core/config/desktop_linux.pri
 +++ b/src/core/config/desktop_linux.pri
-@@ -6,6 +6,9 @@ gn_args += \
-     enable_notifications=false \
+@@ -5,4 +5,7 @@
+     enable_session_service=false \
      toolkit_views=false
  
 +# Disable UDev
 +gn_args += use_udev=false
 +
- use?(icecc) {
-     gn_args += use_debug_fission=false
- }
+ !use_gold_linker: gn_args += use_gold=false
