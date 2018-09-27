@@ -178,7 +178,7 @@
         {
             "name": "qt5-qtdeclarative",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin", "/mkspecs", "lib/plugins/qmltooling" ],
             "sources": [
                 {
                     "type": "archive",
@@ -847,6 +847,7 @@
         },
         {
             "name": "breeze-icons",
+            "cleanup-platform": [ "*.rcc" ],
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze-icons.git", "branch": "v5.50.0" } ]
