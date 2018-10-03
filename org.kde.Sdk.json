@@ -54,6 +54,7 @@
         "--filesystem=xdg-run/dconf",
         "--filesystem=~/.config/dconf:ro",
         "--talk-name=com.canonical.AppMenu.Registrar",
+        "--talk-name=com.canonical.AppMenu.Registrar.*",
         "--sdk=org.kde.Sdk//5.11",
         "--runtime=org.kde.Platform//5.11"
     ],
