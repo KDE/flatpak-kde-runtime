@@ -2,11 +2,12 @@ REPO=repo
 TMP=sdk
 ARGS="--user"
 ARCH?=$(shell flatpak --default-arch)
+INSTALL_SOURCE?=--install-deps-from=flathub
 
 all: $(REPO)/config $(foreach file, $(wildcard *.json), $(subst .json,.app,$(file)))
 
 %.app: %.json
-	flatpak-builder --arch=$(ARCH) --force-clean --require-changes --ccache --repo=$(REPO) --subject="build of org.kde.Sdk, `date`" ${EXPORT_ARGS} $(TMP) $<
+	flatpak-builder $(INSTALL_SOURCE) --arch=$(ARCH) --force-clean --require-changes --ccache --repo=$(REPO) --subject="build of org.kde.Sdk, `date`" ${EXPORT_ARGS} $(TMP) $<
 
 export:
 	flatpak build-update-repo $(REPO) ${EXPORT_ARGS} --generate-static-deltas
