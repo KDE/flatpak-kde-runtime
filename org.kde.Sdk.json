@@ -92,7 +92,12 @@
                     },
                     "arm" : {
                         "config-opts" : [
-                            "-no-reduce-relocations", "-no-use-gold-linker", "-optimize-size"
+                            "-no-reduce-relocations", "-no-use-gold-linker", "-optimize-size", "-opengl es2"
+                        ]
+                    },
+                    "aarch64" : {
+                        "config-opts" : [
+                            "-no-reduce-relocations", "-no-use-gold-linker", "-optimize-size", "-opengl es2"
                         ]
                     }
                 }
