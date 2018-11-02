@@ -852,6 +852,20 @@
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/qqc2-desktop-style.git", "branch": "v5.51.0" } ]
         },
         {
+            "name": "kactivities",
+            "config-opts": [ "-DENABLE_TESTING=OFF", "-DKACTIVITIES_LIBRARY_ONLY=ON" ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kactivities.git", "branch": "v5.51.0" } ]
+        },
+        {
+            "name": "plasma-framework",
+            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-framework.git", "branch": "v5.51.0" } ]
+        },
+        {
             "name": "breeze-icons",
             "cleanup-platform": [ "*.rcc" ],
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
