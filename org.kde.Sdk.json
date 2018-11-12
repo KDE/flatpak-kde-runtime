@@ -666,11 +666,11 @@
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/knotifications.git", "branch": "v5.52.0" } ]
         },
         {
+            "name": "kwallet",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwallet.git", "branch": "v5.52.0" } ]
         },
-            "name": "kwallet",
         {
             "name": "kjobwidgets",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
