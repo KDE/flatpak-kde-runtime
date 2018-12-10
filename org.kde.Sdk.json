@@ -39,7 +39,8 @@
             "no-autodownload": true,
             "version": "5.9",
             "merge-dirs": "platformthemes",
-            "download-if": "on-gnome-platform"
+            "//TODO": "This is currently only used for gnome platform plugin and should be its own extension point",
+            "download-if": "on-xdg-desktop-GNOME;on-xdg-desktop-GNOME-classic"
         }
     },
     "finish-args": [
