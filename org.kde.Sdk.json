@@ -39,7 +39,8 @@
             "no-autodownload": true,
             "version": "5.11",
             "merge-dirs": "platformthemes",
-            "download-if": "on-gnome-platform"
+            "//TODO": "This is currently only used for gnome platform plugin and should be its own extension point",
+            "download-if": "on-xdg-desktop-GNOME;on-xdg-desktop-GNOME-classic"
         }
     },
     "finish-args": [
@@ -544,7 +545,7 @@
             "name": "kcoreaddons",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcoreaddons.git", "branch": "v5.53.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcoreaddons.git", "branch": "v5.53.1" } ]
         },
         {
             "name": "kauth",
