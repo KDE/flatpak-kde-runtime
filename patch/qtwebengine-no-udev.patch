@@ -1,12 +1,14 @@
-diff --git a/src/core/config/desktop_linux.pri b/src/core/config/desktop_linux.pri
-index 70f1cf81..1564d271 100644
---- a/src/core/config/desktop_linux.pri
-+++ b/src/core/config/desktop_linux.pri
-@@ -5,4 +5,7 @@ gn_args += \
-     enable_session_service=false \
-     toolkit_views=false
+diff --git a/src/core/config/linux.pri b/src/core/config/linux.pri
+index eb8bb7bb..a98b5fc8 100644
+--- a/src/core/config/linux.pri
++++ b/src/core/config/linux.pri
+@@ -24,6 +24,9 @@ qtConfig(webengine-embedded-build) {
+     !use_gold_linker: gn_args += use_gold=false
+ }
  
 +# Disable UDev
-+gn_args += use_udev=false
+++gn_args += use_udev=false
 +
- !use_gold_linker: gn_args += use_gold=false
+ qtConfig(webengine-system-x11): hasX11Dependencies() {
+    gn_args += ozone_platform_x11=true
+ }
