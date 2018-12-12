@@ -635,7 +635,7 @@
         },
         {
             "name": "kdoctools",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DENABLE_TESTING=OFF", "-DDocBookXSL_DIR=/usr/share/xml/docbook/xml/xsl-stylesheets/", "-DDTD_PATH_LIST=/usr/share/xml/docbook/xml-dtd/4.5/" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdoctools.git", "branch": "v5.53.0" } ]
         },
@@ -888,7 +888,7 @@
         {
             "name": "plasma-integration",
             "buildsystem": "cmake-ninja",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DENABLE_TESTING=OFF", "-DBUILD_TESTING=OFF" ],
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-integration.git", "branch": "Plasma/5.14" } ]
         },
         {
