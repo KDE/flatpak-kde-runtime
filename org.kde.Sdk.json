@@ -844,32 +844,7 @@
             "name": "breeze",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DWITH_DECORATIONS=OFF", "-DWITH_WALLPAPERS=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git", "branch": "Plasma/5.14" } ],
-            "modules": [
-                {
-                    "name": "fftw",
-                    "config-opts" : [
-                        "--enable-shared",
-                        "--disable-static"
-                    ],
-                    "cleanup" : [
-                        "/bin",
-                        "/include",
-                        "/lib/*.la",
-                        "/lib/cmake",
-                        "/lib/pkgconfig",
-                        "/share/info",
-                        "/share/man"
-                    ],
-                    "sources" : [
-                        {
-                            "type" : "archive",
-                            "url" : "http://www.fftw.org/fftw-3.3.8.tar.gz",
-                            "sha1": "59831bd4b2705381ee395e54aa6e0069b10c3626"
-                        }
-                    ]
-                }
-            ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git", "branch": "Plasma/5.14" } ]
         },
         {
             "name": "plasma-integration",
