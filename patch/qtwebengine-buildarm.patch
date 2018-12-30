@@ -1,8 +1,8 @@
-diff --git a/gn/base/numerics/safe_conversions_arm_impl.h b/gn/base/numerics/safe_conversions_arm_impl.h
+diff --git a/src/3rdparty/gn/base/numerics/safe_conversions_arm_impl.h b/src/3rdparty/gn/base/numerics/safe_conversions_arm_impl.h
 new file mode 100644
 index 0000000000..da5813f65e
 --- /dev/null
-+++ b/gn/base/numerics/safe_conversions_arm_impl.h
++++ b/src/3rdparty/gn/base/numerics/safe_conversions_arm_impl.h
 @@ -0,0 +1,51 @@
 +// Copyright 2017 The Chromium Authors. All rights reserved.
 +// Use of this source code is governed by a BSD-style license that can be
@@ -55,11 +55,11 @@ index 0000000000..da5813f65e
 +}  // namespace base
 +
 +#endif  // BASE_NUMERICS_SAFE_CONVERSIONS_ARM_IMPL_H_
-diff --git a/gn/base/numerics/safe_math_arm_impl.h b/gn/base/numerics/safe_math_arm_impl.h
+diff --git a/src/3rdparty/gn/base/numerics/safe_math_arm_impl.h b/src/3rdparty/gn/base/numerics/safe_math_arm_impl.h
 new file mode 100644
 index 0000000000..a7cda1bb23
 --- /dev/null
-+++ b/gn/base/numerics/safe_math_arm_impl.h
++++ b/src/3rdparty/gn/base/numerics/safe_math_arm_impl.h
 @@ -0,0 +1,122 @@
 +// Copyright 2017 The Chromium Authors. All rights reserved.
 +// Use of this source code is governed by a BSD-style license that can be
