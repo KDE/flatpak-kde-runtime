@@ -7,7 +7,7 @@ index eb8bb7bb..a98b5fc8 100644
  }
  
 +# Disable UDev
-++gn_args += use_udev=false
++gn_args += use_udev=false
 +
  qtConfig(webengine-system-x11): hasX11Dependencies() {
     gn_args += ozone_platform_x11=true
