@@ -85,12 +85,12 @@
                     },
                     "arm" : {
                         "config-opts" : [
-                            "-no-reduce-relocations", "-no-use-gold-linker", "-optimize-size", "-opengl es2"
+                            "-no-reduce-relocations", "-optimize-size", "-opengl es2"
                         ]
                     },
                     "aarch64" : {
                         "config-opts" : [
-                            "-no-reduce-relocations", "-no-use-gold-linker", "-optimize-size", "-opengl es2"
+                            "-no-reduce-relocations", "-optimize-size", "-opengl es2"
                         ]
                     }
                 }
@@ -117,6 +117,7 @@
                              "-no-cups",
                              "-system-proxies",
                              "-gtk",
+                             "-no-use-gold-linker",
 
                              "-archdatadir", "/usr/lib/"
                            ],
