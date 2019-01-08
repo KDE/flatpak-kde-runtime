@@ -13,10 +13,12 @@
         "org.freedesktop.Platform.Timezones",
         "org.freedesktop.Platform.GStreamer",
         "org.freedesktop.Platform.Icontheme",
-        "org.freedesktop.Sdk.Extension",
         "org.freedesktop.Platform.VAAPI.Intel",
         "org.freedesktop.Platform.html5-codecs",
         "org.gtk.Gtk3theme"
+    ],
+    "inherit-sdk-extensions": [
+        "org.freedesktop.Sdk.Extension"
     ],
     "add-extensions": {
         "org.kde.Sdk.Docs" : {
