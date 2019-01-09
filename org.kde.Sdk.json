@@ -130,6 +130,10 @@
                     "sha256": "5e03221d780e121aabd734896aab8f331e5d8c9d9b54f1eb04907d0818eaeecb"
                 },
                 {
+                    "type": "patch",
+                    "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
+                },
+                {
                     "type": "shell",
                     "commands": [ "mv configure configure.qt" ]
                 },
