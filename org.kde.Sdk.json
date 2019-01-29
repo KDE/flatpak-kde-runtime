@@ -217,6 +217,10 @@
             "name": "qt5-qtwebengine",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "config-opts": [ "--", "-system-ffmpeg",
+                             "-webengine-proprietary-codecs",
+                             "-webengine-icu",
+                             "-webp" ],
             "modules": [
                 {
                     "name": "pciutils",
