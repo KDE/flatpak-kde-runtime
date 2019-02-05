@@ -4,7 +4,7 @@
   <metadata_license>CC0</metadata_license>
   <!-- FIXME -->
   <project_license>GPL-2.0+</project_license>
-  <name>KDE Software Development Kit version master</name>
+  <name>KDE Software Development Kit</name>
   <summary>Tools and headers for developing applications using the KDE application platform</summary>
   <url type="homepage">http://www.kde.org/</url>
   <project_group>KDE</project_group>
