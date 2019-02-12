@@ -256,14 +256,6 @@
                 {
                     "type": "patch",
                     "path": "patch/qtwebengine-no-udev.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtwebengine-everywhere-src-5.11.0-chromium-64bit-alignment.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtwebengine-buildarm.patch"
                 }
             ]
         },
