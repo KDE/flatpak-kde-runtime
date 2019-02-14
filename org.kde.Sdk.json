@@ -134,6 +134,10 @@
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "patch/qtbase-buildabsoluteglesv2.patch"
+                },
+                {
                     "type": "shell",
                     "commands": [ "mv configure configure.qt" ]
                 },
