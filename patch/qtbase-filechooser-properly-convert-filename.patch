@@ -1,0 +1,36 @@
+From 1d3a162bfe38f8a3cd576ca17ea7e0f71a55e074 Mon Sep 17 00:00:00 2001
+From: Jan Grulich <jgrulich@redhat.com>
+Date: Mon, 18 Feb 2019 13:15:31 +0100
+Subject: Properly convert filename to bytearray when sending over portal
+
+We should be using QFile::encodeName() to properly convert filenames
+from string to bytearray. This takes user's locale into account.
+
+Change-Id: I090f73f21feb73af166e88baa0e7f4a595cdb25b
+Reviewed-by: Thiago Macieira <thiago.macieira@intel.com>
+
+diff --git a/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp b/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
+index 5e94d1558e..dcf52921aa 100644
+--- a/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
++++ b/src/plugins/platformthemes/flatpak/qflatpakfiledialog.cpp
+@@ -48,6 +48,7 @@
+ #include <QDBusPendingCallWatcher>
+ #include <QDBusPendingReply>
+
++#include <QFile>
+ #include <QMetaType>
+ #include <QMimeType>
+ #include <QMimeDatabase>
+@@ -181,10 +182,10 @@ void QFlatpakFileDialog::openPortal()
+
+     if (d->saveFile) {
+         if (!d->directory.isEmpty())
+-            options.insert(QLatin1String("current_folder"), d->directory.toLatin1());
++            options.insert(QLatin1String("current_folder"), QFile::encodeName(d->directory).append('\0'));
+
+         if (!d->selectedFiles.isEmpty())
+-            options.insert(QLatin1String("current_file"), d->selectedFiles.first().toLatin1());
++            options.insert(QLatin1String("current_file"), QFile::encodeName(d->selectedFiles.first()).append('\0'));
+     }
+
+     // Insert filters
