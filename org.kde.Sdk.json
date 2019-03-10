@@ -470,6 +470,18 @@
                 }
             ]
         },
+        {
+            "name": "qt5-qtnetworkauth",
+            "buildsystem": "qmake",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://download.qt.io/archive/qt/5.12/5.12.1/submodules/qtnetworkauth-everywhere-src-5.12.1.tar.xz",
+                    "sha256": "090fbb6be35b2f2edf7cc4cb32f0f9c27a9a66defa06f6d23e1397836e31d44c"
+                }
+            ]
+        },
 
         {
             "name": "libdbusmenuqt",
