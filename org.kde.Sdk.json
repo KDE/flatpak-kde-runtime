@@ -482,6 +482,18 @@
                 }
             ]
         },
+        {
+            "name": "qt5-qtgamepad",
+            "buildsystem": "qmake",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://download.qt.io/archive/qt/5.12/5.12.2/submodules/qtgamepad-everywhere-src-5.12.2.tar.xz",
+                    "sha256": "d289d8c983f4e88018c9ccb22bbde196c9f97efd20ecd48ae92994885f2334a7"
+                }
+            ]
+        },
 
         {
             "name": "libdbusmenuqt",
