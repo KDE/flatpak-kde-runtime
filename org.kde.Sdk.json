@@ -675,7 +675,7 @@
             "name": "phonon",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DPHONON_BUILD_PHONON4QT5=ON"],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon.git", "branch": "v4.10.1" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon.git", "branch": "v4.10.2" } ]
         },
         {
             "name": "knotifications",
@@ -878,25 +878,25 @@
             "name": "breeze",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DWITH_DECORATIONS=OFF", "-DWITH_WALLPAPERS=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git", "branch": "Plasma/5.14" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git", "branch": "Plasma/5.15" } ]
         },
         {
             "name": "plasma-integration",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DENABLE_TESTING=OFF", "-DBUILD_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-integration.git", "branch": "Plasma/5.14" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-integration.git", "branch": "Plasma/5.15" } ]
         },
         {
             "name": "kwayland-integration",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland-integration.git", "branch": "Plasma/5.14" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland-integration.git", "branch": "Plasma/5.15" } ]
         },
         {
             "name": "phonon-gstreamer",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DPHONON_BUILD_PHONON4QT5=ON"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon-gstreamer.git", "branch": "4.9" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon-gstreamer.git", "branch": "v4.9.0" } ]
         },
         {
             "name": "fcitx-platforminputcontext",
