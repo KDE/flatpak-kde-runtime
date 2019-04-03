@@ -1,7 +1,6 @@
 REPO=repo
 TMP=sdk
 ARGS="--user"
-FSDK_VERSION?=1.6
 ARCH?=$(shell flatpak --default-arch)
 INSTALL_SOURCE?=--install-deps-from=flathub
 
@@ -18,14 +17,6 @@ $(REPO)/config:
 
 remotes:
 	flatpak remote-add $(ARGS) --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
-deps:
-	flatpak install --arch=$(ARCH) $(ARGS) flathub org.freedesktop.Platform.Locale $(FSDK_VERSION); true
-	flatpak install --arch=$(ARCH) $(ARGS) flathub org.freedesktop.Sdk.Locale $(FSDK_VERSION); true
-	flatpak install --arch=$(ARCH) $(ARGS) flathub org.freedesktop.Platform $(FSDK_VERSION); true
-	flatpak install --arch=$(ARCH) $(ARGS) flathub org.freedesktop.Sdk $(FSDK_VERSION); true
-	flatpak install --arch=$(ARCH) $(ARGS) flathub org.freedesktop.Sdk.Debug $(FSDK_VERSION); true
-	flatpak install --arch=$(ARCH) $(ARGS) flathub org.freedesktop.Sdk.Docs $(FSDK_VERSION); true
 
 check:
 	json-glib-validate *.json
