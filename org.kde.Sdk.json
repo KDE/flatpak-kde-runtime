@@ -70,7 +70,8 @@
                           "/share/aclocal",
                           "/share/pkgconfig",
                           "/lib/pkgconfig",
-                          "*.a"
+                          "*.a",
+                          "*.cmake"
                         ],
     "cleanup-platform-commands": [ "/usr/libexec/freedesktop-post.sh" ],
     "modules": [
