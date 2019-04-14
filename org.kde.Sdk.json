@@ -700,9 +700,7 @@
             "name": "solid",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/solid.git", "branch": "v5.57.0" },
-                { "type": "patch", "path": "patch/solid-no-udev.patch" }
-            ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/solid.git", "branch": "v5.57.0" } ]
         },
         {
             "name": "kio",
