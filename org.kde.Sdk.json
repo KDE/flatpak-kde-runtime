@@ -698,7 +698,7 @@
         },
         {
             "name": "solid",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DENABLE_TESTING=OFF", "-DUDEV_DISABLED=ON" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/solid.git", "branch": "v5.57.0" } ]
         },
