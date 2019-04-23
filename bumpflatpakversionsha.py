@@ -24,9 +24,20 @@ import requests
 import multiprocessing
 
 def calculate_sha256(url):
-    sha256 = hashlib.sha256()
+    urlsha = url + ".sha256"
+    r = requests.get(urlsha, stream=False)
+
+    if r.status_code == requests.codes.ok:
+        print("using", urlsha)
+        resp = r.text
+        idxEnd = resp.find(' ')
+        sha = resp[:idxEnd]
+        return sha
+    else:
+        print("no sha256 file", urlsha)
 
     print("getting...", url)
+    sha256 = hashlib.sha256()
     response = requests.get(url, stream=True)
 
     for data in response.iter_content():
