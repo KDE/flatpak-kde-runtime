@@ -388,6 +388,22 @@
                     "type": "archive",
                     "url": "http://download.qt.io/archive/qt/5.12/5.12.4/submodules/qtwayland-everywhere-src-5.12.4.tar.xz",
                     "sha256": "2fade959c3927687134c597d85c12ba1af22129a60ab326c2dc77a648e74e6b7"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtwayland-fix-stuttering-when-gui-thread-is-busy.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtwayland-reset-frame-callback-timer-when-hiding-window.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtwayland-emit-wl-surfare-lifetime-signals.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtwayland-dont-send-fake-surface-created-destroyed-events.patch"
                 }
             ]
         },

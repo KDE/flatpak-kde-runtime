@@ -1,0 +1,18 @@
+diff --git a/src/client/qwaylandwindow.cpp b/src/client/qwaylandwindow.cpp
+index cecdbda..e3785f5 100644
+--- a/src/client/qwaylandwindow.cpp
++++ b/src/client/qwaylandwindow.cpp
+@@ -254,6 +254,13 @@ void QWaylandWindow::reset(bool sendDestroyEvent)
+         mFrameCallback = nullptr;
+     }
+ 
++    int timerId  = mFrameCallbackTimerId.fetchAndStoreOrdered(-1);
++    if (timerId != -1) {
++        killTimer(timerId);
++    }
++    mWaitingForFrameCallback = false;
++    mFrameCallbackTimedOut = false;
++
+     mMask = QRegion();
+     mQueuedBuffer = nullptr;
+ }
