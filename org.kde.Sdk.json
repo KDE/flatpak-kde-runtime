@@ -134,6 +134,10 @@
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "patch/qtbase-revert-reset-qwidget-winid-when-backing-window-surface-destroyed.patch"
+                },
+                {
                     "type": "shell",
                     "commands": [ "mv configure configure.qt" ]
                 },
@@ -403,7 +407,15 @@
                 },
                 {
                     "type": "patch",
-                    "path": "patch/qtwayland-dont-send-fake-surface-created-destroyed-events.patch"
+                    "path": "patch/qtwayland-make-handleupdate-aware-of-exposure-changes.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtwayland-dont-crash-when-start-drag-without-dragfocus.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtwayland-fix-expose-event-compression.patch"
                 }
             ]
         },
