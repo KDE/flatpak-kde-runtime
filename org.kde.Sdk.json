@@ -716,9 +716,10 @@
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kjobwidgets.git", "branch": "v5.60.0" } ]
         },
+        "udev/udev-175.json",
         {
             "name": "solid",
-            "config-opts": [ "-DENABLE_TESTING=OFF", "-DUDEV_DISABLED=ON", "-DBUILD_DEVICE_BACKEND_udisks2=OFF" ],
+            "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/solid.git", "branch": "v5.60.0" } ]
         },
