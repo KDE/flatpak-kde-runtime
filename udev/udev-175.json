@@ -7,7 +7,7 @@
     "--disable-introspection",
     "--disable-keymap",
     "--disable-mtd_probe",
-    "--with-systemdsystemunitdir=/app/lib/systemd/"
+    "--with-systemdsystemunitdir=/usr/lib/systemd/"
   ],
   "cleanup": [
     "/include",
@@ -44,6 +44,6 @@
     }
   ],
   "post-install": [
-    "sed -i 's|${exec_prefix}|/app|g' /app/share/pkgconfig/udev.pc"
+    "sed -i 's|${exec_prefix}|/usr|g' /usr/share/pkgconfig/udev.pc"
   ]
 }
