@@ -138,6 +138,10 @@
                     "path": "patch/qtbase-revert-reset-qwidget-winid-when-backing-window-surface-destroyed.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "patch/qtbase-use-wayland-on-gnome.patch"
+                },
+                {
                     "type": "shell",
                     "commands": [ "mv configure configure.qt" ]
                 },
@@ -416,6 +420,14 @@
                 {
                     "type": "patch",
                     "path": "patch/qtwayland-fix-expose-event-compression.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtwayland-do-not-redraw-decorations-everytime.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtwayland-use-gnome-platform-theme-on-gnome-based-desktops.patch"
                 }
             ]
         },
