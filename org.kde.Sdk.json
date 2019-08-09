@@ -43,6 +43,15 @@
             "merge-dirs": "platformthemes",
             "//TODO": "This is currently only used for gnome platform plugin and should be its own extension point",
             "download-if": "on-xdg-desktop-GNOME;on-xdg-desktop-GNOME-classic"
+        },
+        "org.kde.WaylandDecoration" : {
+            "directory": "share/runtime/lib/plugins/",
+            "subdirectories": true,
+            "no-autodownload": true,
+            "version": "5.12",
+            "merge-dirs": "wayland-decoration-client",
+            "//TODO": "This is currently only used for gnome platform plugin and should be its own extension point",
+            "download-if": "on-xdg-desktop-GNOME;on-xdg-desktop-GNOME-classic"
         }
     },
     "finish-args": [
