@@ -46,6 +46,8 @@ def calculate_sha256(url):
 
 def processModule(module):
     replace = {}
+    if not 'sources' in module:
+        return replace
     for source in module['sources']:
         if source['type'] == 'archive':
             sha = calculate_sha256(source['url'])
