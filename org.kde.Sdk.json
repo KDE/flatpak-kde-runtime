@@ -481,6 +481,18 @@
                 }
             ]
         },
+        {
+            "name": "qt5-qtgamepad",
+            "buildsystem": "qmake",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtgamepad-opensource-src-5.9.8.tar.xz",
+                    "sha256": "4d3e45484030475e858895484acf739d31125a2b94fa9cde08805f19eb8464e4"
+                }
+            ]
+        },
 
         {
             "name": "libdbusmenuqt",
