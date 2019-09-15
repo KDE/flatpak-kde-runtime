@@ -144,10 +144,6 @@
                 },
                 {
                     "type": "patch",
-                    "path": "patch/qtbase-revert-reset-qwidget-winid-when-backing-window-surface-destroyed.patch"
-                },
-                {
-                    "type": "patch",
                     "path": "patch/qtbase-use-wayland-on-gnome.patch"
                 },
                 {
@@ -405,30 +401,6 @@
                     "type": "archive",
                     "url": "http://download.qt.io/archive/qt/5.12/5.12.5/submodules/qtwayland-everywhere-src-5.12.5.tar.xz",
                     "sha256": "29fd31267149451f93faa15f031e0a14506e704086033f70d51479522c6f3846"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtwayland-fix-stuttering-when-gui-thread-is-busy.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtwayland-reset-frame-callback-timer-when-hiding-window.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtwayland-emit-wl-surfare-lifetime-signals.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtwayland-make-handleupdate-aware-of-exposure-changes.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtwayland-dont-crash-when-start-drag-without-dragfocus.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtwayland-fix-expose-event-compression.patch"
                 },
                 {
                     "type": "patch",
