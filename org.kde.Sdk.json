@@ -891,13 +891,13 @@
             "name": "breeze",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DWITH_DECORATIONS=OFF", "-DWITH_WALLPAPERS=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git", "branch": "Plasma/5.15" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git", "branch": "Plasma/5.16" } ]
         },
         {
             "name": "plasma-integration",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DENABLE_TESTING=OFF", "-DBUILD_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-integration.git", "branch": "Plasma/5.15" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-integration.git", "branch": "Plasma/5.16" } ]
         },
         {
             "name": "kwayland-integration",
@@ -907,11 +907,7 @@
                 {
                     "type": "git",
                     "url": "git://anongit.kde.org/kwayland-integration.git",
-                    "branch": "Plasma/5.15"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/kwayland-integration-fix-build.patch"
+                    "branch": "Plasma/5.16"
                 }
             ]
         },
@@ -919,7 +915,7 @@
             "name": "phonon-gstreamer",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DPHONON_BUILD_PHONON4QT5=ON"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon-gstreamer.git", "branch": "v4.9.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon-gstreamer.git", "branch": "v4.11.0" } ]
         },
         {
             "name": "fcitx-platforminputcontext",
