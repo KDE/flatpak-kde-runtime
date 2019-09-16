@@ -1,4 +1,4 @@
 NAME=KDE
-VERSION="5.12 (Flatpak runtime)"
-VERSION_ID="5.12"
+VERSION="5.13 (Flatpak runtime)"
+VERSION_ID="5.13"
 ID=org.kde.Platform
