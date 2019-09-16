@@ -667,7 +667,6 @@
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kjobwidgets.git", "branch": "v5.62.0" } ]
         },
-        "udev/udev-175.json",
         {
             "name": "solid",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
