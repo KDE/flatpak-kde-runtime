@@ -903,7 +903,17 @@
             "name": "kwayland-integration",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland-integration.git", "branch": "Plasma/5.15" } ]
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "git://anongit.kde.org/kwayland-integration.git",
+                    "branch": "Plasma/5.15"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/kwayland-integration-fix-build.patch"
+                }
+            ]
         },
         {
             "name": "phonon-gstreamer",

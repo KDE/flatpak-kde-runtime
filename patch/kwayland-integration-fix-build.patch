@@ -1,0 +1,56 @@
+From 143a325ad1f4c57ef9f64e57f009e7e9085a8e90 Mon Sep 17 00:00:00 2001
+From: David Faure <faure@kde.org>
+Date: Thu, 22 Aug 2019 10:41:38 +0200
+Subject: Remove slideWindow(QWidget*) overload with recent KWindowSystem
+
+Test Plan: Fixes the build after https://phabricator.kde.org/D23213
+
+Reviewers: zzag
+
+Reviewed By: zzag
+
+Subscribers: plasma-devel
+
+Tags: #plasma
+
+Differential Revision: https://phabricator.kde.org/D23334
+
+diff --git a/src/windowsystem/windoweffects.cpp b/src/windowsystem/windoweffects.cpp
+index ef54f09..d9725fe 100644
+--- a/src/windowsystem/windoweffects.cpp
++++ b/src/windowsystem/windoweffects.cpp
+@@ -165,10 +165,12 @@ void WindowEffects::slideWindow(WId id, KWindowEffects::SlideFromLocation locati
+     }
+ }
+ 
++#if KWINDOWSYSTEM_VERSION <= QT_VERSION_CHECK(5, 61, 0)
+ void WindowEffects::slideWindow(QWidget *widget, KWindowEffects::SlideFromLocation location)
+ {
+     slideWindow(widget->winId(), location, 0);
+ }
++#endif
+ 
+ QList<QSize> WindowEffects::windowSizes(const QList<WId> &ids)
+ {
+diff --git a/src/windowsystem/windoweffects.h b/src/windowsystem/windoweffects.h
+index f09c9b5..d11d9ac 100644
+--- a/src/windowsystem/windoweffects.h
++++ b/src/windowsystem/windoweffects.h
+@@ -21,6 +21,7 @@
+ #ifndef WINDOWEFFECTS_H
+ #define WINDOWEFFECTS_H
+ #include <KWindowSystem/private/kwindoweffects_p.h>
++#include <kwindowsystem_version.h>
+ 
+ #include <QHash>
+ 
+@@ -50,7 +51,9 @@ public:
+ 
+     bool isEffectAvailable(KWindowEffects::Effect effect) override;
+     void slideWindow(WId id, KWindowEffects::SlideFromLocation location, int offset) override;
++#if KWINDOWSYSTEM_VERSION <= QT_VERSION_CHECK(5, 61, 0)
+     void slideWindow(QWidget *widget, KWindowEffects::SlideFromLocation location) override;
++#endif
+     QList<QSize> windowSizes(const QList<WId> &ids) override;
+     void presentWindows(WId controller, const QList<WId> &ids) override;
+     void presentWindows(WId controller, int desktop = NET::OnAllDesktops) override;
