@@ -61,10 +61,7 @@
         "--env=QT_PLUGIN_PATH=/app/lib64/plugins:/app/lib/plugins:/usr/share/runtime/lib/plugins",
         "--env=QML2_IMPORT_PATH=/app/lib64/qml:/app/lib/qml",
         "--env=KDE_FORK_SLAVES=1",
-        "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
         "--filesystem=xdg-config/kdeglobals:ro",
-        "--filesystem=xdg-run/dconf",
-        "--filesystem=~/.config/dconf:ro",
         "--talk-name=com.canonical.AppMenu.Registrar",
         "--sdk=org.kde.Sdk//5.13",
         "--runtime=org.kde.Platform//5.13"
