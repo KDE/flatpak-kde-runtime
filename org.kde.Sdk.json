@@ -477,8 +477,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://www.python.org/ftp/python/2.7.16/Python-2.7.16.tgz",
-                            "sha256": "01da813a3600876f03f46db11cc5c408175e99f03af2ba942ef324389a83bad5"
+                            "url": "https://www.python.org/ftp/python/2.7.17/Python-2.7.17.tar.xz",
+                            "sha256": "4d43f033cdbd0aa7b7023c81b0e986fd11e653b5248dac9144d508f11812ba41"
                         }
                     ],
                     "config-opts": [
@@ -492,15 +492,18 @@
                     ],
                     "post-install": [
                         /* Theres seem to be a permissions missmatch that causes the debug stripping to fail */
-                        "chmod 644 $FLATPAK_DEST/lib/libpython2.7.so.1.0"
+                        "chmod 644 $FLATPAK_DEST/lib/@SDK_ARCH@-linux-gnu/libpython2.7.so.1.0"
                     ],
                     "cleanup": [
                         "/bin/2to3*",
                         "/bin/easy_install*",
                         "/bin/idle*",
-                        "/bin/pyvenv*",
                         "/bin/pydoc*",
+                        "/bin/python*-config",
+                        "/bin/pyvenv*",
                         "/include",
+                        "/lib/pkgconfig",
+                        "/lib/python*/config",
                         "/share",
 
                         /* Test scripts */
