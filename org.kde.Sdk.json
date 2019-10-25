@@ -561,7 +561,7 @@
                     "path": "patch/qtwebengine-fix-build.patch"
                 }
             ]
-        }
+        },
         {
             "name": "libdbusmenuqt",
             "buildsystem": "cmake-ninja",
