@@ -490,62 +490,8 @@
                         "--with-dbmliborder=gdbm",
                         "--enable-unicode=ucs4"
                     ],
-                    "post-install": [
-                        /* Theres seem to be a permissions missmatch that causes the debug stripping to fail */
-                        "chmod 644 $FLATPAK_DEST/lib/@SDK_ARCH@-linux-gnu/libpython2.7.so.1.0"
-                    ],
                     "cleanup": [
-                        "/bin/2to3*",
-                        "/bin/easy_install*",
-                        "/bin/idle*",
-                        "/bin/pydoc*",
-                        "/bin/python*-config",
-                        "/bin/pyvenv*",
-                        "/include",
-                        "/lib/pkgconfig",
-                        "/lib/python*/config",
-                        "/share",
-
-                        /* Test scripts */
-                        "/lib/python*/test",
-                        "/lib/python*/*/test",
-                        "/lib/python*/*/tests",
-                        "/lib/python*/lib-tk/test",
-                        "/lib/python*/lib-dynload/_*_test.*.so",
-                        "/lib/python*/lib-dynload/_test*.*.so",
-
-                        /* Unused modules */
-                        "/lib/python*/idlelib",
-                        "/lib/python*/tkinter*",
-                        "/lib/python*/turtle*",
-                        "/lib/python*/lib2to3*",
-
-                        /* Static library */
-                        "/lib/python2.7/config/libpython2.7.a"
-                    ]
-                },
-                {
-                    "name": "pciutils",
-                    "no-autogen": true,
-                    "make-args": ["SHARED=no", "ZLIB=no", "PREFIX=/usr"],
-                    "post-install": [
-                        "make install-pcilib",
-                        "make install-lib"
-                    ],
-                    "sources": [
-                        { "type": "git", "url": "https://kernel.googlesource.com/pub/scm/utils/pciutils/pciutils", "branch": "v3.6.2" },
-                        {
-                            "type": "shell",
-                            "commands": [
-                                "sed -i 's@PREFIX=/usr/local@PREFIX=/app@' Makefile"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "opus",
-                    "sources": [
-                        { "type": "git", "url": "https://github.com/xiph/opus.git", "branch": "v1.2.1" }
+                        "*"
                     ]
                 }
             ],
