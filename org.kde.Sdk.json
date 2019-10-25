@@ -463,7 +463,105 @@
                 }
             ]
         },
+        {
+            "name": "qt5-qtwebengine",
+            "buildsystem": "qmake",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "config-opts": [ "--", "-system-ffmpeg",
+                             "-webengine-proprietary-codecs",
+                             "-webengine-icu",
+                             "-webp" ],
+            "modules": [
+                {
+                    "name": "python-2.7",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://www.python.org/ftp/python/2.7.16/Python-2.7.16.tgz",
+                            "sha256": "01da813a3600876f03f46db11cc5c408175e99f03af2ba942ef324389a83bad5"
+                        }
+                    ],
+                    "config-opts": [
+                        "--enable-shared",
+                        "--with-ensurepip=yes",
+                        "--with-system-expat",
+                        "--with-system-ffi",
+                        "--enable-loadable-sqlite-extensions",
+                        "--with-dbmliborder=gdbm",
+                        "--enable-unicode=ucs4"
+                    ],
+                    "post-install": [
+                        /* Theres seem to be a permissions missmatch that causes the debug stripping to fail */
+                        "chmod 644 $FLATPAK_DEST/lib/libpython2.7.so.1.0"
+                    ],
+                    "cleanup": [
+                        "/bin/2to3*",
+                        "/bin/easy_install*",
+                        "/bin/idle*",
+                        "/bin/pyvenv*",
+                        "/bin/pydoc*",
+                        "/include",
+                        "/share",
 
+                        /* Test scripts */
+                        "/lib/python*/test",
+                        "/lib/python*/*/test",
+                        "/lib/python*/*/tests",
+                        "/lib/python*/lib-tk/test",
+                        "/lib/python*/lib-dynload/_*_test.*.so",
+                        "/lib/python*/lib-dynload/_test*.*.so",
+
+                        /* Unused modules */
+                        "/lib/python*/idlelib",
+                        "/lib/python*/tkinter*",
+                        "/lib/python*/turtle*",
+                        "/lib/python*/lib2to3*",
+
+                        /* Static library */
+                        "/lib/python2.7/config/libpython2.7.a"
+                    ]
+                },
+                {
+                    "name": "pciutils",
+                    "no-autogen": true,
+                    "make-args": ["SHARED=no", "ZLIB=no", "PREFIX=/usr"],
+                    "post-install": [
+                        "make install-pcilib",
+                        "make install-lib"
+                    ],
+                    "sources": [
+                        { "type": "git", "url": "https://kernel.googlesource.com/pub/scm/utils/pciutils/pciutils", "branch": "v3.6.2" },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "sed -i 's@PREFIX=/usr/local@PREFIX=/app@' Makefile"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "opus",
+                    "sources": [
+                        { "type": "git", "url": "https://github.com/xiph/opus.git", "branch": "v1.2.1" }
+                    ]
+                }
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtwebengine-everywhere-src-5.13.1.tar.xz",
+                    "sha256": "7f12e710b76ff2be4497bf368fc01ecd2419e2e962fb90599b0ece00ae2eb7d0"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtwebengine-no-udev.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtwebengine-fix-build.patch"
+                }
+            ]
+        }
         {
             "name": "libdbusmenuqt",
             "buildsystem": "cmake-ninja",
