@@ -493,6 +493,10 @@
                         "--with-dbmliborder=gdbm",
                         "--enable-unicode=ucs4"
                     ],
+                    "post-install": [
+                        /* Theres seem to be a permissions missmatch that causes the debug stripping to fail */
+                        "chmod 644 `find /usr/lib/ -name libpython2.7.so.1.0`"
+                    ],
                     "cleanup": [
                         "*"
                     ]
