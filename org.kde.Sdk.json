@@ -132,8 +132,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtbase-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "110cd08cdacab26274bf2519d3508046616c0b638f0d2f5e00bc8bad87469eab"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtbase-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "26b6b686d66a7ad28eaca349e55e2894e5a735f3831e45f2049e93b1daa92121"
                 },
                 {
                     "type": "patch",
@@ -164,8 +164,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtdeclarative-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "ae3477401b13d6b31e8569629d3f73b3e81e27cec27595988ffd320eaec7f0e2"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtdeclarative-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "d9a524f45fe9e136cda2252f9d7013ec17046d907e3f39606db920987c22d1fd"
                 },
                 {
                     "type": "patch",
@@ -185,8 +185,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qttools-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "7947bdd758514a0c2d44b0a2110adb6056b18bce75c716711e48bcc8de5c7e82"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qttools-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "919a2713b6d2d7873a09ad85bd93cf4282606e5bf84d5884250f665a253ec06e"
                 }
             ]
         },
@@ -197,8 +197,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtscript-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "870c65c5dff20eb797a629bd4544aa60874f44eecc0743300e83cce5708648c8"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtscript-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "3d92691c25577fbf7511d40253de0cd9d31444ea5a0aa860f65efb9fa0f3ce70"
                 }
             ]
         },
@@ -210,8 +210,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtwebchannel-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "f72f875a0cafe7931341ef31084acfb489ede79c36dbce74820c2a5b5d6afb2c"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtwebchannel-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "f452d419d8b19b566835f316bbf282dabc8b1c2a74c9c98c1aec4184465e9c13"
                 }
             ]
         },
@@ -222,8 +222,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtlocation-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "16bd4d64b12fc3f8276fe37985f2b0f5443317c882937ab5e0b583a3a9eed298"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtlocation-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "5fe4b824d3dc6c800682ff986333ec09edb9c27582066e928b1862b4d58212e3"
                 }
             ]
         },
@@ -234,8 +234,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtsvg-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "409e8845c28412041c36f559a7a6e2414f3d9a8dd45c5a85065e279b788e07ab"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtsvg-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "849e2e357e1333b64ecb728352f652cd8d916f029ed848f775b15d0b500cb7d7"
                 }
             ]
         },
@@ -246,8 +246,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtx11extras-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "0bc59f59f8d99674d3f56df091beb1a2d6fb9c103674c0fd412ce769e9656624"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtx11extras-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "95a7c5c30f42e9575c3a17a2c0eb0cdbdd2d89dbcb3ee1426cd41bb07e28c51c"
                 }
             ]
         },
@@ -258,8 +258,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtmultimedia-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "5efdb5876596c3472d24acf1ed753574dfa87b500458ea675c3112e8c2acec65"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtmultimedia-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "5f885459d46ea2f2bb24597678befd4913d8f88029730d01984f51f9c367b9f4"
                 }
             ]
         },
@@ -270,8 +270,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtsensors-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "fa55e96bebb946326c46b720059536bce1e939a63b60f3c990a24ac8fec759d3"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtsensors-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "46f73bbfddfd78a419c6424d6839318774b84c955a7f7a96c12c590f6d8fb177"
                 }
             ]
         },
@@ -282,8 +282,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtquickcontrols-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "5f3dd9a7c25aabe7a21ed7d137c23e2bfff948fefe94b183b5dee1a13667eb9b"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtquickcontrols-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "d6e64d8db13ada55fcb0d5e8ca26097085680087d931435c6c6db859d87493ea"
                 }
             ]
         },
@@ -294,8 +294,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtquickcontrols2-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "47df5a0d9b65bd6d06fc7edc2a93fba679249d4942163230a72ff6f3cc9f7ab8"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtquickcontrols2-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "90ee8be7b66cc65f3f22e71a0b35adab5c169ac4f8ebc6f9e7685228bf8a7d70"
                 }
             ]
         },
@@ -306,8 +306,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtgraphicaleffects-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "f6611773c1104c26fed412dc559ae34563dbd7aea9582722fdde098cc3cbc8a7"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtgraphicaleffects-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "297a89bb6c771f849c4ce866e5c98dadf665163b3dab03bc48a58f51424e7e66"
                 }
             ]
         },
@@ -318,8 +318,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtxmlpatterns-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "2867cc8c92164909d6117b392d1cd9102dd38d815dbdf108f3f10e630c5a748b"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtxmlpatterns-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "1e87d8c004ec0beea3b29d13f0964c563aa9fae51c392c998750ca4e386374e2"
                 }
             ]
         },
@@ -330,8 +330,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtimageformats-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "f6aa1e3fe6c3d786e211e4bd46a1349192efd82364739c0d708b7f2003a93ddf"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtimageformats-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "6968649fdccc7d633cf9ada25f1bdaf0a2fb45a214d58c2c47896166d4553ac0"
                 }
             ]
         },
@@ -342,8 +342,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtconnectivity-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "a1c4120ca00a8b6f275d6ad3f94565fd154b5ec2c7ca167f99cdccf6b0d5ee6f"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtconnectivity-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "644e234eb64f602ef5cdeb8802ef9b58e75478f1124f001937275d62ed692e17"
                 }
             ]
         },
@@ -354,8 +354,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtwayland-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "def836f365b8af99cc693625f2079a54a0f71f5eff3f370dcf6f30b8944caf77"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtwayland-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "3c9b2358d9cee02552b875db93b56f3b9bc3b0f4df7a2ff7e8b72f2a8f2ca952"
                 },
                 {
                     "type": "patch",
@@ -374,8 +374,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtvirtualkeyboard-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "b44b2f788250a85d86f682bea4c0cdc8a70dd630d44682a545790b2618b28195"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtvirtualkeyboard-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "8e368dde237d21666f6cc8512a060e205388e519a4d7559c0505cc75224ed62b"
                 }
             ]
         },
@@ -386,8 +386,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtserialport-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "d96706f406d89b459ed0ecd129b68309a91cea0f132b839958b5311ea0d118d2"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtserialport-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "7677ffc1dce3b75c0a98d07d215588a8dccb5c276c55b4ecd60c35ed1c89cb34"
                 }
             ]
         },
@@ -398,8 +398,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtwebsockets-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "f6b0583cfc5bbdccb89f68297a53cfe6c858c7a7de8e64548066cafd981c0799"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtwebsockets-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "fc11236c8bf69b27a4e237a27b9ea27fc90d8c25d81d1d451ce3a0b63cbc02d3"
                 }
             ]
         },
@@ -410,8 +410,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtcharts-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "95fb573137bfd9e3655d4fb0e9fc80894e58d4f5fc02c48e46068cee27ff7aad"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtcharts-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "3bad81c3cfb32cf72fb0ce2ac2794d031cf78a3902b4715f89c09b2d0e041e87"
                 }
             ]
         },
@@ -422,8 +422,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qt3d-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "092dc9a691eb784b30b1a48799c23578f0f17d892b1cbd25f18130c67f51a452"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qt3d-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "d1b9fc0be82264b5f76c3a5330901dff95c1f2bcb67916c3fac6bad4ff69adc9"
                 }
             ]
         },
@@ -434,8 +434,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtspeech-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "347343a96710b389e8e05506df3c971b9437f101d09677e44f4bf2a87bf25556"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtspeech-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "a0aca08feeac6925ead7f841319bdcfd60bfc126de07807edaf267c2ca8d13d5"
                 }
             ]
         },
@@ -446,8 +446,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtnetworkauth-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "d5306dd7d6aa128382505046b06ad7f9c17c56a9c4277dc862c13add06b89e4a"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtnetworkauth-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "6326943e5c1a3e6eac8dcc44d088f1a3d1c45d14100ff1e95f833b0463243af3"
                 }
             ]
         },
@@ -458,8 +458,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtgamepad-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "660e2bea430be5dc75557d038f162b77454c945ab6df1a1f4a7d69011e02c199"
+                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtgamepad-everywhere-src-5.13.2.tar.xz",
+                    "sha256": "75164885433e36a90b557aa7f319ff3d6278c3616469f67b42dda6eb8b92e76e"
                 }
             ]
         },
@@ -494,7 +494,7 @@
                         "--enable-unicode=ucs4"
                     ],
                     "post-install": [
-                        /* Theres seem to be a permissions missmatch that causes the debug stripping to fail */
+
                         "chmod 644 `find /usr/lib/ -name libpython2.7.so.1.0`"
                     ],
                     "cleanup": [
@@ -532,134 +532,134 @@
             "cleanup-platform": ["*"],
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/extra-cmake-modules.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/extra-cmake-modules.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kwidgetsaddons",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwidgetsaddons.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwidgetsaddons.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "ki18n",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/ki18n.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/ki18n.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kconfig",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kconfig.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kconfig.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "attica",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/attica.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/attica.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kguiaddons",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kguiaddons.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kguiaddons.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kcoreaddons",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcoreaddons.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcoreaddons.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kauth",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kauth.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kauth.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "karchive",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_DISABLE_FIND_PACKAGE_Qt5Test=TRUE"],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/karchive.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/karchive.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kcodecs",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcodecs.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcodecs.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kconfigwidgets",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kconfigwidgets.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kconfigwidgets.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kitemviews",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kitemviews.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kitemviews.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kiconthemes",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kiconthemes.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kiconthemes.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kwindowsystem",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwindowsystem.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwindowsystem.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kcrash",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcrash.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcrash.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kdbusaddons",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdbusaddons.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdbusaddons.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kservice",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kservice.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kservice.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kglobalaccel",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kglobalaccel.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kglobalaccel.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "sonnet",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/sonnet.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/sonnet.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kcompletion",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcompletion.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcompletion.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "ktextwidgets",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/ktextwidgets.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/ktextwidgets.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kxmlgui",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kxmlgui.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kxmlgui.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "perl-uri-escape",
@@ -680,19 +680,19 @@
             "name": "kdoctools",
             "config-opts": [ "-DENABLE_TESTING=OFF", "-DDocBookXSL_DIR=/usr/share/xml/docbook/xml/xsl-stylesheets/", "-DDTD_PATH_LIST=/usr/share/xml/docbook/xml-dtd/4.5/" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdoctools.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdoctools.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kpackage",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kpackage.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kpackage.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kbookmarks",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kbookmarks.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kbookmarks.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "phonon",
@@ -704,195 +704,195 @@
             "name": "knotifications",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/knotifications.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/knotifications.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kwallet",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwallet.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwallet.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kjobwidgets",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kjobwidgets.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kjobwidgets.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "solid",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/solid.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/solid.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kio",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kio.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kio.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kparts",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kparts.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kparts.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kplotting",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kplotting.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kplotting.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kdesignerplugin",
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdesignerplugin.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdesignerplugin.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kinit",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kinit.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kinit.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kded",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kded.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kded.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kunitconversion",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kunitconversion.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kunitconversion.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kdeclarative",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdeclarative.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdeclarative.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kcmutils",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcmutils.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kcmutils.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "knotifyconfig",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/knotifyconfig.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/knotifyconfig.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "knewstuff",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/knewstuff.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/knewstuff.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kidletime",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kidletime.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kidletime.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "threadweaver",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/threadweaver.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/threadweaver.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kitemmodels",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kitemmodels.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kitemmodels.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kxmlrpcclient",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kxmlrpcclient.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kxmlrpcclient.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kdnssd",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdnssd.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kdnssd.git", "branch": "v5.63.0" } ]
         },
         {
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "name": "syntax-highlighting",
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/syntax-highlighting.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/syntax-highlighting.git", "branch": "v5.63.0" } ]
         },
         {
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "name": "ktexteditor",
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/ktexteditor.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/ktexteditor.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "frameworkintegration",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/frameworkintegration.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/frameworkintegration.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kemoticons",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kemoticons.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kemoticons.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kpty",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kpty.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kpty.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kwayland",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF"  ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kwayland.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kirigami",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DPLASMA_ENABLED=OFF"],
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kirigami.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kirigami.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "qqc2-desktop-style",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/qqc2-desktop-style.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/qqc2-desktop-style.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "kactivities",
             "config-opts": [ "-DENABLE_TESTING=OFF", "-DKACTIVITIES_LIBRARY_ONLY=ON" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kactivities.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kactivities.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "plasma-framework",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-framework.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-framework.git", "branch": "v5.63.0" } ]
         },
         {
             "name": "breeze-icons",
             "cleanup-platform": [ "*.rcc" ],
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze-icons.git", "branch": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze-icons.git", "branch": "v5.63.0" } ]
         },
 
         {
