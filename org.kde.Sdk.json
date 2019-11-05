@@ -471,6 +471,11 @@
                              "-webengine-proprietary-codecs",
                              "-webengine-icu",
                              "-webp" ],
+            "build-options": {
+                "env": {
+                    "PYTHONHOME": "/usr"
+                }
+            },
             "modules": [
                 {
                     "name": "python-2.7",
@@ -515,10 +520,6 @@
                 {
                     "type": "patch",
                     "path": "patch/qtwebengine-fix-build.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtwebengine-python-shebang.patch"
                 }
             ]
         },
