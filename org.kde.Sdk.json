@@ -515,6 +515,10 @@
                 {
                     "type": "patch",
                     "path": "patch/qtwebengine-fix-build.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtwebengine-python-shebang.patch"
                 }
             ]
         },
