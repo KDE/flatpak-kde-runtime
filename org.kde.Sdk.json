@@ -464,66 +464,6 @@
             ]
         },
         {
-            "name": "qt5-qtwebengine",
-            "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
-            "config-opts": [ "--", "-system-ffmpeg",
-                             "-webengine-proprietary-codecs",
-                             "-webengine-icu",
-                             "-webp" ],
-            "build-options": {
-                "env": {
-                    "PYTHONHOME": "/usr"
-                }
-            },
-            "modules": [
-                {
-                    "name": "python-2.7",
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://www.python.org/ftp/python/2.7.17/Python-2.7.17.tar.xz",
-                            "sha256": "4d43f033cdbd0aa7b7023c81b0e986fd11e653b5248dac9144d508f11812ba41"
-                        }
-                    ],
-                    "build-options": {
-                        "no-debuginfo": true
-                    },
-                    "config-opts": [
-                        "--enable-shared",
-                        "--with-ensurepip=yes",
-                        "--with-system-expat",
-                        "--with-system-ffi",
-                        "--enable-loadable-sqlite-extensions",
-                        "--with-dbmliborder=gdbm",
-                        "--enable-unicode=ucs4"
-                    ],
-                    "post-install": [
-
-                        "chmod 644 `find /usr/lib/ -name libpython2.7.so.1.0`"
-                    ],
-                    "cleanup": [
-                        "*"
-                    ]
-                }
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.1/submodules/qtwebengine-everywhere-src-5.13.1.tar.xz",
-                    "sha256": "7f12e710b76ff2be4497bf368fc01ecd2419e2e962fb90599b0ece00ae2eb7d0"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtwebengine-no-udev.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtwebengine-fix-build.patch"
-                }
-            ]
-        },
-        {
             "name": "libdbusmenuqt",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DWITH_DOC=OFF"],
