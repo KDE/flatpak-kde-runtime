@@ -915,7 +915,7 @@
             "name": "phonon-gstreamer",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DPHONON_BUILD_PHONON4QT5=ON"],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon-gstreamer.git", "branch": "v4.11.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon-gstreamer.git", "branch": "v4.10.0" } ]
         },
         {
             "name": "fcitx-platforminputcontext",
