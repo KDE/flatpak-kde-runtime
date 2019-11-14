@@ -52,6 +52,13 @@
             "merge-dirs": "wayland-decoration-client",
             "//TODO": "This is currently only used for gnome platform plugin and should be its own extension point",
             "download-if": "on-xdg-desktop-GNOME;on-xdg-desktop-GNOME-classic"
+        },
+        "org.kde.KIO" : {
+            "directory": "share/runtime/lib/plugins/kf5/",
+            "subdirectories": true,
+            "no-autodownload": true,
+            "version": "5.13",
+            "merge-dirs": "kio"
         }
     },
     "finish-args": [
