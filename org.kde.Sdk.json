@@ -689,7 +689,7 @@
             "name": "phonon",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DPHONON_BUILD_PHONON4QT5=ON"],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon.git", "branch": "v4.10.2" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/phonon.git", "branch": "v4.11.1" } ]
         },
         {
             "name": "knotifications",
