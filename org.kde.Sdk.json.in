@@ -56,7 +56,7 @@
     },
     "finish-args": [
         "--env=GI_TYPELIB_PATH=/app/lib/girepository-1.0",
-        "--env=GST_PLUGIN_PATH=/app/lib/gstreamer-1.0:/app/lib/@SDK_ARCH@-linux-gnu/extensions/gstreamer-1.0:/usr/lib/@SDK_ARCH@-linux-gnu/extensions/gstreamer-1.0",
+        "--env=GST_PLUGIN_PATH=/app/lib/gstreamer-1.0:/app/lib/@@SDK_ARCH@@-linux-gnu/extensions/gstreamer-1.0:/usr/lib/@@SDK_ARCH@@-linux-gnu/extensions/gstreamer-1.0",
         "--env=XDG_DATA_DIRS=/app/share:/usr/share:/usr/share/runtime/share:/run/host/share",
         "--env=QT_PLUGIN_PATH=/app/lib64/plugins:/app/lib/plugins:/usr/share/runtime/lib/plugins",
         "--env=QML2_IMPORT_PATH=/app/lib64/qml:/app/lib/qml",
