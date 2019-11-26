@@ -1,8 +1,8 @@
 ARCH ?= $(shell flatpak --default-arch)
 REPO ?= repo
 FB_ARGS ?= "--user"
-TMP=sdk
-INSTALL_SOURCE? = "--install-deps-from=flathub"
+TMP ?= sdk
+INSTALL_SOURCE ?= "--install-deps-from=flathub"
 
 all: $(REPO)/config $(foreach file, $(wildcard *.json.in), $(subst .json.in,.app,$(file)))
 
