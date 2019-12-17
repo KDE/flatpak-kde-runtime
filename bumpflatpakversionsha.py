@@ -59,7 +59,7 @@ def processModule(module):
 
 if __name__ == "__main__":
     content = ""
-    with open("org.kde.Sdk.json", 'r') as sdkfile:
+    with open("org.kde.Sdk.json.in", 'r') as sdkfile:
         content = sdkfile.read()
 
     value = json.loads(content)
@@ -71,5 +71,5 @@ if __name__ == "__main__":
         for (a, b) in repl.items():
             content = content.replace(a, b, 1)
 
-    with open("org.kde.Sdk.json", 'w') as sdkfile:
+    with open("org.kde.Sdk.json.in", 'w') as sdkfile:
         sdkfile.write(content)

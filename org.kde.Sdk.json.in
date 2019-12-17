@@ -132,8 +132,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtbase-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "26b6b686d66a7ad28eaca349e55e2894e5a735f3831e45f2049e93b1daa92121"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtbase-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "4ef921c0f208a1624439801da8b3f4344a3793b660ce1095f2b7f5c4246b9463"
                 },
                 {
                     "type": "patch",
@@ -164,8 +164,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtdeclarative-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "d9a524f45fe9e136cda2252f9d7013ec17046d907e3f39606db920987c22d1fd"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtdeclarative-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "bbf11ee33d6f0d6bd6c4dc641d4f2aafbc7c6cd3b421a658955302d441dc9d8e"
                 },
                 {
                     "type": "patch",
@@ -185,8 +185,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qttools-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "919a2713b6d2d7873a09ad85bd93cf4282606e5bf84d5884250f665a253ec06e"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qttools-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "8d7f8612ab6078fe7289d8a8dd8112b550fd0f51b5455df2dcfba651c30c3adf"
                 }
             ]
         },
@@ -197,8 +197,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtscript-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "3d92691c25577fbf7511d40253de0cd9d31444ea5a0aa860f65efb9fa0f3ce70"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtscript-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "6715ed5294013edfc338367b63ee6df2438965e4626435f30837e26a2151d3b9"
                 }
             ]
         },
@@ -210,8 +210,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtwebchannel-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "f452d419d8b19b566835f316bbf282dabc8b1c2a74c9c98c1aec4184465e9c13"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtwebchannel-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "0cb8dd07b34da8d44f8a14701409ce87fce5010f9b57273b357717c2dfd35383"
                 }
             ]
         },
@@ -222,8 +222,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtlocation-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "5fe4b824d3dc6c800682ff986333ec09edb9c27582066e928b1862b4d58212e3"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtlocation-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "87906fd100dd93ed495a4db2c435dcfab073d399ea11d5e18727cc782fac4cd1"
                 }
             ]
         },
@@ -234,8 +234,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtsvg-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "849e2e357e1333b64ecb728352f652cd8d916f029ed848f775b15d0b500cb7d7"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtsvg-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "1ee51a66e1996f96bf7fd4c696079c4cb22ea2bc710d47535c1daf3638d8f393"
                 }
             ]
         },
@@ -246,8 +246,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtx11extras-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "95a7c5c30f42e9575c3a17a2c0eb0cdbdd2d89dbcb3ee1426cd41bb07e28c51c"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtx11extras-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "7a06de3b49d34b72fa773800f049c06c04c51eb3440833779f1e9300a94947b1"
                 }
             ]
         },
@@ -258,8 +258,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtmultimedia-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "5f885459d46ea2f2bb24597678befd4913d8f88029730d01984f51f9c367b9f4"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtmultimedia-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "e7901aa32fe71f1409cf73a0c62f27b98f434688e7b16ea8591b29cd8f90ad5e"
                 }
             ]
         },
@@ -270,8 +270,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtsensors-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "46f73bbfddfd78a419c6424d6839318774b84c955a7f7a96c12c590f6d8fb177"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtsensors-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "306fc19309b218b062eb6415e2a8364c5c3b53c2942e200012d45f0c33717926"
                 }
             ]
         },
@@ -282,8 +282,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtquickcontrols-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "d6e64d8db13ada55fcb0d5e8ca26097085680087d931435c6c6db859d87493ea"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtquickcontrols-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "6dd477bcb36a94ab417faab5e607f7a07c217c4ca3f751d8d76d475ab0f3558e"
                 }
             ]
         },
@@ -294,8 +294,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtquickcontrols2-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "90ee8be7b66cc65f3f22e71a0b35adab5c169ac4f8ebc6f9e7685228bf8a7d70"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtquickcontrols2-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "827bf86db44ce4f698f172378313db04e1cb81c593e9342bdd95bb1708f27911"
                 }
             ]
         },
@@ -306,8 +306,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtgraphicaleffects-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "297a89bb6c771f849c4ce866e5c98dadf665163b3dab03bc48a58f51424e7e66"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtgraphicaleffects-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "d931637d97cbb0e57bf2d78bf0eb06494f21a05d2e6a17e7c4f4f2a2fabc23cd"
                 }
             ]
         },
@@ -318,8 +318,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtxmlpatterns-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "1e87d8c004ec0beea3b29d13f0964c563aa9fae51c392c998750ca4e386374e2"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtxmlpatterns-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "935209e91942e89d569f977153f0ca209125c205065960e55d4f4065a96d90d9"
                 }
             ]
         },
@@ -330,8 +330,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtimageformats-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "6968649fdccc7d633cf9ada25f1bdaf0a2fb45a214d58c2c47896166d4553ac0"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtimageformats-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "959f169af5fc09ef248062a457b78a667acafee71e57ea14fb14ff6f5dd898d5"
                 }
             ]
         },
@@ -342,8 +342,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtconnectivity-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "644e234eb64f602ef5cdeb8802ef9b58e75478f1124f001937275d62ed692e17"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtconnectivity-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "2843b3b479d0feba0624eb4ae41382b99db77b87a6b7dea5aacdf3b33644f0bd"
                 }
             ]
         },
@@ -354,8 +354,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtwayland-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "3c9b2358d9cee02552b875db93b56f3b9bc3b0f4df7a2ff7e8b72f2a8f2ca952"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtwayland-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "32d4fadb3a8dcee8953e6d92ee567927cd7649be6fc8dd378480664902c22610"
                 },
                 {
                     "type": "patch",
@@ -374,8 +374,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtvirtualkeyboard-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "8e368dde237d21666f6cc8512a060e205388e519a4d7559c0505cc75224ed62b"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtvirtualkeyboard-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "2f3362bf7999b912a4e92d0e9b5378089bc8dfcf270fe226bc68f2050de31410"
                 }
             ]
         },
@@ -386,8 +386,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtserialport-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "7677ffc1dce3b75c0a98d07d215588a8dccb5c276c55b4ecd60c35ed1c89cb34"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtserialport-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "4b647a66ae4da6b05b41b49ed296012002c1951f8a3ee24e0f2aa493f48e1ed3"
                 }
             ]
         },
@@ -398,8 +398,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtwebsockets-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "fc11236c8bf69b27a4e237a27b9ea27fc90d8c25d81d1d451ce3a0b63cbc02d3"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtwebsockets-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "50b881e83225b21e6657361e1af9b0154117d5efc03ba8c87aecacee3e42b0ad"
                 }
             ]
         },
@@ -410,8 +410,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtcharts-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "3bad81c3cfb32cf72fb0ce2ac2794d031cf78a3902b4715f89c09b2d0e041e87"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtcharts-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "ce7e22ca84e6a5fb85d6eb9e196407e0fa02848187548a2c388668e71f41a346"
                 }
             ]
         },
@@ -422,8 +422,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qt3d-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "d1b9fc0be82264b5f76c3a5330901dff95c1f2bcb67916c3fac6bad4ff69adc9"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qt3d-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "515b57d0f99be48f70817cf73bc8a0c0e63f7c9c41dbf35fc8baf065fc752515"
                 }
             ]
         },
@@ -434,8 +434,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtspeech-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "a0aca08feeac6925ead7f841319bdcfd60bfc126de07807edaf267c2ca8d13d5"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtspeech-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "c62ba6080a779f8a62e727a33c277cf0744426804f6774e1000bdee0799e7725"
                 }
             ]
         },
@@ -446,8 +446,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtnetworkauth-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "6326943e5c1a3e6eac8dcc44d088f1a3d1c45d14100ff1e95f833b0463243af3"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtnetworkauth-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "16e8e9ed817a9cf1373f8ec57e4a6da9983fc8c5c80d0c61e092414d25472d11"
                 }
             ]
         },
@@ -458,8 +458,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.13/5.13.2/submodules/qtgamepad-everywhere-src-5.13.2.tar.xz",
-                    "sha256": "75164885433e36a90b557aa7f319ff3d6278c3616469f67b42dda6eb8b92e76e"
+                    "url": "http://download.qt.io/archive/qt/5.14/5.14.0/submodules/qtgamepad-everywhere-src-5.14.0.tar.xz",
+                    "sha256": "3d9835538afe7299e42d53a7bb85fb90aecdc714846671582139ff80d752a657"
                 }
             ]
         },
