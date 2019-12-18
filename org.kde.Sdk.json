@@ -131,8 +131,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtbase-opensource-src-5.9.8.tar.xz",
-                    "sha256": "9b9dec1f67df1f94bce2955c5604de992d529dde72050239154c56352da0907d"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtbase-opensource-src-5.9.9.tar.xz",
+                    "sha256": "d5a97381b9339c0fbaf13f0c05d599a5c999dcf94145044058198987183fed65"
                 },
                 {
                     "type": "shell",
@@ -187,8 +187,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtdeclarative-opensource-src-5.9.8.tar.xz",
-                    "sha256": "b4e47b6038f3c604dee8128aeed12a0e9558a7b2bba63a2c44e4ad0743de5450"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtdeclarative-opensource-src-5.9.9.tar.xz",
+                    "sha256": "45a0132a0c97a6fe446061bbcd01b3fb7a551f2f8d7223c619f34a06585fb3da"
                 }
             ]
         },
@@ -204,8 +204,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qttools-opensource-src-5.9.8.tar.xz",
-                    "sha256": "a97556eb7b2f30252cdd8a598c396cfce2b2f79d2bae883af6d3b26a2cdcc63c"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qttools-opensource-src-5.9.9.tar.xz",
+                    "sha256": "fce6e0fd39a40bcef880c669080087dba94af1ec442296222210472e0852bf98"
                 }
             ]
         },
@@ -216,8 +216,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtscript-opensource-src-5.9.8.tar.xz",
-                    "sha256": "f60944404fa38052f5a0f75e3e63ccd1c4c5a2e99fa966d621cca6420771f7f5"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtscript-opensource-src-5.9.9.tar.xz",
+                    "sha256": "7addb75ebdfbaa2d3cdc3e9c6cb27fe6ccc4d61376cc133a522c4c30d5f973a0"
                 }
             ]
         },
@@ -229,8 +229,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtwebchannel-opensource-src-5.9.8.tar.xz",
-                    "sha256": "692acb68884fb3f47891f5b91f21d0f3b67242b3ef3fbc9f4a753ec2f25725ea"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtwebchannel-opensource-src-5.9.9.tar.xz",
+                    "sha256": "5537d4ecb890b758d780d7edc0c68d53a688c2b0b8c93c38e0d0e05b211214fd"
                 }
             ]
         },
@@ -267,8 +267,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtwebengine-opensource-src-5.9.8.tar.xz",
-                    "sha256": "74d3c3430a294faac2c6048ac5224f82fe98247a86cac13b386aa5a1c22db27c"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtwebengine-opensource-src-5.9.9.tar.xz",
+                    "sha256": "dd1926f8ca4025ef15293f389adafe26b3da93764bd837acba948c9f0529f1ef"
                 },
                 {
                     "type": "patch",
@@ -283,8 +283,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtsvg-opensource-src-5.9.8.tar.xz",
-                    "sha256": "c15d0c4ed93b168a6473749dd70cb04b3cc8e8af584447f2701be4cf2f11c5db"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtsvg-opensource-src-5.9.9.tar.xz",
+                    "sha256": "0d2759178c0c1ec8c7ea0d05b7bf57787c09d8059ca9b9518607a8e97933e888"
                 }
             ]
         },
@@ -295,8 +295,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtx11extras-opensource-src-5.9.8.tar.xz",
-                    "sha256": "c36e3e7f3dda27313b375f07309186e0a710612d688930ee536c3acd977a30a3"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtx11extras-opensource-src-5.9.9.tar.xz",
+                    "sha256": "01905343fab15d2536637de48fcadfd53c19bf93104c1fc0fe74ddff2d57cd73"
                 }
             ]
         },
@@ -307,8 +307,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtmultimedia-opensource-src-5.9.8.tar.xz",
-                    "sha256": "007881d47fb1f91dab0734385998324c8550bdd21e71bfc2f3b466311946c1a6"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtmultimedia-opensource-src-5.9.9.tar.xz",
+                    "sha256": "7efdacff5144b44a57d2ad742edc9843e65a599877e6ba7446696c947078ebee"
                 }
             ]
         },
@@ -319,8 +319,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtsensors-opensource-src-5.9.8.tar.xz",
-                    "sha256": "64d154eaa0e11262d75ee753fb02c6547a391a1c31dd17a36155c688bdcb1e66"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtsensors-opensource-src-5.9.9.tar.xz",
+                    "sha256": "075eb08575912d8aa4f3942ae2d0e771b913bac598e0be44b73179c820f9d4b0"
                 }
             ]
         },
@@ -331,8 +331,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtquickcontrols-opensource-src-5.9.8.tar.xz",
-                    "sha256": "8fba8b190b2f6259cafb9a13d57f1ae9806d871957d65a6af75030cf303ec665"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtquickcontrols-opensource-src-5.9.9.tar.xz",
+                    "sha256": "7b7a1bb674bd19a7bf83a9e64990272f5445e0705d33d4017c84478890a39f07"
                 }
             ]
         },
@@ -343,8 +343,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtquickcontrols2-opensource-src-5.9.8.tar.xz",
-                    "sha256": "6c1e47188facca82f443e2d3d9692d5a9574db073c37e218b1d89f795b697018"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtquickcontrols2-opensource-src-5.9.9.tar.xz",
+                    "sha256": "bd3dbd1305620e0292c0eed9f7b5646542c386b0a5129179c6b82a10307d38ec"
                 }
             ]
         },
@@ -355,8 +355,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtlocation-opensource-src-5.9.8.tar.xz",
-                    "sha256": "d4a4bf7d30a50aeb1202494a946c46053643a46fcea2d7b5a5ae0c5dddbad728"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtlocation-opensource-src-5.9.9.tar.xz",
+                    "sha256": "4a04f1a325e9f31f51d471ac4fcb9fbf914f45802521ba678ac4e1c41fb07c0e"
                 }
             ]
         },
@@ -367,8 +367,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtgraphicaleffects-opensource-src-5.9.8.tar.xz",
-                    "sha256": "7f0d47ed7a92440de8d4a149210ecb76f2020586d7704388f5fd69063ab01a1b"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtgraphicaleffects-opensource-src-5.9.9.tar.xz",
+                    "sha256": "8a4ec3642e369a519db44055fade4d8c33811abf53d84677964ee33068d8c804"
                 }
             ]
         },
@@ -379,8 +379,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtxmlpatterns-opensource-src-5.9.8.tar.xz",
-                    "sha256": "e4fab0a2d985994b5810af84488d6a6a7b295bd75b8efea982ab1754ddf774fe"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtxmlpatterns-opensource-src-5.9.9.tar.xz",
+                    "sha256": "9852ab556e8b0dfc9fce29ca9cd1e4c2a0dfacb06462c3b68b672aff220f4c42"
                 }
             ]
         },
@@ -391,8 +391,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtimageformats-opensource-src-5.9.8.tar.xz",
-                    "sha256": "5357f3ab91c67bfcc88c1dea3213c9538af6823f99a20cfec89ba66fab513627"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtimageformats-opensource-src-5.9.9.tar.xz",
+                    "sha256": "e747b17d98286f72ffbac67e452bb944ffd092cbaf3f215b73e9e76064c0d9cc"
                 }
             ]
         },
@@ -403,8 +403,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtconnectivity-opensource-src-5.9.8.tar.xz",
-                    "sha256": "4bd2e385c9cb245ac770198220983c4b0e2555d5317788814b66ac5f2aec6879"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtconnectivity-opensource-src-5.9.9.tar.xz",
+                    "sha256": "755666bcbd19acd0af582b826af5148f4df72ad1e110d6950aa430d631492213"
                 }
             ]
         },
@@ -415,8 +415,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtwayland-opensource-src-5.9.8.tar.xz",
-                    "sha256": "b93916f90fd63c08cc33788b399fa9f9c90b932e05010c3e82b2d35348fd613e"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtwayland-opensource-src-5.9.9.tar.xz",
+                    "sha256": "edc59904b4f0d67b0687defb323ed6ca1198131b97715d3f3c619025565b5ffc"
                 },
                 { "type": "patch", "path": "patch/qtwayland-compose.patch" }
             ]
@@ -428,8 +428,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtvirtualkeyboard-opensource-src-5.9.8.tar.xz",
-                    "sha256": "06e950bf4fd195f22b2fb7ccfa7425c50cdda3d42615e0589857fe9219677ccf"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtvirtualkeyboard-opensource-src-5.9.9.tar.xz",
+                    "sha256": "d621ab4cc313d41d7eac419f115d5e2b7ebb99c7fe53358b1093c52a2fdaff28"
                 }
             ]
         },
@@ -440,8 +440,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtserialport-opensource-src-5.9.8.tar.xz",
-                    "sha256": "141eb4f49b3b3e94433e7941d57713d2a1cc8e16f6fc22779d683359ef965d7b"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtserialport-opensource-src-5.9.9.tar.xz",
+                    "sha256": "65c2fa8add33c96afd2937feaa8f8a1e2b5c429319946a3beca85c666bf17c23"
                 }
             ]
         },
@@ -452,8 +452,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtwebsockets-opensource-src-5.9.8.tar.xz",
-                    "sha256": "616907dfc0e581ceb18cde27d998576abc22d677af17f7fc26ddfc4328eec2f3"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtwebsockets-opensource-src-5.9.9.tar.xz",
+                    "sha256": "e73afadaa5f2008a4f9ad36f9a1ca4026060864ad3259d8ac9efbffe5de8f70b"
                 }
             ]
         },
@@ -464,8 +464,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtcharts-opensource-src-5.9.8.tar.xz",
-                    "sha256": "a75f89c0081af9635b50cab335a4871d476b36abc8a11dc4f24724bd3cf42437"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtcharts-opensource-src-5.9.9.tar.xz",
+                    "sha256": "a503e9f1504c41a6a7850ca2e0e4e786fce45345c94eb81a6abd352d15b7d95c"
                 }
             ]
         },
@@ -476,8 +476,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qt3d-opensource-src-5.9.8.tar.xz",
-                    "sha256": "21a4890cc52c015c1be0568ef2d322d48b430470fb8c482e283ff6d783cb93f9"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qt3d-opensource-src-5.9.9.tar.xz",
+                    "sha256": "558ca9b4040c0d8a5c744d56599f4a4572d6c4d4082cbe86b79f583df3c97300"
                 }
             ]
         },
@@ -488,8 +488,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.qt.io/archive/qt/5.9/5.9.8/submodules/qtgamepad-opensource-src-5.9.8.tar.xz",
-                    "sha256": "4d3e45484030475e858895484acf739d31125a2b94fa9cde08805f19eb8464e4"
+                    "url": "http://download.qt.io/archive/qt/5.9/5.9.9/submodules/qtgamepad-opensource-src-5.9.9.tar.xz",
+                    "sha256": "1d8232fcbddfe7b0e3746fa3c974197dd2c4f3a2b524b0bfcf14776273e2c39b"
                 }
             ]
         },
