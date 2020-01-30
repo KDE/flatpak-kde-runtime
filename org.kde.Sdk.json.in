@@ -360,10 +360,6 @@
                 },
                 {
                     "type": "patch",
-                    "path": "patch/qtwayland-do-not-redraw-decorations-everytime.patch"
-                },
-                {
-                    "type": "patch",
                     "path": "patch/qtwayland-use-gnome-platform-theme-on-gnome-based-desktops.patch"
                 }
             ]
