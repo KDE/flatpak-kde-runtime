@@ -891,13 +891,13 @@
             "name": "breeze",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DWITH_DECORATIONS=OFF", "-DWITH_WALLPAPERS=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git", "branch": "Plasma/5.16" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze.git", "branch": "Plasma/5.17" } ]
         },
         {
             "name": "plasma-integration",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DENABLE_TESTING=OFF", "-DBUILD_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-integration.git", "branch": "Plasma/5.16" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/plasma-integration.git", "branch": "Plasma/5.17" } ]
         },
         {
             "name": "kwayland-integration",
@@ -907,7 +907,7 @@
                 {
                     "type": "git",
                     "url": "git://anongit.kde.org/kwayland-integration.git",
-                    "branch": "Plasma/5.16"
+                    "branch": "Plasma/5.17"
                 }
             ]
         },
