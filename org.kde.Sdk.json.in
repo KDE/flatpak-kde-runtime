@@ -2,7 +2,7 @@
     "build-runtime": true,
     "id": "org.kde.Sdk",
     "id-platform": "org.kde.Platform",
-    "branch": "5.13",
+    "branch": "5.14",
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
     "runtime-version": "19.08",
@@ -31,7 +31,7 @@
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
-            "version": "5.13",
+            "version": "5.14",
             "merge-dirs": "styles",
             "download-if": "active-gtk-theme"
         },
@@ -39,7 +39,7 @@
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
-            "version": "5.13",
+            "version": "5.14",
             "merge-dirs": "platformthemes",
             "//TODO": "This is currently only used for gnome platform plugin and should be its own extension point",
             "download-if": "on-xdg-desktop-GNOME;on-xdg-desktop-GNOME-classic"
@@ -48,7 +48,7 @@
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
-            "version": "5.13",
+            "version": "5.14",
             "merge-dirs": "wayland-decoration-client",
             "//TODO": "This is currently only used for gnome platform plugin and should be its own extension point",
             "download-if": "on-xdg-desktop-GNOME;on-xdg-desktop-GNOME-classic"
@@ -63,8 +63,8 @@
         "--env=KDE_FORK_SLAVES=1",
         "--filesystem=xdg-config/kdeglobals:ro",
         "--talk-name=com.canonical.AppMenu.Registrar",
-        "--sdk=org.kde.Sdk//5.13",
-        "--runtime=org.kde.Platform//5.13"
+        "--sdk=org.kde.Sdk//5.14",
+        "--runtime=org.kde.Platform//5.14"
     ],
     "cleanup": [ "/man",
                  "/share/man",
