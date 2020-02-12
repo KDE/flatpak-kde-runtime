@@ -3,13 +3,12 @@ description: KWindowSystem
 
 depends:
 - qt5/qtbase.bst
-- qt5/qtx11extras.bst
 
 build-depends:
-- freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
+- kf5/extra-cmake-modules.bst
 - freedesktop-sdk.bst:components/xcb-util-keysyms.bst
 - freedesktop-sdk.bst:components/xcb-util-wm.bst
-- kf5/extra-cmake-modules.bst
+- qt5/qtx11extras.bst
 - qt5/qttools.bst
 
 
