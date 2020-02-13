@@ -7,6 +7,7 @@ depends:
 build-depends:
 - kf5/extra-cmake-modules.bst
 - qt5/qttools.bst
+- qt5/qtxmlpatterns.bst
 
 sources:
 - kind: git

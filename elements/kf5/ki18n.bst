@@ -2,11 +2,10 @@ kind: cmake
 description: Ki18n
 
 depends:
-- qt5/qtbase.bst
+- qt5/qtdeclarative.bst
 
 build-depends:
 - kf5/extra-cmake-modules.bst
-- qt5/qtdeclarative.bst
 
 sources:
 - kind: git

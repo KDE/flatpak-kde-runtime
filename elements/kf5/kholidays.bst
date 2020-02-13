@@ -2,11 +2,10 @@ kind: cmake
 description: KHolidays
 
 depends:
-- qt5/qtbase.bst
+- qt5/qtdeclarative.bst
 
 build-depends:
 - kf5/extra-cmake-modules.bst
-- qt5/qtdeclarative.bst
 - qt5/qttools.bst
 
 sources:

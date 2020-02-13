@@ -5,7 +5,6 @@ description: |
 
 depends:
 - kf5/attica.bst
-- kf5/bluez-qt.bst
 - kf5/breeze-icons.bst
 - kf5/extra-cmake-modules.bst
 - kf5/karchive.bst
@@ -18,19 +17,23 @@ depends:
 - kf5/kholidays.bst
 - kf5/ki18n.bst
 - kf5/kidletime.bst
-- kf5/kimageformats.bst
 - kf5/kirigami.bst
 - kf5/kitemmodels.bst
 - kf5/kitemviews.bst
 - kf5/kplotting.bst
-- kf5/ksyntaxhighlighting.bst
 - kf5/kwayland.bst
 - kf5/kwidgetsaddons.bst
 - kf5/kwindowsystem.bst
-- kf5/modemmanager-qt.bst
-- kf5/networkmanager-qt.bst
-- kf5/oxygen-icons.bst
-- kf5/prison.bst
 - kf5/solid.bst
 - kf5/sonnet.bst
+- kf5/syntaxhighlighting.bst
 - kf5/threadweaver.bst
+
+- kf5/prison.bst
+
+### can't find these ones in the org.kde.Sdk.json.in manifest, haven't incorporated them (yet)
+#- kf5/bluez-qt.bst
+#- kf5/kimageformats.bst
+#- kf5/modemmanager-qt.bst
+#- kf5/networkmanager-qt.bst
+#- kf5/oxygen-icons.bst

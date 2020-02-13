@@ -6,6 +6,7 @@ depends:
 
 build-depends:
 - freedesktop-sdk.bst:components/gperf.bst
+- freedesktop-sdk.bst:components/python3.bst
 - kf5/extra-cmake-modules.bst
 - qt5/qttools.bst
 

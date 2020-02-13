@@ -1,13 +1,25 @@
 kind: cmake
-description: Extra
+description: Extra Cmake Modules
 
 depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
+
+build-depends:
+- qt5/qtdeclarative.bst
+- qt5/qttools.bst
+
 
 variables:
   cmake-local: |
     -DENABLE_TESTING=OFF
 
+    #config:
+    #  build-commands:
+    #    (>):
+    #      - mkdir /buildstream-install/usr/
+    #      - mkdir /buildstream-install/usr/bin/
+    #      - ln -s /usr/bin/python3 /buildstream-install/usr/bin/python
+    #
 sources:
 - kind: git
   url: git://anongit.kde.org/extra-cmake-modules.git

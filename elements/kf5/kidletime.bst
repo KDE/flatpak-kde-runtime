@@ -2,11 +2,10 @@ kind: cmake
 description: KIdleTime
 
 depends:
-- qt5/qtbase.bst
+- qt5/qtx11extras.bst
 
 build-depends:
 - kf5/extra-cmake-modules.bst
-- qt5/qtx11extras.bst
 
 sources:
 - kind: git

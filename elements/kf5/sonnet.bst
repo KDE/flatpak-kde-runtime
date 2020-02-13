@@ -3,6 +3,8 @@ description: Sonnet
 
 depends:
 - qt5/qtbase.bst
+- freedesktop-sdk.bst:components/aspell.bst
+- freedesktop-sdk.bst:components/hunspell.bst
 
 build-depends:
 - kf5/extra-cmake-modules.bst

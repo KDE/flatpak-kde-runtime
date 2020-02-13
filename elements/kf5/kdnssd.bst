@@ -6,7 +6,7 @@ depends:
 
 build-depends:
 - kf5/extra-cmake-modules.bst
-#- freedesktop-sdk.bst:components/avahi.bst
+- freedesktop-sdk.bst:components/avahi.bst
 - qt5/qttools.bst
 
 sources:

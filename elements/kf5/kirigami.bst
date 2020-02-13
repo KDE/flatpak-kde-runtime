@@ -2,12 +2,11 @@ kind: cmake
 description: Kirigami
 
 depends:
-- qt5/qtbase.bst
+- qt5/qtquickcontrols2.bst
 
 build-depends:
 - kf5/extra-cmake-modules.bst
 - qt5/qtdeclarative.bst
-- qt5/qtquickcontrols2.bst
 - qt5/qtsvg.bst
 - qt5/qttools.bst
 

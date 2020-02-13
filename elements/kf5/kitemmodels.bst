@@ -2,7 +2,7 @@ kind: cmake
 description: KItemModels
 
 depends:
-- qt5/qtbase.bst
+- qt5/qtdeclarative.bst
 
 build-depends:
 - kf5/extra-cmake-modules.bst
