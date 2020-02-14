@@ -24,12 +24,12 @@ depends:
 - kf5/kwayland.bst
 - kf5/kwidgetsaddons.bst
 - kf5/kwindowsystem.bst
+- kf5/prison.bst
 - kf5/solid.bst
 - kf5/sonnet.bst
 - kf5/syntaxhighlighting.bst
 - kf5/threadweaver.bst
 
-- kf5/prison.bst
 
 ### can't find these ones in the org.kde.Sdk.json.in manifest, haven't incorporated them (yet)
 #- kf5/bluez-qt.bst
