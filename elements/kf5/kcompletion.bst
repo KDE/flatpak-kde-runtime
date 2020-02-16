@@ -2,12 +2,10 @@ kind: cmake
 description: KCompletion
 
 depends:
-- qt5/qtbase.bst
-- kf5/kwidgetsaddons.bst
 - kf5/kconfig.bst
+- kf5/kwidgetsaddons.bst
 
 build-depends:
-- freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kf5/extra-cmake-modules.bst
 - qt5/qttools.bst
 

@@ -6,10 +6,7 @@ depends:
 - kf5/kwindowsystem.bst
 
 build-depends:
-- freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
-- freedesktop-sdk.bst:components/xcb-util-keysyms.bst
 - kf5/extra-cmake-modules.bst
-- qt5/qttools.bst
 
 sources:
 - kind: git
