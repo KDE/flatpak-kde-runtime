@@ -24,6 +24,7 @@ depends:
 - kf5/kwayland.bst
 - kf5/kwidgetsaddons.bst
 - kf5/kwindowsystem.bst
+- kf5/phonon.bst
 - kf5/prison.bst
 - kf5/solid.bst
 - kf5/sonnet.bst
