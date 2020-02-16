@@ -5,7 +5,7 @@ description: |
 
 depends:
 - filename: kf5/kactivities.bst
-- filename: kf5/WIP/kauth.bst
+- filename: kf5/kauth.bst
 - filename: kf5/WIP/kcompletion.bst
 - filename: kf5/WIP/kcrash.bst
 - filename: kf5/WIP/kdoctools.bst

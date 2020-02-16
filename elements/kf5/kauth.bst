@@ -1,13 +1,12 @@
 kind: cmake
 description: KAuth
 
-build-depends:
-- freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
-- kf5/extra-cmake-modules.bst
+depends:
 - kf5/kcoreaddons.bst
-- qt5/qtbase.bst
-- qt5/qttools.bst
 
+build-depends:
+- kf5/extra-cmake-modules.bst
+- qt5/qttools.bst
 
 sources:
 - kind: git
