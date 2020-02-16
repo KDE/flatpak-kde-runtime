@@ -1,0 +1,25 @@
+kind: cmake
+description: KDocTools
+
+depends:
+- freedesktop-sdk.bst:components/docbook-xsl.bst
+- kf5/karchive.bst
+- kf5/ki18n.bst
+
+build-depends:
+- kf5/extra-cmake-modules.bst
+- freedesktop-sdk.bst:components/libxslt.bst
+- perl-uri-escape.bst 
+
+config:
+  configure-commands:
+  - |
+    %{cmake} \
+    -DDocBookXSL_DIR=/usr/share/xml/docbook/xml/xsl-stylesheets/ \
+    -DDocBookXML4_DTD_DIR=/usr/share/xml/docbook/xml-dtd/4.5/
+
+sources:
+- kind: git
+  url: git://anongit.kde.org/kdoctools.git
+  track: v5.66.0
+  ref: 2ff90d223537e2bc33d624a0797dfc46996ce403

@@ -1,0 +1,15 @@
+From: Thomas Coldrick <othko97@gmail.com>
+Date: Mon, 7 Oct 2019 19:53:46 +0100
+Subject: Add python headers to include path
+diff -ruN boost.old/Jamroot boost.new/Jamroot
+--- boost.old/Jamroot	2019-08-14 13:02:10.000000000 +0100
++++ boost.new/Jamroot	2019-10-07 20:31:16.043377264 +0100
+@@ -171,6 +171,8 @@
+       [ boostcpp.architecture ]
+       [ boostcpp.address-model ]
+ 
++      <include>/usr/include/python3.7m
++
+       # Disable auto-linking for all targets here, primarily because it caused
+       # troubles with V2.
+       <define>BOOST_ALL_NO_LIB=1
