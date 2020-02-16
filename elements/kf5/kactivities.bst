@@ -2,18 +2,14 @@ kind: cmake
 description: KActivities
 
 depends:
-- qt5/qtbase.bst
 - qt5/qtdeclarative.bst
-- kf5/kcoreaddons.bst
 - kf5/kconfig.bst
-- kf5/kwindowsystem.bst
+- kf5/kcoreaddons.bst
 
 build-depends:
-- freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
-- freedesktop-sdk.bst:components/xcb-util-keysyms.bst
 - kf5/extra-cmake-modules.bst
 - boost.bst
-#- qt5/qttools.bst
+- kf5/kwindowsystem.bst
 
 
 

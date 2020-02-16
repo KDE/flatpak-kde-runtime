@@ -4,7 +4,7 @@ description: |
   Tier 2 Frameworks can depend only on Tier 1 Frameworks, Qt official frameworks, or other system libraries.
 
 depends:
-- filename: kf5/WIP/kactivities.bst
+- filename: kf5/kactivities.bst
 - filename: kf5/WIP/kauth.bst
 - filename: kf5/WIP/kcompletion.bst
 - filename: kf5/WIP/kcrash.bst
