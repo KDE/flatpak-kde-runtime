@@ -9,7 +9,7 @@ depends:
 - filename: kf5/kcompletion.bst
 - filename: kf5/kcrash.bst
 - filename: kf5/kdoctools.bst
-- filename: kf5/WIP/kjobwidgets.bst
+- filename: kf5/kjobwidgets.bst
 - filename: kf5/WIP/knotifications.bst
 - filename: kf5/WIP/kpty.bst
 - filename: kf5/WIP/kunitconversion.bst

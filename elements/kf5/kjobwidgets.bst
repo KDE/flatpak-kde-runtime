@@ -4,11 +4,11 @@ description: KJobWidgets
 depends:
 - kf5/kcoreaddons.bst
 - kf5/kwidgetsaddons.bst
+- qt5/qtx11extras.bst
 
 build-depends:
 - kf5/extra-cmake-modules.bst
 - qt5/qttools.bst
-- qt5/qtx11extras.bst
 
 
 sources:
