@@ -11,6 +11,7 @@ depends:
 - filename: kf5/kdoctools.bst
 - filename: kf5/kjobwidgets.bst
 - filename: kf5/knotifications.bst
+- filename: kf5/kpackage.bst
 - filename: kf5/kpty.bst
 - filename: kf5/kunitconversion.bst
 - filename: kf5/syndication.bst
