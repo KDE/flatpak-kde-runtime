@@ -13,7 +13,7 @@ depends:
 - filename: kf5/knotifications.bst
 - filename: kf5/kpty.bst
 - filename: kf5/kunitconversion.bst
-- filename: kf5/WIP/syndication.bst
+- filename: kf5/syndication.bst
 
 ### can't find these ones in the org.kde.Sdk.json.in manifest, haven't incorporated them (yet)
 #- filename: kf5/WIP/kfilemetadata.bst

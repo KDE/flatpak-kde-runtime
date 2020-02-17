@@ -1,14 +1,11 @@
 kind: cmake
 description: Syndication
 
-#depends:
-#- qt5/qtbase.bst
-#- kf5/kcodecs.bst
-#
+depends:
+- kf5/kcodecs.bst
+
 build-depends:
 - kf5/extra-cmake-modules.bst
-- qt5.bst
-- provisional-kf5-tier1.bst
 
 sources:
 - kind: git
