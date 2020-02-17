@@ -2,13 +2,13 @@ kind: cmake
 description: KDocTools
 
 depends:
+- freedesktop-sdk.bst:components/libxslt.bst
 - freedesktop-sdk.bst:components/docbook-xsl.bst
 - kf5/karchive.bst
-- kf5/ki18n.bst
 
 build-depends:
 - kf5/extra-cmake-modules.bst
-- freedesktop-sdk.bst:components/libxslt.bst
+- kf5/ki18n.bst
 - perl-uri-escape.bst 
 
 config:
