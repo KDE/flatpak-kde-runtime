@@ -1,17 +1,11 @@
 kind: cmake
 description: KUnitConversion
 
-#depends:
-#- qt5/qtbase.bst
-#- kf5/ki18n.bst
-#- filename: base/gettext.bst
-#  junction: freedesktop-sdk.bst
-#  type: build
+depends:
+- kf5/ki18n.bst
 
 build-depends:
 - kf5/extra-cmake-modules.bst
-- qt5.bst
-- provisional-kf5-tier1.bst
 
 sources:
 - kind: git
