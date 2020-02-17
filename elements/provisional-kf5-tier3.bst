@@ -4,10 +4,10 @@ description: |
   Tier 3 Frameworks can depend only on kconfigwidgets, kservice, Tier 2 Frameworks, Tier 1 Frameworks, Qt official frameworks, or other system libraries.
 
 depends:
-- kf5/WIP/kconfigwidgets.bst
+- kf5/kconfigwidgets.bst
 - kf5/WIP/kdesignerplugin.bst
 - kf5/WIP/kglobalaccel.bst
-- kf5/WIP/kservice.bst
+- kf5/kservice.bst
 
 - kf5/WIP/kiconthemes.bst
 - kf5/WIP/ktextwidgets.bst
