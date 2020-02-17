@@ -1,18 +1,21 @@
 kind: cmake
 description: KNotifications
 
-#depends:
-#- qt5/qtbase.bst
-#- kf5/kwindowsystem.bst
-#- kf5/kconfig.bst
-#- kf5/kcodecs.bst
-#- kf5/kcoreaddons.bst
-#- kf5/phonon.bst
+depends:
+- kf5/kcodecs.bst
+- kf5/kconfig.bst
+- kf5/kcoreaddons.bst
+- kf5/kwindowsystem.bst
+- kf5/phonon.bst
+- qt5/qtspeech.bst
+- libdbusmenuqt.bst
 
 build-depends:
 - kf5/extra-cmake-modules.bst
-- qt5.bst
-- provisional-kf5-tier1.bst
+
+variables:
+  cmake-local: >
+    -DENABLE_TESTING=OFF
 
 sources:
 - kind: git
