@@ -15,7 +15,6 @@
         "org.freedesktop.Platform.Icontheme",
         "org.freedesktop.Platform.VAAPI.Intel",
         "org.freedesktop.Platform.openh264",
-        "org.freedesktop.Platform.ffmpeg-full",
         "org.gtk.Gtk3theme"
     ],
     "inherit-sdk-extensions": [
