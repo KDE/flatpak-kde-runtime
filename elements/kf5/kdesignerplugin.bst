@@ -1,17 +1,14 @@
 kind: cmake
 description: KDesignerPlugin
 
-#depends:
-#- qt5/qtbase.bst
-#- kf5/kcoreaddons.bst
-#- kf5/kconfig.bst
-#- kf5/kdesignerplugin.bst
-#
+depends:
+- kf5/kcoreaddons.bst
+- kf5/kconfig.bst
+
 build-depends:
 - kf5/extra-cmake-modules.bst
-- qt5.bst
-- provisional-kf5-tier1.bst
-- provisional-kf5-tier2.bst
+- qt5/qttools.bst
+- kf5/kdoctools.bst
 
 sources:
 - kind: git
