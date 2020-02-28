@@ -8,7 +8,7 @@ depends:
 - kf5/kservice.bst
 
 - kf5/kdesignerplugin.bst
-- kf5/WIP/kglobalaccel.bst
+- kf5/kglobalaccel.bst
 
 - kf5/WIP/kiconthemes.bst
 - kf5/WIP/ktextwidgets.bst
