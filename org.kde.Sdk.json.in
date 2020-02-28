@@ -650,6 +650,12 @@
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/kbookmarks.git", "branch": "v5.66.0" } ]
         },
         {
+            "name": "kfilemetadata",
+            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "buildsystem": "cmake-ninja",
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kfilemetadata.git", "branch": "v5.66.0" } ]
+        },
+        {
             "name": "phonon",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DPHONON_BUILD_PHONON4QT5=ON"],
             "buildsystem": "cmake-ninja",
