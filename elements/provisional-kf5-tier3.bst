@@ -6,7 +6,6 @@ description: |
 depends:
 - kf5/kconfigwidgets.bst
 - kf5/kservice.bst
-
 - kf5/kdesignerplugin.bst
 - kf5/kglobalaccel.bst
 
@@ -14,7 +13,7 @@ depends:
 - kf5/ktextwidgets.bst
 - kf5/kemoticons.bst
 - kf5/kded.bst
-- kf5/WIP/kwallet.bst
+- kf5/kwallet.bst
 
 ### can't find these ones in the org.kde.Sdk.json.in manifest, haven't incorporated them (yet)
 #- kf5/WIP/baloo.bst
