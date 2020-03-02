@@ -4,7 +4,7 @@ description: |
   Tier 4 Frameworks can depend only on other Tier 4 Frameworks, Tier 3 Frameworks, Tier 2 Frameworks, Tier 1 Frameworks, Qt official frameworks, or other system libraries.
 
 depends:
-- kf5/WIP/kxmlgui.bst                   # iconthemes configwidgets global-accel
+- kf5/kxmlgui.bst                   # iconthemes configwidgets global-accel
 - kf5/WIP/qqc2-desktop-style.bst        # iconthemes configwidgets 
 - kf5/WIP/kcmutils.bst                  # xmlgui configwidgets service
 - kf5/WIP/kbookmarks.bst                # xmlgui configwidgets
