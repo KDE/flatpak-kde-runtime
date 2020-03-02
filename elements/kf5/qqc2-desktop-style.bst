@@ -1,18 +1,12 @@
 kind: cmake
 description: QQC2
 
-#depends:
-#- qt5/qtbase.bst
-#- qt5/qtdeclarative.bst
-#- kf5/kirigami.bst
-#- kf5/kiconthemes.bst
-#- kf5/kconfigwidgets.bst
-#
+depends:
+- kf5/kirigami.bst
+- kf5/kiconthemes.bst
+
 build-depends:
 - kf5/extra-cmake-modules.bst
-- qt5.bst
-- provisional-kf5-tier1.bst
-- provisional-kf5-tier2.bst
 
 sources:
 - kind: git
