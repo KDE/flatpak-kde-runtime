@@ -11,7 +11,7 @@ depends:
 - kf5/kglobalaccel.bst
 
 - kf5/kiconthemes.bst
-- kf5/WIP/ktextwidgets.bst
+- kf5/ktextwidgets.bst
 - kf5/WIP/kemoticons.bst
 - kf5/WIP/kded.bst
 - kf5/WIP/kwallet.bst
