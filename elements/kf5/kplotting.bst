@@ -1,7 +1,7 @@
 kind: cmake
 description: KPlotting
 
-depends:
+runtime-depends:
 - qt5/qtbase.bst
 
 build-depends:

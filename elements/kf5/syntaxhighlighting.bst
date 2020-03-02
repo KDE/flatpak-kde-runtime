@@ -1,7 +1,7 @@
 kind: cmake
 description: SyntaxHighlighting
 
-depends:
+runtime-depends:
 - qt5/qtbase.bst
 
 build-depends:

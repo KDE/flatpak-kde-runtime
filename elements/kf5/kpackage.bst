@@ -1,8 +1,10 @@
 kind: cmake
 description: KPackage
 
-depends:
+runtime-depends:
 - kf5/karchive.bst
+
+depends:
 - kf5/kcoreaddons.bst
 - kf5/ki18n.bst
 

@@ -1,9 +1,6 @@
 kind: cmake
 description: KConfigWidgets
 
-runtime-depends:
-- kf5/kconfig.bst
-
 depends:
 - kf5/kauth.bst
 - kf5/kcodecs.bst

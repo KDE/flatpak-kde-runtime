@@ -1,7 +1,7 @@
 kind: cmake
 description: KItemViews
 
-depends:
+runtime-depends:
 - qt5/qtbase.bst
 
 build-depends:

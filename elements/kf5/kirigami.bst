@@ -6,7 +6,6 @@ depends:
 
 build-depends:
 - kf5/extra-cmake-modules.bst
-- qt5/qtdeclarative.bst
 - qt5/qtsvg.bst
 - qt5/qttools.bst
 

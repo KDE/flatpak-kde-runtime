@@ -1,5 +1,8 @@
 kind: manual
 
+runtime-depends:
+- qt5/qtbase.bst
+
 build-depends:
 - freedesktop-sdk.bst:bootstrap-import.bst
 - freedesktop-sdk.bst:components/which.bst

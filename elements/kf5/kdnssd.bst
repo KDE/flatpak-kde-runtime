@@ -1,7 +1,7 @@
 kind: cmake
 description: KDNSSD
 
-depends:
+runtime-depends:
 - qt5/qtbase.bst
 
 build-depends:

@@ -1,7 +1,7 @@
 kind: autotools
-description: libdtmx (needed for prison)
+description: libdmtx (needed for prison)
 
-depends:
+runtime-depends:
 - qt5/qtbase.bst
 
 build-depends:

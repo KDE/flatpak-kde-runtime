@@ -1,8 +1,10 @@
 kind: cmake
 description: Sonnet
 
-depends:
+runtime-depends:
 - qt5/qtbase.bst
+
+depends:
 - freedesktop-sdk.bst:components/aspell.bst
 - freedesktop-sdk.bst:components/hunspell.bst
 

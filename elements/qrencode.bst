@@ -1,5 +1,5 @@
 kind: cmake
-description: grencode (needed for prison)
+description: qrencode (needed for prison)
 
 depends:
 - qt5/qtbase.bst

@@ -1,7 +1,7 @@
 kind: cmake
 description: KCoreAddons
 
-depends:
+runtime-depends:
 - qt5/qtbase.bst
 
 build-depends:

@@ -2,9 +2,9 @@ kind: cmake
 description: KDocTools
 
 depends:
-- freedesktop-sdk.bst:components/libxslt.bst
-- freedesktop-sdk.bst:components/docbook-xsl.bst
 - kf5/karchive.bst
+- freedesktop-sdk.bst:components/libxslt.bst
+- freedesktop-sdk.bst:components/docbook-xsl.bst        #Seems to be needed (elements that depend on kdoctools won't build correctly, if docbook-xsl isn't a runtime dependency of kdoctools)
 
 build-depends:
 - kf5/extra-cmake-modules.bst
