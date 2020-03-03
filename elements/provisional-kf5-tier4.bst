@@ -11,7 +11,7 @@ depends:
 - kf5/kdeclarative.bst               # kio
 
 - kf5/kinit.bst                      # kio
-- kf5/WIP/knewstuff.bst              # kio
+- kf5/knewstuff.bst                  # kio
 - kf5/WIP/kparts.bst                 # kio
 - kf5/WIP/knotifyconfig.bst          # kio
 - kf5/WIP/ktexteditor.bst            # kio
