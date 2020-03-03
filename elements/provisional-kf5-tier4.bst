@@ -7,12 +7,12 @@ depends:
 - kf5/kxmlgui.bst                    # 
 - kf5/qqc2-desktop-style.bst         # 
 - kf5/kbookmarks.bst                 # xmlgui
-- kf5/WIP/kio.bst                    # bookmarks
+- kf5/kio.bst                        # bookmarks
+- kf5/WIP/kdeclarative.bst           # kio
 
 - kf5/WIP/kinit.bst                  # kio
 - kf5/WIP/knewstuff.bst              # kio
 - kf5/WIP/kparts.bst                 # kio
-- kf5/WIP/kdeclarative.bst           # kio
 - kf5/WIP/knotifyconfig.bst          # kio
 - kf5/WIP/ktexteditor.bst            # kio
 - kf5/WIP/kxmlrpcclient.bst          # kio
