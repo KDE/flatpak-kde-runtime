@@ -1,19 +1,12 @@
 kind: cmake
 description: Purpose
 
-#depends:
-#- qt5/qtbase.bst
-#- qt5/qtdeclarative.bst
-#- kf5/kcoreaddons.bst
-#- kf5/ki18n.bst
-#- kf5/kconfig.bst
-#- kf5/kio.bst
-#
+depends:
+- kf5/kio.bst
+
 build-depends:
 - kf5/extra-cmake-modules.bst
-- qt5.bst
-- provisional-kf5-tier1.bst
-- provisional-kf5-tier2.bst
+- kf5/kirigami.bst
 
 sources:
 - kind: git
