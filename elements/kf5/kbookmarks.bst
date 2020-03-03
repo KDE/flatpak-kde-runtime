@@ -18,16 +18,23 @@ description: KBookmarks
 #- kf5/kxmlgui.bst
 #- kf5/kwindowsystem.bst
 #
-#build-depends:
-#- kf5/extra-cmake-modules.bst
-#- qt5/qttools.bst
-#
+
+depends:
+- kf5/kxmlgui.bst
+
 build-depends:
 - kf5/extra-cmake-modules.bst
-- qt5.bst
-- provisional-kf5-tier1.bst
-- provisional-kf5-tier2.bst
-- kf5/WIP/kconfigwidgets.bst
+- qt5/qttools.bst
+
+
+#build-depends:
+#- kf5/extra-cmake-modules.bst
+#- qt5.bst
+#- provisional-kf5-tier1.bst
+#- provisional-kf5-tier2.bst
+#- provisional-kf5-tier3.bst
+#- kf5/kxmlgui.bst
+#- kf5/qqc2-desktop-style.bst
 
 sources:
 - kind: git

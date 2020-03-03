@@ -6,8 +6,7 @@ description: |
 depends:
 - kf5/kxmlgui.bst                    # 
 - kf5/qqc2-desktop-style.bst         # 
-- kf5/WIP/kcmutils.bst               # xmlgui
-- kf5/WIP/kbookmarks.bst             # xmlgui
+- kf5/kbookmarks.bst                 # xmlgui
 - kf5/WIP/kio.bst                    # bookmarks
 
 - kf5/WIP/kinit.bst                  # kio
@@ -18,7 +17,8 @@ depends:
 - kf5/WIP/ktexteditor.bst            # kio
 - kf5/WIP/kxmlrpcclient.bst          # kio
 - kf5/WIP/purpose.bst                # kio
-- kf5/WIP/plasma-framework.bst       # kio declarative 
+- kf5/WIP/kcmutils.bst               # kdeclarative
+- kf5/WIP/plasma-framework.bst       # kdeclarative 
 
 
 ### can't find these ones in the org.kde.Sdk.json.in manifest, haven't incorporated them (yet)
