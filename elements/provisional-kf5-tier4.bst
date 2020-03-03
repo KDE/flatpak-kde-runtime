@@ -10,7 +10,7 @@ depends:
 - kf5/kio.bst                        # bookmarks
 - kf5/kdeclarative.bst               # kio
 
-- kf5/WIP/kinit.bst                  # kio
+- kf5/kinit.bst                      # kio
 - kf5/WIP/knewstuff.bst              # kio
 - kf5/WIP/kparts.bst                 # kio
 - kf5/WIP/knotifyconfig.bst          # kio
