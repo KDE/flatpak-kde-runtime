@@ -1,0 +1,17 @@
+kind: cmake
+description: Plasma Framework
+
+depends:
+- kf5/kdeclarative.bst
+- kf5/kactivities.bst
+- kf5/kwayland.bst
+
+build-depends:
+- kf5/extra-cmake-modules.bst
+- kf5/kirigami.bst
+
+sources:
+- kind: git
+  url: git://anongit.kde.org/plasma-framework.git
+  track: v5.66.0
+  ref: 359f85a4412efb9426eb990533cda95047df9791
