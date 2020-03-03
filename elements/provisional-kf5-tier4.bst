@@ -8,7 +8,7 @@ depends:
 - kf5/qqc2-desktop-style.bst         # 
 - kf5/kbookmarks.bst                 # xmlgui
 - kf5/kio.bst                        # bookmarks
-- kf5/WIP/kdeclarative.bst           # kio
+- kf5/kdeclarative.bst               # kio
 
 - kf5/WIP/kinit.bst                  # kio
 - kf5/WIP/knewstuff.bst              # kio
