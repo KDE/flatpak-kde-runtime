@@ -12,10 +12,10 @@ depends:
 
 - kf5/kinit.bst                      # kio
 - kf5/knewstuff.bst                  # kio
-- kf5/kparts.bst                     # kio
 - kf5/knotifyconfig.bst              # kio
+- kf5/kxmlrpcclient.bst              # kio
+- kf5/kparts.bst                     # kio
 - kf5/ktexteditor.bst                # kparts
-- kf5/WIP/kxmlrpcclient.bst          # kio
 - kf5/WIP/purpose.bst                # kio
 - kf5/WIP/kcmutils.bst               # kdeclarative
 - kf5/WIP/plasma-framework.bst       # kdeclarative 
