@@ -13,7 +13,7 @@ depends:
 - kf5/kinit.bst                      # kio
 - kf5/knewstuff.bst                  # kio
 - kf5/kparts.bst                     # kio
-- kf5/WIP/knotifyconfig.bst          # kio
+- kf5/knotifyconfig.bst              # kio
 - kf5/WIP/ktexteditor.bst            # kio
 - kf5/WIP/kxmlrpcclient.bst          # kio
 - kf5/WIP/purpose.bst                # kio
