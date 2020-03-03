@@ -17,7 +17,7 @@ depends:
 - kf5/kparts.bst                     # kio
 - kf5/kdeclarative.bst               # kio
 - kf5/ktexteditor.bst                # kparts
-- kf5/WIP/kcmutils.bst               # kdeclarative
+- kf5/kcmutils.bst                   # kdeclarative
 - kf5/WIP/plasma-framework.bst       # kdeclarative 
 
 
