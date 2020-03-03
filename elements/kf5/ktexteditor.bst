@@ -1,0 +1,15 @@
+kind: cmake
+description: KTextEditor
+
+depends:
+- kf5/kparts.bst
+- kf5/syntaxhighlighting.bst
+
+build-depends:
+- kf5/extra-cmake-modules.bst
+
+sources:
+- kind: git
+  url: git://anongit.kde.org/ktexteditor.git
+  track: v5.66.0
+  ref: c1f4213eaf81cf8c50ef89c27a5156b2f6bf3caa
