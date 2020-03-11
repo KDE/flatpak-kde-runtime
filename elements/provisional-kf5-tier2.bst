@@ -7,6 +7,7 @@ depends:
 - filename: kf5/kactivities.bst
 - filename: kf5/kauth.bst
 - filename: kf5/kcompletion.bst
+- filename: kf5/kcontacts.bst
 - filename: kf5/kcrash.bst
 - filename: kf5/kdoctools.bst
 - filename: kf5/kjobwidgets.bst
