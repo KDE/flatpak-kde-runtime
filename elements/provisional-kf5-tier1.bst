@@ -8,6 +8,7 @@ depends:
 - kf5/breeze-icons.bst
 - kf5/extra-cmake-modules.bst
 - kf5/karchive.bst
+- kf5/kcalendarcore.bst
 - kf5/kcodecs.bst
 - kf5/kconfig.bst
 - kf5/kcoreaddons.bst
