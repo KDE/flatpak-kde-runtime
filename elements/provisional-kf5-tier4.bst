@@ -17,6 +17,7 @@ depends:
 - kf5/kparts.bst                     # depends on: kio
 - kf5/kdeclarative.bst               # depends on: kio
 - kf5/ktexteditor.bst                # depends on: kparts
+- kf5/frameworkintegration.bst       # depends on: knewstuff
 - kf5/kcmutils.bst                   # depends on: kdeclarative
 - kf5/plasma-framework.bst           # depends on: kdeclarative 
 
