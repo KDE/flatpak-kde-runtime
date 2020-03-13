@@ -10,6 +10,9 @@ build-depends:
 - freedesktop-sdk.bst:components/xcb-util-wm.bst
 - qt5/qttools.bst
 
+variables:
+  cmake-local: >
+    -DENABLE_TESTING=OFF
 
 sources:
 - kind: git

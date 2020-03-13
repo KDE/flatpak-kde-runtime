@@ -8,6 +8,10 @@ build-depends:
 - kf5/extra-cmake-modules.bst
 - kf5/kirigami.bst
 
+variables:
+  cmake-local: >
+    -DBUILD_TESTING=OFF
+
 sources:
 - kind: git
   url: https://anongit.kde.org/purpose.git

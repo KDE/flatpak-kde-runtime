@@ -8,6 +8,10 @@ build-depends:
 - kf5/extra-cmake-modules.bst
 - kf5/kdoctools.bst
 
+variables:
+  cmake-local: >
+    -DENABLE_TESTING=OFF
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kded.git

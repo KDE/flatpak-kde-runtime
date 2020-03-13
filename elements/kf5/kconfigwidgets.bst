@@ -14,6 +14,10 @@ build-depends:
 - kf5/kdoctools.bst
 - qt5/qttools.bst
 
+variables:
+  cmake-local: >
+    -DENABLE_TESTING=OFF
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kconfigwidgets.git

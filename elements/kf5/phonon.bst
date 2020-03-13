@@ -7,6 +7,11 @@ depends:
 build-depends:
 - kf5/extra-cmake-modules.bst
 
+variables:
+  cmake-local: >
+    -DENABLE_TESTING=OFF
+    -DPHONON_BUILD_PHONON4QT5=ON
+
 sources:
 - kind: git
   url: git://anongit.kde.org/phonon.git

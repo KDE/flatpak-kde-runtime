@@ -12,8 +12,9 @@ variables:
   cmake-local: >
     -DENABLE_TESTING=OFF
     -DBUILD_TESTING=OFF 
-    -DCMAKE_DISABLE_FIND_PACKAGE_FontNotoSans=True
-    -DCMAKE_DISABLE_FIND_PACKAGE_FontHack=True
+
+    #-DCMAKE_DISABLE_FIND_PACKAGE_FontNotoSans=True
+    #-DCMAKE_DISABLE_FIND_PACKAGE_FontHack=True
 
 sources:
 - kind: git

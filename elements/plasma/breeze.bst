@@ -11,10 +11,10 @@ build-depends:
 
 variables:
   cmake-local: >
-    -DICAL_BUILD_DOCS=OFF
     -DENABLE_TESTING=OFF
     -DWITH_DECORATIONS=OFF
     -DWITH_WALLPAPERS=OFF
+    #    -DICAL_BUILD_DOCS=OFF
 
 sources:
 - kind: git

@@ -13,6 +13,10 @@ build-depends:
 - freedesktop-sdk.bst:components/flex.bst
 - kf5/kdoctools.bst
 
+variables:
+  cmake-local: >
+    -DENABLE_TESTING=OFF
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kservice.git

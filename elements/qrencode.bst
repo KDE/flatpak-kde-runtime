@@ -10,6 +10,11 @@ build-depends:
 environment:
   CFLAGS: -fPIC
 
+variables:
+  cmake-local: >
+    -DBUILD_SHARED_LIBS=ON
+    -DWITH_TOOLS=OFF
+
 sources:
 - kind: tar
   url: https://fukuchi.org/works/qrencode/qrencode-4.0.2.tar.gz

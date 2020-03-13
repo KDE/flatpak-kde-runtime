@@ -11,7 +11,10 @@ build-depends:
 - boost.bst
 - kf5/kwindowsystem.bst
 
-
+variables:
+  cmake-local: >
+    -DENABLE_TESTING=OFF
+    -DKACTIVITIES_LIBRARY_ONLY=ON
 
 sources:
 - kind: git

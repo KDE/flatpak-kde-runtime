@@ -7,6 +7,10 @@ depends:
 build-depends:
 - kf5/extra-cmake-modules.bst
 
+variables:
+  cmake-local: >
+    -DBUILD_TESTING=OFF
+
 sources:
 - kind: git
   url: git://anongit.kde.org/syndication.git

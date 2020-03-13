@@ -16,30 +16,30 @@ variables:
   conf-local: |
     -prefix %{prefix} \
     -libdir %{libdir} \
-    -shared \
-    -optimized-qmake \
-    -nomake examples \
-    -nomake tests \
-    -confirm-license \
-    -opensource \
-    -platform linux-g++ \
-    -system-harfbuzz \
-    -system-sqlite \
     -accessibility \
+    -confirm-license \
     -dbus-linked \
     -fontconfig \
     -glib \
+    -gtk \
     -icu \
-    -openssl-linked \
+    -no-cups \
+    -no-directfb \
+    -no-kms \
+    -no-linuxfb \
     -no-pch \
     -no-rpath \
-    -no-directfb \
-    -no-linuxfb \
-    -no-kms \
-    -no-cups \
+    -no-use-gold-linker \
+    -nomake examples \
+    -nomake tests \
+    -opensource \
+    -openssl-linked \
+    -optimized-qmake \
+    -platform linux-g++ \
+    -system-harfbuzz \
     -system-proxies \
-    -gtk \
-    -no-use-gold-linker
+    -system-sqlite \
+    -shared
 
 config:
   configure-commands:

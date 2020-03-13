@@ -9,6 +9,10 @@ build-depends:
 - qt5/qttools.bst
 - qt5/qtxmlpatterns.bst
 
+variables:
+  cmake-local: >
+    -DENABLE_TESTING=OFF
+
 sources:
 - kind: git
   url: git://anongit.kde.org/syntax-highlighting.git

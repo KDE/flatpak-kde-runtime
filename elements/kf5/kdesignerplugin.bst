@@ -10,6 +10,10 @@ build-depends:
 - qt5/qttools.bst
 - kf5/kdoctools.bst
 
+variables:
+  cmake-local: >
+    -DENABLE_TESTING=OFF
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kdesignerplugin.git

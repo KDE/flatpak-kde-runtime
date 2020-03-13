@@ -11,12 +11,11 @@ build-depends:
 - kf5/ki18n.bst
 - perl-uri-escape.bst 
 
-config:
-  configure-commands:
-  - |
-    %{cmake} \
-    -DDocBookXSL_DIR=/usr/share/xml/docbook/xml/xsl-stylesheets/ \
-    -DDocBookXML4_DTD_DIR=/usr/share/xml/docbook/xml-dtd/4.5/
+variables:
+  cmake-local: >
+    -DENABLE_TESTING=OFF
+    -DDTD_PATH_LIST=/usr/share/xml/docbook/xml-dtd/4.5/
+    -DDocBookXSL_DIR=/usr/share/xml/docbook/xml/xsl-stylesheets/
 
 sources:
 - kind: git

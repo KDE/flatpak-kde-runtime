@@ -12,6 +12,10 @@ build-depends:
 environment:
   CFLAGS: -fPIC
 
+variables:
+  cmake-local: >
+    -DBUILD_TESTING=OFF
+
 sources:
 - kind: git
   url: https://anongit.kde.org/prison.git

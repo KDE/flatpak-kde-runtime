@@ -7,6 +7,11 @@ depends:
 build-depends:
 - kf5/extra-cmake-modules.bst
 
+variables:
+  cmake-local: >
+    -DENABLE_TESTING=OFF
+    -DCMAKE_DISABLE_FIND_PACKAGE_Qt5Test=TRUE
+
 sources:
 - kind: git
   url: git://anongit.kde.org/karchive.git

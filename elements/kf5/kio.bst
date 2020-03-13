@@ -12,6 +12,10 @@ depends:
 build-depends:
 - kf5/extra-cmake-modules.bst
 
+variables:
+  cmake-local: >
+    -DENABLE_TESTING=OFF
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kio.git
