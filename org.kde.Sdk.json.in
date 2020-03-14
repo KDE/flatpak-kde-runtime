@@ -653,7 +653,7 @@
             "name": "kfilemetadata",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kfilemetadata.git", "branch": "v5.66.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kfilemetadata.git", "branch": "v5.67.0" } ]
         },
         {
             "name": "phonon",
@@ -846,14 +846,14 @@
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kcontacts.git", "branch": "v5.66.0" } ]
+            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kcontacts.git", "branch": "v5.67.0" } ]
         },
         {
             "name": "kcalendarcore",
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "builddir": true,
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kcalendarcore.git", "branch": "v5.66.0" } ],
+            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kcalendarcore.git", "branch": "v5.67.0" } ],
             "modules": [
                 {
                     "name": "libical",
@@ -875,13 +875,13 @@
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kholidays.git", "branch": "v5.66.0" } ]
+            "sources": [ { "type": "git", "url": "git://anongit.kde.org/kholidays.git", "branch": "v5.67.0" } ]
         },
         {
             "name": "prison",
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "https://anongit.kde.org/prison.git", "branch": "v5.66.0" } ],
+            "sources": [ { "type": "git", "url": "https://anongit.kde.org/prison.git", "branch": "v5.67.0" } ],
             "modules": [
                 {
                     "name": "qrencode",
@@ -912,13 +912,13 @@
             "name": "syndication",
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "https://anongit.kde.org/syndication.git", "branch": "v5.66.0" } ]
+            "sources": [ { "type": "git", "url": "https://anongit.kde.org/syndication.git", "branch": "v5.67.0" } ]
         },
         {
             "name": "purpose",
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "https://anongit.kde.org/purpose.git", "branch": "v5.66.0" } ]
+            "sources": [ { "type": "git", "url": "https://anongit.kde.org/purpose.git", "branch": "v5.67.0" } ]
         },
         {
             "name": "plasma-framework",
