@@ -993,7 +993,12 @@
                 },
                 {
                     "type": "file",
-                    "path": "os-release-configure",
+                    "path": "os-release-Makefile",
+                    "dest-filename": "Makefile"
+                },
+                {
+                    "type": "script",
+                    "commands": [],
                     "dest-filename": "configure"
                 }
             ]
