@@ -1,3 +1,5 @@
 org.kde.Sdk.json
+objects
+builddir
 /.flatpak-builder/
 /repo/
