@@ -7,7 +7,7 @@ build-depends:
 
 config:
   arch: '%{arch}' # This is the interface for flatpak-repo plugin 
-  branch: '5.14'
+  branch: '%{kde-branch}'
   repo-mode: bare-user-only
   environment:
   - public-stacks/flatpak-publish-tools.bst
