@@ -1,5 +1,11 @@
 kind: flatpak_image
 
+build-depends:
+- sdk-image.bst
+- integration/sdk-integration.bst
+- freedesktop-sdk.bst:integration/linker-debuginfo.bst
+- freedesktop-sdk.bst:tests/check-static-libraries.bst
+
 config:
   directory: '%{prefix}'
   exclude:
@@ -10,8 +16,8 @@ config:
   metadata:
     Runtime:
       name: org.kde.Sdk
-      runtime: org.freedesktop.Platform/%{arch}/%{branch}
-      sdk: org.freedesktop.Sdk/%{arch}/%{branch}
+      runtime: org.freedesktop.Platform/%{arch}/%{fsdk-branch}
+      sdk: org.freedesktop.Sdk/%{arch}/%{fsdk-branch}
 
     Environment:
       GI_TYPELIB_PATH: /app/lib/girepository-1.0
@@ -20,9 +26,51 @@ config:
       ALSA_CONFIG_DIR: /usr/share/alsa
       ALSA_CONFIG_PATH: /usr/share/alsa/alsa-flatpak.conf
 
+    Extension org.kde.Sdk.Locale:
+      directory: share/runtime/locale
+      autodelete: 'true'
+      locale-subset: 'true'
 
-build-depends:
-- sdk-image.bst
-- integration/sdk-integration.bst
-- freedesktop-sdk.bst:integration/linker-debuginfo.bst
-- freedesktop-sdk.bst:tests/check-static-libraries.bst
+    Extension org.kde.Sdk.Debug:
+      directory: lib/debug
+      autodelete: 'true'
+      no-autodownload: 'true'
+
+    Extension org.kde.Sdk.Docs:
+      directory: share/runtime/docs
+      autodelete: 'true'
+      no-autodownload: 'true'
+
+    Extension org.kde.KStyle:
+      directory: "share/runtime/lib/plugins/"
+      subdirectories: 'true'
+      no-autodownload: 'true'
+      version: "5.14"
+      merge-dirs: "styles"
+      download-if: "active-gtk-theme"
+ 
+    Extension org.kde.PlatformTheme:
+      directory: "share/runtime/lib/plugins/"
+      subdirectories: 'true'
+      no-autodownload: 'true'
+      version: "5.14"
+      merge-dirs: "platformthemes"
+      //TODO: "This is currently only used for gnome platform plugin and should be its own extension point"
+      download-if: "on-xdg-desktop-GNOME;on-xdg-desktop-GNOME-classic"
+ 
+    Extension org.kde.PlatformInputContexts:
+      directory: "share/runtime/lib/plugins/"
+      subdirectories: 'true'
+      autodelete: 'true'
+      no-autodownload: 'true'
+      version: "5.14"
+      merge-dirs: "platforminputcontexts"
+ 
+    Extension org.kde.WaylandDecoration:
+      directory: "share/runtime/lib/plugins/"
+      subdirectories: 'true'
+      no-autodownload: 'true'
+      version: "5.14"
+      merge-dirs: "wayland-decoration-client"
+      //TODO: "This is currently only used for gnome platform plugin and should be its own extension point"
+      download-if: "on-xdg-desktop-GNOME;on-xdg-desktop-GNOME-classic"

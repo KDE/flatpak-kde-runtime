@@ -7,11 +7,11 @@ description: |
 
 config:
   exclude:
-  - devel
   - extra
+  - vm-only
   - static-blocklist
   - static-allowlist
-  - vm-only
+  - devel
 
 public:
   bst:
@@ -22,7 +22,7 @@ public:
       - '%{datadir}/runtime/locale/**'
 
 build-depends:
-- filename: platform.bst
+- platform.bst
 - freedesktop-sdk.bst:multiarch/multiarch-platform.bst
 - freedesktop-sdk.bst:integration/split-locales.bst
 - freedesktop-sdk.bst:integration/split-docs.bst
