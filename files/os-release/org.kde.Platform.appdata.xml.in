@@ -6,6 +6,9 @@
   <project_license>GPL-2.0+</project_license>
   <name>KDE Application Platform</name>
   <summary>Shared libraries used by KDE applications</summary>
+  <releases>
+    <release version="__RUNTIME_VERSION__" date="__RUNTIME_VERSION_DATE__"/>
+  </releases>
   <url type="homepage">http://www.kde.org/</url>
   <project_group>KDE</project_group>
 </component>

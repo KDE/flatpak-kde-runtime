@@ -1,0 +1,11 @@
+# This file is only intended to be written by the CI.  Variable
+# runtime-version should be used only for final images and never used
+# anywhere else, otherwise elements will need to be rebuilt.
+# This file is for Flatpak
+variables:
+  runtime-version: '5.14-devel'
+  # Flatpak ignores releases in apstream data that don't have a release
+  # date. To be able to test the mechanism internally we need something
+  # here and this date is used in other projects for reproducible
+  # builds already. For real releases date of the tag is used.
+  runtime-version-date: 2011-11-11

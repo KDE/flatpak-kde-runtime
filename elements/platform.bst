@@ -18,5 +18,6 @@ depends:
 - libdbusmenuqt.bst
 - libdmtx.bst
 - libical.bst
+- os-release.bst
 - perl-uri-escape.bst
 - qrencode.bst

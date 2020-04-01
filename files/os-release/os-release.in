@@ -1,0 +1,6 @@
+NAME="KDE Flatpak runtime"
+VERSION="__RUNTIME_VERSION__ (Flatpak runtime)"
+VERSION_ID="__RUNTIME_VERSION__"
+ID=org.kde.Platform
+PRETTY_NAME="KDE Flatpak runtime __RUNTIME_VERSION__"
+BUG_REPORT_URL=https://bugs.kde.org/
