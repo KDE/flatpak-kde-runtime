@@ -12,6 +12,15 @@ variables:
   cmake-local: >
     -DENABLE_TESTING=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5CalendarEvents.so'
+        - '%{libdir}/libKF5Declarative.so'
+        - '%{libdir}/libKF5QuickAddons.so'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kdeclarative.git

@@ -16,6 +16,17 @@ variables:
   cmake-local: >
     -DENABLE_TESTING=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5KIOCore.so'
+        - '%{libdir}/libKF5KIOFileWidgets.so'
+        - '%{libdir}/libKF5KIOGui.so'
+        - '%{libdir}/libKF5KIONTLM.so'
+        - '%{libdir}/libKF5KIOWidgets.so'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kio.git

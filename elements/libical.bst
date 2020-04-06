@@ -15,6 +15,15 @@ variables:
     -DWITH_CXX_BINDINGS=OFF
     -DSHARED_ONLY=ON
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libical.so'
+        - '%{libdir}/libicalss.so'
+        - '%{libdir}/libicalvcal.so'
+
 sources:
 - kind: tar
   url: https://github.com/libical/libical/releases/download/v3.0.4/libical-3.0.4.tar.gz

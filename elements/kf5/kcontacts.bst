@@ -14,6 +14,13 @@ variables:
   cmake-local: >
     -DENABLE_TESTING=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5Contacts.so'
+
 sources:
 - kind: git
   url: https://anongit.kde.org/kcontacts.git

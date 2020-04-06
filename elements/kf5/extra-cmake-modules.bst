@@ -13,13 +13,13 @@ variables:
   cmake-local: |
     -DENABLE_TESTING=OFF
 
-    #config:
-    #  build-commands:
-    #    (>):
-    #      - mkdir /buildstream-install/usr/
-    #      - mkdir /buildstream-install/usr/bin/
-    #      - ln -s /usr/bin/python3 /buildstream-install/usr/bin/python
-    #
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{datadir}/ECM/*/*.cmake'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/extra-cmake-modules.git

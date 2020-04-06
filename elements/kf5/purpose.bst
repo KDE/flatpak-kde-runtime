@@ -12,6 +12,14 @@ variables:
   cmake-local: >
     -DBUILD_TESTING=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5Purpose.so'
+        - '%{libdir}/libKF5PurposeWidgets.so'
+
 sources:
 - kind: git
   url: https://anongit.kde.org/purpose.git

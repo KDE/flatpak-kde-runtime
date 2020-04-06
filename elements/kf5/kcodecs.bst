@@ -13,6 +13,13 @@ variables:
   cmake-local: >
     -DENABLE_TESTING=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5Codecs.so'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kcodecs.git

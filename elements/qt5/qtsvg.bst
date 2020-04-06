@@ -4,6 +4,13 @@ description: json2bst conversion of qt5/qtsvg
 depends:
 - qt5/qtbase.bst
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libQt5Svg.so'
+
 sources:
 - kind: tar
   url: http://download.qt.io/archive/qt/5.14/5.14.1/submodules/qtsvg-everywhere-src-5.14.1.tar.xz

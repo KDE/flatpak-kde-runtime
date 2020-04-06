@@ -4,6 +4,13 @@ description: json2bst conversion of qt5/qtxmlpatterns
 depends:
 - qt5/qtbase.bst
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libQt5XmlPatterns.so'
+
 sources:
 - kind: tar
   url: http://download.qt.io/archive/qt/5.14/5.14.1/submodules/qtxmlpatterns-everywhere-src-5.14.1.tar.xz

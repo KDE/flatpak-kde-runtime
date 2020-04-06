@@ -15,6 +15,13 @@ variables:
     -DBUILD_SHARED_LIBS=ON
     -DWITH_TOOLS=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libqrencode.so'
+
 sources:
 - kind: tar
   url: https://fukuchi.org/works/qrencode/qrencode-4.0.2.tar.gz

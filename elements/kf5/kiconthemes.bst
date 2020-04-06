@@ -15,6 +15,13 @@ variables:
   cmake-local: >
     -DENABLE_TESTING=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5IconThemes.so'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kiconthemes.git

@@ -41,6 +41,24 @@ config:
 
   strip-commands: []
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libboost_filesystem.so'
+        - '%{libdir}/libboost_iostreams.so'
+        - '%{libdir}/libboost_math_c99f.so'
+        - '%{libdir}/libboost_math_c99l.so'
+        - '%{libdir}/libboost_math_c99.so'
+        - '%{libdir}/libboost_math_tr1f.so'
+        - '%{libdir}/libboost_math_tr1l.so'
+        - '%{libdir}/libboost_math_tr1.so'
+        - '%{libdir}/libboost_python37.so'
+        - '%{libdir}/libboost_random.so'
+        - '%{libdir}/libboost_system.so'
+        - '%{libdir}/libboost_thread.so'
+
 sources:
 - kind: tar
   url: https://dl.bintray.com/boostorg/release/1.72.0/source/boost_1_72_0.tar.gz

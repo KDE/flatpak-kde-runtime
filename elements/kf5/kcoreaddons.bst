@@ -8,6 +8,13 @@ build-depends:
 - kf5/extra-cmake-modules.bst
 - qt5/qttools.bst
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5CoreAddons.so'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kcoreaddons.git

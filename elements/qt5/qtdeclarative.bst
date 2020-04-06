@@ -4,6 +4,20 @@ description: json2bst conversion of qt5/qtdeclarative
 depends:
 - qt5/qtbase.bst
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libQt5QmlModels.so'
+        - '%{libdir}/libQt5Qml.so'
+        - '%{libdir}/libQt5QmlWorkerScript.so'
+        - '%{libdir}/libQt5QuickParticles.so'
+        - '%{libdir}/libQt5QuickShapes.so'
+        - '%{libdir}/libQt5Quick.so'
+        - '%{libdir}/libQt5QuickTest.so'
+        - '%{libdir}/libQt5QuickWidgets.so'
+
 sources:
 - kind: tar
   url: http://download.qt.io/archive/qt/5.14/5.14.1/submodules/qtdeclarative-everywhere-src-5.14.1.tar.xz

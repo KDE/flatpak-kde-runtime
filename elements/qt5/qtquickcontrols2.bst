@@ -4,6 +4,14 @@ description: json2bst conversion of qt5/qtquickcontrols2
 depends:
 - qt5/qtdeclarative.bst
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libQt5QuickControls2.so'
+        - '%{libdir}/libQt5QuickTemplates2.so'
+
 sources:
 - kind: tar
   url: http://download.qt.io/archive/qt/5.14/5.14.1/submodules/qtquickcontrols2-everywhere-src-5.14.1.tar.xz

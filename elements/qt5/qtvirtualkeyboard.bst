@@ -5,6 +5,13 @@ depends:
 - qt5/qtdeclarative.bst
 - qt5/qtsvg.bst
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libQt5VirtualKeyboard.so'
+
 sources:
 - kind: tar
   url: http://download.qt.io/archive/qt/5.14/5.14.1/submodules/qtvirtualkeyboard-everywhere-src-5.14.1.tar.xz

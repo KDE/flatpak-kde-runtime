@@ -11,6 +11,13 @@ variables:
   cmake-local: >
     -DENABLE_TESTING=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5I18n.so'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/ki18n.git

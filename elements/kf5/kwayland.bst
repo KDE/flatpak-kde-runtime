@@ -11,6 +11,14 @@ variables:
   cmake-local: >
     -DENABLE_TESTING=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5WaylandClient.so'
+        - '%{libdir}/libKF5WaylandServer.so'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kwayland.git

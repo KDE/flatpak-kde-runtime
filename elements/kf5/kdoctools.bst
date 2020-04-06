@@ -17,6 +17,13 @@ variables:
     -DDTD_PATH_LIST=/usr/share/xml/docbook/xml-dtd/4.5/
     -DDocBookXSL_DIR=/usr/share/xml/docbook/xml/xsl-stylesheets/
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5DocTools.so'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kdoctools.git

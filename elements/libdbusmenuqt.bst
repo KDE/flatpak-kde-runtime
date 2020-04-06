@@ -16,6 +16,13 @@ variables:
     -DENABLE_TESTING=OFF
     -DWITH_DOC=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libdbusmenu-qt5.so'
+
 sources:
 - kind: bzr
   url: http://bazaar.launchpad.net/~dbusmenu-team/libdbusmenu-qt

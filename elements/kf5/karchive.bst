@@ -12,6 +12,13 @@ variables:
     -DENABLE_TESTING=OFF
     -DCMAKE_DISABLE_FIND_PACKAGE_Qt5Test=TRUE
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5Archive.so'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/karchive.git

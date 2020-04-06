@@ -5,6 +5,14 @@ depends:
 - qt5/qtdeclarative.bst
 - freedesktop-sdk.bst:components/libdrm.bst
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libQt5WaylandClient.so'
+        - '%{libdir}/libQt5WaylandCompositor.so'
+
 sources:
 - kind: tar
   url: http://download.qt.io/archive/qt/5.14/5.14.1/submodules/qtwayland-everywhere-src-5.14.1.tar.xz

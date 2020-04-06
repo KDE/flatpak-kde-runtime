@@ -12,6 +12,13 @@ variables:
   cmake-local: >
     -DENABLE_TESTING=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5DBusAddons.so'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kdbusaddons

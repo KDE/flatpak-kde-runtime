@@ -11,6 +11,13 @@ variables:
   cmake-local: >
     -DENABLE_TESTING=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5CalendarCore.so'
+
 sources:
 - kind: git
   url: https://anongit.kde.org/kcalendarcore.git

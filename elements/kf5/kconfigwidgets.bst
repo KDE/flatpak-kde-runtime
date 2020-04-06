@@ -18,6 +18,13 @@ variables:
   cmake-local: >
     -DENABLE_TESTING=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5ConfigWidgets.so'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kconfigwidgets.git

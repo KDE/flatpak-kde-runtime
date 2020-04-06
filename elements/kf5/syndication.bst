@@ -11,6 +11,13 @@ variables:
   cmake-local: >
     -DBUILD_TESTING=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5Syndication.so'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/syndication.git

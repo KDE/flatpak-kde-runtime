@@ -4,6 +4,14 @@ description: json2bst conversion of qt5/connectivity
 depends:
 - qt5/qtbase.bst
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libQt5Bluetooth.so'
+        - '%{libdir}/libQt5Nfc.so'
+
 sources:
 - kind: tar
   url: http://download.qt.io/archive/qt/5.14/5.14.1/submodules/qtconnectivity-everywhere-src-5.14.1.tar.xz

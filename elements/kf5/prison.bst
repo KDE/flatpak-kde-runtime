@@ -16,6 +16,13 @@ variables:
   cmake-local: >
     -DBUILD_TESTING=OFF
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5Prison.so'
+
 sources:
 - kind: git
   url: https://anongit.kde.org/prison.git

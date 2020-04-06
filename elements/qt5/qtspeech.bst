@@ -4,6 +4,13 @@ description: json2bst conversion of qt5/qtspeech
 depends:
 - qt5/qtbase.bst
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libQt5TextToSpeech.so'
+
 sources:
 - kind: tar
   url: http://download.qt.io/archive/qt/5.14/5.14.1/submodules/qtspeech-everywhere-src-5.14.1.tar.xz

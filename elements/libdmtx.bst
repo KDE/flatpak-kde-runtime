@@ -7,6 +7,13 @@ runtime-depends:
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libdmtx.so'
+
 sources:
 - kind: tar
   url: https://github.com/dmtx/libdmtx/archive/v0.7.5.tar.gz

@@ -16,6 +16,13 @@ variables:
     -DENABLE_TESTING=OFF
     -DKACTIVITIES_LIBRARY_ONLY=ON
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libKF5Activities.so'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/kactivities.git

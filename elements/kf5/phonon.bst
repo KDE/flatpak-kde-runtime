@@ -12,6 +12,15 @@ variables:
     -DENABLE_TESTING=OFF
     -DPHONON_BUILD_PHONON4QT5=ON
 
+public:
+  bst:
+    split-rules:
+      devel:
+        (>):
+        - '%{libdir}/libphonon4qt5experimental.so'
+        - '%{libdir}/libphonon4qt5.so'
+        - '%{datadir}/phonon4qt5/buildsystem/FindPhononInternal.cmake'
+
 sources:
 - kind: git
   url: git://anongit.kde.org/phonon.git
