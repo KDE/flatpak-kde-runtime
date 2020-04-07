@@ -21,5 +21,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kunitconversion.git
-  track: v5.66.0
-  ref: 9fa97a80319edf1033017926580eb3f8ad7c96aa
+  track: v5.67.0
+  ref: dbef9926cfa01260d09557ffb78dbb8f0d74b0d1

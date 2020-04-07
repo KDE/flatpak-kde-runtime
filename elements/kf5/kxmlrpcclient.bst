@@ -21,5 +21,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kxmlrpcclient.git
-  track: v5.66.0
-  ref: 1bcbd2c37fb89b761fc432f9b8750a229d8184c9
+  track: v5.67.0
+  ref: 26464e5dce64a667aa44342b190dd1361766062f

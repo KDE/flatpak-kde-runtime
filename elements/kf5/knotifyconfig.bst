@@ -21,5 +21,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/knotifyconfig.git
-  track: v5.66.0
-  ref: f9f571262d26e48636d61ec043231535cf08593f
+  track: v5.67.0
+  ref: 1b9d44a0bcff6ddc31d6d21186f4c7fea1170e43

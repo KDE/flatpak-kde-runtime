@@ -23,5 +23,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kcompletion.git
-  track: v5.66.0
-  ref: 19ce74155a025c34b848c65f888dc7b7e27bb624
+  track: v5.67.0
+  ref: c5dd972ffebac29fcb13ba92df9b38713df40848

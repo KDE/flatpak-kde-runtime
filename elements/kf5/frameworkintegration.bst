@@ -22,5 +22,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/frameworkintegration.git
-  track: v5.66.0
-  ref: d61f863712c96e22c1a921d7dba00a98823b5803
+  track: v5.67.0
+  ref: 37bccb2811095f7afe3a033eb24d4f065eb553b9

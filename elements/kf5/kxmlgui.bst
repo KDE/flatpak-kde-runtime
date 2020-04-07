@@ -24,5 +24,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kxmlgui.git
-  track: v5.66.0
-  ref: e93021b98a16c032fbbb8f0101327991b9e83dac
+  track: v5.67.0
+  ref: b371b98036200f24e5315d5bac4dc4bb4972f667

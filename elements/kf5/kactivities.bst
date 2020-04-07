@@ -26,5 +26,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kactivities.git
-  track: v5.66.0
-  ref: 4c453c3deb0ee6de96f425fedfb0fcdc8a7f565e
+  track: v5.67.0
+  ref: f4651ec18e5ff1b52d42487ee837603028acfffa

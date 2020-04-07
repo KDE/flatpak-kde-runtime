@@ -25,5 +25,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kwallet.git
-  track: v5.66.0
-  ref: c2e7dfab6d6f38c8daf0c54c4a8995e2a2ba43e9
+  track: v5.67.0
+  ref: 6f0fda6dc0e85341035443540851483c975f39a7

@@ -27,5 +27,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/knotifications.git
-  track: v5.66.0
-  ref: eff2ff0d4c2882989c6b121b618d5503857780ea
+  track: v5.67.0
+  ref: d3c2cfe91b5b3197c2086d9ee1a7dc41dbce86fd

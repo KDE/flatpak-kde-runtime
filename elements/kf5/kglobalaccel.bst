@@ -24,5 +24,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kglobalaccel
-  track: v5.66.0
-  ref: 6f87e5eb35ab831aeeaad5f0d58ce46d28dd07d0
+  track: v5.67.0
+  ref: f41e94c2179ab31511efbf16170678c9727dd9bd

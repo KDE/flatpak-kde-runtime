@@ -26,5 +26,5 @@ public:
 sources:
 - kind: git
   url: https://anongit.kde.org/prison.git
-  track: v5.66.0
-  ref: 6cfb5230f8c562afdfbb127a0a08b610be49beea
+  track: v5.67.0
+  ref: 20f2f59f720be66901336db8977bf3b6330dd56d

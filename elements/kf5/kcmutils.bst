@@ -21,5 +21,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kcmutils.git
-  track: v5.66.0
-  ref: 15726aebc4af142d48794f0f718e3d5100499de1
+  track: v5.67.0
+  ref: 39bb66c304017a0ce394e7cb9cef56bcf144f952

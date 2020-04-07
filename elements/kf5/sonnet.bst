@@ -27,5 +27,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/sonnet.git
-  track: v5.66.0
-  ref: 77746a7f719a2789c8cba556cc159fdb6dbc2dae
+  track: v5.67.0
+  ref: 88d81e8205724b9ae22f697eb3fd111c6518de89

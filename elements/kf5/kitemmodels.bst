@@ -21,5 +21,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kitemmodels.git
-  track: v5.66.0
-  ref: 699ecdfdef31fdebe40d0d72ec84c53104c2a2d2
+  track: v5.67.0
+  ref: 8499737c58b7dc8bee322ac1df8e162d9bef5e4f

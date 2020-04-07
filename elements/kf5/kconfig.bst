@@ -23,5 +23,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kconfig.git
-  track: v5.66.0
-  ref: b2cfa6a0de06e0ef61ff6752c4ef23890892ffed
+  track: v5.67.0
+  ref: 28bf85145845f6e350a83e080b43b4e83f0dffac

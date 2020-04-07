@@ -23,5 +23,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kirigami.git
-  track: v5.66.0
-  ref: 637ffb853454276a963751fe6796e3dea05debae
+  track: v5.67.0
+  ref: 4fb0e29442f53466581c50427a7f3e62e5d31a62

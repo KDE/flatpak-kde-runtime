@@ -21,5 +21,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kguiaddons.git
-  track: v5.66.0
-  ref: a7c9b1c729c299ca301fe15960f70d36ebb7cc53
+  track: v5.67.0
+  ref: 64fa524731bd2829a3f8f88219cbb8af3e0bbda1

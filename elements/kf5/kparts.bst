@@ -21,5 +21,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kparts.git
-  track: v5.66.0
-  ref: 277eeadb11dca6f0e49705d00be87d8918b04169
+  track: v5.67.0
+  ref: 11966f7253553fc582701643114a066a42eee645

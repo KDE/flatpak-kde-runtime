@@ -21,5 +21,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/syndication.git
-  track: v5.66.0
-  ref: 06eafee19f1eeffcff2a5db5e461b902e8b34dd1
+  track: v5.67.0
+  ref: fcabfcbebf14f643772dcc33931b27fa53cb81b6

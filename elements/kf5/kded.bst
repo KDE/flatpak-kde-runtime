@@ -15,5 +15,5 @@ variables:
 sources:
 - kind: git
   url: git://anongit.kde.org/kded.git
-  track: v5.66.0
-  ref: afb5bc8212af8187fafd56c2b54ed694c879e4cc
+  track: v5.67.0
+  ref: 8c847233344d572c9ee5c501d0e9a7a019ac8553

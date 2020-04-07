@@ -23,5 +23,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kdnssd.git
-  track: v5.66.0
-  ref: bd604feb1611c40f5b97baf881e682ed06f9ef83
+  track: v5.67.0
+  ref: 59d79101dedacbd73392c8b8c7241c985b884505

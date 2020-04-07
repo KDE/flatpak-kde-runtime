@@ -26,5 +26,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kpackage.git
-  track: v5.66.0
-  ref: 101c9e8841be3cd47300f93b8ec3c82e5405640e
+  track: v5.67.0
+  ref: ca8edb443798e76ba7914b134c898b27710fa3d3

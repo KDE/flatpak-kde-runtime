@@ -23,5 +23,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/syntax-highlighting.git
-  track: v5.66.0
-  ref: 3d0781d2b5f96fc4f0ec9cc3c189b84693bf4292
+  track: v5.67.0
+  ref: 1671c931ccf309af8f91255e793773ec59eed172

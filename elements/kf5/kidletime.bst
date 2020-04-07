@@ -21,5 +21,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kidletime.git
-  track: v5.66.0
-  ref: 7c50cbb83efef8b64f05a214615facef7d1d4b82
+  track: v5.67.0
+  ref: 98d3412484aa06b1302f54c72b27fffc06b73219

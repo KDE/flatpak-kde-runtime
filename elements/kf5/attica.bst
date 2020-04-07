@@ -21,5 +21,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/attica.git
-  track: v5.66.0
-  ref: 7cf63923260eb1273e6acb8f1f982e9ba6bd4b64
+  track: v5.67.0
+  ref: 1894ffeff9bb68f4a51d35fd95c2a39d57e7b6e2

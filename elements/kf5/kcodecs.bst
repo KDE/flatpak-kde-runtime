@@ -23,5 +23,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kcodecs.git
-  track: v5.66.0
-  ref: bb372cbd49530c0e5c423a033bb7e616538af33c
+  track: v5.67.0
+  ref: 01a1a577cc4171082ecf725bd6ad3f0490fa0acf

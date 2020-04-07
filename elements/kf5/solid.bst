@@ -24,5 +24,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/solid.git
-  track: v5.66.0
-  ref: 6fd90c321632ad5ca4873a3cbfa2d13b0fb7a8d2
+  track: v5.67.0
+  ref: 74c37ea0818463575b1257898fece080abc857a1

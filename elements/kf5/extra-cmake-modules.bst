@@ -23,5 +23,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/extra-cmake-modules.git
-  track: v5.66.0
-  ref: de934e322e6b8483058031736813682296b398de
+  track: v5.67.0
+  ref: 45c6a86eeff074d1793066a9cbb848012642f668

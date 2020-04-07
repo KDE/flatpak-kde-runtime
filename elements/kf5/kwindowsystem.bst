@@ -24,5 +24,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kwindowsystem.git
-  track: v5.66.0
-  ref: 21278c9e519c2d2e38d68f5b3f3520c5ff70b7e1
+  track: v5.67.0
+  ref: 417a1dfd5f7e9d352baf086fd42f99118c4f59ac

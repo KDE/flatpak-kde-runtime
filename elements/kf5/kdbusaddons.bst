@@ -22,5 +22,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kdbusaddons
-  track: v5.66.0
-  ref: 2087d66b0a745f6c5ccb07ad195ca0e992c21467
+  track: v5.67.0
+  ref: acbce40246938a395b3b2a3b4bff6637fd3514bc

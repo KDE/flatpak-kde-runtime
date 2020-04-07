@@ -30,5 +30,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kio.git
-  track: v5.66.0
-  ref: 9b8f41f87a9b5d1460a5f31a1b790a984f164ed3
+  track: v5.67.0
+  ref: 612c7d6229432db485ee66bdca5745dd4149d940

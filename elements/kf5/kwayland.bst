@@ -22,5 +22,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kwayland.git
-  track: v5.66.0
-  ref: a1c9fc8913aab46db950034748963311ab311474
+  track: v5.67.0
+  ref: cce815dbbe491886c0139fdcd6df30d547b1263b

@@ -22,5 +22,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/karchive.git
-  track: v5.66.0
-  ref: 2a08dc1a909e969b70ba462544f468509e8f3f5a
+  track: v5.67.0
+  ref: 2a1fda104bb0ee66e912a98497e7e2d3ce8c8f62

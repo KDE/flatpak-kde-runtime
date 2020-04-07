@@ -9,7 +9,7 @@ depends:
 build-depends:
 - kf5/extra-cmake-modules.bst
 - kf5/ki18n.bst
-- perl-uri-escape.bst 
+- perl-uri-escape.bst
 
 variables:
   cmake-local: >
@@ -27,5 +27,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kdoctools.git
-  track: v5.66.0
-  ref: 2ff90d223537e2bc33d624a0797dfc46996ce403
+  track: v5.67.0
+  ref: a18df5150f4aec06883ce5ff06f3fc54cbf2f8c5

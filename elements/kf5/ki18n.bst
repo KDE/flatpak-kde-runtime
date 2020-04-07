@@ -21,5 +21,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/ki18n.git
-  track: v5.66.0
-  ref: 7b025c8d176e0088d4e18bf9daaec47ac4be3131
+  track: v5.67.0
+  ref: 436fd2f6bd412f49fe80fd3cbae2e83b718dc599

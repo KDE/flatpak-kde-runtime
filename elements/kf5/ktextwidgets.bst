@@ -27,5 +27,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/ktextwidgets.git
-  track: v5.66.0
-  ref: a12ee23117e92014fca6b0b024bf5ddb28d15557
+  track: v5.67.0
+  ref: e0167efe0d537f21217c11cb5458ff97d334c4db

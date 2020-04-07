@@ -22,5 +22,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kcrash.git
-  track: v5.66.0
-  ref: 9869717026051af7975819a45334521feb950f7e
+  track: v5.67.0
+  ref: 69a1e69eed8a680fe533e53e37af273a5ee6b082

@@ -25,5 +25,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/knewstuff.git
-  track: v5.66.0
-  ref: c46fd6666a4cff3cabdb328266d0a94e73e74640
+  track: v5.67.0
+  ref: cef83206c1379eceee71759004516ad91044a7c0

@@ -27,5 +27,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kservice.git
-  track: v5.66.0
-  ref: 43f26b6d82a1a06a02366346835cf7c0a7d6b2b3
+  track: v5.67.0
+  ref: 3b24c6d2dc4257968947f0560f9aa1f3d56aab3b

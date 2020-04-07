@@ -22,5 +22,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kitemviews.git
-  track: v5.66.0
-  ref: 045b92dac73d2eb8d88c970993bebe7dce0038e5
+  track: v5.67.0
+  ref: b2beb21e37b14d72e6bedd8d6a6e7eba146210e8

@@ -22,5 +22,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kemoticons.git
-  track: v5.66.0
-  ref: 927769bcc9a952a590edcf15333b77b8cc6322fc
+  track: v5.67.0
+  ref: 642cd19ea43db66eeffc8c549643ca4b30fc5f3e

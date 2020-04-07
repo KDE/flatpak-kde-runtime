@@ -25,5 +25,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/plasma-framework.git
-  track: v5.66.0
-  ref: 359f85a4412efb9426eb990533cda95047df9791
+  track: v5.67.0
+  ref: 65fb00bd3f554950ac96d702cac0d34e444c0936

@@ -23,5 +23,5 @@ public:
 sources:
 - kind: git
   url: https://anongit.kde.org/purpose.git
-  track: v5.66.0
-  ref: 351070ce59828bc866233685afa07f3164c3fd8a
+  track: v5.67.0
+  ref: 091a3ed453cdeac7af911902bc09c432db973b64

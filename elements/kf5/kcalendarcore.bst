@@ -21,5 +21,5 @@ public:
 sources:
 - kind: git
   url: https://anongit.kde.org/kcalendarcore.git
-  track: v5.66.0
-  ref: c22c63a0f45049454b7d73431a13df715f11b4eb
+  track: v5.67.0
+  ref: 36a2b64ada45e2c8d1064187832273e71408b5ae

@@ -23,5 +23,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kauth.git
-  track: v5.66.0
-  ref: 8977c4e6c6f1e90631f097c30099e2aab77d73b1
+  track: v5.67.0
+  ref: 1e85ecc5bb3b9e75b1d7d491f814505c03903c01

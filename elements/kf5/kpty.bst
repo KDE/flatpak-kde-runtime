@@ -22,5 +22,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kpty.git
-  track: v5.66.0
-  ref: fe4ec984c5a4ba28b92725f80a6ffa95295b0425
+  track: v5.67.0
+  ref: 5c700b3fd49ffeb02a3cfd479c7698bb9e2ed48c

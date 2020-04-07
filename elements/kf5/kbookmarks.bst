@@ -22,5 +22,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kbookmarks.git
-  track: v5.66.0
-  ref: 6d0796473a58f3e76a0514cbc542e6e97349cd49
+  track: v5.67.0
+  ref: d5829a1c58ae44a34debcf9498bc638c6deb2672

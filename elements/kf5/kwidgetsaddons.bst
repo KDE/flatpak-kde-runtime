@@ -22,5 +22,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/kwidgetsaddons.git
-  track: v5.66.0
-  ref: a8a1a07fdf0b857384fed7d160c5c4f503a98c30
+  track: v5.67.0
+  ref: bc55252bab27660151966d23094e7c64815bbf86

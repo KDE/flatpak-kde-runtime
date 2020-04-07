@@ -21,5 +21,5 @@ public:
 sources:
 - kind: git
   url: git://anongit.kde.org/threadweaver.git
-  track: v5.66.0
-  ref: 4b19316c0fdfff932554bd351a0f8a9a0ca3309d
+  track: v5.67.0
+  ref: 5904a808e20fba097184feeeb1e7f48362b75e38

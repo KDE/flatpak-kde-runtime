@@ -15,5 +15,5 @@ variables:
 sources:
 - kind: git
   url: git://anongit.kde.org/qqc2-desktop-style.git
-  track: v5.66.0
-  ref: 64d2072eed64b14c50a17ec67828c21afb1d5a00
+  track: v5.67.0
+  ref: 4f2d468c1829b7ef62a858d6f3ffb541db6ce7f1

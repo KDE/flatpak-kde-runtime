@@ -24,5 +24,5 @@ public:
 sources:
 - kind: git
   url: https://anongit.kde.org/kcontacts.git
-  track: v5.66.0
-  ref: 8e89a04c5ad698274b4f0a04268f58400d797ba8
+  track: v5.67.0
+  ref: f3b24af048a57b98887c7444c9f27eafb13ffd4a
