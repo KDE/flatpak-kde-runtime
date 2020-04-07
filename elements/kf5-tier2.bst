@@ -11,6 +11,7 @@ depends:
 - kf5/kcrash.bst
 - kf5/kdoctools.bst
 - kf5/kjobwidgets.bst
+- kf5/kfilemetadata.bst
 - kf5/knotifications.bst
 - kf5/kpty.bst
 - kf5/kunitconversion.bst
