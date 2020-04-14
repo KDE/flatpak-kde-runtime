@@ -130,7 +130,6 @@
                              "-no-directfb",
                              "-no-linuxfb",
                              "-no-kms",
-                             "-no-cups",
                              "-system-proxies",
                              "-gtk",
                              "-no-use-gold-linker",
