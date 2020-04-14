@@ -931,6 +931,7 @@
             "cleanup-platform": [ "*.rcc" ],
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
+            "builddir": true,
             "sources": [ { "type": "git", "url": "git://anongit.kde.org/breeze-icons.git", "branch": "v5.69.0" } ]
         },
 
