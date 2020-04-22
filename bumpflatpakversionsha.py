@@ -22,6 +22,7 @@ import json
 import hashlib
 import requests
 import multiprocessing
+import sys
 
 def calculate_sha256(url):
     urlsha = url + ".sha256"
@@ -59,17 +60,18 @@ def processModule(module):
 
 if __name__ == "__main__":
     content = ""
-    with open("org.kde.Sdk.json.in", 'r') as sdkfile:
-        content = sdkfile.read()
+    for x in sys.argv[1:]:
+        with open(x, 'r') as sdkfile:
+            content = sdkfile.read()
 
-    value = json.loads(content)
+        value = json.loads(content)
 
-    pool = multiprocessing.Pool(6)
-    replacements = pool.map(processModule, value['modules'])
+        pool = multiprocessing.Pool(6)
+        replacements = pool.map(processModule, value['modules'])
 
-    for repl in replacements:
-        for (a, b) in repl.items():
-            content = content.replace(a, b, 1)
+        for repl in replacements:
+            for (a, b) in repl.items():
+                content = content.replace(a, b, 1)
 
-    with open("org.kde.Sdk.json.in", 'w') as sdkfile:
-        sdkfile.write(content)
+        with open(x, 'w') as sdkfile:
+            sdkfile.write(content)
