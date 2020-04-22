@@ -47,15 +47,18 @@ def calculate_sha256(url):
 
 def processModule(module):
     replace = {}
-    if not 'sources' in module:
-        return replace
-    for source in module['sources']:
-        if source['type'] == 'archive':
-            sha = calculate_sha256(source['url'])
-            if sha != source['sha256']:
-                print("new sha", source, sha)
-                replace[source['sha256']] = sha
-        break
+    if 'sources' in module:
+        for source in module['sources']:
+            if source['type'] == 'archive':
+                sha = calculate_sha256(source['url'])
+                if sha != source['sha256']:
+                    print("new sha", source, sha)
+                    replace[source['sha256']] = sha
+            break
+
+    if 'modules' in module:
+        for submodule in module['modules']:
+            replace = {**replace, **processModule(submodule)}
     return replace
 
 if __name__ == "__main__":
