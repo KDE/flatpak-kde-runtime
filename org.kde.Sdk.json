@@ -154,6 +154,10 @@
                     "path": "patch/qtbase-use-wayland-on-gnome.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "patch/qtbase-make-sure-to-correctly-construct-base-platform-theme.patch"
+                },
+                {
                     "type": "shell",
                     "commands": [ "mv configure configure.qt" ]
                 },
