@@ -11,15 +11,16 @@ Change-Id: I1bd6b1f07087baefaa9738d4dd644bb649e3e5df
 ---
 
 diff --git a/src/plugins/platformthemes/xdgdesktopportal/qxdgdesktopportaltheme.cpp b/src/plugins/platformthemes/xdgdesktopportal/qxdgdesktopportaltheme.cpp
-index 30c43b6..fb324af 100644
+index fb65f6d9..72fbb9be 100644
 --- a/src/plugins/platformthemes/xdgdesktopportal/qxdgdesktopportaltheme.cpp
 +++ b/src/plugins/platformthemes/xdgdesktopportal/qxdgdesktopportaltheme.cpp
-@@ -65,7 +65,7 @@
+@@ -59,7 +59,7 @@ public:
          delete baseTheme;
      }
  
 -    QPlatformTheme *baseTheme;
 +    QPlatformTheme *baseTheme = nullptr;
-     uint fileChooserPortalVersion = 0;
  };
+ 
+ QXdgDesktopPortalTheme::QXdgDesktopPortalTheme()
  
