@@ -23,7 +23,7 @@ It has the potential to offer faster builds for developers working on the KDE ru
 ### Install Buildstream, and Buildstream-External
 Building this project requires both buildstream (the core features), and a set of buildstream plugins called Buildstream External.
 
-Installation instructions for buildstream can be found at https://docs.buildstream.build/1.4.2/main_install.html
+Installation instructions for buildstream can be found at https://docs.buildstream.build/1.4.3/main_install.html
 
 The buildstream external project can be found at https://gitlab.com/BuildStream/bst-external. The project can be cloned to your local machine, and installed with pip.
 
