@@ -20,6 +20,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/syndication.git
+  url: https://invent.kde.org/frameworks/syndication.git
   track: v5.67.0
   ref: fcabfcbebf14f643772dcc33931b27fa53cb81b6

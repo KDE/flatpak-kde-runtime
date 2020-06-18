@@ -20,6 +20,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kparts.git
+  url: https://invent.kde.org/frameworks/kparts.git
   track: v5.67.0
   ref: 11966f7253553fc582701643114a066a42eee645

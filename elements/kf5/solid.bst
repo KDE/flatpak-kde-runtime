@@ -23,6 +23,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/solid.git
+  url: https://invent.kde.org/frameworks/solid.git
   track: v5.67.0
   ref: 74c37ea0818463575b1257898fece080abc857a1

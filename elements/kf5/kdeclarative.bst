@@ -23,6 +23,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kdeclarative.git
+  url: https://invent.kde.org/frameworks/kdeclarative.git
   track: v5.67.0
   ref: 446de451605076a33ab98b75458e34eadd00f9b9

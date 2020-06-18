@@ -26,6 +26,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kdoctools.git
+  url: https://invent.kde.org/frameworks/kdoctools.git
   track: v5.67.0
   ref: a18df5150f4aec06883ce5ff06f3fc54cbf2f8c5

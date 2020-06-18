@@ -24,6 +24,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kwallet.git
+  url: https://invent.kde.org/frameworks/kwallet.git
   track: v5.67.0
   ref: 6f0fda6dc0e85341035443540851483c975f39a7

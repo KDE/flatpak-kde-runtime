@@ -16,6 +16,6 @@ variables:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/phonon-gstreamer.git
+  url: https://invent.kde.org/libraries/phonon-gstreamer.git
   track: v4.10.0
   ref: 9c868d623d560418f6f6a513cf37667ced558c5b

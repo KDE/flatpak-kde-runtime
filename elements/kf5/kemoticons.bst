@@ -21,6 +21,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kemoticons.git
+  url: https://invent.kde.org/frameworks/kemoticons.git
   track: v5.67.0
   ref: 642cd19ea43db66eeffc8c549643ca4b30fc5f3e

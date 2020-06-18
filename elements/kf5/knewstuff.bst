@@ -24,6 +24,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/knewstuff.git
+  url: https://invent.kde.org/frameworks/knewstuff.git
   track: v5.67.0
   ref: cef83206c1379eceee71759004516ad91044a7c0

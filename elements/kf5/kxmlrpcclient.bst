@@ -20,6 +20,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kxmlrpcclient.git
+  url: https://invent.kde.org/frameworks/kxmlrpcclient.git
   track: v5.67.0
   ref: 26464e5dce64a667aa44342b190dd1361766062f

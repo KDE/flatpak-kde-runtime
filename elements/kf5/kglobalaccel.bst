@@ -23,6 +23,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kglobalaccel
+  url: https://invent.kde.org/frameworks/kglobalaccel.git
   track: v5.67.0
   ref: f41e94c2179ab31511efbf16170678c9727dd9bd

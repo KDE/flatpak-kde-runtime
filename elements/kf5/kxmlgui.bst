@@ -23,6 +23,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kxmlgui.git
+  url: https://invent.kde.org/frameworks/kxmlgui.git
   track: v5.67.0
   ref: b371b98036200f24e5315d5bac4dc4bb4972f667

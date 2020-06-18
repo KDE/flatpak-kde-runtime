@@ -26,6 +26,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kservice.git
+  url: https://invent.kde.org/frameworks/kservice.git
   track: v5.67.0
   ref: 3b24c6d2dc4257968947f0560f9aa1f3d56aab3b

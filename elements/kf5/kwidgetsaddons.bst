@@ -21,6 +21,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kwidgetsaddons.git
+  url: https://invent.kde.org/frameworks/kwidgetsaddons.git
   track: v5.67.0
   ref: bc55252bab27660151966d23094e7c64815bbf86

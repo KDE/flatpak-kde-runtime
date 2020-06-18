@@ -21,6 +21,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/ktexteditor.git
+  url: https://invent.kde.org/frameworks/ktexteditor.git
   track: v5.67.0
   ref: 278d319f846315f14feaa56a28922c1e36d9e2e1

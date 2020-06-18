@@ -24,6 +24,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/plasma-framework.git
+  url: https://invent.kde.org/frameworks/plasma-framework.git
   track: v5.67.0
   ref: 65fb00bd3f554950ac96d702cac0d34e444c0936

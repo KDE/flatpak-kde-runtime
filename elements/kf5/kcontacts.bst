@@ -23,6 +23,6 @@ public:
 
 sources:
 - kind: git
-  url: https://anongit.kde.org/kcontacts.git
+  url: https://invent.kde.org/frameworks/kcontacts.git
   track: v5.67.0
   ref: f3b24af048a57b98887c7444c9f27eafb13ffd4a

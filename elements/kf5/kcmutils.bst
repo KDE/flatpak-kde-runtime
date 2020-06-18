@@ -20,6 +20,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kcmutils.git
+  url: https://invent.kde.org/frameworks/kcmutils.git
   track: v5.67.0
   ref: 39bb66c304017a0ce394e7cb9cef56bcf144f952

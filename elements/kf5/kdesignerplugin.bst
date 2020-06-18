@@ -16,6 +16,6 @@ variables:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kdesignerplugin.git
+  url: https://invent.kde.org/frameworks/kdesignerplugin.git
   track: v5.67.0
   ref: a2866d98e0e900c5bdff29635360cb7d57654a31

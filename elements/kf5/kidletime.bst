@@ -20,6 +20,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kidletime.git
+  url: https://invent.kde.org/frameworks/kidletime.git
   track: v5.67.0
   ref: 98d3412484aa06b1302f54c72b27fffc06b73219

@@ -21,6 +21,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/frameworkintegration.git
+  url: https://invent.kde.org/frameworks/frameworkintegration.git
   track: v5.67.0
   ref: 37bccb2811095f7afe3a033eb24d4f065eb553b9

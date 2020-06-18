@@ -22,6 +22,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/extra-cmake-modules.git
+  url: https://invent.kde.org/frameworks/extra-cmake-modules.git
   track: v5.67.0
   ref: 45c6a86eeff074d1793066a9cbb848012642f668

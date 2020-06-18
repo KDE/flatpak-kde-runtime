@@ -21,6 +21,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kpty.git
+  url: https://invent.kde.org/frameworks/kpty.git
   track: v5.67.0
   ref: 5c700b3fd49ffeb02a3cfd479c7698bb9e2ed48c

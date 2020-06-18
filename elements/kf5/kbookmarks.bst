@@ -21,6 +21,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kbookmarks.git
+  url: https://invent.kde.org/frameworks/kbookmarks.git
   track: v5.67.0
   ref: d5829a1c58ae44a34debcf9498bc638c6deb2672

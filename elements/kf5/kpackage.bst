@@ -25,6 +25,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kpackage.git
+  url: https://invent.kde.org/frameworks/kpackage.git
   track: v5.67.0
   ref: ca8edb443798e76ba7914b134c898b27710fa3d3

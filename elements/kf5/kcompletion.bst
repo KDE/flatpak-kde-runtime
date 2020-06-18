@@ -22,6 +22,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kcompletion.git
+  url: https://invent.kde.org/frameworks/kcompletion.git
   track: v5.67.0
   ref: c5dd972ffebac29fcb13ba92df9b38713df40848

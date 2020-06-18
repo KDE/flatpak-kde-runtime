@@ -24,6 +24,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kiconthemes.git
+  url: https://invent.kde.org/frameworks/kiconthemes.git
   track: v5.67.0
   ref: 4af6cd5de625ee431fc1228db5e6a53b19356805

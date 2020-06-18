@@ -17,6 +17,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kcoreaddons.git
+  url: https://invent.kde.org/frameworks/kcoreaddons.git
   track: v5.67.0
   ref: f2bd59b5403f42a8e59754b2d4c0f7c0034df562

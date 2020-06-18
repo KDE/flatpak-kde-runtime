@@ -22,6 +22,6 @@ public:
 
 sources:
 - kind: git
-  url: https://anongit.kde.org/purpose.git
+  url: https://invent.kde.org/frameworks/purpose.git
   track: v5.67.0
   ref: 091a3ed453cdeac7af911902bc09c432db973b64

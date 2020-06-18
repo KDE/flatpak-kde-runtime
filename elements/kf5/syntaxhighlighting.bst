@@ -22,6 +22,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/syntax-highlighting.git
+  url: https://invent.kde.org/frameworks/syntax-highlighting.git
   track: v5.67.0
   ref: 1671c931ccf309af8f91255e793773ec59eed172

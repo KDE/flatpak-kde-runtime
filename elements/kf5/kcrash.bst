@@ -21,6 +21,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kcrash.git
+  url: https://invent.kde.org/frameworks/kcrash.git
   track: v5.67.0
   ref: 69a1e69eed8a680fe533e53e37af273a5ee6b082

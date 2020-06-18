@@ -23,6 +23,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kwindowsystem.git
+  url: https://invent.kde.org/frameworks/kwindowsystem.git
   track: v5.67.0
   ref: 417a1dfd5f7e9d352baf086fd42f99118c4f59ac

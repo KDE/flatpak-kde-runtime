@@ -20,6 +20,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/threadweaver.git
+  url: https://invent.kde.org/frameworks/threadweaver.git
   track: v5.67.0
   ref: 5904a808e20fba097184feeeb1e7f48362b75e38

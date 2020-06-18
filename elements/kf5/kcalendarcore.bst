@@ -20,6 +20,6 @@ public:
 
 sources:
 - kind: git
-  url: https://anongit.kde.org/kcalendarcore.git
+  url: https://invent.kde.org/frameworks/kcalendarcore.git
   track: v5.67.0
   ref: 36a2b64ada45e2c8d1064187832273e71408b5ae

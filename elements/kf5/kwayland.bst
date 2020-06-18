@@ -21,6 +21,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kwayland.git
+  url: https://invent.kde.org/frameworks/kwayland.git
   track: v5.67.0
   ref: cce815dbbe491886c0139fdcd6df30d547b1263b

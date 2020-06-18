@@ -22,6 +22,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kauth.git
+  url: https://invent.kde.org/frameworks/kauth.git
   track: v5.67.0
   ref: 1e85ecc5bb3b9e75b1d7d491f814505c03903c01

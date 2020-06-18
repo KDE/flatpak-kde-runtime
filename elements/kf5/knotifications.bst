@@ -26,6 +26,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/knotifications.git
+  url: https://invent.kde.org/frameworks/knotifications.git
   track: v5.67.0
   ref: d3c2cfe91b5b3197c2086d9ee1a7dc41dbce86fd

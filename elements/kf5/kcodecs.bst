@@ -22,6 +22,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kcodecs.git
+  url: https://invent.kde.org/frameworks/kcodecs.git
   track: v5.67.0
   ref: 01a1a577cc4171082ecf725bd6ad3f0490fa0acf

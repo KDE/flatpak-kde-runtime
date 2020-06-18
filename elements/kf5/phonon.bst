@@ -23,6 +23,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/phonon.git
+  url: https://invent.kde.org/libraries/phonon.git
   track: v4.11.1
   ref: 70cd5ca9d9fadb7e458e5f44d68187f7f6fb0f61

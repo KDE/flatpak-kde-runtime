@@ -27,6 +27,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kconfigwidgets.git
+  url: https://invent.kde.org/frameworks/kconfigwidgets.git
   track: v5.67.0
   ref: e78580309000c5014ef785056873c649084a0408

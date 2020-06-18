@@ -20,6 +20,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kguiaddons.git
+  url: https://invent.kde.org/frameworks/kguiaddons.git
   track: v5.67.0
   ref: 64fa524731bd2829a3f8f88219cbb8af3e0bbda1

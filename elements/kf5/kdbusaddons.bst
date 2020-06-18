@@ -21,6 +21,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kdbusaddons
+  url: https://invent.kde.org/frameworks/kdbusaddons.git
   track: v5.67.0
   ref: acbce40246938a395b3b2a3b4bff6637fd3514bc

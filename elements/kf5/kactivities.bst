@@ -25,6 +25,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kactivities.git
+  url: https://invent.kde.org/frameworks/kactivities.git
   track: v5.67.0
   ref: f4651ec18e5ff1b52d42487ee837603028acfffa

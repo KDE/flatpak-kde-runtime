@@ -13,6 +13,6 @@ variables:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/breeze-icons.git
+  url: https://invent.kde.org/frameworks/breeze-icons.git
   track: v5.67.0
   ref: 3c6b6d48b14364d950fc18a3103dbeb7281270bc

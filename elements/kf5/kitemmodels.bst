@@ -20,6 +20,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kitemmodels.git
+  url: https://invent.kde.org/frameworks/kitemmodels.git
   track: v5.67.0
   ref: 8499737c58b7dc8bee322ac1df8e162d9bef5e4f

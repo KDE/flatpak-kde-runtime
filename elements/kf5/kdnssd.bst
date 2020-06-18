@@ -22,6 +22,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kdnssd.git
+  url: https://invent.kde.org/frameworks/kdnssd.git
   track: v5.67.0
   ref: 59d79101dedacbd73392c8b8c7241c985b884505

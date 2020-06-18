@@ -21,6 +21,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/karchive.git
+  url: https://invent.kde.org/frameworks/karchive.git
   track: v5.67.0
   ref: 2a1fda104bb0ee66e912a98497e7e2d3ce8c8f62

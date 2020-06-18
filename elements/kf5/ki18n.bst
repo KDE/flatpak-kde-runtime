@@ -20,6 +20,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/ki18n.git
+  url: https://invent.kde.org/frameworks/ki18n.git
   track: v5.67.0
   ref: 436fd2f6bd412f49fe80fd3cbae2e83b718dc599

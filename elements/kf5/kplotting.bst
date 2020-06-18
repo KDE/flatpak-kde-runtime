@@ -21,6 +21,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kplotting.git
+  url: https://invent.kde.org/frameworks/kplotting.git
   track: v5.67.0
   ref: 776e157c926211fd4827069e91244a1faed26898

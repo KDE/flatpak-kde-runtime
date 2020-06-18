@@ -14,6 +14,6 @@ variables:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kded.git
+  url: https://invent.kde.org/frameworks/kded.git
   track: v5.67.0
   ref: 8c847233344d572c9ee5c501d0e9a7a019ac8553

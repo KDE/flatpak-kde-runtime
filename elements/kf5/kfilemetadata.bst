@@ -24,6 +24,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kfilemetadata.git
+  url: https://invent.kde.org/frameworks/kfilemetadata.git
   track: v5.67.0
   ref: a1c9341a538cf8ef442ffbf0db29e8ab189c387d

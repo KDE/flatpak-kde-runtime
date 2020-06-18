@@ -29,6 +29,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kio.git
+  url: https://invent.kde.org/frameworks/kio.git
   track: v5.67.0
   ref: 612c7d6229432db485ee66bdca5745dd4149d940

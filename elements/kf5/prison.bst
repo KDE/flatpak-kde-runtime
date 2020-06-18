@@ -25,6 +25,6 @@ public:
 
 sources:
 - kind: git
-  url: https://anongit.kde.org/prison.git
+  url: https://invent.kde.org/frameworks/prison.git
   track: v5.67.0
   ref: 20f2f59f720be66901336db8977bf3b6330dd56d

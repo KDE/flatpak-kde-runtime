@@ -23,6 +23,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kjobwidgets.git
+  url: https://invent.kde.org/frameworks/kjobwidgets.git
   track: v5.67.0
   ref: c0294b2a25fbc4845cd287aa45765d80cede7e7a

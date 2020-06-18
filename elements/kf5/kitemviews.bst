@@ -21,6 +21,6 @@ public:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/kitemviews.git
+  url: https://invent.kde.org/frameworks/kitemviews.git
   track: v5.67.0
   ref: b2beb21e37b14d72e6bedd8d6a6e7eba146210e8
