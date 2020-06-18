@@ -4,7 +4,7 @@
 This is a project to build the KDE Flatpak runtimes, using Buildstream instead of Flatpak Builder.
 
 ## Background
-The KDE Flatpak runtimes are a set of Flatpak runtimes that are needed to run KDE Flatpak apps. The official runtimes are currently built using a manifest file and an application called flatpak-builder. The runtimes are then made available from Flathub, along with many apps. 
+The KDE Flatpak runtimes are a set of Flatpak runtimes that are needed to run KDE Flatpak apps. The official runtimes are currently built using a manifest file and an application called flatpak-builder. The runtimes are then made available from Flathub, along with many apps.
 
 This project uses buildstream instead of using Flatpak Builder to build the KDE runtimes, as a proof of concept and as a demonstration of the advantages of buildstream.
 
@@ -21,7 +21,7 @@ It has the potential to offer faster builds for developers working on the KDE ru
 
 # Building the runtimes
 ### Install Buildstream, and Buildstream-External
-Building this project requires both buildstream (the core features), and a set of buildstream plugins called Buildstream External. 
+Building this project requires both buildstream (the core features), and a set of buildstream plugins called Buildstream External.
 
 Installation instructions for buildstream can be found at https://docs.buildstream.build/1.4.2/main_install.html
 
