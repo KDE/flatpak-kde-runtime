@@ -18,6 +18,6 @@ variables:
 
 sources:
 - kind: git
-  url: git://anongit.kde.org/breeze.git
+  url: https://invent.kde.org/plasma/breeze.git
   track: Plasma/5.18
   ref: 659dfd1877deb32a2b5e2216ff08deebaee8d737

@@ -16,6 +16,6 @@ variables:
 
 sources:
 - kind: git_tag
-  url: git://anongit.kde.org/kwayland-integration.git
+  url:  https://invent.kde.org/plasma/kwayland-integration.git
   track: Plasma/5.18
   ref: v5.18.3-0-g8bfceb8256d79ee3ca548702bf0545036536ae5e
