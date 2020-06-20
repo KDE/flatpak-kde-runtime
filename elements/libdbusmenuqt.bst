@@ -25,7 +25,7 @@ public:
 
 sources:
 - kind: bzr
-  url: http://bazaar.launchpad.net/~dbusmenu-team/libdbusmenu-qt
+  url: lp:libdbusmenu-qt
   track: trunk
   ref: 271
   #ref: 0.9.3+16.04.20160218-0ubuntu1 #(The tag name/label for this revision)
