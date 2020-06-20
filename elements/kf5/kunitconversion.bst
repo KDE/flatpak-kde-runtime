@@ -20,6 +20,6 @@ public:
 
 sources:
 - kind: git
-  url: https://invent.kde.org/frameworks/ktextwidgets.git
+  url: https://invent.kde.org/frameworks/kunitconversion.git
   track: v5.67.0
   ref: dbef9926cfa01260d09557ffb78dbb8f0d74b0d1
