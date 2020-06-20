@@ -1,6 +1,6 @@
 kind: cmake
 description: libdbusmenuqt (needed for knotifications)
-# According to the build logs of kf5/knotifications, libdbusmenuqt is an optional build dependency, 
+# According to the build logs of kf5/knotifications, libdbusmenuqt is an optional build dependency,
 # Would provide "Support for notification area menus via the DBusMenu protocol"
 # If we get this building properly, then we should add it as a dependency for knotifications.
 # Unsure whether to make it a build dependency or a general dependency.
