@@ -38,7 +38,7 @@ config:
       version: "5.14"
       merge-dirs: "styles"
       download-if: "active-gtk-theme"
- 
+
     Extension org.kde.PlatformTheme:
       directory: "share/runtime/lib/plugins/"
       subdirectories: 'true'
@@ -47,7 +47,7 @@ config:
       merge-dirs: "platformthemes"
       //TODO: "This is currently only used for gnome platform plugin and should be its own extension point"
       download-if: "on-xdg-desktop-GNOME;on-xdg-desktop-GNOME-classic"
- 
+
     Extension org.kde.PlatformInputContexts:
       directory: "share/runtime/lib/plugins/"
       subdirectories: 'true'
@@ -55,7 +55,7 @@ config:
       no-autodownload: 'true'
       version: "5.14"
       merge-dirs: "platforminputcontexts"
- 
+
     Extension org.kde.WaylandDecoration:
       directory: "share/runtime/lib/plugins/"
       subdirectories: 'true'
