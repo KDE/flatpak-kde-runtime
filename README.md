@@ -70,6 +70,12 @@ Note:
 If you already have the offical kde runtimes installed, you may need to uninstall them temporarily while testing the locally-built ones.
 You can use the 'flatpak list --runtime' command to check which runtimes are installed, and which remote each one came from. This will be useful to keep track of whether you're using the offically released version or the locally built version.
 
+# Testing using the Remote build of the Runtime
+
+    wget kde-test http://161.35.150.38/flatpak-kde-repository/tomazcanabrava.gpg
+    flatpak remote-add kde-test http://161.35.150.38/flatpak-kde-repository/ --user --gpg-import=tomazcanabrava.gpg
+    flatpak install org.kde.Sdk
+
 # The runtimes
 This project currently produces a repository containing six runtimes:
 * org.kde.Platform.Locale
