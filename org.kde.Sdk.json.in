@@ -450,6 +450,18 @@
                     "url": "http://download.qt.io/archive/qt/5.14/5.14.2/submodules/qtspeech-everywhere-src-5.14.2.tar.xz",
                     "sha256": "5e9e8ea62f0207ba894df1e136df0af9fc5443c7817d28c39f0ea2bbae9ec6da"
                 }
+            ],
+            "modules": [
+                {
+                    "name": "flite",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "http://www.festvox.org/flite/packed/flite-2.1/flite-2.1-release.tar.bz2",
+                            "sha256": "c73c3f6a2ea764977d6eaf0a287722d1e2066b4697088c552e342c790f3d2b85"
+                        }
+                    ]
+                }
             ]
         },
         {
