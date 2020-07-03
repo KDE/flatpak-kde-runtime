@@ -1,5 +1,4 @@
 kind: cmake
-kind: cmake
 description: Baloo
 
 depends:

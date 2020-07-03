@@ -22,5 +22,5 @@ public:
 sources:
 - kind: git
   url: https://invent.kde.org/frameworks/kholidays.git
-  track: v5.67.0
+  track: v20.04.2
   ref: 572d3c8e3870664b7685f5b0afd6e264db9b3c5e
