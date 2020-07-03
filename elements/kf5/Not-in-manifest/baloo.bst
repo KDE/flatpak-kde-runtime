@@ -1,6 +1,9 @@
 kind: cmake
 description: Baloo
 
+build-depends:
+- kf5/extra-cmake-modules.bst
+
 depends:
 - qt5/qtbase.bst
 - qt5/qtdeclarative.bst
