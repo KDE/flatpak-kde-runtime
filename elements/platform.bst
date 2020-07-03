@@ -9,6 +9,7 @@ depends:
 - freedesktop-sdk.bst:platform.bst
 - qt5.bst
 - plasma.bst
+- lmdb.bst
 - kf5-tier1.bst
 - kf5-tier2.bst
 - kf5-tier3.bst

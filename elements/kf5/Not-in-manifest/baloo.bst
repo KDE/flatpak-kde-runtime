@@ -13,7 +13,7 @@ depends:
 - kf5/kfilemetadata.bst
 - kf5/kcrash.bst
 - kf5/kio.bst
-- kf5/lmdb.bst
+- lmdb.bst
 - filename: base/gettext.bst
   junction: freedesktop-sdk.bst
   type: build
