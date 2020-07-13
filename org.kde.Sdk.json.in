@@ -477,6 +477,18 @@
             ]
         },
         {
+            "name": "qt5-qttranslations",
+            "buildsystem": "qmake",
+            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://download.qt.io/archive/qt/5.15/5.15.0/submodules/qttranslations-everywhere-src-5.15.0.tar.xz",
+                    "sha256": "45c43268d9df50784d4d8ca345fce9288a1055fd074ac0ef508097f7aeba22fe"
+                }
+            ]
+        },
+        {
             "name": "libdbusmenuqt",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DWITH_DOC=OFF"],
