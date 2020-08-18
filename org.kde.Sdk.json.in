@@ -842,6 +842,12 @@
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kpty.git", "branch": "v5.73.0" } ]
         },
         {
+            "name": "plasma-wayland-protocols",
+            "buildsystem": "cmake-ninja",
+            "config-opts": ["-DENABLE_TESTING=OFF"  ],
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git", "branch": "v1.1.1" } ]
+        },
+        {
             "name": "kwayland",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF"  ],
