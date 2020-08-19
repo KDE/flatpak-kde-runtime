@@ -5,7 +5,7 @@
     "branch": "5.15",
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
-    "runtime-version": "19.08",
+    "runtime-version": "20.08beta",
     "sdk-extensions": ["org.freedesktop.Sdk.Debug", "org.freedesktop.Sdk.Locale", "org.freedesktop.Sdk.Docs"],
     "platform-extensions": ["org.freedesktop.Platform.Locale"],
     "inherit-extensions": [
