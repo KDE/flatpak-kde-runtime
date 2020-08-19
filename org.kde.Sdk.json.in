@@ -373,10 +373,6 @@
                     "type": "archive",
                     "url": "http://download.qt.io/archive/qt/5.15/5.15.0/submodules/qtwayland-everywhere-src-5.15.0.tar.xz",
                     "sha256": "084133e10bfbd32a28125639660c59975f23457bba6a79b30a25802cec76a9fb"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtwayland-use-gnome-platform-theme-on-gnome-based-desktops.patch"
                 }
             ]
         },
