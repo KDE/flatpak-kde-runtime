@@ -99,11 +99,6 @@
                             "-reduce-relocations", "-force-debug-info"
                         ]
                     },
-                    "arm" : {
-                        "config-opts" : [
-                            "-no-reduce-relocations", "-optimize-size", "-opengl es2"
-                        ]
-                    },
                     "aarch64" : {
                         "config-opts" : [
                             "-no-reduce-relocations", "-optimize-size", "-opengl es2"
