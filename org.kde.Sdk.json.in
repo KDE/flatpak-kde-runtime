@@ -945,6 +945,12 @@
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/purpose.git", "branch": "v5.73.0" } ]
         },
         {
+            "name": "kdav",
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
+            "buildsystem": "cmake-ninja",
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kdav.git", "branch": "v5.73.0" } ]
+        },
+        {
             "name": "plasma-framework",
             "config-opts": [ "-DENABLE_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
