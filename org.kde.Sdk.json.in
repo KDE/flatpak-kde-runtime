@@ -173,10 +173,6 @@
                     "type": "archive",
                     "url": "http://download.qt.io/archive/qt/5.15/5.15.1/submodules/qtdeclarative-everywhere-src-5.15.1.tar.xz",
                     "sha256": "7e30f0ccba61f9d71720b91d7f7523c23677f23cd96065cb71df1b0df329d768"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtdeclarative-use-python3.patch"
                 }
             ]
         },
