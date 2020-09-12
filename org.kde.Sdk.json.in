@@ -151,10 +151,6 @@
                     "path": "patch/qtbase-revert-correct-handling-for-xdg-runtime-dir.patch"
                 },
                 {
-                    "type": "patch",
-                    "path": "patch/qtbase-make-sure-to-correctly-construct-base-platform-theme.patch"
-                },
-                {
                     "type": "shell",
                     "commands": [ "mv configure configure.qt" ]
                 },
