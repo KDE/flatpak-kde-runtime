@@ -486,7 +486,7 @@
         {
             "name": "libdbusmenuqt",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DWITH_DOC=OFF"],
+            "config-opts": ["-DBUILD_TESTING=OFF", "-DWITH_DOC=OFF"],
             "sources": [
                 { "type": "bzr", "url": "http://bazaar.launchpad.net/~dbusmenu-team/libdbusmenu-qt/trunk/", "revision": "0.9.3+16.04.20160218-0ubuntu1" }
             ]
@@ -496,133 +496,133 @@
             "name": "extra-cmake-modules",
             "cleanup-platform": ["*"],
             "buildsystem": "cmake-ninja",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kwidgetsaddons",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kwidgetsaddons.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "ki18n",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/ki18n.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kconfig",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kconfig.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "attica",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/attica.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kguiaddons",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kguiaddons.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kcoreaddons",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kcoreaddons.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kauth",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kauth.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "karchive",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DCMAKE_DISABLE_FIND_PACKAGE_Qt5Test=TRUE"],
+            "config-opts": ["-DBUILD_TESTING=OFF", "-DCMAKE_DISABLE_FIND_PACKAGE_Qt5Test=TRUE"],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/karchive.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kcodecs",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kcodecs.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kconfigwidgets",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kconfigwidgets.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kitemviews",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kitemviews.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kiconthemes",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kiconthemes.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kwindowsystem",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kwindowsystem.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kcrash",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kcrash.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kdbusaddons",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kdbusaddons.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kservice",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kservice.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kglobalaccel",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kglobalaccel.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "sonnet",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/sonnet.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kcompletion",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kcompletion.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "ktextwidgets",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/ktextwidgets.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kxmlgui",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kxmlgui.git", "branch": "v5.74.0" } ]
         },
@@ -643,73 +643,73 @@
         },
         {
             "name": "kdoctools",
-            "config-opts": [ "-DENABLE_TESTING=OFF", "-DDocBookXSL_DIR=/usr/share/xml/docbook/xml/xsl-stylesheets/", "-DDTD_PATH_LIST=/usr/share/xml/docbook/xml-dtd/4.5/" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF", "-DDocBookXSL_DIR=/usr/share/xml/docbook/xml/xsl-stylesheets/", "-DDTD_PATH_LIST=/usr/share/xml/docbook/xml-dtd/4.5/" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kdoctools.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kpackage",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kpackage.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kbookmarks",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kbookmarks.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kfilemetadata",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kfilemetadata.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "phonon",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DPHONON_BUILD_PHONON4QT5=ON"],
+            "config-opts": ["-DBUILD_TESTING=OFF", "-DPHONON_BUILD_PHONON4QT5=ON"],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/phonon.git", "branch": "v4.11.1" } ]
         },
         {
             "name": "knotifications",
             "buildsystem": "cmake-ninja",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/knotifications.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kwallet",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kwallet.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kjobwidgets",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kjobwidgets.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "solid",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/solid.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kio",
             "buildsystem": "cmake-ninja",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kio.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kparts",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kparts.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kplotting",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kplotting.git", "branch": "v5.74.0" } ]
         },
@@ -717,142 +717,142 @@
             "name": "kdesignerplugin",
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kdesignerplugin.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kinit",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kinit.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kded",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kded.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kunitconversion",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kunitconversion.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kdeclarative",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kdeclarative.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kcmutils",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kcmutils.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "knotifyconfig",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/knotifyconfig.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "knewstuff",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/knewstuff.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kidletime",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kidletime.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "threadweaver",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/threadweaver.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kitemmodels",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kitemmodels.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kxmlrpcclient",
             "buildsystem": "cmake-ninja",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kxmlrpcclient.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kdnssd",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kdnssd.git", "branch": "v5.74.0" } ]
         },
         {
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "name": "syntax-highlighting",
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/syntax-highlighting.git", "branch": "v5.74.0" } ]
         },
         {
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "name": "ktexteditor",
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/ktexteditor.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "frameworkintegration",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/frameworkintegration.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kemoticons",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kemoticons.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kpty",
             "buildsystem": "cmake-ninja",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kpty.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "plasma-wayland-protocols",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DENABLE_TESTING=OFF"  ],
+            "config-opts": ["-DBUILD_TESTING=OFF"  ],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git", "branch": "v1.1.1" } ]
         },
         {
             "name": "kwayland",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DENABLE_TESTING=OFF"  ],
+            "config-opts": ["-DBUILD_TESTING=OFF"  ],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kwayland.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kirigami",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DPLASMA_ENABLED=OFF"],
+            "config-opts": ["-DBUILD_TESTING=OFF", "-DPLASMA_ENABLED=OFF"],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kirigami.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "qqc2-desktop-style",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/qqc2-desktop-style.git", "branch": "v5.74.0" } ]
         },
         {
             "name": "kactivities",
-            "config-opts": [ "-DENABLE_TESTING=OFF", "-DKACTIVITIES_LIBRARY_ONLY=ON" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF", "-DKACTIVITIES_LIBRARY_ONLY=ON" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kactivities.git", "branch": "v5.74.0" } ]
@@ -888,7 +888,7 @@
         },
         {
             "name": "kholidays",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kholidays.git", "branch": "v5.74.0" } ]
@@ -944,7 +944,7 @@
         },
         {
             "name": "plasma-framework",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/plasma-framework.git", "branch": "v5.74.0" } ]
@@ -952,7 +952,7 @@
         {
             "name": "breeze-icons",
             "cleanup-platform": [ "*.rcc" ],
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/breeze-icons.git", "branch": "v5.74.0" } ]
@@ -961,25 +961,25 @@
         {
             "name": "breeze",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DWITH_DECORATIONS=OFF", "-DWITH_WALLPAPERS=OFF" ],
+            "config-opts": ["-DBUILD_TESTING=OFF", "-DWITH_DECORATIONS=OFF", "-DWITH_WALLPAPERS=OFF" ],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/plasma/breeze.git", "branch": "Plasma/5.18" } ]
         },
         {
             "name": "plasma-integration",
             "buildsystem": "cmake-ninja",
-            "config-opts": [ "-DENABLE_TESTING=OFF", "-DBUILD_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/plasma/plasma-integration.git", "branch": "Plasma/5.18" } ]
         },
         {
             "name": "kwayland-integration",
             "buildsystem": "cmake-ninja",
-            "config-opts": [ "-DENABLE_TESTING=OFF" ],
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/plasma/kwayland-integration.git", "branch": "Plasma/5.18" } ]
         },
         {
             "name": "phonon-gstreamer",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DENABLE_TESTING=OFF", "-DPHONON_BUILD_PHONON4QT5=ON"],
+            "config-opts": ["-DBUILD_TESTING=OFF", "-DPHONON_BUILD_PHONON4QT5=ON"],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/phonon-gstreamer.git", "branch": "v4.10.0" } ]
         },
         {
