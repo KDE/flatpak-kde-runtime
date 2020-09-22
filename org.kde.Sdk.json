@@ -33,6 +33,7 @@
             "no-autodownload": true,
             "version": "5.12",
             "merge-dirs": "styles",
+            "add-ld-path": "lib",
             "download-if": "active-gtk-theme"
         },
         "org.kde.PlatformTheme" : {
@@ -41,6 +42,7 @@
             "no-autodownload": true,
             "version": "5.12",
             "merge-dirs": "platformthemes",
+            "add-ld-path": "lib",
             "//TODO": "This is currently only used for gnome platform plugin and should be its own extension point",
             "download-if": "on-xdg-desktop-GNOME;on-xdg-desktop-GNOME-classic"
         },
@@ -50,7 +52,8 @@
             "autodelete": true,
             "no-autodownload": true,
             "version": "5.12",
-            "merge-dirs": "platforminputcontexts"
+            "merge-dirs": "platforminputcontexts",
+            "add-ld-path": "lib"
         },
         "org.kde.WaylandDecoration" : {
             "directory": "share/runtime/lib/plugins/",
@@ -58,6 +61,7 @@
             "no-autodownload": true,
             "version": "5.12",
             "merge-dirs": "wayland-decoration-client",
+            "add-ld-path": "lib",
             "//TODO": "This is currently only used for gnome platform plugin and should be its own extension point",
             "download-if": "on-xdg-desktop-GNOME;on-xdg-desktop-GNOME-classic"
         }
@@ -525,7 +529,7 @@
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_TESTING=OFF", "-DWITH_DOC=OFF"],
             "sources": [
-                { "type": "bzr", "url": "http://bazaar.launchpad.net/~dbusmenu-team/libdbusmenu-qt/trunk/", "revision": "0.9.3+16.04.20160218-0ubuntu1" }
+                { "type": "bzr", "url": "lp:libdbusmenu-qt", "revision": "0.9.3+16.04.20160218-0ubuntu1" }
             ]
         },
 
