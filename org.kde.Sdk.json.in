@@ -155,6 +155,10 @@
                     "path": "patch/qtbase-revert-correct-handling-for-xdg-runtime-dir.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "patch/open-file-portal-writable.patch"
+                },
+                {
                     "type": "shell",
                     "commands": [ "mv configure configure.qt" ]
                 },
