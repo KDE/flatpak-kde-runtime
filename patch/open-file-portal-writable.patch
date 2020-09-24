@@ -12,10 +12,10 @@ mismatch between writable FD and read-only request.
 Pick-to: 5.15
 Change-Id: Ide02c0a1061243fbbe14264b3c31b8e5e292c165
 
-diff --git a/src/gui/platform/unix/qgenericunixservices.cpp b/src/gui/platform/unix/qgenericunixservices.cpp
+diff --git a/src/platformsupport/services/genericunix/qgenericunixservices.cpp b/src/platformsupport/services/genericunix/qgenericunixservices.cpp
 index cd32cd2a0b..e7b9ae3368 100644
---- a/src/gui/platform/unix/qgenericunixservices.cpp
-+++ b/src/gui/platform/unix/qgenericunixservices.cpp
+--- a/src/platformsupport/services/genericunix/qgenericunixservices.cpp
++++ b/src/platformsupport/services/genericunix/qgenericunixservices.cpp
 @@ -214,8 +214,10 @@ static inline QDBusMessage xdgDesktopPortalOpenFile(const QUrl &url)
          QDBusUnixFileDescriptor descriptor;
          descriptor.giveFileDescriptor(fd);
