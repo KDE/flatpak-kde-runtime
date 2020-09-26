@@ -8,8 +8,7 @@ https://bugs.kde.org/enter_bug.cgi?product=Qt%2FKDE%20Flatpak%20Runtime
 Here you can find some documentation on how to get the big picture of Flatpak usage in KDE:
 https://community.kde.org/Guidelines_and_HOWTOs/Flatpak
 
-There's a different branch for every different version of Qt and KDE Frameworks jumps along together as new stable releases become available.
-https://phabricator.kde.org/source/flatpak-kde-runtime/branches/qt5.13/
+There's a [different branch](https://invent.kde.org/packaging/flatpak-kde-runtime/-/branches) for each version of Qt. The KDE Frameworks version updates with it as new stable releases become available.
 
 # Testing
 This can generally be built with flatpak-builder as explained in its documentation. There's a Makefile to make it a bit easier to trigger:
