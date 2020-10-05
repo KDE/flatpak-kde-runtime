@@ -159,6 +159,10 @@
                     "path": "patch/open-file-portal-writable.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "patch/qtbase-properly-fix-dangling-pointer.patch"
+                },
+                {
                     "type": "shell",
                     "commands": [ "mv configure configure.qt" ]
                 },
