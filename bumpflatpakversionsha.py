@@ -23,6 +23,9 @@ import hashlib
 import requests
 import multiprocessing
 import sys
+import os
+import git
+from urllib.parse import urlparse
 
 def calculate_sha256(url):
     urlsha = url + ".sha256"
@@ -55,6 +58,37 @@ def checkArchiveSha256(source, replace):
         if sha and sha != source['sha256']:
             print("new sha", source, sha)
             replace[source['sha256']] = sha
+
+def checkGitNextTag(source, replace):
+    if source['type'] == 'git' and 'branch' in source:
+        repo = None
+        directory = "./check/" + os.path.basename(urlparse(source['url']).path)
+        if os.path.isdir(directory):
+            repo = git.Repo(directory)
+            repo.remotes[0].pull()
+        else:
+            repo = git.Repo()
+            repo.clone_from(source['url'], directory)
+        x = repo.remotes[0].fetch("--tags")
+
+        branch = source['branch']
+        if branch in repo.tags:
+            usedCommit = repo.commit(repo.tags[branch].object)
+            for tag in repo.tags:
+                tagCommit = repo.commit(tag.object)
+                if 'rc' in tag.name or 'beta' in tag.name or 'alpha' in tag.name:
+                    continue
+
+                if usedCommit.committed_date < tagCommit.committed_date:
+                    print("newer tag", source['url'], tag)
+        elif branch in repo.branches:
+            usedCommit = repo.commit(repo.branches[branch].object)
+            for branch in repo.branches:
+                branchCommit = repo.commit(branch.object)
+                if usedCommit.committed_date < branchCommit.committed_date:
+                    print("newer branch", tag)
+        else:
+            print("wtf", source['url'] , branch)
 
 def processModule(module):
     replace = {}
