@@ -998,7 +998,7 @@
             "name": "fcitx-platforminputcontext",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_LIBRARY=OFF" ],
-            "sources": [ { "type": "git", "url": "https://github.com/fcitx/fcitx-qt5", "branch": "1.2.4" } ]
+            "sources": [ { "type": "git", "url": "https://github.com/fcitx/fcitx-qt5", "branch": "1.2.5" } ]
         },
         {
             "name": "os-release",
