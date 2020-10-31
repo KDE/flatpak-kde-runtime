@@ -108,7 +108,12 @@ if __name__ == "__main__":
         with open(x, 'r') as sdkfile:
             content = sdkfile.read()
 
-        value = json.loads(content)
+        try:
+            value = json.loads(content)
+        except:
+            print("failed to parse", x)
+            continue
+
 
         pool = multiprocessing.Pool(6)
         replacements = pool.map(processModule, value['modules'])
