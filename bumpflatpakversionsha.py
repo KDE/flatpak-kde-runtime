@@ -26,7 +26,11 @@ import sys
 
 def calculate_sha256(url):
     urlsha = url + ".sha256"
-    r = requests.get(urlsha, stream=False)
+    try:
+        r = requests.get(urlsha, stream=False)
+    except requests.exceptions.InvalidSchema:
+        print("cannot process", url)
+        return None
 
     if r.status_code == requests.codes.ok:
         print("using", urlsha)
@@ -45,16 +49,19 @@ def calculate_sha256(url):
         sha256.update(data)
     return sha256.hexdigest()
 
+def checkArchiveSha256(source, replace):
+    if source['type'] == 'archive':
+        sha = calculate_sha256(source['url'])
+        if sha and sha != source['sha256']:
+            print("new sha", source, sha)
+            replace[source['sha256']] = sha
+
 def processModule(module):
     replace = {}
     if 'sources' in module:
         for source in module['sources']:
-            if source['type'] == 'archive':
-                sha = calculate_sha256(source['url'])
-                if sha != source['sha256']:
-                    print("new sha", source, sha)
-                    replace[source['sha256']] = sha
-            break
+            checkArchiveSha256(source, replace)
+            checkGitNextTag(source, replace)
 
     if 'modules' in module:
         for submodule in module['modules']:
