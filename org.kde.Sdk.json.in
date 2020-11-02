@@ -88,14 +88,18 @@
                           "/share/aclocal",
                           "/share/pkgconfig",
                           "/lib/pkgconfig",
+                          "/lib/*/pkgconfig",
                           "*.a",
-                          "*.cmake"
+                          "*.cmake",
+                          "/lib/*/cmake",
+                          "/mkspecs",
+                          "/lib/mkspecs"
                         ],
     "cleanup-platform-commands": [ "/usr/libexec/freedesktop-post.sh" ],
     "modules": [
         {
             "name": "qt5-qtbase",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "build-options" : {
                 "arch" : {
                     "x86_64" : {
@@ -179,7 +183,7 @@
         {
             "name": "qt5-qtdeclarative",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs", "lib/plugins/qmltooling" ],
+            "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
             "sources": [
                 {
                     "type": "archive",
@@ -192,7 +196,6 @@
             "name": "qt5-qttools",
             "buildsystem": "qmake",
             "cleanup-platform": [
-                "/mkspecs",
                 "/bin/assistant", "/bin/qhelpgenerator", "/bin/qcollectiongenerator", "/bin/qhelpconverter", "/bin/pixeltool", "/bin/designer",
                 "/bin/lrelease", "/bin/lupdate", "/bin/lconvert", "/bin/linguist", "/bin/qdoc", "/bin/qtattributionsscanner",
                 "/bin/qtplugininfo", "/bin/qtdiag", "/bin/qdbusviewer"
@@ -208,7 +211,7 @@
         {
             "name": "qt5-qtscript",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -221,7 +224,7 @@
 
             "name": "qt5-webchannel",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -233,7 +236,7 @@
         {
             "name": "qt5-qtlocation",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -245,7 +248,7 @@
         {
             "name": "qt5-qtsvg",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -258,7 +261,7 @@
             "name": "qt5-qtx11extras",
 
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -270,7 +273,7 @@
         {
             "name": "qt5-qtmultimedia",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -282,7 +285,7 @@
         {
             "name": "qt5-qtsensors",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -294,7 +297,7 @@
         {
             "name": "qt5-qtquickcontrols",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -306,7 +309,7 @@
         {
             "name": "qt5-qtquickcontrols2",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -318,7 +321,7 @@
         {
             "name": "qt5-qtgraphicaleffects",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -330,7 +333,7 @@
         {
             "name": "qt5-qtxmlpatterns",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -342,7 +345,7 @@
         {
             "name": "qt5-qtimageformats",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -354,7 +357,7 @@
         {
             "name": "qt5-connectivity",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -366,7 +369,7 @@
         {
             "name": "qt5-wayland",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -378,7 +381,7 @@
         {
             "name": "qt5-virtualkeyboard",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -390,7 +393,7 @@
         {
             "name": "qt5-qtserialport",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -402,7 +405,7 @@
         {
             "name": "qt5-qtwebsockets",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -414,7 +417,7 @@
         {
             "name": "qt5-qtcharts",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -426,7 +429,7 @@
         {
             "name": "qt5-qt3d",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -438,7 +441,7 @@
         {
             "name": "qt5-qtspeech",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -462,7 +465,7 @@
         {
             "name": "qt5-qtnetworkauth",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -474,7 +477,7 @@
         {
             "name": "qt5-qtgamepad",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
@@ -486,7 +489,7 @@
         {
             "name": "qt5-qttranslations",
             "buildsystem": "qmake",
-            "cleanup-platform": [ "/bin", "/mkspecs" ],
+            "cleanup-platform": [ "/bin" ],
             "sources": [
                 {
                     "type": "archive",
