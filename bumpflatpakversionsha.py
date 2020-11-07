@@ -25,6 +25,7 @@ import multiprocessing
 import sys
 import os
 import git
+import re
 from urllib.parse import urlparse
 
 def calculate_sha256(url):
@@ -90,10 +91,24 @@ def checkGitNextTag(source, replace):
         else:
             print("wtf", source['url'] , branch)
 
+def checkGitHubRepository(source, replace):
+    if source['type'] == 'archive' and source['url'].startswith("https://github.com/"):
+        url = source['url']
+        m = re.search('https://github.com/(.+)/(.+)/releases/download/(.*)/.+', url)
+        if not m:
+            m = re.search('https://github.com/(.+)/(.+)/archive/(.*).tar.gz', url)
+
+        if m:
+            checkGitNextTag({'type': 'git', 'url': 'https://github.com/' + m.group(1) + '/' + m.group(2) + '.git', 'branch': m.group(3) }, {})
+        else:
+            print("could not recognize", url)
+
+
 def processModule(module):
     replace = {}
     if 'sources' in module:
         for source in module['sources']:
+            checkGitHubRepository(source, replace)
             checkArchiveSha256(source, replace)
             checkGitNextTag(source, replace)
 
