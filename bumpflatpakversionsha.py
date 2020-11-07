@@ -69,7 +69,7 @@ def checkGitNextTag(source, replace):
         else:
             repo = git.Repo()
             repo.clone_from(source['url'], directory)
-        x = repo.remotes[0].fetch("--tags")
+        repo.remotes[0].fetch("--tags")
 
         branch = source['branch']
         if branch in repo.tags:
@@ -97,7 +97,7 @@ def processModule(module):
             checkArchiveSha256(source, replace)
             checkGitNextTag(source, replace)
 
-    if 'modules' in module:
+    if 'modules' in module and isinstance(module['modules'], dict):
         for submodule in module['modules']:
             replace = {**replace, **processModule(submodule)}
     return replace
