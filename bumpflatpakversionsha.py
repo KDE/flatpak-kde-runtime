@@ -103,6 +103,27 @@ def checkGitHubRepository(source, replace):
         else:
             print("could not recognize", url)
 
+def checkPythonHosted(source, replace):
+    pythonHosted = source['type'] == 'archive' and source['url'].startswith('https://files.pythonhosted')
+    pipy = source['type'] == 'file' and source['url'].startswith('https://pypi.python.org')
+    name = None
+    if pythonHosted or pipy:
+        name = os.path.basename(urlparse(source['url']).path)
+        m = re.search('(.+)-[0-9]', name)
+        pkgname=m.group(1)
+        r = requests.get('https://pypi.org/pypi/' + pkgname + '/json')
+
+        content = json.loads(r.text)
+        version = content['info']['version']
+        releases = content['releases']
+        for asset in releases[version]:
+            if pythonHosted and asset["packagetype"] == 'sdist' and not asset['url'].endswith(name):
+                if asset['url'] != source['url']:
+                    print("new version of", pkgname, json.dumps({'type': 'archive', 'url': asset['url'], 'sha256': asset['digests']['sha256']}))
+            if source['url'].endswith('.whl') and asset["packagetype"] == 'bdist_wheel':
+                if asset['url'] != source['url']:
+                    print("new version of", pkgname, json.dumps({'type': 'file', 'url': asset['url'], 'sha256': asset['digests']['sha256']}))
+
 
 def processModule(module):
     replace = {}
@@ -111,6 +132,7 @@ def processModule(module):
             checkGitHubRepository(source, replace)
             checkArchiveSha256(source, replace)
             checkGitNextTag(source, replace)
+            checkPythonHosted(source, replace)
 
     if 'modules' in module and isinstance(module['modules'], dict):
         for submodule in module['modules']:
