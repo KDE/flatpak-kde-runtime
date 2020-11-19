@@ -144,7 +144,7 @@ def processModule(module):
             checkGitNextTag(source, replace)
             checkPythonHosted(source, replace)
 
-    if 'modules' in module and isinstance(module['modules'], dict):
+    if 'modules' in module and isinstance(module['modules'], list):
         for submodule in module['modules']:
             replace = {**replace, **processModule(submodule)}
     return replace
