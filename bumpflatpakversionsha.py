@@ -126,6 +126,16 @@ def checkPythonHosted(source, replace):
 
 
 def processModule(module):
+    if isinstance(module, str):
+        with open(module, 'r') as moduleFile:
+            content = moduleFile.read()
+        try:
+            value = json.loads(content)
+        except:
+            print("failed to parse", x)
+            return {}
+        return processModule(json.loads(content))
+
     replace = {}
     if 'sources' in module:
         for source in module['sources']:
