@@ -29,7 +29,7 @@ $(REPO)/config:
 	ostree init --mode=archive-z2 --repo=$(REPO)
 
 remotes:
-	flatpak remote-add $(ARGS) --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+	flatpak --user remote-add $(ARGS) --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 check:
 	json-glib-validate *.json
