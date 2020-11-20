@@ -93,7 +93,8 @@
                           "*.cmake",
                           "/lib/*/cmake",
                           "/mkspecs",
-                          "/lib/mkspecs"
+                          "/lib/mkspecs",
+                          "*.prl"
                         ],
     "cleanup-platform-commands": [ "/usr/libexec/freedesktop-post.sh" ],
     "modules": [
