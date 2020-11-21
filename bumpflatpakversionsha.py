@@ -104,6 +104,8 @@ def checkGitHubRepository(source, replace):
             print("could not recognize", url)
 
 def checkPythonHosted(source, replace):
+    if not 'url' in source:
+        return
     pythonHosted = source['type'] == 'archive' and source['url'].startswith('https://files.pythonhosted')
     pipy = source['type'] == 'file' and source['url'].startswith('https://pypi.python.org')
     name = None
