@@ -141,10 +141,13 @@ def processModule(module):
     replace = {}
     if 'sources' in module:
         for source in module['sources']:
-            checkGitHubRepository(source, replace)
-            checkArchiveSha256(source, replace)
-            checkGitNextTag(source, replace)
-            checkPythonHosted(source, replace)
+            try:
+                checkGitHubRepository(source, replace)
+                checkArchiveSha256(source, replace)
+                checkGitNextTag(source, replace)
+                checkPythonHosted(source, replace)
+            except:
+                print("Failed processing", source)
 
     if 'modules' in module and isinstance(module['modules'], list):
         for submodule in module['modules']:
