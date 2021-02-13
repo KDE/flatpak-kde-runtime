@@ -440,6 +440,7 @@
             "modules": [
                 {
                     "name": "flite",
+                    "config-opts": [ "--enable-shared" ],
                     "sources": [
                         {
                             "type": "archive",
@@ -917,6 +918,7 @@
                 },
                 {
                     "name": "libdmtx",
+                    "config-opts": [ "--disable-static" ],
                     "sources": [
                         {
                             "type": "archive",
