@@ -18,7 +18,9 @@
         "org.gtk.Gtk3theme"
     ],
     "inherit-sdk-extensions": [
-        "org.freedesktop.Sdk.Extension"
+        "org.freedesktop.Sdk.Extension",
+        "org.freedesktop.Sdk.Compat.i386",
+        "org.freedesktop.Sdk.Compat.i386.Debug"
     ],
     "add-extensions": {
         "org.kde.Sdk.Docs" : {
