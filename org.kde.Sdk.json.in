@@ -18,9 +18,7 @@
         "org.gtk.Gtk3theme"
     ],
     "inherit-sdk-extensions": [
-        "org.freedesktop.Sdk.Extension",
-        "org.freedesktop.Sdk.Compat.i386",
-        "org.freedesktop.Sdk.Compat.i386.Debug"
+        "org.freedesktop.Sdk.Extension"
     ],
     "add-extensions": {
         "org.kde.Sdk.Docs" : {
@@ -66,6 +64,17 @@
             "add-ld-path": "lib",
             "//TODO": "This is currently only used for gnome platform plugin and should be its own extension point",
             "download-if": "on-xdg-desktop-GNOME;on-xdg-desktop-GNOME-classic"
+        },
+        "org.freedesktop.Sdk.Compat.i386" : {
+            "directory": "lib/i386-linux-gnu",
+            "autodelete": true,
+            "no-autodownload": true,
+            "add-ld-path": "."
+        },
+        "org.freedesktop.Sdk.Compat.i386.Debug" : {
+            "directory": "lib/debug/usr/lib/i386-linux-gnu",
+            "autodelete": true,
+            "no-autodownload": true
         }
     },
     "finish-args": [
