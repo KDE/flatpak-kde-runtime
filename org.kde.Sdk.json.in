@@ -157,6 +157,10 @@
                     "path": "patch/qtbase-use-wayland-on-gnome.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "patch/qtbase-filechooser-portal-send-window-id-in-hex.patch"
+                },
+                {
                     "type": "shell",
                     "commands": [ "mv configure configure.qt" ]
                 },
@@ -365,6 +369,14 @@
                     "type": "archive",
                     "url": "http://download.qt.io/archive/qt/5.15/5.15.2/submodules/qtwayland-everywhere-src-5.15.2.tar.xz",
                     "sha256": "193732229ff816f3aaab9a5e2f6bed71ddddbf1988ce003fe8dd84a92ce9aeb5"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtwayland-get-correct-decoration-margins-region.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtwayland-translate-opaque-area-with-frame-margins.patch"
                 }
             ]
         },
