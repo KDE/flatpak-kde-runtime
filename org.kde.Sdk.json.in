@@ -69,12 +69,14 @@
             "directory": "lib/i386-linux-gnu",
             "autodelete": true,
             "no-autodownload": true,
-            "add-ld-path": "."
+            "add-ld-path": ".",
+            "version": "20.08"
         },
         "org.freedesktop.Sdk.Compat.i386.Debug" : {
             "directory": "lib/debug/usr/lib/i386-linux-gnu",
             "autodelete": true,
-            "no-autodownload": true
+            "no-autodownload": true,
+            "version": "20.08"
         }
     },
     "finish-args": [
