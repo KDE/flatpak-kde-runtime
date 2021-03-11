@@ -467,6 +467,7 @@
                 {
                     "name": "flite",
                     "config-opts": [ "--enable-shared" ],
+                    "cleanup": [ "*.a" ],
                     "sources": [
                         {
                             "type": "archive",
