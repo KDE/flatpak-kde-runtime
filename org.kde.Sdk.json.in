@@ -389,6 +389,10 @@
                 {
                     "type": "patch",
                     "path": "patch/qtwayland-translate-opaque-area-with-frame-margins.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtwayland-tell-the-compositor-the-screen-we-re-expect.patch"
                 }
             ]
         },
