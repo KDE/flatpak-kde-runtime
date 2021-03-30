@@ -4,10 +4,20 @@ FB_ARGS ?= "--user"
 TMP ?= sdk
 INSTALL_SOURCE ?= "--install-deps-from=flathub"
 
+ifeq ($(ARCH),x86_64)
+COMPAT_ARCH ?= i386
+endif
+
+ifdef COMPAT_ARCH
+INHERIT_EXTS ?= org.freedesktop.Sdk.Compat.$(COMPAT_ARCH) \
+                org.freedesktop.Sdk.Compat.$(COMPAT_ARCH).Debug
+endif
+
 all: $(REPO)/config $(foreach file, $(wildcard *.json.in), $(subst .json.in,.app,$(file)))
 
-%.json: %.json.in
-	sed "s,@@SDK_ARCH@@,$(ARCH),g" $< > $@
+%.json: %.json.in append-to-json.py
+	./append-to-json.py inherit-sdk-extensions $(INHERIT_EXTS) \
+	< $< | sed "s,@@SDK_ARCH@@,$(ARCH),g" > $@
 
 %.app: %.json
 	flatpak-builder $(INSTALL_SOURCE) $(FB_ARGS) --arch=$(ARCH) --force-clean --require-changes --ccache --repo=$(REPO) --subject="build of org.kde.Sdk, `date` (`git rev-parse HEAD`)" ${EXPORT_ARGS} $(TMP) $<
