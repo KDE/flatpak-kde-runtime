@@ -1,6 +1,8 @@
 # What is this?
 Here you can find the recipes to build KDE's flatpak runtime, namely org.kde.Platform and its org.kde.Sdk. It's a set of libraries that should offer a wide range of library to use in Qt applications, be KDE from or not.
 
+You can find the source in here: https://invent.kde.org/packaging/flatpak-kde-runtime
+
 # Getting to grips
 Issues can be reported here:
 https://bugs.kde.org/enter_bug.cgi?product=Qt%2FKDE%20Flatpak%20Runtime
