@@ -506,6 +506,18 @@
             ]
         },
         {
+            "name": "qt5-qtremoteobjects",
+            "buildsystem": "qmake",
+            "cleanup-platform": [ "/bin" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.qt.io/archive/qt/5.15/5.15.2/submodules/qtremoteobjects-everywhere-src-5.15.2.tar.xz",
+                    "sha256": "6781b6bc90888254ea77ce812736dac00c67fa4eeb3095f5cd65e4b9c15dcfc2"
+                }
+            ]
+        },
+        {
             "name": "libdbusmenuqt",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DBUILD_TESTING=OFF", "-DWITH_DOC=OFF"],
