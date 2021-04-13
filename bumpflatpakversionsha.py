@@ -70,15 +70,16 @@ def checkRepo(url):
         repo.clone_from(url, directory)
     return repo
 
-
 def checkGitNextTag(source, replace):
     if source['type'] == 'git' and 'branch' in source:
         repo = checkRepo(source['url'])
         repo.remotes[0].fetch("--tags")
 
         branch = source['branch']
+        found = False
         if branch in repo.tags:
             usedCommit = repo.commit(repo.tags[branch].object)
+            found = usedCommit != None
             for tag in repo.tags:
                 tagCommit = repo.commit(tag.object)
                 if 'rc' in tag.name or 'beta' in tag.name or 'alpha' in tag.name:
@@ -86,14 +87,24 @@ def checkGitNextTag(source, replace):
 
                 if usedCommit.committed_date < tagCommit.committed_date:
                     print("newer tag", source['url'], tag)
-        elif branch in repo.branches:
-            usedCommit = repo.commit(repo.branches[branch].object)
-            for branch in repo.branches:
-                branchCommit = repo.commit(branch.object)
-                if usedCommit.committed_date < branchCommit.committed_date:
-                    print("newer branch", tag)
         else:
-            print("wtf", source['url'] , branch)
+            usedCommit = None
+            for ref in repo.remotes.origin.refs:
+                if ref.name == 'origin/' + branch:
+                    usedCommit = ref.commit
+
+            found = usedCommit != None
+            if found:
+                toignore = [ 'origin/master', 'origin/HEAD' ]
+                for otherRef in repo.remotes.origin.refs:
+                    if otherRef.name in toignore or otherRef.name.startswith('origin/work/'):
+                        continue
+
+                    if usedCommit.committed_date < otherRef.commit.committed_date:
+                        print("newer branch", source['url'], otherRef.name, "instead of", branch)
+
+        if not found:
+            print("wtf", source['url'], source['branch'])
 
 def checkGitHubRepository(source, replace):
     if source['type'] == 'archive' and source['url'].startswith("https://github.com/"):
