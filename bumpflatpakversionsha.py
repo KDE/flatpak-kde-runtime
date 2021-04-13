@@ -60,16 +60,20 @@ def checkArchiveSha256(source, replace):
             print("new sha", source, sha)
             replace[source['sha256']] = sha
 
+def checkRepo(url):
+    directory = "./check/" + os.path.basename(urlparse(url).path)
+    if os.path.isdir(directory):
+        repo = git.Repo(directory)
+        repo.remotes[0].pull()
+    else:
+        repo = git.Repo()
+        repo.clone_from(url, directory)
+    return repo
+
+
 def checkGitNextTag(source, replace):
     if source['type'] == 'git' and 'branch' in source:
-        repo = None
-        directory = "./check/" + os.path.basename(urlparse(source['url']).path)
-        if os.path.isdir(directory):
-            repo = git.Repo(directory)
-            repo.remotes[0].pull()
-        else:
-            repo = git.Repo()
-            repo.clone_from(source['url'], directory)
+        repo = checkRepo(source['url'])
         repo.remotes[0].fetch("--tags")
 
         branch = source['branch']
@@ -126,6 +130,20 @@ def checkPythonHosted(source, replace):
                 if asset['url'] != source['url']:
                     print("new version of", pkgname, json.dumps({'type': 'file', 'url': asset['url'], 'sha256': asset['digests']['sha256']}))
 
+def checkKDEQtPatchCollection(source, replace):
+    if source['type'] == 'git' and source['url'].startswith("https://invent.kde.org/qt/qt/"):
+        repo = checkRepo(source['url'])
+        repo.remotes[0].fetch()
+        headFound = None
+        branchName = 'origin/kde/5.15'
+        for ref in repo.remotes.origin.refs:
+            if ref.name == branchName:
+                headFound = ref
+
+        if headFound and headFound.commit != source['commit']:
+            replace[source['commit']] = headFound.commit.hexsha
+        else:
+            print("No branch %s for %s" % (branchName, source['url']))
 
 def processModule(module):
     if isinstance(module, str):
@@ -146,6 +164,7 @@ def processModule(module):
                 checkArchiveSha256(source, replace)
                 checkGitNextTag(source, replace)
                 checkPythonHosted(source, replace)
+                checkKDEQtPatchCollection(source, replace)
             except:
                 print("Failed processing", source)
 
