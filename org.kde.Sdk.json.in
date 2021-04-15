@@ -148,6 +148,11 @@
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
                 },
                 {
+                    "//TODO": "Temporary fix for https://github.com/flatpak/flatpak/issues/3397.",
+                    "type": "patch",
+                    "path": "patch/qtbase-revert-qstandardpaths-dont-change-permissions-on-xdg-runtime-dir.patch"
+                },
+                {
                     "type": "patch",
                     "path": "patch/qtbase-use-wayland-on-gnome.patch"
                 },
