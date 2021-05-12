@@ -142,7 +142,7 @@
                              "-archdatadir", "/usr/lib/"
                            ],
             "sources": [
-                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "cfa90a94f95510711e25920e7742b37faa2f4843" },
+                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "97bf6942ed9e540dcd1826da8e3147e7f9d2f499" },
                 {
                     "type": "patch",
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
@@ -213,7 +213,7 @@
             "name": "qt5-qtsvg",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtsvg.git", "commit": "95990cbeebc0ab9959e2a925a93ad4897416bbb7" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtsvg.git", "commit": "cfc616978b52a396b2ef6900546f7fc086d7cab3" } ]
         },
         {
             "name": "qt5-qtx11extras",
@@ -274,7 +274,7 @@
             "name": "qt5-wayland",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "91c48320633e493b4cd519e5d73b836a878b2b77" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "1ccebbab3a42690a0812e2c4c76016799bf6cf1f" } ]
         },
         {
             "name": "qt5-virtualkeyboard",
@@ -304,7 +304,7 @@
             "name": "qt5-qt3d",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qt3d.git", "commit": "3b8ef584594048514645bc818ab5dd43cf882fe1" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qt3d.git", "commit": "72b026a22e6942eca4b70ba948022aecbd8965fc" } ]
         },
         {
             "name": "qt5-qtspeech",
