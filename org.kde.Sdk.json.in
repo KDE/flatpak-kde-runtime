@@ -661,6 +661,12 @@
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kdnssd.git", "branch": "v5.81.0" } ]
         },
         {
+            "name": "kquickcharts",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kquickcharts.git", "branch": "v5.81.0" } ]
+        },
+        {
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "name": "syntax-highlighting",
             "buildsystem": "cmake-ninja",
