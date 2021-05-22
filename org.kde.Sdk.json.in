@@ -351,6 +351,13 @@
             "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtremoteobjects.git", "commit": "4d6d1e35fb8e0cb900b5e5e9266edea51dc4f735" } ]
         },
         {
+            "name": "qbs",
+            "buildsystem": "qmake",
+            "cleanup-platform": [ "/bin" ],
+            "config-opts": ["QBS_INSTALL_PREFIX=/app"],
+            "sources": [ { "type": "git", "url": "https://code.qt.io/qbs/qbs.git", "commit": "1d6a3fa6f5339a1ec1d4ba531e565dc1bca967fc" }]
+        },
+        {
             "name": "libdbusmenuqt",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DBUILD_TESTING=OFF", "-DWITH_DOC=OFF"],
@@ -358,7 +365,6 @@
                 { "type": "bzr", "url": "lp:libdbusmenu-qt", "revision": "0.9.3+16.04.20160218-0ubuntu1" }
             ]
         },
-
         {
             "name": "extra-cmake-modules",
             "cleanup-platform": ["*"],
