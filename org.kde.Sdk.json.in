@@ -863,6 +863,12 @@
             "sources": [ { "type": "git", "url": "https://github.com/fcitx/fcitx-qt5", "branch": "1.2.5" } ]
         },
         {
+            "name": "qqc2-breeze-style",
+            "buildsystem": "cmake-ninja",
+            "config-opts": ["-DBUILD_TESTING=OFF"],
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/plasma/qqc2-breeze-style.git", "branch": "Plasma/5.21" } ]
+        },
+        {
             "name": "os-release",
             "post-install": [
                 "mkdir -p /usr/share/runtime/lib/plugins/"
