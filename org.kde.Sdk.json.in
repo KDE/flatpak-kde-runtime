@@ -274,7 +274,7 @@
             "name": "qt5-wayland",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "fcc2f57cefa66339c8cb6632f45a47fbb99bb60d" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "a6476d1a1c78eb7f17408241b268404e27b3e161" } ]
         },
         {
             "name": "qt5-virtualkeyboard",
@@ -304,7 +304,7 @@
             "name": "qt5-qt3d",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qt3d.git", "commit": "72b026a22e6942eca4b70ba948022aecbd8965fc" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qt3d.git", "commit": "9ea92434fda3b281f7fc1d10c701915405e249b7" } ]
         },
         {
             "name": "qt5-qtspeech",
