@@ -865,6 +865,7 @@
         {
             "name": "qqc2-breeze-style",
             "buildsystem": "cmake-ninja",
+            "builddir": true,
             "config-opts": ["-DBUILD_TESTING=OFF"],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/plasma/qqc2-breeze-style.git", "branch": "Plasma/5.22" } ]
         },
