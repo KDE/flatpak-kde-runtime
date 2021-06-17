@@ -701,7 +701,7 @@
             "name": "plasma-wayland-protocols",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DBUILD_TESTING=OFF"  ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git", "branch": "v1.2.1" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git", "branch": "v1.3.0" } ]
         },
         {
             "name": "kwayland",
