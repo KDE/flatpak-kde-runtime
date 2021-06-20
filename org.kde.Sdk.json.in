@@ -833,6 +833,13 @@
         },
 
         {
+            "name": "kio-extras",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/network/kio-extras.git", "branch": "v21.04.2" } ]
+        },
+
+        {
             "name": "breeze",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DBUILD_TESTING=OFF", "-DWITH_DECORATIONS=OFF", "-DWITH_WALLPAPERS=OFF" ],
