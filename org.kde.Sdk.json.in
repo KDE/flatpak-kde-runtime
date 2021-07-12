@@ -142,7 +142,7 @@
                              "-archdatadir", "/usr/lib/"
                            ],
             "sources": [
-                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "2a2f3cd61f59ccec0eecb09e4a8795d7322edfcb" },
+                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "6ee419d6597fb297c2f35d5be63c4eb16ae9b12c" },
                 {
                     "type": "patch",
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
@@ -178,7 +178,7 @@
             "name": "qt5-qtdeclarative",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "0dda47d9f1a22567ad8f1266be2f0cd8a9226c7f" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "6683c414c5cc6ab46197c41bb1361c518ca84d3e" } ]
         },
         {
             "name": "qt5-qttools",
