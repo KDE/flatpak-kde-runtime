@@ -111,7 +111,7 @@
                     },
                     "aarch64" : {
                         "config-opts" : [
-                            "-no-reduce-relocations", "-optimize-size", "-opengl es2"
+                            "-no-reduce-relocations", "-optimize-size"
                         ]
                     }
                 }
