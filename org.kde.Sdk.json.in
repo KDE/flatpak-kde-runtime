@@ -142,7 +142,7 @@
                              "-archdatadir", "/usr/lib/"
                            ],
             "sources": [
-                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "6ee419d6597fb297c2f35d5be63c4eb16ae9b12c" },
+                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "7e3f3b0c1f7f417e52ca374228f5afb824a913d6" },
                 {
                     "type": "patch",
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
@@ -178,7 +178,7 @@
             "name": "qt5-qtdeclarative",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "6683c414c5cc6ab46197c41bb1361c518ca84d3e" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "92225b72b9ca6b1efc9bc7bb0c12dd7487e900a7" } ]
         },
         {
             "name": "qt5-qttools",
@@ -274,7 +274,7 @@
             "name": "qt5-wayland",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "a6476d1a1c78eb7f17408241b268404e27b3e161" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "d4c41797b61a5a8da47c5821711aca72e756dcbf" } ]
         },
         {
             "name": "qt5-virtualkeyboard",
@@ -304,7 +304,7 @@
             "name": "qt5-qt3d",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qt3d.git", "commit": "9ea92434fda3b281f7fc1d10c701915405e249b7" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qt3d.git", "commit": "7edec6e014de27b9dd03f63875c471aac606a918" } ]
         },
         {
             "name": "qt5-qtspeech",
