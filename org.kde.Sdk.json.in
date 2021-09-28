@@ -142,7 +142,7 @@
                              "-archdatadir", "/usr/lib/"
                            ],
             "sources": [
-                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "d2bd04d9fe03912097d3246b7d03ef14f425256b" },
+                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "a4f9e56975fa6ab4a1f63a9b34a4d77b1cfe4acd" },
                 {
                     "type": "patch",
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
@@ -178,7 +178,7 @@
             "name": "qt5-qtdeclarative",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "92225b72b9ca6b1efc9bc7bb0c12dd7487e900a7" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "1c33a9d045897ce755a818ebff7ddecae97885d3" } ]
         },
         {
             "name": "qt5-qttools",
@@ -274,13 +274,13 @@
             "name": "qt5-wayland",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "3c420cd180397e3f42c8a436a7f1b11465925bdd" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "efe6edcaf8eba601dff99ec6ad4457c8a4442f86" } ]
         },
         {
             "name": "qt5-virtualkeyboard",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtvirtualkeyboard.git", "commit": "2f0e9f98c6c6fdac09f762d41fddcc114f64b28a" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtvirtualkeyboard.git", "commit": "353b75b2e34bdae901625bbddf5c5e3f3e6c0de5" } ]
         },
         {
             "name": "qt5-qtserialport",
