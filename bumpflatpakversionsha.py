@@ -71,12 +71,19 @@ def checkRepo(url):
     return repo
 
 def checkGitNextTag(source, replace):
-    if source['type'] == 'git' and 'branch' in source:
+    if source['type'] == 'git' and ('branch' in source or 'tag' in source):
         repo = checkRepo(source['url'])
         repo.remotes[0].fetch("--tags")
 
-        branch = source['branch']
+        branch = None
+        if 'tag' in source:
+            branch = source['tag']
+        else:
+            branch = source['branch']
+            if branch in repo.tags:
+                print(branch, 'is a tag for', source['url'])
         found = False
+
         if branch in repo.tags:
             usedCommit = repo.commit(repo.tags[branch].object)
             found = usedCommit != None
@@ -101,7 +108,7 @@ def checkGitNextTag(source, replace):
                         continue
 
                     if usedCommit.committed_date < otherRef.commit.committed_date:
-                        print("newer branch", source['url'], otherRef.name, "instead of", branch)
+                        print("newer branch", source['url'][7:], otherRef.name, "instead of", branch)
 
         if not found:
             print("wtf", source['url'], source['branch'])
