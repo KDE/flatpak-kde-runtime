@@ -15,6 +15,7 @@
         "org.freedesktop.Platform.Icontheme",
         "org.freedesktop.Platform.VAAPI.Intel",
         "org.freedesktop.Platform.openh264",
+        "org.freedesktop.Platform.VulkanLayer",
         "org.gtk.Gtk3theme"
     ],
     "inherit-sdk-extensions": [
