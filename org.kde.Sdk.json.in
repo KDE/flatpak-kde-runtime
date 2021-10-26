@@ -143,7 +143,7 @@
                              "-archdatadir", "/usr/lib/"
                            ],
             "sources": [
-                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "a4f9e56975fa6ab4a1f63a9b34a4d77b1cfe4acd" },
+                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "c9fde86b0a2440133bc08f4811b6ca793be47f0a" },
                 {
                     "type": "patch",
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
@@ -179,7 +179,7 @@
             "name": "qt5-qtdeclarative",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "1c33a9d045897ce755a818ebff7ddecae97885d3" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "55324650f9e759a43dce927f823c9858574106c3" } ]
         },
         {
             "name": "qt5-qttools",
@@ -214,7 +214,7 @@
             "name": "qt5-qtsvg",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtsvg.git", "commit": "cfc616978b52a396b2ef6900546f7fc086d7cab3" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtsvg.git", "commit": "24128cdf8bef53eddf31a5709bbbc46293006b1c" } ]
         },
         {
             "name": "qt5-qtx11extras",
@@ -275,7 +275,7 @@
             "name": "qt5-wayland",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "efe6edcaf8eba601dff99ec6ad4457c8a4442f86" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "02f9585ca19c17ae0978b864195533dc527d825e" } ]
         },
         {
             "name": "qt5-virtualkeyboard",
@@ -343,7 +343,7 @@
             "name": "qt5-qttranslations",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qttranslations.git", "commit": "68f420ebdfb226e3d0c09ebed06d5454cc6c3a7f" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qttranslations.git", "commit": "8fbbdf21f127197f97b58c7d80d2fa2a59135638" } ]
         },
         {
             "name": "qt5-qtremoteobjects",
