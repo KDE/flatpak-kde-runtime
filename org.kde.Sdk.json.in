@@ -865,10 +865,10 @@
             "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/phonon-gstreamer.git", "tag": "v4.10.0" } ]
         },
         {
-            "name": "fcitx-platforminputcontext",
+            "name": "fcitx5-platforminputcontext",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DENABLE_LIBRARY=OFF" ],
-            "sources": [ { "type": "git", "url": "https://github.com/fcitx/fcitx-qt5", "tag": "1.2.6" } ]
+            "config-opts": ["-DENABLE_QT4=OFF", "-DENABLE_QT6=OFF", "-DENABLE_QT5=ON", "-DBUILD_ONLY_PLUGIN=ON" ],
+            "sources": [ { "type": "git", "url": "https://github.com/fcitx/fcitx5-qt", "tag": "5.0.7" } ]
         },
         {
             "name": "qqc2-breeze-style",
