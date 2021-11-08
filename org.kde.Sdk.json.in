@@ -144,6 +144,13 @@
             "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.2/6.2.1/submodules/qtshadertools-everywhere-src-6.2.1.tar.xz", "sha256": "2c8d38724181b31cd828a56e377775c2d461ee2ea0d6362ebec411c3b288067e" } ]
         },
         {
+            "name": "qt6-qtdeclarative",
+            "config-opts": ["-DQT_TOOL_COMMAND_WRAPPER_PATH=env"],
+            "buildsystem": "cmake-ninja",
+            "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.2/6.2.1/submodules/qtdeclarative-everywhere-src-6.2.1.tar.xz", "sha256": "5aeb841a5665f79672a302569754ea7d541c69102c551707e43489e797213c71" } ]
+        },
+        {
             "name": "qt6-webchannel",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
@@ -184,13 +191,6 @@
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
             "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.2/6.2.1/submodules/qtconnectivity-everywhere-src-6.2.1.tar.xz", "sha256": "8dcc366b0f5f124b20bf25e1b207a5ae4b75e45c62d2cc1f4dce138075c2714e" } ]
-        },
-        {
-            "name": "qt6-qtdeclarative",
-            "config-opts": ["-DQT_TOOL_COMMAND_WRAPPER_PATH=env"],
-            "buildsystem": "cmake-ninja",
-            "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.2/6.2.1/submodules/qtdeclarative-everywhere-src-6.2.1.tar.xz", "sha256": "5aeb841a5665f79672a302569754ea7d541c69102c551707e43489e797213c71" } ]
         },
         {
             "name": "qt6-wayland",
