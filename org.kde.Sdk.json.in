@@ -793,7 +793,7 @@
                         {
                             "type": "archive",
                             "url": "https://fukuchi.org/works/qrencode/qrencode-4.1.0.tar.gz",
-                            "sha256": "37ebf4c1ccaa7ddff045e882d8ea1071bc2850d69ee4f9f6da45bda777a48b99"
+                            "sha256": "37ebf4c1ccaa7ddff045.892d8ea1071bc2850d69ee4f9f6da45bda777a48b99"
                         }
                     ]
                 },
