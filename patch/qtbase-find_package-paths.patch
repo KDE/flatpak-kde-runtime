@@ -1,0 +1,13 @@
+diff --git a/cmake/QtConfig.cmake.in b/cmake/QtConfig.cmake.in
+index 75e15226..bedb46e4 100644
+--- a/cmake/QtConfig.cmake.in
++++ b/cmake/QtConfig.cmake.in
+@@ -155,6 +155,8 @@ foreach(module ${@INSTALL_CMAKE_NAMESPACE@_FIND_COMPONENTS})
+         PATHS
+             ${_qt_cmake_dir}
+             ${_qt_additional_packages_prefix_paths}
++            "/app/lib/cmake"
++            "/app/lib/${CMAKE_CXX_LIBRARY_ARCHITECTURE}/cmake"
+             ${QT_EXAMPLES_CMAKE_PREFIX_PATH}
+             ${__qt_find_package_host_qt_path}
+         ${__qt_use_no_default_path_for_qt_packages}
