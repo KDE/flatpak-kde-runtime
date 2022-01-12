@@ -535,7 +535,7 @@
             "modules": [
                 {
                     "name": "taglib",
-                    "config-opts": [ "-DBUILD_SHARED_LIBS=ON" ],
+                    "config-opts": [ "-DBUILD_SHARED_LIBS=ON", "-DLIB_INSTALL_DIR:PATH=/usr/lib/@@SDK_ARCH@@-linux-gnu" ],
                     "buildsystem": "cmake-ninja",
                     "sources": [ { "type": "archive", "url": "https://taglib.github.io/releases/taglib-1.12.tar.gz", "sha256": "7fccd07669a523b07a15bd24c8da1bbb92206cb19e9366c3692af3d79253b703" } ]
                 }
