@@ -144,7 +144,7 @@
                              "-archdatadir", "/usr/lib/"
                            ],
             "sources": [
-                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "e1b1e0944017951a63b616605d6bcd4dc5ada31e" },
+                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "366350c2e4a7eccbda0f3936e69c6b9c4fa28f55" },
                 {
                     "type": "patch",
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
@@ -180,7 +180,7 @@
             "name": "qt5-qtdeclarative",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "8aa1164f1bb6a5dfb5527bcfbf128ab6f2c73ed4" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "c691908c54ed7815f513f8511005dbf1f13ad40d" } ]
         },
         {
             "name": "qt5-qttools",
@@ -215,7 +215,7 @@
             "name": "qt5-qtsvg",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtsvg.git", "commit": "0cb681eacca0f757702fa409bb05d3d3650aba4e" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtsvg.git", "commit": "728012f7762ecd5762d493f8796907c6456f31e7" } ]
         },
         {
             "name": "qt5-qtx11extras",
@@ -276,7 +276,7 @@
             "name": "qt5-wayland",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "e0646f531e1e73a90a93faaa45d933ae40769985" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "4644d51f4b52e83fc1b4d02b380d80d9d57e76fa" } ]
         },
         {
             "name": "qt5-virtualkeyboard",
