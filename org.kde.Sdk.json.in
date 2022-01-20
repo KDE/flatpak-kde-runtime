@@ -711,7 +711,7 @@
             "name": "plasma-wayland-protocols",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DBUILD_TESTING=OFF"  ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git", "tag": "v1.5.0" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git", "tag": "v1.6.0" } ]
         },
         {
             "name": "kwayland",
@@ -762,8 +762,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/libical/libical/releases/download/v3.0.12/libical-3.0.12.tar.gz",
-                            "sha256": "35095a4cc1a061a3de0f332c2dc728226cf127fa0baa818e9f8856cee6d35830"
+                            "url": "https://github.com/libical/libical/releases/download/v3.0.13/libical-3.0.13.tar.gz",
+                            "sha256": "02543b08897f3b75c76c360a335900ccfb027d2f5120176c777340e67e763ad4"
                         }
                     ]
                 }
@@ -846,7 +846,7 @@
             "name": "kio-extras",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/network/kio-extras.git", "tag": "v21.12.0" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/network/kio-extras.git", "tag": "v21.12.1" } ]
         },
 
         {
@@ -877,7 +877,7 @@
             "name": "fcitx5-platforminputcontext",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_QT4=OFF", "-DENABLE_QT6=OFF", "-DENABLE_QT5=ON", "-DBUILD_ONLY_PLUGIN=ON" ],
-            "sources": [ { "type": "git", "url": "https://github.com/fcitx/fcitx5-qt", "tag": "5.0.7" } ]
+            "sources": [ { "type": "git", "url": "https://github.com/fcitx/fcitx5-qt", "tag": "5.0.9" } ]
         },
         {
             "name": "qqc2-breeze-style",
