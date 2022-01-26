@@ -76,6 +76,7 @@
         "--env=QML2_IMPORT_PATH=/app/lib64/qml:/app/lib/qml",
         "--env=KDE_FORK_SLAVES=1",
         "--filesystem=xdg-config/kdeglobals:ro",
+        "--talk-name=org.a11y.Bus",
         "--talk-name=com.canonical.AppMenu.Registrar",
         "--talk-name=org.kde.kconfig.notify",
         "--sdk=org.kde.Sdk//5.15-21.08",
