@@ -86,7 +86,7 @@ def checkGitNextTag(source, replace):
 
         if branch in repo.tags:
             usedCommit = repo.commit(repo.tags[branch].object)
-            found = usedCommit != None
+            found = usedCommit is not None
             for tag in repo.tags:
                 tagCommit = repo.commit(tag.object)
                 if 'rc' in tag.name or 'beta' in tag.name or 'alpha' in tag.name:
@@ -100,9 +100,9 @@ def checkGitNextTag(source, replace):
                 if ref.name == 'origin/' + branch:
                     usedCommit = ref.commit
 
-            found = usedCommit != None
+            found = usedCommit is not None
             if found:
-                toignore = [ 'origin/master', 'origin/HEAD' ]
+                toignore = ['origin/master', 'origin/HEAD']
                 for otherRef in repo.remotes.origin.refs:
                     if otherRef.name in toignore or otherRef.name.startswith('origin/work/'):
                         continue
@@ -121,12 +121,13 @@ def checkGitHubRepository(source, replace):
             m = re.search('https://github.com/(.+)/(.+)/archive/(.*).tar.gz', url)
 
         if m:
-            checkGitNextTag({'type': 'git', 'url': 'https://github.com/' + m.group(1) + '/' + m.group(2) + '.git', 'branch': m.group(3) }, {})
+            checkGitNextTag({'type': 'git', 'url': 'https://github.com/' + m.group(1) + '/' + m.group(2) + '.git', 'tag': m.group(3)}, {})
         else:
             print("could not recognize", url)
 
+
 def checkPythonHosted(source, replace):
-    if not 'url' in source:
+    if 'url' not in source:
         return
     pythonHosted = source['type'] == 'archive' and source['url'].startswith('https://files.pythonhosted')
     pipy = source['type'] == 'file' and source['url'].startswith('https://pypi.python.org')
@@ -134,7 +135,7 @@ def checkPythonHosted(source, replace):
     if pythonHosted or pipy:
         name = os.path.basename(urlparse(source['url']).path)
         m = re.search('(.+)-[0-9]', name)
-        pkgname=m.group(1)
+        pkgname = m.group(1)
         r = requests.get('https://pypi.org/pypi/' + pkgname + '/json')
 
         content = json.loads(r.text)
@@ -163,33 +164,36 @@ def checkKDEQtPatchCollection(source, replace):
         else:
             print("No branch %s for %s" % (branchName, source['url']))
 
+
 def processModule(module):
     if isinstance(module, str):
+        value = None
         with open(module, 'r') as moduleFile:
             content = moduleFile.read()
         try:
             value = json.loads(content)
-        except:
-            print("failed to parse", x)
+        except Exception as e:
+            print("failed to parse", x, e, "bananarama")
             return {}
-        return processModule(json.loads(content))
+        return processModule(value)
 
     replace = {}
     if 'sources' in module:
         for source in module['sources']:
             try:
                 checkGitHubRepository(source, replace)
-                checkArchiveSha256(source, replace)
+                #checkArchiveSha256(source, replace)
                 checkGitNextTag(source, replace)
                 checkPythonHosted(source, replace)
                 checkKDEQtPatchCollection(source, replace)
-            except:
-                print("Failed processing", source)
+            except Exception as e:
+                print("Failed processing", source, e)
 
     if 'modules' in module and isinstance(module['modules'], list):
         for submodule in module['modules']:
             replace = {**replace, **processModule(submodule)}
     return replace
+
 
 if __name__ == "__main__":
     content = ""
@@ -199,10 +203,9 @@ if __name__ == "__main__":
 
         try:
             value = json.loads(content)
-        except:
-            print("failed to parse", x)
+        except Exception as e:
+            print("failed to parse", x, e)
             continue
-
 
         pool = multiprocessing.Pool(6)
         replacements = pool.map(processModule, value['modules'])
