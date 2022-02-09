@@ -855,19 +855,19 @@
             "name": "breeze",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DBUILD_TESTING=OFF", "-DWITH_DECORATIONS=OFF", "-DWITH_WALLPAPERS=OFF" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/plasma/breeze.git", "branch": "Plasma/5.23" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/plasma/breeze.git", "branch": "Plasma/5.24" } ]
         },
         {
             "name": "plasma-integration",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/plasma/plasma-integration.git", "branch": "Plasma/5.23" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/plasma/plasma-integration.git", "branch": "Plasma/5.24" } ]
         },
         {
             "name": "kwayland-integration",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/plasma/kwayland-integration.git", "branch": "Plasma/5.23" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/plasma/kwayland-integration.git", "branch": "Plasma/5.24" } ]
         },
         {
             "name": "phonon-gstreamer",
@@ -886,7 +886,7 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": ["-DBUILD_TESTING=OFF"],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/plasma/qqc2-breeze-style.git", "branch": "Plasma/5.23" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/plasma/qqc2-breeze-style.git", "branch": "Plasma/5.24" } ]
         },
         {
             "name": "os-release",
