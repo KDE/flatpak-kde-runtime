@@ -146,7 +146,7 @@
                              "-archdatadir", "/usr/lib/"
                            ],
             "sources": [
-                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "53a047c212af7fbded6505651f648172f9d7a34d" },
+                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "d16bf02a11953dcac01dca73e6f3778f293adefe" },
                 {
                     "type": "patch",
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
@@ -182,7 +182,7 @@
             "name": "qt5-qtdeclarative",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "9349f3975d26632befc036fc9f2ea6e03aee2182" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "1d49a5b678957adde7e2db23a485a3f48157bc8f" } ]
         },
         {
             "name": "qt5-qttools",
@@ -278,7 +278,7 @@
             "name": "qt5-wayland",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "b6d85c2a75f5618e87267f5b5c361455be257a17" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "214f7ab9d3384a4123f14d9f6cd0205cf0aaa794" } ]
         },
         {
             "name": "qt5-virtualkeyboard",
