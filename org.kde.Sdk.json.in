@@ -76,7 +76,6 @@
         "--env=QML2_IMPORT_PATH=/app/lib64/qml:/app/lib/qml",
         "--env=KDE_FORK_SLAVES=1",
         "--filesystem=xdg-config/kdeglobals:ro",
-        "--talk-name=org.a11y.Bus",
         "--talk-name=com.canonical.AppMenu.Registrar",
         "--talk-name=org.kde.kconfig.notify",
         "--sdk=org.kde.Sdk//5.15-21.08",
@@ -146,7 +145,7 @@
                              "-archdatadir", "/usr/lib/"
                            ],
             "sources": [
-                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "d16bf02a11953dcac01dca73e6f3778f293adefe" },
+                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "f36c2233fad0bfddf9350305a6bdc6de022d3635" },
                 {
                     "type": "patch",
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
@@ -278,7 +277,7 @@
             "name": "qt5-wayland",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "214f7ab9d3384a4123f14d9f6cd0205cf0aaa794" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "d6a6b727832819d118199f7016c2c401663ee370" } ]
         },
         {
             "name": "qt5-virtualkeyboard",
@@ -314,7 +313,7 @@
             "name": "qt5-qtspeech",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtspeech.git", "commit": "a0efc38377e5bf7eed2d354d1cb4d7a0d5dc7e1b" } ],
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtspeech.git", "commit": "16c625528f5e34e698983fc66a7c9cfb96da8052" } ],
             "modules": [
                 {
                     "name": "flite",
