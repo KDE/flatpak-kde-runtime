@@ -182,7 +182,7 @@
             "name": "qt5-qtdeclarative",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "1d49a5b678957adde7e2db23a485a3f48157bc8f" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "29ee9a0e9f02ec74153a2cf09dc63722bc273544" } ]
         },
         {
             "name": "qt5-qttools",
