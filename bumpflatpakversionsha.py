@@ -121,7 +121,7 @@ def checkGitHubRepository(source, replace):
             m = re.search('https://github.com/(.+)/(.+)/archive/(.*).tar.gz', url)
 
         if m:
-            checkGitNextTag({'type': 'git', 'url': 'https://github.com/' + m.group(1) + '/' + m.group(2) + '.git', 'branch': m.group(3) }, {})
+            checkGitNextTag({'type': 'git', 'url': 'https://github.com/' + m.group(1) + '/' + m.group(2) + '.git', 'tag': m.group(3) }, {})
         else:
             print("could not recognize", url)
 
