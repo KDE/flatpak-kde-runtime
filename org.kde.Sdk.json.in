@@ -322,8 +322,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "http://www.festvox.org/flite/packed/flite-2.1/flite-2.1-release.tar.bz2",
-                            "sha256": "c73c3f6a2ea764977d6eaf0a287722d1e2066b4697088c552e342c790f3d2b85"
+                            "url": "https://github.com/festvox/flite/archive/v2.2/flite-2.2.tar.gz",
+                            "sha256": "ab1555fe5adc3f99f1d4a1a0eb1596d329fd6d74f1464a0097c81f53c0cf9e5c"
                         }
                     ]
                 }
@@ -791,8 +791,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://fukuchi.org/works/qrencode/qrencode-4.1.0.tar.gz",
-                            "sha256": "37ebf4c1ccaa7ddff045e882d8ea1071bc2850d69ee4f9f6da45bda777a48b99"
+                            "url": "https://fukuchi.org/works/qrencode/qrencode-4.1.1.tar.gz",
+                            "sha256": "da448ed4f52aba6bcb0cd48cac0dd51b8692bccc4cd127431402fca6f8171e8e"
                         }
                     ]
                 },
