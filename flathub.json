@@ -1,3 +1,4 @@
 {
-  "skip-arches": ["i386"]
+  "skip-arches": ["i386"],
+  "end-of-life": "We strongly recommend moving to the latest stable version of the Plaform and SDK"
 }
