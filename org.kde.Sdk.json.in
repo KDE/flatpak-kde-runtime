@@ -145,7 +145,7 @@
                              "-archdatadir", "/usr/lib/"
                            ],
             "sources": [
-                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "2766b2cba6ca4b1c430304df5437e2a6c874b107" },
+                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "ee7a89b2c4750bc3cabe4aeb466645d6ac2a872b" },
                 {
                     "type": "patch",
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
@@ -210,7 +210,7 @@
             "name": "qt5-qtlocation",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtlocation.git", "commit": "1bf01b84e30aab2b87a19184ce42160e6c92d8b1" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtlocation.git", "commit": "e07f35879536640ad784e71e5261c5a597d504f5" } ]
         },
         {
             "name": "qt5-qtsvg",
