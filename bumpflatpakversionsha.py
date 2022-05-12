@@ -182,7 +182,7 @@ def processModule(module):
         for source in module['sources']:
             try:
                 checkGitHubRepository(source, replace)
-                #checkArchiveSha256(source, replace)
+                checkArchiveSha256(source, replace)
                 checkGitNextTag(source, replace)
                 checkPythonHosted(source, replace)
                 checkKDEQtPatchCollection(source, replace)
