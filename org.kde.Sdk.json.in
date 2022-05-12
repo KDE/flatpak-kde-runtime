@@ -78,6 +78,7 @@
         "--filesystem=xdg-config/kdeglobals:ro",
         "--talk-name=com.canonical.AppMenu.Registrar",
         "--talk-name=org.kde.kconfig.notify",
+        "--talk-name=org.kde.KGlobalSettings",
         "--sdk=org.kde.Sdk//5.15-21.08",
         "--runtime=org.kde.Platform//5.15-21.08"
     ],
