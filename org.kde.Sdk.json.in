@@ -848,7 +848,7 @@
             "name": "kio-extras",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/network/kio-extras.git", "tag": "v22.04.0" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/network/kio-extras.git", "tag": "v22.04.1" } ]
         },
 
         {
