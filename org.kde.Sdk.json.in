@@ -146,7 +146,7 @@
                              "-archdatadir", "/usr/lib/"
                            ],
             "sources": [
-                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "cfa044e74c4f3be46fe2f177d022af3321766b1f" },
+                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "e0a15c11b853954d4189b2e30aa2450184de0987" },
                 {
                     "type": "patch",
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
@@ -182,7 +182,7 @@
             "name": "qt5-qtdeclarative",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "02105099301450c890e1caba977ef44efdc43da7" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "51efb2ed2f071beda188270a23ac450fe4b318f7" } ]
         },
         {
             "name": "qt5-qttools",
@@ -192,7 +192,7 @@
                 "/bin/lrelease", "/bin/lupdate", "/bin/lconvert", "/bin/linguist", "/bin/qdoc", "/bin/qtattributionsscanner",
                 "/bin/qtplugininfo", "/bin/qtdiag", "/bin/qdbusviewer"
             ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qttools.git", "commit": "a3e5b2eb8ef5982bc1fffb390ebcd141be1deee4" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qttools.git", "commit": "53ee43a51b5a3de2877dafffc78e71ff55926708" } ]
         },
         {
             "name": "qt5-qtscript",
@@ -205,116 +205,116 @@
             "name": "qt5-webchannel",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwebchannel.git", "commit": "611016a49f3a9ba7b58bef29bc295323e06373ae" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwebchannel.git", "commit": "8c842152da613f941892481d62267c73c4a4f006" } ]
         },
         {
             "name": "qt5-qtlocation",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtlocation.git", "commit": "e07f35879536640ad784e71e5261c5a597d504f5" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtlocation.git", "commit": "db3b6bc6afed6477e6ab2d8465e41efee30fb6d5" } ]
         },
         {
             "name": "qt5-qtsvg",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtsvg.git", "commit": "2f42157cabbd1db6249ccb1d14e6eede80451e0c" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtsvg.git", "commit": "23b8cf7d833c335d7735855570c05e9e0893a9b7" } ]
         },
         {
             "name": "qt5-qtx11extras",
 
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtx11extras.git", "commit": "f628d7a60e45d90a439cb0a393a6229ac6892be5" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtx11extras.git", "commit": "51b0a5a2e3e35f4cb17da1e7cb4babef6294bfb4" } ]
         },
         {
             "name": "qt5-qtmultimedia",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtmultimedia.git", "commit": "fa6c3d653682f9fd331d859c7196a291a8a4d8d5" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtmultimedia.git", "commit": "dc0ee181d4c56ff66c989bd3292dad7cc35e234b" } ]
         },
         {
             "name": "qt5-qtsensors",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtsensors.git", "commit": "975ba788d3d0ee87aa08bb5301cd33dcbf00521b" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtsensors.git", "commit": "1ab8d6c7257f9ec060739b648704be1cf1c16b05" } ]
         },
         {
             "name": "qt5-qtquickcontrols",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtquickcontrols.git", "commit": "d054de15b3c9ead0f96655ddfb1a6381ed7a0e2b" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtquickcontrols.git", "commit": "d405bf6a29bc9d6da6e3dcefbd1b88f5ed70fb1b" } ]
         },
         {
             "name": "qt5-qtquickcontrols2",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtquickcontrols2.git", "commit": "26bd7f5414dc592ab5277e2bb4ad0199faa889de" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtquickcontrols2.git", "commit": "0d3d39e821ea7634c174a29910c18d7101bce6f7" } ]
         },
         {
             "name": "qt5-qtgraphicaleffects",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtgraphicaleffects.git", "commit": "379577925766385991f413a2b0d0d46831381ffa" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtgraphicaleffects.git", "commit": "4c6ec38635aa22cf0854df8e710733c529f4ec02" } ]
         },
         {
             "name": "qt5-qtxmlpatterns",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtxmlpatterns.git", "commit": "af4958af9d628d6124e64abd9743abce42f15a6f" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtxmlpatterns.git", "commit": "dfcae10dec8c1c2c544ad0cd303cea113b0af51d" } ]
         },
         {
             "name": "qt5-qtimageformats",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtimageformats.git", "commit": "90038c936763645610fe1e5f05cfc025e4d98631" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtimageformats.git", "commit": "8c5bcabbf6a2e27539c2ad689fd69f2406d5cf5c" } ]
         },
         {
             "name": "qt5-connectivity",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtconnectivity.git", "commit": "aa2def2bdb76f8fd2454dc4515883fd7b5ddb521" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtconnectivity.git", "commit": "25720ab6004cf37ae54ad85d22f87f5fc9e6e72e" } ]
         },
         {
             "name": "qt5-wayland",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "398040301e439cc20bcd537bad7095d7eb6f285a" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwayland.git", "commit": "36659e6130ed3fc2b3f0c91423408ef5ecb7b991" } ]
         },
         {
             "name": "qt5-virtualkeyboard",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtvirtualkeyboard.git", "commit": "bb40dee811333929dd467a480dce24ab7af84ef9" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtvirtualkeyboard.git", "commit": "e8ae4757dd32e8dbf69a7c57f2bc5c1e238416db" } ]
         },
         {
             "name": "qt5-qtserialport",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtserialport.git", "commit": "f95e2411d7c978def87846ea7cedf3dc5fd7c8b8" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtserialport.git", "commit": "191e67e428522a0e2e1e8d2f3440607a9760d441" } ]
         },
         {
             "name": "qt5-qtwebsockets",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwebsockets.git", "commit": "7196d2cc34adf9f45b50a9488f4ff95b36092993" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtwebsockets.git", "commit": "6a4991250793cd38efa5e8db858cd49c82439130" } ]
         },
         {
             "name": "qt5-qtcharts",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtcharts.git", "commit": "f13988aa1ad9de5d92e7b0ba4d0d947dd019d759" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtcharts.git", "commit": "16c2a8821135bf89369c4e3c5a1bdff8b05ffdb5" } ]
         },
         {
             "name": "qt5-qt3d",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qt3d.git", "commit": "6d926ec2739f2289c6b0bbfbc325700046e1ceee" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qt3d.git", "commit": "5fd3906445ac95bf1cca6e7a7e0aeb6e3bcf5016" } ]
         },
         {
             "name": "qt5-qtspeech",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtspeech.git", "commit": "08b27c29aadc0cc0303cca97c9a3baa2a690dfe4" } ],
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtspeech.git", "commit": "c8a1dadc46ccdbeaef45aa805a9dc98d4b3220bd" } ],
             "modules": [
                 {
                     "name": "flite",
@@ -334,25 +334,25 @@
             "name": "qt5-qtnetworkauth",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtnetworkauth.git", "commit": "958db00a2064f77b354b573102ca2c2b2e07529c" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtnetworkauth.git", "commit": "2b0c9499e4000858138802e8f5aa28aa2ebe14c0" } ]
         },
         {
             "name": "qt5-qtgamepad",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtgamepad.git", "commit": "6b7a6303439f83147680723f4d8142d676cdb928" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtgamepad.git", "commit": "8526b210146a2d030ae2f55ad44261befea4a087" } ]
         },
         {
             "name": "qt5-qttranslations",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qttranslations.git", "commit": "a6d5e7f84a57394db4c8b069f81c56cfeb802e19" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qttranslations.git", "commit": "527dcd684e8d5c645870c854b86df77edeedbc22" } ]
         },
         {
             "name": "qt5-qtremoteobjects",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtremoteobjects.git", "commit": "581475dfeb44c8b51c0be86e0f2f57df7d117a80" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtremoteobjects.git", "commit": "809412e1cc2151c21f843796ef67705600f6aafb" } ]
         },
         {
             "name": "libdbusmenuqt",
