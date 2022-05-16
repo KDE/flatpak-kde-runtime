@@ -161,10 +161,6 @@
                     "path": "patch/qtbase-use-wayland-on-gnome.patch"
                 },
                 {
-                    "type": "patch",
-                    "path": "patch/qtbase-filechooser-portal-send-window-id-in-hex.patch"
-                },
-                {
                     "type": "shell",
                     "commands": [ "mv configure configure.qt" ]
                 },
