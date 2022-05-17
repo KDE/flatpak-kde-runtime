@@ -146,7 +146,7 @@
                              "-archdatadir", "/usr/lib/"
                            ],
             "sources": [
-                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "e0a15c11b853954d4189b2e30aa2450184de0987" },
+                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "2984fcd1916fe5180881820288b236c26d213245" },
                 {
                     "type": "patch",
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
@@ -268,7 +268,7 @@
             "name": "qt5-connectivity",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtconnectivity.git", "commit": "25720ab6004cf37ae54ad85d22f87f5fc9e6e72e" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtconnectivity.git", "commit": "c5f35f89e975c2ad58c83c6b606d40ba41057f15" } ]
         },
         {
             "name": "qt5-wayland",
