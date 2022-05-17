@@ -358,6 +358,12 @@
                 { "type": "bzr", "url": "lp:libdbusmenu-qt", "revision": "0.9.3+16.04.20160218-0ubuntu1" }
             ]
         },
+        {
+            "name": "plasma-wayland-protocols",
+            "buildsystem": "cmake-ninja",
+            "config-opts": ["-DBUILD_TESTING=OFF"  ],
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git", "tag": "v1.7.0" } ]
+        },
 
         {
             "name": "extra-cmake-modules",
@@ -704,12 +710,6 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kpty.git", "tag": "v5.94.0" } ]
-        },
-        {
-            "name": "plasma-wayland-protocols",
-            "buildsystem": "cmake-ninja",
-            "config-opts": ["-DBUILD_TESTING=OFF"  ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git", "tag": "v1.7.0" } ]
         },
         {
             "name": "kwayland",
