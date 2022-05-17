@@ -359,18 +359,17 @@
             ]
         },
         {
-            "name": "plasma-wayland-protocols",
-            "buildsystem": "cmake-ninja",
-            "config-opts": ["-DBUILD_TESTING=OFF"  ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git", "tag": "v1.7.0" } ]
-        },
-
-        {
             "name": "extra-cmake-modules",
             "cleanup-platform": ["*"],
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git", "tag": "v5.94.0" } ]
+        },
+        {
+            "name": "plasma-wayland-protocols",
+            "buildsystem": "cmake-ninja",
+            "config-opts": ["-DBUILD_TESTING=OFF"  ],
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git", "tag": "v1.7.0" } ]
         },
         {
             "name": "kwidgetsaddons",
