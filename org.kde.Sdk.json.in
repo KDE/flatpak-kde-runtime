@@ -146,7 +146,7 @@
                              "-archdatadir", "/usr/lib/"
                            ],
             "sources": [
-                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "2984fcd1916fe5180881820288b236c26d213245" },
+                { "type": "git", "url": "https://invent.kde.org/qt/qt/qtbase.git", "commit": "ca88abed89aae4554f36738b8f139dcd9a4f03a6" },
                 {
                     "type": "patch",
                     "path": "patch/qtbase-avoid-hardcoding-kernel-version.patch"
@@ -178,7 +178,7 @@
             "name": "qt5-qtdeclarative",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "51efb2ed2f071beda188270a23ac450fe4b318f7" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtdeclarative.git", "commit": "2454c808bfe99b50084aea59adb917e805c27afa" } ]
         },
         {
             "name": "qt5-qttools",
@@ -188,7 +188,7 @@
                 "/bin/lrelease", "/bin/lupdate", "/bin/lconvert", "/bin/linguist", "/bin/qdoc", "/bin/qtattributionsscanner",
                 "/bin/qtplugininfo", "/bin/qtdiag", "/bin/qdbusviewer"
             ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qttools.git", "commit": "53ee43a51b5a3de2877dafffc78e71ff55926708" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qttools.git", "commit": "03d9aef7be0ae3bf19bb7aeb47402bac73438bd2" } ]
         },
         {
             "name": "qt5-qtscript",
@@ -226,7 +226,7 @@
             "name": "qt5-qtmultimedia",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtmultimedia.git", "commit": "dc0ee181d4c56ff66c989bd3292dad7cc35e234b" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtmultimedia.git", "commit": "c75ef0bb53562a62d67fb3247c9fc138356368b4" } ]
         },
         {
             "name": "qt5-qtsensors",
@@ -262,7 +262,7 @@
             "name": "qt5-qtimageformats",
             "buildsystem": "qmake",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtimageformats.git", "commit": "8c5bcabbf6a2e27539c2ad689fd69f2406d5cf5c" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/qt/qt/qtimageformats.git", "commit": "b43e31b9f31ec482ddea2066fda7ca9315512815" } ]
         },
         {
             "name": "qt5-connectivity",
@@ -843,7 +843,7 @@
             "name": "kio-extras",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/network/kio-extras.git", "tag": "v22.04.1" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/network/kio-extras.git", "tag": "v22.04.2" } ]
         },
 
         {
@@ -874,7 +874,7 @@
             "name": "fcitx5-platforminputcontext",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DENABLE_QT4=OFF", "-DENABLE_QT6=OFF", "-DENABLE_QT5=ON", "-DBUILD_ONLY_PLUGIN=ON" ],
-            "sources": [ { "type": "git", "url": "https://github.com/fcitx/fcitx5-qt", "tag": "5.0.11" } ]
+            "sources": [ { "type": "git", "url": "https://github.com/fcitx/fcitx5-qt", "tag": "5.0.13" } ]
         },
         {
             "name": "qqc2-breeze-style",
