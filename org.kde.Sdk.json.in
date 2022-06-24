@@ -838,7 +838,21 @@
             "builddir": true,
             "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/breeze-icons.git", "tag": "v5.95.0" } ]
         },
-
+        {
+            "name": "kimageformats",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kimageformats.git",
+                    "tag": "v5.95.0"
+                }
+            ]
+        },
         {
             "name": "kio-extras",
             "buildsystem": "cmake-ninja",
