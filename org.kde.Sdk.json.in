@@ -1680,6 +1680,21 @@
             ]
         },
         {
+            "name": "bluez-qt",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/bluez-qt.git",
+                    "tag": "v5.95.0"
+                }
+            ]
+        },
+        {
             "name": "kio-extras",
             "buildsystem": "cmake-ninja",
             "config-opts": [
