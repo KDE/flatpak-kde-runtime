@@ -1,0 +1,33 @@
+From 48b9dbb4d9d508895f7568531d8f0a7e63261b75 Mon Sep 17 00:00:00 2001
+From: Liang Qi <liang.qi@qt.io>
+Date: Tue, 4 Jan 2022 12:30:36 +0100
+Subject: [PATCH] client: set_constraint_adjustment() for popups in xdg
+
+See also https://cgit.freedesktop.org/wayland/wayland-protocols/tree/stable/xdg-shell/xdg-shell.xml#n234 .
+
+Kudos to Greg V for his original patch in jira.
+
+Fixes: QTBUG-87303
+Pick-to: 5.15 6.2 6.3
+Done-with: Greg V <greg@unrelenting.technology>
+Change-Id: I57df9aedea7cc6f0b6fa142a6fc6c3bdc98324c8
+Reviewed-by: David Edmundson <davidedmundson@kde.org>
+(cherry picked from commit 59a5fe99e1569421b920d99c5b20cdafcdcf43a9)
+diff --git a/src/plugins/shellintegration/xdg-shell/qwaylandxdgshell.cpp b/src/plugins/shellintegration/xdg-shell/qwaylandxdgshell.cpp
+index 1c76294..3b99c4b 100644
+--- a/src/plugins/shellintegration/xdg-shell/qwaylandxdgshell.cpp
++++ b/src/plugins/shellintegration/xdg-shell/qwaylandxdgshell.cpp
+@@ -410,6 +410,13 @@ void QWaylandXdgSurface::setPopup(QWaylandWindow *parent)
+     positioner->set_anchor(QtWayland::xdg_positioner::anchor_top_left);
+     positioner->set_gravity(QtWayland::xdg_positioner::gravity_bottom_right);
+     positioner->set_size(m_window->geometry().width(), m_window->geometry().height());
++    const QByteArray currentDesktop = qgetenv("XDG_CURRENT_DESKTOP");
++    if (currentDesktop != QByteArray("KDE")) {
++        positioner->set_constraint_adjustment(QtWayland::xdg_positioner::constraint_adjustment_slide_x
++            | QtWayland::xdg_positioner::constraint_adjustment_slide_y
++            | QtWayland::xdg_positioner::constraint_adjustment_flip_x
++            | QtWayland::xdg_positioner::constraint_adjustment_flip_y);
++    }
+     m_popup = new Popup(this, parentXdgSurface, positioner);
+     positioner->destroy();
+     delete positioner;

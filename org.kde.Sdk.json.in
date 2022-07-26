@@ -171,7 +171,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtbase.git",
-                    "commit": "c772781e57db1da8ac2ed9036aee39137c216017"
+                    "commit": "f3b3f2b28e95c43deaabc49f4d2bbfda8c8f1204"
                 },
                 {
                     "type": "patch",
@@ -437,7 +437,17 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwayland.git",
-                    "commit": "1e58585693eb337fc1c80e10987ed27115255d97"
+                    "commit": "64fa557eb30fc1219bec50a45107ea1a983411ed"
+                },
+                {
+                    "//INFO": "Modified version of https://invent.kde.org/qt/qt/qtwayland/-/merge_requests/39 not used in KDE sessions",
+                    "type": "patch",
+                    "path": "patch/qtwayland-client-set-constraint-adjustments-for-popups-in-xdg.patch"
+                },
+                {
+                    "//INFO": "Modified version of https://invent.kde.org/qt/qt/qtwayland/-/merge_requests/47 not used in KDE sessions",
+                    "type": "patch",
+                    "path": "patch/qtwayland-keep-toplevel-windows-in-the-top-left-corner-of-the-screen.patch"
                 }
             ]
         },
