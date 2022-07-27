@@ -126,7 +126,7 @@
             ],
             "sources": [
                 { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.3/6.3.1/submodules/qtbase-everywhere-src-6.3.1.tar.xz", "sha256": "0a64421d9c2469c2c48490a032ab91d547017c9cc171f3f8070bc31888f24e03" },
-                { "type": "patch", "path": "patch/qtbase-find_package-paths.patch" }
+                { "type": "patch", "path": "patch/qtbase-find_package-paths.patch" }qtwayland-keep-toplevel-windows-in-the-top-left-corner-of-the-screen.patch
             ]
         },
         {
@@ -204,7 +204,10 @@
             "name": "qt6-wayland",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.3/6.3.1/submodules/qtwayland-everywhere-src-6.3.1.tar.xz", "sha256": "6f14fea2d172a5b4170be3efcb0e58535f6605b61bcd823f6d5c9d165bb8c0f0" } ]
+            "sources": [
+                { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.3/6.3.1/submodules/qtwayland-everywhere-src-6.3.1.tar.xz", "sha256": "6f14fea2d172a5b4170be3efcb0e58535f6605b61bcd823f6d5c9d165bb8c0f0" },
+                { "type": "patch", "path": "patch/qtwayland-keep-toplevel-windows-in-the-top-left-corner-of-the-screen.patch" }
+            ]
         },
         {
             "name": "qt6-qtserialport",
