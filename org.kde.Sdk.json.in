@@ -1790,7 +1790,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/fcitx/fcitx5-qt",
-                    "tag": "5.0.13"
+                    "tag": "5.0.14"
                 }
             ]
         },
