@@ -1714,7 +1714,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/network/kio-extras.git",
-                    "tag": "v22.04.2"
+                    "tag": "v22.04.3"
                 }
             ]
         },
