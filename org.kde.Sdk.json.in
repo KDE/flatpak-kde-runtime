@@ -1087,6 +1087,20 @@
                     "url": "https://invent.kde.org/frameworks/kwallet.git",
                     "tag": "v5.97.0"
                 }
+            ],
+            "modules": [
+                {
+                    "config-opts": [ "-DENABLE_TESTING=OFF" ],
+                    "name": "qca",
+                    "buildsystem": "cmake-ninja",
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://invent.kde.org/libraries/qca.git",
+                            "tag": "v2.3.4"
+                        }
+                    ]
+                }
             ]
         },
         {
