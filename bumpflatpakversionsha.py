@@ -71,6 +71,7 @@ def checkRepo(url):
     else:
         repo = git.Repo()
         repo.clone_from(url, directory)
+        repo = git.Repo(directory)
     return repo
 
 
@@ -115,13 +116,15 @@ def checkGitNextTag(source, replace):
                         print("newer branch", source['url'][7:], otherRef.name, "instead of", branch)
 
         if not found:
-            print("wtf", source['url'], source['branch'])
+            print("wtf", source, repo.tags)
 
 
 def checkGitHubRepository(source, replace):
-    if source['type'] == 'archive' and source['url'].startswith("https://github.com/"):
+    if (source['type'] == 'archive' or source['type'] == 'file' and 'url' in source) and source['url'].startswith("https://github.com/"):
         url = source['url']
         m = re.search('https://github.com/(.+)/(.+)/releases/download/(.*)/.+', url)
+        if not m:
+            m = re.search('https://github.com/(.+)/(.+)/archive/refs/tags/(.*).tar.gz', url)
         if not m:
             m = re.search('https://github.com/(.+)/(.+)/archive/(.*).tar.gz', url)
 
@@ -134,8 +137,8 @@ def checkGitHubRepository(source, replace):
 def checkPythonHosted(source, replace):
     if 'url' not in source:
         return
-    pythonHosted = source['type'] == 'archive' and source['url'].startswith('https://files.pythonhosted')
-    pipy = source['type'] == 'file' and source['url'].startswith('https://pypi.python.org')
+    pythonHosted = source['url'].startswith('https://files.pythonhosted')
+    pipy = source['url'].startswith('https://pypi.python.org') or source['url'].startswith('https://pypi.io')
     name = None
     if pythonHosted or pipy:
         name = os.path.basename(urlparse(source['url']).path)
@@ -146,13 +149,11 @@ def checkPythonHosted(source, replace):
         content = json.loads(r.text)
         version = content['info']['version']
         releases = content['releases']
+
         for asset in releases[version]:
-            if pythonHosted and asset["packagetype"] == 'sdist' and not asset['url'].endswith(name):
-                if asset['url'] != source['url']:
-                    print("new version of", pkgname, json.dumps({'type': 'archive', 'url': asset['url'], 'sha256': asset['digests']['sha256']}))
-            if source['url'].endswith('.whl') and asset["packagetype"] == 'bdist_wheel':
-                if asset['url'] != source['url']:
-                    print("new version of", pkgname, json.dumps({'type': 'file', 'url': asset['url'], 'sha256': asset['digests']['sha256']}))
+            if asset['digests']['sha256'] != source['sha256'] and os.path.splitext(urlparse(asset['url']).path)[1] == os.path.splitext(source['url'])[1]:
+                print("new version of:", pkgname, json.dumps({'type': source['type'], 'url': asset['url'], 'sha256': asset['digests']['sha256']}))
+
 
 
 def checkKDEQtPatchCollection(source, replace):
