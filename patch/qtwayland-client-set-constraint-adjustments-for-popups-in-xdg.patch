@@ -28,6 +28,6 @@ index 1c76294..3b99c4b 100644
 +            | QtWayland::xdg_positioner::constraint_adjustment_flip_x
 +            | QtWayland::xdg_positioner::constraint_adjustment_flip_y);
 +    }
-     m_popup = new Popup(this, parentXdgSurface, positioner);
+     m_popup = new Popup(this, parent, positioner);
      positioner->destroy();
      delete positioner;
