@@ -171,7 +171,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtbase.git",
-                    "commit": "e8c047b866f774b1b5ffca0d1b3b3ceb0d035006"
+                    "commit": "eeadc036d77b75bec5b7c41869688c7db9a2e221"
                 },
                 {
                     "type": "patch",
