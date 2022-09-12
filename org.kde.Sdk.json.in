@@ -1749,6 +1749,118 @@
                     "url": "https://invent.kde.org/network/kio-extras.git",
                     "tag": "v22.08.1"
                 }
+            ],
+            "modules": [
+                {
+                    "name": "libusb",
+                    "config-opts": [ "--disable-static" ],
+                    "cleanup": [
+                        "/lib/*.la",
+                        "/lib/pkgconfig",
+                        "/include"
+                    ],
+                    "sources": [
+                        {
+                            "type":"archive",
+                            "url":"https://github.com/libusb/libusb/archive/v1.0.26.tar.gz",
+                            "sha256": "a09bff99c74e03e582aa30759cada218ea8fa03580517e52d463c59c0b25e240"
+                        }
+                    ],
+                    "post-install": [
+                        "install -Dm644 COPYING /app/share/licenses/libusb/COPYING"
+                    ]
+                },
+                {
+                    "name": "libmtp",
+                    "config-opts": [
+                        "--with-udev=/app/lib/udev"
+                    ],
+                    "buildsystem": "autotools",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://sourceforge.net/projects/libmtp/files/libmtp/1.1.20/libmtp-1.1.20.tar.gz",
+                            "sha256": "c9191dac2f5744cf402e08641610b271f73ac21a3c802734ec2cedb2c6bc56d0"
+                        }
+                    ]
+                },
+                {
+                    "name": "libssh",
+                    "buildsystem": "cmake-ninja",
+                    "builddir": true,
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://www.libssh.org/files/0.10/libssh-0.10.4.tar.xz",
+                            "sha256": "07392c54ab61476288d1c1f0a7c557b50211797ad00c34c3af2bbc4dbc4bd97d"
+                        }
+                    ]
+                },
+                {
+                    "name": "perl-modules",
+                    "buildsystem": "simple",
+                    "build-commands": [
+                        "echo 'this is a workaround for a flatpak+perl limitation'",
+                        "tar xhf Parse-Yapp-1.21.tar.gz",
+                        "cd Parse-Yapp-1.21 && perl Makefile.PL PREFIX=/app && make && make install",
+                        "ln -s /app/lib/perl5/site_perl/5.34.1/$(basename `ls -d /usr/lib/perl5/5.34.1/*-linux`) /app/lib/perl5/site_perl/5.34.1/arch"
+                    ],
+                    "post-install": [
+                        "chmod -R u+w /app/lib/perl5/site_perl"
+                    ],
+                    "sources": [
+                        {
+                            "type": "file",
+                            "url": "https://cpan.metacpan.org/authors/id/W/WB/WBRASWELL/Parse-Yapp-1.21.tar.gz",
+                            "sha256": "3810e998308fba2e0f4f26043035032b027ce51ce5c8a52a8b8e340ca65f13e5"
+                        }
+                    ]
+                },
+                {
+                    "name": "rpcgen",
+                    "buildsystem": "autotools",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.3/rpcsvc-proto-1.4.3.tar.xz",
+                            "sha256": "69315e94430f4e79c74d43422f4a36e6259e97e67e2677b2c7d7060436bd99b1"
+                        }
+                    ]
+                },
+                {
+                    "name": "samba",
+                    "buildsystem": "autotools",
+                    "config-opts": [
+                        "--without-json",
+                        "--without-ad-dc",
+                        "--without-ldap",
+                        "--without-ads",
+                        "--without-pam"
+                    ],
+                    "build-options": {
+                        "env": {
+                            "PERLLIB": "/app/lib/perl5/site_perl/5.34.1:/app/lib/perl5/site_perl/5.34.1/arch"
+                        }
+                    },
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://samba.org/samba/ftp/stable/samba-4.16.5.tar.gz",
+                            "sha256": "c73c092017d2d1dd270709c8597321d0dd667c882a1b2470cf60f8ee56d3fd44"
+                        }
+                    ]
+                },
+                {
+                    "name": "kdsoap",
+                    "buildsystem": "cmake-ninja",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.0.0/kdsoap-2.0.0.tar.gz",
+                            "sha256": "d18963104fa6f7d02b044631cddbe78f18f70e06c607af680c7ace04d6cf04ee"
+                        }
+                    ]
+                }
             ]
         },
         {
