@@ -222,6 +222,12 @@
             "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.3/6.3.1/submodules/qtwebsockets-everywhere-src-6.3.1.tar.xz", "sha256": "9f980d90c97fcbde1b50c773f6dc580cfdf8c36ce14a1be3aa2ccadfe605121a" } ]
         },
         {
+            "name": "qt6-qtscxml",
+            "buildsystem": "cmake-ninja",
+            "cleanup-platform": [ "/bin" ],
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.3/6.3.1/submodules/qtscxml-everywhere-src-6.3.1.tar.xz", "sha256": "01bc154d6163d1f049f4e1e76658a044730ace7b0a5be35c9a46fcd1396f8619" } ]
+        },
+        {
             "name": "qt6-qtcharts",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
