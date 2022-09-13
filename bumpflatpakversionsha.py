@@ -1,6 +1,6 @@
 #
 # Copyright 2018  Aleix Pol Gonzalez <aleixpol@kde.org>
-# 
+#
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License as
 # published by the Free Software Foundation; either version 2 of
@@ -8,12 +8,12 @@
 # accepted by the membership of KDE e.V. (or its successor approved
 # by the membership of KDE e.V.), which shall act as a proxy
 # defined in Section 14 of version 3 of the license.
-# 
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
-# 
+#
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
@@ -27,6 +27,7 @@ import os
 import git
 import re
 from urllib.parse import urlparse
+
 
 def calculate_sha256(url):
     urlsha = url + ".sha256"
@@ -53,12 +54,14 @@ def calculate_sha256(url):
         sha256.update(data)
     return sha256.hexdigest()
 
+
 def checkArchiveSha256(source, replace):
     if source['type'] == 'archive':
         sha = calculate_sha256(source['url'])
         if sha and sha != source['sha256']:
             print("new sha", source, sha)
             replace[source['sha256']] = sha
+
 
 def checkRepo(url):
     directory = "./check/" + os.path.basename(urlparse(url).path)
@@ -68,7 +71,9 @@ def checkRepo(url):
     else:
         repo = git.Repo()
         repo.clone_from(url, directory)
+        repo = git.Repo(directory)
     return repo
+
 
 def checkGitNextTag(source, replace):
     if source['type'] == 'git' and ('branch' in source or 'tag' in source):
@@ -111,12 +116,15 @@ def checkGitNextTag(source, replace):
                         print("newer branch", source['url'][7:], otherRef.name, "instead of", branch)
 
         if not found:
-            print("wtf", source['url'], source['branch'])
+            print("wtf", source, repo.tags)
+
 
 def checkGitHubRepository(source, replace):
-    if source['type'] == 'archive' and source['url'].startswith("https://github.com/"):
+    if (source['type'] == 'archive' or source['type'] == 'file' and 'url' in source) and source['url'].startswith("https://github.com/"):
         url = source['url']
         m = re.search('https://github.com/(.+)/(.+)/releases/download/(.*)/.+', url)
+        if not m:
+            m = re.search('https://github.com/(.+)/(.+)/archive/refs/tags/(.*).tar.gz', url)
         if not m:
             m = re.search('https://github.com/(.+)/(.+)/archive/(.*).tar.gz', url)
 
@@ -129,8 +137,8 @@ def checkGitHubRepository(source, replace):
 def checkPythonHosted(source, replace):
     if 'url' not in source:
         return
-    pythonHosted = source['type'] == 'archive' and source['url'].startswith('https://files.pythonhosted')
-    pipy = source['type'] == 'file' and source['url'].startswith('https://pypi.python.org')
+    pythonHosted = source['url'].startswith('https://files.pythonhosted')
+    pipy = source['url'].startswith('https://pypi.python.org') or source['url'].startswith('https://pypi.io')
     name = None
     if pythonHosted or pipy:
         name = os.path.basename(urlparse(source['url']).path)
@@ -141,13 +149,12 @@ def checkPythonHosted(source, replace):
         content = json.loads(r.text)
         version = content['info']['version']
         releases = content['releases']
+
         for asset in releases[version]:
-            if pythonHosted and asset["packagetype"] == 'sdist' and not asset['url'].endswith(name):
-                if asset['url'] != source['url']:
-                    print("new version of", pkgname, json.dumps({'type': 'archive', 'url': asset['url'], 'sha256': asset['digests']['sha256']}))
-            if source['url'].endswith('.whl') and asset["packagetype"] == 'bdist_wheel':
-                if asset['url'] != source['url']:
-                    print("new version of", pkgname, json.dumps({'type': 'file', 'url': asset['url'], 'sha256': asset['digests']['sha256']}))
+            if asset['digests']['sha256'] != source['sha256'] and os.path.splitext(urlparse(asset['url']).path)[1] == os.path.splitext(source['url'])[1]:
+                print("new version of:", pkgname, json.dumps({'type': source['type'], 'url': asset['url'], 'sha256': asset['digests']['sha256']}))
+
+
 
 def checkKDEQtPatchCollection(source, replace):
     if source['type'] == 'git' and source['url'].startswith("https://invent.kde.org/qt/qt/"):
@@ -167,13 +174,12 @@ def checkKDEQtPatchCollection(source, replace):
 
 def processModule(module):
     if isinstance(module, str):
-        value = None
         with open(module, 'r') as moduleFile:
             content = moduleFile.read()
         try:
             value = json.loads(content)
-        except Exception as e:
-            print("failed to parse", x, e, "bananarama")
+        except Exception as err:
+            print("failed to parse", x, err)
             return {}
         return processModule(value)
 
@@ -186,8 +192,8 @@ def processModule(module):
                 checkGitNextTag(source, replace)
                 checkPythonHosted(source, replace)
                 checkKDEQtPatchCollection(source, replace)
-            except Exception as e:
-                print("Failed processing", source, e)
+            except Exception as err:
+                print("Failed processing", source, err)
 
     if 'modules' in module and isinstance(module['modules'], list):
         for submodule in module['modules']:
@@ -203,8 +209,8 @@ if __name__ == "__main__":
 
         try:
             value = json.loads(content)
-        except Exception as e:
-            print("failed to parse", x, e)
+        except:
+            print("failed to parse", x)
             continue
 
         pool = multiprocessing.Pool(6)
