@@ -171,7 +171,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtbase.git",
-                    "commit": "eeadc036d77b75bec5b7c41869688c7db9a2e221"
+                    "commit": "1d28b25aae18db0bf856dc2d6ae86644669c358e"
                 },
                 {
                     "type": "patch",
@@ -213,7 +213,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtdeclarative.git",
-                    "commit": "e1ecf1c4e09b2f1d04f94971771019e59a50679f"
+                    "commit": "b3aaf1482c48bbc0ca4f7c7934597c055afe4b6a"
                 }
             ]
         },
@@ -437,7 +437,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwayland.git",
-                    "commit": "489a0a1fc1db61f46e2b232ae4523723a05304b7"
+                    "commit": "215eec416e669ba7a1b7473eedf78d75d5c8d684"
                 },
                 {
                     "//INFO": "Modified version of https://invent.kde.org/qt/qt/qtwayland/-/merge_requests/39 not used in KDE sessions",
