@@ -1720,6 +1720,66 @@
                     "url": "https://invent.kde.org/frameworks/kimageformats.git",
                     "tag": "v5.98.0"
                 }
+            ],
+            "modules": [
+                {
+                    "name": "libjxl",
+                    "config-opts": [
+                        "-DBUILD_TESTING=OFF",
+                        "-DJPEGXL_ENABLE_BENCHMARK=OFF",
+                        "-DJPEGXL_ENABLE_DOXYGEN=OFF",
+                        "-DJPEGXL_ENABLE_EXAMPLES=OFF",
+                        "-DJPEGXL_ENABLE_JNI=OFF",
+                        "-DJPEGXL_ENABLE_MANPAGES=OFF",
+                        "-DJPEGXL_ENABLE_PLUGINS=OFF",
+                        "-DJPEGXL_ENABLE_SJPEG=OFF",
+                        "-DJPEGXL_ENABLE_SKCMS=ON",
+                        "-DJPEGXL_ENABLE_TCMALLOC=OFF",
+                        "-DJPEGXL_ENABLE_TOOLS=OFF",
+                        "-DJPEGXL_FORCE_SYSTEM_BROTLI=ON",
+                        "-DJPEGXL_WARNINGS_AS_ERRORS=OFF"
+                    ],
+                    "buildsystem": "cmake-ninja",
+                    "builddir": true,
+                    "cleanup": [
+                        "*.a",
+                        "/include/hwy",
+                        "/include/jxl",
+                        "*.pc",
+                        "libjxl_threads.so",
+                        "libjxl.so"
+                    ],
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/libjxl/libjxl.git",
+                            "tag": "v0.7.0",
+                            "commit": "f95da131cf7c7ccd4da256356fde2fec1fa23bb5"
+                        }
+                    ]
+                },
+                {
+                    "name": "libavif",
+                    "config-opts": [
+                        "-DAVIF_CODEC_AOM=ON",
+                        "-DAVIF_ENABLE_WERROR=OFF"
+                    ],
+                    "buildsystem": "cmake-ninja",
+                    "builddir": true,
+                    "cleanup": [
+                        "/include/avif",
+                        "*.pc",
+                        "/lib/*/cmake/libavif",
+                        "libavif.so"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/AOMediaCodec/libavif/archive/refs/tags/v0.10.1.tar.gz",
+                            "sha256": "66e82854ceb84a3e542bc140a343bc90e56c68f3ecb4fff63e636c136ed9a05e"
+                        }
+                    ]
+                }
             ]
         },
         {
