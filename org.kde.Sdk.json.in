@@ -171,7 +171,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtbase.git",
-                    "commit": "1d28b25aae18db0bf856dc2d6ae86644669c358e"
+                    "commit": "23996edc504e9e5b5b0ec907380598bbe4bf591c"
                 },
                 {
                     "type": "patch",
@@ -437,7 +437,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwayland.git",
-                    "commit": "215eec416e669ba7a1b7473eedf78d75d5c8d684"
+                    "commit": "8faf74a7966b520f0ac3eb4d88235f8ec63b31b8"
                 },
                 {
                     "//INFO": "Modified version of https://invent.kde.org/qt/qt/qtwayland/-/merge_requests/39 not used in KDE sessions",
@@ -651,7 +651,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git",
-                    "tag": "v1.8.0"
+                    "tag": "v1.9.0"
                 }
             ]
         },
@@ -1546,7 +1546,7 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/libical/libical/releases/download/v3.0.14/libical-3.0.14.tar.gz",
+                            "url": "https://github.com/libical/libical/releases/download/v3.0.15/libical-3.0.15.tar.gz",
                             "sha256": "4284b780356f1dc6a01f16083e7b836e63d3815e27ed0eaaad684712357ccc8f"
                         }
                     ]
@@ -1823,7 +1823,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/breeze.git",
-                    "branch": "Plasma/5.25"
+                    "branch": "Plasma/5.26"
                 }
             ]
         },
@@ -1837,7 +1837,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/plasma-integration.git",
-                    "branch": "Plasma/5.25"
+                    "branch": "Plasma/5.26"
                 }
             ]
         },
@@ -1851,7 +1851,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/kwayland-integration.git",
-                    "branch": "Plasma/5.25"
+                    "branch": "Plasma/5.26"
                 }
             ]
         },
@@ -1898,7 +1898,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/qqc2-breeze-style.git",
-                    "branch": "Plasma/5.25"
+                    "branch": "Plasma/5.26"
                 }
             ]
         },
