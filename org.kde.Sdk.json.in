@@ -1545,9 +1545,9 @@
                     ],
                     "sources": [
                         {
-                            "type": "archive",
-                            "url": "https://github.com/libical/libical/releases/download/v3.0.15/libical-3.0.15.tar.gz",
-                            "sha256": "4284b780356f1dc6a01f16083e7b836e63d3815e27ed0eaaad684712357ccc8f"
+                            "type": "git",
+                            "url": "https://github.com/libical/libical.git",
+                            "tag": "v3.0.15"
                         }
                     ]
                 }
