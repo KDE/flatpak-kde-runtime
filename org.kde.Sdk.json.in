@@ -204,10 +204,7 @@
             "name": "qt6-wayland",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [
-                { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.4/6.4.0/submodules/qtwayland-everywhere-src-6.4.0.tar.xz", "sha256": "f08ba8e14fbec34d57332ad897c5a9150453ed07a611abb18c89c6cc5e5b62fc" },
-                { "type": "patch", "path": "patch/qtwayland-keep-toplevel-windows-in-the-top-left-corner-of-the-screen.patch" }
-            ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.4/6.4.0/submodules/qtwayland-everywhere-src-6.4.0.tar.xz", "sha256": "f08ba8e14fbec34d57332ad897c5a9150453ed07a611abb18c89c6cc5e5b62fc" } ]
         },
         {
             "name": "qt6-qtserialport",
