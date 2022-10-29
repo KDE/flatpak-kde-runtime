@@ -171,7 +171,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtbase.git",
-                    "commit": "23996edc504e9e5b5b0ec907380598bbe4bf591c"
+                    "commit": "98c727f273fc83c24550274bd2728e1aafbd213a"
                 },
                 {
                     "type": "patch",
@@ -213,7 +213,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtdeclarative.git",
-                    "commit": "b3aaf1482c48bbc0ca4f7c7934597c055afe4b6a"
+                    "commit": "45d43c04088efb8346979f633f72bb1f23183461"
                 }
             ]
         },
@@ -241,7 +241,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qttools.git",
-                    "commit": "32912a06aadfc3dcbc34e0a668ce2c78351eee6e"
+                    "commit": "c4750dd02070ce246ff98cc5d137193825043912"
                 }
             ]
         },
@@ -255,7 +255,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtscript.git",
-                    "commit": "197f10dad6213ec4bb2e1a8305f19ec7475a6266"
+                    "commit": "b169b3e6ac1f9d66834ad61fbe35d3e25ff204bc"
                 }
             ]
         },
@@ -269,7 +269,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwebchannel.git",
-                    "commit": "fb1ca87aa1a12048199d2aabe9015b7222d2b773"
+                    "commit": "4e35fe9429920067c17596986b486fb1c1e95db0"
                 }
             ]
         },
@@ -283,7 +283,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtlocation.git",
-                    "commit": "ebdf5b38da6e3fe0a183702bcca395c589c459ed"
+                    "commit": "f920a6cc2931402023840c223fce2fed321e28ea"
                 }
             ]
         },
@@ -297,7 +297,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtsvg.git",
-                    "commit": "a9752b00a03438de8e5b080073816e12409404b7"
+                    "commit": "83296f10ebdb9a666b11dc69f3a148c38b9c425c"
                 }
             ]
         },
@@ -311,7 +311,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtx11extras.git",
-                    "commit": "982f20eb585d77e5b5c721e05a466d7161f7f2d1"
+                    "commit": "9134cdba9386e408ce2ffe515ca0c3f6f6c66685"
                 }
             ]
         },
@@ -325,7 +325,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtmultimedia.git",
-                    "commit": "76f84c545429a1b988b79f971734ef4bc3e6643f"
+                    "commit": "f3dc18968c437c993886d3bfb668b62344a10860"
                 }
             ]
         },
@@ -339,7 +339,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtsensors.git",
-                    "commit": "35eb5ac7eaef4745a38958c3ca780d7baa2e4f30"
+                    "commit": "5f1f73fdba8906f58c4554cbef9c1a72edcf0230"
                 }
             ]
         },
@@ -353,7 +353,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtquickcontrols.git",
-                    "commit": "e62b8b6d2f45a79652238b33f4bbe23023004ae7"
+                    "commit": "c7dae5f6041d6c076311f2d8ed13fcfe3598be70"
                 }
             ]
         },
@@ -367,7 +367,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtquickcontrols2.git",
-                    "commit": "74e8db97fdb9b55c4b4614b83f4bf17e00df55e9"
+                    "commit": "9ff77702cc3649cbaf94046742d682d77cdea698"
                 }
             ]
         },
@@ -381,7 +381,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtgraphicaleffects.git",
-                    "commit": "e6e1e58ec28fd0f2e6426e6962cc4ccddb493349"
+                    "commit": "a2b1600300cda89804d48ec90e0068a075fecc8b"
                 }
             ]
         },
@@ -395,7 +395,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtxmlpatterns.git",
-                    "commit": "30e6c84fe2752cde8b53aff9d38c2095cd7c8761"
+                    "commit": "b798a0f0265538a9dd12b5c7e4dad84ba8e1db4e"
                 }
             ]
         },
@@ -409,7 +409,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtimageformats.git",
-                    "commit": "9044695f4b1acdd7ec24e7b01f6a6ca61f982a75"
+                    "commit": "1b83a9c73d6e5459ec4c2221b2bd7e5396b5e874"
                 }
             ]
         },
@@ -423,7 +423,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtconnectivity.git",
-                    "commit": "01e8b04b121712ea0a2b2793ce13f4dd5e9cfcf8"
+                    "commit": "6796953f92a1d3af30d0676e56ec5dfd82199611"
                 }
             ]
         },
@@ -437,7 +437,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwayland.git",
-                    "commit": "8faf74a7966b520f0ac3eb4d88235f8ec63b31b8"
+                    "commit": "9c607c771acdb3d820be7f112db99213a6c6d7eb"
                 },
                 {
                     "//INFO": "Modified version of https://invent.kde.org/qt/qt/qtwayland/-/merge_requests/39 not used in KDE sessions",
@@ -461,7 +461,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtvirtualkeyboard.git",
-                    "commit": "9fbb837b55887bec5d73fad142c853ef68db35b3"
+                    "commit": "8aebadb96c1e57ba89bba2e5962399f676207a32"
                 }
             ]
         },
@@ -475,7 +475,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtserialport.git",
-                    "commit": "c9abfcd5d88cb43c2a7c1d5ddecbff4cdd320694"
+                    "commit": "966cf2a2077a8470715894363ad46ea7df0665fa"
                 }
             ]
         },
@@ -489,7 +489,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwebsockets.git",
-                    "commit": "a066371747a7eb9de9b1ae38fbc41b2059080802"
+                    "commit": "594477769ecac4032ba116196493f3ba3db1aaed"
                 }
             ]
         },
@@ -503,7 +503,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtcharts.git",
-                    "commit": "841083c263f16f8acb81e4915bf24bbed0461c9a"
+                    "commit": "055c6d6e49c5ea369990e7078fd534392a0ba6b9"
                 }
             ]
         },
@@ -517,7 +517,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qt3d.git",
-                    "commit": "fe5fca853c09c7e03a2ff66dac21584e3307984d"
+                    "commit": "0ff905d194e273e04e95b72dbbfd4e58193ecbaa"
                 }
             ]
         },
@@ -531,7 +531,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtspeech.git",
-                    "commit": "d1273416f25a15a6edf6ea56a07602cd7d99fe48"
+                    "commit": "d32f4a479d38a11f547598004b975f4356424a16"
                 }
             ],
             "modules": [
@@ -563,7 +563,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtnetworkauth.git",
-                    "commit": "01315e31c5164c896a524175854c4b6df17fe166"
+                    "commit": "f34ac77b5955126be60faa2b801be2d19dff896f"
                 }
             ]
         },
@@ -577,7 +577,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtgamepad.git",
-                    "commit": "0a2d4651362810600d2ff7272772d5908bb8714b"
+                    "commit": "ce0202d67bf1ab2bb887f58122b20eab5b6c1d5d"
                 }
             ]
         },
@@ -591,7 +591,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qttranslations.git",
-                    "commit": "d4db9d8a4893a70e7ba3a6d5fe62f24f9ce745ca"
+                    "commit": "c38edd3a5501bcd53132e1e4abb7d25a98e0e1a9"
                 }
             ]
         },
@@ -605,7 +605,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtremoteobjects.git",
-                    "commit": "aa705010da0f658b78c1155babce7091ae44529a"
+                    "commit": "5f2a598a9134167a0da2efcbf1249fc167ae3750"
                 }
             ]
         },
@@ -1097,7 +1097,7 @@
                         {
                             "type": "git",
                             "url": "https://invent.kde.org/libraries/qca.git",
-                            "tag": "v2.3.4"
+                            "tag": "v2.3.5"
                         }
                     ]
                 }
@@ -1547,7 +1547,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/libical/libical.git",
-                            "tag": "v3.0.15"
+                            "tag": "v3.0.16"
                         }
                     ]
                 }
@@ -1775,8 +1775,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/AOMediaCodec/libavif/archive/refs/tags/v0.10.1.tar.gz",
-                            "sha256": "66e82854ceb84a3e542bc140a343bc90e56c68f3ecb4fff63e636c136ed9a05e"
+                            "url": "https://github.com/AOMediaCodec/libavif/archive/refs/tags/v0.11.1.tar.gz",
+                            "sha256": "0eb49965562a0e5e5de58389650d434cff32af84c34185b6c9b7b2fccae06d4e"
                         }
                     ]
                 }
@@ -1807,7 +1807,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/network/kio-extras.git",
-                    "tag": "v22.08.1"
+                    "tag": "v22.08.2"
                 }
             ]
         },
