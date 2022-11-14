@@ -171,7 +171,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtbase.git",
-                    "commit": "98c727f273fc83c24550274bd2728e1aafbd213a"
+                    "commit": "51258629f2cf37fff8406bf705d79c07fc7135ca"
                 },
                 {
                     "type": "patch",
@@ -213,7 +213,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtdeclarative.git",
-                    "commit": "45d43c04088efb8346979f633f72bb1f23183461"
+                    "commit": "debc0a9c11ecd4694f7ba02cc67b15873fae4a88"
                 }
             ]
         },
@@ -367,7 +367,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtquickcontrols2.git",
-                    "commit": "9ff77702cc3649cbaf94046742d682d77cdea698"
+                    "commit": "5465566a4ad9f6f9758bed304153f0c7fec3437b"
                 }
             ]
         },
@@ -437,7 +437,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwayland.git",
-                    "commit": "9c607c771acdb3d820be7f112db99213a6c6d7eb"
+                    "commit": "4b43f2dc58e71732ebdbe1eaf4392272bc692e6d"
                 },
                 {
                     "//INFO": "Modified version of https://invent.kde.org/qt/qt/qtwayland/-/merge_requests/39 not used in KDE sessions",
@@ -1807,7 +1807,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/network/kio-extras.git",
-                    "tag": "v22.08.2"
+                    "tag": "v22.08.3"
                 }
             ]
         },
