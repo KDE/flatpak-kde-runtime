@@ -443,11 +443,6 @@
                     "//INFO": "Modified version of https://invent.kde.org/qt/qt/qtwayland/-/merge_requests/39 not used in KDE sessions",
                     "type": "patch",
                     "path": "patch/qtwayland-client-set-constraint-adjustments-for-popups-in-xdg.patch"
-                },
-                {
-                    "//INFO": "Modified version of https://invent.kde.org/qt/qt/qtwayland/-/merge_requests/47 not used in KDE sessions",
-                    "type": "patch",
-                    "path": "patch/qtwayland-keep-toplevel-windows-in-the-top-left-corner-of-the-screen.patch"
                 }
             ]
         },
