@@ -213,7 +213,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtdeclarative.git",
-                    "commit": "debc0a9c11ecd4694f7ba02cc67b15873fae4a88"
+                    "commit": "959b1ac3b7c699ef67ec81155e6e1e579d4e1df7"
                 }
             ]
         },
@@ -409,7 +409,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtimageformats.git",
-                    "commit": "1b83a9c73d6e5459ec4c2221b2bd7e5396b5e874"
+                    "commit": "adbc372b890ed90f006a6c4f3ca56bf0cba477ef"
                 }
             ]
         },
@@ -688,7 +688,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kconfig.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.100.1"
                 }
             ]
         },
