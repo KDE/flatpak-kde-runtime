@@ -171,7 +171,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtbase.git",
-                    "commit": "98c727f273fc83c24550274bd2728e1aafbd213a"
+                    "commit": "51258629f2cf37fff8406bf705d79c07fc7135ca"
                 },
                 {
                     "type": "patch",
@@ -213,7 +213,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtdeclarative.git",
-                    "commit": "45d43c04088efb8346979f633f72bb1f23183461"
+                    "commit": "959b1ac3b7c699ef67ec81155e6e1e579d4e1df7"
                 }
             ]
         },
@@ -367,7 +367,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtquickcontrols2.git",
-                    "commit": "9ff77702cc3649cbaf94046742d682d77cdea698"
+                    "commit": "5465566a4ad9f6f9758bed304153f0c7fec3437b"
                 }
             ]
         },
@@ -409,7 +409,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtimageformats.git",
-                    "commit": "1b83a9c73d6e5459ec4c2221b2bd7e5396b5e874"
+                    "commit": "adbc372b890ed90f006a6c4f3ca56bf0cba477ef"
                 }
             ]
         },
@@ -437,17 +437,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwayland.git",
-                    "commit": "9c607c771acdb3d820be7f112db99213a6c6d7eb"
+                    "commit": "4b43f2dc58e71732ebdbe1eaf4392272bc692e6d"
                 },
                 {
                     "//INFO": "Modified version of https://invent.kde.org/qt/qt/qtwayland/-/merge_requests/39 not used in KDE sessions",
                     "type": "patch",
                     "path": "patch/qtwayland-client-set-constraint-adjustments-for-popups-in-xdg.patch"
-                },
-                {
-                    "//INFO": "Modified version of https://invent.kde.org/qt/qt/qtwayland/-/merge_requests/47 not used in KDE sessions",
-                    "type": "patch",
-                    "path": "patch/qtwayland-keep-toplevel-windows-in-the-top-left-corner-of-the-screen.patch"
                 }
             ]
         },
@@ -637,7 +632,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -665,7 +660,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kwidgetsaddons.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -679,7 +674,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ki18n.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -693,7 +688,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kconfig.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -707,7 +702,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/attica.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -721,7 +716,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kguiaddons.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -735,7 +730,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcoreaddons.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -749,7 +744,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kauth.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -764,7 +759,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/karchive.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -778,7 +773,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcodecs.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -792,7 +787,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kconfigwidgets.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -806,7 +801,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kitemviews.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -820,7 +815,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kiconthemes.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -834,7 +829,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kwindowsystem.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -848,7 +843,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcrash.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -862,7 +857,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdbusaddons.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -877,7 +872,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kservice.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -891,7 +886,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kglobalaccel.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -905,7 +900,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/sonnet.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -919,7 +914,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcompletion.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -933,7 +928,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ktextwidgets.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -947,7 +942,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kxmlgui.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -983,7 +978,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdoctools.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -997,7 +992,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kpackage.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1011,7 +1006,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kbookmarks.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1025,7 +1020,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kfilemetadata.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ],
             "modules": [
@@ -1071,7 +1066,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/knotifications.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1085,7 +1080,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kwallet.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ],
             "modules": [
@@ -1113,7 +1108,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kjobwidgets.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1127,7 +1122,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/solid.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1141,7 +1136,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kio.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1155,7 +1150,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kparts.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1169,7 +1164,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kplotting.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1184,7 +1179,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdesignerplugin.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1198,7 +1193,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kinit.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1212,7 +1207,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kded.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1226,7 +1221,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kunitconversion.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1240,7 +1235,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdeclarative.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1254,7 +1249,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcmutils.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1269,7 +1264,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/knotifyconfig.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1283,7 +1278,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/knewstuff.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1297,7 +1292,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kidletime.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1311,7 +1306,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/threadweaver.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1325,7 +1320,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kitemmodels.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1339,7 +1334,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kxmlrpcclient.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1353,7 +1348,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdnssd.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1367,7 +1362,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kquickcharts.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1381,7 +1376,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/syntax-highlighting.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1395,7 +1390,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ktexteditor.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1410,7 +1405,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/frameworkintegration.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1424,7 +1419,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kemoticons.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1438,7 +1433,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kpty.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1452,7 +1447,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kwayland.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1468,7 +1463,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kirigami.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1483,7 +1478,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/qqc2-desktop-style.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1499,7 +1494,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kactivities.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1514,7 +1509,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcontacts.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1529,7 +1524,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcalendarcore.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ],
             "modules": [
@@ -1564,7 +1559,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kholidays.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1578,7 +1573,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/prison.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ],
             "modules": [
@@ -1642,7 +1637,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/syndication.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1656,7 +1651,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/purpose.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1670,7 +1665,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdav.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1685,7 +1680,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/plasma-framework.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1703,7 +1698,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/breeze-icons.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1718,7 +1713,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kimageformats.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ],
             "modules": [
@@ -1793,7 +1788,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/bluez-qt.git",
-                    "tag": "v5.100.0"
+                    "tag": "v5.101.0"
                 }
             ]
         },
@@ -1807,7 +1802,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/network/kio-extras.git",
-                    "tag": "v22.08.2"
+                    "tag": "v22.12.0"
                 }
             ]
         },
