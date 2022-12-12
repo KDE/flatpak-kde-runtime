@@ -1802,7 +1802,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/network/kio-extras.git",
-                    "tag": "v22.08.3"
+                    "tag": "v22.12.0"
                 }
             ]
         },
