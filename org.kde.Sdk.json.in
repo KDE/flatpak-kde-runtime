@@ -171,7 +171,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtbase.git",
-                    "commit": "51258629f2cf37fff8406bf705d79c07fc7135ca"
+                    "commit": "a9e67318e6a8924c4b5461656bcc6a80720ae899"
                 },
                 {
                     "type": "patch",
@@ -213,7 +213,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtdeclarative.git",
-                    "commit": "959b1ac3b7c699ef67ec81155e6e1e579d4e1df7"
+                    "commit": "3476736905fd029e8fa5a6c86db38a758d97f9cb"
                 }
             ]
         },
@@ -367,7 +367,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtquickcontrols2.git",
-                    "commit": "5465566a4ad9f6f9758bed304153f0c7fec3437b"
+                    "commit": "d37bf5c4ab8a4184b240ddccb3f2b8fdad569d7f"
                 }
             ]
         },
@@ -437,7 +437,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwayland.git",
-                    "commit": "4b43f2dc58e71732ebdbe1eaf4392272bc692e6d"
+                    "commit": "241486c4a90b222b9127c316c821090131057933"
                 },
                 {
                     "//INFO": "Modified version of https://invent.kde.org/qt/qt/qtwayland/-/merge_requests/39 not used in KDE sessions",
@@ -1878,7 +1878,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/fcitx/fcitx5-qt",
-                    "tag": "5.0.15"
+                    "tag": "5.0.16"
                 }
             ]
         },
