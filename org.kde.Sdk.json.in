@@ -125,7 +125,7 @@
                 "-DQT_FEATURE_openssl_linked=ON", "-DQT_FEATURE_system_sqlite=ON"
             ],
             "sources": [
-                { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.4/6.4./submodules/qtbase-everywhere-src-6.4.2.tar.xz", "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880" },
+                { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.4/6.4.2/submodules/qtbase-everywhere-src-6.4.2.tar.xz", "sha256": "a88bc6cedbb34878a49a622baa79cace78cfbad4f95fdbd3656ddb21c705525d" },
                 { "type": "patch", "path": "patch/qtbase-find_package-paths.patch" }
             ]
         },
