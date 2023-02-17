@@ -1725,6 +1725,7 @@
                         "-DJPEGXL_ENABLE_DOXYGEN=OFF",
                         "-DJPEGXL_ENABLE_EXAMPLES=OFF",
                         "-DJPEGXL_ENABLE_JNI=OFF",
+                        "-DJPEGXL_ENABLE_JPEGLI_LIBJPEG=OFF",
                         "-DJPEGXL_ENABLE_MANPAGES=OFF",
                         "-DJPEGXL_ENABLE_PLUGINS=OFF",
                         "-DJPEGXL_ENABLE_SJPEG=OFF",
@@ -1748,8 +1749,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/libjxl/libjxl.git",
-                            "tag": "v0.7.0",
-                            "commit": "f95da131cf7c7ccd4da256356fde2fec1fa23bb5"
+                            "tag": "v0.8.1",
+                            "commit": "c27d499263435ac77007174e0f1cf54557cff23a"
                         }
                     ]
                 },
