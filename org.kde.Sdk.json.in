@@ -127,6 +127,7 @@
             "sources": [
                 { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.4/6.4.3/submodules/qtbase-everywhere-src-6.4.3.tar.xz", "sha256": "5087c9e5b0165e7bc3c1a4ab176b35d0cd8f52636aea903fa377bdba00891a60" },
                 { "type": "patch", "path": "patch/qtbase-find_package-paths.patch" }
+                { "type": "patch", "path": "patch/qtbase-use-qgnomeplatform-as-default-platform-theme-on-gnome.patch" }
             ]
         },
         {

@@ -1,0 +1,12 @@
+diff --git a/src/gui/platform/unix/qgenericunixthemes.cpp b/src/gui/platform/unix/qgenericunixthemes.cpp
+index 1efd759b..d0129f73 100644
+--- a/src/gui/platform/unix/qgenericunixthemes.cpp
++++ b/src/gui/platform/unix/qgenericunixthemes.cpp
+@@ -977,6 +977,7 @@ QStringList QGenericUnixTheme::themeNames()
+                 result.push_back(QLatin1StringView(QKdeTheme::name));
+ #endif
+             } else if (gtkBasedEnvironments.contains(desktopName)) {
++                result.push_back(QStringLiteral("qgnomeplatform"));
+                 // prefer the GTK3 theme implementation with native dialogs etc.
+                 result.push_back(QStringLiteral("gtk3"));
+                 // fallback to the generic Gnome theme if loading the GTK3 theme fails
