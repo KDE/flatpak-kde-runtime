@@ -78,7 +78,7 @@ def checkRepo(url):
 def checkGitNextTag(source, replace):
     if source['type'] == 'git' and ('branch' in source or 'tag' in source):
         repo = checkRepo(source['url'])
-        repo.remotes[0].fetch("--tags")
+        repo.remotes[0].fetch()
 
         branch = None
         if 'tag' in source:
