@@ -1819,7 +1819,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/breeze.git",
-                    "branch": "Plasma/5.26"
+                    "branch": "Plasma/5.27"
                 }
             ]
         },
@@ -1833,7 +1833,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/plasma-integration.git",
-                    "branch": "Plasma/5.26"
+                    "branch": "Plasma/5.27"
                 }
             ]
         },
@@ -1847,7 +1847,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/kwayland-integration.git",
-                    "branch": "Plasma/5.26"
+                    "branch": "Plasma/5.27"
                 }
             ]
         },
@@ -1894,7 +1894,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/qqc2-breeze-style.git",
-                    "branch": "Plasma/5.26"
+                    "branch": "Plasma/5.27"
                 }
             ]
         },
