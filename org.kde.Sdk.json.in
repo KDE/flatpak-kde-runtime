@@ -265,13 +265,13 @@
             "cleanup-platform": ["*"],
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git", "tag": "v5.100.0" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git", "tag": "v5.104.0" } ]
         },
         {
             "name": "fcitx5-platforminputcontext",
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DENABLE_QT4=OFF", "-DENABLE_QT5=OFF", "-DENABLE_QT6=ON", "-DBUILD_ONLY_PLUGIN=ON" ],
-            "sources": [ { "type": "git", "url": "https://github.com/fcitx/fcitx5-qt", "tag": "5.0.16" } ]
+            "sources": [ { "type": "git", "url": "https://github.com/fcitx/fcitx5-qt", "tag": "5.0.17" } ]
         },
         {
             "name": "os-release",
