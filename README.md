@@ -16,7 +16,7 @@ There's a [different branch](https://invent.kde.org/packaging/flatpak-kde-runtim
 1. Clone repo and create new branch called work/**yourusername**/frameworks-**new_version_number**
 2. Replace the framework version numbers e.g. `sed -i 's/v5.107.0/v5.108.0/g' org.kde.Sdk.json.in`
 3. Commit to your branch and create a Merge Request
-4. Once Merge Request is merged goto https://buildbot.flathub.org/#/apps/org.kde.Sdk~2F5.15-22.08">https://buildbot.flathub.org/#/apps/org.kde.Sdk~2F5.15-22.08
+4. Once Merge Request is merged goto <https://buildbot.flathub.org/#/apps/org.kde.Sdk~2F5.15-22.08>
 5. Login top right and then click Start build
 6. Once build is completed, publish it, done.
 
