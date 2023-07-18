@@ -18,7 +18,8 @@ There's a [different branch](https://invent.kde.org/packaging/flatpak-kde-runtim
 3. Commit to your branch and create a Merge Request
 4. Once Merge Request is merged goto <https://buildbot.flathub.org/#/apps/org.kde.Sdk~2F5.15-22.08>
 5. Login top right and then click Start build
-6. Once build is completed, publish it, done.
+6. Once build is completed, publish it
+7. Ask someone from the SysAdmin team to run the flatpak CI image job.
 
 # Testing
 This can generally be built with flatpak-builder as explained in its documentation. There's a Makefile to make it a bit easier to trigger:
