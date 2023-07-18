@@ -12,7 +12,7 @@ https://community.kde.org/Guidelines_and_HOWTOs/Flatpak
 
 There's a [different branch](https://invent.kde.org/packaging/flatpak-kde-runtime/-/branches) for each version of Qt. The KDE Frameworks version updates with it as new stable releases become available.
 
-# Frameworks Updates
+# Frameworks Updates (for members of the [Flathub KDE Team](https://github.com/orgs/flathub/teams/kde))
 1. Clone repo and create new branch called `work/**yourusername**/frameworks-**new_version_number**`
 2. Replace the framework version numbers e.g. `sed -i 's/v5.107.0/v5.108.0/g' org.kde.Sdk.json.in`
 3. Commit to your branch and create a Merge Request
