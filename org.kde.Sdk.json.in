@@ -125,7 +125,7 @@
                 "-DQT_FEATURE_openssl_linked=ON", "-DQT_FEATURE_system_sqlite=ON"
             ],
             "sources": [
-                { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtbase-everywhere-src-6.5.1.tar.xz", "sha256": "db56fa1f4303a1189fe33418d25d1924931c7aef237f89eea9de58e858eebfed" },
+                { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtbase-everywhere-src-6.5.2.tar.xz", "sha256": "3db4c729b4d80a9d8fda8dd77128406353baff4755ca619177eda4cddae71269" },
                 { "type": "patch", "path": "patch/qtbase-find_package-paths.patch" },
                 { "type": "patch", "path": "patch/qtbase-use-qgnomeplatform-as-default-platform-theme-on-gnome.patch" }
             ]
@@ -138,141 +138,141 @@
                 "/bin/lrelease", "/bin/lupdate", "/bin/lconvert", "/bin/linguist", "/bin/qdoc", "/bin/qtattributionsscanner",
                 "/bin/qtplugininfo", "/bin/qtdiag", "/bin/qdbusviewer"
             ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qttools-everywhere-src-6.5.1.tar.xz", "sha256": "5744df9e84b2a86f7f932ffc00341c7d7209e741fd1c0679a32b855fcceb2329" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qttools-everywhere-src-6.5.2.tar.xz", "sha256": "551ffb22751d8fd4d88e9ebd55b9131f4ca55341ee497fdbbba4da8d10d94341" } ]
         },
         {
             "name": "qt6-shadertools",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtshadertools-everywhere-src-6.5.1.tar.xz", "sha256": "e5806761835944ef91d5aee0679e0c8231bf7a981e064480e65c751ebdf65052" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtshadertools-everywhere-src-6.5.2.tar.xz", "sha256": "a4d1b83e5385ec5ee9e806837bff1e1f57adcc079846a2bf9f7eba62b767deae" } ]
         },
         {
             "name": "qt6-qtlanguageserver",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtlanguageserver-everywhere-src-6.5.1.tar.xz", "sha256": "99a6cc6aca124626a2085077dc7f4bb9dbb20da518df6b115056813149832bc9" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtlanguageserver-everywhere-src-6.5.2.tar.xz", "sha256": "73b5ec0caa830708c016951a6e27f308f78e95d13810c56ef342317c398bd1a4" } ]
         },
         {
             "name": "qt6-qtdeclarative",
             "config-opts": ["-DQT_TOOL_COMMAND_WRAPPER_PATH=env"],
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtdeclarative-everywhere-src-6.5.1.tar.xz", "sha256": "201148f9614a65d169a85cd0d0fbd414603498da6ff330c4e0835ecd962dce79" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtdeclarative-everywhere-src-6.5.2.tar.xz", "sha256": "455ba11d0cdc7ac69afbd8beaafac672a29c8cd45fde3558448bed21b7e0fbc6" } ]
         },
         {
             "name": "qt6-webchannel",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtwebchannel-everywhere-src-6.5.1.tar.xz", "sha256": "2b374367e737f7579e682603c2025712f72a5d6814d5983a20c5bffac210ec4a" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtwebchannel-everywhere-src-6.5.2.tar.xz", "sha256": "c188d9fa6e535b850b574fa9e47c6089555b8df1fe041dcb13aeeca336b78e63" } ]
         },
         {
             "name": "qt6-qtpositioning",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtpositioning-everywhere-src-6.5.1.tar.xz", "sha256": "053cf940e18880c53ec35022d495c75fdb3adf762dbb3b4a6e48341f7a0ea422" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtpositioning-everywhere-src-6.5.2.tar.xz", "sha256": "70493f03748d1c5b1577e4c011c0af9bcaffcdc6c5e519362605b01f917614fa" } ]
         },
         {
             "name": "qt6-qtsvg",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtsvg-everywhere-src-6.5.1.tar.xz", "sha256": "d58d29491d44f0f59b684686a9898fec0e6c4fb7c09d9393b4e9c211fe9608ef" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtsvg-everywhere-src-6.5.2.tar.xz", "sha256": "48b4cc1093af2e0ab3bea30f60651bddd877a2335d16e7207879a2e9e81963a3" } ]
         },
         {
             "name": "qt6-qtspeech",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtspeech-everywhere-src-6.5.1.tar.xz", "sha256": "67120ba5f156962713b6fd5aeb109ed789f66d07e8bfbda4fa24d12d653457b6" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtspeech-everywhere-src-6.5.2.tar.xz", "sha256": "88ff9c2876f4a76632bfee7f58c3277aab9ff49e24d628e4a19f6b0e7a62d4b2" } ]
         },
         {
             "name": "qt6-qtmultimedia",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtmultimedia-everywhere-src-6.5.1.tar.xz", "sha256": "0b1fc560e1c8cdda1ddb13db832c3b595f7e4079118d4847d8de18d82464e1cc" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtmultimedia-everywhere-src-6.5.2.tar.xz", "sha256": "948f00aa679e92839a2a71bd07245a92cc849af486607417ee4c334b2b998975" } ]
         },
         {
             "name": "qt6-qtsensors",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtsensors-everywhere-src-6.5.1.tar.xz", "sha256": "c95aca8371c2909255d908f4d78a0bfd975a83a73ed882eabc561d444864aba5" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtsensors-everywhere-src-6.5.2.tar.xz", "sha256": "4006bd7cfbb4302a887bda82b7fe3c31633626363a5e6ba9730bdb4fa8ab2aa6" } ]
         },
         {
             "name": "qt6-qtimageformats",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtimageformats-everywhere-src-6.5.1.tar.xz", "sha256": "897f7fc299ad03580dee91920644dc43cb5d32e1b8c97e8b594fac9aa68c5db5" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtimageformats-everywhere-src-6.5.2.tar.xz", "sha256": "aae0c08924c6a5e47f9d57e031673d611ffff7aab2bee2e1cc460471ecac6743" } ]
         },
         {
             "name": "qt6-connectivity",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtconnectivity-everywhere-src-6.5.1.tar.xz", "sha256": "2fd74c9b78c4df2b9b2efe5e48fa6c9689f6c200ee4a90edd5bfedda3089827a" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtconnectivity-everywhere-src-6.5.2.tar.xz", "sha256": "db2e4922352d253cafbb8f21eeca58da269c19e0e6d614420af19a7cd35fdc99" } ]
         },
         {
             "name": "qt6-wayland",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtwayland-everywhere-src-6.5.1.tar.xz", "sha256": "7c1f1ea19831c9c28b0128cf7ccfb22baf46c5cda30a97d0e6997dfd9a0a974d" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtwayland-everywhere-src-6.5.2.tar.xz", "sha256": "3020be86fb7fd0abb8509906ca6583cadcaee168159abceaeb5b3e9d42563c9a" } ]
         },
         {
             "name": "qt6-qtserialport",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtserialport-everywhere-src-6.5.1.tar.xz", "sha256": "c3554d0646d4e2b981a4b17f3d196317def7eabea42b81c97967e355bcb432a6" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtserialport-everywhere-src-6.5.2.tar.xz", "sha256": "063c54169aea6b303183b434637ad050e9f67d7f22bb3eff1ede1905eb2ccc9e" } ]
         },
         {
             "name": "qt6-qtwebsockets",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtwebsockets-everywhere-src-6.5.1.tar.xz", "sha256": "6b8f66b250a675117aae35b48dbfc589619be2810a759ad1712a9cd20561da19" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtwebsockets-everywhere-src-6.5.2.tar.xz", "sha256": "204bd7b0dffb54c934abc6cf0eb5e3016f11b3c9721a67b4875a6b21bb8b5c76" } ]
         },
         {
             "name": "qt6-qtscxml",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtscxml-everywhere-src-6.5.1.tar.xz", "sha256": "1c3ea3c8bb52c30e06ff113b4deaeb30d664d592afba650f0c1910b30a002477" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtscxml-everywhere-src-6.5.2.tar.xz", "sha256": "a830f2ec750913a70f854e487b1b44d1ec3a48eb21253f414a1990f8cf4dbdcb" } ]
         },
         {
             "name": "qt6-qtcharts",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtcharts-everywhere-src-6.5.1.tar.xz", "sha256": "b15b500fc7e75b8881d5fe19bd13418213bc5f7834eadc9fb00edc084e92cf75" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtcharts-everywhere-src-6.5.2.tar.xz", "sha256": "775af7be019cca698b27e5acffbc2def8f7a5b8f06f5c6db2a7015d578a6ad2d" } ]
         },
         {
             "name": "qt6-qt3d",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qt3d-everywhere-src-6.5.1.tar.xz", "sha256": "7e54e1e810ba57b510002b899d9b63d611b287691731739665c1a1b26139689b" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qt3d-everywhere-src-6.5.2.tar.xz", "sha256": "21f064db21ad1bfc5547fd4e8cba09acc8c187de58d7eee206f6549ab9e2f910" } ]
         },
         {
             "name": "qt6-qtnetworkauth",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtnetworkauth-everywhere-src-6.5.1.tar.xz", "sha256": "a730b56a3e96fa70e3908209ba6cafe67e93c3dfe50541538f8b7d8503d971a3" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtnetworkauth-everywhere-src-6.5.2.tar.xz", "sha256": "4ecc4b560ac24c29086550972d634a4e1a1a58936b6186a24dd131f8079c283c" } ]
         },
         {
             "name": "qt6-qttranslations",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qttranslations-everywhere-src-6.5.1.tar.xz", "sha256": "527e2c34c2637ece49c0e1fb65b0c5e5dce0f9b3f3710381468fe4e36080d49b" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qttranslations-everywhere-src-6.5.2.tar.xz", "sha256": "337c45637e757e754c2f0ea65c20de3e6e53a841dda1253db15baa622515beeb" } ]
         },
         {
             "name": "qt6-qtremoteobjects",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qtremoteobjects-everywhere-src-6.5.1.tar.xz", "sha256": "78cf47af58793756dd0633db08371646d8d28930d911e75aeeab385aecc7629b" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtremoteobjects-everywhere-src-6.5.2.tar.xz", "sha256": "c0f41f1f79eff28303ecd68dc064a4d8f92b35f3ddc06d78909b142bc0d4494c" } ]
         },
         {
             "name": "qt6-qt5compat",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.1/submodules/qt5compat-everywhere-src-6.5.1.tar.xz", "sha256": "ae992b295fefabef2445beb3a8ec31c40fa0fb2c01603eaf2acfdb4a0054fb83" } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qt5compat-everywhere-src-6.5.2.tar.xz", "sha256": "b9abe42ee2055c27a8e7579c7816069e91aae1f9b10649bf572db8ba96fa91c4" } ]
         },
         {
             "name": "extra-cmake-modules",
             "cleanup-platform": ["*"],
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git", "tag": "v5.106.0" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git", "tag": "v5.108.0" } ]
         },
         {
             "name": "fcitx5-platforminputcontext",
