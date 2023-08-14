@@ -1612,6 +1612,12 @@
                     ],
                     "buildsystem": "cmake-ninja",
                     "builddir": true,
+                    "cleanup": [
+                        "/include/ZXing",
+                        "*.pc",
+                        "/lib/*/cmake/ZXing",
+                        "libZXing.so"
+                    ],
                     "sources": [
                         {
                             "type": "archive",
