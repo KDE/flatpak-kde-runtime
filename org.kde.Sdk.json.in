@@ -144,7 +144,7 @@
             "name": "qt6-shadertools",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtshadertools-everywhere-src-6.5.2.tar.xz", "sha256": "a4d1b83e5385ec5ee9e806837bff1e1f57adcc079846a2bf9f7eba62b767deae", "x-checker-data": { "type": "anitya", "project-id": 7927, "stable-only": true, "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtshadertools-everywhere-src-$version.tar.xz" } } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtshadertools-everywhere-src-6.5.2.tar.xz", "sha256": "ca3fb0db8576c59b9c38bb4b271cc6e10aebeb54e2121f429f4ee80671fc0a3d", "x-checker-data": { "type": "anitya", "project-id": 7927, "stable-only": true, "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtshadertools-everywhere-src-$version.tar.xz" } } ]
         },
         {
             "name": "qt6-qtlanguageserver",
@@ -157,7 +157,7 @@
             "config-opts": ["-DQT_TOOL_COMMAND_WRAPPER_PATH=env"],
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [ "/bin", "lib/plugins/qmltooling" ],
-            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtdeclarative-everywhere-src-6.5.2.tar.xz", "sha256": "455ba11d0cdc7ac69afbd8beaafac672a29c8cd45fde3558448bed21b7e0fbc6", "x-checker-data": { "type": "anitya", "project-id": 7927, "stable-only": true, "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtdeclarative-everywhere-src-$version.tar.xz" } } ]
+            "sources": [ { "type": "archive", "url": "https://download.qt.io/official_releases/qt/6.5/6.5.2/submodules/qtdeclarative-everywhere-src-6.5.2.tar.xz", "sha256": "f3a11fe54e9fac77c649e46e39f1cbe161e9efe89bad205115ba2861b1eb8719", "x-checker-data": { "type": "anitya", "project-id": 7927, "stable-only": true, "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtdeclarative-everywhere-src-$version.tar.xz" } } ]
         },
         {
             "name": "qt6-webchannel",
