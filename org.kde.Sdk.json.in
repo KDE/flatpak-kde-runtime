@@ -1449,8 +1449,7 @@
         {
             "name": "kirigami",
             "config-opts": [
-                "-DBUILD_TESTING=OFF",
-                "-DPLASMA_ENABLED=OFF"
+                "-DBUILD_TESTING=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
