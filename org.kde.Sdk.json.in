@@ -656,8 +656,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/fcitx/fcitx5-qt",
-                    "tag": "5.0.17",
-                    "commit": "47bd8f2e3e8bdd062683be438dc9a026930b172f",
+                    "tag": "5.1.1",
+                    "commit": "2e060bc22933e5fdef2c3919fea29b90e0ac0b55",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
