@@ -171,7 +171,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtbase.git",
-                    "commit": "74917690e8cded41b087acfe6c58fcd3674864a4"
+                    "commit": "9b7fd27c2b4a363ba4434353be2932483be99234"
                 },
                 {
                     "type": "patch",
@@ -283,7 +283,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtlocation.git",
-                    "commit": "664701dc3acfca37500bc84ba03eed4953b684e9"
+                    "commit": "3b946d0c5c8aaed3757bdcbbcd3b45cb79494471"
                 }
             ]
         },
@@ -437,7 +437,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwayland.git",
-                    "commit": "88eba87b497b91d53e6fda5a3613b94bf8735861"
+                    "commit": "8167ea2432a8313ffd130e071aa31570de52e97b"
                 }
             ]
         },
