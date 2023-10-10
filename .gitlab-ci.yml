@@ -27,3 +27,14 @@ flatpak:
     - json-glib-validate org.kde.Sdk.json.in
     - json-glib-validate org.freedesktop.Platform.Icontheme.Adwaita.json
     - json-glib-validate flathub.json
+
+build-runtime:
+  stage: build
+  when: manual
+  image: invent-registry.kde.org/sysadmin/ci-images/flatpak-builder:latest
+  tags:
+    - Linux
+  script:
+    - export ARCH=x86_64
+    - sed "s,@@SDK_ARCH@@,${ARCH},g" org.kde.Sdk.json.in > org.kde.Sdk.json
+    - flatpak-builder --install-deps-from=flathub --user --disable-rofiles-fuse --arch=x86_64 --force-clean --require-changes --ccache --repo=repo --subject="build of org.kde.Sdk, `date` $(`git rev-parse HEAD`)" sdk org.kde.Sdk.json
