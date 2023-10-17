@@ -149,7 +149,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtbase-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtbase-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -187,7 +187,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qttools-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qttools-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -208,7 +208,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtshadertools-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtshadertools-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -228,7 +228,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtlanguageserver-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtlanguageserver-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -252,7 +252,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtdeclarative-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtdeclarative-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -272,7 +272,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtwebchannel-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtwebchannel-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -292,7 +292,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtpositioning-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtpositioning-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -312,7 +312,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtsvg-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtsvg-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -332,7 +332,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtspeech-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtspeech-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -352,7 +352,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtmultimedia-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtmultimedia-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -372,7 +372,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtsensors-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtsensors-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -392,7 +392,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtimageformats-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtimageformats-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -412,7 +412,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtconnectivity-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtconnectivity-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -432,7 +432,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtwayland-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtwayland-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -456,7 +456,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtserialport-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtserialport-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -476,7 +476,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtwebsockets-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtwebsockets-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -496,7 +496,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtscxml-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtscxml-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -516,7 +516,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtcharts-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtcharts-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -536,7 +536,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qt3d-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qt3d-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -556,7 +556,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtnetworkauth-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtnetworkauth-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -576,7 +576,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qttranslations-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qttranslations-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -596,7 +596,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qtremoteobjects-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtremoteobjects-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
@@ -616,7 +616,7 @@
                         "type": "anitya",
                         "project-id": 7927,
                         "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.5/$version/submodules/qt5compat-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qt5compat-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
