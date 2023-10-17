@@ -1,6 +1,6 @@
 NAME="KDE Flatpak runtime"
-VERSION="6.5"
-VERSION_ID="6.5"
+VERSION="6.6"
+VERSION_ID="6.6"
 ID=org.kde.Platform
 PRETTY_NAME="KDE Flatpak runtime"
 BUG_REPORT_URL=https://bugs.kde.org/
