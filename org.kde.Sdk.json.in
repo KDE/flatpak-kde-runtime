@@ -318,26 +318,6 @@
             ]
         },
         {
-            "name": "qt6-qtspeech",
-            "buildsystem": "cmake-ninja",
-            "cleanup-platform": [
-                "/bin"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.6/6.6.0/submodules/qtspeech-everywhere-src-6.6.0.tar.xz",
-                    "sha256": "969bdbff826808f0cfd80e8f2e357f00174489f30d9f895390cf59814abe9f9c",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtspeech-everywhere-src-$version.tar.xz"
-                    }
-                }
-            ]
-        },
-        {
             "name": "qt6-qtmultimedia",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
@@ -353,6 +333,26 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtmultimedia-everywhere-src-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "qt6-qtspeech",
+            "buildsystem": "cmake-ninja",
+            "cleanup-platform": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.qt.io/official_releases/qt/6.6/6.6.0/submodules/qtspeech-everywhere-src-6.6.0.tar.xz",
+                    "sha256": "969bdbff826808f0cfd80e8f2e357f00174489f30d9f895390cf59814abe9f9c",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 7927,
+                        "stable-only": true,
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtspeech-everywhere-src-$version.tar.xz"
                     }
                 }
             ]
