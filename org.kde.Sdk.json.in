@@ -2,7 +2,7 @@
     "build-runtime": true,
     "id": "org.kde.Sdk",
     "id-platform": "org.kde.Platform",
-    "branch": "6.5",
+    "branch": "6.6",
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
     "runtime-version": "22.08",
@@ -38,7 +38,7 @@
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
-            "version": "6.5",
+            "version": "6.6",
             "merge-dirs": "styles",
             "add-ld-path": "lib",
             "download-if": "active-gtk-theme"
@@ -47,7 +47,7 @@
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
-            "version": "6.5",
+            "version": "6.6",
             "merge-dirs": "platformthemes",
             "add-ld-path": "lib",
             "//TODO": "This is currently only used for gnome platform plugin and should be its own extension point",
@@ -58,7 +58,7 @@
             "subdirectories": true,
             "autodelete": true,
             "no-autodownload": true,
-            "version": "6.5",
+            "version": "6.6",
             "merge-dirs": "platforminputcontexts",
             "add-ld-path": "lib"
         },
@@ -66,7 +66,7 @@
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
-            "version": "6.5",
+            "version": "6.6",
             "merge-dirs": "wayland-decoration-client",
             "add-ld-path": "lib",
             "//TODO": "This is currently only used for gnome platform plugin and should be its own extension point",
@@ -83,8 +83,8 @@
         "--env=KDE_FORK_SLAVES=1",
         "--filesystem=xdg-config/kdeglobals:ro",
         "--talk-name=com.canonical.AppMenu.Registrar",
-        "--sdk=org.kde.Sdk//6.5",
-        "--runtime=org.kde.Platform//6.5"
+        "--sdk=org.kde.Sdk//6.6",
+        "--runtime=org.kde.Platform//6.6"
     ],
     "cleanup": [
         "/man",
