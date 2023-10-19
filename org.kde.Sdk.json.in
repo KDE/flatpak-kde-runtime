@@ -1132,10 +1132,6 @@
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kio.git",
                     "tag": "v5.111.0"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/kio-crash.patch"
                 }
             ]
         },
