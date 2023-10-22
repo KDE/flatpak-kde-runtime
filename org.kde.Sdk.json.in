@@ -1893,21 +1893,6 @@
             ]
         },
         {
-            "name": "kwayland-integration",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF",
-                "-DBUILD_WITH_QT6=ON"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://invent.kde.org/plasma/kwayland-integration.git",
-                    "branch": "master"
-                }
-            ]
-        },
-        {
             "name": "qqc2-breeze-style",
             "buildsystem": "cmake-ninja",
             "builddir": true,
