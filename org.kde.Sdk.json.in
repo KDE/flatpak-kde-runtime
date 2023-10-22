@@ -2,7 +2,7 @@
     "build-runtime": true,
     "id": "org.kde.Sdk",
     "id-platform": "org.kde.Platform",
-    "branch": "6.6",
+    "branch": "6.6-kf6preview",
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
     "runtime-version": "23.08",
@@ -83,8 +83,8 @@
         "--env=KDE_FORK_SLAVES=1",
         "--filesystem=xdg-config/kdeglobals:ro",
         "--talk-name=com.canonical.AppMenu.Registrar",
-        "--sdk=org.kde.Sdk//6.6",
-        "--runtime=org.kde.Platform//6.6"
+        "--sdk=org.kde.Sdk//6.6-kf6preview",
+        "--runtime=org.kde.Platform//6.6-kf6preview"
     ],
     "cleanup": [
         "/man",
