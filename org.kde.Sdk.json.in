@@ -1172,8 +1172,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://taglib.github.io/releases/taglib-1.12.tar.gz",
-                            "sha256": "7fccd07669a523b07a15bd24c8da1bbb92206cb19e9366c3692af3d79253b703",
+                            "url": "https://taglib.github.io/releases/taglib-1.13.1.tar.gz",
+                            "sha256": "c8da2b10f1bfec2cd7dbfcd33f4a2338db0765d851a50583d410bacf055cfd0b",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 1982,
