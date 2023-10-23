@@ -1852,8 +1852,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/libical/libical.git",
-                            "tag": "v3.0.16",
-                            "commit": "5990fd0ac00ee3f068909ac86aa642c940720150",
+                            "tag": "v3.0.17",
+                            "commit": "105cebc60084bd986d4e7904eadb56f5b587aa27",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^v([\\d.]+)$"
