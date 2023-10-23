@@ -1244,14 +1244,14 @@
             ],
             "modules": [
                 {
-                    "config-opts": [ "-DENABLE_TESTING=OFF" ],
+                    "config-opts": [ "-DBUILD_TESTS=OFF" ],
                     "name": "qca",
                     "buildsystem": "cmake-ninja",
                     "sources": [
                         {
                             "type": "git",
                             "url": "https://invent.kde.org/libraries/qca.git",
-                            "tag": "v2.3.6",
+                            "tag": "v2.3.7",
                             "commit": "c486ce505b5b341167816da3f81a83678414e145",
                             "x-checker-data": {
                                 "type": "git",
