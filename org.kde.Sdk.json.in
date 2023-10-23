@@ -1763,7 +1763,13 @@
                         {
                             "type": "archive",
                             "url": "https://github.com/strukturag/libheif/archive/v1.17.1/libheif-1.17.1.tar.gz",
-                            "sha256": "97d74c58a346887c1bbf98dcf0322c13b728286153d0f1be2b350f7107e49dba"
+                            "sha256": "97d74c58a346887c1bbf98dcf0322c13b728286153d0f1be2b350f7107e49dba",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 64439,
+                                "stable-only": true,
+                                "url-template": "https://github.com/strukturag/libheif/archive/v$version/libheif-$version.tar.gz"
+                            }
                         }
                     ]
                 },
