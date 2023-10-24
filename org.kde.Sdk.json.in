@@ -1241,7 +1241,9 @@
             ],
             "modules": [
                 {
-                    "config-opts": [ "-DBUILD_TESTS=OFF" ],
+                    "config-opts": [
+                        "-DBUILD_TESTS=OFF"
+                    ],
                     "name": "qca",
                     "buildsystem": "cmake-ninja",
                     "sources": [
