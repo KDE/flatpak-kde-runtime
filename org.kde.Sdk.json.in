@@ -1644,6 +1644,33 @@
             ]
         },
         {
+            "name": "libeditorconfig",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_DOCUMENTATION=OFF"
+            ],
+            "cleanup": [
+                "/bin",
+                "*.a",
+                "/include/editorconfig",
+                "*.pc",
+                "/lib/*/cmake/EditorConfig",
+                "libeditorconfig.so"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.6.tar.gz",
+                    "sha256": "36052a5371731d915b53d9c7a24a11c4032585ccacb392ec9d58656eef4c0edf",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 14833,
+                        "url-template": "https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
             "config-opts": [
                 "-DBUILD_TESTING=OFF"
             ],
