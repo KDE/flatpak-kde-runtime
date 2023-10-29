@@ -2193,13 +2193,14 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://invent.kde.org/network/kio-extras.git",
-                    "tag": "v23.04.2",
-                    "commit": "3866d60482e1471dce4b8a5db22c5807ce10253f",
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/release-service/23.08.2/src/kio-extras-23.08.2.tar.xz",
+                    "sha256": "2b98c6432587286dbf98eeacf03af3cadea267e60f21f7cf445a0c27e94fcc43",
                     "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v(\\d+\\.\\d*[02468]\\.\\d+)$"
+                        "type": "anitya",
+                        "project-id": 8763,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/release-service/$version/src/kio-extras-$version.tar.xz"
                     }
                 }
             ]
