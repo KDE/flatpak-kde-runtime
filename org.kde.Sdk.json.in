@@ -639,7 +639,10 @@
                     "commit": "e9f771e006f26ad79efa2eee18c99bfd8b1b2aaf",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -677,7 +680,10 @@
                     "commit": "702170e43576c1345fea5772a11f5c50e614131e",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -696,7 +702,10 @@
                     "commit": "e0694a6738ddec3ab5361aa914a8003182f02394",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -715,7 +724,10 @@
                     "commit": "e35bcae66cab251cf97ffc1e01ae4dd3f6afb29f",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -734,7 +746,10 @@
                     "commit": "4322eee07cf51c9a9b199f24143bb440109102fe",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -753,7 +768,10 @@
                     "commit": "7df90c7578251a5de203ba7ce78a1a94505fda39",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -772,7 +790,10 @@
                     "commit": "5e85283630dfebf1f0519fb806c48cadb05b6014",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -791,7 +812,10 @@
                     "commit": "b0ffd58e50a53b14f353ee4e4319e3b479fc5687",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -811,7 +835,10 @@
                     "commit": "45f09a84bdc014dae8bac1dbf2a80842054c746f",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -830,7 +857,10 @@
                     "commit": "174f2e568a42a447f4e93ee64a1006a1b2d5fa99",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -849,7 +879,10 @@
                     "commit": "e3e09badf9dacd6550408a7d075dd9558bd009ae",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -868,7 +901,10 @@
                     "commit": "67e654861f73047ac4e2708e94684cb3bcc6592c",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -887,7 +923,10 @@
                     "commit": "1e259029326abbf0ef8dffa6bb37bbe7c25c0b61",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -906,7 +945,10 @@
                     "commit": "cadc8c5e862271a5cabcbce6db654ba44de727e8",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -925,7 +967,10 @@
                     "commit": "4a990eda37e09fbefd07acc6759edf11cdccc031",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -944,7 +989,10 @@
                     "commit": "6939470321cdb2c4ffa9d2c2ccbd795d92dc046b",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -964,7 +1012,10 @@
                     "commit": "ffc7ef9d08e91beb2d41ec66e7f23d6077d05dc6",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -983,7 +1034,10 @@
                     "commit": "43561a9dac9bbc22c9db3096f328fa06b2e60f7d",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1002,7 +1056,10 @@
                     "commit": "5c4157d5974d2fc1c5acd27c68a29b38cdfda9f3",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1021,7 +1078,10 @@
                     "commit": "33d31b270bd6491b30a9e58415bc5ed42889726b",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1040,7 +1100,10 @@
                     "commit": "26442559b13958f9488ed69fb5cc57d38f2c6a75",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1059,7 +1122,10 @@
                     "commit": "7a419ebcd51a3e8fd572a567544c8d90bc4500f4",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1100,7 +1166,10 @@
                     "commit": "53c0acf1eaac54923721e53b9ef1139856bda725",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1119,7 +1188,10 @@
                     "commit": "db3eabf0b32cbf489298f4ca9bd4ee1fd61cdd85",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1138,7 +1210,10 @@
                     "commit": "03a5d29cebaf7aa79368d5a7f9e6f6cb93f134fe",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1157,7 +1232,10 @@
                     "commit": "ead8754532e6ef472a1a55d558dc0271999834b9",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ],
@@ -1219,7 +1297,10 @@
                     "commit": "c8d72a44e89fc694d9f33ff3b47a7a74d2603119",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1238,7 +1319,10 @@
                     "commit": "8e3c50ec05ef9d0deee15d9e3f53e9797803e57d",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ],
@@ -1278,7 +1362,10 @@
                     "commit": "c602aef73b949d9c60a0f19d11c9fb02d99a8afc",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1297,7 +1384,10 @@
                     "commit": "61b94ba62d84ea11e985219c78cad511b6469354",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1316,7 +1406,10 @@
                     "commit": "150864011825737a912ddad83189305354790c00",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1335,7 +1428,10 @@
                     "commit": "82dcc8932f1c00eef9ad3d88448fb455e5aad7eb",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1354,7 +1450,10 @@
                     "commit": "82e24dc9b379abcce87b6f221916b272bb903c2d",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1374,7 +1473,10 @@
                     "commit": "39d1fae123c2e00f53ceb041447c6a80c46e0ef2",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1393,7 +1495,10 @@
                     "commit": "6305f4fe7379cc0c71cc117813751e907ecefcb5",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1412,7 +1517,10 @@
                     "commit": "8bc2e165145adc8ff2fe6b3d8a7875f7adef6ae8",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1431,7 +1539,10 @@
                     "commit": "de8b6df3558c7b4a133aba9877a75013e7814cff",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1450,7 +1561,10 @@
                     "commit": "66a63c79bd010bd8b2e5b2186b6898d2d5934d92",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1469,7 +1583,10 @@
                     "commit": "ce4c4ac3ae6ee66dcf5685cbcb6f333d235487bd",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1489,7 +1606,10 @@
                     "commit": "ba11df6059dfda3743a2a8406e7d9d34c1ffd35e",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1508,7 +1628,10 @@
                     "commit": "6a801c0d25c00c831167b380dd987ee9f0360e84",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1527,7 +1650,10 @@
                     "commit": "089ba51bc4acfc55c0b904525a548e40897673d8",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1546,7 +1672,10 @@
                     "commit": "8e83419f40bde7a7959b0b29dcc5a9122d50ad77",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1565,7 +1694,10 @@
                     "commit": "4aca23fdb5e078f502976385a21d05633934bead",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1584,7 +1716,10 @@
                     "commit": "0071e8ffeb15485fd326ab84e7b827318fddf246",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1603,7 +1738,10 @@
                     "commit": "f4b429793adf82e66b8786828eaf01cd468859d2",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1622,7 +1760,10 @@
                     "commit": "a586743bf8c96067013277de3bbcd07b54f34e55",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1641,7 +1782,10 @@
                     "commit": "654d2e484f026f13f8914cf1e166c87459487be1",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1687,7 +1831,10 @@
                     "commit": "40f67b89545a61ac9ff45e5c9eca8714d90c0f90",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1707,7 +1854,10 @@
                     "commit": "1a0bb122bd94db1b29f320143f8b62241fee2b1d",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1726,7 +1876,10 @@
                     "commit": "1ae6e1f6b39a1d49913dd144a7ce97683088cc19",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1745,7 +1898,10 @@
                     "commit": "bba4d1c3fe3a45d46f9fc30153e52395394c9ded",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1764,7 +1920,10 @@
                     "commit": "5c54d9664ba56ba448e6bae85225c26b0e3afbc8",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1784,7 +1943,10 @@
                     "commit": "6fc9e44e3b53daf60e5ec3e74be37d639016b703",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1804,7 +1966,10 @@
                     "commit": "eee28661cca736de0f5d1c14f46f855e632b8ab8",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1825,7 +1990,10 @@
                     "commit": "c95a8d8b006994f1701aa1cfbd39469f476bbe74",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1845,7 +2013,10 @@
                     "commit": "0483246f49bbc15d68abc106065bbc93fe800a83",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1865,7 +2036,10 @@
                     "commit": "e2458f55109fe66598a6f686c4d0a3c6ddaa1abb",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ],
@@ -1910,7 +2084,10 @@
                     "commit": "4fbbfa1a41c02ecf0e85d993a837f53c1274835a",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -1929,7 +2106,10 @@
                     "commit": "affc5cc75de829fe96916b67589ef52264e3d041",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ],
@@ -2019,7 +2199,10 @@
                     "commit": "82fb106b88e36b5ef7c5ea1716134514cc8f26e7",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -2038,7 +2221,10 @@
                     "commit": "bfbde19d4c6c7378d461d5c5b115b0e6981013ec",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -2057,7 +2243,10 @@
                     "commit": "fd055f9aac2d195214b7505daf27d53df5a955e2",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -2077,7 +2266,10 @@
                     "commit": "0586f500f1f7be7d14c2008148ce7d60db4b575f",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -2100,7 +2292,10 @@
                     "commit": "bc1b221c4daac11edaf6463ba2f8f3458e8eeac1",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
@@ -2120,7 +2315,10 @@
                     "commit": "f6bb59228e8e8ad09915c46aec83954384b4f6aa",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ],
@@ -2210,7 +2408,10 @@
                     "commit": "df9ebb5621cf6be28a89ae836c201a84d2dedc0d",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v5\\.([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
