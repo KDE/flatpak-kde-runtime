@@ -642,7 +642,10 @@
                     "commit": "ebe092511d8986d1b4b244d59649bf8fa2834b7e",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
+                        "tag-pattern": "^v5\\.([\\d.]+)$",
+                        "versions": {
+                            "<": "245.0"
+                        }
                     }
                 }
             ]
