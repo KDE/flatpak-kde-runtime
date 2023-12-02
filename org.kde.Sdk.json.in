@@ -638,8 +638,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git",
-                    "tag": "v5.110.0",
-                    "commit": "ebe092511d8986d1b4b244d59649bf8fa2834b7e",
+                    "tag": "v5.112.0",
+                    "commit": "c783976976216ea397e645b6d08bef9fc8509c3d",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v5\\.([\\d.]+)$",
@@ -663,8 +663,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/fcitx/fcitx5-qt",
-                    "tag": "5.1.1",
-                    "commit": "2e060bc22933e5fdef2c3919fea29b90e0ac0b55",
+                    "tag": "5.1.3",
+                    "commit": "94c86443634b7ef4f1b53eb9f09397a73ead8238",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
