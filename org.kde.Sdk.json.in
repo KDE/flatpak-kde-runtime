@@ -1416,26 +1416,6 @@
             ]
         },
         {
-            "name": "kactivities",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF",
-                "-DKACTIVITIES_LIBRARY_ONLY=ON"
-            ],
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://invent.kde.org/frameworks/kactivities.git",
-                    "tag": "v5.245.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v5.([d.]+)$"
-                    }
-                }
-            ]
-        },
-        {
             "name": "kcmutils",
             "config-opts": [
                 "-DBUILD_TESTING=OFF"
@@ -1645,24 +1625,6 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kpty.git",
-                    "tag": "v5.245.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v5.([d.]+)$"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "kwayland",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://invent.kde.org/frameworks/kwayland.git",
                     "tag": "v5.245.0",
                     "x-checker-data": {
                         "type": "git",
@@ -1920,25 +1882,6 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ksvg.git",
-                    "tag": "v5.245.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v5.([d.]+)$"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "plasma-framework",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://invent.kde.org/frameworks/plasma-framework.git",
                     "tag": "v5.245.0",
                     "x-checker-data": {
                         "type": "git",
