@@ -2061,7 +2061,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/network/kio-extras.git",
-                    "tag": "kf6"
+                    "tag": "master"
                 }
             ]
         },
