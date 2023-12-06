@@ -1264,6 +1264,8 @@
             "name": "phonon",
             "config-opts": [
                 "-DBUILD_TESTING=OFF",
+		"-DPHONON_BUILD_QT6=OFF",
+		"-DPHONON_BUILD_QT5=ON",
                 "-DPHONON_BUILD_PHONON4QT5=ON"
             ],
             "buildsystem": "cmake-ninja",
