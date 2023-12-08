@@ -1416,6 +1416,26 @@
             ]
         },
         {
+            "name": "kactivities",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DKACTIVITIES_LIBRARY_ONLY=ON"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/plasma/plasma-activities.git",
+                    "tag": "v5.112.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v5.([d.]+)$"
+                    }
+                }
+            ]
+        },
+        {
             "name": "kcmutils",
             "config-opts": [
                 "-DBUILD_TESTING=OFF"
@@ -1626,6 +1646,24 @@
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kpty.git",
                     "tag": "v5.245.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v5.([d.]+)$"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "kwayland",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/plasma/kwayland.git",
+                    "tag": "v5.112.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v5.([d.]+)$"
@@ -1883,6 +1921,25 @@
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ksvg.git",
                     "tag": "v5.245.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v5.([d.]+)$"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "libplasma",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/plasma/libplasma.git",
+                    "tag": "v5.112.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v5.([d.]+)$"
