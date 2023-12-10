@@ -1416,7 +1416,7 @@
             ]
         },
         {
-            "name": "kactivities",
+            "name": "plasma-activities",
             "config-opts": [
                 "-DBUILD_TESTING=OFF",
                 "-DKACTIVITIES_LIBRARY_ONLY=ON"
@@ -1425,13 +1425,9 @@
             "builddir": true,
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://invent.kde.org/plasma/plasma-activities.git",
-                    "tag": "v5.112.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v5.([d.]+)$"
-                    }
+                    "type": "archive",
+                    "url": "http://download.kde.org/unstable/plasma/5.90.0/plasma-activities-5.90.0.tar.xz",
+                    "sha256": "20e4a29ca6376f28f74c700febf3d8ea0cd4b0d91fe731080fafa43908f8d1a2"
                 }
             ]
         },
@@ -1661,13 +1657,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://invent.kde.org/plasma/kwayland.git",
-                    "tag": "v5.112.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v5.([d.]+)$"
-                    }
+                    "type": "archive",
+                    "url": "http://download.kde.org/unstable/plasma/5.90.0/kwayland-5.90.0.tar.xz",
+                    "sha256": "1a749c4515f17f33e3a7609fa24caf8d20945c6406250745d7c632b4dffc9ab7"
                 }
             ]
         },
@@ -1937,13 +1929,9 @@
             "builddir": true,
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://invent.kde.org/plasma/libplasma.git",
-                    "tag": "v5.112.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v5.([d.]+)$"
-                    }
+                    "type": "archive",
+                    "url": "http://download.kde.org/unstable/plasma/5.90.0/libplasma-5.90.0.tar.xz",
+                    "sha256": "aa99703d6434816b669c2c37a031110df40facc022d803211d39805c6d4a78e0"
                 }
             ]
         },
