@@ -1419,7 +1419,7 @@
             "name": "boost",
             "buildsystem": "simple",
             "build-commands": [
-                "./bootstrap.sh --prefix=/app --with-libraries=system",
+                "./bootstrap.sh --prefix=$FLATPAK_DEST --with-libraries=system",
                 "./b2 -j $FLATPAK_BUILDER_N_JOBS install"
             ],
             "cleanup": [
@@ -1435,7 +1435,7 @@
                         "project-id": 6845,
                         "stable-only": true,
                         "url-template": "https://boostorg.jfrog.io/artifactory/main/release/$version/source/boost_${major}_${minor}_$patch.tar.bz2"
-  		    }
+		    }
                 }
             ]
         },
