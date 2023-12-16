@@ -1458,7 +1458,7 @@
         {
             "name": "plasma-activities-stats",
             "config-opts": [
-                "-DBUILD_TESTING=OFF",
+                "-DBUILD_TESTING=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
