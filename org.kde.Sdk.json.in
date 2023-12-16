@@ -1450,7 +1450,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.kde.org/unstable/plasma/5.90.0/plasma-activities-5.90.0.tar.xz",
+                    "url": "https://download.kde.org/unstable/plasma/5.90.0/plasma-activities-5.90.0.tar.xz",
                     "sha256": "20e4a29ca6376f28f74c700febf3d8ea0cd4b0d91fe731080fafa43908f8d1a2"
                 }
             ]
@@ -1682,7 +1682,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.kde.org/unstable/plasma/5.90.0/kwayland-5.90.0.tar.xz",
+                    "url": "https://download.kde.org/unstable/plasma/5.90.0/kwayland-5.90.0.tar.xz",
                     "sha256": "1a749c4515f17f33e3a7609fa24caf8d20945c6406250745d7c632b4dffc9ab7"
                 }
             ]
@@ -1954,7 +1954,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://download.kde.org/unstable/plasma/5.90.0/libplasma-5.90.0.tar.xz",
+                    "url": "https://download.kde.org/unstable/plasma/5.90.0/libplasma-5.90.0.tar.xz",
                     "sha256": "aa99703d6434816b669c2c37a031110df40facc022d803211d39805c6d4a78e0"
                 }
             ]
