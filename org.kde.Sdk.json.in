@@ -1443,7 +1443,7 @@
             "name": "plasma-activities",
             "config-opts": [
                 "-DBUILD_TESTING=OFF",
-                "-DKACTIVITIES_LIBRARY_ONLY=ON"
+                "-DPLASMA_ACTIVITIES_LIBRARY_ONLY=ON"
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
