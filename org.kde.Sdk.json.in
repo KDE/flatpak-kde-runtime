@@ -1456,6 +1456,21 @@
             ]
         },
         {
+            "name": "plasma-activities-stats",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/unstable/plasma/5.90.0/plasma-activities-stats-5.90.0.tar.xz",
+                    "sha256": "42c7ad00fa952ba3948fc49e135516afcd7e039467cc216df643766055349e3a"
+                }
+            ]
+        },
+        {
             "name": "kcmutils",
             "config-opts": [
                 "-DBUILD_TESTING=OFF"
