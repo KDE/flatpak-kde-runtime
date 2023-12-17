@@ -672,9 +672,6 @@
         {
             "name": "plasma-wayland-protocols",
             "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
             "sources": [
                 {
                     "type": "git",
@@ -812,8 +809,7 @@
         {
             "name": "karchive",
             "config-opts": [
-                "-DBUILD_TESTING=OFF",
-                "-DCMAKE_DISABLE_FIND_PACKAGE_Qt5Test=TRUE"
+                "-DBUILD_TESTING=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "sources": [
@@ -1256,7 +1252,7 @@
             "modules": [
                 {
                     "config-opts": [
-                        "-DENABLE_TESTING=OFF",
+                        "-DBUILD_TESTS=OFF",
                         "-DBUILD_WITH_QT6=ON"
                     ],
                     "name": "qca",
@@ -1666,8 +1662,7 @@
         {
             "name": "kirigami",
             "config-opts": [
-                "-DBUILD_TESTING=OFF",
-                "-DPLASMA_ENABLED=OFF"
+                "-DBUILD_TESTING=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
@@ -2098,8 +2093,7 @@
         {
             "name": "plasma-activities-stats",
             "config-opts": [
-                "-DBUILD_TESTING=OFF",
-                "-DPLASMA_ACTIVITIES_LIBRARY_ONLY=ON"
+                "-DBUILD_TESTING=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
