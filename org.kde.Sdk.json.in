@@ -1416,30 +1416,6 @@
             ]
         },
         {
-            "name": "boost",
-            "buildsystem": "simple",
-            "build-commands": [
-                "./bootstrap.sh --prefix=$FLATPAK_DEST --with-libraries=system",
-                "./b2 -j $FLATPAK_BUILDER_N_JOBS install"
-            ],
-            "cleanup": [
-                "*.a"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.84.0/source/boost_1_84_0.tar.bz2",
-                    "sha256": "cc4b893acf645c9d4b698e9a0f08ca8846aa5d6c68275c14c3e7949c24109454",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 6845,
-                        "stable-only": true,
-                        "url-template": "https://boostorg.jfrog.io/artifactory/main/release/$version/source/boost_${major}_${minor}_$patch.tar.bz2"
-                    }
-                }
-            ]
-        },
-        {
             "name": "plasma-activities",
             "config-opts": [
                 "-DBUILD_TESTING=OFF",
