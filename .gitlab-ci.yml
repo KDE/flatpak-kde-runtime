@@ -45,6 +45,7 @@ build-runtime:
     - flatpak-builder --install-deps-from=flathub --user --disable-rofiles-fuse --arch=$ARCH --force-clean --require-changes --ccache --repo=repo --subject="build of org.kde.Sdk, `date` $(`git rev-parse HEAD`)" sdk org.kde.Sdk.json
     # Get the branch name from the JSON manifest
     - flatpak_branch=$(jq -r .branch org.kde.Sdk.json)
+    - flatpak build-bundle --runtime --arch=$ARCH repo runtime.flatpak org.kde.Platform $flatpak_branch
     - flatpak build-bundle --runtime --arch=$ARCH repo runtime.flatpak org.kde.Sdk $flatpak_branch
     # Sign and publish (if the project branch is cleared for signing and publishing)
     - python3 ci-notary-service/signflatpak.py -v --config $KDECI_SIGNFLATPAK_CONFIG runtime.flatpak
