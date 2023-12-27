@@ -626,6 +626,26 @@
             ]
         },
         {
+            "name": "qt6-qtlocation",
+            "buildsystem": "cmake-ninja",
+            "cleanup-platform": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.qt.io/official_releases/qt/6.6/6.6.1/submodules/qtlocation-everywhere-src-6.6.1.tar.xz",
+                    "sha256": "8dbe2b62e37278c83c5acdb536c3e4c313ec0bac5380d020873db692199f9c29",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 7927,
+                        "stable-only": true,
+                        "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtlocation-everywhere-src-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
             "name": "extra-cmake-modules",
             "cleanup-platform": [
                 "*"
