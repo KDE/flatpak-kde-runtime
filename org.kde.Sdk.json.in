@@ -1494,8 +1494,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/unstable/plasma/5.91.0/plasma-activities-5.91.0.tar.xz",
-                    "sha256": "ec0958ef2002a6a2236b7402c2d1b952ce00770514f3eccc575d3e7f941884bd"
+                    "url": "https://download.kde.org/unstable/plasma/5.92.0/plasma-activities-5.92.0.tar.xz",
+                    "sha256": "2ac1e844f8e840a8b77e3323c4badcf8ed5997633d6cc12812d157bb50fe77c3"
                 }
             ]
         },
@@ -1738,8 +1738,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/unstable/plasma/5.91.0/kwayland-5.91.0.tar.xz",
-                    "sha256": "6e7d22eaf10eaf6587d2fb63b60bf88db3c018a98f364187a08634d695dae9d8"
+                    "url": "https://download.kde.org/unstable/plasma/5.92.0/kwayland-5.92.0.tar.xz",
+                    "sha256": "d9abb060473127a0d0fbe6a6ab2e12260ae68e72fe6179717cb820a9f9ae273a"
                 }
             ]
         },
@@ -2019,8 +2019,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/unstable/plasma/5.91.0/libplasma-5.91.0.tar.xz",
-                    "sha256": "c5bed16526b19edbba4a5aeab1ecb4aa2a3744f2cfcad0874685546fab56c047"
+                    "url": "https://download.kde.org/unstable/plasma/5.92.0/libplasma-5.92.0.tar.xz",
+                    "sha256": "738dcf328e19b02dc25b5ddada675b5240d944302f0c5110126f33187879b9d0"
                 }
             ]
         },
@@ -2198,8 +2198,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/unstable/plasma/5.91.0/plasma-activities-stats-5.91.0.tar.xz",
-                    "sha256": "364b18ac0eef048b18d7cb1cc738bd4c91f462004f731e369ee09c2246bde36e"
+                    "url": "https://download.kde.org/unstable/plasma/5.92.0/plasma-activities-stats-5.92.0.tar.xz",
+                    "sha256": "c66c65815891436edb5b1dbfd566c1e5dd3ee4f408a7a89569f4ca9279c07a12"
                 }
             ]
         },
