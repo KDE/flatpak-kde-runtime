@@ -708,8 +708,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git",
-                    "tag": "v5.112.0",
-                    "commit": "c783976976216ea397e645b6d08bef9fc8509c3d",
+                    "tag": "v5.115.0",
+                    "commit": "09025604cf16a63c8bd0d8d871c7edc44ca47aab",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v5\\.([\\d.]+)$",
