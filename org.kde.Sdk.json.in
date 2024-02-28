@@ -712,7 +712,7 @@
                         "stable-only": true,
                         "versions": {
                             "<": "6.7.0"
-                        }
+                        },
                         "url-template": "https://download.qt.io/official_releases/qt/6.6/$version/submodules/qtlocation-everywhere-src-$version.tar.xz"
                     }
                 }
@@ -734,8 +734,9 @@
                     "tag": "v6.0.0",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v6\\.([\\d.]+)$",
-                    }
+                        "tag-pattern": "^v6\\.([\\d.]+)$"
+                    },
+                    "commit": "a97a3e5897a34ae5ef495bc88a762c5c1d789d24"
                 }
             ]
         },
@@ -758,6 +759,1588 @@
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
                     }
+                }
+            ]
+        },
+        {
+            "name": "plasma-wayland-protocols",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git",
+                    "tag": "v1.11.1",
+                    "x-checker-data": {
+                        "type": "git"
+                    },
+                    "commit": "2ac008b14c0527d4212e50ee6e4fd6ad84dd8933"
+                }
+            ]
+        },
+        {
+            "name": "kwidgetsaddons",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kwidgetsaddons.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "61b63b2786e15c1a4ead958d129a6e9b128f0e47"
+                }
+            ]
+        },
+        {
+            "name": "ki18n",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/ki18n.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "7e987c1863d53b81b7971a992375476734e23e02"
+                }
+            ]
+        },
+        {
+            "name": "kconfig",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kconfig.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "965f54ced5caed0e9263b94cb1ae4a56a7408576"
+                }
+            ]
+        },
+        {
+            "name": "attica",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/attica.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "8b5cb3c72a046a895dcd8a025d4ee2a090cb0dd2"
+                }
+            ]
+        },
+        {
+            "name": "kguiaddons",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kguiaddons.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "b92d00d1742afdc4f54c5b3cb2922735de35366b"
+                }
+            ]
+        },
+        {
+            "name": "kcoreaddons",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kcoreaddons.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "352136ae57a3754019b0865329133c16b8918f4f"
+                }
+            ]
+        },
+        {
+            "name": "kauth",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kauth.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "058d67927db046c08602590428209e503556443d"
+                }
+            ]
+        },
+        {
+            "name": "karchive",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/karchive.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "91b3245636748650b0616a89e5498a55918a3ebf"
+                }
+            ]
+        },
+        {
+            "name": "kcodecs",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kcodecs.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "9b6f3c1fdb37825c552640eeb913086f4c657b4a"
+                }
+            ]
+        },
+        {
+            "name": "kcolorscheme",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kcolorscheme.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "238785ebd69bea3c8c805fad8f470a396b220911"
+                }
+            ]
+        },
+        {
+            "name": "kconfigwidgets",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kconfigwidgets.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "e33e9a2df80e8627a10639aec9cbd069c8dc3f3f"
+                }
+            ]
+        },
+        {
+            "name": "kitemviews",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kitemviews.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "baffd574161ca64827b7a2e8776b443ef0438694"
+                }
+            ]
+        },
+        {
+            "name": "kiconthemes",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kiconthemes.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "8f3092884a079a056611ad0c2dcbcc1ac14acb06"
+                }
+            ]
+        },
+        {
+            "name": "kwindowsystem",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kwindowsystem.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "59e0d2da5bb6ae521bb918dd71130bd9b69425fc"
+                }
+            ]
+        },
+        {
+            "name": "kcrash",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kcrash.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "90f800f42ea1d17486a7178869b3df485ba801e4"
+                }
+            ]
+        },
+        {
+            "name": "kdbusaddons",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kdbusaddons.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "32ca9d0fc6f2f0c789f7d234815c78314ee9da54"
+                }
+            ]
+        },
+        {
+            "name": "kservice",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kservice.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "73e4c69f2b17fa7f87f00ed2c2905afe32a21c45"
+                }
+            ]
+        },
+        {
+            "name": "kglobalaccel",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kglobalaccel.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "5c5fd115d92e6f63331318f50be53209e0888411"
+                }
+            ]
+        },
+        {
+            "name": "sonnet",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/sonnet.git",
+                    "tag": "v6.0.0",
+                    "commit": "1001e9fcebe265564b8d61f7cfc16eb90585c454",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "kcompletion",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kcompletion.git",
+                    "tag": "v6.0.0",
+                    "commit": "d0ae438bcfaa7d2b3b6f916460c5478c66696a52",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ktextwidgets",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/ktextwidgets.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "88f003a94fc8901c6720caeae383798d13a49d32"
+                }
+            ]
+        },
+        {
+            "name": "kxmlgui",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kxmlgui.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "2cdf71b131333fbcf62aa487ef43650120a04281"
+                }
+            ]
+        },
+        {
+            "name": "perl-uri-escape",
+            "cleanup-platform": [
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/URI-1.74.tar.gz",
+                    "sha256": "a9c254f45f89cb1dd946b689dfe433095404532a4543bdaab0b71ce0fdcdd53d"
+                },
+                {
+                    "type": "script",
+                    "commands": [
+                        "perl Makefile.PL INSTALLDIRS=vendor"
+                    ],
+                    "dest-filename": "configure"
+                }
+            ]
+        },
+        {
+            "name": "kdoctools",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DDocBookXSL_DIR=/usr/share/xml/docbook/xml/xsl-stylesheets/",
+                "-DDTD_PATH_LIST=/usr/share/xml/docbook/xml-dtd/4.5/"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kdoctools.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "35d9c03403f9e3bd986e4a7169ec4c40e90a9965"
+                }
+            ]
+        },
+        {
+            "name": "kpackage",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kpackage.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "18f49442f9f85b61a31e82547870ea903886c08b"
+                }
+            ]
+        },
+        {
+            "name": "kbookmarks",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kbookmarks.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "126aa0cfcfda68acdfeda0e1407e9507e4731275"
+                }
+            ]
+        },
+        {
+            "name": "kfilemetadata",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kfilemetadata.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "b3643aa01df86c7d88238bfb6761227a327e71ab"
+                }
+            ],
+            "modules": [
+                {
+                    "name": "taglib",
+                    "config-opts": [
+                        "-DBUILD_SHARED_LIBS=ON",
+                        "-DLIB_INSTALL_DIR:PATH=/usr/lib/@@SDK_ARCH@@-linux-gnu"
+                    ],
+                    "buildsystem": "cmake-ninja",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/taglib/taglib/archive/refs/tags/v1.13.1.tar.gz",
+                            "sha256": "c8da2b10f1bfec2cd7dbfcd33f4a2338db0765d851a50583d410bacf055cfd0b",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 1982,
+                                "stable-only": true,
+                                "url-template": "https://github.com/taglib/taglib/archive/refs/tags/v$version.tar.gz"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "phonon",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DPHONON_BUILD_QT5=OFF",
+                "-DPHONON_BUILD_QT6=ON"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/phonon/4.12.0/phonon-4.12.0.tar.xz",
+                    "sha256": "3287ffe0fbcc2d4aa1363f9e15747302d0b080090fe76e5f211d809ecb43f39a",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 229047,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/phonon/$version/phonon-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "canberra",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "git://git.0pointer.net/libcanberra.git",
+                    "tag": "master"
+                }
+            ]
+        },
+        {
+            "name": "knotifications",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/knotifications.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "1058f3115c05f6d1c26ad6eccffe6b4ea1275fd1"
+                }
+            ]
+        },
+        {
+            "name": "kwallet",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kwallet.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "1612d6b9b4870a3f49687bc4a0eb82ca570a17c7"
+                }
+            ],
+            "modules": [
+                {
+                    "config-opts": [
+                        "-DBUILD_TESTS=OFF",
+                        "-DBUILD_WITH_QT6=ON"
+                    ],
+                    "name": "qca",
+                    "buildsystem": "cmake-ninja",
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://invent.kde.org/libraries/qca.git",
+                            "tag": "v2.3.5"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "kjobwidgets",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kjobwidgets.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "2d26bd889d901787db07261a7c7698de0ce46d39"
+                }
+            ]
+        },
+        {
+            "name": "solid",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/solid.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "a7d5db7c4d06e0cb744fb367ce0409038bcdcbf2"
+                }
+            ]
+        },
+        {
+            "name": "kio",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kio.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "f0223bbfdedaa306d76a48e50cb57f776dd5cedc"
+                }
+            ]
+        },
+        {
+            "name": "kparts",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kparts.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "2c6b6e75f50847a092a5bc1df563853b60782605"
+                }
+            ]
+        },
+        {
+            "name": "kplotting",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kplotting.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "3dea5f2e8433b5b9f4ba70b45661d13907d5135e"
+                }
+            ]
+        },
+        {
+            "name": "kded",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kded.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "26b414e6450051163d0ac9432589d5abdb8d5191"
+                }
+            ]
+        },
+        {
+            "name": "kunitconversion",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kunitconversion.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "73b5f988fb3998cc0966afba1c4fef2090cd8988"
+                }
+            ]
+        },
+        {
+            "name": "kdeclarative",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kdeclarative.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "1a38ffd5b94127e82b952c55f268017dad5f465c"
+                }
+            ]
+        },
+        {
+            "name": "plasma-activities",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DPLASMA_ACTIVITIES_LIBRARY_ONLY=ON"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/plasma/6.0.0/plasma-activities-6.0.0.tar.xz",
+                    "sha256": "f0bd07bbcd9022c72e564046046029b39f71d1cc5b467b9f50914813043b2795"
+                }
+            ]
+        },
+        {
+            "name": "kcmutils",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kcmutils.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "80db4e37396298c5712aa48a943f0a89637f83b7"
+                }
+            ]
+        },
+        {
+            "name": "knotifyconfig",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/knotifyconfig.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "7c889eb3006a3ca5de044cadcd8cdf5adbe93ce6"
+                }
+            ]
+        },
+        {
+            "name": "knewstuff",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/knewstuff.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "a6a02162cd2c71fb986aadc77f3ce3cd32da7837"
+                }
+            ]
+        },
+        {
+            "name": "kidletime",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kidletime.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "ec86623bed1b813bceaf7a7a050cfe3e9a21539b"
+                }
+            ]
+        },
+        {
+            "name": "threadweaver",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/threadweaver.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "07ecd6d69c488862e9272697bf16ab8c353a40c2"
+                }
+            ]
+        },
+        {
+            "name": "kitemmodels",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kitemmodels.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "90204984228739eead9b46af2441022b0505f468"
+                }
+            ]
+        },
+        {
+            "name": "kdnssd",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kdnssd.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "4f4931c49dfdc396e8fc28465c687b68ffcd38b4"
+                }
+            ]
+        },
+        {
+            "name": "kquickcharts",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kquickcharts.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "1185191c5ff2b18f2a7aa6d45fb1917fade53d72"
+                }
+            ]
+        },
+        {
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "name": "syntax-highlighting",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/syntax-highlighting.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "e3e4b7767afea8c7336f402edefa40d70658200d"
+                }
+            ]
+        },
+        {
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "name": "ktexteditor",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/ktexteditor.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "7c81f20ceaddacff694b053af62d2f3de6b73734"
+                }
+            ]
+        },
+        {
+            "name": "frameworkintegration",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/frameworkintegration.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "7fbeabd9b429dd6e42be5cee04f64c15bb9ccad0"
+                }
+            ]
+        },
+        {
+            "name": "kpty",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kpty.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "2e6eac2edfe596b6923b042696c3c12e53df5cc9"
+                }
+            ]
+        },
+        {
+            "name": "kwayland",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/plasma/6.0.0/kwayland-6.0.0.tar.xz",
+                    "sha256": "00312094681966a4cf692288398047a24136f1bce132307304d0dffa1cf9ed79"
+                }
+            ]
+        },
+        {
+            "name": "kirigami",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kirigami.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "e74e2c4e06669980ca9a0fc5bbc9fb0c3d335035"
+                }
+            ]
+        },
+        {
+            "name": "qqc2-desktop-style",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/qqc2-desktop-style.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "e75791459b3c431acd1c96420e477ad8c9d1ffb0"
+                }
+            ]
+        },
+        {
+            "name": "kcontacts",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kcontacts.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v6([\\d.]+)$"
+                    },
+                    "commit": "21d5b91dabcf86c83f5594cea8b828779e21db95"
+                }
+            ]
+        },
+        {
+            "name": "kcalendarcore",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "builddir": true,
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kcalendarcore.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v6([\\d.]+)$"
+                    },
+                    "commit": "590e2f17f0bb93118be386282ca1c5e97c13115e"
+                }
+            ],
+            "modules": [
+                {
+                    "name": "libical",
+                    "buildsystem": "cmake-ninja",
+                    "builddir": true,
+                    "config-opts": [
+                        "-DICAL_BUILD_DOCS=OFF",
+                        "-DICAL_GLIB=OFF",
+                        "-DWITH_CXX_BINDINGS=OFF",
+                        "-DSHARED_ONLY=ON"
+                    ],
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/libical/libical.git",
+                            "tag": "v3.0.16"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "kholidays",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kholidays.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v6([\\d.]+)$"
+                    },
+                    "commit": "54eac0d7d6b475cb4e1c7bbbd28b93d7b561ae80"
+                }
+            ]
+        },
+        {
+            "name": "prison",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/prison.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "f54b9f57a715af3f9ae0421239cc2848e2342c73"
+                }
+            ],
+            "modules": [
+                {
+                    "name": "qrencode",
+                    "buildsystem": "cmake-ninja",
+                    "config-opts": [
+                        "-DBUILD_SHARED_LIBS=ON",
+                        "-DWITH_TOOLS=OFF"
+                    ],
+                    "builddir": true,
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://fukuchi.org/works/qrencode/qrencode-4.1.1.tar.gz",
+                            "sha256": "da448ed4f52aba6bcb0cd48cac0dd51b8692bccc4cd127431402fca6f8171e8e"
+                        }
+                    ]
+                },
+                {
+                    "name": "libdmtx",
+                    "config-opts": [
+                        "--disable-static"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/dmtx/libdmtx/archive/v0.7.7.tar.gz",
+                            "sha256": "7aa62adcefdd6e24bdabeb82b3ce41a8d35f4a0c95ab0c4438206aecafd6e1a1"
+                        }
+                    ]
+                },
+                {
+                    "name": "zxing",
+                    "config-opts": [
+                        "-DBUILD_DEPENDENCIES=LOCAL",
+                        "-DBUILD_SHARED_LIBS=ON",
+                        "-DBUILD_UNIT_TESTS=OFF",
+                        "-DBUILD_BLACKBOX_TESTS=OFF",
+                        "-DBUILD_EXAMPLES=OFF"
+                    ],
+                    "buildsystem": "cmake-ninja",
+                    "builddir": true,
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/nu-book/zxing-cpp/archive/refs/tags/v1.4.0.tar.gz",
+                            "sha256": "126767bb56f8a1f25ae84d233db2e9b9be50d71f5776092d0e170ca0f0ed1862"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "syndication",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/syndication.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v6([\\d.]+)$"
+                    },
+                    "commit": "e98a7b8f50195278cc383142a5bd647640928f2d"
+                }
+            ]
+        },
+        {
+            "name": "purpose",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/purpose.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "b78a1ae9a2ddc78a8799181f708ee834c461465e"
+                }
+            ]
+        },
+        {
+            "name": "kdav",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kdav.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v6([\\d.]+)$"
+                    },
+                    "commit": "cfe9bfa48cafe965dd531eca4fb6891adaa23e43"
+                }
+            ]
+        },
+        {
+            "name": "ksvg",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/ksvg.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "977636aeb3cd095287dcc7cf11bbb817066f081a"
+                }
+            ]
+        },
+        {
+            "name": "libplasma",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/plasma/6.0.0/libplasma-6.0.0.tar.xz",
+                    "sha256": "b1d8f4701a009dd18797cbf68f06bdc45a3e85a243b04190890b4b40440927d2"
+                }
+            ]
+        },
+        {
+            "name": "breeze-icons",
+            "cleanup-platform": [
+                "*.rcc"
+            ],
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/breeze-icons.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "23cb48a329a932c8e595e0604115f9f55dab1820"
+                }
+            ]
+        },
+        {
+            "name": "kimageformats",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kimageformats.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "4be09ba41919dc7b8d0edad7fceb959ed13221c6"
+                }
+            ],
+            "modules": [
+                {
+                    "name": "libjxl",
+                    "config-opts": [
+                        "-DBUILD_TESTING=OFF",
+                        "-DJPEGXL_ENABLE_BENCHMARK=OFF",
+                        "-DJPEGXL_ENABLE_DOXYGEN=OFF",
+                        "-DJPEGXL_ENABLE_EXAMPLES=OFF",
+                        "-DJPEGXL_ENABLE_JNI=OFF",
+                        "-DJPEGXL_ENABLE_MANPAGES=OFF",
+                        "-DJPEGXL_ENABLE_PLUGINS=OFF",
+                        "-DJPEGXL_ENABLE_SJPEG=OFF",
+                        "-DJPEGXL_ENABLE_SKCMS=ON",
+                        "-DJPEGXL_ENABLE_TCMALLOC=OFF",
+                        "-DJPEGXL_ENABLE_TOOLS=OFF",
+                        "-DJPEGXL_FORCE_SYSTEM_BROTLI=ON",
+                        "-DJPEGXL_WARNINGS_AS_ERRORS=OFF"
+                    ],
+                    "buildsystem": "cmake-ninja",
+                    "builddir": true,
+                    "cleanup": [
+                        "*.a",
+                        "/include/hwy",
+                        "/include/jxl",
+                        "*.pc",
+                        "libjxl_threads.so",
+                        "libjxl.so"
+                    ],
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/libjxl/libjxl.git",
+                            "tag": "v0.7.0",
+                            "commit": "f95da131cf7c7ccd4da256356fde2fec1fa23bb5"
+                        }
+                    ]
+                },
+                {
+                    "name": "libavif",
+                    "config-opts": [
+                        "-DAVIF_CODEC_AOM=ON",
+                        "-DAVIF_ENABLE_WERROR=OFF"
+                    ],
+                    "buildsystem": "cmake-ninja",
+                    "builddir": true,
+                    "cleanup": [
+                        "/include/avif",
+                        "*.pc",
+                        "/lib/*/cmake/libavif",
+                        "libavif.so"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/AOMediaCodec/libavif/archive/refs/tags/v0.11.1.tar.gz",
+                            "sha256": "0eb49965562a0e5e5de58389650d434cff32af84c34185b6c9b7b2fccae06d4e"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "bluez-qt",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/bluez-qt.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "ea5e7cea707c53e813395fb75dd1815758a253a7"
+                }
+            ]
+        },
+        {
+            "name": "kstatusnotifieritem",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kstatusnotifieritem.git",
+                    "tag": "v6.0.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "0fe021b5a03f85bf39b8ef925a0125aafadb5e67"
+                }
+            ]
+        },
+        {
+            "name": "qcoro",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DCMAKE_BUILD_TYPE=Release"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/danvratil/qcoro/archive/refs/tags/v0.10.0.tar.gz",
+                    "sha256": "b7c8f00273ad27d85814bf4ec93eb6922c75656800a61d11854d36355a4a1aec",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 236236,
+                        "stable-only": true,
+                        "url-template": "https://github.com/danvratil/qcoro/archive/refs/tags/v$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "plasma-activities-stats",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/plasma/6.0.0/plasma-activities-stats-6.0.0.tar.xz",
+                    "sha256": "5e6ab0fe5f3c5db0de2ebe6adcd79c26170b92addc056cf35f0484fb45007d2e"
+                }
+            ]
+        },
+        {
+            "name": "kio-extras",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_WITH_QT6=ON"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/network/kio-extras.git",
+                    "commit": "ad965393b5beeb47674794948971f1dddcbdd5f9",
+                    "tag": "v24.02.0"
+                }
+            ]
+        },
+        {
+            "name": "breeze",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DWITH_DECORATIONS=OFF",
+                "-DWITH_WALLPAPERS=OFF",
+                "-DBUILD_QT5=OFF",
+                "-DBUILD_QT6=ON"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/plasma/breeze.git",
+                    "tag": "v6.0.0",
+                    "commit": "28b7841c361c83b0f0f4748d0cf7eca64d3f338c"
+                }
+            ]
+        },
+        {
+            "name": "plasma-integration",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_QT5=OFF",
+                "-DBUILD_QT6=ON"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/plasma/plasma-integration.git",
+                    "tag": "v6.0.0",
+                    "commit": "9ea2cb00038e19b14c7a18fd3bc542c51b73594a"
+                }
+            ]
+        },
+        {
+            "name": "qqc2-breeze-style",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/plasma/qqc2-breeze-style.git",
+                    "tag": "v6.0.0",
+                    "commit": "2507a749b6d963c417a815e6b88872592cd182ba"
                 }
             ]
         },
