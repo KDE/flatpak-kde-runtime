@@ -2083,21 +2083,6 @@
             ]
         },
         {
-            "name": "libplasma",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.kde.org/stable/plasma/6.0.0/libplasma-6.0.0.tar.xz",
-                    "sha256": "b1d8f4701a009dd18797cbf68f06bdc45a3e85a243b04190890b4b40440927d2"
-                }
-            ]
-        },
-        {
             "name": "breeze-icons",
             "cleanup-platform": [
                 "*.rcc"
