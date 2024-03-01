@@ -84,6 +84,8 @@
         "--env=PYTHONUSERBASE=/var/data/python",
         "--filesystem=xdg-config/kdeglobals:ro",
         "--talk-name=com.canonical.AppMenu.Registrar",
+        "--talk-name=org.kde.kconfig.notify",
+        "--talk-name=org.kde.KGlobalSettings",
         "--sdk=org.kde.Sdk//6.6",
         "--runtime=org.kde.Platform//6.6"
     ],
