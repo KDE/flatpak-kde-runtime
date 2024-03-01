@@ -2338,6 +2338,26 @@
             ]
         },
         {
+            "name": "libplasma",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/plasma/libplasma.git",
+                    "tag": "v6.0.0",
+                    "commit": "7ee7e23d8de545d2a57a3a801a030d484b500772",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v6\\.([\\d.]+)$"
+                    }
+                }
+            ]
+        },
+        {
             "name": "os-release",
             "post-install": [
                 "mkdir -p /usr/share/runtime/lib/plugins/"
