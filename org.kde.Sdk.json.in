@@ -82,6 +82,8 @@
         "--env=QML2_IMPORT_PATH=/app/lib64/qml:/app/lib/qml",
         "--env=KDE_FORK_SLAVES=1",
         "--env=PYTHONUSERBASE=/var/data/python",
+        "--env=ALSA_CONFIG_PATH=/usr/share/alsa/alsa-flatpak.conf",
+        "--env=ALSA_CONFIG_DIR=/usr/share/alsa",
         "--filesystem=xdg-config/kdeglobals:ro",
         "--talk-name=com.canonical.AppMenu.Registrar",
         "--talk-name=org.kde.kconfig.notify",
