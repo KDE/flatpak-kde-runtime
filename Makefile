@@ -13,6 +13,12 @@ INHERIT_EXTS ?= org.freedesktop.Sdk.Compat.$(COMPAT_ARCH) \
                 org.freedesktop.Sdk.Compat.$(COMPAT_ARCH).Debug
 endif
 
+ifeq ($(wildcard /run/.containerenv),)
+    DISABLE_ROFILES_FUSE =
+else
+    DISABLE_ROFILES_FUSE = "--disable-rofiles-fuse"
+endif
+
 all: $(REPO)/config $(foreach file, $(wildcard *.json.in), $(subst .json.in,.app,$(file)))
 
 %.json: %.json.in append-to-json.py
@@ -20,7 +26,7 @@ all: $(REPO)/config $(foreach file, $(wildcard *.json.in), $(subst .json.in,.app
 	< $< | sed "s,@@SDK_ARCH@@,$(ARCH),g" > $@
 
 %.app: %.json
-	flatpak-builder $(INSTALL_SOURCE) $(FB_ARGS) --arch=$(ARCH) --force-clean --require-changes --ccache --repo=$(REPO) --subject="build of org.kde.Sdk, `date` (`git rev-parse HEAD`)" ${EXPORT_ARGS} $(TMP) $<
+	flatpak-builder $(INSTALL_SOURCE) $(FB_ARGS) --arch=$(ARCH) $(DISABLE_ROFILES_FUSE) --force-clean --require-changes --ccache --repo=$(REPO) --subject="build of org.kde.Sdk, `date` (`git rev-parse HEAD`)" ${EXPORT_ARGS} $(TMP) $<
 
 export:
 	flatpak build-update-repo $(REPO) ${EXPORT_ARGS} --generate-static-deltas
