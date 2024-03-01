@@ -27,3 +27,36 @@ flatpak:
     - json-glib-validate org.kde.Sdk.json.in
     - json-glib-validate org.freedesktop.Platform.Icontheme.Adwaita.json
     - json-glib-validate flathub.json
+
+build-runtime:
+  stage: build
+  when: manual
+  image: invent-registry.kde.org/sysadmin/ci-images/flatpak-builder:latest
+  tags:
+    - Linux
+  variables:
+    KDECI_SIGNFLATPAK_CONFIG: $CI_PROJECT_DIR/ci-utilities/signing/signflatpak.ini
+    ARCH: x86_64
+  before_script:
+    - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
+    - git clone https://invent.kde.org/sysadmin/ci-notary-service.git --depth=1
+  script:
+    - sed "s,@@SDK_ARCH@@,${ARCH},g" org.kde.Sdk.json.in > org.kde.Sdk.json
+    - flatpak-builder --install-deps-from=flathub --user --disable-rofiles-fuse --arch=$ARCH --force-clean --require-changes --ccache --repo=repo --subject="build of org.kde.Sdk, `date` $(`git rev-parse HEAD`)" sdk org.kde.Sdk.json
+    # Get the branch name from the JSON manifest
+    - flatpak_branch=$(jq -r .branch org.kde.Sdk.json)
+    - flatpak build-bundle --runtime --arch=$ARCH repo platform.flatpak org.kde.Platform $flatpak_branch
+    - flatpak build-bundle --runtime --arch=$ARCH repo sdk.flatpak org.kde.Sdk $flatpak_branch
+    # Sign and publish (if the project branch is cleared for signing and publishing)
+    - python3 ci-notary-service/signflatpak.py -v --config $KDECI_SIGNFLATPAK_CONFIG platform.flatpak
+    - python3 ci-notary-service/signflatpak.py -v --config $KDECI_SIGNFLATPAK_CONFIG sdk.flatpak
+  artifacts:
+    name: Flatpak artifacts
+    expose_as: 'Flatpak Bundle'
+    when: always
+    expire_in: 3 days
+    paths:
+      - "platform.flatpak"
+      - "sdk.flatpak"
+      - "task.log"
+      - "task-debug.log"
