@@ -757,8 +757,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/fcitx/fcitx5-qt",
-                    "tag": "5.1.4",
-                    "commit": "50d5612b981792d3fbbcaa68387519ae280a304f",
+                    "tag": "5.1.5",
+                    "commit": "cc77e32c0ab675a663a7c019b3bb8cfcc60c5ec3",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -1308,8 +1308,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/taglib/taglib/archive/refs/tags/v1.13.1.tar.gz",
-                            "sha256": "c8da2b10f1bfec2cd7dbfcd33f4a2338db0765d851a50583d410bacf055cfd0b",
+                            "url": "https://github.com/taglib/taglib/archive/refs/tags/v2.0.tar.gz",
+                            "sha256": "e36ea877a6370810b97d84cf8f72b1e4ed205149ab3ac8232d44c850f38a2859",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 1982,
@@ -1773,8 +1773,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.6.tar.gz",
-                    "sha256": "36052a5371731d915b53d9c7a24a11c4032585ccacb392ec9d58656eef4c0edf",
+                    "url": "https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.7.tar.gz",
+                    "sha256": "f89d2e144fd67bdf0d7acfb2ac7618c6f087e1b3f2c3a707656b4180df422195",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 14833,
