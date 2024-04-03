@@ -1299,6 +1299,26 @@
             ],
             "modules": [
                 {
+                    "name": "utfcpp",
+                    "buildsystem": "cmake-ninja",
+                    "config-opts": [
+                        "-DUTF8_TESTS=OFF"
+                    ],
+                    "cleanup": ["*"],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.5.tar.gz",
+                            "sha256": "ffc668a310e77607d393f3c18b32715f223da1eac4c4d6e0579a11df8e6b59cf",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 20545,
+                                "url-template": "https://github.com/nemtrif/utfcpp/archive/refs/tags/v$version.tar.gz"
+                            }
+                        }
+                    ]
+                },
+                {
                     "name": "taglib",
                     "config-opts": [
                         "-DBUILD_SHARED_LIBS=ON",
