@@ -2459,13 +2459,15 @@
             "name": "plasma-integration",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_QT5=ON",
+                "-DBUILD_QT6=OFF"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/plasma-integration.git",
-                    "branch": "Plasma/5.27"
+                    "branch": "Plasma/6.0"
                 }
             ]
         },
