@@ -2522,7 +2522,7 @@
                     "type": "git",
                     "url": "https://github.com/fcitx/fcitx5-qt",
                     "tag": "5.1.5",
-                    "commit": "50d5612b981792d3fbbcaa68387519ae280a304f",
+                    "commit": "cc77e32c0ab675a663a7c019b3bb8cfcc60c5ec3",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
