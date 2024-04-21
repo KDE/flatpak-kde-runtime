@@ -2423,18 +2423,19 @@
             "name": "kio-extras",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DKF6_COMPAT_BUILD=OFF"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/23.08.4/src/kio-extras-23.08.4.tar.xz",
-                    "sha256": "f68cbc21cd9e9544ee75b337b9c69171ce989fde801854048aa9fc109b48cd61",
+                    "url": "https://download.kde.org/stable/release-service/24.02.2/src/kio-extras-kf5-24.02.2.tar.xz",
+                    "sha256": "a9aaf58f3b802c8341bba1ceb95054f915059ea447f59ffc7b933cca71b12ac9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
                         "stable-only": true,
-                        "url-template": "https://download.kde.org/stable/release-service/$version/src/kio-extras-$version.tar.xz"
+                        "url-template": "https://download.kde.org/stable/release-service/$version/src/kio-extras-kf5-$version.tar.xz"
                     }
                 }
             ]
@@ -2444,6 +2445,8 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DBUILD_TESTING=OFF",
+                "-DBUILD_QT5=ON",
+                "-DBUILD_QT6=OFF",
                 "-DWITH_DECORATIONS=OFF",
                 "-DWITH_WALLPAPERS=OFF"
             ],
@@ -2451,7 +2454,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/breeze.git",
-                    "branch": "Plasma/5.27"
+                    "branch": "Plasma/6.0"
                 }
             ]
         },
@@ -2481,7 +2484,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/kwayland-integration.git",
-                    "branch": "Plasma/5.27"
+                    "branch": "Plasma/6.0"
                 }
             ]
         },
@@ -2518,7 +2521,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/fcitx/fcitx5-qt",
-                    "tag": "5.1.4",
+                    "tag": "5.1.5",
                     "commit": "50d5612b981792d3fbbcaa68387519ae280a304f",
                     "x-checker-data": {
                         "type": "git",
