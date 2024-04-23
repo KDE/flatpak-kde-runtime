@@ -701,8 +701,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ki18n.git",
-                    "tag": "v5.115.0",
-                    "commit": "d0407ae9c2ed1f05f886987f3afd730fdb743228",
+                    "tag": "v5.115.1",
+                    "commit": "e4b8075aba367bed2a706cb12ed35a486bf0ecfd",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v5\\.([\\d.]+)$",
