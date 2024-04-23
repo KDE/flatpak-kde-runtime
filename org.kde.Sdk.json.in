@@ -750,8 +750,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/fcitx/fcitx5-qt",
-                    "tag": "5.1.5",
-                    "commit": "cc77e32c0ab675a663a7c019b3bb8cfcc60c5ec3",
+                    "tag": "5.1.6",
+                    "commit": "c743b12e6780edf1dcfe9071531c80f050cacb95",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
