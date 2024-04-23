@@ -1314,7 +1314,10 @@
                                 "type": "anitya",
                                 "project-id": 1982,
                                 "stable-only": true,
-                                "url-template": "https://github.com/taglib/taglib/archive/refs/tags/v$version.tar.gz"
+                                "url-template": "https://github.com/taglib/taglib/archive/refs/tags/v$version.tar.gz",
+                                "versions": {
+                                    "<": "2"
+                                }
                             }
                         }
                     ]
