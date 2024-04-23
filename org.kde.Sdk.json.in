@@ -1460,12 +1460,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/solid.git",
-                    "tag": "v6.1.0",
+                    "tag": "v6.1.1",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "65ee78a386b76ec46e0b9a447d0613e940f9bbb5"
+                    "commit": "07c1c34531290870bcc398fae9f179319c2aaa93"
                 }
             ]
         },
