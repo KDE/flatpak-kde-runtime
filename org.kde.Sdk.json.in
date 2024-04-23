@@ -2363,8 +2363,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/libjxl/libjxl.git",
-                            "tag": "v0.9.1",
-                            "commit": "b8ceae3a6e9d0ffd9efebcbdd04322fcfc502eed",
+                            "tag": "v0.10.2",
+                            "commit": "e1489592a770b989303b0edc5cc1dc447bbe0515",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^v([\\d.]+)$"
