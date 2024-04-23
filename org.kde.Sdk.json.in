@@ -1259,7 +1259,10 @@
                                 "type": "anitya",
                                 "project-id": 1982,
                                 "stable-only": true,
-                                "url-template": "https://taglib.github.io/releases/taglib-$version.tar.gz"
+                                "url-template": "https://taglib.github.io/releases/taglib-$version.tar.gz",
+                                "versions": {
+                                    "<": "2"
+                                }
                             }
                         }
                     ]
