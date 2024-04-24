@@ -2429,6 +2429,7 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DBUILD_TESTING=OFF",
+                "-DBUILD_ACTIVITIES=OFF",
                 "-DKF6_COMPAT_BUILD=OFF"
             ],
             "sources": [
