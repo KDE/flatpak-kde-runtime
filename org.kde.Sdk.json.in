@@ -592,10 +592,6 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.7/$version/submodules/qt3d-everywhere-src-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qt6-qt3d-gcc13.patch"
                 }
             ]
         },
