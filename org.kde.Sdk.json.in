@@ -153,8 +153,7 @@
                 {
                     "type": "patch",
                     "paths": [
-                        "patch/qtbase-find_package-paths.patch",
-                        "patch/552508-Use-ifdef-instead-of-if-for-cpp_lib_span.patch"
+                        "patch/qtbase-find_package-paths.patch"
                     ]
                 }
             ]
