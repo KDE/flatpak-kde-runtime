@@ -761,11 +761,11 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git",
-                    "tag": "v1.11.1",
+                    "tag": "v1.13.0",
                     "x-checker-data": {
                         "type": "git"
                     },
-                    "commit": "2ac008b14c0527d4212e50ee6e4fd6ad84dd8933"
+                    "commit": "2a09c448ecceef4de5bb0fda7e12b38cfcf0278b"
                 }
             ]
         },
@@ -779,12 +779,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kwidgetsaddons.git",
-                    "tag": "v6.2.0",
+                    "tag": "v6.2.2",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "346f536f992d1dbee36c2fbc3ebdc82b461e84f8"
+                    "commit": "91ae8ab3cc87bfe597602279c8635b58fe51210d"
                 }
             ]
         },
@@ -1400,12 +1400,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kwallet.git",
-                    "tag": "v6.2.0",
+                    "tag": "v6.2.1",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "fe1486635953fad64f038ea44593092fa619ea48"
+                    "commit": "575caabf8cda5ee70bac444b14b5d5818a3cdaec"
                 }
             ],
             "modules": [
