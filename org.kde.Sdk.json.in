@@ -998,6 +998,29 @@
             ]
         },
         {
+            "name": "breeze-icons",
+            "cleanup-platform": [
+                "*.rcc"
+            ],
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/breeze-icons.git",
+                    "tag": "v6.3.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "eaf7971f3872fc9535e610451abc6e9b35041257"
+                }
+            ]
+        },
+        {
             "name": "kiconthemes",
             "config-opts": [
                 "-DBUILD_TESTING=OFF"
@@ -2128,29 +2151,6 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "27d9f4f07f9b41d8848cad73823d42ce3e032c4c"
-                }
-            ]
-        },
-        {
-            "name": "breeze-icons",
-            "cleanup-platform": [
-                "*.rcc"
-            ],
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://invent.kde.org/frameworks/breeze-icons.git",
-                    "tag": "v6.3.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "eaf7971f3872fc9535e610451abc6e9b35041257"
                 }
             ]
         },
