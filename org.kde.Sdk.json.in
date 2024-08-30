@@ -1611,9 +1611,10 @@
             "builddir": true,
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.kde.org/stable/plasma/6.0.0/plasma-activities-6.0.0.tar.xz",
-                    "sha256": "f0bd07bbcd9022c72e564046046029b39f71d1cc5b467b9f50914813043b2795"
+                    "type": "git",
+                    "url": "https://invent.kde.org/plasma/plasma-activities.git",
+                    "tag": "v6.1.4",
+                    "commit": "783b36d75734870dbaffb16844956799d7389bae"
                 }
             ]
         },
@@ -1882,9 +1883,10 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.kde.org/stable/plasma/6.0.0/kwayland-6.0.0.tar.xz",
-                    "sha256": "00312094681966a4cf692288398047a24136f1bce132307304d0dffa1cf9ed79"
+                    "type": "git",
+                    "url": "https://invent.kde.org/plasma/kwayland.git",
+                    "tag": "v6.1.4",
+                    "commit": "d5efa9d519a9dee6ab7ce7163a4be67dd0bc5632"
                 }
             ]
         },
@@ -2304,9 +2306,10 @@
             "builddir": true,
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.kde.org/stable/plasma/6.0.0/plasma-activities-stats-6.0.0.tar.xz",
-                    "sha256": "5e6ab0fe5f3c5db0de2ebe6adcd79c26170b92addc056cf35f0484fb45007d2e"
+                    "type": "git",
+                    "url": "https://invent.kde.org/plasma/plasma-activities-stats.git",
+                    "tag": "v6.1.4",
+                    "commit": "107846a9c564657df2bff264db2ec9d908df229e"
                 }
             ]
         },
@@ -2340,8 +2343,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/breeze.git",
-                    "tag": "v6.0.0",
-                    "commit": "28b7841c361c83b0f0f4748d0cf7eca64d3f338c"
+                    "tag": "v6.1.4",
+                    "commit": "9bcda4f09708ca8ac66cd42f32525d463e4bd559"
                 }
             ]
         },
@@ -2357,8 +2360,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/plasma-integration.git",
-                    "tag": "v6.0.0",
-                    "commit": "9ea2cb00038e19b14c7a18fd3bc542c51b73594a"
+                    "tag": "v6.1.4",
+                    "commit": "6c91272d2e9918f72b466806d9da26bfe376e05f"
                 }
             ]
         },
@@ -2373,8 +2376,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/qqc2-breeze-style.git",
-                    "tag": "v6.0.0",
-                    "commit": "2507a749b6d963c417a815e6b88872592cd182ba"
+                    "tag": "v6.1.4",
+                    "commit": "1b40e0d9a235262f340dc768c85a03f41c842bf0"
                 }
             ]
         },
