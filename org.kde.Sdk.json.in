@@ -2311,7 +2311,8 @@
         {
             "name": "kimageformats",
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DKIMAGEFORMATS_HEIF=ON"
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
