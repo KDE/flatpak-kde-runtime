@@ -52,7 +52,7 @@
             "merge-dirs": "platforminputcontexts",
             "add-ld-path": "lib"
         },
-        "org.kde.WaylandDecoration": {
+        "org.inqlude.WaylandDecoration": {
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
