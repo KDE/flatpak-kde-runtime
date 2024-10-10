@@ -2332,11 +2332,11 @@
                 },
                 {
                     "type": "file",
-                    "path": "org.kde.Sdk.appdata.xml"
+                    "path": "org.kde.Sdk.metainfo.xml"
                 },
                 {
                     "type": "file",
-                    "path": "org.kde.Platform.appdata.xml"
+                    "path": "org.kde.Platform.metainfo.xml"
                 },
                 {
                     "type": "file",
