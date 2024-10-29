@@ -746,8 +746,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/fcitx/fcitx5-qt",
-                    "tag": "5.1.7",
-                    "commit": "47b3f67bf9eb72347eb5dc447b5ac6815dc78217",
+                    "tag": "5.1.8",
+                    "commit": "cdd0efe6724dbc7f6cbb8a8c02812e26e80d88d4",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -762,11 +762,11 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git",
-                    "tag": "v1.13.0",
+                    "tag": "v1.14.0",
                     "x-checker-data": {
                         "type": "git"
                     },
-                    "commit": "2a09c448ecceef4de5bb0fda7e12b38cfcf0278b"
+                    "commit": "f8915796a606f672fb3f456cde782f66d1adfa14"
                 }
             ]
         },
