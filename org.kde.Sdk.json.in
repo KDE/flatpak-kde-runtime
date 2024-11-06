@@ -790,8 +790,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git",
-                    "tag": "v1.11.1",
-                    "commit": "2ac008b14c0527d4212e50ee6e4fd6ad84dd8933",
+                    "tag": "v1.14.0",
+                    "commit": "f8915796a606f672fb3f456cde782f66d1adfa14",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -1475,8 +1475,8 @@
                         {
                             "type": "git",
                             "url": "https://invent.kde.org/libraries/qca.git",
-                            "tag": "v2.3.8",
-                            "commit": "0685472ed2772237633560ef0e3f115f5e09769b",
+                            "tag": "v2.3.9",
+                            "commit": "461942af6641a6dabe444a22675909dc2d4a8ded",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^v([\\d.]+)$"
@@ -1945,8 +1945,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.7.tar.gz",
-                    "sha256": "f89d2e144fd67bdf0d7acfb2ac7618c6f087e1b3f2c3a707656b4180df422195",
+                    "url": "https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.9.tar.gz",
+                    "sha256": "4aaa4e3883332aac7ec19c169dcf128f5f0f963f61d09beb299eb2bce5944e2c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 14833,
@@ -2100,8 +2100,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/qqc2-desktop-style.git",
-                    "tag": "v5.116.0",
-                    "commit": "908e645041a5f9af242117084dc5185fc19324e8",
+                    "tag": "v5.116.1",
+                    "commit": "e4f77f0930f593521ff838433c6bb90b0c0dd1f1",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v5\\.([\\d.]+)$",
@@ -2588,8 +2588,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/fcitx/fcitx5-qt",
-                    "tag": "5.1.6",
-                    "commit": "c743b12e6780edf1dcfe9071531c80f050cacb95",
+                    "tag": "5.1.8",
+                    "commit": "cdd0efe6724dbc7f6cbb8a8c02812e26e80d88d4",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
