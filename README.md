@@ -24,3 +24,4 @@ This can generally be built with flatpak-builder as explained in its documentati
 * `make remotes` will add flathub.
 * `make check` will make sure the json file is valid.
 * `make org.kde.Sdk.app` builds the SDK.
+* `flatpak --user install ./repo org.kde.Platform org.kde.Sdk` installs the built SDK.
