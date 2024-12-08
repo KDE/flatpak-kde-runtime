@@ -78,6 +78,7 @@
         "--talk-name=com.canonical.AppMenu.Registrar",
         "--talk-name=org.kde.kconfig.notify",
         "--talk-name=org.kde.KGlobalSettings",
+        "--talk-name=org.kde.kdeconnect",
         "--sdk=org.kde.Sdk//6.8",
         "--runtime=org.kde.Platform//6.8"
     ],
