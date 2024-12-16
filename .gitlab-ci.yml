@@ -27,6 +27,7 @@ flatpak:
     - json-glib-validate org.kde.Sdk.json.in
     - json-glib-validate org.freedesktop.Platform.Icontheme.Adwaita.json
     - json-glib-validate flathub.json
+    - appstreamcli validate --no-net org.kde.{Sdk,Platform}.appdata.xml
 
 build-runtime:
   stage: build
