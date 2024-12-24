@@ -1457,12 +1457,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/solid.git",
-                    "tag": "v6.9.0",
+                    "tag": "v6.9.1",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "689923ed5f22c3cf2fae160a06e706b84b6ab923"
+                    "commit": "5f7a05fdf8a86806fe69776556bd2cf16588688f"
                 }
             ]
         },
