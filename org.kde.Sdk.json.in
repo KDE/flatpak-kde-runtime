@@ -713,6 +713,98 @@
             ]
         },
         {
+            "name": "qt6-qtquicktimeline",
+            "buildsystem": "cmake-ninja",
+            "cleanup-platform": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.qt.io/official_releases/qt/6.8/6.8.2/submodules/qtquicktimeline-everywhere-src-6.8.2.tar.xz",
+                    "sha256": "c33dbceed9fabb3d7f6731a68aee602bad5a04bb6f0a473792e61858c0bc1aaa",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 7927,
+                        "stable-only": true,
+                        "versions": {
+                            "<": "6.9.0"
+                        },
+                        "url-template": "https://download.qt.io/official_releases/qt/6.8/$version/submodules/qtquicktimeline-everywhere-src-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "qt6-qtquick3d",
+            "buildsystem": "cmake-ninja",
+            "cleanup-platform": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.qt.io/official_releases/qt/6.8/6.8.2/submodules/qtquick3d-everywhere-src-6.8.2.tar.xz",
+                    "sha256": "084cebccb8c5b1c6bafb7756ab89b08ced23c20cd2e996ed54909a154a9f0b6d",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 7927,
+                        "stable-only": true,
+                        "versions": {
+                            "<": "6.9.0"
+                        },
+                        "url-template": "https://download.qt.io/official_releases/qt/6.8/$version/submodules/qtquick3d-everywhere-src-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "qt6-qtquick3dphysics",
+            "buildsystem": "cmake-ninja",
+            "cleanup-platform": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.qt.io/official_releases/qt/6.8/6.8.2/submodules/qtquick3dphysics-everywhere-src-6.8.2.tar.xz",
+                    "sha256": "df18262d4a7699a29796f16b41186060df172155110229ab3ccd4c6040ba793f",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 7927,
+                        "stable-only": true,
+                        "versions": {
+                            "<": "6.9.0"
+                        },
+                        "url-template": "https://download.qt.io/official_releases/qt/6.8/$version/submodules/qtquick3dphysics-everywhere-src-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "qt6-qtquickeffectmaker",
+            "buildsystem": "cmake-ninja",
+            "cleanup-platform": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.qt.io/official_releases/qt/6.8/6.8.2/submodules/qtquickeffectmaker-everywhere-src-6.8.2.tar.xz",
+                    "sha256": "4fcf3c5893172816dfdc438bd4b6b105e15eafd4aeb9c5ac48ea6d7d720e607c",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 7927,
+                        "stable-only": true,
+                        "versions": {
+                            "<": "6.9.0"
+                        },
+                        "url-template": "https://download.qt.io/official_releases/qt/6.8/$version/submodules/qtquickeffectmaker-everywhere-src-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
             "name": "extra-cmake-modules",
             "cleanup-platform": [
                 "*"
