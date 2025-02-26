@@ -7,5 +7,6 @@
   <name>KDE Application Platform</name>
   <summary>Shared libraries used by KDE applications</summary>
   <url type="homepage">https://www.kde.org/</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=Qt%2FKDE%20Flatpak%20Runtime</url>
   <project_group>KDE</project_group>
 </component>
