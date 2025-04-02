@@ -2,7 +2,7 @@
     "build-runtime": true,
     "id": "org.kde.Sdk",
     "id-platform": "org.kde.Platform",
-    "branch": "6.8",
+    "branch": "6.9",
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
     "runtime-version": "24.08",
@@ -38,7 +38,7 @@
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
-            "version": "6.8",
+            "version": "6.9",
             "merge-dirs": "styles",
             "add-ld-path": "lib",
             "download-if": "active-gtk-theme"
@@ -48,7 +48,7 @@
             "subdirectories": true,
             "autodelete": true,
             "no-autodownload": true,
-            "version": "6.8",
+            "version": "6.9",
             "merge-dirs": "platforminputcontexts",
             "add-ld-path": "lib"
         },
@@ -56,7 +56,7 @@
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
-            "version": "6.8",
+            "version": "6.9",
             "merge-dirs": "wayland-decoration-client",
             "add-ld-path": "lib",
             "//TODO": "This is currently only used for gnome platform plugin and should be its own extension point",
@@ -79,8 +79,8 @@
         "--talk-name=org.kde.kconfig.notify",
         "--talk-name=org.kde.KGlobalSettings",
         "--talk-name=org.kde.kdeconnect",
-        "--sdk=org.kde.Sdk//6.8",
-        "--runtime=org.kde.Platform//6.8"
+        "--sdk=org.kde.Sdk//6.9",
+        "--runtime=org.kde.Platform//6.9"
     ],
     "cleanup": [
         "/man",
