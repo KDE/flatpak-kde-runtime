@@ -2310,8 +2310,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/danvratil/qcoro/archive/refs/tags/v0.11.0.tar.gz",
-                    "sha256": "9942c5b4c533192f6c5954dc6d10178b3829075e6a621b67df73f0a4b74d8297",
+                    "url": "https://github.com/danvratil/qcoro/archive/refs/tags/v0.12.0.tar.gz",
+                    "sha256": "809afafab61593f994c005ca6e242300e1e3e7f4db8b5d41f8c642aab9450fbc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 236236,
