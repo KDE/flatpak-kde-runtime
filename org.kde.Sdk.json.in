@@ -1313,8 +1313,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/URI-1.74.tar.gz",
-                    "sha256": "a9c254f45f89cb1dd946b689dfe433095404532a4543bdaab0b71ce0fdcdd53d"
+                    "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/URI-5.31.tar.gz",
+                    "sha256": "b9c4d58b2614b8611ae03a95a6d60ed996f4b311ef3cd5a937b92f1825ecc564"
                 },
                 {
                     "type": "script",
@@ -1515,7 +1515,7 @@
                         {
                             "type": "git",
                             "url": "https://invent.kde.org/libraries/qca.git",
-                            "tag": "v2.3.5"
+                            "tag": "v2.3.10"
                         }
                     ]
                 }
@@ -1685,8 +1685,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/plasma-activities.git",
-                    "tag": "v6.1.4",
-                    "commit": "783b36d75734870dbaffb16844956799d7389bae"
+                    "tag": "v6.3.4",
+                    "commit": "71aa0c8fc3cae3650b939b86d1ca144a4dc75aee"
                 }
             ]
         },
@@ -2056,7 +2056,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/libical/libical.git",
-                            "tag": "v3.0.16"
+                            "tag": "v3.0.20"
                         }
                     ]
                 }
@@ -2125,8 +2125,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/dmtx/libdmtx/archive/v0.7.7.tar.gz",
-                            "sha256": "7aa62adcefdd6e24bdabeb82b3ce41a8d35f4a0c95ab0c4438206aecafd6e1a1"
+                            "url": "https://github.com/dmtx/libdmtx/archive/v0.7.8.tar.gz",
+                            "sha256": "2394bf1d1d693a5a4ca3cfcc1bb28a4d878bdb831ea9ca8f3d5c995d274bdc39"
                         }
                     ]
                 },
@@ -2332,8 +2332,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/plasma-activities-stats.git",
-                    "tag": "v6.1.4",
-                    "commit": "107846a9c564657df2bff264db2ec9d908df229e"
+                    "tag": "v6.3.4",
+                    "commit": "75d8a5c99026e8979db070fc994ca7ef39dbe46c"
                 }
             ]
         },
@@ -2348,8 +2348,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/network/kio-extras.git",
-                    "commit": "ad965393b5beeb47674794948971f1dddcbdd5f9",
-                    "tag": "v24.02.0"
+                    "commit": "915fb036b993ff90817914725c19f9850d4c4aff",
+                    "tag": "v24.12.3"
                 }
             ]
         },
@@ -2367,8 +2367,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/breeze.git",
-                    "tag": "v6.1.4",
-                    "commit": "9bcda4f09708ca8ac66cd42f32525d463e4bd559"
+                    "tag": "v6.3.4",
+                    "commit": "0713d455356765b24b8173ae009815a70763f56d"
                 }
             ]
         },
@@ -2384,8 +2384,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/plasma-integration.git",
-                    "tag": "v6.1.4",
-                    "commit": "6c91272d2e9918f72b466806d9da26bfe376e05f"
+                    "tag": "v6.3.4",
+                    "commit": "2f01ed67f05085d04967e31c0dfc973be6fce996"
                 }
             ]
         },
@@ -2400,8 +2400,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/qqc2-breeze-style.git",
-                    "tag": "v6.1.4",
-                    "commit": "1b40e0d9a235262f340dc768c85a03f41c842bf0"
+                    "tag": "v6.3.4",
+                    "commit": "a3dabde8a25209478a2c7f50b2080161144d3aea"
                 }
             ]
         },
