@@ -2369,6 +2369,14 @@
                     "url": "https://invent.kde.org/plasma/breeze.git",
                     "tag": "v6.3.4",
                     "commit": "0713d455356765b24b8173ae009815a70763f56d"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/breeze-include-0.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/breeze-include-1.patch"
                 }
             ]
         },
