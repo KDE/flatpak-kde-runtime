@@ -1291,6 +1291,25 @@
             ]
         },
         {
+            "name": "ktexttemplate",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/ktexttemplate.git",
+                    "tag": "v6.13.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "0e7beef20b1d09e81fe34ab801820240077cc358"
+                }
+            ]
+        },
+        {
             "name": "ktextwidgets",
             "config-opts": [
                 "-DBUILD_TESTING=OFF"
