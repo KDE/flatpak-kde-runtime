@@ -866,7 +866,8 @@
         {
             "name": "kwidgetsaddons",
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_PYTHON_BINDINGS=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "sources": [
@@ -942,7 +943,8 @@
         {
             "name": "kguiaddons",
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_PYTHON_BINDINGS=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "sources": [
@@ -961,7 +963,8 @@
         {
             "name": "kcoreaddons",
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_PYTHON_BINDINGS=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "sources": [
@@ -1308,7 +1311,8 @@
         {
             "name": "kxmlgui",
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_PYTHON_BINDINGS=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "sources": [
@@ -1489,7 +1493,8 @@
             "name": "knotifications",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_PYTHON_BINDINGS=OFF"
             ],
             "sources": [
                 {
@@ -1543,7 +1548,8 @@
         {
             "name": "kjobwidgets",
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_PYTHON_BINDINGS=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "sources": [
@@ -1657,7 +1663,8 @@
         {
             "name": "kunitconversion",
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_PYTHON_BINDINGS=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "sources": [
@@ -2302,7 +2309,8 @@
         {
             "name": "kstatusnotifieritem",
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_PYTHON_BINDINGS=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
