@@ -76,6 +76,7 @@
         "--env=ALSA_CONFIG_DIR=/usr/share/alsa",
         "--filesystem=xdg-config/kdeglobals:ro",
         "--talk-name=com.canonical.AppMenu.Registrar",
+        "--talk-name=org.freedesktop.FileManager1",
         "--talk-name=org.kde.kconfig.notify",
         "--talk-name=org.kde.KGlobalSettings",
         "--talk-name=org.kde.kdeconnect",
