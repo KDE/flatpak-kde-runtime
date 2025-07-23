@@ -1,4 +1,4 @@
 {
-  "skip-arches": ["i386","arm"],
+  "skip-arches": ["i386"],
   "skip-icons-check": true
 }
