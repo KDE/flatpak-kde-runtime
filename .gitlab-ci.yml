@@ -73,7 +73,7 @@ build-runtime-arm64:
   when: manual
   variables:
     KDECI_SIGNFLATPAK_CONFIG: $CI_PROJECT_DIR/ci-utilities/signing/signflatpak.ini
-    ARCH: x86_64
+    ARCH: aarch64
   before_script:
     - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
     - git clone https://invent.kde.org/sysadmin/ci-notary-service.git --depth=1
