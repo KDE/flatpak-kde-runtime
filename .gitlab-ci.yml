@@ -45,7 +45,7 @@ build-runtime:
     - git clone https://invent.kde.org/sysadmin/ci-notary-service.git --depth=1
   script:
     - sed "s,@@SDK_ARCH@@,${ARCH},g" org.kde.Sdk.json.in > org.kde.Sdk.json
-    - flatpak-builder --install-deps-from=flathub --user --disable-rofiles-fuse --arch=$ARCH --force-clean --require-changes --ccache --repo=repo --subject="build of org.kde.Sdk, `date` $(`git rev-parse HEAD`)" sdk org.kde.Sdk.json
+    - flatpak-builder --install-deps-from=flathub --user --disable-rofiles-fuse --arch=$ARCH --force-clean --require-changes --ccache --repo=repo --subject="build of org.kde.Sdk, `date`, `git rev-parse HEAD`" sdk org.kde.Sdk.json
     # Get the branch name from the JSON manifest
     - flatpak_branch=$(jq -r .branch org.kde.Sdk.json)
     - flatpak build-bundle --runtime --arch=$ARCH repo platform.flatpak org.kde.Platform $flatpak_branch
@@ -79,7 +79,7 @@ build-runtime-arm64:
     - git clone https://invent.kde.org/sysadmin/ci-notary-service.git --depth=1
   script:
     - sed "s,@@SDK_ARCH@@,${ARCH},g" org.kde.Sdk.json.in > org.kde.Sdk.json
-    - flatpak-builder --install-deps-from=flathub --user --disable-rofiles-fuse --arch=$ARCH --force-clean --require-changes --ccache --repo=repo --subject="build of org.kde.Sdk, `date` $(`git rev-parse HEAD`)" sdk org.kde.Sdk.json
+    - flatpak-builder --install-deps-from=flathub --user --disable-rofiles-fuse --arch=$ARCH --force-clean --require-changes --ccache --repo=repo --subject="build of org.kde.Sdk, `date`, `git rev-parse HEAD`" sdk org.kde.Sdk.json
     # Get the branch name from the JSON manifest
     - flatpak_branch=$(jq -r .branch org.kde.Sdk.json)
     - flatpak build-bundle --runtime --arch=$ARCH repo platform.flatpak org.kde.Platform $flatpak_branch
