@@ -135,7 +135,7 @@
                 "-DQT_DISABLE_RPATH=ON",
                 "-DBUILD_WITH_PCH=FALSE",
                 "-DQT_FEATURE_openssl_linked=ON",
-                "-DQT_FEATURE_system_sqlite=ON"
+                "-DQT_FEATURE_system_sqlite=ON",
                 "-DQT_UNITY_BUILD=ON"
             ],
             "sources": [
