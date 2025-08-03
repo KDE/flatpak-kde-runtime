@@ -34,7 +34,7 @@ build-runtime:
   stage: build
   image: storage.kde.org/vm-images/flatpak-builder
   tags:
-    - VM
+    - LargeVM
     - amd64
   when: manual
   variables:
