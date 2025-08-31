@@ -123,7 +123,7 @@
                         "DESTINATION=/usr/share/licenses/org.kde.Platform/$(basename `pwd`)/",
                         "DESTINATION=${DESTINATION%-[0-9]*}",
                         "mkdir -p $DESTINATION",
-                        "cp -v LICENSES/* $DESTINATION"
+                        "cp -v ${LICENSES:-LICENSES/*} $DESTINATION"
                     ],
                     "dest-filename": "install-licenses.sh"
                 }
@@ -1395,7 +1395,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='COPYING*' install-licenses.sh"
                     ]
                 }
             ]
@@ -1698,7 +1698,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE' install-licenses.sh"
                     ]
                 }
             ]
@@ -1824,6 +1824,12 @@
                                 "project-id": 20545,
                                 "url-template": "https://github.com/nemtrif/utfcpp/archive/refs/tags/v$version.tar.gz"
                             }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "LICENSES='LICENSE' install-licenses.sh"
+                            ]
                         }
                     ]
                 },
@@ -1845,6 +1851,12 @@
                                 "stable-only": true,
                                 "url-template": "https://github.com/taglib/taglib/archive/refs/tags/v$version.tar.gz"
                             }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "LICENSES='COPYING*' install-licenses.sh"
+                            ]
                         }
                     ]
                 }
@@ -1869,7 +1881,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LGPL' install-licenses.sh"
                     ]
                 }
             ]
@@ -1937,6 +1949,12 @@
                             "type": "git",
                             "url": "https://invent.kde.org/libraries/qca.git",
                             "tag": "v2.3.5"
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "LICENSES='COPYING*' install-licenses.sh"
+                            ]
                         }
                     ]
                 },
@@ -2422,7 +2440,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE' install-licenses.sh"
                     ]
                 }
             ]
@@ -2643,6 +2661,12 @@
                             "type": "git",
                             "url": "https://github.com/libical/libical.git",
                             "tag": "v3.0.16"
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "LICENSES='COPYING*' install-licenses.sh"
+                            ]
                         }
                     ]
                 }
@@ -2710,8 +2734,20 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://fukuchi.org/works/qrencode/qrencode-4.1.1.tar.gz",
-                            "sha256": "da448ed4f52aba6bcb0cd48cac0dd51b8692bccc4cd127431402fca6f8171e8e"
+                            "url": "https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz",
+                            "sha256": "5385bc1b8c2f20f3b91d258bf8ccc8cf62023935df2d2676b5b67049f31a049c",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 12834,
+                                "stable-only": true,
+                                "url-template": "https://github.com/fukuchi/libqrencode/archive/refs/tags/v$version.tar.gz"
+                            }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "LICENSES='COPYING' install-licenses.sh"
+                            ]
                         }
                     ]
                 },
@@ -2725,6 +2761,12 @@
                             "type": "archive",
                             "url": "https://github.com/dmtx/libdmtx/archive/v0.7.7.tar.gz",
                             "sha256": "7aa62adcefdd6e24bdabeb82b3ce41a8d35f4a0c95ab0c4438206aecafd6e1a1"
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "LICENSES='LICENSE' install-licenses.sh"
+                            ]
                         }
                     ]
                 },
@@ -2755,6 +2797,12 @@
                                 "project-id": 101246,
                                 "url-template": "https://github.com/zxing-cpp/zxing-cpp/archive/v$version.tar.gz"
                             }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "LICENSES='LICENSE' install-licenses.sh"
+                            ]
                         }
                     ]
                 }
