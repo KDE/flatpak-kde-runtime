@@ -123,7 +123,7 @@
                         "DESTINATION=/usr/share/licenses/org.kde.Platform/$(basename `pwd`)/",
                         "DESTINATION=${DESTINATION%-[0-9]*}",
                         "mkdir -p $DESTINATION",
-                        "cp -v LICENSES/* $DESTINATION"
+                        "cp -v ${LICENSES:-LICENSES/*} $DESTINATION"
                     ],
                     "dest-filename": "install-licenses.sh"
                 }
@@ -1424,7 +1424,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='COPYING*' install-licenses.sh"
                     ]
                 }
             ]
@@ -1727,7 +1727,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE' install-licenses.sh"
                     ]
                 }
             ]
@@ -1857,7 +1857,7 @@
                         {
                             "type": "shell",
                             "commands": [
-                                "install-licenses.sh"
+                                "LICENSES='LICENSE' install-licenses.sh"
                             ]
                         }
                     ]
@@ -1884,7 +1884,7 @@
                         {
                             "type": "shell",
                             "commands": [
-                                "install-licenses.sh"
+                                "LICENSES='COPYING*' install-licenses.sh"
                             ]
                         }
                     ]
@@ -1910,7 +1910,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LGPL' install-licenses.sh"
                     ]
                 }
             ]
@@ -1982,7 +1982,7 @@
                         {
                             "type": "shell",
                             "commands": [
-                                "install-licenses.sh"
+                                "LICENSES='COPYING*' install-licenses.sh"
                             ]
                         }
                     ]
@@ -2463,7 +2463,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE' install-licenses.sh"
                     ]
                 }
             ]
@@ -2688,7 +2688,7 @@
                         {
                             "type": "shell",
                             "commands": [
-                                "install-licenses.sh"
+                                "LICENSES='COPYING*' install-licenses.sh"
                             ]
                         }
                     ]
@@ -2769,7 +2769,7 @@
                         {
                             "type": "shell",
                             "commands": [
-                                "install-licenses.sh"
+                                "LICENSES='COPYING' install-licenses.sh"
                             ]
                         }
                     ]
@@ -2788,7 +2788,7 @@
                         {
                             "type": "shell",
                             "commands": [
-                                "install-licenses.sh"
+                                "LICENSES='LICENSE' install-licenses.sh"
                             ]
                         }
                     ]
@@ -2824,7 +2824,7 @@
                         {
                             "type": "shell",
                             "commands": [
-                                "install-licenses.sh"
+                                "LICENSES='LICENSE' install-licenses.sh"
                             ]
                         }
                     ]
