@@ -1168,7 +1168,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='COPYING*' install-licenses.sh"
                     ]
                 }
             ]
@@ -1475,7 +1475,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE' install-licenses.sh"
                     ]
                 }
             ]
@@ -1612,6 +1612,12 @@
                                 "stable-only": true,
                                 "url-template": "https://taglib.github.io/releases/taglib-$version.tar.gz"
                             }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "LICENSES='COPYING*' install-licenses.sh"
+                            ]
                         }
                     ]
                 }
@@ -1640,7 +1646,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LGPL' install-licenses.sh"
                     ]
                 }
             ]
@@ -1717,6 +1723,12 @@
                                 "type": "git",
                                 "tag-pattern": "^v([\\d.]+)$"
                             }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "LICENSES='COPYING*' install-licenses.sh"
+                            ]
                         }
                     ]
                 }
@@ -2312,7 +2324,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE' install-licenses.sh"
                     ]
                 }
             ]
@@ -2624,6 +2636,12 @@
                                 "type": "git",
                                 "tag-pattern": "^v([\\d.]+)$"
                             }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "LICENSES='COPYING*' install-licenses.sh"
+                            ]
                         }
                     ]
                 }
@@ -2704,6 +2722,12 @@
                                 "project-id": 12834,
                                 "url-template": "https://fukuchi.org/works/qrencode/qrencode-$version.tar.gz"
                             }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "LICENSES='COPYING' install-licenses.sh"
+                            ]
                         }
                     ]
                 },
@@ -2722,6 +2746,12 @@
                                 "project-id": 12833,
                                 "url-template": "https://github.com/dmtx/libdmtx/archive/v$version.tar.gz"
                             }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "LICENSES='LICENSE' install-licenses.sh"
+                            ]
                         }
                     ]
                 },
@@ -2752,6 +2782,12 @@
                                 "project-id": 101246,
                                 "url-template": "https://github.com/zxing-cpp/zxing-cpp/archive/v$version.tar.gz"
                             }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "LICENSES='LICENSE' install-licenses.sh"
+                            ]
                         }
                     ]
                 }
