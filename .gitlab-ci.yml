@@ -72,7 +72,7 @@ publish-runtime:
       when: manual
   variables:
     FLAT_MANAGER_ADDRESS: https://hub.flathub.org/
-    RELEASE_CHANNEL: unknown
+    RELEASE_CHANNEL: stable
   script:
     # Bring in the artifacts
     - mkdir artifacts/
@@ -81,8 +81,12 @@ publish-runtime:
     - tar -xf ./artifacts/repository-aarch64.tar.gz
     # Combine them into a single repository
     - ostree init --repo=repo-combined --mode archive-z2
-    - flatpak build-commit-from --no-update-summary --no-summary-index --disable-fsync --src-repo=repo-x86_64 repo-combined
-    - flatpak build-commit-from --no-update-summary --no-summary-index --disable-fsync --src-repo=repo-aarch64 repo-combined
+    - for ref in $(ostree --repo=repo-x86_64 refs); do
+        flatpak build-commit-from --no-update-summary --disable-fsync --src-repo=repo-x86_64 repo-combined "$ref"
+      done
+    - for ref in $(ostree --repo=repo-aarch64 refs); do
+        flatpak build-commit-from --no-update-summary --disable-fsync --src-repo=repo-aarch64 repo-combined "$ref"
+      done
     - flatpak build-update-repo --generate-static-deltas --static-delta-ignore-ref=*.Debug --static-delta-ignore-ref=*.Sources repo-combined
     # Trigger publishing to Flathub
     - flat-manager-client -v create "$FLAT_MANAGER_ADDRESS" "${RELEASE_CHANNEL}" --build-log-url ${CI_PIPELINE_URL} > publish_build.txt
