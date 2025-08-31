@@ -30,70 +30,71 @@ flatpak:
     - json-glib-validate flathub.json
     - appstreamcli validate --no-net org.kde.{Sdk,Platform}.metainfo.xml
 
-build-runtime:
+.build-runtime:
   stage: build
-  image: storage.kde.org/vm-images/flatpak-builder
-  tags:
-    - LargeVM
-    - amd64
+  id_tokens:
+    MINIO_OIDC:
+      aud: https://tokens.kde.org
   when: manual
   variables:
     KDECI_SIGNFLATPAK_CONFIG: $CI_PROJECT_DIR/ci-utilities/signing/signflatpak.ini
     ARCH: x86_64
   before_script:
     - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
-    - git clone https://invent.kde.org/sysadmin/ci-notary-service.git --depth=1
   script:
     - sed "s,@@SDK_ARCH@@,${ARCH},g" org.kde.Sdk.json.in > org.kde.Sdk.json
-    - flatpak-builder --install-deps-from=flathub --user --disable-rofiles-fuse --arch=$ARCH --force-clean --require-changes --ccache --repo=repo --subject="build of org.kde.Sdk, `date`, `git rev-parse HEAD`" sdk org.kde.Sdk.json
-    # Get the branch name from the JSON manifest
-    - flatpak_branch=$(jq -r .branch org.kde.Sdk.json)
-    - flatpak build-bundle --runtime --arch=$ARCH repo platform.flatpak org.kde.Platform $flatpak_branch
-    - flatpak build-bundle --runtime --arch=$ARCH repo sdk.flatpak org.kde.Sdk $flatpak_branch
-    # Sign and publish (if the project branch is cleared for signing and publishing)
-    - python3 ci-notary-service/signflatpak.py -v --config $KDECI_SIGNFLATPAK_CONFIG platform.flatpak
-    - python3 ci-notary-service/signflatpak.py -v --config $KDECI_SIGNFLATPAK_CONFIG sdk.flatpak
-  artifacts:
-    name: Flatpak artifacts
-    expose_as: 'Flatpak Bundle'
-    when: always
-    expire_in: 3 days
-    paths:
-      - "platform.flatpak"
-      - "sdk.flatpak"
-      - "task.log"
-      - "task-debug.log"
+    - flatpak-builder --install-deps-from=flathub --user --arch=$ARCH --force-clean --require-changes --ccache --repo=repo-$ARCH --subject="build of org.kde.Sdk, `date`, `git rev-parse HEAD`" sdk org.kde.Sdk.json
+    # Package up the generated repository for artifacting then upload it
+    - mkdir artifacts/
+    - tar -czf artifacts/repository-$ARCH.tar.gz repo-$ARCH/
+    - cp org.kde.Sdk.json artifacts/
+    - python3 ci-utilities/sync-s3-folder.py --mode upload --verbose --local ./artifacts/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_DIR/p/$CI_PIPELINE_ID/
+
+build-runtime-amd64:
+  extends: .build-runtime
+  image: storage.kde.org/vm-images/flatpak-builder
+  tags:
+    - LargeVM
+    - amd64
+  variables:
+    ARCH: x86_64
 
 build-runtime-arm64:
-  stage: build
+  extends: .build-runtime
   image: storage.kde.org/vm-images/flatpak-builder-arm64
   tags:
     - LargeVM
     - arm64
-  when: manual
   variables:
-    KDECI_SIGNFLATPAK_CONFIG: $CI_PROJECT_DIR/ci-utilities/signing/signflatpak.ini
     ARCH: aarch64
-  before_script:
-    - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
-    - git clone https://invent.kde.org/sysadmin/ci-notary-service.git --depth=1
+
+publish-runtime:
+  image: storage.kde.org/vm-images/flatpak-builder
+  tags:
+    - VM
+    - amd64
+  needs:
+    - build-runtime-amd64
+    - build-runtime-arm64
+  rules:
+    - if: $CI_COMMIT_REF_PROTECTED == "true"
+      when: manual
+  variables:
+    FLAT_MANAGER_ADDRESS: https://hub.flathub.org/
+    RELEASE_CHANNEL: unknown
   script:
-    - sed "s,@@SDK_ARCH@@,${ARCH},g" org.kde.Sdk.json.in > org.kde.Sdk.json
-    - flatpak-builder --install-deps-from=flathub --user --disable-rofiles-fuse --arch=$ARCH --force-clean --require-changes --ccache --repo=repo --subject="build of org.kde.Sdk, `date`, `git rev-parse HEAD`" sdk org.kde.Sdk.json
-    # Get the branch name from the JSON manifest
-    - flatpak_branch=$(jq -r .branch org.kde.Sdk.json)
-    - flatpak build-bundle --runtime --arch=$ARCH repo platform.flatpak org.kde.Platform $flatpak_branch
-    - flatpak build-bundle --runtime --arch=$ARCH repo sdk.flatpak org.kde.Sdk $flatpak_branch
-    # Sign and publish (if the project branch is cleared for signing and publishing)
-    - python3 ci-notary-service/signflatpak.py -v --config $KDECI_SIGNFLATPAK_CONFIG platform.flatpak
-    - python3 ci-notary-service/signflatpak.py -v --config $KDECI_SIGNFLATPAK_CONFIG sdk.flatpak
-  artifacts:
-    name: Flatpak artifacts
-    expose_as: 'Flatpak Bundle'
-    when: always
-    expire_in: 3 days
-    paths:
-      - "platform.flatpak"
-      - "sdk.flatpak"
-      - "task.log"
-      - "task-debug.log"
+    # Bring in the artifacts
+    - mkdir artifacts/
+    - python3 ci-utilities/sync-s3-folder.py --mode download --verbose --local ./artifacts/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_DIR/p/$CI_PIPELINE_ID/
+    - tar -xf ./artifacts/repository-x86_64.tar.gz
+    - tar -xf ./artifacts/repository-aarch64.tar.gz
+    # Combine them into a single repository
+    - ostree init --repo=repo-combined --mode archive-z2
+    - flatpak build-commit-from --no-update-summary --no-summary-index --disable-fsync --src-repo=repo-x86_64 repo-combined
+    - flatpak build-commit-from --no-update-summary --no-summary-index --disable-fsync --src-repo=repo-aarch64 repo-combined
+    - flatpak build-update-repo --generate-static-deltas --static-delta-ignore-ref=*.Debug --static-delta-ignore-ref=*.Sources repo-combined
+    # Trigger publishing to Flathub
+    - flat-manager-client -v create "$FLAT_MANAGER_ADDRESS" "${RELEASE_CHANNEL}" --build-log-url ${CI_PIPELINE_URL} > publish_build.txt
+    - flat-manager-client push "$(cat publish_build.txt)" repo-combined --build-log-url ${CI_PIPELINE_URL}
+    - flat-manager-client -v commit --wait "$(cat publish_build.txt)"
+    - flat-manager-client -v publish --wait-update "$(cat publish_build.txt)"
