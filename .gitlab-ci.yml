@@ -5,7 +5,7 @@ include:
   - project: sysadmin/ci-utilities
     file: gitlab-templates/blocks/workflow.yml
 
-flatpak:
+lint-manifests:
   stage: validate
   image: storage.kde.org/vm-images/flatpak-builder
   tags:
@@ -18,7 +18,7 @@ flatpak:
     - echo ${KDE_FLATPAK_MODULE_NAME}
     - echo ${KDE_FLATPAK_APP_ID}
     # Lint manifest
-    # flatpak run --command=flatpak-builder-lint org.flatpak.Builder org.kde.Sdk.json.in
+    - flatpak run --command=flatpak-builder-lint org.flatpak.Builder org.kde.Sdk.json.in
     - json-glib-validate org.kde.Sdk.json.in
     - json-glib-validate org.freedesktop.Platform.Icontheme.Adwaita.json
     - json-glib-validate flathub.json
