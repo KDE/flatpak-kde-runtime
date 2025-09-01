@@ -27,9 +27,6 @@ lint-manifests:
     MINIO_OIDC:
       aud: https://tokens.kde.org
   when: manual
-  variables:
-    KDECI_SIGNFLATPAK_CONFIG: $CI_PROJECT_DIR/ci-utilities/signing/signflatpak.ini
-    ARCH: x86_64
   before_script:
     - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
   script:
@@ -39,7 +36,7 @@ lint-manifests:
     - mkdir artifacts/
     - tar -czf artifacts/repository-$ARCH.tar.gz repo-$ARCH/
     - cp org.kde.Sdk.json artifacts/
-    - python3 ci-utilities/sync-s3-folder.py --mode upload --verbose --local ./artifacts/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_DIR/p/$CI_PIPELINE_ID/
+    - python3 ci-utilities/sync-s3-folder.py --mode upload --verbose --local ./artifacts/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_PATH/p/$CI_PIPELINE_ID/
 
 build-runtime-amd64:
   extends: .build-runtime
@@ -59,7 +56,7 @@ build-runtime-arm64:
   variables:
     ARCH: aarch64
 
-publish-runtime:
+.publish-runtime:
   image: storage.kde.org/vm-images/flatpak-builder
   tags:
     - VM
@@ -67,16 +64,10 @@ publish-runtime:
   needs:
     - build-runtime-amd64
     - build-runtime-arm64
-  rules:
-    - if: $CI_COMMIT_REF_PROTECTED == "true"
-      when: manual
-  variables:
-    FLAT_MANAGER_ADDRESS: https://hub.flathub.org/
-    RELEASE_CHANNEL: stable
   script:
     # Bring in the artifacts
     - mkdir artifacts/
-    - python3 ci-utilities/sync-s3-folder.py --mode download --verbose --local ./artifacts/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_DIR/p/$CI_PIPELINE_ID/
+    - python3 ci-utilities/sync-s3-folder.py --mode download --verbose --local ./artifacts/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_PATH/p/$CI_PIPELINE_ID/
     - tar -xf ./artifacts/repository-x86_64.tar.gz
     - tar -xf ./artifacts/repository-aarch64.tar.gz
     # Combine them into a single repository
@@ -88,6 +79,29 @@ publish-runtime:
         flatpak build-commit-from --no-update-summary --disable-fsync --src-repo=repo-aarch64 repo-combined "$ref"
       done
     - flatpak build-update-repo --generate-static-deltas --static-delta-ignore-ref=*.Debug --static-delta-ignore-ref=*.Sources repo-combined
+
+publish-local-preview:
+  extends: .publish-runtime
+  when: manual
+  before_script:
+    - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
+  script:
+    # Include baseline script from above
+    - !reference [.publish-runtime, script]
+    # Publish the repository (unsigned) to our preview workspace
+    - python3 ci-utilities/sync-s3-folder.py --mode upload --verbose --local ./repo-combined/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_PATH/j/$CI_JOB_ID/
+
+publish-to-flathub:
+  extends: .publish-runtime
+  rules:
+    - if: $CI_PROJECT_PATH == "packaging/flatpak-kde-runtime" && $CI_COMMIT_REF_PROTECTED == "true"
+      when: manual
+  variables:
+    FLAT_MANAGER_ADDRESS: https://hub.flathub.org/
+    RELEASE_CHANNEL: stable
+  script:
+    # Include baseline script from above
+    - !reference [.publish-runtime, script]
     # Trigger publishing to Flathub
     - flat-manager-client -v create "$FLAT_MANAGER_ADDRESS" "${RELEASE_CHANNEL}" --build-log-url ${CI_PIPELINE_URL} > publish_build.txt
     - flat-manager-client push "$(cat publish_build.txt)" repo-combined --build-log-url ${CI_PIPELINE_URL}
