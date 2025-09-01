@@ -83,6 +83,9 @@ build-runtime-arm64:
 publish-local-preview:
   extends: .publish-runtime
   when: manual
+  id_tokens:
+    MINIO_OIDC:
+      aud: https://tokens.kde.org
   before_script:
     - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
   script:
