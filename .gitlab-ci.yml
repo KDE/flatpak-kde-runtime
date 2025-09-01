@@ -31,7 +31,7 @@ lint-manifests:
     - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
   script:
     - sed "s,@@SDK_ARCH@@,${ARCH},g" org.kde.Sdk.json.in > org.kde.Sdk.json
-    - flatpak-builder --install-deps-from=flathub --user --arch=$ARCH --force-clean --require-changes --ccache --repo=repo-$ARCH --subject="build of org.kde.Sdk, `date`, `git rev-parse HEAD`" sdk org.kde.Sdk.json
+    - flatpak-builder --install-deps-from=flathub --user --arch=$ARCH --force-clean --require-changes --disable-rofiles-fuse --ccache --repo=repo-$ARCH --subject="build of org.kde.Sdk, `date`, `git rev-parse HEAD`" sdk org.kde.Sdk.json
     # Package up the generated repository for artifacting then upload it
     - mkdir artifacts/
     - tar -czf artifacts/repository-$ARCH.tar.gz repo-$ARCH/
