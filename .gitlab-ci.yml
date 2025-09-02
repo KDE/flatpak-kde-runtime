@@ -72,10 +72,10 @@ build-runtime-arm64:
     # Combine them into a single repository
     - ostree init --repo=repo-combined --mode archive-z2
     - for ref in $(ostree --repo=repo-x86_64 refs); do
-        flatpak build-commit-from --no-update-summary --disable-fsync --src-repo=repo-x86_64 repo-combined "$ref"
+        flatpak build-commit-from --no-update-summary --disable-fsync --src-repo=repo-x86_64 repo-combined "$ref";
       done
     - for ref in $(ostree --repo=repo-aarch64 refs); do
-        flatpak build-commit-from --no-update-summary --disable-fsync --src-repo=repo-aarch64 repo-combined "$ref"
+        flatpak build-commit-from --no-update-summary --disable-fsync --src-repo=repo-aarch64 repo-combined "$ref";
       done
     - flatpak build-update-repo --generate-static-deltas --static-delta-ignore-ref=*.Debug --static-delta-ignore-ref=*.Sources repo-combined
 
