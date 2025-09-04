@@ -111,6 +111,25 @@
     ],
     "modules": [
         {
+            "name": "licence-extractor",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -m777 install-licenses.sh /usr/bin"
+            ],
+            "sources": [
+                {
+                    "type": "script",
+                    "commands": [
+                        "DESTINATION=/usr/share/licenses/org.kde.Platform/$(basename `pwd`)/",
+                        "DESTINATION=${DESTINATION%-[0-9]*}",
+                        "mkdir -p $DESTINATION",
+                        "cp -v LICENSES/* $DESTINATION"
+                    ],
+                    "dest-filename": "install-licenses.sh"
+                }
+            ]
+        },
+        {
             "name": "qt6-qtbase",
             "cleanup-platform": [
                 "/bin"
@@ -157,6 +176,12 @@
                     "paths": [
                         "patch/qtbase-find_package-paths.patch"
                     ]
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -194,6 +219,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qttools-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -218,6 +249,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtshadertools-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -241,6 +278,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtlanguageserver-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -268,6 +311,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtdeclarative-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -291,6 +340,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtwebchannel-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -314,6 +369,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtpositioning-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -337,6 +398,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtsvg-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -360,6 +427,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtmultimedia-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -383,6 +456,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtspeech-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -406,6 +485,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtsensors-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -429,6 +514,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtimageformats-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -452,6 +543,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtconnectivity-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -479,6 +576,12 @@
                 {
                     "type": "patch",
                     "path": "patch/qtwayland-use-adwaita-decorations-on-gnome-by-default.patch"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -502,6 +605,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtserialport-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -525,6 +634,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtwebsockets-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -548,6 +663,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtscxml-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -571,6 +692,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtcharts-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -594,6 +721,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qt3d-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -617,6 +750,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtnetworkauth-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -640,6 +779,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qttranslations-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -663,6 +808,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtremoteobjects-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -686,6 +837,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qt5compat-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -709,6 +866,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtlocation-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -732,6 +895,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtquicktimeline-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -755,6 +924,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtquick3d-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -778,6 +953,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtquick3dphysics-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -801,6 +982,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtquickeffectmaker-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -824,6 +1011,12 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qthttpserver-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -846,6 +1039,12 @@
                         "tag-pattern": "^v6\\.([\\d.]+)$"
                     },
                     "commit": "972be57827edd88af97dc740eb55dd19ce1f85e8"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -868,6 +1067,12 @@
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -883,6 +1088,12 @@
                         "type": "git"
                     },
                     "commit": "4a75a45499a319297a1f38cf8ba3e669c9338ec6"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -903,6 +1114,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "272bd685591e321b0fda52ef21fcc30fc75ef9d2"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -922,6 +1139,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "a0412f78578372e130ec22738005591ada743983"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -941,6 +1164,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "2ac032dfcdb249bfba4b42c3dcc2bbc25de9512a"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -960,6 +1189,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "6fdfbdf09e0cafdd0aa514e022cda9e242e014a5"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -980,6 +1215,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "757c799124995689000e4a4664a675ef77775595"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1000,6 +1241,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "f5bd9676fd3bd7a451931b7b2eb5d839958a5323"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1019,6 +1266,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "ab3ea2407628b19c2b85a13a62e196f093a68e9b"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1038,6 +1291,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "69712e2d9ca0ea195a78ff0e9c509592c3e98a01"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1057,6 +1316,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "45c79ecc989ff68e621a674e961c51bcdca2212e"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1076,6 +1341,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "7272e587bccbed92b08aeb663c31e049e881918b"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1095,6 +1366,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "4e43cfe7f4a7325e72835838cf9ceddc603f3043"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1114,6 +1391,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "28184faef5c06f53545134cddd574463ccd3cf5e"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1137,6 +1420,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "2a9b908671d4168fa94583f043c33f6b90aec3a7"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1156,6 +1445,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "cc6686960cf12ffe63296fe4a5118d5466b10e8f"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1175,6 +1470,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "2d987be777041a5561ca41129a7269e48f117aab"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1194,6 +1495,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "6839bf01e8cd6ac760526fbaf900e51d5e6c3954"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1213,6 +1520,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "276feba3e47cfac3d58477144dc08f20bd56a2ef"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1233,6 +1546,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "b8f3b82f2727decc580b7a66df53b29ec571d8a1"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1252,6 +1571,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "3a565513b62a8715840d73a325b7d0f976b7bf65"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1271,6 +1596,12 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1290,6 +1621,12 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1309,6 +1646,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "c0d816a3bb6acced8289310d6d3ac7fc30c00243"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1328,6 +1671,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "053197861409d7f296f1cdb8d54232ff00f4cbc4"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1348,6 +1697,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "ca88274738cf60bca993d60e2288ba1769d48eb0"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1368,6 +1723,12 @@
                         "perl Makefile.PL INSTALLDIRS=vendor"
                     ],
                     "dest-filename": "configure"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1389,6 +1750,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "6aceeec6c7e6257b99e8739d7654260f882ca583"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1408,6 +1775,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "d1e4e1c4ad8f1c6d863c955d177db5a9070c930a"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1427,6 +1800,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "48684924ea0b2fbace1a4f2c77ef4dedee1549c0"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1446,6 +1825,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "d0b26c0ba4312b5b019ac8223ced149c17248c22"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ],
             "modules": [
@@ -1468,6 +1853,12 @@
                                 "project-id": 20545,
                                 "url-template": "https://github.com/nemtrif/utfcpp/archive/refs/tags/v$version.tar.gz"
                             }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "install-licenses.sh"
+                            ]
                         }
                     ]
                 },
@@ -1489,6 +1880,12 @@
                                 "stable-only": true,
                                 "url-template": "https://github.com/taglib/taglib/archive/refs/tags/v$version.tar.gz"
                             }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "install-licenses.sh"
+                            ]
                         }
                     ]
                 }
@@ -1509,6 +1906,12 @@
                 {
                     "type": "patch",
                     "path": "patch/libcanberra-0002-gtk-Don-t-assume-all-GdkDisplays-are-GdkX11Displays-.patch"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1529,6 +1932,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "3a3822a843fabc6a8ae232facd2211be2e944ac8"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1548,6 +1957,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "f6cc0cb786cb5da4a97c77e16b77a724738c8c54"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ],
             "modules": [
@@ -1563,6 +1978,12 @@
                             "type": "git",
                             "url": "https://invent.kde.org/libraries/qca.git",
                             "tag": "v2.3.10"
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "install-licenses.sh"
+                            ]
                         }
                     ]
                 },
@@ -1586,6 +2007,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "c700c204239cf9c29ee7f5c5258cee9a9ec6fff2"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1605,6 +2032,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "a410c6a35ad095451633a15b7cc5f523d62de39e"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1624,6 +2057,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "6a0202b4b22de2cb165feaafca105d29e1f5073f"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1643,6 +2082,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "60fcfe74ad52fad7c420355ee52dd86f13c29cc6"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1662,6 +2107,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "0b10ca8ede5c4538b8a794954e648958f235794c"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1681,6 +2132,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "7aeb739de41ce21bfee28e4c2d1d9e5183e34d15"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1701,6 +2158,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "74da56e0fb80246d3930e3b646fd354fcd2d2054"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1720,6 +2183,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "5ba24a4dace4bd7f8bf6188052ae69434d13b95f"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1737,6 +2206,12 @@
                     "url": "https://invent.kde.org/plasma/plasma-activities.git",
                     "tag": "v6.3.4",
                     "commit": "71aa0c8fc3cae3650b939b86d1ca144a4dc75aee"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1756,6 +2231,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "de724b189904d4710b862d8774e27107ea3a5626"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1776,6 +2257,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "c22eedfc5df03a8e1459092f12eb730bb2c92fe0"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1795,6 +2282,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "b8ccac9aae5804e3544b26394ea1412aba5d2c71"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1814,6 +2307,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "09427a3ed17b2049782ae60834d56f4fe22f2de5"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1833,6 +2332,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "5fc191681d36ea5f54acef0be0b185a9e471ddbe"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1871,6 +2376,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "44adc7809cf7b978fe73394eb98acd2255f59194"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1890,6 +2401,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "4a0c54c1e59b5967ca7089d1a64625833dc1201a"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1909,6 +2426,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "8fa19d7f1a4f2240d088907b6a1c740d93adf7f2"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1936,6 +2459,12 @@
                         "project-id": 14833,
                         "url-template": "https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v$version.tar.gz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1955,6 +2484,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "f158606324edabb293c903f44917c9872c81d590"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1975,6 +2510,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "2678dd93fcda2c3a52d4a3a2d09a7f1574ddd4b9"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1994,6 +2535,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "da7cb3c25d7f8745f9be8eeb767a8cbe0b3013fe"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2009,6 +2556,12 @@
                     "url": "https://invent.kde.org/plasma/kwayland.git",
                     "tag": "v6.1.4",
                     "commit": "d5efa9d519a9dee6ab7ce7163a4be67dd0bc5632"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2029,6 +2582,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "be2a4e2dea67eed91973ceffb9aa48a8597e0203"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2049,6 +2608,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "05598e814dc112974ccfd76c3dc31ad0c4e05c99"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2069,6 +2634,12 @@
                         "tag-pattern": "^v6([\\d.]+)$"
                     },
                     "commit": "85aa11423052b8398a554cbd91023b69edbc4297"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2089,6 +2660,12 @@
                         "tag-pattern": "^v6([\\d.]+)$"
                     },
                     "commit": "4a0873461bca7ecdab61dcdbf4c2e08541a20a20"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ],
             "modules": [
@@ -2107,6 +2684,12 @@
                             "type": "git",
                             "url": "https://github.com/libical/libical.git",
                             "tag": "v3.0.20"
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "install-licenses.sh"
+                            ]
                         }
                     ]
                 }
@@ -2129,6 +2712,12 @@
                         "tag-pattern": "^v6([\\d.]+)$"
                     },
                     "commit": "fc197680821c8fe649e450e27b2eea3d98a70c81"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2148,6 +2737,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "c16cda2aca88559cc56bc038f006d32435bb97bb"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ],
             "modules": [
@@ -2163,15 +2758,21 @@
                         {
                             "type": "archive",
                             "url": "https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz",
-                            "sha256": "5385bc1b8c2f20f3b91d258bf8ccc8cf62023935df2d2676b5b67049f31a049c"
+                            "sha256": "5385bc1b8c2f20f3b91d258bf8ccc8cf62023935df2d2676b5b67049f31a049c",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 12834,
+                                "stable-only": true,
+                                "url-template": "https://github.com/fukuchi/libqrencode/archive/refs/tags/v$version.tar.gz"
+                            }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "install-licenses.sh"
+                            ]
                         }
-                    ],
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 12834,
-                        "stable-only": true,
-                        "url-template": "https://github.com/fukuchi/libqrencode/archive/refs/tags/v$version.tar.gz"
-                    }
+                    ]
                 },
                 {
                     "name": "libdmtx",
@@ -2183,6 +2784,12 @@
                             "type": "archive",
                             "url": "https://github.com/dmtx/libdmtx/archive/v0.7.8.tar.gz",
                             "sha256": "2394bf1d1d693a5a4ca3cfcc1bb28a4d878bdb831ea9ca8f3d5c995d274bdc39"
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "install-licenses.sh"
+                            ]
                         }
                     ]
                 },
@@ -2213,6 +2820,12 @@
                                 "project-id": 101246,
                                 "url-template": "https://github.com/zxing-cpp/zxing-cpp/archive/v$version.tar.gz"
                             }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "install-licenses.sh"
+                            ]
                         }
                     ]
                 }
@@ -2234,6 +2847,12 @@
                         "tag-pattern": "^v6([\\d.]+)$"
                     },
                     "commit": "a531d0f83ab590654c2b2288e9ea2eae0801e36d"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2253,6 +2872,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "ff28402413740a3acc11c89bd12980861e4c3e5d"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2272,6 +2897,12 @@
                         "tag-pattern": "^v6([\\d.]+)$"
                     },
                     "commit": "0f409e5b2a0e579fe23652d2da13b4d216357652"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2292,6 +2923,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "c93dfb060ed6e4caa2b695340bd0867ec32acc2c"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2313,6 +2950,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "1bfae6f1713b9a1786164d36a6bb2fc867c1f880"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2333,6 +2976,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "df27070966cb571db572cf50a96b2b6312423009"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2354,6 +3003,12 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "a574e789ccc973dacce32efab671111ea73a4af3"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2375,6 +3030,12 @@
                         "stable-only": true,
                         "url-template": "https://github.com/danvratil/qcoro/archive/refs/tags/v$version.tar.gz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2391,6 +3052,12 @@
                     "url": "https://invent.kde.org/plasma/plasma-activities-stats.git",
                     "tag": "v6.3.4",
                     "commit": "75d8a5c99026e8979db070fc994ca7ef39dbe46c"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2407,6 +3074,12 @@
                     "url": "https://invent.kde.org/network/kio-extras.git",
                     "commit": "915fb036b993ff90817914725c19f9850d4c4aff",
                     "tag": "v24.12.3"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2434,6 +3107,12 @@
                 {
                     "type": "patch",
                     "path": "patch/breeze-include-1.patch"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2451,6 +3130,12 @@
                     "url": "https://invent.kde.org/plasma/plasma-integration.git",
                     "tag": "v6.3.4",
                     "commit": "2f01ed67f05085d04967e31c0dfc973be6fce996"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2467,6 +3152,12 @@
                     "url": "https://invent.kde.org/plasma/qqc2-breeze-style.git",
                     "tag": "v6.3.4",
                     "commit": "a3dabde8a25209478a2c7f50b2080161144d3aea"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
