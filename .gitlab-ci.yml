@@ -55,7 +55,7 @@ build-runtime-arm64:
   variables:
     ARCH: aarch64
 
-.publish-runtime:
+publish-to-flathub:
   image: storage.kde.org/vm-images/flatpak-builder
   tags:
     - VM
@@ -63,6 +63,17 @@ build-runtime-arm64:
   needs:
     - build-runtime-amd64
     - build-runtime-arm64
+  rules:
+    - if: $CI_PROJECT_PATH == "packaging/flatpak-kde-runtime" && $CI_COMMIT_REF_PROTECTED == "true"
+      when: manual
+  variables:
+    FLAT_MANAGER_ADDRESS: https://hub.flathub.org/
+    RELEASE_CHANNEL: stable
+  id_tokens:
+    MINIO_OIDC:
+      aud: https://tokens.kde.org
+  before_script:
+    - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
   script:
     # Bring in the artifacts
     - mkdir artifacts/
@@ -78,32 +89,6 @@ build-runtime-arm64:
         flatpak build-commit-from --no-update-summary --disable-fsync --src-repo=repo-aarch64 repo-combined "$ref";
       done
     - flatpak build-update-repo --generate-static-deltas --static-delta-ignore-ref=*.Debug --static-delta-ignore-ref=*.Sources repo-combined
-
-publish-local-preview:
-  extends: .publish-runtime
-  when: manual
-  id_tokens:
-    MINIO_OIDC:
-      aud: https://tokens.kde.org
-  before_script:
-    - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
-  script:
-    # Include baseline script from above
-    - !reference [.publish-runtime, script]
-    # Publish the repository (unsigned) to our preview workspace
-    - python3 ci-utilities/sync-s3-folder.py --mode upload --verbose --local ./repo-combined/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_PATH/j/$CI_JOB_ID/
-
-publish-to-flathub:
-  extends: .publish-runtime
-  rules:
-    - if: $CI_PROJECT_PATH == "packaging/flatpak-kde-runtime" && $CI_COMMIT_REF_PROTECTED == "true"
-      when: manual
-  variables:
-    FLAT_MANAGER_ADDRESS: https://hub.flathub.org/
-    RELEASE_CHANNEL: stable
-  script:
-    # Include baseline script from above
-    - !reference [.publish-runtime, script]
     # Trigger publishing to Flathub
     - flat-manager-client -v create "$FLAT_MANAGER_ADDRESS" "${RELEASE_CHANNEL}" --build-log-url ${CI_PIPELINE_URL} > publish_build.txt
     - flat-manager-client push "$(cat publish_build.txt)" repo-combined --build-log-url ${CI_PIPELINE_URL}
