@@ -56,6 +56,7 @@ build-runtime-arm64:
     ARCH: aarch64
 
 publish-to-flathub:
+  stage: publish
   image: storage.kde.org/vm-images/flatpak-builder
   tags:
     - VM
