@@ -18,7 +18,7 @@ lint-manifests:
     #- flatpak run --command=flatpak-builder-lint org.flatpak.Builder org.kde.Sdk.json.in
     - json-glib-validate org.kde.Sdk.json.in
     - json-glib-validate flathub.json
-    - appstreamcli validate --no-net org.kde.{Sdk,Platform}.metainfo.xml
+    - appstreamcli validate --no-net org.kde.{Sdk,Platform}.appdata.xml
 
 .build-runtime:
   stage: build
