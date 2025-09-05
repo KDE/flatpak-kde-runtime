@@ -119,6 +119,25 @@
     ],
     "modules": [
         {
+            "name": "licence-extractor",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -m777 install-licenses.sh /usr/bin"
+            ],
+            "sources": [
+                {
+                    "type": "script",
+                    "commands": [
+                        "DESTINATION=/usr/share/licenses/org.kde.Platform/$(basename `pwd`)/",
+                        "DESTINATION=${DESTINATION%-[0-9]*}",
+                        "mkdir -p $DESTINATION",
+                        "cp -v ${LICENSES:-LICENSES/*} $DESTINATION"
+                    ],
+                    "dest-filename": "install-licenses.sh"
+                }
+            ]
+        },
+        {
             "name": "qt5-qtbase",
             "cleanup-platform": [
                 "/bin"
@@ -201,6 +220,12 @@
                         "./configure.qt $processed"
                     ],
                     "dest-filename": "configure"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -216,6 +241,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtdeclarative.git",
                     "commit": "f803fcd25c068cf0f78cc9f75c0e2f565f3fefde"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -244,6 +275,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qttools.git",
                     "commit": "9f7af2d08eea7c2a2a2bfe7e6a9b73d1b99f5123"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -258,6 +295,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtscript.git",
                     "commit": "4f8c35a528586541ea55bb8b3361eaa6749e52b1"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -272,6 +315,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwebchannel.git",
                     "commit": "74c0625337c8a8de0a465878c7e7d238e8d979ed"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -286,6 +335,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtlocation.git",
                     "commit": "3b946d0c5c8aaed3757bdcbbcd3b45cb79494471"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -300,6 +355,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtsvg.git",
                     "commit": "37b2c764fb599c96fc415049208e871c729217c8"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -314,6 +375,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtx11extras.git",
                     "commit": "74f81f0bfe17e5aabcebafcb0cf36f739133554c"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -328,6 +395,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtmultimedia.git",
                     "commit": "78d05cfcec57a9e890cb5ddbea604f194e04315d"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -342,6 +415,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtsensors.git",
                     "commit": "45c04582b15a9bb4be01ae99aa7fda1bbba7d0df"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -356,6 +435,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtquickcontrols.git",
                     "commit": "0ea7cfdfbfa72d467fe542cc48ab3206c177a387"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -370,6 +455,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtquickcontrols2.git",
                     "commit": "0472a07a8f39587052216d85a7ed235c531eba2c"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -384,6 +475,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtgraphicaleffects.git",
                     "commit": "500ae59f809877e0ada9a68601564882f2733145"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -398,6 +495,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtxmlpatterns.git",
                     "commit": "0c1dcfe344c03d48d753aeb58f139bc990f2611c"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -412,6 +515,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtimageformats.git",
                     "commit": "6d8c50353009435028dfc4e44977f6c5a33b8556"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -426,6 +535,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtconnectivity.git",
                     "commit": "9a4e6f887f35b8018c30afdeaaef152a875c9a2b"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -440,6 +555,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwayland.git",
                     "commit": "8167ea2432a8313ffd130e071aa31570de52e97b"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -454,6 +575,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtvirtualkeyboard.git",
                     "commit": "72373522141dd3206183eb5fa56ae1c36a6d4c2b"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -468,6 +595,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtserialport.git",
                     "commit": "af58a4c62415fbfd997c43422acf93e2e6ab5155"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -482,6 +615,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwebsockets.git",
                     "commit": "89fbe461e7091ae6a4689b7791293a06c9167776"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -496,6 +635,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtcharts.git",
                     "commit": "7ce22b0633eb9d1eb59854fee4f2f545e1b842e0"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -510,6 +655,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qt3d.git",
                     "commit": "01aa0a9cb22ce5ed2b7ead03ed9cbeb5f978e897"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -524,6 +675,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtspeech.git",
                     "commit": "75142c77cda8ef3a5c1cae69863e963797c667b5"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ],
             "modules": [
@@ -561,6 +718,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtnetworkauth.git",
                     "commit": "a0f23c6a1f11bd7c6a8e4fd34f10bdb0a35789fa"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -575,6 +738,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtgamepad.git",
                     "commit": "f90bd729eb70d4a0770efed3f9bb1b6dbe67d37c"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -589,6 +758,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qttranslations.git",
                     "commit": "a680686754d84b91d4cc4252a2fb8af0c58f5f49"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -603,6 +778,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtremoteobjects.git",
                     "commit": "d10e7673218fa2b00191a82ad20cd3304a711fa6"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -618,6 +799,12 @@
                     "type": "git",
                     "url": "https://github.com/unity8-team/libdbusmenu-qt.git",
                     "tag": "0.9.3+16.04.20160218-0ubuntu1"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -643,6 +830,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -662,6 +855,12 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -684,6 +883,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -706,6 +911,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -728,6 +939,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -750,6 +967,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -772,6 +995,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -794,6 +1023,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -816,6 +1051,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -839,6 +1080,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -861,6 +1108,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -883,6 +1136,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -905,6 +1164,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -927,6 +1192,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -949,6 +1220,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -971,6 +1248,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -993,6 +1276,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1016,6 +1305,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1038,6 +1333,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1060,6 +1361,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1082,6 +1389,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1104,6 +1417,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1126,6 +1445,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1146,6 +1471,12 @@
                         "perl Makefile.PL INSTALLDIRS=vendor"
                     ],
                     "dest-filename": "configure"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1170,6 +1501,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1192,6 +1529,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1214,6 +1557,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1236,6 +1585,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ],
             "modules": [
@@ -1281,6 +1636,12 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1303,6 +1664,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1325,6 +1692,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ],
             "modules": [
@@ -1368,6 +1741,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1390,6 +1769,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1412,6 +1797,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1434,6 +1825,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1456,6 +1853,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1479,6 +1882,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1501,6 +1910,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1523,6 +1938,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1545,6 +1966,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1567,6 +1994,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1589,6 +2022,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1612,6 +2051,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1634,6 +2079,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1656,6 +2107,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1678,6 +2135,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1700,6 +2163,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1722,6 +2191,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1744,6 +2219,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1766,6 +2247,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1788,6 +2275,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1815,6 +2308,12 @@
                         "project-id": 14833,
                         "url-template": "https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v$version.tar.gz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1837,6 +2336,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1860,6 +2365,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1882,6 +2393,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1904,6 +2421,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1926,6 +2449,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1949,6 +2478,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1972,6 +2507,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -1996,6 +2537,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2019,6 +2566,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2042,6 +2595,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ],
             "modules": [
@@ -2090,6 +2649,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2112,6 +2677,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ],
             "modules": [
@@ -2205,6 +2776,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2227,6 +2804,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2249,6 +2832,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2272,6 +2861,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2298,6 +2893,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2321,6 +2922,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ],
             "modules": [
@@ -2414,6 +3021,12 @@
                             "<": "245.0"
                         }
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2434,6 +3047,12 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/kio-extras-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2450,6 +3069,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/breeze.git",
                     "branch": "Plasma/5.27"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2464,6 +3089,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/plasma-integration.git",
                     "branch": "Plasma/5.27"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2478,6 +3109,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/kwayland-integration.git",
                     "branch": "Plasma/5.27"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2498,6 +3135,12 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2520,6 +3163,12 @@
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2535,6 +3184,12 @@
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/qqc2-breeze-style.git",
                     "branch": "Plasma/5.27"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         },
@@ -2573,6 +3228,12 @@
                     "type": "script",
                     "commands": [],
                     "dest-filename": "configure"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
                 }
             ]
         }
