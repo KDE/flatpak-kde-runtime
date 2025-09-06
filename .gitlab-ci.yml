@@ -1,30 +1,97 @@
 # SPDX-FileCopyrightText: None
 # SPDX-License-Identifier: CC0-1.0
 
-workflow:
-  rules:
-    # Prevent branch pipelines if an MR is open on the branch.
-    - if: $CI_COMMIT_BRANCH && $CI_PIPELINE_SOURCE == "push" && $CI_OPEN_MERGE_REQUESTS
-      when: never
-    # Allow merge request pipelines.
-    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
-    # Build tags and branches too
-    - if: $CI_COMMIT_TAG
-    - if: $CI_COMMIT_BRANCH
+include:
+  - project: sysadmin/ci-utilities
+    file: gitlab-templates/blocks/workflow.yml
 
-flatpak:
-  image: invent-registry.kde.org/sysadmin/ci-images/flatpak-builder:latest
+lint-manifests:
+  stage: validate
+  image: storage.kde.org/vm-images/flatpak-builder
   tags:
-    - Linux
+    - VM
+    - amd64
   interruptible: true
   before_script:
     - git clone https://invent.kde.org/sysadmin/ci-utilities.git
   script:
-    - echo ${KDE_FLATPAK_MODULE_NAME}
-    - echo ${KDE_FLATPAK_APP_ID}
-    # Lint manifest
-    # flatpak run --command=flatpak-builder-lint org.flatpak.Builder org.kde.Sdk.json.in
+    #- flatpak run --command=flatpak-builder-lint org.flatpak.Builder org.kde.Sdk.json.in
     - json-glib-validate org.kde.Sdk.json.in
-    - json-glib-validate org.freedesktop.Platform.Icontheme.Adwaita.json
-    - json-glib-validate flathub.json
     - appstreamcli validate --no-net org.kde.{Sdk,Platform}.appdata.xml
+
+.build-runtime:
+  stage: build
+  id_tokens:
+    MINIO_OIDC:
+      aud: https://tokens.kde.org
+  when: manual
+  before_script:
+    - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
+  script:
+    - sed "s,@@SDK_ARCH@@,${ARCH},g" org.kde.Sdk.json.in > org.kde.Sdk.json
+    - flatpak-builder --install-deps-from=flathub --user --arch=$ARCH --force-clean --require-changes --disable-rofiles-fuse --ccache --repo=repo-$ARCH --subject="build of org.kde.Sdk, `date`, `git rev-parse HEAD`" sdk org.kde.Sdk.json
+    # Package up the generated repository for artifacting then upload it
+    - mkdir artifacts/
+    - tar -czf artifacts/repository-$ARCH.tar.gz repo-$ARCH/
+    - cp org.kde.Sdk.json artifacts/
+    - python3 ci-utilities/sync-s3-folder.py --mode upload --verbose --local ./artifacts/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_PATH/p/$CI_PIPELINE_ID/
+
+build-runtime-amd64:
+  extends: .build-runtime
+  image: storage.kde.org/vm-images/flatpak-builder
+  tags:
+    - LargeVM
+    - amd64
+  variables:
+    ARCH: x86_64
+
+build-runtime-arm64:
+  extends: .build-runtime
+  image: storage.kde.org/vm-images/flatpak-builder-arm64
+  tags:
+    - LargeVM
+    - arm64
+  variables:
+    ARCH: aarch64
+
+publish-to-flathub:
+  stage: publish
+  image: storage.kde.org/vm-images/flatpak-builder
+  tags:
+    - VM
+    - amd64
+  needs:
+    - build-runtime-amd64
+    - build-runtime-arm64
+  rules:
+    - if: $CI_PROJECT_PATH == "packaging/flatpak-kde-runtime" && $CI_COMMIT_REF_PROTECTED == "true"
+      when: manual
+  variables:
+    FLAT_MANAGER_ADDRESS: https://hub.flathub.org/
+    RELEASE_CHANNEL: stable
+  id_tokens:
+    MINIO_OIDC:
+      aud: https://tokens.kde.org
+  before_script:
+    - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
+  script:
+    # Bring in the artifacts
+    - mkdir artifacts/
+    - python3 ci-utilities/sync-s3-folder.py --mode download --verbose --local ./artifacts/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_PATH/p/$CI_PIPELINE_ID/
+    - tar -xf ./artifacts/repository-x86_64.tar.gz
+    - tar -xf ./artifacts/repository-aarch64.tar.gz
+    # Combine them into a single repository
+    - ostree init --repo=repo-combined --mode archive-z2
+    - for ref in $(ostree --repo=repo-x86_64 refs); do
+        flatpak build-commit-from --no-update-summary --disable-fsync --src-repo=repo-x86_64 repo-combined "$ref";
+      done
+    - for ref in $(ostree --repo=repo-aarch64 refs); do
+        flatpak build-commit-from --no-update-summary --disable-fsync --src-repo=repo-aarch64 repo-combined "$ref";
+      done
+    - flatpak build-update-repo --generate-static-deltas --static-delta-ignore-ref=*.Debug --static-delta-ignore-ref=*.Sources repo-combined
+    # Trigger publishing to Flathub
+    - flat-manager-client -v create "$FLAT_MANAGER_ADDRESS" "${RELEASE_CHANNEL}" --build-log-url ${CI_PIPELINE_URL} > publish_build.txt
+    - flat-manager-client push "$(cat publish_build.txt)" repo-combined --build-log-url ${CI_PIPELINE_URL}
+    - flat-manager-client -v commit --end-of-life="We strongly recommend moving to the latest stable version of the Platform and SDK" --wait "$(cat publish_build.txt)"
+    - flat-manager-client -v publish --wait "$(cat publish_build.txt)"
+    - echo "Check https://hub.flathub.org/status to see when this is going to be available"
