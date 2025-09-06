@@ -1185,7 +1185,7 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "cf6ba6ba4614f3060aa9ebeb279e580121ad7d66"
+                    "commit": "a4251a1b2a59cfc3535cf085e2b575ed112845aa"
                 },
                 {
                     "type": "shell",
@@ -1336,7 +1336,7 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "2bcc287b02d8f6277d8e47f5ad0040fa94667fb7"
+                    "commit": "a3502de493098d692a8c87e5d1ec896c9842334f"
                 },
                 {
                     "type": "shell",
@@ -2277,7 +2277,7 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "d8d838a194407e651990e5cd98eede4c6a6f9ee9"
+                    "commit": "ed604c7cf3360da6f7dd5dd5114289c7a9088f4e"
                 },
                 {
                     "type": "shell",
@@ -2460,7 +2460,7 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "54f047dc84ce647aba91263b8e0e2883aad504b1"
+                    "commit": "ff9e11f1c5cc13c04677182decbd8e075930c814"
                 },
                 {
                     "type": "shell",
@@ -2873,7 +2873,7 @@
                         "type": "git",
                         "tag-pattern": "^v6([\\d.]+)$"
                     },
-                    "commit": "24f6f28810341f0b371bcea5f03f10375efcd458"
+                    "commit": "7f98cb0b98bd5c18ae1c5a59641b859d16f5175c"
                 },
                 {
                     "type": "shell",
