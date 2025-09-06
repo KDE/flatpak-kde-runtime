@@ -2715,12 +2715,13 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://fukuchi.org/works/qrencode/qrencode-4.1.1.tar.gz",
-                            "sha256": "da448ed4f52aba6bcb0cd48cac0dd51b8692bccc4cd127431402fca6f8171e8e",
+                            "url": "https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz",
+                            "sha256": "5385bc1b8c2f20f3b91d258bf8ccc8cf62023935df2d2676b5b67049f31a049c",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 12834,
-                                "url-template": "https://fukuchi.org/works/qrencode/qrencode-$version.tar.gz"
+                                "stable-only": true,
+                                "url-template": "https://github.com/fukuchi/libqrencode/archive/refs/tags/v$version.tar.gz"
                             }
                         },
                         {
