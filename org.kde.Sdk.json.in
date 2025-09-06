@@ -1168,7 +1168,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "LICENSES='COPYING*' install-licenses.sh"
+                        "install-licenses.sh"
                     ]
                 }
             ]
