@@ -3277,12 +3277,6 @@
                     "type": "script",
                     "commands": [],
                     "dest-filename": "configure"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "install-licenses.sh"
-                    ]
                 }
             ]
         }
