@@ -1,5 +1,0 @@
-{
-  "skip-arches": ["i386","arm"],
-  "skip-icons-check": true,
-  "end-of-life": "We strongly recommend moving to the latest Qt 5.15-based stable version of the Platform and SDK"
-}
