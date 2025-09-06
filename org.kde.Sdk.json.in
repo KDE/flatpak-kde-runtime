@@ -224,7 +224,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -245,7 +245,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -279,7 +279,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -299,7 +299,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -319,7 +319,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -339,7 +339,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -359,7 +359,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -379,7 +379,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -399,7 +399,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -419,7 +419,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -439,7 +439,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -459,7 +459,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -479,7 +479,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -499,7 +499,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -519,7 +519,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -539,7 +539,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -559,7 +559,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -579,7 +579,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -599,7 +599,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -619,7 +619,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -639,7 +639,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -659,7 +659,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -679,7 +679,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ],
@@ -722,7 +722,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -742,7 +742,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -762,7 +762,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
@@ -782,7 +782,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "install-licenses.sh"
+                        "LICENSES='LICENSE*' install-licenses.sh"
                     ]
                 }
             ]
