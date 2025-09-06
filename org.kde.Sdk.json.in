@@ -112,7 +112,7 @@
             "name": "licence-extractor",
             "buildsystem": "simple",
             "build-commands": [
-                "install -m777 install-licenses.sh /usr/bin"
+                "install -m755 install-licenses.sh /usr/bin"
             ],
             "sources": [
                 {
