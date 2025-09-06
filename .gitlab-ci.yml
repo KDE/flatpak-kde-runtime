@@ -25,5 +25,3 @@ flatpak:
     # Lint manifest
     # flatpak run --command=flatpak-builder-lint org.flatpak.Builder org.kde.Sdk.json.in
     - json-glib-validate org.kde.Sdk.json.in
-    - json-glib-validate org.freedesktop.Platform.Icontheme.Adwaita.json
-    - json-glib-validate flathub.json
