@@ -3131,6 +3131,29 @@
             ]
         },
         {
+            "name": "ocean-sound-theme",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/plasma/6.4.5/ocean-sound-theme-6.4.5.tar.xz",
+                    "sha256":"5f5e34918ec69f44c1021da5260e1a5d656436460c9fe01a5d4884913016fa25",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 8761,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/plasma/$version/ocean-sound-theme-$version.tar.xz"
+                    }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
+                }
+            ]
+        },
+        {
             "name": "os-release",
             "post-install": [
                 "mkdir -p /usr/share/runtime/lib/plugins/"
