@@ -109,6 +109,11 @@
     "cleanup-platform-commands": [
         "/usr/libexec/freedesktop-post.sh"
     ],
+    "build-options": {
+        "env": {
+            "CMAKE_BUILD_TYPE": "RelWithDebInfo"
+        }
+    },
     "modules": [
         {
             "name": "licence-extractor",
