@@ -104,7 +104,10 @@
         "/lib/*/cmake",
         "/mkspecs",
         "/lib/mkspecs",
-        "*.prl"
+        "*.prl",
+        "/lib/metatypes",
+        "kde-qmlmodule.version",
+        "*.qmltypes"
     ],
     "cleanup-platform-commands": [
         "/usr/libexec/freedesktop-post.sh"
