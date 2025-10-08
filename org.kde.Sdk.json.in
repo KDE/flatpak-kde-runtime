@@ -1870,33 +1870,6 @@
                             ]
                         }
                     ]
-                },
-                {
-                    "name": "taglib",
-                    "config-opts": [
-                        "-DBUILD_SHARED_LIBS=ON",
-                        "-DLIB_INSTALL_DIR:PATH=/usr/lib/@@SDK_ARCH@@-linux-gnu"
-                    ],
-                    "buildsystem": "cmake-ninja",
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://github.com/taglib/taglib/archive/refs/tags/v2.1.1.tar.gz",
-                            "sha256": "bd57924496a272322d6f9252502da4e620b6ab9777992e8934779ebd64babd6e",
-                            "x-checker-data": {
-                                "type": "anitya",
-                                "project-id": 1982,
-                                "stable-only": true,
-                                "url-template": "https://github.com/taglib/taglib/archive/refs/tags/v$version.tar.gz"
-                            }
-                        },
-                        {
-                            "type": "shell",
-                            "commands": [
-                                "LICENSES='COPYING*' install-licenses.sh"
-                            ]
-                        }
-                    ]
                 }
             ]
         },
@@ -2000,8 +1973,7 @@
                             ]
                         }
                     ]
-                },
-                "libsecret.json"
+                }
             ]
         },
         {
