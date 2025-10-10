@@ -1985,7 +1985,12 @@
                         {
                             "type": "git",
                             "url": "https://invent.kde.org/libraries/qca.git",
-                            "tag": "v2.3.10"
+                            "x-checker-data": {
+                                "type": "git",
+                                "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
+                            },
+                            "tag": "v2.3.10",
+                            "commit": "df5171e3c4baf346581f15af5a040e61b166a332"
                         },
                         {
                             "type": "shell",
@@ -2212,8 +2217,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/plasma-activities.git",
-                    "tag": "v6.3.4",
-                    "commit": "71aa0c8fc3cae3650b939b86d1ca144a4dc75aee"
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
+                    },
+                    "tag": "v6.4.5",
+                    "commit": "77374408fda519df7934a440d44feb0fa8b2606d"
                 },
                 {
                     "type": "shell",
@@ -2460,13 +2469,19 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.9.tar.gz",
-                    "sha256": "4aaa4e3883332aac7ec19c169dcf128f5f0f963f61d09beb299eb2bce5944e2c",
+                    "url": "https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.10.tar.gz",
+                    "sha256": "ab9f897a90fb36cfc34e5b67221e55ab0e3119b3512de8e31029d376c6bab870",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 14833,
                         "url-template": "https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v$version.tar.gz"
                     }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "sed -e 's|-Werror||' -i src/CMakeLists.txt"
+                    ]
                 },
                 {
                     "type": "shell",
@@ -2562,8 +2577,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/kwayland.git",
-                    "tag": "v6.1.4",
-                    "commit": "d5efa9d519a9dee6ab7ce7163a4be67dd0bc5632"
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
+                    },
+                    "tag": "v6.4.5",
+                    "commit": "865f28986b425be89e670a037fae1b9ff7c4e71f"
                 },
                 {
                     "type": "shell",
@@ -2711,7 +2730,12 @@
                         {
                             "type": "git",
                             "url": "https://github.com/libical/libical.git",
-                            "tag": "v3.0.20"
+                            "x-checker-data": {
+                                "type": "git",
+                                "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
+                            },
+                            "tag": "v3.0.20",
+                            "commit": "57ce34025066935f356fd539e6deb7a7a9952618"
                         },
                         {
                             "type": "shell",
@@ -3078,8 +3102,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/plasma-activities-stats.git",
-                    "tag": "v6.3.4",
-                    "commit": "75d8a5c99026e8979db070fc994ca7ef39dbe46c"
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
+                    },
+                    "tag": "v6.4.5",
+                    "commit": "13347ae44bb475de4d9cfd4429bd7408a2d076fb"
                 },
                 {
                     "type": "shell",
@@ -3100,8 +3128,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/network/kio-extras.git",
-                    "commit": "915fb036b993ff90817914725c19f9850d4c4aff",
-                    "tag": "v24.12.3"
+                    "commit": "5a8f3fc35b4f2b79d24a0b1d9f056b018e7318a8",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
+                    },
+                    "tag": "v25.08.2"
                 },
                 {
                     "type": "shell",
@@ -3125,16 +3157,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/breeze.git",
-                    "tag": "v6.3.4",
-                    "commit": "0713d455356765b24b8173ae009815a70763f56d"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/breeze-include-0.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/breeze-include-1.patch"
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
+                    },
+                    "tag": "v6.4.5",
+                    "commit": "9c053f03a745217082a478aee9032218eeed4e7e"
                 },
                 {
                     "type": "shell",
@@ -3156,8 +3184,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/plasma-integration.git",
-                    "tag": "v6.3.4",
-                    "commit": "2f01ed67f05085d04967e31c0dfc973be6fce996"
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
+                    },
+                    "tag": "v6.4.5",
+                    "commit": "e00997796e99d2ca4680e6eff63bc5e7fc5ea44a"
                 },
                 {
                     "type": "shell",
@@ -3178,8 +3210,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/qqc2-breeze-style.git",
-                    "tag": "v6.3.4",
-                    "commit": "a3dabde8a25209478a2c7f50b2080161144d3aea"
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
+                    },
+                    "tag": "v6.4.5",
+                    "commit": "ad3a1ce7b63895d9427ee5d487db598076d623be"
                 },
                 {
                     "type": "shell",
