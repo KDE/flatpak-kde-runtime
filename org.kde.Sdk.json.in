@@ -2784,7 +2784,8 @@
                     "buildsystem": "cmake-ninja",
                     "config-opts": [
                         "-DBUILD_SHARED_LIBS=ON",
-                        "-DWITH_TOOLS=OFF"
+                        "-DWITH_TOOLS=OFF",
+                        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
                     ],
                     "builddir": true,
                     "sources": [
