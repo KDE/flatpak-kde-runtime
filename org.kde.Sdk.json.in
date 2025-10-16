@@ -1080,6 +1080,12 @@
                     }
                 },
                 {
+                    "type": "patch",
+                    "paths": [
+                        "patch/fcitx5-qt-qt610-build-fix.patch"
+                    ]
+                },
+                {
                     "type": "shell",
                     "commands": [
                         "install-licenses.sh"
