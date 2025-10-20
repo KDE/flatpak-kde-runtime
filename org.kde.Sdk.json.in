@@ -399,6 +399,104 @@
             ]
         },
         {
+            "name": "qt6-qtgrpc",
+            "buildsystem": "cmake-ninja",
+            "cleanup-platform": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.qt.io/official_releases/qt/6.10/6.10.0/submodules/qtgrpc-everywhere-src-6.10.0.tar.xz",
+                    "sha256": "fb722289066101ae08865378e7fb29a22b416a71f6b1c19ae5a957f53a91a445",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 7927,
+                        "stable-only": true,
+                        "versions": {
+                            "<": "6.11.0"
+                        },
+                        "url-template": "https://download.qt.io/official_releases/qt/6.10/$version/submodules/qtgrpc-everywhere-src-$version.tar.xz"
+                    }
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/qtgrpc-find_program-paths.patch"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
+                }
+            ],
+            "modules": [
+                {
+                    "name": "grpc",
+                    "buildsystem": "cmake-ninja",
+                    "config-opts": [
+                        "-DgRPC_BUILD_TESTS=OFF",
+                        "-DgRPC_BUILD_CODEGEN=ON",
+                        "-DgRPC_DOWNLOAD_ARCHIVES=OFF",
+                        "-DgRPC_ZLIB_PROVIDER=package",
+                        "-DgRPC_SSL_PROVIDER=package",
+                        "-DgRPC_ABSL_PROVIDER=package",
+                        "-DgRPC_BUILD_GRPC_CSHARP_PLUGIN=OFF",
+                        "-DgRPC_BUILD_GRPC_NODE_PLUGIN=OFF",
+                        "-DgRPC_BUILD_GRPC_OBJECTIVE_C_PLUGIN=OFF",
+                        "-DgRPC_BUILD_GRPC_PHP_PLUGIN=OFF",
+                        "-DgRPC_BUILD_GRPC_PYTHON_PLUGIN=OFF",
+                        "-DgRPC_BUILD_GRPC_RUBY_PLUGIN=OFF",
+                        "-DgRPC_BUILD_GRPCPP_OTEL_PLUGIN=OFF"
+                    ],
+                    "cleanup": [
+                        "/bin/adig",
+                        "/bin/ahost",
+                        "/include/upb",
+                        "/include/google/protobuf",
+                        "/include/grpc*",
+                        "/include/re2*",
+                        "/include/utf8_*.h",
+                        "/include/ares*.h",
+                        "*.pc",
+                        "/lib/*/cmake/utf8_range",
+                        "/lib/*/cmake/protobuf",
+                        "/lib/*/cmake/c-ares",
+                        "/lib/*/cmake/grpc",
+                        "/lib/*/cmake/re2",
+                        "/share/man",
+                        "/share/grpc/roots.pem",
+                        "*.a"
+                    ],
+                    "cleanup-platform": [
+                        "/bin/grpc_cpp_plugin",
+                        "/bin/protoc*",
+                        "/share/grpc",
+                        "/lib/cmake/grpc",
+                        "/lib/libexec/qtgrpcgen"
+                    ],
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/grpc/grpc",
+                            "tag": "v1.75.1",
+                            "commit": "9b63ce0d513672c5daad4f28342f03863c5589e5",
+                            "x-checker-data": {
+                                "type": "git",
+                                "tag-pattern": "^(v[\\d.]+)$"
+                            }
+                        },
+                        {
+                            "type": "shell",
+                            "commands": [
+                                "LICENSES='LICENSE' install-licenses.sh"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "qt6-qtsvg",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
