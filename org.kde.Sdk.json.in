@@ -2,7 +2,7 @@
     "build-runtime": true,
     "id": "org.kde.Sdk",
     "id-platform": "org.kde.Platform",
-    "branch": "6.9",
+    "branch": "6.10",
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
     "runtime-version": "24.08",
@@ -38,7 +38,7 @@
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
-            "version": "6.9",
+            "version": "6.10",
             "merge-dirs": "styles",
             "add-ld-path": "lib",
             "download-if": "active-gtk-theme"
@@ -48,7 +48,7 @@
             "subdirectories": true,
             "autodelete": true,
             "no-autodownload": true,
-            "version": "6.9",
+            "version": "6.10",
             "merge-dirs": "platforminputcontexts",
             "add-ld-path": "lib"
         },
@@ -56,7 +56,7 @@
             "directory": "share/runtime/lib/plugins/",
             "subdirectories": true,
             "no-autodownload": true,
-            "version": "6.9",
+            "version": "6.10",
             "merge-dirs": "wayland-decoration-client",
             "add-ld-path": "lib",
             "//TODO": "This is currently only used for gnome platform plugin and should be its own extension point",
@@ -79,8 +79,8 @@
         "--talk-name=org.kde.kconfig.notify",
         "--talk-name=org.kde.KGlobalSettings",
         "--talk-name=org.kde.kdeconnect",
-        "--sdk=org.kde.Sdk//6.9",
-        "--runtime=org.kde.Platform//6.9"
+        "--sdk=org.kde.Sdk//6.10",
+        "--runtime=org.kde.Platform//6.10"
     ],
     "cleanup": [
         "/man",
@@ -166,18 +166,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtbase-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "c5a1a2f660356ec081febfa782998ae5ddbc5925117e64f50e4be9cd45b8dc6e",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtbase-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtbase.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "patch",
@@ -215,18 +206,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qttools-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "0cf7ab0e975fc57f5ce1375576a0a76e9ede25e6b01db3cf2339cd4d9750b4e9",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qttools-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qttools.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -245,18 +227,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtshadertools-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "629804ee86a35503e4b616f9ab5175caef3da07bd771cf88a24da3b5d4284567",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtshadertools-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtshadertools.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -274,18 +247,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtlanguageserver-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "c8e8a6c4f8cb25626922e78f398b13b02eea21c4cc5525ffc2a0da7469369d33",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtlanguageserver-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtlanguageserver.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -307,18 +271,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtdeclarative-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "5a071b227229afbf5c976b7b59a0d850818d06ae861fcdf6d690351ca3f8a260",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtdeclarative-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtdeclarative.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -336,18 +291,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtwebchannel-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "9457bbc1e5a13d9cf277c1fc121cdeb0a21546abf7fba091779b7ce9806fa305",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtwebchannel-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtwebchannel.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -365,18 +311,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtpositioning-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "0c87c980f704c17aadaf0bf8a03845dd0a60cc0313be24bd7b5b90685d5835b4",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtpositioning-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtpositioning.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -394,18 +331,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtsvg-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "db76aa3358cbbe6fce7da576ff4669cb9801920188c750d3b12783bbe97026e2",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtsvg-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtsvg.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -423,18 +351,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtmultimedia-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "a275bee7ea60c91851236acdf99d76b891da90f428b68f51fe332354f19b86f5",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtmultimedia-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtmultimedia.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -452,18 +371,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtspeech-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "f86f5a4c742fb86ccc6e90ee72a9213150986575c3d238829a4b48a28bc9ab3e",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtspeech-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtspeech.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -481,18 +391,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtsensors-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "a2db5168e5f37631a4ad087deaed69abdfa0be6d182f56e8604764658df92f68",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtsensors-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtsensors.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -510,18 +411,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtimageformats-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "4fb26bdbfbd4b8e480087896514e11c33aba7b6b39246547355ea340c4572ffe",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtimageformats-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtimageformats.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -539,18 +431,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtconnectivity-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "e21bba5efb174c4456c5e5a7b4d52bba1ee62dfb4509bcff73fdfad9cb1dd7f5",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtconnectivity-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtconnectivity.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -568,22 +451,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtwayland-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "e413d4bc9263e80a465761debf8cb8317aa6b01e814b20046a05258e6573dadd",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtwayland-everywhere-src-$version.tar.xz"
-                    }
-                },
-                {
-                    "type": "patch",
-                    "path": "patch/qtwayland-use-adwaita-decorations-on-gnome-by-default.patch"
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtwayland.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -601,18 +471,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtserialport-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "4b18ec030ff2644698c3f5c776894d8ffe5d3174c964d9bd8668429c943e8298",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtserialport-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtserialport.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -630,18 +491,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtwebsockets-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "e27dda8cf3cb31cc235f92e186340ba70a76c47aed7eb32b239d68feb94282c4",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtwebsockets-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtwebsockets.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -659,18 +511,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtscxml-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "f389c0c051df908eae392fbe94a8513e6fe15f88399d88fd33a763165f5b34b7",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtscxml-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtscxml.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -688,18 +531,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtcharts-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "29d7cbbdb31d6a2e6c3ab5b5b52f34ff457db55d87d28a7c335b015d749d4c53",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtcharts-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtcharts.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -717,18 +551,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qt3d-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "7e8664ddf21a79d4eeaebf76dddf017ed31142a2df005cf4ac784dff10627fff",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qt3d-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qt3d.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -746,18 +571,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtnetworkauth-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "67d9dc47ed133e22aa78bedef53963bee3761318e5e74dc98f82ad9814cc7ec7",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtnetworkauth-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtnetworkauth.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -775,18 +591,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qttranslations-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "f36d545e6681b146fd79b3ebb74ef275e88694cf81eae8323327cae3bfc490a1",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qttranslations-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qttranslations.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -804,18 +611,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtremoteobjects-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "98987c0055d4e1a6d31dac85c3445d99ed8142c21995f70b391ef0ebafaad85b",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtremoteobjects-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtremoteobjects.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -833,18 +631,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qt5compat-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "091dac2124c2291c3566408720f89b1796cd458897c6acabd11f03976ad04461",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qt5compat-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qt5compat.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -862,18 +651,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtlocation-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "141227d1fdaf4e1574c99127b2eb91ab171107bf067121aecb03b618b2e71605",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtlocation-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtlocation.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -891,18 +671,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtquicktimeline-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "284f4ba65ea71fa32751525c845f540c99d2f86fed88387e8c3d5869cf6c11f7",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtquicktimeline-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtquicktimeline.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -920,18 +691,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtquick3d-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "91b270049f38ad2b7370c2e6edc72c19ed7d5d2281d914457586f29daccace73",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtquick3d-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtquick3d.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -949,18 +711,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtquick3dphysics-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "dcd7b22d745d249eb602c5d4d8af8a8e9d11217ccb42b3dd611bb047153b5a6e",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtquick3dphysics-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtquick3dphysics.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -978,18 +731,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qtquickeffectmaker-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "6bf0361d24a0865cba9d94ff169c64cd69ac5d90c85260c29ec84ee5c2a59912",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qtquickeffectmaker-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qtquickeffectmaker.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -1007,18 +751,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.9/6.9.3/submodules/qthttpserver-everywhere-src-6.9.3.tar.xz",
-                    "sha256": "7aa78793dba5cfb81a1d1e4b840bf0faf1e31beea08945b5689f404160dd2e8f",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 7927,
-                        "stable-only": true,
-                        "versions": {
-                            "<": "6.10.0"
-                        },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.9/$version/submodules/qthttpserver-everywhere-src-$version.tar.xz"
-                    }
+                    "type": "git",
+                    "url": "https://code.qt.io/qt/qthttpserver.git",
+                    "branch": "6.10"
                 },
                 {
                     "type": "shell",
@@ -1041,40 +776,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v6\\.([\\d.]+)$"
-                    },
-                    "commit": "c2de62eaa58cd4b646bd3abc2330319e5dca16d0"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "install-licenses.sh"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "fcitx5-platforminputcontext",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DENABLE_QT4=OFF",
-                "-DENABLE_QT5=OFF",
-                "-DENABLE_QT6=ON",
-                "-DBUILD_ONLY_PLUGIN=ON"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/fcitx/fcitx5-qt",
-                    "tag": "5.1.10",
-                    "commit": "1a59fba497aea27ef2343a92d655251c7a81235c",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^([\\d.]+)$"
-                    }
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1091,11 +793,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git",
-                    "tag": "v1.19.0",
-                    "x-checker-data": {
-                        "type": "git"
-                    },
-                    "commit": "3b201c79e8172a3060d4b31a6d69ce37bb9cde71"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1116,12 +814,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kwidgetsaddons.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "a755cffa7f629abee2d9ba9cd19ac0c035a6e69f"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1141,12 +834,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ki18n.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "32c3811dd8360dca9ae17cc0d72a6d437d6e583f"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1166,12 +854,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kconfig.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "4a6b3e56cd9f74598d9209a9d7ad0834d5e38b9d"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1191,12 +874,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/attica.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "419dcdf17eb48f8f2b8c1a44dc67606fe4d8c6e4"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1217,12 +895,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kguiaddons.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "719d16f877f1a5ea7c9806eebf275bff130e7182"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1243,12 +916,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcoreaddons.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "8d0bda07610e60e8cbdf61ea79b9e09978f44555"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1268,12 +936,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kauth.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "2befeb2c28b55857e8a8d424e169c9feede5ccb2"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1293,12 +956,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/karchive.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "e54009eecbea39c4c0b8eb540160960183c30702"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1318,12 +976,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcodecs.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "01fb7151df42e5b0fdf436cf3344aa66036a8cd6"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1343,12 +996,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcolorscheme.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "ba3ccfcd1b049e7b6a078765e5ef76803dde2afb"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1368,12 +1016,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kconfigwidgets.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "1d9780fb412de24969878d758ed5e10e95d8f721"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1393,12 +1036,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kitemviews.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "e671da66133e3b7d129550717b1fcde785c0a284"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1414,7 +1052,8 @@
                 "*.rcc"
             ],
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DWITH_ICON_GENERATION=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
@@ -1422,12 +1061,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/breeze-icons.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "640296c15419dddf9bbb5582f0c3019b7cc864aa"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1447,12 +1081,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kiconthemes.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "dd9f0222ac453c6b77fcea369b68649ac5eba633"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1472,12 +1101,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kwindowsystem.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "44052699960a716010064dea91c8f649e94918cc"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1497,12 +1121,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcrash.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "a29ed2967c78103140daaaecd3950ff3fb8ddf59"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1522,12 +1141,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdbusaddons.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "9a6bcbe55b729c06634a3b2df4c6595389abdc6a"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1548,12 +1162,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kservice.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "86558c46e2cfba2535b7bf72822dce45f7eb7be5"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1573,12 +1182,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kglobalaccel.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "6b496189f535c6397a348101fe7593fb810f5ab9"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1598,12 +1202,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/sonnet.git",
-                    "tag": "v6.18.0",
-                    "commit": "d711f6604fd881b46ca4b50568104683b457a22a",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    }
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1623,12 +1222,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcompletion.git",
-                    "tag": "v6.18.0",
-                    "commit": "f5df46c4d610d4ebf07471d2f7bac463312d26ac",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    }
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1648,12 +1242,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ktexttemplate.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "c7848ad6089417dc426988f1dbdb2f9f31f4a21d"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1673,12 +1262,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ktextwidgets.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "50de12e6fc9e94b17d98959bba0d40b756b1e2b3"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1699,12 +1283,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kxmlgui.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "fec4b97a608a74fac7e527a31694c0a2bb587555"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1752,12 +1331,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdoctools.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "659e0116f754b00466c75a72477eb6c82ec7280f"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1777,12 +1351,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kpackage.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "a30f9014184b38cb4763447dfc6aff80c5845dbd"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1802,12 +1371,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kbookmarks.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "a5b02fd2a59e2aaa19df4f78fee993f4adf139bb"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1827,12 +1391,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kfilemetadata.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "22cbc5332ebddc5414aff0de93791806ff1c1af3"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1934,12 +1493,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/knotifications.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "3b3db2b85178a5de68fac58a5b0ed1b88d83d414"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1959,12 +1513,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kwallet.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "9faf55040dfae42e2f56dd15528b72ddf83bb0c1"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -1985,7 +1534,7 @@
                         {
                             "type": "git",
                             "url": "https://invent.kde.org/libraries/qca.git",
-                            "tag": "v2.3.10"
+                            "branch": "master"
                         },
                         {
                             "type": "shell",
@@ -2009,12 +1558,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kjobwidgets.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "9371a7f9104fdcea31dc6f7d7e6616481d785b81"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2034,12 +1578,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/solid.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "478a6bf6690c5af6139bcb1c6c303cf1d09a14b5"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2059,12 +1598,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kio.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "de02c24bbd0804817bdd5dfeda3e85c8a1974225"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2084,12 +1618,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kparts.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "845b9bc6c3cbbd7fa6f01fd78e5733c92b262d94"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2109,12 +1638,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kplotting.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "361c74a2be9cbceeb382dfef801b6a78f7459e68"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2134,12 +1658,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kded.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "8dac43e9999c9a578660aae378ae68861bb6f2f6"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2160,12 +1679,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kunitconversion.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "13e2c7224fdc115302709675de7c08d3bb8853b4"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2185,12 +1699,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdeclarative.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "8b2dcf76e3f56bf5ea5cfaae83afa494bbad29af"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2212,8 +1721,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/plasma-activities.git",
-                    "tag": "v6.3.4",
-                    "commit": "71aa0c8fc3cae3650b939b86d1ca144a4dc75aee"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2233,12 +1741,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcmutils.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "f793f437015bac8adafc050784a4f2de65077efe"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2259,12 +1762,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/knotifyconfig.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "5ad603172c08de9453c5d6f61ec70c72dedff2fe"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2284,12 +1782,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/knewstuff.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "8c52f23ffa1c2f53c022b4b4225fe6d2d1c3c172"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2309,12 +1802,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kidletime.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "84bff4abd55f2a9285be29a77a5654e3678fb56b"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2334,12 +1822,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/threadweaver.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "27614c17041cd88a8561f8535d4fc10d07f60844"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2359,12 +1842,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kitemmodels.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "18193e5860898500e4f45d3c3b80c86b4c8bc12f"
+                    "branch": "master"
                 }
             ]
         },
@@ -2378,12 +1856,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdnssd.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "d4593f9802fe88b6762df577eea81e5a1d94e5f3"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2403,12 +1876,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kquickcharts.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "9c9a322cd035d85d2da74159c3f4eda8a2ab1511"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2428,12 +1896,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/syntax-highlighting.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "f39b8f4054efa48389765d82081854053d8cfd91"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2486,12 +1949,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ktexteditor.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "1e516f2ca15c507a9854fb7515adaf8689af363e"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2512,12 +1970,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/frameworkintegration.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "b6748192a2dd2d031f1f4d298ccb2a566dc55c2b"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2537,12 +1990,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kpty.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "dd8d23a3c06c7310ec637f60dac2fc437cf98848"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2562,8 +2010,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/kwayland.git",
-                    "tag": "v6.1.4",
-                    "commit": "d5efa9d519a9dee6ab7ce7163a4be67dd0bc5632"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2584,12 +2031,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kirigami.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "c93b3770d8c980f7eb0c67ca3a2e858d610649b5"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2630,12 +2072,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/qqc2-desktop-style.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "d7f477a3fd1d98477c900daf3153f938059a16be"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2656,12 +2093,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcontacts.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v6([\\d.]+)$"
-                    },
-                    "commit": "94b29aa2912f68da8bdec77741dd235f3e96d362"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2682,12 +2114,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcalendarcore.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v6([\\d.]+)$"
-                    },
-                    "commit": "3d3fb626e17d5100f8d14a3e0a47469929e074a1"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2734,12 +2161,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kholidays.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v6([\\d.]+)$"
-                    },
-                    "commit": "ccad8e275d2246beae8a449be3d6e115d9718f7d"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2759,12 +2181,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/prison.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "086f24bf50e97f809179ede1e598d36d6fcb20fe"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2869,12 +2286,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/syndication.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v6([\\d.]+)$"
-                    },
-                    "commit": "8bc05c864607dd09c6abf560520a009b54fffa11"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2894,12 +2306,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/purpose.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "5d3e0263ff11401d24d900ab10310a4e5bca4224"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2919,12 +2326,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdav.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v6([\\d.]+)$"
-                    },
-                    "commit": "9905759085db4d9f364cc381160a14c1b7b9447a"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2945,12 +2347,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ksvg.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "ce18719b2dc94bf23526a8e06581b4dc25e0a2d5"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2972,12 +2369,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kimageformats.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "7858c4eeec712c59b3214386d7e5639cab636bba"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -2998,12 +2390,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/bluez-qt.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "4d222efe1505fe9e5057448299e223da0dc6fbd8"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -3025,12 +2412,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kstatusnotifieritem.git",
-                    "tag": "v6.18.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "001ab412c3088905ee33803e1e79609e73709b6d"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -3078,8 +2460,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/plasma-activities-stats.git",
-                    "tag": "v6.3.4",
-                    "commit": "75d8a5c99026e8979db070fc994ca7ef39dbe46c"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -3100,8 +2481,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/network/kio-extras.git",
-                    "commit": "915fb036b993ff90817914725c19f9850d4c4aff",
-                    "tag": "v24.12.3"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -3125,8 +2505,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/breeze.git",
-                    "tag": "v6.3.4",
-                    "commit": "0713d455356765b24b8173ae009815a70763f56d"
+                    "branch": "master"
                 },
                 {
                     "type": "patch",
@@ -3156,8 +2535,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/plasma-integration.git",
-                    "tag": "v6.3.4",
-                    "commit": "2f01ed67f05085d04967e31c0dfc973be6fce996"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
@@ -3178,8 +2556,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/qqc2-breeze-style.git",
-                    "tag": "v6.3.4",
-                    "commit": "a3dabde8a25209478a2c7f50b2080161144d3aea"
+                    "branch": "master"
                 },
                 {
                     "type": "shell",
