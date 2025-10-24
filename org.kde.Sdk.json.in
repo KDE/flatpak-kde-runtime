@@ -328,6 +328,12 @@
                     }
                 },
                 {
+                    "type": "patch",
+                    "paths": [
+                        "patch/qt-declarative-fix-crash.patch"
+                    ]
+                },
+                {
                     "type": "shell",
                     "commands": [
                         "install-licenses.sh"
