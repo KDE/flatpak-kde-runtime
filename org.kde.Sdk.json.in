@@ -178,6 +178,10 @@
                     ]
                 },
                 {
+                    "type": "patch",
+                    "path": "patch/CVE-2025-3512-qtbase-6.8.diff"
+                },
+                {
                     "type": "shell",
                     "commands": [
                         "install-licenses.sh"
@@ -514,6 +518,10 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.8/$version/submodules/qtimageformats-everywhere-src-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "patch/CVE-2025-5683-qtimageformats-6.8.patch"
                 },
                 {
                     "type": "shell",
