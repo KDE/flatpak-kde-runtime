@@ -4,3 +4,4 @@ VERSION_ID="6.10"
 ID=org.kde.Platform
 PRETTY_NAME="KDE Flatpak runtime"
 BUG_REPORT_URL=https://bugs.kde.org/
+FREEDESKTOP_RUNTIME_VERSION_ID="25.08"
