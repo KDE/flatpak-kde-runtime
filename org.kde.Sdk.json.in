@@ -1414,7 +1414,8 @@
                 "*.rcc"
             ],
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DWITH_ICON_GENERATION=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
