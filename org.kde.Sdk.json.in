@@ -1141,12 +1141,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v6\\.([\\d.]+)$"
                     },
-                    "commit": "d8d80bcc61341239519392eef1360c796bf25931"
+                    "commit": "f8447eb308c27724be2bcd3a0e8c2f4bd5d9f52f"
                 },
                 {
                     "type": "shell",
@@ -1216,12 +1216,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kwidgetsaddons.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "1a12b50afe1340e940885078bb7c3fb4ccf41d81"
+                    "commit": "b9bdd85c3d57b387a71110ef3924a027a6617688"
                 },
                 {
                     "type": "shell",
@@ -1241,12 +1241,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ki18n.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "9a50e14752375769dcbaf15abbf04d86cf630dc5"
+                    "commit": "5ffe1252ec1d4b6947d34da5fbbcceb9fd6076e3"
                 },
                 {
                     "type": "shell",
@@ -1266,12 +1266,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kconfig.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "44af4e0cefbee23d175455f85dba375d785bbd11"
+                    "commit": "1a6beb5dd8e4f560885ecbdf21dab9fbe3608c70"
                 },
                 {
                     "type": "shell",
@@ -1291,12 +1291,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/attica.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "bcbcbaae5245e62b9a895b1b0c77c58179867717"
+                    "commit": "e0ca69d9f6dfa59efa1b6831c74b8932d5c7c91b"
                 },
                 {
                     "type": "shell",
@@ -1317,12 +1317,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kguiaddons.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "19580d6a57608f39f5d2bf1abfb5fbefadbfa4a2"
+                    "commit": "e1421c5bde412724e3074b4b42b93332a0208f2c"
                 },
                 {
                     "type": "shell",
@@ -1343,12 +1343,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcoreaddons.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "e382139994478a8af2846ebbf70d140a2f3a7469"
+                    "commit": "7ccfc80a639db3b0c43114c7f16e3b03f709ac33"
                 },
                 {
                     "type": "shell",
@@ -1368,12 +1368,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kauth.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "ee6f2055092e22a76f282f39bd42d8d49e5293a0"
+                    "commit": "cad50012cc1db3de0418bc3567f97708ebc19fe8"
                 },
                 {
                     "type": "shell",
@@ -1393,12 +1393,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/karchive.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "38a87ad37786db23d1af8c51c8c5dfd73a00a218"
+                    "commit": "5f258908e5d8166008c06285036ebc9ee5e1b692"
                 },
                 {
                     "type": "shell",
@@ -1418,12 +1418,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcodecs.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "57968efd885001658e423d7fe439f56015d38145"
+                    "commit": "7494a001f6d05e3de2294e54b8b7aed6162ad473"
                 },
                 {
                     "type": "shell",
@@ -1443,12 +1443,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcolorscheme.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "64d18eb67446f1e9e9544ac77a3b60430054a618"
+                    "commit": "0ac0e27e9eee0f9acbae1446e049154bfa4a10f8"
                 },
                 {
                     "type": "shell",
@@ -1468,12 +1468,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kconfigwidgets.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "5a0f228b1e6240deda1ad94d371a9b7b41a623f3"
+                    "commit": "ed30024a4c4ac6b2dfc02265309ce526fbfc00f0"
                 },
                 {
                     "type": "shell",
@@ -1493,12 +1493,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kitemviews.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "22bf0b7a58bb50297e918dd1fb5ba0444448366d"
+                    "commit": "287a3edf485f914507bdaaf6680815ff561abb93"
                 },
                 {
                     "type": "shell",
@@ -1523,12 +1523,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/breeze-icons.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "f1b33eb4d9ae32f8852209e00ab5ffbafbd8da96"
+                    "commit": "eb34fcfcde9fabcf4be00f4c91d2cfddb36d6f73"
                 },
                 {
                     "type": "shell",
@@ -1548,12 +1548,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kiconthemes.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "4a2f268e811346ed77334c47a47bfaddbf91f6de"
+                    "commit": "2c87505182e067f5f141ea2fedb73edb2088cc46"
                 },
                 {
                     "type": "shell",
@@ -1573,12 +1573,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kwindowsystem.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "1136e9b0cd144b9969856d604b8079286f2ba654"
+                    "commit": "bdce163d61413bcdd48ecc654196cc04678035d4"
                 },
                 {
                     "type": "shell",
@@ -1598,12 +1598,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcrash.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "b8446fb0edad1561b8ddaffa49e5ce8a508c6ecd"
+                    "commit": "09996fcb95d796d26e552fefd6a9e82fd2c2a610"
                 },
                 {
                     "type": "shell",
@@ -1623,12 +1623,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdbusaddons.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "8490bc83d38d15684021c7873bedda59eabee250"
+                    "commit": "e6dd9fae641232d26d210a893383e0d40d63f674"
                 },
                 {
                     "type": "shell",
@@ -1649,12 +1649,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kservice.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "702bb75ab9aff2866b73581cccd6587d525cb2b1"
+                    "commit": "1d40f85f4ab8926ae17124ed37cb918931743eed"
                 },
                 {
                     "type": "shell",
@@ -1674,12 +1674,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kglobalaccel.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "e174f950688e8474a5816598e8d709978fed5f6e"
+                    "commit": "6ddecb1a21e8848d616b6cca134679504623d4d3"
                 },
                 {
                     "type": "shell",
@@ -1699,8 +1699,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/sonnet.git",
-                    "tag": "v6.20.0",
-                    "commit": "dd146797ee0a2b52964f4e0926e597601ec99a08",
+                    "tag": "v6.21.0",
+                    "commit": "d5016014eb8ad4d06713ddb4f2d74ed06a4e8120",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -1724,8 +1724,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcompletion.git",
-                    "tag": "v6.20.0",
-                    "commit": "e45716ae163f2bfdcac6ec7fb8647787cc9b3810",
+                    "tag": "v6.21.0",
+                    "commit": "f254acfd1ed7e9ccfcf6c7db06395df239c5d7b1",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -1749,12 +1749,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ktexttemplate.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "4d4aeae32f8fac8db6cf717c4f9a204b863670ae"
+                    "commit": "6462d7d021705e590927575ae8d49f67c4bb6bf8"
                 },
                 {
                     "type": "shell",
@@ -1774,12 +1774,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ktextwidgets.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "911e266e1d1933b1cdc99c47c3472ce5075614d7"
+                    "commit": "df02e2ee54e26f53cd9c4f4f9d719c0f426b580f"
                 },
                 {
                     "type": "shell",
@@ -1800,12 +1800,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kxmlgui.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "36bf0ba9952f0bb17ca2403033d74478d35e97ba"
+                    "commit": "a68c6b847f6de389ef64e002c46412592e8699cf"
                 },
                 {
                     "type": "shell",
@@ -1853,12 +1853,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdoctools.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "8888aac15934db8abfb91bb05c82dbd887abbf23"
+                    "commit": "5b8ccc7bb5f5e0605d8e6c112c17f793835e8de1"
                 },
                 {
                     "type": "shell",
@@ -1878,12 +1878,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kpackage.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "300dfe80312cf9a52f3d2b66ee6377b9cdef5a65"
+                    "commit": "06248bf4b7aeb1a5740b2c8bf040bfc6e4bc60f2"
                 },
                 {
                     "type": "shell",
@@ -1903,12 +1903,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kbookmarks.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "aa1c1dbc6cbcf6e813128330c4b8b871bc4754c0"
+                    "commit": "ba258fff56ab625bcb23262143e9f316dbdda3e9"
                 },
                 {
                     "type": "shell",
@@ -1928,12 +1928,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kfilemetadata.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "cad8b25e58d2cd5f58587e2c702ba76d716bebb6"
+                    "commit": "d4d22ec8ff60a83d60e47d2dd0b066dac613272d"
                 },
                 {
                     "type": "shell",
@@ -2008,12 +2008,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/knotifications.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "c5f308d513652bef2bbff8d9553797b437ff1987"
+                    "commit": "f32f5ec982a2c38193977e4fd38f6cbd25ee8789"
                 },
                 {
                     "type": "shell",
@@ -2033,12 +2033,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kwallet.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "665f2d3328c3a0c8817baa0e30931ba0d2c11e34"
+                    "commit": "48349f0bcd8ed56bcb9049c584330ac79ce09ca1"
                 },
                 {
                     "type": "shell",
@@ -2087,12 +2087,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kjobwidgets.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "aab9866c79beee0e16c958511be916b7f7d26f42"
+                    "commit": "7c3779ed45dfdc4b3b75c1232806899b23c91474"
                 },
                 {
                     "type": "shell",
@@ -2112,12 +2112,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/solid.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "5fc8aa2643f387a5e3223d112a28e84f0c44056b"
+                    "commit": "f444838319419ccbb181e7e12078913375317d08"
                 },
                 {
                     "type": "shell",
@@ -2137,12 +2137,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kio.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "a12bcd856043e65680f1f9fdeee5e88e4ba2572a"
+                    "commit": "f6a5914bf1ad7e2535d095addc91dd7b85e80d53"
                 },
                 {
                     "type": "shell",
@@ -2162,12 +2162,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kparts.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "5f0a0b88ffa264d6d10e4f8a1de3687011c7d812"
+                    "commit": "b6d92e6d570b9536350a2acc1d06d1da5e74e661"
                 },
                 {
                     "type": "shell",
@@ -2187,12 +2187,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kplotting.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "2e471e7523340420783814ab483ccc68e4641ca4"
+                    "commit": "890a2a93e0d09738c58b9ce7f2f58a3c1f56afe4"
                 },
                 {
                     "type": "shell",
@@ -2212,12 +2212,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kded.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "ed6e030c9d8f3db5e9b9a73f397b439338272b6e"
+                    "commit": "7b602585985576d15ab40f5db35d8c937bce30f2"
                 },
                 {
                     "type": "shell",
@@ -2238,12 +2238,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kunitconversion.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "20b3a4270bdd15a56da782c29c087beb8c6f1d42"
+                    "commit": "5b8aaa8e2fae53489ce873680cf19ba06d4138b1"
                 },
                 {
                     "type": "shell",
@@ -2263,12 +2263,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdeclarative.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "8263d697abba5cf8befd7050d8b19d4b95f1f8fa"
+                    "commit": "5e91de6f9a0d1f4bccdeb9d63c96397214d3b7a0"
                 },
                 {
                     "type": "shell",
@@ -2294,8 +2294,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.2",
-                    "commit": "077b05fd69161a72df69630efa0479730590f363"
+                    "tag": "v6.5.4",
+                    "commit": "ff25e0fbaececc85bfbaba9391e70870e026945e"
                 },
                 {
                     "type": "shell",
@@ -2315,12 +2315,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcmutils.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "179a38949a68fbb5879de97d5d6685aea4e5eebc"
+                    "commit": "3c25a54f62d0d87d92432c377f834a34249c1b92"
                 },
                 {
                     "type": "shell",
@@ -2341,12 +2341,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/knotifyconfig.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "d0b5ed8dbded739b4f00be4ed09fd2019427304c"
+                    "commit": "808782a8cbdec00e368cb0fef845b6cd25ccc983"
                 },
                 {
                     "type": "shell",
@@ -2366,12 +2366,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/knewstuff.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "23cfa47fc996fc4693f9847c29123e676dc2f3a5"
+                    "commit": "9079fe3cfad2f9c1a8e2fc0ed6b241c23a7901db"
                 },
                 {
                     "type": "shell",
@@ -2391,12 +2391,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kidletime.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "89beb6fd216884f18c9e8b6dc7a724967ed18908"
+                    "commit": "42783be439a555c17192be1d693bb374b2b563e8"
                 },
                 {
                     "type": "shell",
@@ -2416,12 +2416,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/threadweaver.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "8f1d04f61f88a3a1233b2d761555c8aac21352eb"
+                    "commit": "672bccc8e767436c815ce72fdcd783b762e31bfb"
                 },
                 {
                     "type": "shell",
@@ -2441,12 +2441,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kitemmodels.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "da8b6c38b7ad75b6fa2d5d44051b35980c76acd1"
+                    "commit": "ec937a345bf1353f603b183e0b39f0ff4c0ef64f"
                 }
             ]
         },
@@ -2460,12 +2460,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdnssd.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "d17d0c8fa985e5ed7d23ed666835abcaa56cab27"
+                    "commit": "e442897324c753bad6bd2e2196263510fead542d"
                 },
                 {
                     "type": "shell",
@@ -2485,12 +2485,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kquickcharts.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "2402898e32e359e837df5111fc1a6d05776ebe16"
+                    "commit": "68dd0535535660d0f0d1a53b83b7a1519fb23da4"
                 },
                 {
                     "type": "shell",
@@ -2510,12 +2510,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/syntax-highlighting.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "48f2e1e4826c54cba9c6efa895791228eaa2a723"
+                    "commit": "081b9f54cce7737e23e0b53fd864cc205f859e95"
                 },
                 {
                     "type": "shell",
@@ -2574,12 +2574,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ktexteditor.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "d8d803097dc9c240f648dc0515141e21d5dbfcbc"
+                    "commit": "e7e89ffbfdd7dd8fee5d0c6fa70f69340d90418e"
                 },
                 {
                     "type": "shell",
@@ -2600,12 +2600,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/frameworkintegration.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "d74a51d27e72cf7577c449ad6110f61f50c7b520"
+                    "commit": "adbd800bb1931501173af8e067c73c1ffcbd56fd"
                 },
                 {
                     "type": "shell",
@@ -2625,12 +2625,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kpty.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "18b377234a4e89dd7eb526a9fe158706d12f8b1d"
+                    "commit": "089fa7172b7b572f212ef7ed73c192bf81e920e7"
                 },
                 {
                     "type": "shell",
@@ -2654,8 +2654,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.2",
-                    "commit": "38b8a8b87dd503584998d73503bcec231c7ef7a8"
+                    "tag": "v6.5.4",
+                    "commit": "0aaccad72651032fa0c50f4c04cb7bed0aabe978"
                 },
                 {
                     "type": "shell",
@@ -2676,12 +2676,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kirigami.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "430b6089ede0bca421378f91d33a992e116cfe41"
+                    "commit": "e6565d7cb961c61df6dd79707d2b6a4972e952e0"
                 },
                 {
                     "type": "shell",
@@ -2722,12 +2722,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/qqc2-desktop-style.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "ecf91ced8462b2939a37786a8ad5880d2709711f"
+                    "commit": "e770ffdad86e01206e7d94e38bfe1c66f909d65b"
                 },
                 {
                     "type": "shell",
@@ -2748,12 +2748,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcontacts.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v6([\\d.]+)$"
                     },
-                    "commit": "f0a036a0833dcd0e1865f5ace1d279996b3f270a"
+                    "commit": "3f65be776eac4c181a7de6123a7283c0fed01825"
                 },
                 {
                     "type": "shell",
@@ -2774,12 +2774,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kcalendarcore.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v6([\\d.]+)$"
                     },
-                    "commit": "58103d52f56b7eadc8074794245155d721eff469"
+                    "commit": "6ddf4710c724c773f2515a63b9f86831999af35c"
                 },
                 {
                     "type": "shell",
@@ -2831,12 +2831,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kholidays.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v6([\\d.]+)$"
                     },
-                    "commit": "94f63c5258b2a27d96d9a589f3948c0abd84df37"
+                    "commit": "791fbe6e967452b808ddb0755bf5cd0beb180bf8"
                 },
                 {
                     "type": "shell",
@@ -2856,12 +2856,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/prison.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "e61d16a58057189602733ed430e9e63438c56205"
+                    "commit": "1bcc6914bcab450dc7318c782d17385ec57951d0"
                 },
                 {
                     "type": "shell",
@@ -2967,12 +2967,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/syndication.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v6([\\d.]+)$"
                     },
-                    "commit": "12c5568fcebaae696225e32a4a097ff19113dce1"
+                    "commit": "1090a6608f41b2ae456822495b3de2cb32c34aec"
                 },
                 {
                     "type": "shell",
@@ -2992,12 +2992,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/purpose.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "b1ba69567cfae63c161be9e9bca5af791c2cc38b"
+                    "commit": "945583f6f55cf798735a89baefa804b707f44b57"
                 },
                 {
                     "type": "shell",
@@ -3017,12 +3017,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kdav.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v6([\\d.]+)$"
                     },
-                    "commit": "b64a8867d5dc9b821e76c04e95b25929b7df4836"
+                    "commit": "0784b76b76f3c4c0f719ede3c0f05f3c233eacfd"
                 },
                 {
                     "type": "shell",
@@ -3043,12 +3043,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/ksvg.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "3868b24da0afa0c8012d3d23e04866e55aca3bf4"
+                    "commit": "dc895142d1bc66e6331cb3fc19c21b09784781c1"
                 },
                 {
                     "type": "shell",
@@ -3070,12 +3070,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kimageformats.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "ffcfa49f1300db4ad003d3e295addf07a7885493"
+                    "commit": "237f25fd20b234d6b8c267b1dae6f85c70ba872e"
                 },
                 {
                     "type": "shell",
@@ -3096,12 +3096,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/bluez-qt.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "db5e9559e7d7e0a37cd752a0dd44c57f6d8d3fed"
+                    "commit": "6903b203bbe919591347ce4b0368431de6385af2"
                 },
                 {
                     "type": "shell",
@@ -3123,12 +3123,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kstatusnotifieritem.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.21.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "bac6a254cdb192e14a432eab009e82259d714154"
+                    "commit": "141656a3a2e6a2dca5ae9a9411937d1bc8cfa01c"
                 },
                 {
                     "type": "shell",
@@ -3181,8 +3181,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.2",
-                    "commit": "b46eb07f50aa4253764f888f4bc6eec37160662c"
+                    "tag": "v6.5.4",
+                    "commit": "6ff80496f1c6ea4cee5a9062bc35f1ec51f7a49f"
                 },
                 {
                     "type": "shell",
@@ -3203,12 +3203,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/network/kio-extras.git",
-                    "commit": "61eb62b7df5cd3490a0556bbf028ac7a9347d805",
+                    "commit": "deda25060b244e1f29deb7d6f3964e4a90e95b1a",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v25.08.3"
+                    "tag": "v25.12.0"
                 },
                 {
                     "type": "shell",
@@ -3236,8 +3236,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.2",
-                    "commit": "133125aa464c5677f0e5e03935d176aa27087e8f"
+                    "tag": "v6.5.4",
+                    "commit": "a0d3e4d701bbe8601e723e4ffc48178b07d939ee"
                 },
                 {
                     "type": "shell",
@@ -3263,8 +3263,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.2",
-                    "commit": "2e287f30638a78d14cf691080228a335c666546b"
+                    "tag": "v6.5.4",
+                    "commit": "038c8b42e1d316358cbaf435f2c9c2b4d3e99c70"
                 },
                 {
                     "type": "shell",
@@ -3289,8 +3289,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.2",
-                    "commit": "828ca43bdd660baf54376eca14825d26d2fbbdac"
+                    "tag": "v6.5.4",
+                    "commit": "a3e83f45bf37b2c80964eb593299144b9f62eb9a"
                 },
                 {
                     "type": "shell",
@@ -3306,8 +3306,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/plasma/6.5.2/ocean-sound-theme-6.5.2.tar.xz",
-                    "sha256": "7e3bb59309e54f8aa3e6303a70dac0eba91662e0a0709d041fd073722f06ee91",
+                    "url": "https://download.kde.org/stable/plasma/6.5.4/ocean-sound-theme-6.5.4.tar.xz",
+                    "sha256": "c04cc94f70047baa3ac850434915a118872d576307c8a1ea6ed6334fe8acbee4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8761,
