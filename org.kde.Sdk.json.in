@@ -93,21 +93,21 @@
         "mkdir -p /usr/lib/debug/usr/lib/i386-linux-gnu"
     ],
     "cleanup-platform": [
-        "/share/runtime/docs",
-        "/include",
-        "/share/aclocal",
-        "/share/pkgconfig",
-        "/lib/pkgconfig",
-        "/lib/*/pkgconfig",
         "*.a",
         "*.cmake",
-        "/lib/*/cmake",
-        "/mkspecs",
-        "/lib/mkspecs",
         "*.prl",
+        "*.qmltypes",
+        "/include",
+        "/lib/*/cmake",
+        "/lib/*/pkgconfig",
         "/lib/metatypes",
-        "kde-qmlmodule.version",
-        "*.qmltypes"
+        "/lib/mkspecs",
+        "/lib/pkgconfig",
+        "/mkspecs",
+        "/share/aclocal",
+        "/share/pkgconfig",
+        "/share/runtime/docs",
+        "kde-qmlmodule.version"
     ],
     "cleanup-platform-commands": [
         "/usr/libexec/freedesktop-post.sh"
