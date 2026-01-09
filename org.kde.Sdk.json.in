@@ -1169,8 +1169,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/fcitx/fcitx5-qt",
-                    "tag": "5.1.11",
-                    "commit": "000e10204374d62dbd1329a00c49171215d76da7",
+                    "tag": "5.1.12",
+                    "commit": "ffe0fc8520703dcd1caa1a143a212e3630677ec2",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -1955,8 +1955,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.8.tar.gz",
-                            "sha256": "f808b26d8c3a59def27fea207182ece77a8930bd121a69f80d328ecf3cfef925",
+                            "url": "https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.9.tar.gz",
+                            "sha256": "397a9a2a6ed5238f854f490b0177b840abc6b62571ec3e07baa0bb94d3f14d5a",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 20545,
@@ -2700,8 +2700,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.10.0.tar.xz",
-                    "sha256": "c98f92bf7c452e12f6dc403404215413db3959fe904ad830ead0db6bb09b3d11",
+                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.11.0.tar.xz",
+                    "sha256": "6dcdfa324f710f00887e6321212fc8582a3c4712450d129d91435bb1edd8d523",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242933,
@@ -3203,12 +3203,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/network/kio-extras.git",
-                    "commit": "deda25060b244e1f29deb7d6f3964e4a90e95b1a",
+                    "commit": "a8f96b695649e2a89d46f41c5a9fdf50250bf24d",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v25.12.0"
+                    "tag": "v25.12.1"
                 },
                 {
                     "type": "shell",
