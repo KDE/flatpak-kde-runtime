@@ -2454,8 +2454,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.9.tar.gz",
-                    "sha256": "4aaa4e3883332aac7ec19c169dcf128f5f0f963f61d09beb299eb2bce5944e2c",
+                    "url": "https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.10.tar.gz",
+                    "sha256": "ab9f897a90fb36cfc34e5b67221e55ab0e3119b3512de8e31029d376c6bab870",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 14833,
@@ -3277,8 +3277,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/fcitx/fcitx5-qt",
-                    "tag": "5.1.11",
-                    "commit": "000e10204374d62dbd1329a00c49171215d76da7",
+                    "tag": "5.1.12",
+                    "commit": "ffe0fc8520703dcd1caa1a143a212e3630677ec2",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
