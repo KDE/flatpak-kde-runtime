@@ -2463,6 +2463,10 @@
                     }
                 },
                 {
+                    "type": "patch",
+                    "path": "750c39e605cb78e038452197653731e93f350f60.patch"
+                },
+                {
                     "type": "shell",
                     "commands": [
                         "LICENSES='LICENSE' install-licenses.sh"
