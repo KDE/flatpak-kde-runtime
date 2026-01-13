@@ -1091,11 +1091,11 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git",
-                    "tag": "v1.19.0",
+                    "tag": "v1.20.0",
                     "x-checker-data": {
                         "type": "git"
                     },
-                    "commit": "3b201c79e8172a3060d4b31a6d69ce37bb9cde71"
+                    "commit": "6fee13b7c0b25d4619e20090f4a178fc2b460be7"
                 },
                 {
                     "type": "shell",
@@ -1217,12 +1217,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kguiaddons.git",
-                    "tag": "v6.22.0",
+                    "tag": "v6.22.1",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "17265ad3d8ba51d2801f477f583f0539cf4fc029"
+                    "commit": "17e9692201952da82f27791c56276fb7d82582b4"
                 },
                 {
                     "type": "shell",
@@ -2222,8 +2222,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.4",
-                    "commit": "ff25e0fbaececc85bfbaba9391e70870e026945e"
+                    "tag": "v6.5.5",
+                    "commit": "ae0d8b1ec74fc0f940bf26228d36107b0b170fce"
                 },
                 {
                     "type": "shell",
@@ -2582,8 +2582,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.4",
-                    "commit": "0aaccad72651032fa0c50f4c04cb7bed0aabe978"
+                    "tag": "v6.5.5",
+                    "commit": "9df3cc7f90f10f09e82ff2a99e676d2d8a3260ff"
                 },
                 {
                     "type": "shell",
@@ -3109,8 +3109,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.4",
-                    "commit": "6ff80496f1c6ea4cee5a9062bc35f1ec51f7a49f"
+                    "tag": "v6.5.5",
+                    "commit": "a6ffa0436a0b89d72c22718ca3a820183f888079"
                 },
                 {
                     "type": "shell",
@@ -3164,8 +3164,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.4",
-                    "commit": "a0d3e4d701bbe8601e723e4ffc48178b07d939ee"
+                    "tag": "v6.5.5",
+                    "commit": "60fed6c60a3a8afb0cafed7f4a0b35d7f7ed48e5"
                 },
                 {
                     "type": "shell",
@@ -3191,8 +3191,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.4",
-                    "commit": "038c8b42e1d316358cbaf435f2c9c2b4d3e99c70"
+                    "tag": "v6.5.5",
+                    "commit": "b81b9b36523149e1508ae65b6b51e852a27ca023"
                 },
                 {
                     "type": "shell",
@@ -3217,8 +3217,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.4",
-                    "commit": "a3e83f45bf37b2c80964eb593299144b9f62eb9a"
+                    "tag": "v6.5.5",
+                    "commit": "06e1aff22f75724de3e96898217b9e54452e9f7f"
                 },
                 {
                     "type": "shell",
@@ -3234,8 +3234,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/plasma/6.5.4/ocean-sound-theme-6.5.4.tar.xz",
-                    "sha256": "c04cc94f70047baa3ac850434915a118872d576307c8a1ea6ed6334fe8acbee4",
+                    "url": "https://download.kde.org/stable/plasma/6.5.5/ocean-sound-theme-6.5.5.tar.xz",
+                    "sha256": "ce629cc9990a3dc381d3bd45c37838a618f51021761a37671e74b9a45624a12c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8761,
