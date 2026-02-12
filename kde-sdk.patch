@@ -1,0 +1,48 @@
+# SPDX-FileCopyrightText: 2025 Aleix Pol Gonzalez <aleix.pol@codethink.co.uk>
+# SPDX-License-Identifier: MIT
+
+diff --git a/org.kde.Sdk.json.in b/org.kde.Sdk.json.in
+index 7310643..97aaab8 100644
+--- a/org.kde.Sdk.json.in
++++ b/org.kde.Sdk.json.in
+@@ -122,13 +122,13 @@
+             "name": "licence-extractor",
+             "buildsystem": "simple",
+             "build-commands": [
+-                "install -m755 install-licenses.sh /usr/bin"
++                "install -D -m755 install-licenses.sh %{install-root}/usr/bin/install-licenses.sh"
+             ],
+             "sources": [
+                 {
+                     "type": "script",
+                     "commands": [
+-                        "DESTINATION=/usr/share/licenses/org.kde.Platform/$(basename `pwd`)/",
++                        "DESTINATION=$INSTALL_ROOT/usr/share/licenses/org.kde.Platform/$(basename `pwd`)/",
+                         "DESTINATION=${DESTINATION%-[0-9]*}",
+                         "mkdir -p $DESTINATION",
+                         "cp -v ${LICENSES:-LICENSES/*} $DESTINATION"
+diff --git a/os-release-Makefile b/os-release-Makefile
+index 50e83ca..b98db44 100644
+--- a/os-release-Makefile
++++ b/os-release-Makefile
+@@ -1,13 +1,10 @@
+ all:
+ 
+ install:
+-	mkdir -p ${DESTDIR}/usr/lib
+-	install os-release ${DESTDIR}/usr/lib
+-	mkdir -p ${DESTDIR}/usr/share/appdata
+-	mkdir -p ${DESTDIR}/etc
+-	install issue ${DESTDIR}/etc
+-	install issue.net ${DESTDIR}/etc
+-	install org.kde.Platform.metainfo.xml ${DESTDIR}/usr/share/metainfo
+-	install org.kde.Sdk.metainfo.xml ${DESTDIR}/usr/share/metainfo
+-	appstreamcli compose --components=org.kde.Platform --prefix=/ --origin=org.kde.Platform --result-root=${FLATPAK_DEST} --data-dir=${FLATPAK_DEST}/share/app-info/xmls ${FLATPAK_DEST}
+-	appstreamcli compose --components=org.kde.Sdk --prefix=/ --origin=org.kde.Sdk --result-root=${FLATPAK_DEST} --data-dir=${FLATPAK_DEST}/share/app-info/xmls ${FLATPAK_DEST}
++	install -Dm0644 os-release -t ${DESTDIR}/usr/lib
++	install -Dm0644 issue -t ${DESTDIR}/etc
++	install -Dm0644 issue.net -t ${DESTDIR}/etc
++	install -Dm0644 org.kde.Platform.metainfo.xml -t ${DESTDIR}/usr/share/metainfo
++	install -Dm0644 org.kde.Sdk.metainfo.xml -t ${DESTDIR}/usr/share/metainfo
++	appstreamcli compose --components=org.kde.Platform --origin=org.kde.Platform --result-root=${DESTDIR} --data-dir=${DESTDIR}/usr/share/app-info/xmls ${DESTDIR}
++	appstreamcli compose --components=org.kde.Sdk --origin=org.kde.Sdk --result-root=${DESTDIR} --data-dir=${DESTDIR}/usr/share/app-info/xmls ${DESTDIR}

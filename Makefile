@@ -22,11 +22,20 @@ endif
 all: $(REPO)/config $(foreach file, $(wildcard *.json.in), $(subst .json.in,.app,$(file)))
 
 %.json: %.json.in append-to-json.py
+	git apply kde-sdk.patch
 	./append-to-json.py inherit-sdk-extensions $(INHERIT_EXTS) \
 	< $< | sed "s,@@SDK_ARCH@@,$(ARCH),g" > $@
 
 %.app: %.json
 	flatpak-builder $(INSTALL_SOURCE) $(FB_ARGS) --arch=$(ARCH) $(DISABLE_ROFILES_FUSE) --force-clean --require-changes --ccache --repo=$(REPO) --subject="build of org.kde.Sdk, `date` (`git rev-parse HEAD`)" ${EXPORT_ARGS} $(TMP) $<
+
+elements/org.kde.Sdk.bst: org.kde.Sdk.json
+	git clone https://gitlab.com/freedesktop-sdk/freedesktop-sdk.git || git -C freedesktop-sdk pull --rebase
+	python freedesktop-sdk/utils/flatpak-builder-to-bst.py org.kde.Sdk.json --aliases include/aliases.yml
+
+bst-runtime: elements/org.kde.Sdk.bst
+	bst build flatpak-images/flatpak-runtimes.bst
+	bst artifact checkout flatpak-images/flatpak-runtimes.bst --directory checkout/flatpak-images
 
 export:
 	flatpak build-update-repo $(REPO) ${EXPORT_ARGS} --generate-static-deltas

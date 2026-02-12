@@ -7,7 +7,7 @@ include:
 
 lint-manifests:
   stage: validate
-  image: storage.kde.org/vm-images/flatpak-builder
+  image: storage.kde.org/vm-images/buildstream
   tags:
     - VM
     - amd64
@@ -28,17 +28,15 @@ lint-manifests:
   before_script:
     - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
   script:
-    - sed "s,@@SDK_ARCH@@,${ARCH},g" org.kde.Sdk.json.in > org.kde.Sdk.json
-    - flatpak-builder --install-deps-from=flathub --user --arch=$ARCH --force-clean --require-changes --disable-rofiles-fuse --ccache --repo=repo-$ARCH --subject="build of org.kde.Sdk, `date`, `git rev-parse HEAD`" sdk org.kde.Sdk.json
-    # Package up the generated repository for artifacting then upload it
-    - mkdir artifacts/
-    - tar -czf artifacts/repository-$ARCH.tar.gz repo-$ARCH/
-    - cp org.kde.Sdk.json artifacts/
-    - python3 ci-utilities/sync-s3-folder.py --mode upload --verbose --local ./artifacts/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_PATH/p/$CI_PIPELINE_ID/
+    - make elements/org.kde.Sdk.bst
+    - bst build flatpak-images/flatpak-runtimes.bst
+    - bst artifact checkout flatpak-images/flatpak-runtimes.bst --directory checkout/flatpak-images
+    - cp org.kde.Sdk.json flatpak-images/flatpak-runtimes.bst/
+    - python3 ci-utilities/sync-s3-folder.py --mode upload --verbose --local checkout/flatpak-images/flatpak-runtimes.bst/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_PATH/p/$CI_PIPELINE_ID/
 
 build-runtime-amd64:
   extends: .build-runtime
-  image: storage.kde.org/vm-images/flatpak-builder
+  image: storage.kde.org/vm-images/buildstream
   tags:
     - LargeVM
     - amd64
@@ -47,13 +45,14 @@ build-runtime-amd64:
 
 build-runtime-arm64:
   extends: .build-runtime
-  image: storage.kde.org/vm-images/flatpak-builder-arm64
+  image: storage.kde.org/vm-images/buildstream-arm64
   tags:
     - LargeVM
     - arm64
   variables:
     ARCH: aarch64
 
+# we use the flatpak-builder vm image for publishing still
 publish-to-flathub:
   stage: publish
   image: storage.kde.org/vm-images/flatpak-builder

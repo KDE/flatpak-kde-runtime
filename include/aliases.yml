@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2025 Aleix Pol Gonzalez <aleix.pol@codethink.co.uk>
+# SPDX-License-Identifier: MIT
+
+aliases:
+  github: https://github.com/
+  gitlab: https://gitlab.com/
+  pypi: https://files.pythonhosted.org/packages/
+  qt: https://download.qt.io/official_releases/qt/
+  kde: https://invent.kde.org/
+  kde_cdn: https://download.kde.org/stable/
+  fdo: https://gitlab.freedesktop.org/
+  xorg: https://xorg.freedesktop.org/

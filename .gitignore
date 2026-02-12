@@ -3,3 +3,4 @@ objects
 builddir
 /.flatpak-builder/
 /repo/
+/checkout/
