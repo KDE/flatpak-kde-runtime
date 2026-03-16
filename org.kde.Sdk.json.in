@@ -2051,6 +2051,7 @@
                 {
                     "config-opts": [
                         "-DBUILD_TESTS=OFF",
+                        "-DQCA_INSTALL_IN_QT_PREFIX=ON",
                         "-DBUILD_WITH_QT6=ON"
                     ],
                     "name": "qca",
