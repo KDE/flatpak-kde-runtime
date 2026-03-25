@@ -473,8 +473,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/grpc/grpc",
-                            "tag": "v1.76.0",
-                            "commit": "f5ffb68d8a2fd603dff16287e90a4ac571e1fec6",
+                            "tag": "v1.78.1",
+                            "commit": "5b6492ea90b2b867a6adad1b10a6edda28e860d1",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^(v[\\d.]+)$"
@@ -3150,8 +3150,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/danvratil/qcoro/archive/refs/tags/v0.12.0.tar.gz",
-                    "sha256": "809afafab61593f994c005ca6e242300e1e3e7f4db8b5d41f8c642aab9450fbc",
+                    "url": "https://github.com/danvratil/qcoro/archive/refs/tags/v0.13.0.tar.gz",
+                    "sha256": "4bff7513c5c8e301b66308df05795043b1792ed16381a484e5c990171b8ff19e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 236236,
