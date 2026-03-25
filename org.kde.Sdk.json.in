@@ -2701,8 +2701,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.11.0.tar.xz",
-                    "sha256": "6dcdfa324f710f00887e6321212fc8582a3c4712450d129d91435bb1edd8d523",
+                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.12.0.tar.xz",
+                    "sha256": "513051dff8417da1819d6ae89d6c21a03654c9a60891df60df6aba13df19d21b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242933,
@@ -3182,8 +3182,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.5",
-                    "commit": "a6ffa0436a0b89d72c22718ca3a820183f888079"
+                    "tag": "v6.6.3",
+                    "commit": "26392d437cbd75a8ebb82b312cf7afe0ff1a2e04"
                 },
                 {
                     "type": "shell",
@@ -3237,8 +3237,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.5",
-                    "commit": "60fed6c60a3a8afb0cafed7f4a0b35d7f7ed48e5"
+                    "tag": "v6.6.3",
+                    "commit": "11251f3a707930c94b1f63bf35d7d0fcd1af7535"
                 },
                 {
                     "type": "shell",
@@ -3264,8 +3264,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.5",
-                    "commit": "b81b9b36523149e1508ae65b6b51e852a27ca023"
+                    "tag": "v6.6.3",
+                    "commit": "714e41142c9a53e8bceb72285826015778257cc9"
                 },
                 {
                     "type": "shell",
@@ -3290,8 +3290,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.5.5",
-                    "commit": "06e1aff22f75724de3e96898217b9e54452e9f7f"
+                    "tag": "v6.6.3",
+                    "commit": "db2df51f8aff6524cf728422793dfe47a329a912"
                 },
                 {
                     "type": "shell",
@@ -3307,8 +3307,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/plasma/6.5.5/ocean-sound-theme-6.5.5.tar.xz",
-                    "sha256": "ce629cc9990a3dc381d3bd45c37838a618f51021761a37671e74b9a45624a12c",
+                    "url": "https://download.kde.org/stable/plasma/6.6.3/ocean-sound-theme-6.6.3.tar.xz",
+                    "sha256": "a879429433796e611206e94aed70c506618ace9bf492a3f2ff9d771087b6f808",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8761,
