@@ -2641,31 +2641,6 @@
             ]
         },
         {
-            "name": "kwayland",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://invent.kde.org/plasma/kwayland.git",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
-                    },
-                    "tag": "v6.6.3",
-                    "commit": "13686f768f9d56b9a162809fef64e2bc15c428bf"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "install-licenses.sh"
-                    ]
-                }
-            ]
-        },
-        {
             "name": "kirigami-addons",
             "config-opts": [
                 "-DBUILD_TESTING=OFF"
