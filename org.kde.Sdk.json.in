@@ -2048,35 +2048,6 @@
                         "install-licenses.sh"
                     ]
                 }
-            ],
-            "modules": [
-                {
-                    "config-opts": [
-                        "-DBUILD_TESTS=OFF",
-                        "-DQCA_INSTALL_IN_QT_PREFIX=ON",
-                        "-DBUILD_WITH_QT6=ON"
-                    ],
-                    "name": "qca",
-                    "buildsystem": "cmake-ninja",
-                    "sources": [
-                        {
-                            "type": "git",
-                            "url": "https://invent.kde.org/libraries/qca.git",
-                            "x-checker-data": {
-                                "type": "git",
-                                "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
-                            },
-                            "tag": "v2.3.10",
-                            "commit": "df5171e3c4baf346581f15af5a040e61b166a332"
-                        },
-                        {
-                            "type": "shell",
-                            "commands": [
-                                "LICENSES='COPYING*' install-licenses.sh"
-                            ]
-                        }
-                    ]
-                }
             ]
         },
         {
