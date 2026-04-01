@@ -3198,7 +3198,8 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DBUILD_TESTING=OFF",
-                "-DBUILD_WITH_QT6=ON"
+                "-DBUILD_WITH_QT6=ON",
+                "-DBUILD_ACTIVITIES=OFF"
             ],
             "sources": [
                 {
