@@ -2026,7 +2026,9 @@
         {
             "name": "kwallet",
             "config-opts": [
-                "-DBUILD_TESTING=OFF"
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_KWALLETD=OFF",
+                "-DBUILD_KSECRETD=OFF"
             ],
             "buildsystem": "cmake-ninja",
             "sources": [
