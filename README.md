@@ -13,7 +13,7 @@ https://community.kde.org/Guidelines_and_HOWTOs/Flatpak
 There's a [different branch](https://invent.kde.org/packaging/flatpak-kde-runtime/-/branches) for each version of Qt. The KDE Frameworks version updates with it as new stable releases become available.
 
 # Testing
-This can generally be built with flatpak-builder as explained in its documentation. There's a Makefile to make it a bit easier to trigger:
+This can generally be built with flatpak-builder as explained in its documentation. There is a Makefile to make it a bit easier to trigger:
 
 ## Useful variables
 * ARCH: Should be one of the offered by `flatpak --supported-arches`. Static qemu builds can be used for cross-compilation. Defaults to `flatpak --default-arch`
