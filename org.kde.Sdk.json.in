@@ -2280,33 +2280,6 @@
             ]
         },
         {
-            "name": "plasma-activities",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF",
-                "-DPLASMA_ACTIVITIES_LIBRARY_ONLY=ON"
-            ],
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://invent.kde.org/plasma/plasma-activities.git",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
-                    },
-                    "tag": "v6.6.3",
-                    "commit": "0be5ce2f5256b5070a6065a3cdd3a5895bc11c68"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "install-licenses.sh"
-                    ]
-                }
-            ]
-        },
-        {
             "name": "kirigami",
             "config-opts": [
                 "-DBUILD_TESTING=OFF"
@@ -3158,32 +3131,6 @@
                         "stable-only": true,
                         "url-template": "https://github.com/danvratil/qcoro/archive/refs/tags/v$version.tar.gz"
                     }
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "install-licenses.sh"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "plasma-activities-stats",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://invent.kde.org/plasma/plasma-activities-stats.git",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
-                    },
-                    "tag": "v6.6.3",
-                    "commit": "26392d437cbd75a8ebb82b312cf7afe0ff1a2e04"
                 },
                 {
                     "type": "shell",
