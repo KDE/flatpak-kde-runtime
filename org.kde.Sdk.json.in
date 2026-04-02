@@ -3238,12 +3238,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/breeze.git",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
-                    },
-                    "tag": "v6.5.5",
-                    "commit": "60fed6c60a3a8afb0cafed7f4a0b35d7f7ed48e5"
+                    "commit": "3b5f9bc417d3058b41b0af610c20ee39aab009d4"
                 },
                 {
                     "type": "shell",
@@ -3271,6 +3266,12 @@
                     },
                     "tag": "v6.5.5",
                     "commit": "b81b9b36523149e1508ae65b6b51e852a27ca023"
+                },
+                {
+                    "type": "patch",
+                    "paths": [
+                        "patch/plasma-integration-union.patch"
+                    ]
                 },
                 {
                     "type": "shell",
@@ -3326,6 +3327,20 @@
                     "commands": [
                         "install-licenses.sh"
                     ]
+                }
+            ]
+        },
+            "name": "union",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/plasma/union.git",
+                    "commit": "63c120279a269d34bb6620db382cc185067c468c"
                 }
             ]
         },

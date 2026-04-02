@@ -1,0 +1,32 @@
+From 1ccff80e76cca2d725e89ee733332d6e5c346fb9 Mon Sep 17 00:00:00 2001
+From: Marco Martin <notmart@gmail.com>
+Date: Fri, 20 Mar 2026 10:25:29 +0100
+Subject: [PATCH] Default to Union if found
+
+Search for the Union QtQuick theme and if found,
+use it as default instead of the old qstyle based desktop theme.\
+
+This makes it easier to have wide testing of the style before
+the official release and replacement of the desktop style
+---
+ qt6/src/platformtheme/kdeplatformtheme.cpp | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/qt6/src/platformtheme/kdeplatformtheme.cpp b/qt6/src/platformtheme/kdeplatformtheme.cpp
+index 82e01e83..c9e44454 100644
+--- a/qt6/src/platformtheme/kdeplatformtheme.cpp
++++ b/qt6/src/platformtheme/kdeplatformtheme.cpp
+@@ -362,7 +362,9 @@ void KdePlatformTheme::setQtQuickControlsTheme()
+         return;
+     }
+ 
+-    if (checkIfThemeExists(QStringLiteral("/org/kde/desktop"))) {
++    if (checkIfThemeExists(QStringLiteral("/org/kde/union"))) {
++        QQuickStyle::setStyle(QStringLiteral("org.kde.union"));
++    } else if (checkIfThemeExists(QStringLiteral("/org/kde/desktop"))) {
+         QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
+     }
+ }
+-- 
+GitLab
+
