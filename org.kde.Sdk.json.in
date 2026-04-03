@@ -3325,6 +3325,21 @@
             ]
         },
         {
+            "name": "cxx-rust-cssparser",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/libraries/cxx-rust-cssparser",
+                    "commit": "8ad3b9a9fe9b8c3be654b02974e565b04af2573a"
+                }
+            ]
+        },
+        {
             "name": "union",
             "buildsystem": "cmake-ninja",
             "builddir": true,
