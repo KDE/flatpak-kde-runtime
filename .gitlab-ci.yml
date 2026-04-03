@@ -31,8 +31,11 @@ lint-manifests:
     - make elements/org.kde.Sdk.bst
     - bst build flatpak-images/flatpak-runtimes.bst
     - bst artifact checkout flatpak-images/flatpak-runtimes.bst --directory checkout/flatpak-images
-    - cp org.kde.Sdk.json flatpak-images/flatpak-runtimes.bst/
-    - python3 ci-utilities/sync-s3-folder.py --mode upload --verbose --local checkout/flatpak-images/flatpak-runtimes.bst/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_PATH/p/$CI_PIPELINE_ID/
+    - cp org.kde.Sdk.json checkout/flatpak-images/repo-$ARCH/
+    - mkdir artifacts/
+    - tar czf artifacts/repository-$ARCH.tar.gz -C checkout/flatpak-images/ repo-$ARCH/
+    - python3 ci-utilities/sync-s3-folder.py --mode upload --verbose --local ./artifacts/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_PATH/p/$CI_PIPELINE_ID/
+
 
 build-runtime-amd64:
   extends: .build-runtime
