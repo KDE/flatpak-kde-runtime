@@ -3268,12 +3268,6 @@
                     "commit": "b81b9b36523149e1508ae65b6b51e852a27ca023"
                 },
                 {
-                    "type": "patch",
-                    "paths": [
-                        "patch/plasma-integration-union.patch"
-                    ]
-                },
-                {
                     "type": "shell",
                     "commands": [
                         "install-licenses.sh"
