@@ -3325,6 +3325,21 @@
             ]
         },
         {
+            "name": "corrosion",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/corrosion-rs/corrosion.git",
+                    "commit": "1499b14e4906a2890f5cee1547c8848db261753d"
+                }
+            ]
+        },
+        {
             "name": "cxx-rust-cssparser",
             "buildsystem": "cmake-ninja",
             "builddir": true,
