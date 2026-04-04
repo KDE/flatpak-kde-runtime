@@ -114,7 +114,11 @@
         "/usr/libexec/freedesktop-post.sh"
     ],
     "build-options": {
+        "append-path": "/usr/lib/sdk/rust-stable/bin",
         "env": {
+            "RUST_BACKTRACE": "1",
+            "CARGO_NET_OFFLINE": "true",
+            "RUSTFLAGS": "--remap-path-prefix =../",
             "CMAKE_BUILD_TYPE": "RelWithDebInfo"
         }
     },
