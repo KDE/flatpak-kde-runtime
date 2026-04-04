@@ -9,7 +9,8 @@
     "sdk-extensions": [
         "org.freedesktop.Sdk.Debug",
         "org.freedesktop.Sdk.Locale",
-        "org.freedesktop.Sdk.Docs"
+        "org.freedesktop.Sdk.Docs",
+        "org.freedesktop.Sdk.Extension.rust-stable"
     ],
     "platform-extensions": [
         "org.freedesktop.Platform.Locale"
