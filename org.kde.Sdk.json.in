@@ -810,6 +810,35 @@
             ]
         },
         {
+            "name": "qt6-qtgraphs",
+            "buildsystem": "cmake-ninja",
+            "cleanup-platform": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.qt.io/official_releases/qt/6.10/6.10.2/submodules/qtgraphs-everywhere-src-6.10.2.tar.xz",
+                    "sha256": "f690fc6aa567d89a6e76ce370d684beb243dc0c2ed1187dd305433e278dd7aaf",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 7927,
+                        "stable-only": true,
+                        "versions": {
+                            "<": "6.11.0"
+                        },
+                        "url-template": "https://download.qt.io/official_releases/qt/6.10/$version/submodules/qtgraphs-everywhere-src-$version.tar.xz"
+                    }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
+                }
+            ]
+        },
+        {
             "name": "qt6-qt3d",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
