@@ -114,7 +114,10 @@
         "/usr/libexec/freedesktop-post.sh"
     ],
     "build-options": {
-        "append-path": "/usr/lib/sdk/rust-stable/bin"
+        "append-path": "/usr/lib/sdk/rust-stable/bin",
+        "env": {
+            "RUSTFLAGS": "-C link-arg=-fuse-ld=mold"
+        }
     },
     "modules": [
         {
@@ -136,18 +139,17 @@
                 }
             ]
         },
-            {
-      "buildsystem": "cmake",
-      "name": "corrosion",
-      "sources": [
         {
-          "type": "git",
-          "url": "https://github.com/corrosion-rs/corrosion.git",
-          "tag": "v0.6.1"
-        }
-      ]
-    },
-
+          "buildsystem": "cmake",
+          "name": "corrosion",
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://github.com/corrosion-rs/corrosion.git",
+              "tag": "v0.6.1"
+            }
+          ]
+        },
         {
             "name": "qt6-qtbase",
             "cleanup-platform": [
