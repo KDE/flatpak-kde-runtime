@@ -10,8 +10,8 @@
         "org.freedesktop.Sdk.Debug",
         "org.freedesktop.Sdk.Locale",
         "org.freedesktop.Sdk.Docs",
-        "org.freedesktop.Sdk.Extension.rust-stable"
-        "org.freedesktop.Sdk.Extension.llvm21",
+        "org.freedesktop.Sdk.Extension.rust-stable",
+        "org.freedesktop.Sdk.Extension.llvm21"
     ],
     "platform-extensions": [
         "org.freedesktop.Platform.Locale"
