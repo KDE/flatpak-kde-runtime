@@ -839,6 +839,35 @@
             ]
         },
         {
+            "name": "qt6-qtgraphs",
+            "buildsystem": "cmake-ninja",
+            "cleanup-platform": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.0/submodules/qtgraphs-everywhere-src-6.11.0.tar.xz",
+                    "sha256": "df6fcb48c0a558fdf964a7d4b52e740760fd7bbd0f7a5d9aff571050f476b15b",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 7927,
+                        "stable-only": true,
+                        "versions": {
+                            "<": "6.11.0"
+                        },
+                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtgraphs-everywhere-src-$version.tar.xz"
+                    }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
+                }
+            ]
+        },
+        {
             "name": "qt6-qtnetworkauth",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
