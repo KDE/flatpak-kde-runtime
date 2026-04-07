@@ -174,7 +174,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtbase-everywhere-src-$version.tar.xz"
                     }
@@ -229,7 +229,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qttools-everywhere-src-$version.tar.xz"
                     }
@@ -259,7 +259,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtshadertools-everywhere-src-$version.tar.xz"
                     }
@@ -288,7 +288,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtlanguageserver-everywhere-src-$version.tar.xz"
                     }
@@ -321,7 +321,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtdeclarative-everywhere-src-$version.tar.xz"
                     }
@@ -350,7 +350,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtwebchannel-everywhere-src-$version.tar.xz"
                     }
@@ -379,7 +379,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtpositioning-everywhere-src-$version.tar.xz"
                     }
@@ -408,7 +408,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtgrpc-everywhere-src-$version.tar.xz"
                     }
@@ -506,7 +506,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtsvg-everywhere-src-$version.tar.xz"
                     }
@@ -535,7 +535,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtmultimedia-everywhere-src-$version.tar.xz"
                     }
@@ -564,7 +564,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtspeech-everywhere-src-$version.tar.xz"
                     }
@@ -593,7 +593,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtsensors-everywhere-src-$version.tar.xz"
                     }
@@ -622,7 +622,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtimageformats-everywhere-src-$version.tar.xz"
                     }
@@ -651,7 +651,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtconnectivity-everywhere-src-$version.tar.xz"
                     }
@@ -680,7 +680,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtwayland-everywhere-src-$version.tar.xz"
                     }
@@ -709,7 +709,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtserialport-everywhere-src-$version.tar.xz"
                     }
@@ -738,7 +738,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtwebsockets-everywhere-src-$version.tar.xz"
                     }
@@ -767,7 +767,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtscxml-everywhere-src-$version.tar.xz"
                     }
@@ -796,7 +796,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtcharts-everywhere-src-$version.tar.xz"
                     }
@@ -825,7 +825,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qt3d-everywhere-src-$version.tar.xz"
                     }
@@ -854,7 +854,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtgraphs-everywhere-src-$version.tar.xz"
                     }
@@ -883,7 +883,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtnetworkauth-everywhere-src-$version.tar.xz"
                     }
@@ -912,7 +912,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qttranslations-everywhere-src-$version.tar.xz"
                     }
@@ -941,7 +941,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtremoteobjects-everywhere-src-$version.tar.xz"
                     }
@@ -970,7 +970,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qt5compat-everywhere-src-$version.tar.xz"
                     }
@@ -999,7 +999,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtlocation-everywhere-src-$version.tar.xz"
                     }
@@ -1028,7 +1028,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtquicktimeline-everywhere-src-$version.tar.xz"
                     }
@@ -1057,7 +1057,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtquick3d-everywhere-src-$version.tar.xz"
                     }
@@ -1086,7 +1086,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtquick3dphysics-everywhere-src-$version.tar.xz"
                     }
@@ -1115,7 +1115,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtquickeffectmaker-everywhere-src-$version.tar.xz"
                     }
@@ -1144,7 +1144,7 @@
                         "project-id": 7927,
                         "stable-only": true,
                         "versions": {
-                            "<": "6.11.0"
+                            "<": "6.12.0"
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qthttpserver-everywhere-src-$version.tar.xz"
                     }
