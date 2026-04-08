@@ -17,10 +17,6 @@ sources:
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
-- freedesktop-sdk.bst:components/make.bst
-- freedesktop-sdk.bst:components/sed.bst
-- freedesktop-sdk.bst:components/bison.bst
-- freedesktop-sdk.bst:components/sqlite.bst
 
 depends:
 - components/qttranslations.bst

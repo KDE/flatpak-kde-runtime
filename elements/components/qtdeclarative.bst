@@ -13,8 +13,6 @@ sources:
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
-- freedesktop-sdk.bst:components/make.bst
-- freedesktop-sdk.bst:components/sed.bst
 - components/qtlanguageserver.bst
 
 depends:

@@ -18,8 +18,6 @@ build-depends:
 - freedesktop-sdk.bst:components/xorg-lib-xrandr.bst
 - freedesktop-sdk.bst:components/vulkan-headers.bst
 - freedesktop-sdk.bst:components/ffmpeg.bst
-- freedesktop-sdk.bst:components/make.bst
-- freedesktop-sdk.bst:components/sed.bst
 
 depends:
 - components/qtbase.bst
