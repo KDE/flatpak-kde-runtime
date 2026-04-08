@@ -31,7 +31,7 @@ all: $(REPO)/config $(foreach file, $(wildcard *.json.in), $(subst .json.in,.app
 
 elements/org.kde.Sdk.bst: org.kde.Sdk.json
 	git clone https://gitlab.com/freedesktop-sdk/freedesktop-sdk.git || git -C freedesktop-sdk pull --rebase
-	python freedesktop-sdk/utils/flatpak-builder-to-bst.py org.kde.Sdk.json --aliases include/aliases.yml
+	python freedesktop-sdk/utils/flatpak-builder-to-bst.py org.kde.Sdk.json --aliases include/aliases.yml --skip skip.yml
 
 bst-runtime: elements/org.kde.Sdk.bst
 	bst build flatpak-images/flatpak-runtimes.bst
