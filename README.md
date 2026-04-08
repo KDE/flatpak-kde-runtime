@@ -25,3 +25,13 @@ This can generally be built with flatpak-builder as explained in its documentati
 * `make check` will make sure the json file is valid.
 * `make org.kde.Sdk.app` builds the SDK.
 * `flatpak --user install ./repo org.kde.Platform org.kde.Sdk` installs the built SDK.
+
+
+# Buildstream
+
+The directory `elements/components` contains handwritten buildstream elements.
+They get used instead of generated ones through the `skip.yml` file.
+
+To update the versions and refs of the sources for the elements, run `bst source track components/qtbase.bst`.
+
+To build an element locally, run `bst build components/qtdeclarative.bst`.
