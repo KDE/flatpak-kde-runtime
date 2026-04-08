@@ -3238,12 +3238,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/breeze.git",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
-                    },
-                    "tag": "v6.5.5",
-                    "commit": "60fed6c60a3a8afb0cafed7f4a0b35d7f7ed48e5"
+                    "commit": "a0ecf0ca55835cad2143f9c67fa71d1a861db054"
                 },
                 {
                     "type": "shell",
