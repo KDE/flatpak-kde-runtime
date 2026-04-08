@@ -16,30 +16,11 @@ sources:
   path: patch/qtbase-use-adwaita-decorations-on-gnome-by-default.patch
 
 build-depends:
-- freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - freedesktop-sdk.bst:components/make.bst
 - freedesktop-sdk.bst:components/sed.bst
-- freedesktop-sdk.bst:components/cups.bst
 - freedesktop-sdk.bst:components/bison.bst
-- freedesktop-sdk.bst:components/dbus.bst
-- freedesktop-sdk.bst:components/fontconfig.bst
-- freedesktop-sdk.bst:components/glib.bst
-- freedesktop-sdk.bst:components/libxkbcommon.bst
-- freedesktop-sdk.bst:components/xorg-lib-xxf86vm.bst
-- freedesktop-sdk.bst:components/xcb-util.bst
-- freedesktop-sdk.bst:components/xcb-util-wm.bst
-- freedesktop-sdk.bst:components/xcb-util-cursor.bst
-- freedesktop-sdk.bst:components/xcb-util-image.bst
-- freedesktop-sdk.bst:components/xcb-util-keysyms.bst
-- freedesktop-sdk.bst:components/xcb-util-renderutil.bst
-- freedesktop-sdk.bst:components/libproxy.bst
-- freedesktop-sdk.bst:components/perl.bst
 - freedesktop-sdk.bst:components/sqlite.bst
-- freedesktop-sdk.bst:components/openssl.bst
-- freedesktop-sdk.bst:vm/mesa-default.bst
-- freedesktop-sdk.bst:components/mesa-headers.bst
-- freedesktop-sdk.bst:extensions/mesa/mesa.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
