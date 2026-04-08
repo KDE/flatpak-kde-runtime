@@ -12,6 +12,7 @@ sources:
   ref: v6.11.0-0-g08c7440f513309715ba00db5e0e519a4a59e62ea
 
 build-depends:
+- components/qttools.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
