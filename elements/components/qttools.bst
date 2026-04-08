@@ -21,7 +21,7 @@ build-depends:
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/zstd.bst
-- components/qt6-qtbase.bst
+- components/qtbase.bst
 
 variables:
   cmake-local: >-
