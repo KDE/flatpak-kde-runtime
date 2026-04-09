@@ -17,6 +17,7 @@ qt6-qtserialport: components/qtserialport.bst
 qt6-qtwebsockets: components/qtwebsockets.bst
 qt6-qtscxml: components/qtscxml.bst
 qt6-qtcharts: components/qtcharts.bst
+qt6-qtgraphs: components/qtgraphs.bst
 qt6-qt3d: components/qt3d.bst
 qt6-qtnetworkauth: components/qtnetworkauth.bst
 qt6-qttranslations: components/qttranslations.bst
