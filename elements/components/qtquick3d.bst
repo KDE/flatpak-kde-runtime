@@ -19,3 +19,7 @@ depends:
 - components/qtdeclarative.bst
 - freedesktop-sdk.bst:components/zlib.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+
+variables:
+  cmake-local: >-
+    -DQT_FEATURE_quick3d_assimp=OFF

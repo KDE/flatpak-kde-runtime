@@ -19,3 +19,7 @@ depends:
 - components/qtdeclarative.bst
 - components/qtshadertools.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+
+variables:
+  cmake-local: >-
+    -DQT_FEATURE_qt3d_assimp=OFF

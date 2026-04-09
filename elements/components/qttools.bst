@@ -24,3 +24,4 @@ depends:
 variables:
   cmake-local: >-
     -DQT_INSTALL_XDG_DESKTOP_ENTRIES=ON
+    -DQT_FEATURE_assistant=OFF
