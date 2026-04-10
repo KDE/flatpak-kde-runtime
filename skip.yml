@@ -1,7 +1,7 @@
 qt6-qtbase: components/qtbase.bst
 qt6-qttools: components/qttools.bst
 qt6-shadertools: components/qtshadertools.bst
-qt6-languageserver: components/qtlanguageserver.bst
+qt6-qtlanguageserver: components/qtlanguageserver.bst
 qt6-qtdeclarative: components/qtdeclarative.bst
 qt6-webchannel: components/qtwebchannel.bst
 qt6-qtpositioning: components/qtpositioning.bst
