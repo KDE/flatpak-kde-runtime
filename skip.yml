@@ -33,3 +33,8 @@ extra-cmake-modules: freedesktop-sdk.bst:components/extra-cmake-modules.bst
 fcitx5-platforminputcontext: components/fcitx5-qt.bst
 plasma-wayland-protocols: components/plasma-wayland-protocols.bst
 kwidgetsaddons: components/kwidgetsaddons.bst
+
+#utfcpp: freedesktop-sdk.bst:components/utf8cpp.bst
+#canberra:
+#libical: freedesktop-sdk.bst:components/libical.bst
+#qrencode: freedesktop-sdk.bst:components/libqrencode.bst
