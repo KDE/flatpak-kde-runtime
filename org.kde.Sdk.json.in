@@ -118,6 +118,17 @@
     },
     "modules": [
         {
+          "buildsystem": "cmake",
+          "name": "corrosion",
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://github.com/corrosion-rs/corrosion.git",
+              "tag": "v0.6.0"
+            }
+          ]
+        },
+        {
             "name": "licence-extractor",
             "buildsystem": "simple",
             "build-commands": [
@@ -135,17 +146,6 @@
                     "dest-filename": "install-licenses.sh"
                 }
             ]
-        },
-        {
-          "buildsystem": "cmake",
-          "name": "corrosion",
-          "sources": [
-            {
-              "type": "git",
-              "url": "https://github.com/corrosion-rs/corrosion.git",
-              "tag": "v0.6.0"
-            }
-          ]
         },
         {
             "name": "qt6-qtbase",
