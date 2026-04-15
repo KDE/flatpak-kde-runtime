@@ -29,8 +29,10 @@ all: $(REPO)/config $(foreach file, $(wildcard *.json.in), $(subst .json.in,.app
 %.app: %.json
 	flatpak-builder $(INSTALL_SOURCE) $(FB_ARGS) --arch=$(ARCH) $(DISABLE_ROFILES_FUSE) --force-clean --require-changes --ccache --repo=$(REPO) --subject="build of org.kde.Sdk, `date` (`git rev-parse HEAD`)" ${EXPORT_ARGS} $(TMP) $<
 
-elements/org.kde.Sdk.bst: org.kde.Sdk.json
-	git clone https://gitlab.com/freedesktop-sdk/freedesktop-sdk.git || git -C freedesktop-sdk pull --rebase
+freedesktop-sdk/utils/flatpak-builder-to-bst.py:
+	git clone https://gitlab.com/freedesktop-sdk/freedesktop-sdk.git --branch aleixpol/cleanup-fbtbst # TODO restore to master once merged
+
+elements/org.kde.Sdk.bst: org.kde.Sdk.json freedesktop-sdk/utils/flatpak-builder-to-bst.py
 	python freedesktop-sdk/utils/flatpak-builder-to-bst.py org.kde.Sdk.json --aliases include/aliases.yml
 
 bst-runtime: elements/org.kde.Sdk.bst
