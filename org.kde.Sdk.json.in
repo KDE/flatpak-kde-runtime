@@ -147,12 +147,6 @@
                         "tag-pattern": "^v6\\.([\\d.]+)$"
                     },
                     "commit": "862b5b0ed8b2413a6c0e524a13640495dc5bb0d3"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "install-licenses.sh"
-                    ]
                 }
             ]
         },
