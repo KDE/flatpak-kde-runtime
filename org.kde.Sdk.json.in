@@ -129,6 +129,21 @@
           ]
         },
         {
+            "name": "cxx-rust-cssparser",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/libraries/cxx-rust-cssparser",
+                    "commit": "8ad3b9a9fe9b8c3be654b02974e565b04af2573a"
+                }
+            ]
+        },
+        {
             "name": "licence-extractor",
             "buildsystem": "simple",
             "build-commands": [
@@ -3248,7 +3263,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/breeze.git",
-                    "commit": "3b5f9bc417d3058b41b0af610c20ee39aab009d4"
+                    "commit": "8ba8bab26f1885fd0e0adae04752ae9625bebd85"
                 },
                 {
                     "type": "shell",
@@ -3335,21 +3350,6 @@
             ]
         },
         {
-            "name": "cxx-rust-cssparser",
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://invent.kde.org/libraries/cxx-rust-cssparser",
-                    "commit": "8ad3b9a9fe9b8c3be654b02974e565b04af2573a"
-                }
-            ]
-        },
-        {
             "name": "union",
             "buildsystem": "cmake-ninja",
             "builddir": true,
@@ -3360,7 +3360,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/union.git",
-                    "commit": "63c120279a269d34bb6620db382cc185067c468c"
+                    "commit": "2501e78f59525bd6ae8978fbb53ee9984257d99c"
                 }
             ]
         },
