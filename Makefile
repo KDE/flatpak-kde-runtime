@@ -21,10 +21,10 @@ endif
 
 all: $(REPO)/config $(foreach file, $(wildcard *.json.in), $(subst .json.in,.app,$(file)))
 
-%.json: %.json.in append-to-json.py
-	git apply kde-sdk.patch
+%.json: %.json.in append-to-json.py kde-sdk.patch
 	./append-to-json.py inherit-sdk-extensions $(INHERIT_EXTS) \
-	< $< | sed "s,@@SDK_ARCH@@,$(ARCH),g" > $@
+		< $< | sed "s,@@SDK_ARCH@@,$(ARCH),g" > $@
+	patch -p1 < kde-sdk.patch
 
 %.app: %.json
 	flatpak-builder $(INSTALL_SOURCE) $(FB_ARGS) --arch=$(ARCH) $(DISABLE_ROFILES_FUSE) --force-clean --require-changes --ccache --repo=$(REPO) --subject="build of org.kde.Sdk, `date` (`git rev-parse HEAD`)" ${EXPORT_ARGS} $(TMP) $<

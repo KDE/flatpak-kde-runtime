@@ -8,6 +8,9 @@ description: |
   and we define the domains for docs and locale. We also include
   a manifest.json containing version/source information.
 
+(@):
+- elements/org.kde.Sdk/flatpak-images/platform-cleanup.yml
+
 config:
   exclude:
   - extra
@@ -15,6 +18,7 @@ config:
   - static-blocklist
   - static-allowlist
   - devel
+  - platform-cleanup
 
 public:
   bst:
