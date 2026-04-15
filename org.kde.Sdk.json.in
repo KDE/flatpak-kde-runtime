@@ -129,6 +129,34 @@
           ]
         },
         {
+            "name": "extra-cmake-modules",
+            "cleanup-platform": [
+                "*"
+            ],
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git",
+                    "tag": "v6.24.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v6\\.([\\d.]+)$"
+                    },
+                    "commit": "862b5b0ed8b2413a6c0e524a13640495dc5bb0d3"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
+                }
+            ]
+        },
+         {
             "name": "cxx-rust-cssparser",
             "buildsystem": "cmake-ninja",
             "builddir": true,
@@ -1153,35 +1181,7 @@
                 }
             ]
         },
-        {
-            "name": "extra-cmake-modules",
-            "cleanup-platform": [
-                "*"
-            ],
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git",
-                    "tag": "v6.24.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v6\\.([\\d.]+)$"
-                    },
-                    "commit": "862b5b0ed8b2413a6c0e524a13640495dc5bb0d3"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "install-licenses.sh"
-                    ]
-                }
-            ]
-        },
-        {
+       {
             "name": "fcitx5-platforminputcontext",
             "buildsystem": "cmake-ninja",
             "config-opts": [
