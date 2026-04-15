@@ -83,8 +83,6 @@
         "--runtime=org.kde.Platform//6.11"
     ],
     "cleanup": [
-        "/man",
-        "/share/man",
         "/lib/systemd",
         "*.la"
     ],
