@@ -17,4 +17,5 @@ build-depends:
 depends:
 - components/qtbase.bst
 - components/qtdeclarative.bst
+- components/qtmultimedia.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
