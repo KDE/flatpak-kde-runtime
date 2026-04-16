@@ -2,14 +2,14 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: qt_git:qtwebchannel.git
+  url: qt_git:qtimageformats.git
   track: v6.*.*
   exclude:
   - "*-beta*"
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-g71609dbea86e08e4e93ea711c567184d8b0da54e
+  ref: v6.11.0-0-gade536558e868143d615512a6873daabb8e9195b
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
