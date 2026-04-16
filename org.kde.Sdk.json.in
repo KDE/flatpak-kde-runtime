@@ -9,7 +9,8 @@
     "sdk-extensions": [
         "org.freedesktop.Sdk.Debug",
         "org.freedesktop.Sdk.Locale",
-        "org.freedesktop.Sdk.Docs"
+        "org.freedesktop.Sdk.Docs",
+        "org.freedesktop.Sdk.Extension.rust-stable"
     ],
     "platform-extensions": [
         "org.freedesktop.Platform.Locale"
@@ -116,6 +117,54 @@
         }
     },
     "modules": [
+        {
+          "buildsystem": "cmake",
+          "name": "corrosion",
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://github.com/corrosion-rs/corrosion.git",
+              "tag": "v0.6.0"
+            }
+          ]
+        },
+        {
+            "name": "extra-cmake-modules",
+            "cleanup-platform": [
+                "*"
+            ],
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git",
+                    "tag": "v6.24.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v6\\.([\\d.]+)$"
+                    },
+                    "commit": "862b5b0ed8b2413a6c0e524a13640495dc5bb0d3"
+                }
+            ]
+        },
+         {
+            "name": "cxx-rust-cssparser",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/libraries/cxx-rust-cssparser",
+                    "commit": "8ad3b9a9fe9b8c3be654b02974e565b04af2573a"
+                }
+            ]
+        },
         {
             "name": "licence-extractor",
             "buildsystem": "simple",
@@ -1147,34 +1196,6 @@
                         },
                         "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qthttpserver-everywhere-src-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "install-licenses.sh"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "extra-cmake-modules",
-            "cleanup-platform": [
-                "*"
-            ],
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git",
-                    "tag": "v6.25.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v6\\.([\\d.]+)$"
-                    },
-                    "commit": "e10d4a6fe97c7ea51d9ed48c2a62f4205eb4c1fa"
                 },
                 {
                     "type": "shell",
@@ -3245,6 +3266,21 @@
                     "commands": [
                         "install-licenses.sh"
                     ]
+                }
+            ]
+        },
+        {
+            "name": "union",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/plasma/union.git",
+                    "commit": "dc0780806825471f693edb28303b1121844e30ec"
                 }
             ]
         },
