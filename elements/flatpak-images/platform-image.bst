@@ -8,9 +8,6 @@ description: |
   and we define the domains for docs and locale. We also include
   a manifest.json containing version/source information.
 
-(@):
-- elements/org.kde.Sdk/flatpak-images/platform-cleanup.yml
-
 config:
   exclude:
   - extra
@@ -18,7 +15,6 @@ config:
   - static-blocklist
   - static-allowlist
   - devel
-  - platform-cleanup
 
 public:
   bst:
@@ -29,7 +25,7 @@ public:
       - '%{datadir}/runtime/locale/**'
 
 build-depends:
-- org.kde.Sdk.bst
+- org.kde.Platform.bst
 - manifests/platform-manifest.bst
 - freedesktop-sdk.bst:multiarch/multiarch-platform.bst
 - freedesktop-sdk.bst:integration/split-locales.bst
