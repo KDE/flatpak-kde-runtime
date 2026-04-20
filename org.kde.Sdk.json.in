@@ -157,6 +157,7 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DINSTALL_ARCHDATADIR=lib",
+                "-DQT_CREATE_VERSIONED_HARD_LINK=OFF",
                 "-DQT_DISABLE_RPATH=ON",
                 "-DBUILD_WITH_PCH=FALSE",
                 "-DQT_FEATURE_openssl_linked=ON",
