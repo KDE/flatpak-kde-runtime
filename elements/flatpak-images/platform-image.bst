@@ -10,6 +10,7 @@ description: |
 
 config:
   exclude:
+  - cleanup
   - extra
   - vm-only
   - static-blocklist
