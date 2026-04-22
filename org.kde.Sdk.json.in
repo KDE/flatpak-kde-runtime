@@ -10,7 +10,8 @@
         "org.freedesktop.Sdk.Debug",
         "org.freedesktop.Sdk.Locale",
         "org.freedesktop.Sdk.Docs",
-        "org.freedesktop.Sdk.Extension.rust-stable"
+        "org.freedesktop.Sdk.Extension.rust-stable",
+        "org.freedesktop.Sdk.Extension.llvm22"
     ],
     "platform-extensions": [
         "org.freedesktop.Platform.Locale"
@@ -112,7 +113,12 @@
         "/usr/libexec/freedesktop-post.sh"
     ],
     "build-options": {
+        "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm22/bin",
         "env": {
+            "CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER": "clang",
+            "CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS": "-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold",
+            "CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER": "clang",
+            "CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_RUSTFLAGS": "-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold",
             "CMAKE_BUILD_TYPE": "RelWithDebInfo"
         }
     },
@@ -3280,7 +3286,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/union.git",
-                    "commit": "dc0780806825471f693edb28303b1121844e30ec"
+                    "commit": "1b730cde2bc80adc20e0ce35c1e398de5bd45424"
                 }
             ]
         },
