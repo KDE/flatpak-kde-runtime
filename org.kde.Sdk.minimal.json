@@ -1,0 +1,80 @@
+{
+    "build-runtime": true,
+    "id": "org.kde.Sdk",
+    "id-platform": "org.kde.Platform",
+    "branch": "6.11",
+    "runtime": "org.freedesktop.Platform",
+    "sdk": "org.freedesktop.Sdk",
+    "runtime-version": "25.08",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.rust-stable"
+    ],
+    "build-options": {
+        "append-path": "/usr/lib/sdk/rust-stable/bin",
+        "env": {
+            "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+            "CARGO_NET_OFFLINE": "true"
+        },
+        "strip": false,
+        "no-debuginfo": true,
+        "no-debuginfo-compression": true
+    },
+    "modules": [
+        {
+            "name": "extra-cmake-modules",
+            "cleanup-platform": [
+                "*"
+            ],
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git",
+                    "tag": "v6.24.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v6\\.([\\d.]+)$"
+                    },
+                    "commit": "862b5b0ed8b2413a6c0e524a13640495dc5bb0d3"
+                }
+            ]
+        },
+        {
+            "buildsystem": "cmake-ninja",
+            "name": "corrosion",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/corrosion-rs/corrosion.git",
+                    "branch": "master"
+                }
+            ]
+        },
+        {
+            "name": "cxx-rust-cssparser",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_DOCS=OFF",
+                "--log-level=trace"
+            ],
+            "build-options": {
+                "env": {
+                    "CARGO_HOME": "/run/build/cxx-rust-cssparser/cargo"
+                }
+            },
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/libraries/cxx-rust-cssparser",
+                    "branch": "work/ahiemstra/no-qt"
+                },
+                "flatpak-generated-sources.json"
+            ]
+        }
+    ]
+}
