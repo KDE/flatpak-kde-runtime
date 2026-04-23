@@ -114,21 +114,66 @@
         "/usr/libexec/freedesktop-post.sh"
     ],
     "build-options": {
+        "append-path": "/usr/lib/sdk/rust-stable/bin",
+        "build-args": [
+            "--share=network"
+        ],
         "env": {
             "CMAKE_BUILD_TYPE": "RelWithDebInfo"
         }
     },
     "modules": [
         {
-          "buildsystem": "cmake",
-          "name": "corrosion",
-          "sources": [
-            {
-              "type": "git",
-              "url": "https://github.com/corrosion-rs/corrosion.git",
-              "tag": "v0.6.0"
-            }
-          ]
+            "name": "cxx-rust-cssparser",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_DOCS=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/libraries/cxx-rust-cssparser",
+                    "branch": "work/ahiemstra/no-qt"
+                }
+            ],
+
+            "modules": [
+                {
+                    "buildsystem": "cmake-ninja",
+                    "name": "corrosion",
+                    "sources": [
+                        {
+                        "type": "git",
+                        "url": "https://github.com/corrosion-rs/corrosion.git",
+                        "tag": "v0.6.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "extra-cmake-modules",
+                    "cleanup-platform": [
+                        "*"
+                    ],
+                    "buildsystem": "cmake-ninja",
+                    "config-opts": [
+                        "-DBUILD_TESTING=OFF"
+                    ],
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://invent.kde.org/frameworks/extra-cmake-modules.git",
+                            "tag": "v6.24.0",
+                            "x-checker-data": {
+                                "type": "git",
+                                "tag-pattern": "^v6\\.([\\d.]+)$"
+                            },
+                            "commit": "862b5b0ed8b2413a6c0e524a13640495dc5bb0d3"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "name": "extra-cmake-modules",
@@ -152,32 +197,17 @@
                 }
             ]
         },
-         {
-            "name": "cxx-rust-cssparser",
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://invent.kde.org/libraries/cxx-rust-cssparser",
-                    "commit": "8ad3b9a9fe9b8c3be654b02974e565b04af2573a"
-                }
-            ]
-        },
         {
             "name": "licence-extractor",
             "buildsystem": "simple",
             "build-commands": [
-                "install -m755 install-licenses.sh /usr/bin"
+                "install -D -m755 install-licenses.sh %{install-root}/usr/bin/install-licenses.sh"
             ],
             "sources": [
                 {
                     "type": "script",
                     "commands": [
-                        "DESTINATION=/usr/share/licenses/org.kde.Platform/$(basename `pwd`)/",
+                        "DESTINATION=$INSTALL_ROOT/usr/share/licenses/org.kde.Platform/$(basename `pwd`)/",
                         "DESTINATION=${DESTINATION%-[0-9]*}",
                         "mkdir -p $DESTINATION",
                         "cp -v ${LICENSES:-LICENSES/*} $DESTINATION"
