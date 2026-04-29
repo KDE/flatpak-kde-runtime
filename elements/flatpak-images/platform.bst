@@ -15,7 +15,7 @@ config:
       sdk: org.kde.Sdk/%{arch}/%{branch}
     Environment:
       GI_TYPELIB_PATH: /app/lib/girepository-1.0
-      GST_PLUGIN_PATH: /app/lib/gstreamer-1.0:/usr/lib/extensions/gstreamer-1.0:%{libdir}/codecs-extra/lib/gstreamer-1.0:%{libdir}/gstreamer-1.0
+      GST_PLUGIN_SYSTEM_PATH: /app/lib/gstreamer-1.0:/usr/lib/extensions/gstreamer-1.0:%{libdir}/codecs-extra/lib/gstreamer-1.0:%{libdir}/gstreamer-1.0
       XDG_DATA_DIRS: /app/share:/usr/share:/usr/share/runtime/share:/run/host/user-share:/run/host/share
       __EGL_EXTERNAL_PLATFORM_CONFIG_DIRS: /etc/egl/egl_external_platform.d:%{libdir}/GL/egl/egl_external_platform.d:/usr/share/egl/egl_external_platform.d
       QT_PLUGIN_PATH: /app/lib/plugins:/usr/share/runtime/lib/plugins
