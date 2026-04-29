@@ -15,20 +15,30 @@ config:
       sdk: org.kde.Sdk/%{arch}/%{branch}
     Environment:
       GI_TYPELIB_PATH: /app/lib/girepository-1.0
-      GST_PLUGIN_PATH: /app/lib/gstreamer-1.0:/usr/lib/extensions/gstreamer-1.0:/usr/lib/x86_64-linux-gnu/gstreamer-1.0
+      GST_PLUGIN_PATH: /app/lib/gstreamer-1.0:/usr/lib/extensions/gstreamer-1.0:%{libdir}/codecs-extra/lib/gstreamer-1.0:%{libdir}/gstreamer-1.0
       XDG_DATA_DIRS: /app/share:/usr/share:/usr/share/runtime/share:/run/host/user-share:/run/host/share
-      __EGL_EXTERNAL_PLATFORM_CONFIG_DIRS: /etc/egl/egl_external_platform.d:/usr/lib/x86_64-linux-gnu/GL/egl/egl_external_platform.d:/usr/share/egl/egl_external_platform.d
+      __EGL_EXTERNAL_PLATFORM_CONFIG_DIRS: /etc/egl/egl_external_platform.d:%{libdir}/GL/egl/egl_external_platform.d:/usr/share/egl/egl_external_platform.d
       QT_PLUGIN_PATH: /app/lib/plugins:/usr/share/runtime/lib/plugins
       QML2_IMPORT_PATH: /app/lib/qml
       KDE_FORK_SLAVES: '1'
       PYTHONUSERBASE: /var/data/python
       ALSA_CONFIG_PATH: /usr/share/alsa/alsa-flatpak.conf
       ALSA_CONFIG_DIR: /usr/share/alsa
+    Context:
+      filesystems: xdg-config/kdeglobals:ro;
+    Session Bus Policy:
+      com.canonical.AppMenu.Registrar: talk
+      org.kde.kconfig.notify: talk
+      org.kde.KGlobalSettings: talk
     Extension org.kde.Sdk.Docs:
       directory: share/runtime/docs
       bundle: true
       autodelete: true
       no-autodownload: true
+    Extension org.kde.Platform.Locale:
+      directory: share/runtime/locale
+      autodelete: true
+      locale-subset: true
     Extension org.kde.KStyle:
       directory: share/runtime/lib/plugins/
       subdirectories: true
