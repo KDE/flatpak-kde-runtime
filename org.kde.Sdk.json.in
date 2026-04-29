@@ -1387,31 +1387,6 @@
             ]
         },
         {
-            "name": "kauth",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
-            "buildsystem": "cmake-ninja",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://invent.kde.org/frameworks/kauth.git",
-                    "tag": "v6.25.0",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
-                    },
-                    "commit": "17b71d4159c00294d2071a910d43bce161596e02"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "install-licenses.sh"
-                    ]
-                }
-            ]
-        },
-        {
             "name": "karchive",
             "config-opts": [
                 "-DBUILD_TESTING=OFF"
@@ -1607,6 +1582,31 @@
                         "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "d72d2591d564d0139ffa364dc05220b268710b0b"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "kauth",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kauth.git",
+                    "tag": "v6.25.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "17b71d4159c00294d2071a910d43bce161596e02"
                 },
                 {
                     "type": "shell",
