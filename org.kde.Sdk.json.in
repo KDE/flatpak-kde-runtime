@@ -3226,6 +3226,54 @@
             ]
         },
         {
+            "buildsystem": "cmake-ninja",
+            "name": "corrosion",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/corrosion-rs/corrosion.git",
+                    "tag": "v0.6.1"
+                }
+            ]
+        },
+        {
+            "name": "cxx-rust-cssparser",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_DOCS=OFF"
+            ],
+            "build-options": {
+                "env": {
+                    "CARGO_HOME": "/run/build-runtime/cxx-rust-cssparser/cargo"
+                }
+            },
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/libraries/cxx-rust-cssparser",
+                    "commit": "f600ba40ac72af880ef988545664993d0b286cef"
+                },
+                "cxx-rust-cssparser-generated-sources.json"
+            ]
+        },
+        {
+            "name": "union",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/plasma/union.git",
+                    "commit": "80ef8ba52f5abc332c0c876eca2ddda7fe6976bf"
+                }
+            ]
+        },
+        {
             "name": "ocean-sound-theme",
             "buildsystem": "cmake-ninja",
             "sources": [
