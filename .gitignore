@@ -4,3 +4,5 @@ builddir
 /.flatpak-builder/
 /repo/
 /checkout/
+.bst
+.bst2
