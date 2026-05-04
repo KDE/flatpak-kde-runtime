@@ -18,3 +18,7 @@ depends:
 - components/qtbase.bst
 - components/qtdeclarative.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+
+variables:
+  cmake-local: >-
+    -DBUILD_TESTING=OFF
