@@ -33,6 +33,30 @@ extra-cmake-modules: freedesktop-sdk.bst:components/extra-cmake-modules.bst
 fcitx5-platforminputcontext: components/fcitx5-qt.bst
 plasma-wayland-protocols: components/plasma-wayland-protocols.bst
 kwidgetsaddons: components/kwidgetsaddons.bst
+ki18n: components/ki18n.bst
+kconfig: components/kconfig.bst
+attica: components/attica.bst
+kguiaddons: components/kguiaddons.bst
+kcoreaddons: components/kcoreaddons.bst
+kauth: components/kauth.bst
+karchive: components/karchive.bst
+kcodecs: components/kcodecs.bst
+kcolorscheme: components/kcolorscheme.bst
+kconfigwidgets: components/kconfigwidgets.bst
+kitemviews: components/kitemviews.bst
+breeze-icons: components/breeze-icons.bst
+kiconthemes: components/kiconthemes.bst
+kwindowsystem: components/kwindowsystem.bst
+kcrash: components/kcrash.bst
+kdbusaddons: components/kdbusaddons.bst
+kservice: components/kservice.bst
+kglobalaccel: components/kglobalaccel.bst
+sonnet: components/sonnet.bst
+kcompletion: components/kcompletion.bst
+ktexttemplate: components/ktexttemplate.bst
+
+perl-uri-escape: components/perl-uri.bst
+kdoctools: components/kdoctools.bst
 
 #utfcpp: freedesktop-sdk.bst:components/utf8cpp.bst
 #canberra:
