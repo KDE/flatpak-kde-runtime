@@ -30,6 +30,10 @@ config:
       com.canonical.AppMenu.Registrar: talk
       org.kde.kconfig.notify: talk
       org.kde.KGlobalSettings: talk
+    Extension org.kde.Sdk.Debug:
+      directory: lib/debug
+      autodelete: true
+      no-autodownload: true
     Extension org.kde.Sdk.Docs:
       directory: share/runtime/docs
       bundle: true
@@ -82,6 +86,17 @@ config:
       add-ld-path: "lib"
       merge-dirs: "%{gl_merge_dirs}"
       download-if: "active-gl-driver"
+      enable-if: "active-gl-driver"
+      autoprune-unless: active-gl-driver
+
+    Extension org.freedesktop.Platform.GL.Debug:
+      # 1.4 is for Nvidia drivers
+      versions: "%{freedesktop-sdk-flatpak-branch};%{freedesktop-sdk-flatpak-branch-extra};1.4"
+      version: "1.4"
+      directory: "lib/debug%{libdir}/GL"
+      subdirectories: "true"
+      no-autodownload: "true"
+      merge-dirs: "%{gl_merge_dirs}"
       enable-if: "active-gl-driver"
       autoprune-unless: active-gl-driver
 
