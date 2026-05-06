@@ -11,6 +11,7 @@ sources:
 build-depends:
 - components/qttools.bst
 - components/plasma-wayland-protocols.bst
+- freedesktop-sdk.bst:components/wayland-protocols.bst
 - freedesktop-sdk.bst:components/xcb-util-keysyms.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst

@@ -9,6 +9,7 @@ sources:
   ref: v6.24.0-0-g95aca5d1094d4869b86a25cf2d9e24cc2013fd71
 
 build-depends:
+- components/perl-uri.bst
 - components/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst

@@ -16,6 +16,7 @@ build-depends:
 
 depends:
 - components/kcolorscheme.bst
+- components/kcodecs.bst
 - components/kcoreaddons.bst
 - components/kwidgetsaddons.bst
 - components/qtbase.bst

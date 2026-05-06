@@ -12,6 +12,7 @@ build-depends:
 - components/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - components/plasma-wayland-protocols.bst
+- freedesktop-sdk.bst:components/wayland-protocols.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
