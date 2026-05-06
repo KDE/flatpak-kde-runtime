@@ -145,6 +145,7 @@ config:
 build-depends:
 - flatpak-images/platform-image.bst
 - integration/platform-integration.bst
+- freedesktop-sdk.bst:components/fontconfig-flatpak-config.bst
 - freedesktop-sdk.bst:tests/check-dev-files.bst
 - freedesktop-sdk.bst:tests/check-rpath.bst
 

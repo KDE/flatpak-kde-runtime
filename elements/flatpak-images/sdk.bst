@@ -183,6 +183,7 @@ config:
 build-depends:
 - flatpak-images/sdk-image.bst
 - freedesktop-sdk.bst:integration/sdk-integration.bst
+- freedesktop-sdk.bst:components/fontconfig-flatpak-config.bst
 - freedesktop-sdk.bst:flatpak-images/copy-ld-debug.bst
 - freedesktop-sdk.bst:integration/app-debug-link.bst
 
