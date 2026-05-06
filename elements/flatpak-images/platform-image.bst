@@ -29,6 +29,7 @@ build-depends:
 - org.kde.Platform.bst
 - manifests/platform-manifest.bst
 - freedesktop-sdk.bst:components/nsswitch-config.bst
+- freedesktop-sdk.bst:components/python3-sitecustomize.bst
 - freedesktop-sdk.bst:multiarch/multiarch-platform.bst
 - freedesktop-sdk.bst:integration/split-locales.bst
 - freedesktop-sdk.bst:integration/split-docs.bst
