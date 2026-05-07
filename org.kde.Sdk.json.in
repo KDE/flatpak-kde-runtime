@@ -3240,6 +3240,9 @@
                     "url": "https://github.com/corrosion-rs/corrosion.git",
                     "tag": "v0.6.1"
                 }
+            ],
+            "modules": [
+                { "name": "rust" }
             ]
         },
         {

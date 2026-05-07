@@ -33,7 +33,7 @@ freedesktop-sdk/utils/flatpak-builder-to-bst.py:
 	git clone https://gitlab.com/freedesktop-sdk/freedesktop-sdk.git
 
 elements/org.kde.Sdk.bst: org.kde.Sdk.json freedesktop-sdk/utils/flatpak-builder-to-bst.py
-	python freedesktop-sdk/utils/flatpak-builder-to-bst.py org.kde.Sdk.json --aliases include/aliases.yml
+	python freedesktop-sdk/utils/flatpak-builder-to-bst.py org.kde.Sdk.json --aliases include/aliases.yml --skip kf.skip.yaml
 
 bst-runtime: elements/org.kde.Sdk.bst
 	bst build flatpak-images/flatpak-runtimes.bst
