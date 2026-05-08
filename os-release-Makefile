@@ -1,6 +1,7 @@
 all:
 
 install:
+	install -Dm0644 os-release -t ${DESTDIR}/etc
 	install -Dm0644 os-release -t ${DESTDIR}/usr/lib
 	install -Dm0644 issue -t ${DESTDIR}/etc
 	install -Dm0644 issue.net -t ${DESTDIR}/etc
