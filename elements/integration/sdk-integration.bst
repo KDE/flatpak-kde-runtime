@@ -9,4 +9,4 @@ config:
   script-path: '%{libexecdir}/freedesktop-post.sh'
 
 build-depends:
-- flatpak-images/sdk.bst
+- org.kde.Sdk.bst
