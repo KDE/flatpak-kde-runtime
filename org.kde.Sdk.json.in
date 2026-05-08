@@ -3236,7 +3236,12 @@
                 }
             ],
             "modules": [
-                { "name": "rust" }
+                {
+                    "name": "rust",
+                    "cleanup": [
+                        "*"
+                    ]
+                }
             ]
         },
         {
