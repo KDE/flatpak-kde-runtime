@@ -117,9 +117,6 @@
             "CMAKE_BUILD_TYPE": "RelWithDebInfo",
             "CARGO_NET_OFFLINE": "true"
         },
-        "strip": false,
-        "no-debuginfo": true,
-        "no-debuginfo-compression": true
     },
     "modules": [
         {
