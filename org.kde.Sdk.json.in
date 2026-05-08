@@ -9,8 +9,7 @@
     "sdk-extensions": [
         "org.freedesktop.Sdk.Debug",
         "org.freedesktop.Sdk.Locale",
-        "org.freedesktop.Sdk.Docs",
-        "org.freedesktop.Sdk.Extension.rust-stable"
+        "org.freedesktop.Sdk.Docs"
     ],
     "platform-extensions": [
         "org.freedesktop.Platform.Locale"
@@ -112,11 +111,9 @@
         "/usr/libexec/freedesktop-post.sh"
     ],
     "build-options": {
-        "append-path": "/usr/lib/sdk/rust-stable/bin",
         "env": {
-            "CMAKE_BUILD_TYPE": "RelWithDebInfo",
-            "CARGO_NET_OFFLINE": "true"
-        },
+            "CMAKE_BUILD_TYPE": "RelWithDebInfo"
+        }
     },
     "modules": [
         {
