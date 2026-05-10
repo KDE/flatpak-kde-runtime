@@ -2806,7 +2806,10 @@
                             "url": "https://github.com/libical/libical.git",
                             "x-checker-data": {
                                 "type": "git",
-                                "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
+                                "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$",
+                                "versions": {
+                                    "<": "4.0.0"
+                                }
                             },
                             "tag": "v4.0.0",
                             "commit": "a4aceb43adb8a40578c758ab13d40f233868a1eb"
