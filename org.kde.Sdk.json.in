@@ -2771,7 +2771,10 @@
                             "url": "https://github.com/libical/libical.git",
                             "x-checker-data": {
                                 "type": "git",
-                                "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
+                                "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$",
+                                "versions": {
+                                    "<": "4.0.0"
+                                }
                             },
                             "tag": "v3.0.20",
                             "commit": "57ce34025066935f356fd539e6deb7a7a9952618"
