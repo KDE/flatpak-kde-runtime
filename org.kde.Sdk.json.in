@@ -2811,8 +2811,8 @@
                                     "<": "4.0.0"
                                 }
                             },
-                            "tag": "v4.0.0",
-                            "commit": "a4aceb43adb8a40578c758ab13d40f233868a1eb"
+                            "tag": "v3.0.20",
+                            "commit": "57ce34025066935f356fd539e6deb7a7a9952618"
                         },
                         {
                             "type": "shell",
