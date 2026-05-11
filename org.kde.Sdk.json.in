@@ -136,7 +136,7 @@
             ]
         },
         {
-            "name": "qt6-qtbase",
+            "name": "qtbase",
             "cleanup-platform": [
                 "/bin"
             ],
@@ -199,7 +199,7 @@
             ]
         },
         {
-            "name": "qt6-qttools",
+            "name": "qttools",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin/assistant",
@@ -242,7 +242,7 @@
             ]
         },
         {
-            "name": "qt6-shadertools",
+            "name": "qtshadertools",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin",
@@ -272,7 +272,7 @@
             ]
         },
         {
-            "name": "qt6-qtlanguageserver",
+            "name": "qtlanguageserver",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -301,7 +301,7 @@
             ]
         },
         {
-            "name": "qt6-qtdeclarative",
+            "name": "qtdeclarative",
             "config-opts": [
                 "-DQT_TOOL_COMMAND_WRAPPER_PATH=env"
             ],
@@ -334,7 +334,7 @@
             ]
         },
         {
-            "name": "qt6-webchannel",
+            "name": "qtwebchannel",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -363,7 +363,7 @@
             ]
         },
         {
-            "name": "qt6-qtpositioning",
+            "name": "qtpositioning",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -392,7 +392,7 @@
             ]
         },
         {
-            "name": "qt6-qtgrpc",
+            "name": "qtgrpc",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -490,7 +490,7 @@
             ]
         },
         {
-            "name": "qt6-qtsvg",
+            "name": "qtsvg",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -519,7 +519,7 @@
             ]
         },
         {
-            "name": "qt6-qtmultimedia",
+            "name": "qtmultimedia",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -548,7 +548,7 @@
             ]
         },
         {
-            "name": "qt6-qtspeech",
+            "name": "qtspeech",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -577,7 +577,7 @@
             ]
         },
         {
-            "name": "qt6-qtsensors",
+            "name": "qtsensors",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -606,7 +606,7 @@
             ]
         },
         {
-            "name": "qt6-qtimageformats",
+            "name": "qtimageformats",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -635,7 +635,7 @@
             ]
         },
         {
-            "name": "qt6-connectivity",
+            "name": "qtconnectivity",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -664,7 +664,7 @@
             ]
         },
         {
-            "name": "qt6-wayland",
+            "name": "qtwayland",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -693,7 +693,7 @@
             ]
         },
         {
-            "name": "qt6-qtserialport",
+            "name": "qtserialport",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -722,7 +722,7 @@
             ]
         },
         {
-            "name": "qt6-qtwebsockets",
+            "name": "qtwebsockets",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -751,7 +751,7 @@
             ]
         },
         {
-            "name": "qt6-qtscxml",
+            "name": "qtscxml",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -780,7 +780,7 @@
             ]
         },
         {
-            "name": "qt6-qtcharts",
+            "name": "qtcharts",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -809,7 +809,7 @@
             ]
         },
         {
-            "name": "qt6-qt3d",
+            "name": "qt3d",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -838,7 +838,7 @@
             ]
         },
         {
-            "name": "qt6-qtnetworkauth",
+            "name": "qtnetworkauth",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -867,7 +867,7 @@
             ]
         },
         {
-            "name": "qt6-qttranslations",
+            "name": "qttranslations",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -896,7 +896,7 @@
             ]
         },
         {
-            "name": "qt6-qtremoteobjects",
+            "name": "qtremoteobjects",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -925,7 +925,7 @@
             ]
         },
         {
-            "name": "qt6-qt5compat",
+            "name": "qt5compat",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -954,7 +954,7 @@
             ]
         },
         {
-            "name": "qt6-qtlocation",
+            "name": "qtlocation",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -983,7 +983,7 @@
             ]
         },
         {
-            "name": "qt6-qtquicktimeline",
+            "name": "qtquicktimeline",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -1012,7 +1012,7 @@
             ]
         },
         {
-            "name": "qt6-qtquick3d",
+            "name": "qtquick3d",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -1041,7 +1041,7 @@
             ]
         },
         {
-            "name": "qt6-qtgraphs",
+            "name": "qtgraphs",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -1070,7 +1070,7 @@
             ]
         },
         {
-            "name": "qt6-qtquick3dphysics",
+            "name": "qtquick3dphysics",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -1099,7 +1099,7 @@
             ]
         },
         {
-            "name": "qt6-qtquickeffectmaker",
+            "name": "qtquickeffectmaker",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
@@ -1128,7 +1128,7 @@
             ]
         },
         {
-            "name": "qt6-qthttpserver",
+            "name": "qthttpserver",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin"
