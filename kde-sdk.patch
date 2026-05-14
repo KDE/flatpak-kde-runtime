@@ -1,11 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Aleix Pol Gonzalez <aleix.pol@codethink.co.uk>
-# SPDX-License-Identifier: MIT
-
 diff --git a/org.kde.Sdk.json b/org.kde.Sdk.json
-index 7310643..97aaab8 100644
+index c32e22f..b4a8820 100644
 --- a/org.kde.Sdk.json
 +++ b/org.kde.Sdk.json
-@@ -122,13 +122,13 @@
+@@ -120,13 +120,13 @@
              "name": "licence-extractor",
              "buildsystem": "simple",
              "build-commands": [
