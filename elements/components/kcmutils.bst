@@ -2,11 +2,11 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: kde:frameworks/kcmutilss.git
+  url: kde:frameworks/kcmutils.git
   track: v6.*
   exclude:
   - '*rc*'
-  ref: v6.24.0-0-g276a33f64bea6240edbf1ea89cddc0af2c5c4773
+  ref: v6.24.0-0-gffa3783aa59d34c82683c5ed85d79a43fe5c2952
 
 build-depends:
 - components/qttools.bst
