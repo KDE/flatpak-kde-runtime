@@ -25,7 +25,7 @@ public:
       - '%{datadir}/runtime/locale/**'
 
 build-depends:
-- org.kde.Sdk.bst
+- platform.bst
 - manifests/platform-manifest.bst
 - freedesktop-sdk.bst:multiarch/multiarch-platform.bst
 - freedesktop-sdk.bst:integration/split-locales.bst

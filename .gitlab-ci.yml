@@ -17,7 +17,7 @@ lint-manifests:
   script:
     #- flatpak run --command=flatpak-builder-lint org.flatpak.Builder org.kde.Sdk.json.in
     - json-glib-validate org.kde.Sdk.json.in
-    - appstreamcli validate --no-net org.kde.{Sdk,Platform}.metainfo.xml
+    - appstreamcli validate --no-net os-release/org.kde.{Sdk,Platform}.metainfo.xml
 
 .build-runtime:
   stage: build
@@ -28,7 +28,6 @@ lint-manifests:
   before_script:
     - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
   script:
-    - make elements/org.kde.Sdk.bst
     - bst build flatpak-images/flatpak-runtimes.bst
     - bst artifact checkout flatpak-images/flatpak-runtimes.bst --directory checkout/repo-$ARCH/
     - cp org.kde.Sdk.json checkout/repo-$ARCH/
