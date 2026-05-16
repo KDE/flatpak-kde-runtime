@@ -1,0 +1,26 @@
+kind: cmake
+
+sources:
+- kind: git_repo
+  url: kde:frameworks/prison.git
+  track: v6.*
+  exclude:
+  - '*rc*'
+  ref: v6.24.0-0-gf8c15d668f9b10367413ce01f5d376850b08aef4
+
+build-depends:
+- components/qttools.bst
+- freedesktop-sdk.bst:components/doxygen.bst
+- freedesktop-sdk.bst:components/extra-cmake-modules.bst
+- freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
+
+depends:
+- freedesktop-sdk.bst:components/libqrencode.bst
+- components/qtmultimedia.bst
+- components/qtdeclarative.bst
+- components/qtbase.bst
+- freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+
+variables:
+  cmake-local: >-
+    -DBUILD_TESTING=OFF
