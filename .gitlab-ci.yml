@@ -54,13 +54,11 @@ build-runtime-arm64:
   variables:
     ARCH: aarch64
 
-# we use the flatpak-builder vm image for publishing still
 publish-to-flathub:
   stage: publish
-  image: storage.kde.org/vm-images/flatpak-builder
+  image: invent-registry.kde.org/sysadmin/ci-images/flatpak-builder:latest
   tags:
-    - VM
-    - amd64
+    - Linux
   needs:
     - build-runtime-amd64
     - build-runtime-arm64
