@@ -10,6 +10,8 @@ sources:
 
 build-depends:
 - components/qttools.bst
+- freedesktop-sdk.bst:components/flex.bst
+- freedesktop-sdk.bst:components/bison.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
