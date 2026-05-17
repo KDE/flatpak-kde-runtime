@@ -56,10 +56,9 @@ build-runtime-arm64:
 
 publish-to-flathub:
   stage: publish
-  image: storage.kde.org/vm-images/flatpak-builder
+  image: invent-registry.kde.org/sysadmin/ci-images/flatpak-builder:latest
   tags:
-    - VM
-    - amd64
+    - Linux
   needs:
     - build-runtime-amd64
     - build-runtime-arm64
