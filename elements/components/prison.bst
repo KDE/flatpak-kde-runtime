@@ -16,6 +16,8 @@ build-depends:
 
 depends:
 - freedesktop-sdk.bst:components/libqrencode.bst
+- components/libdmtx.bst
+- components/zxing-cpp.bst
 - components/qtmultimedia.bst
 - components/qtdeclarative.bst
 - components/qtbase.bst
