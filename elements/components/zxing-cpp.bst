@@ -7,6 +7,18 @@ sources:
   exclude:
   - '*rc*'
   ref: v3.0.2-0-g8dd1cf5c4fd6fb6211bb96713db926ac6f2cf825
+- kind: patch
+  path: patch/zxing-local-include-stb.patch
+- kind: git_repo
+  directory: zint
+  url: github:zint/zint.git
+  track: 2.*
+  ref: 2.16.0-0-g55541e139e62b9209b71cd9b0ba9010cec28b1d9
+- kind: git_repo
+  directory: stb
+  url: github:nothings/stb.git
+  track: master
+  ref: 31c1ad37456438565541f4919958214b6e762fb4
 
 build-depends:
 - components/qttools.bst
@@ -26,8 +38,7 @@ depends:
 
 variables:
   cmake-local: >-
-    -DBUILD_DEPENDENCIES=LOCAL
     -DBUILD_SHARED_LIBS=ON
-    -DBUILD_UNIT_TESTS=OFF
-    -DBUILD_BLACKBOX_TESTS=OFF
-    -DBUILD_EXAMPLES=OFF
+    -DSTB_IMAGE_INCLUDE_DIR=%{build-root}/stb
+
+  license-files-extra: stb/LICENSE
