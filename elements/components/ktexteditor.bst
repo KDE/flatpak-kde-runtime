@@ -32,7 +32,7 @@ depends:
 - components/kxmlgui.bst
 - components/sonnet.bst
 - components/syntax-highlighting.bst
-- components/editorconfig-core-c.bst
+- deps/editorconfig-core-c.bst
 - qt/qtdeclarative.bst
 - qt/qtspeech.bst
 - qt/qtbase.bst

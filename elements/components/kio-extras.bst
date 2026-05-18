@@ -9,7 +9,7 @@ sources:
   ref: v6.24.0-0-g276a33f64bea6240edbf1ea89cddc0af2c5c4773
 
 build-depends:
-- components/qcoro.bst
+- deps/qcoro.bst
 - qt/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst

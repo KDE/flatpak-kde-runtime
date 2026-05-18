@@ -33,7 +33,7 @@ depends:
 - qt/qtquickeffectmaker.bst
 - qt/qthttpserver.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
-- components/fcitx5-qt.bst
+- deps/fcitx5-qt.bst
 - components/plasma-wayland-protocols.bst
 - components/kwidgetsaddons.bst
 - components/ki18n.bst
@@ -59,7 +59,7 @@ depends:
 - components/ktexttemplate.bst
 - components/ktextwidgets.bst
 - components/kxmlgui.bst
-- components/perl-uri.bst
+- deps/perl-uri.bst
 - components/kdoctools.bst
 - components/kpackage.bst
 - components/kbookmarks.bst
@@ -87,7 +87,7 @@ depends:
 - components/kdnssd.bst
 - components/kquickcharts.bst
 - components/syntax-highlighting.bst
-- components/editorconfig-core-c.bst
+- deps/editorconfig-core-c.bst
 - components/ktexteditor.bst
 - components/frameworkintegration.bst
 - components/kpty.bst
@@ -98,8 +98,8 @@ depends:
 - components/kcalendarcore.bst
 - components/kholidays.bst
 - freedesktop-sdk.bst:components/libqrencode.bst
-- components/libdmtx.bst
-- components/zxing-cpp.bst
+- deps/libdmtx.bst
+- deps/zxing-cpp.bst
 - components/prison.bst
 - components/syndication.bst
 - components/purpose.bst
@@ -108,7 +108,7 @@ depends:
 - components/kimageformats.bst
 - components/bluez-qt.bst
 - components/kstatusnotifieritem.bst
-- components/qcoro.bst
+- deps/qcoro.bst
 - components/kio-extras.bst
 - components/breeze.bst
 - components/plasma-integration.bst
