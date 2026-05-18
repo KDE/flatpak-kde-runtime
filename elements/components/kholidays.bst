@@ -9,6 +9,8 @@ sources:
   ref: v6.24.0-0-g91d1e981338681f861d0171e98b00006bf259b2c
 
 build-depends:
+- freedesktop-sdk.bst:components/flex.bst
+- freedesktop-sdk.bst:components/bison.bst
 - qt/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
