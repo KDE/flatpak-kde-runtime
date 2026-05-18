@@ -20,9 +20,9 @@ build-depends:
 - freedesktop-sdk.bst:components/ffmpeg.bst
 
 depends:
-- components/qtbase.bst
-- components/qtdeclarative.bst
-- components/qtquick3d.bst
+- qt/qtbase.bst
+- qt/qtdeclarative.bst
+- qt/qtquick3d.bst
 - freedesktop-sdk.bst:components/pipewire.bst
 - freedesktop-sdk.bst:components/zstd.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

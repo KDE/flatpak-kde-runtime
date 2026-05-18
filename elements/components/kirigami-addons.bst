@@ -23,9 +23,9 @@ depends:
 - components/kitemmodels.bst
 - components/ksvg.bst
 - components/sonnet.bst
-- components/qtmultimedia.bst
-- components/qtdeclarative.bst
-- components/qtbase.bst
+- qt/qtmultimedia.bst
+- qt/qtdeclarative.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

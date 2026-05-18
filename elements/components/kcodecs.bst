@@ -9,13 +9,13 @@ sources:
   ref: v6.24.0-0-g394b02de2adea5b181f945a7738ecf0610a70f0f
 
 build-depends:
-- components/qttools.bst
+- qt/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
-- components/qtbase.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

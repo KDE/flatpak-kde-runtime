@@ -10,9 +10,9 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
-- components/qtwebsockets.bst
-- components/qtdeclarative.bst
-- components/qtbase.bst
+- qt/qtwebsockets.bst
+- qt/qtdeclarative.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

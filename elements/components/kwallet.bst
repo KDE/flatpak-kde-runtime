@@ -11,7 +11,7 @@ sources:
 build-depends:
 - components/kservice.bst
 - components/kdoctools.bst
-- components/qttools.bst
+- qt/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
@@ -31,7 +31,7 @@ depends:
 - components/knotifications.bst
 - components/kwidgetsaddons.bst
 - components/kwindowsystem.bst
-- components/qtbase.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

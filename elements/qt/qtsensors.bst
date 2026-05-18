@@ -2,19 +2,19 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: qt_git:qtremoteobjects.git
+  url: qt_git:qtsensors.git
   track: v6.*.*
   exclude:
   - "*-beta*"
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-gebd598549acb5399f57003d538c73974f5a92343
+  ref: v6.11.0-0-g92ed021507d4f8c38e0e9548db97c8dd039829d9
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
-- components/qtbase.bst
-- components/qtdeclarative.bst
+- qt/qtbase.bst
+- qt/qtdeclarative.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

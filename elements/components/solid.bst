@@ -9,7 +9,7 @@ sources:
   ref: v6.24.0-0-g450450e160d11a2c9cf70de534275ac82416f5da
 
 build-depends:
-- components/qttools.bst
+- qt/qttools.bst
 - freedesktop-sdk.bst:components/flex.bst
 - freedesktop-sdk.bst:components/bison.bst
 - freedesktop-sdk.bst:components/doxygen.bst
@@ -19,8 +19,8 @@ build-depends:
 depends:
 - freedesktop-sdk.bst:components/systemd-libs.bst
 - freedesktop-sdk.bst:components/udisks.bst
-- components/qtdeclarative.bst
-- components/qtbase.bst
+- qt/qtdeclarative.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

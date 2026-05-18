@@ -9,15 +9,15 @@ sources:
   ref: v6.24.0-0-gce5021ced9c3e4db83d743774b6c9a205e2d899a
 
 build-depends:
-- components/qttools.bst
+- qt/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
 - freedesktop-sdk.bst:components/bluez.bst
-- components/qtdeclarative.bst
-- components/qtbase.bst
+- qt/qtdeclarative.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

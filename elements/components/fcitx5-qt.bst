@@ -12,7 +12,7 @@ build-depends:
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
-- components/qtbase.bst
+- qt/qtbase.bst
 
 variables:
   license-files-extra: LICENSES/LGPL-2.1-or-later.txt

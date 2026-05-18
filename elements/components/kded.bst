@@ -19,7 +19,7 @@ depends:
 - components/kcrash.bst
 - components/kdbusaddons.bst
 - components/kservice.bst
-- components/qtbase.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

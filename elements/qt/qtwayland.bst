@@ -2,21 +2,21 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: qt_git:qtgraphs.git
+  url: qt_git:qtwayland.git
   track: v6.*.*
   exclude:
   - "*-beta*"
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-gb117ffd7227d0419a3389fc5cfe70f9c7e8de30f
+  ref: v6.11.0-0-gfc88dcfed73c0578d3bb562d9ff65c3aeff54c40
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
-- components/qtshadertools.bst
 
 depends:
-- components/qtbase.bst
-- components/qtdeclarative.bst
-- components/qtquick3d.bst
+- qt/qtbase.bst
+- qt/qtdeclarative.bst
+- qt/qtsvg.bst
+- freedesktop-sdk.bst:components/wayland.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

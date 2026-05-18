@@ -2,19 +2,21 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: qt_git:qthttpserver.git
+  url: qt_git:qtquickeffectmaker.git
   track: v6.*.*
   exclude:
   - "*-beta*"
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-g89db72a6f6e8173a977865d1c7e089ede96ac243
+  ref: v6.11.0-0-gd07cefb9899d1f4088d4b9a2acf83e0335bd4e55
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
-- components/qtbase.bst
-- components/qtwebsockets.bst
+- qt/qtbase.bst
+- qt/qtdeclarative.bst
+- qt/qtquick3d.bst
+- freedesktop-sdk.bst:components/zlib.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

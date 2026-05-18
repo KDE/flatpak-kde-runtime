@@ -9,7 +9,7 @@ sources:
   ref: v6.24.0-0-ge2ca32f39189090bb22cdc6006bb9847f64f88ac
 
 build-depends:
-- components/qttools.bst
+- qt/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
@@ -33,9 +33,9 @@ depends:
 - components/sonnet.bst
 - components/syntax-highlighting.bst
 - components/editorconfig-core-c.bst
-- components/qtdeclarative.bst
-- components/qtspeech.bst
-- components/qtbase.bst
+- qt/qtdeclarative.bst
+- qt/qtspeech.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

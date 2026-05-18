@@ -2,20 +2,19 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: qt_git:qtpositioning.git
+  url: qt_git:qtwebsockets.git
   track: v6.*.*
   exclude:
   - "*-beta*"
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-g1007e149184402b24e06842febbc3e7da83cd64f
+  ref: v6.11.0-0-g882f182c8bb5d249ecd97601557ab0e671bdf520
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
-- components/qtdeclarative.bst
 
 depends:
-- components/qtbase.bst
-- components/qtserialport.bst
+- qt/qtbase.bst
+- qt/qtdeclarative.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

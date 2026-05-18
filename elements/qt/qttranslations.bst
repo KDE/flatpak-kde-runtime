@@ -2,18 +2,18 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: qt_git:qtnetworkauth.git
+  url: qt_git:qttranslations.git
   track: v6.*.*
   exclude:
   - "*-beta*"
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-g4af2f29b09c0e6e80bb99fb2360a8c9395ee3a1d
+  ref: v6.11.0-0-g08c7440f513309715ba00db5e0e519a4a59e62ea
 
 build-depends:
+- qt/qttools.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
-- components/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

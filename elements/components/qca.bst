@@ -9,7 +9,7 @@ sources:
   ref: v2.3.10-0-gdf5171e3c4baf346581f15af5a040e61b166a332
 
 build-depends:
-- components/qttools.bst
+- qt/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
@@ -20,8 +20,8 @@ depends:
 - freedesktop-sdk.bst:components/libgcrypt.bst
 - freedesktop-sdk.bst:components/cyrus-sasl.bst
 - freedesktop-sdk.bst:components/openssl.bst
-- components/qt5compat.bst
-- components/qtbase.bst
+- qt/qt5compat.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

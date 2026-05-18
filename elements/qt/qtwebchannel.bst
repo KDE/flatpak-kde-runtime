@@ -2,20 +2,19 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: qt_git:qtconnectivity.git
+  url: qt_git:qtwebchannel.git
   track: v6.*.*
   exclude:
   - "*-beta*"
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-g102a73c48c97b503d33add4a95b0cdf8d1363740
+  ref: v6.11.0-0-g71609dbea86e08e4e93ea711c567184d8b0da54e
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
-- components/qtbase.bst
-- freedesktop-sdk.bst:components/pcsc-lite.bst
-- freedesktop-sdk.bst:components/bluez-libs.bst
+- qt/qtbase.bst
+- qt/qtdeclarative.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

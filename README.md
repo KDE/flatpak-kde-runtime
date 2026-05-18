@@ -32,6 +32,6 @@ This can generally be built with flatpak-builder as explained in its documentati
 The directory `elements/components` contains handwritten buildstream elements.
 They get used instead of generated ones through the `skip.yml` file.
 
-To update the versions and refs of the sources for the elements, run `bst source track components/qtbase.bst`.
+To update the versions and refs of the sources for the elements, run `bst source track qt/qtbase.bst`.
 
-To build an element locally, run `bst build components/qtdeclarative.bst`.
+To build an element locally, run `bst build qt/qtdeclarative.bst`.

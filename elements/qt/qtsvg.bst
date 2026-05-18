@@ -2,19 +2,19 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: qt_git:qtsensors.git
+  url: qt_git:qtsvg.git
   track: v6.*.*
   exclude:
   - "*-beta*"
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-g92ed021507d4f8c38e0e9548db97c8dd039829d9
+  ref: v6.11.0-0-g4126867385dc0b7a9404dcd69726c28ed0d5e10a
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
-- components/qtbase.bst
-- components/qtdeclarative.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+- freedesktop-sdk.bst:components/zlib.bst
+- qt/qtbase.bst

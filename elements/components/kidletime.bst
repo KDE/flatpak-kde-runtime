@@ -9,7 +9,7 @@ sources:
   ref: v6.24.0-0-g9e25416cb93107723c694de66cea5ccd1a18d268
 
 build-depends:
-- components/qttools.bst
+- qt/qttools.bst
 - components/plasma-wayland-protocols.bst
 - freedesktop-sdk.bst:components/wayland-protocols.bst
 - freedesktop-sdk.bst:components/doxygen.bst
@@ -18,7 +18,7 @@ build-depends:
 
 depends:
 - freedesktop-sdk.bst:components/wayland.bst
-- components/qtbase.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

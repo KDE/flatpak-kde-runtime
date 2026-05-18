@@ -18,8 +18,8 @@ build-depends:
 - freedesktop-sdk.bst:components/grpc.bst
 
 depends:
-- components/qtbase.bst
-- components/qtdeclarative.bst
+- qt/qtbase.bst
+- qt/qtdeclarative.bst
 - freedesktop-sdk.bst:components/abseil-cpp.bst
 - freedesktop-sdk.bst:components/protobuf.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

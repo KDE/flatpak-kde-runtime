@@ -9,7 +9,7 @@ sources:
   ref: v6.24.0-0-g13f63754d8b3fd6e319ce03fd18c62613866c964
 
 build-depends:
-- components/qttools.bst
+- qt/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
@@ -21,7 +21,7 @@ depends:
 - components/kio.bst
 - components/kwidgetsaddons.bst
 - components/kxmlgui.bst
-- components/qtbase.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

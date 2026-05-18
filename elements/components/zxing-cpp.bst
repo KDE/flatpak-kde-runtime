@@ -21,7 +21,7 @@ sources:
   ref: 31c1ad37456438565541f4919958214b6e762fb4
 
 build-depends:
-- components/qttools.bst
+- qt/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
@@ -31,9 +31,9 @@ depends:
 - components/karchive.bst
 - components/kcoreaddons.bst
 - components/ki18n.bst
-- components/qtmultimedia.bst
-- components/qtdeclarative.bst
-- components/qtbase.bst
+- qt/qtmultimedia.bst
+- qt/qtdeclarative.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

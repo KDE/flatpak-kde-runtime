@@ -18,8 +18,8 @@ depends:
 - components/kguiaddons.bst
 - components/kiconthemes.bst
 - components/kirigami.bst
-- components/qtdeclarative.bst
-- components/qtbase.bst
+- qt/qtdeclarative.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

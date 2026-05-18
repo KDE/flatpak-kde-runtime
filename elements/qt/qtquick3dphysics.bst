@@ -2,20 +2,20 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: qt_git:qtlocation.git
+  url: qt_git:qtquick3dphysics.git
   track: v6.*.*
   exclude:
   - "*-beta*"
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-g23d209b7498f181d68b3b1cae6063bb446c5c8d2
+  ref: v6.11.0-0-ga5861cdf1fab3a577157edfddc61ccbf3352b5f4
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
-- components/qtbase.bst
-- components/qtdeclarative.bst
-- components/qtpositioning.bst
+- qt/qtbase.bst
+- qt/qtdeclarative.bst
+- qt/qtquick3d.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

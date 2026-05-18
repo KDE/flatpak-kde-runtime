@@ -2,20 +2,24 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: qt_git:qtspeech.git
+  url: qt_git:qtquick3d.git
   track: v6.*.*
   exclude:
   - "*-beta*"
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-gbad8290b995a8990e64605dd60dcf4a5b898e29e
+  ref: v6.11.0-0-gfefd81716eaf4d7cd274b9a6c8770f2ae40d3dda
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
-- components/qtbase.bst
-- components/qtdeclarative.bst
-- components/qtmultimedia.bst
+- qt/qtbase.bst
+- qt/qtdeclarative.bst
+- freedesktop-sdk.bst:components/zlib.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+
+variables:
+  cmake-local: >-
+    -DQT_FEATURE_quick3d_assimp=OFF

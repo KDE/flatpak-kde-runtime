@@ -9,7 +9,7 @@ sources:
   ref: v6.24.0-0-gf2eb4c1c416bd9eadeaa390d5742aa70908620ac
 
 build-depends:
-- components/qttools.bst
+- qt/qttools.bst
 - components/plasma-wayland-protocols.bst
 - freedesktop-sdk.bst:components/wayland-protocols.bst
 - freedesktop-sdk.bst:components/xcb-util-keysyms.bst
@@ -18,8 +18,8 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
-- components/qtdeclarative.bst
-- components/qtbase.bst
+- qt/qtdeclarative.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

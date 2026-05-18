@@ -9,7 +9,7 @@ sources:
   ref: v6.24.0-0-gf8c15d668f9b10367413ce01f5d376850b08aef4
 
 build-depends:
-- components/qttools.bst
+- qt/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
@@ -18,9 +18,9 @@ depends:
 - freedesktop-sdk.bst:components/libqrencode.bst
 - components/libdmtx.bst
 - components/zxing-cpp.bst
-- components/qtmultimedia.bst
-- components/qtdeclarative.bst
-- components/qtbase.bst
+- qt/qtmultimedia.bst
+- qt/qtdeclarative.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

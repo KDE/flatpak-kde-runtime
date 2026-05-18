@@ -13,14 +13,14 @@ sources:
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
-- components/qtlanguageserver.bst
+- qt/qtlanguageserver.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/zlib.bst
-- components/qtbase.bst
-- components/qtshadertools.bst
-- components/qtsvg.bst
+- qt/qtbase.bst
+- qt/qtshadertools.bst
+- qt/qtsvg.bst
 
 variables:
   cmake-local: >-

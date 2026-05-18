@@ -2,18 +2,24 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: qt_git:qttranslations.git
+  url: qt_git:qt3d.git
   track: v6.*.*
   exclude:
   - "*-beta*"
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-g08c7440f513309715ba00db5e0e519a4a59e62ea
+  ref: v6.11.0-0-g31dbc46cecb6c96fde5efd43cb70812c0d84b328
 
 build-depends:
-- components/qttools.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
+- qt/qtbase.bst
+- qt/qtdeclarative.bst
+- qt/qtshadertools.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+
+variables:
+  cmake-local: >-
+    -DQT_FEATURE_qt3d_assimp=OFF

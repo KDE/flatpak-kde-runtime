@@ -2,21 +2,20 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: qt_git:qtwayland.git
+  url: qt_git:qtconnectivity.git
   track: v6.*.*
   exclude:
   - "*-beta*"
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-gfc88dcfed73c0578d3bb562d9ff65c3aeff54c40
+  ref: v6.11.0-0-g102a73c48c97b503d33add4a95b0cdf8d1363740
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
-- components/qtbase.bst
-- components/qtdeclarative.bst
-- components/qtsvg.bst
-- freedesktop-sdk.bst:components/wayland.bst
+- qt/qtbase.bst
+- freedesktop-sdk.bst:components/pcsc-lite.bst
+- freedesktop-sdk.bst:components/bluez-libs.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

@@ -9,7 +9,7 @@ sources:
   ref: v6.24.0-0-g901257d1153ab643643949a6d3824097f9edb9c9
 
 build-depends:
-- components/qttools.bst
+- qt/qttools.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
@@ -20,8 +20,8 @@ depends:
 - components/kirigami.bst
 - components/ki18n.bst
 - components/sonnet.bst
-- components/qtdeclarative.bst
-- components/qtbase.bst
+- qt/qtdeclarative.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

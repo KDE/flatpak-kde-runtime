@@ -2,18 +2,19 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: qt_git:qtshadertools.git
+  url: qt_git:qtscxml.git
   track: v6.*.*
   exclude:
   - "*-beta*"
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-g1c7a78fd7480f11a49eb8135b44d138edb0f0df8
+  ref: v6.11.0-0-g66f5602d9cc967b0fbadbd4293d3ecb45331f7eb
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
+- qt/qtbase.bst
+- qt/qtdeclarative.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
-- components/qtbase.bst

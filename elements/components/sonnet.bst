@@ -9,7 +9,7 @@ sources:
   ref: v6.24.0-0-gc9098d77e31e4af6eee7cda7f47b9b25c231e65d
 
 build-depends:
-- components/qttools.bst
+- qt/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
@@ -17,8 +17,8 @@ build-depends:
 depends:
 - freedesktop-sdk.bst:components/hunspell.bst
 - freedesktop-sdk.bst:components/aspell.bst
-- components/qtdeclarative.bst
-- components/qtbase.bst
+- qt/qtdeclarative.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

@@ -9,7 +9,7 @@ sources:
   ref: v6.24.0-0-ga8ff3ba338242917170063fa8240645062b9ad66
 
 build-depends:
-- components/qttools.bst
+- qt/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
@@ -20,8 +20,8 @@ depends:
 - components/ki18n.bst
 - components/kwidgetsaddons.bst
 - components/sonnet.bst
-- components/qtspeech.bst
-- components/qtbase.bst
+- qt/qtspeech.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:

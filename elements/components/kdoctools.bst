@@ -10,7 +10,7 @@ sources:
 
 build-depends:
 - components/perl-uri.bst
-- components/qttools.bst
+- qt/qttools.bst
 - freedesktop-sdk.bst:components/doxygen.bst
 - freedesktop-sdk.bst:components/extra-cmake-modules.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
@@ -20,7 +20,7 @@ depends:
 - freedesktop-sdk.bst:components/libxslt.bst
 - freedesktop-sdk.bst:components/docbook-xsl.bst
 - components/karchive.bst
-- components/qtbase.bst
+- qt/qtbase.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 variables:
