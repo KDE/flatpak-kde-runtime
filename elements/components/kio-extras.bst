@@ -17,7 +17,7 @@ depends:
 - freedesktop-sdk.bst:components/libproxy.bst
 - freedesktop-sdk.bst:components/libtirpc.bst
 - freedesktop-sdk.bst:components/taglib.bst
-- components/plasma-activities.bst
+#- components/plasma-activities.bst
 - components/solid.bst
 - components/syntax-highlighting.bst
 - components/kimageformats.bst
@@ -40,3 +40,4 @@ depends:
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
+    -DBUILD_ACTIVITIES=OFF
