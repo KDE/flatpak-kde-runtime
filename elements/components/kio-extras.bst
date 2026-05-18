@@ -2,11 +2,9 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: kde:frameworks/kpackage.git
-  track: v6.*
-  exclude:
-  - '*rc*'
-  ref: v6.24.0-0-g276a33f64bea6240edbf1ea89cddc0af2c5c4773
+  url: kde:network/kio-extras.git
+  track: v*
+  ref: v26.04.1-0-gee34363babc8fa35aa126193f2d3be3e0a7373bf
 
 build-depends:
 - deps/qcoro.bst
