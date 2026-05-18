@@ -17,6 +17,7 @@ depends:
 - freedesktop-sdk.bst:components/libproxy.bst
 - freedesktop-sdk.bst:components/libtirpc.bst
 - freedesktop-sdk.bst:components/taglib.bst
+- components/plasma-activities.bst
 - components/solid.bst
 - components/syntax-highlighting.bst
 - components/kimageformats.bst
