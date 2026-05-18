@@ -2761,10 +2761,10 @@
                     "buildsystem": "cmake-ninja",
                     "builddir": true,
                     "config-opts": [
-                        "-DICAL_BUILD_DOCS=OFF",
-                        "-DICAL_GLIB=OFF",
-                        "-DWITH_CXX_BINDINGS=OFF",
-                        "-DSHARED_ONLY=ON"
+                        "-DLIBICAL_BUILD_DOCS=OFF",
+                        "-DLIBICAL_GLIB=OFF",
+                        "-DLIBICAL_CXX_BINDINGS=OFF",
+                        "-DLIBICAL_JAVA_BINDINGS=OFF"
                     ],
                     "sources": [
                         {
