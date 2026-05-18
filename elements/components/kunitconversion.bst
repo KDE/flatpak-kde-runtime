@@ -2,11 +2,11 @@ kind: cmake
 
 sources:
 - kind: git_repo
-  url: kde:frameworks/kpackage.git
+  url: kde:frameworks/kunitconversion.git
   track: v6.*
   exclude:
   - '*rc*'
-  ref: v6.24.0-0-g276a33f64bea6240edbf1ea89cddc0af2c5c4773
+  ref: v6.24.0-0-gaf234f2d82cf6b246d092ca3bd76d6bcad47aa27
 
 build-depends:
 - qt/qttools.bst
