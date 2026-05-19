@@ -9,7 +9,7 @@ sources:
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-gdf9a19f58bbf65415947b65390f6ae306dafc2a4
+  ref: v6.11.1-0-g246eb3e3f33bde5ae90bcc8fc1ee54b9381fc60a
 - kind: patch
   path: patch/qtgrpc-find_program-paths.patch
 

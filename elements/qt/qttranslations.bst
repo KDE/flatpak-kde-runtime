@@ -9,7 +9,7 @@ sources:
   - "*-rc*"
   - "*-alpha*"
   - "*-lts*"
-  ref: v6.11.0-0-g08c7440f513309715ba00db5e0e519a4a59e62ea
+  ref: v6.11.1-0-g79c1b1aad54292fcc595b49f90c9ecd8f43bfa90
 
 build-depends:
 - qt/qttools.bst
