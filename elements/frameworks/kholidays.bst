@@ -6,7 +6,7 @@ sources:
   track: v6.*
   exclude:
   - '*rc*'
-  ref: v6.24.0-0-g91d1e981338681f861d0171e98b00006bf259b2c
+  ref: v6.26.0-0-gb0f6aaeccbaf9e49aa586463cbf1ecfb88a6b6c9
 
 build-depends:
 - freedesktop-sdk.bst:components/flex.bst

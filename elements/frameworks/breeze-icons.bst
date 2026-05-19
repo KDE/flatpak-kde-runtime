@@ -6,7 +6,7 @@ sources:
   track: v6.*
   exclude:
   - '*rc*'
-  ref: v6.24.0-0-g3264ddc07cea5d6a0029196b9fd404bdc1a2003f
+  ref: v6.26.0-0-g872cc3cc073f857e2160105216488585e340d314
 
 build-depends:
 - freedesktop-sdk.bst:components/python3-lxml.bst

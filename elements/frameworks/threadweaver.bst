@@ -6,7 +6,7 @@ sources:
   track: v6.*
   exclude:
   - '*rc*'
-  ref: v6.24.0-0-gd260930ca0da5f32ff68c93766229474e1144902
+  ref: v6.26.0-0-gfd547264b6986b114cdd303352c3d946f78bc5ed
 
 build-depends:
 - qt/qttools.bst

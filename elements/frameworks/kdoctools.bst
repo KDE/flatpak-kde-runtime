@@ -6,7 +6,7 @@ sources:
   track: v6.*
   exclude:
   - '*rc*'
-  ref: v6.24.0-0-g95aca5d1094d4869b86a25cf2d9e24cc2013fd71
+  ref: v6.26.0-0-g6645649958326fac6d879626ff5729604ef25342
 
 build-depends:
 - deps/perl-uri.bst

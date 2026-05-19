@@ -3,7 +3,7 @@ kind: cmake
 sources:
 - kind: git_repo
   url: kde:libraries/qca.git
-  track: v2.3.*
+  track: v2.*
   exclude:
   - '*rc*'
   ref: v2.3.10-0-gdf5171e3c4baf346581f15af5a040e61b166a332

@@ -6,7 +6,7 @@ sources:
   track: v6.*
   exclude:
   - '*rc*'
-  ref: v6.24.0-0-g0bfbe6d3fecd1607c8ab13ed1f8218740589ac73
+  ref: v6.26.0-0-g5c19119682c3f88f5fc31c33648c5e3bd2228f5b
 
 build-depends:
 - frameworks/kservice.bst

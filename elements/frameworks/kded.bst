@@ -6,7 +6,7 @@ sources:
   track: v6.*
   exclude:
   - '*rc*'
-  ref: v6.24.0-0-g8a05a70304070cce9d335771791b2c12831a27db
+  ref: v6.26.0-0-g0a508287490b6e6f3062e2624678463090de202f
 
 build-depends:
 - frameworks/kdoctools.bst
