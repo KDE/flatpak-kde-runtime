@@ -28,9 +28,9 @@ build-depends:
 
 depends:
 - freedesktop-sdk.bst:components/libpng.bst
-- components/karchive.bst
-- components/kcoreaddons.bst
-- components/ki18n.bst
+- frameworks/karchive.bst
+- frameworks/kcoreaddons.bst
+- frameworks/ki18n.bst
 - qt/qtmultimedia.bst
 - qt/qtdeclarative.bst
 - qt/qtbase.bst
