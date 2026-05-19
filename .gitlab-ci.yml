@@ -26,8 +26,8 @@ lint-manifests:
   before_script:
     - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
   script:
-    - bst build flatpak-images/flatpak-runtimes.bst
-    - bst artifact checkout flatpak-images/flatpak-runtimes.bst --directory checkout/repo-$ARCH/
+    - bst --colors build flatpak-images/flatpak-runtimes.bst
+    - bst --colors artifact checkout flatpak-images/flatpak-runtimes.bst --directory checkout/repo-$ARCH/
     - cp org.kde.Sdk.json checkout/repo-$ARCH/
     - mkdir artifacts/
     - tar czf artifacts/repository-$ARCH.tar.gz -C checkout/ repo-$ARCH/
