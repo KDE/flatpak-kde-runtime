@@ -14,6 +14,10 @@ shell:
     DBUS_SESSION_BUS_ADDRESS: '$DBUS_SESSION_BUS_ADDRESS'
     XDG_RUNTIME_DIR: '$XDG_RUNTIME_DIR'
 
+    # Static variables necessary for running KDE applications properly
+    QT_QPA_PLATFORM: wayland
+    XDG_CURRENT_DESKTOP: KDE
+
     # Inform applications which use pulseaudio of the server socket
     PULSE_SERVER: 'unix:${XDG_RUNTIME_DIR}/pulse/native'
 
