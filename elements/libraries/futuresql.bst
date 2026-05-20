@@ -18,3 +18,4 @@ depends:
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
+    -DBUILD_WITH_QT6=ON
