@@ -24,3 +24,18 @@ This can generally be built with flatpak-builder as explained in its documentati
 To update the versions and refs of the sources for the elements, run `bst source track qt/qtbase.bst`.
 
 To build an element locally, run `bst build qt/qtdeclarative.bst`.
+
+# Running an app
+
+To run an app built with buildstream, do this:
+1. Build the app `bst build apps/kontrast.bst`
+2. Add this snippet to the end of the file (it should not require a rebuild):
+
+```
+runtime-depends:
+- platform.bst
+- freedesktop-sdk.bst:vm/mesa-default.bst
+```
+
+3. Start the shell with `bst shell apps/kontrast.bst`
+4. Launch the app: `kontrast`
