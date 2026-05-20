@@ -1,0 +1,113 @@
+# Define some behavior for `bst shell`
+#
+shell:
+
+  # Default command for `bst shell`, we prefer bash, and disable
+  # parsing of profile and rc files so that the prompt BuildStream
+  # sets is not overwritten.
+  command: ['bash', '--noprofile', '--norc', '-i']
+
+  # Some environment variables to inherit from the host environment
+  environment:
+    LANG: '$LANG'
+    DISPLAY: '$DISPLAY'
+    DBUS_SESSION_BUS_ADDRESS: '$DBUS_SESSION_BUS_ADDRESS'
+    XDG_RUNTIME_DIR: '$XDG_RUNTIME_DIR'
+
+    # Inform applications which use pulseaudio of the server socket
+    PULSE_SERVER: 'unix:${XDG_RUNTIME_DIR}/pulse/native'
+
+    (?):
+    - toolbox:
+        COLORTERM: $COLORTERM
+        COLUMNS: $COLUMNS
+        DESKTOP_SESSION: $DESKTOP_SESSION
+        HOME: $HOME
+        LINES: $LINES
+        SHELL: $SHELL
+        SSH_AUTH_SOCK: $SSH_AUTH_SOCK
+        TERM: $TERM
+        VTE_VERSION: $VTE_VERSION
+        WAYLAND_DISPLAY: $WAYLAND_DISPLAY
+        XDG_CURRENT_DESKTOP: $XDG_CURRENT_DESKTOP
+        XDG_DATA_DIRS: $XDG_DATA_DIRS
+        XDG_MENU_PREFIX: $XDG_MENU_PREFIX
+        XDG_SESSION_DESKTOP: $XDG_SESSION_DESKTOP
+        XDG_SESSION_TYPE: $XDG_SESSION_TYPE
+
+        # Those are some environment variables that aren't always present in a
+        # stock GNOME, and so might be left unset but would be equal to literally
+        # $FOO which could lead to problems (i.e. DBus's system bus is broken
+        # doesn't work in most apps otherwise as it's not a valid dbus bus path).
+        # If your system set-up is atypical, you can uncomment some of them.
+
+        # DBUS_SYSTEM_BUS_ADDRESS: $DBUS_SYSTEM_BUS_ADDRESS
+        # XDG_SESSION_ID: $XDG_SESSION_ID
+        # XDG_SEAT: $XDG_SEAT
+        # XDG_VTNR: $XDG_VTNR
+
+  # Some things to mount into the sandbox
+  host-files:
+  # Understand user inherited uid/gid
+  - '/etc/passwd'
+  - '/etc/group'
+  # Allow network resolution
+  - '/etc/resolv.conf'
+
+  # Allow access to plausible video devices,
+  # declare these optional to avoid meaningless warnings
+  - path: '/dev/dri'
+    optional: true
+  - path: '/dev/mali'
+    optional: true
+  - path: '/dev/mali0'
+    optional: true
+  - path: '/dev/umplock'
+    optional: true
+  - path: '/dev/nvidiactl'
+    optional: true
+  - path: '/dev/nvidia0'
+    optional: true
+  - path: '/dev/nvidia-modeset'
+    optional: true
+
+  # Allow access to sysfs, needed for local device discovery
+  - '/sys'
+
+  # Allow access to the user runtime directory, this
+  # will include the pulseaudio socket along with some
+  # other things.
+  - '${XDG_RUNTIME_DIR}'
+  - path: '/tmp/.X11-unix'
+    optional: true
+
+  (?):
+  - toolbox:
+      host-files:
+        (>):
+        - '/dev'
+        - '$HOME'
+        - /run/dbus/system_bus_socket
+
+        - path: /media
+          optional: true
+        - path: /run/media
+          optional: true
+        - path: /mnt
+          optional: true
+
+        # The following have been copied from toolbox, but I'm not sure how useful
+        # they are without the symlinks that toolbox puts at startup, but whatever
+        - host_path: '$XDG_RUNTIME_DIR/.flatpak-helper/monitor'
+          path: /run/host/monitor
+          optional: true
+        - host_path: /etc
+          path: /run/host/etc
+        - host_path: /run
+          path: /run/host/run
+        - host_path: /tmp
+          path: /run/host/tmp
+        - host_path: /usr
+          path: /run/host/usr
+        - host_path: /var
+          path: /run/host/var
