@@ -13,6 +13,7 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 depends:
+- libraries/futuresql.bst
 - frameworks/kconfig.bst
 - frameworks/kcoreaddons.bst
 - frameworks/kcrash.bst
