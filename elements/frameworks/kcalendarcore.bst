@@ -23,3 +23,4 @@ depends:
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
+    -DBUILD_PYTHON_BINDINGS=OFF
