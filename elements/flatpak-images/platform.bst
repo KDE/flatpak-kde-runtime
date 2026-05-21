@@ -30,7 +30,6 @@ config:
       com.canonical.AppMenu.Registrar: talk
       org.kde.kconfig.notify: talk
       org.kde.KGlobalSettings: talk
-      no-autodownload: true
     Extension org.kde.Platform.Locale:
       directory: share/runtime/locale
       autodelete: true
