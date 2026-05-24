@@ -156,28 +156,12 @@
             },
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DINSTALL_LIBDIR=lib/@@SDK_ARCH@@-linux-gnu",
-                "-DINSTALL_LIBEXECDIR=lib/qt6/libexec",
-                "-DINSTALL_ARCHDATADIR=lib/@@SDK_ARCH@@-linux-gnu/qt6",
-                "-DINSTALL_EXAMPLESDIR=lib/@@SDK_ARCH@@-linux-gnu/qt6/examples",
-                "-DINSTALL_DATADIR=share/qt6",
-                "-DINSTALL_DOCDIR=share/qt6/doc",
-                "-DINSTALL_SYSCONFDIR=/etc/xdg",
-                "-DINSTALL_INCLUDEDIR=include/@@SDK_ARCH@@-linux-gnu/qt6",
-                "-DINSTALL_TRANSLATIONSDIR=share/qt6/translations",
-                "-DINSTALL_MKSPECSDIR=lib/@@SDK_ARCH@@-linux-gnu/qt6/mkspecs",
-                "-DINSTALL_PUBLICBINDIR=bin",
-                "-DFEATURE_system_jpeg=ON",
-                "-DFEATURE_system_pcre2=ON",
-                "-DFEATURE_system_png=ON",
-                "-DFEATURE_system_proxies=ON",
-                "-DFEATURE_system_sqlite=ON",
-                "-DFEATURE_system_xcb_xinput=ON",
-                "-DFEATURE_system_zlib=ON",
-                "-DQT_FEATURE_openssl_linked=ON",
+                "-DINSTALL_ARCHDATADIR=lib",
                 "-DQT_CREATE_VERSIONED_HARD_LINK=OFF",
                 "-DQT_DISABLE_RPATH=ON",
-                "-DBUILD_WITH_PCH=FALSE"
+                "-DBUILD_WITH_PCH=FALSE",
+                "-DQT_FEATURE_openssl_linked=ON",
+                "-DQT_FEATURE_system_sqlite=ON"
             ],
             "sources": [
                 {
