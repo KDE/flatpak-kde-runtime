@@ -3,6 +3,7 @@ REPO ?= repo
 FB_ARGS ?= "--user"
 TMP ?= sdk
 INSTALL_SOURCE ?= "--install-deps-from=flathub"
+BST=bst
 
 ifeq ($(ARCH),x86_64)
 COMPAT_ARCH ?= i386
@@ -18,6 +19,82 @@ ifeq ($(wildcard /run/.containerenv),)
 else
     DISABLE_ROFILES_FUSE = "--disable-rofiles-fuse"
 endif
+
+# Generate SPDX-SBOM reports using buildstream-sbom
+BST_SBOM?=buildstream-sbom
+SPDX_SBOM_DIR := sbom-reports
+SPDX_SBOM_COMMON_ARGS := \
+    --spdx-creator "Organization: KDE (kde-devel@kde.org)" \
+    --deps all
+ifneq ($(origin SPDX_SBOM_WITH_LICENSE), undefined)
+	SPDX_SBOM_WITH_LICENSE_ARGS := \
+		--with-licenses \
+		--spdx-comment "Components licensing information isn't guaranteed to be complete nor correct and must only be considered advisory."
+endif
+
+${SPDX_SBOM_DIR}:
+	rm -rf "$@"
+	mkdir -p "$@"
+
+${SPDX_SBOM_DIR}/%.spdx.json: ${SPDX_SBOM_DIR} elements/org.kde.Sdk.bst
+	@echo -e "\nCreating $@ report"
+	BST=bst $(BST_SBOM) $(SPDX_SBOM_COMMON_ARGS) \
+		$(SPDX_SBOM_WITH_LICENSE_ARGS) \
+		--spdx-name freedesktop-sdk-${ARCH}-$* \
+		--spdx-namespace https://freedesktop-sdk.io/freedesktop_sdk/spdxdocs/$*.spdx.json-${UUID-$*} \
+		--output "$@" flatpak-images/$*.bst
+
+generate-spdx-sbom-reports: \
+    ${SPDX_SBOM_DIR}/platform.spdx.json \
+    ${SPDX_SBOM_DIR}/sdk.spdx.json \
+
+generate-cve-report: $(if $(filter 1,$(REUSE_MANIFESTS)),,manifest) elements/org.kde.Sdk.bst
+	$(BST) build freedesktop-sdk.bst:utils/generate-cve-report.bst
+
+	[ -d "nvd-cve-database" ] || ( \
+		git clone -n --depth=1 --filter=tree:0 https://gitlab.com/freedesktop-sdk/nvd-cve-database.git && \
+		cd nvd-cve-database && git sparse-checkout set nvd-cve-database && \
+		git checkout && \
+		rm -rf ".git" \
+	)
+
+	mkdir -p cve/cve-reports
+
+	$(foreach name,sdk platform, \
+		cp -vf $(name)-manifest/usr/manifest.json cve/$(name)-manifest.json;)
+
+	cp -r nvd-cve-database/nvd-cve-database/*.json.gz cve/
+
+	$(BST) shell freedesktop-sdk.bst:utils/generate-cve-report.bst \
+		--mount ./cve/ /buildstream-build \
+		-- sh -c '\
+			generate_cve_report --db-path /buildstream-build --feed-version 2.0 /buildstream-build/sdk-manifest.json /buildstream-build/cve-reports/sdk.md.html && \
+			generate_cve_report --db-path /buildstream-build --feed-version 2.0 /buildstream-build/platform-manifest.json /buildstream-build/cve-reports/platform.md.html
+		'
+
+	rm -rvf cve-reports
+	mv -v cve/cve-reports .
+	rm -rf cve
+
+ifneq ($(REUSE_MANIFESTS),1)
+	rm -rf sdk-manifest platform-manifest
+endif
+
+ifneq ($(REUSE_CVE_DB),1)
+	rm -rf nvd-cve-database
+endif
+
+manifest:
+	rm -rf sdk-manifest/
+	rm -rf platform-manifest/
+
+	$(BST) build manifests/platform-manifest.bst manifests/sdk-manifest.bst
+
+	$(BST) artifact checkout manifests/platform-manifest.bst --directory platform-manifest/
+	$(BST) artifact checkout manifests/sdk-manifest.bst --directory sdk-manifest/
+
+clean-cve:
+	rm -rf cve-reports cve platform-manifest sdk-manifest
 
 all: $(REPO)/config $(foreach file, $(wildcard *.json.in), $(subst .json.in,.app,$(file)))
 

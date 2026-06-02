@@ -109,3 +109,36 @@ publish-to-flathub:
     - flat-manager-client -v commit --wait "$(cat publish_build.txt)"
     - flat-manager-client -v publish --wait "$(cat publish_build.txt)"
     - echo "Check https://hub.flathub.org/status to see when this is going to be available"
+
+spdx_sbom_report:
+  stage: publish
+  timeout: 120 minutes
+  script:
+    - python3 -m pip install buildstream-sbom
+    - make generate-spdx-sbom-reports
+  variables:
+    # Enable building the SBOM with licenses
+    SPDX_SBOM_WITH_LICENSE: "true"
+  artifacts:
+    paths:
+      - "${CI_PROJECT_DIR}/sbom-reports"
+  needs: []
+
+cve_report:
+  stage: publish
+  script:
+    - make generate-cve-report
+  artifacts:
+    paths:
+      - "${CI_PROJECT_DIR}/cve-reports"
+  needs: []
+
+markdown_manifest:
+  stage: publish
+  script:
+    - make markdown-manifest
+  artifacts:
+    paths:
+      - "${CI_PROJECT_DIR}/platform-manifest/usr/"
+      - "${CI_PROJECT_DIR}/sdk-manifest/usr/"
+  needs: []
