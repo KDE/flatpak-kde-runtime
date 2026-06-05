@@ -97,7 +97,7 @@ publish-to-flathub:
       echo "Publishing branch ${SDK_BRANCH} to Flathub channel ${RELEASE_CHANNEL}"
     # Trigger publishing to Flathub
     - flat-manager-client -v create "$FLAT_MANAGER_ADDRESS" "${RELEASE_CHANNEL}" --build-log-url ${CI_PIPELINE_URL} > publish_build.txt
-    - flat-manager-client push "$(cat publish_build.txt)" repo-combined --build-log-url ${CI_PIPELINE_URL}
+    - flat-manager-client push --all-objects "$(cat publish_build.txt)" repo-combined --build-log-url ${CI_PIPELINE_URL}
     - flat-manager-client -v commit --wait "$(cat publish_build.txt)"
     - flat-manager-client -v publish --wait "$(cat publish_build.txt)"
     - echo "Check https://hub.flathub.org/status to see when this is going to be available"
