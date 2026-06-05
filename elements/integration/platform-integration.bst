@@ -9,4 +9,4 @@ config:
   script-path: '%{libexecdir}/freedesktop-post.sh'
 
 build-depends:
-- org.kde.Sdk.bst
+- org.kde.Platform.bst
