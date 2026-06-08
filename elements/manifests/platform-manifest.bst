@@ -4,7 +4,7 @@
 kind: collect_manifest
 
 depends:
-  - filename: org.kde.Sdk.bst
+  - filename: org.kde.Platform.bst
     type: build
 
 config:
