@@ -25,6 +25,8 @@ lint-manifests:
     MINIO_OIDC:
       aud: https://tokens.kde.org
   when: manual
+  variables:
+    XDG_CACHE_HOME: "${CI_PROJECT_DIR}/cache"
   before_script:
     - git clone https://invent.kde.org/sysadmin/ci-utilities.git --depth=1
   script:
@@ -35,6 +37,10 @@ lint-manifests:
     - mkdir artifacts/
     - tar czf artifacts/repository-$ARCH.tar.gz -C checkout/ repo-$ARCH/
     - python3 ci-utilities/sync-s3-folder.py --mode upload --verbose --local ./artifacts/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_PATH/p/$CI_PIPELINE_ID/
+  artifacts:
+    when: on_failure
+    paths:
+      - ${CI_PROJECT_DIR}/cache/buildstream/logs/
 
 build-runtime-amd64:
   extends: .build-runtime
