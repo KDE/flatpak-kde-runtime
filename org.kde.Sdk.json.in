@@ -2747,6 +2747,7 @@
                     "config-opts": [
                         "-DLIBICAL_BUILD_DOCS=OFF",
                         "-DLIBICAL_GLIB=OFF",
+                        "-DENABLE_GTK_DOC=OFF",
                         "-DLIBICAL_CXX_BINDINGS=OFF",
                         "-DLIBICAL_JAVA_BINDINGS=OFF"
                     ],
