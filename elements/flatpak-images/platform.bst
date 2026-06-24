@@ -99,11 +99,13 @@ config:
 
     Extension org.freedesktop.Platform.Timezones:
       directory: share/zoneinfo
+      version: "%{freedesktop-sdk-flatpak-branch}"
 
     Extension org.freedesktop.Platform.GStreamer:
       directory: lib/extensions/gstreamer-1.0
       subdirectories: 'true'
       no-autodownload: 'true'
+      version: "%{freedesktop-sdk-flatpak-branch}"
 
     Extension org.freedesktop.Platform.Icontheme:
       directory: share/runtime/share/icons
@@ -126,6 +128,7 @@ config:
       add-ld-path: lib
       download-if: have-intel-gpu
       autoprune-unless: have-intel-gpu
+      version: "%{freedesktop-sdk-flatpak-branch}"
 
     Extension org.freedesktop.Platform.VAAPI.nvidia:
       directory: '%{lib}/dri/nvidia-vaapi-driver'
@@ -134,6 +137,7 @@ config:
       add-ld-path: lib
       download-if: have-kernel-module-nvidia
       autoprune-unless: have-kernel-module-nvidia
+      version: "%{freedesktop-sdk-flatpak-branch}"
 
     Extension org.freedesktop.Platform.codecs-extra:
       directory: '%{lib}/codecs-extra'

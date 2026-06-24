@@ -109,11 +109,13 @@ config:
 
     Extension org.freedesktop.Platform.Timezones:
       directory: share/zoneinfo
+      version: "%{freedesktop-sdk-flatpak-branch}"
 
     Extension org.freedesktop.Platform.GStreamer:
       directory: lib/extensions/gstreamer-1.0
       subdirectories: 'true'
       no-autodownload: 'true'
+      version: "%{freedesktop-sdk-flatpak-branch}"
 
     Extension org.freedesktop.Platform.Icontheme:
       directory: share/runtime/share/icons
@@ -147,6 +149,7 @@ config:
       no-autodownload: 'true'
       download-if: have-intel-gpu
       autoprune-unless: have-intel-gpu
+      version: "%{freedesktop-sdk-flatpak-branch}"
 
     Extension org.freedesktop.Platform.VAAPI.nvidia:
       directory: '%{lib}/dri/nvidia-vaapi-driver'
@@ -155,6 +158,7 @@ config:
       add-ld-path: lib
       download-if: have-kernel-module-nvidia
       autoprune-unless: have-kernel-module-nvidia
+      version: "%{freedesktop-sdk-flatpak-branch}"
 
     (?):
     - arch == "x86_64":
@@ -163,22 +167,26 @@ config:
           autodelete: 'true'
           no-autodownload: 'true'
           add-ld-path: '.'
+          version: "%{freedesktop-sdk-flatpak-branch}"
 
         Extension org.freedesktop.Sdk.Compat.i386.Debug:
           directory: 'lib/debug/usr/lib/i386-linux-gnu'
           autodelete: 'true'
           no-autodownload: 'true'
+          version: "%{freedesktop-sdk-flatpak-branch}"
 
         Extension org.freedesktop.Sdk.Compat.aarch64:
           directory: 'lib/aarch64-linux-gnu'
           autodelete: 'true'
           no-autodownload: 'true'
           add-ld-path: '.'
+          version: "%{freedesktop-sdk-flatpak-branch}"
 
         Extension org.freedesktop.Sdk.Compat.aarch64.Debug:
           directory: "lib/debug/usr/lib/aarch64-linux-gnu"
           autodelete: 'true'
           no-autodownload: 'true'
+          version: "%{freedesktop-sdk-flatpak-branch}"
 
 build-depends:
 - flatpak-images/sdk-image.bst
