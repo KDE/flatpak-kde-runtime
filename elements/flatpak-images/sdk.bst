@@ -136,6 +136,7 @@ config:
       directory: lib/sdk
       no-autodownload: 'true'
       add-ld-path: lib
+      version: "%{freedesktop-sdk-flatpak-branch}"
 
     Extension org.freedesktop.Platform.codecs-extra:
       directory: '%{lib}/codecs-extra'
