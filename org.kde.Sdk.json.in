@@ -1667,6 +1667,31 @@
             ]
         },
         {
+            "name": "kmime",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kmime.git",
+                    "tag": "v6.27.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "f3220d57ea31006e6735b3f635b8a9d34c9360ad"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "install-licenses.sh"
+                    ]
+                }
+            ]
+        },
+        {
             "name": "kservice",
             "config-opts": [
                 "-DBUILD_TESTING=OFF"
