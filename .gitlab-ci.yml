@@ -18,6 +18,8 @@ lint-manifests:
     #- flatpak run --command=flatpak-builder-lint org.flatpak.Builder org.kde.Sdk.json.in
     - json-glib-validate org.kde.Sdk.json.in
     - appstreamcli validate --no-net org.kde.{Sdk,Platform}.metainfo.xml
+    - make elements/org.kde.Sdk.bst
+    - bst show flatpak-images/flatpak-runtimes.bst
 
 .build-runtime:
   stage: build
