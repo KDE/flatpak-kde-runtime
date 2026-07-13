@@ -28,6 +28,7 @@ public:
 build-depends:
 - org.kde.Platform.bst
 - manifests/platform-manifest.bst
+- freedesktop-sdk.bst:components/ca-certificates.bst
 - freedesktop-sdk.bst:components/nsswitch-config.bst
 - freedesktop-sdk.bst:components/python3-sitecustomize.bst
 - freedesktop-sdk.bst:multiarch/multiarch-platform.bst
