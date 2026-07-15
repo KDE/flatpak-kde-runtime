@@ -4,6 +4,9 @@
 kind: compose
 description: Helper so that Rust + dependencies do not end up in org.kde.Platform
 
+config:
+  integrate: false
+
 build-depends:
 - freedesktop-sdk.bst:components/rust.bst
 
