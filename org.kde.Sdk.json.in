@@ -459,7 +459,13 @@
                         "/lib/*/cmake/re2",
                         "/share/man",
                         "/share/grpc/roots.pem",
-                        "*.a"
+                        "libaddress_sorting.a",
+                        "libcares.a",
+                        "libgpr.a",
+                        "libgrpc*.a",
+                        "libre2.a",
+                        "libupb_*.a",
+                        "libutf8_range_lib.a"
                     ],
                     "cleanup-platform": [
                         "/bin/grpc_cpp_plugin",
