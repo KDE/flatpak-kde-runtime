@@ -3165,20 +3165,21 @@
             "name": "kio-extras",
             "buildsystem": "cmake-ninja",
             "config-opts": [
+                "-DBUILD_ACTIVITIES=OFF",
                 "-DBUILD_TESTING=OFF",
-                "-DBUILD_WITH_QT6=ON",
-                "-DBUILD_ACTIVITIES=OFF"
+                "-DBUILD_WITH_QT6=ON"
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://invent.kde.org/network/kio-extras.git",
-                    "commit": "420d9af07f74cc2fcd98aadb6003400d63d5ab16",
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/release-service/26.04.2/src/kio-extras-26.04.2.tar.xz",
+                    "sha256": "af4941af624f883891d33701aa0ce4216d6de114db3e4a250099c52d3d42acaa",
                     "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
-                    },
-                    "tag": "v26.04.2"
+                        "type": "anitya",
+                        "project-id": 8763,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/release-service/$version/src/kio-extras-$version.tar.xz"
+                    }
                 },
                 {
                     "type": "shell",
