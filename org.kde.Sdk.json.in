@@ -1172,7 +1172,7 @@
                     "tag": "v6.27.0",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v6\\.([\\d.]+)$"
+                        "tag-pattern": "^v([\\d.]+)$"
                     },
                     "commit": "fa262097a48f0f84529498741afcc7040e93b271"
                 },
@@ -2726,7 +2726,10 @@
                     "tag": "v6.27.0",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v6([\\d.]+)$"
+                        "tag-pattern": "^v([\\d.]+)$",
+                        "versions": {
+                            "<": "7"
+                        }
                     },
                     "commit": "1909e1bbf23ef6ee824b007cddfefaa7abc91c9c"
                 },
@@ -2753,7 +2756,10 @@
                     "tag": "v6.27.0",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v6([\\d.]+)$"
+                        "tag-pattern": "^v([\\d.]+)$",
+                        "versions": {
+                            "<": "7"
+                        }
                     },
                     "commit": "d534891328ed24267cc983feb646c86d8c9938f4"
                 },
@@ -2814,7 +2820,10 @@
                     "tag": "v6.27.0",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v6([\\d.]+)$"
+                        "tag-pattern": "^v([\\d.]+)$",
+                        "versions": {
+                            "<": "7"
+                        }
                     },
                     "commit": "abbd4e62fa382421536119d938c3ee47f62f3b4f"
                 },
@@ -2950,7 +2959,10 @@
                     "tag": "v6.27.0",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v6([\\d.]+)$"
+                        "tag-pattern": "^v([\\d.]+)$",
+                        "versions": {
+                            "<": "7"
+                        }
                     },
                     "commit": "705ffe3e5dfd0f5283ff4bf559ad09fededfbbf3"
                 },
@@ -3000,7 +3012,10 @@
                     "tag": "v6.27.0",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v6([\\d.]+)$"
+                        "tag-pattern": "^v([\\d.]+)$",
+                        "versions": {
+                            "<": "7"
+                        }
                     },
                     "commit": "b05a4b8630b12e09744b0e208d5d8c68e19ccfec"
                 },
