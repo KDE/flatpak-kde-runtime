@@ -2933,6 +2933,9 @@
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 101246,
+                                "versions": {
+                                    "<": "3.0.0"
+                                },
                                 "url-template": "https://github.com/zxing-cpp/zxing-cpp/archive/v$version.tar.gz"
                             }
                         },
