@@ -1,0 +1,13 @@
+diff --git a/utils/flatpak-builder-to-bst.py b/utils/flatpak-builder-to-bst.py
+index e0e8c63f8..8033e68e5 100755
+--- a/utils/flatpak-builder-to-bst.py
++++ b/utils/flatpak-builder-to-bst.py
+@@ -64,8 +64,6 @@ def relativise_path(path):
+
+ def cleanup_platform_split_rules(pattern):
+     base = "%{prefix}" + pattern if pattern.startswith("/") else "**/" + pattern
+-    if any(char in pattern for char in "*?[]"):
+-        return [base]
+     return [base, f"{base}/**"]
+
+
