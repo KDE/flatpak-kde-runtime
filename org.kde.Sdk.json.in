@@ -1676,12 +1676,15 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/kmime.git",
-                    "tag": "v26.04.3",
+                    "tag": "v6.27.0",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
+                        "tag-pattern": "^v([\\d.]+)$",
+                        "versions": {
+                            "<": "7"
+                        }
                     },
-                    "commit": "bb7f8a0177ba79e8b06d6d8ac81078202da8e0b4"
+                    "commit": "f3220d57ea31006e6735b3f635b8a9d34c9360ad"
                 },
                 {
                     "type": "shell",
