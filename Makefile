@@ -2,7 +2,7 @@ ARCH ?= $(shell flatpak --default-arch)
 REPO ?= repo
 FB_ARGS ?= "--user"
 TMP ?= sdk
-INSTALL_SOURCE ?= "--install-deps-from=flathub"
+INSTALL_SOURCE ?= "--install-deps-from=flathub-beta"
 
 ifeq ($(ARCH),x86_64)
 COMPAT_ARCH ?= i386

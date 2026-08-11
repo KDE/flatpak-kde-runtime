@@ -5,7 +5,7 @@
     "branch": "6.11",
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
-    "runtime-version": "25.08",
+    "runtime-version": "26.08beta",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Debug",
         "org.freedesktop.Sdk.Locale",
@@ -166,16 +166,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtbase-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "d9594a31228aa23ad6b531719a29b45f0f3989fe6c136d45767ea179f233c1ac",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtbase-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "fce3590342eab870f23a3c7a91912bd858b42df252eb7f1f3b801e3731861cce",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtbase-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtbase-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -221,16 +221,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qttools-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "8e61835a679c93fa9c6065b142353c2071ba68e297898937c32a03777fcaf50d",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qttools-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "e972f378cd8f41aceddbea49ccb3dd2df332afa0cfab82c90d6fb07fd971469c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qttools-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qttools-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -251,16 +251,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtshadertools-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "2075052f9b23bcf9de045bbd180037084942f82cce870aab14a1454902c982fc",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtshadertools-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "3d0b01b56e4647526fae4a9229253b9cacf8b23d76e30d68c19c8f2308f16011",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtshadertools-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtshadertools-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -280,16 +280,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtlanguageserver-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "50008537f2ca54abb3b8dc3f26759864e9cad2b2ad39e92e42fa718de2dd8aef",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtlanguageserver-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "196ed2d82b9e61cf074cd6bcfc1a8893037f93fe31085ed8a9c5480a8930a14c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtlanguageserver-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtlanguageserver-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -313,16 +313,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtdeclarative-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "52e670f670b0304f534b24f98c47ceb8a41bb710464414ebc9527ec71cc86aa4",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtdeclarative-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "6d99f613bc6f7be5c128a4f276567e2790a59b94a5b635a48277c51a6e3f27c3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtdeclarative-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtdeclarative-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -342,16 +342,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtwebchannel-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "69fbb50b71d6e6596c2d6863ee9a9c984a4d01378ee2b7b4163bb467a0158d82",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtwebchannel-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "b6469666bf262c41a0fbf2419a8fc8871059565b886cdbf177df997c0808ce19",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtwebchannel-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtwebchannel-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -371,16 +371,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtpositioning-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "d5e6b91801ae286e7630016caea3bdc5e1978b4291d6741d0d64c125650f78f5",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtpositioning-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "119c6791a4db35425fc273413d97d4d1720f79fae5bfe39fde2778604e2edc04",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtpositioning-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtpositioning-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -400,16 +400,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtgrpc-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "437b04f0c550ccdb1739ca5f9119b73dfa0376564815e8bfc199890643e2a250",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtgrpc-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "a05f3b71e15b807757c0cb16c41ebc38562f9a4d8adf19d1c2f7d42f64fd35a9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtgrpc-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtgrpc-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -472,8 +472,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/grpc/grpc",
-                            "tag": "v1.82.1",
-                            "commit": "acccf84c0df20487d64101f528e5d426541ca4e5",
+                            "tag": "v1.83.0",
+                            "commit": "c876f4da50f7da2f331888b88b2a7243514139fe",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^(v[\\d.]+)$"
@@ -498,16 +498,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtsvg-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "7f3cf02f4824bf03c2c5859ea6db173bf1482a1daf24e6cdf7bc78cfa26a8a94",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtsvg-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "00fc70990162b9e44be17ebdb0563fd1fb9f805921b12793bd673de6930d7843",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtsvg-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtsvg-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -527,16 +527,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtmultimedia-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "390f8e52ddee3aca5c4de7eead900c84c4fa61ff6d1f0ebea9c7543365c09b0a",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtmultimedia-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "eacc16b0464d4d559bac1001562adefd06b04ecb9825edcc57676464bfdf7b21",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtmultimedia-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtmultimedia-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -556,16 +556,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtspeech-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "c035c318012025875a653245701a23d3807e8e46b8bf7987877842219c273f14",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtspeech-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "61ceb0b302d6ce790bee575affe8796211178effce80530c46620cc868300abc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtspeech-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtspeech-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -585,16 +585,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtsensors-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "23617062da7be526d023dec7f9b76231001a1098a7e5f94c646f2e4f87cfcf8f",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtsensors-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "10d99ec9dd3d6b95cc799eba289c93c9918398ba606070a8e251ee0e4682ca0f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtsensors-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtsensors-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -614,16 +614,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtimageformats-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "b2bf6c6845ac175ed7f819145483ba4676f617aaa6a5012c8efee63c8bbac413",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtimageformats-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "3d7b83d63ada3b79f87078cd3c764572b4c975e547030bf30a6bb9be84b8d0a4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtimageformats-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtimageformats-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -643,16 +643,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtconnectivity-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "2105289ea414b46ed5fa53ba8782230045b9e47cc8156b5940c9e31e3980e591",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtconnectivity-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "1cc0f2639e7fcccdf17507da8564c378e2cee7eac5bd0edce9d86c015d8661c4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtconnectivity-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtconnectivity-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -672,16 +672,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtwayland-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "95788aa502f75441d4edf65932b235f76523084e13dbbb7b9ee2d207b32bd9b3",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtwayland-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "5562aebe2f44ac4ce25b5c376cbde3327dadfa0aad4a8c2bc73c18e8120e541c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtwayland-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtwayland-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -701,16 +701,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtserialport-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "9af31a898ffd9a7e4faf6fed845d29e783c716885789055cbe319f3e072d3974",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtserialport-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "0a8e420c12ef97d88cf16926d4bac732dcc5e6f1de2e15f5177e701210aa82e5",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtserialport-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtserialport-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -730,16 +730,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtwebsockets-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "243e3aa11924c8c5c1645e892f62d013caa3766c57512ca926d5b58146646fbf",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtwebsockets-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "22b0c4f9b41c4a2591f14306f0ee89d1d9fb4ddc731e220ef18168a154e248eb",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtwebsockets-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtwebsockets-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -759,16 +759,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtscxml-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "8e495245e5d1fe75de612c8a07e4043635407a1979bb1dd588f1751d1390203f",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtscxml-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "1d001cb5638e018cee1050855b32b24dd91904b6b64fd5ae8fb8be501d65f068",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtscxml-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtscxml-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -788,16 +788,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtcharts-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "3fe3ed318c2a86d1417c5c29cf7494275e8fd4b537cd37453f5599c57365515c",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtcharts-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "efbe47635dd6cf1506dccd8628e79c62c4f8ddc21c84d1a45cae92d071545400",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtcharts-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtcharts-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -817,16 +817,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qt3d-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "a66d8c8e049d1ee7a7687b34940f3555d0d7084858b6dc78d1e1cb7df40a0107",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qt3d-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "22e468c567b79ceeb0295368734194a347fe64b47ad7d772896420df14dc9049",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qt3d-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qt3d-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -846,16 +846,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtnetworkauth-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "9f1d5bf22ccc033e42076186b964f9d4d4179fd0312a2c0f1aa19db42516563d",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtnetworkauth-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "3c59cc1abec7d78196fed92576493f0fe4e60644f907a9ec34ae40816945e3c2",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtnetworkauth-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtnetworkauth-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -875,16 +875,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qttranslations-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "37c02c81206594c7bb4edca85ac93e8e55a9836b70c960fde6cb0f8623ec5677",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qttranslations-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "82a15db20699f34c3d885ed102e702db8ead57dabc0d0a09a3ec9ec6eac9f68b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qttranslations-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qttranslations-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -904,16 +904,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtremoteobjects-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "40629895c69531a687a9c0258316cee3f04c2d18b2bf2ad36dc83e76a58f111a",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtremoteobjects-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "a138d8584c38694ad117f1c47ee8f0f0a8d23a42c8271f9c9acaff7b06ce88e9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtremoteobjects-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtremoteobjects-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -933,16 +933,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qt5compat-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "cfcb9fdaa051aad54b0e61b24ac5693b4887a86e07609f665fea67328a6f161b",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qt5compat-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "08f629181c5c8cf4c5d88922b74df0d58338418d0bf50404aa464d9ca5d85616",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qt5compat-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qt5compat-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -962,16 +962,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtlocation-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "3791ce77299e6f600a593d0fbfa5bd32fbcfc2d16104782b84acc489e382e41b",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtlocation-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "1b6ff4e2aca94da626c0e5dd8334d83f34c516f788a15bcc1bd1c0cf5ef859d8",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtlocation-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtlocation-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -991,16 +991,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtquicktimeline-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "af53f643fd9e4045e1b9ba919998e5c048ca877452c08036c9c8c5ee07ea8c27",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtquicktimeline-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "e438a05fe5fd75aef8bbc062e3fb4c341e7dcf9e97c324c282820270ff6dc379",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtquicktimeline-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtquicktimeline-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -1020,16 +1020,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtquick3d-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "c76b85de3f8aa2a4bee64987acfef560675c1b378b92076c7c6264613e5b456f",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtquick3d-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "9ce221568077e479fb3141265884a3d2052965a20f07954f9d7df480fad83b8e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtquick3d-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtquick3d-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -1049,16 +1049,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtgraphs-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "84b1138ab68a8e2956439895a4b85eb68dda48ac169da673f67191873b1e0462",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtgraphs-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "9dd632120857c695f3d536d818156b8968823cb647af7004f76091239fe7abbb",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtgraphs-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtgraphs-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -1078,16 +1078,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtquick3dphysics-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "d1086d6f014e7b698945cf0ee1dc3e43545ed7dcf0b5e501c0d6836a96ac79af",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtquick3dphysics-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "eb02c2435dd4862a67779c27ffb444447cf6091f35a2a492b3b61a3e8ae78623",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtquick3dphysics-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtquick3dphysics-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -1107,16 +1107,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtquickeffectmaker-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "cfe63e70e88bdd126a175762d3eeb38eb336e45beceedcbd027bc5362744136b",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qtquickeffectmaker-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "3743d0a1dfb94fdb2b2398e638fecd269917fbc08eeb9f30f71ec016732d934c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qtquickeffectmaker-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qtquickeffectmaker-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -1136,16 +1136,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qthttpserver-everywhere-src-6.11.1.tar.xz",
-                    "sha256": "04bf70fcf76861f9b6870c728085f2375a6b6d923cb5d1a116dff2ed52a4e706",
+                    "url": "https://download.qt.io/development_releases/qt/6.12/6.12.0-beta2/submodules/qthttpserver-everywhere-src-6.12.0-beta2.tar.xz",
+                    "sha256": "d8df9ab07d46db0e374a888b90a1d0c339f4979c575c63e863278ccf036ca641",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7927,
-                        "stable-only": true,
+                        "stable-only": false,
                         "versions": {
-                            "<": "6.12.0"
+                            "<": "6.13.0"
                         },
-                        "url-template": "https://download.qt.io/official_releases/qt/6.11/$version/submodules/qthttpserver-everywhere-src-$version.tar.xz"
+                        "url-template": "https://download.qt.io/development_releases/qt/6.12/$version/submodules/qthttpserver-everywhere-src-$version.tar.xz"
                     }
                 },
                 {
@@ -2539,12 +2539,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/syntax-highlighting.git",
-                    "tag": "v6.28.0",
+                    "tag": "v6.28.1",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "956564c23b233d7fa99218745909f823457e763f"
+                    "commit": "c1a455235e3a9b3cc1c433fe762fa5a02857f915"
                 },
                 {
                     "type": "shell",
@@ -2678,12 +2678,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.13.0.tar.xz",
-                    "sha256": "0b9e83d533fbed2ac37233fe08178e0671db4272320548b90916d7d0685aa8d4",
+                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.13.1.tar.xz",
+                    "sha256": "76026f0abe8c948208ce75a02a9ecac60c618ac5288ca546e09da64bc4af7050",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242933,
-                        "stable-only": true,
+                        "stable-only": false,
                         "url-template": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-$version.tar.xz"
                     }
                 }
@@ -2880,7 +2880,7 @@
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 12834,
-                                "stable-only": true,
+                                "stable-only": false,
                                 "url-template": "https://github.com/fukuchi/libqrencode/archive/refs/tags/v$version.tar.gz"
                             }
                         },

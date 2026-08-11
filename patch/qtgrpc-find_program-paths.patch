@@ -1,12 +1,13 @@
-diff -Naur a/cmake/FindWrapProtoc.cmake b/cmake/FindWrapProtoc.cmake
---- a/cmake/FindWrapProtoc.cmake	2023-11-20 12:56:30.000000000 +0100
-+++ b/cmake/FindWrapProtoc.cmake	2024-02-01 11:02:36.989111511 +0100
-@@ -58,7 +58,7 @@
+diff --git a/cmake/FindWrapProtoc.cmake b/cmake/FindWrapProtoc.cmake
+index 0ee518b..13d0759 100644
+--- a/cmake/FindWrapProtoc.cmake
++++ b/cmake/FindWrapProtoc.cmake
+@@ -66,7 +66,7 @@ if(NOT __WrapProtoc_protoc_imported_location)
      endif()
      find_program(__WrapProtoc_protoc_imported_location
          NAMES protoc protoc.exe
--        PATHS "${__WrapProtoc_extra_prefix_paths}" "$ENV{Protobuf_ROOT}"
-+        PATHS "${__WrapProtoc_extra_prefix_paths}" "$ENV{Protobuf_ROOT}" "/app"
+-        HINTS "${__WrapProtoc_extra_prefix_paths}" "$ENV{Protobuf_ROOT}"
++        HINTS "${__WrapProtoc_extra_prefix_paths}" "$ENV{Protobuf_ROOT}" /app
          PATH_SUFFIXES bin
+         ${__WrapProtoc_find_program_args}
      )
- endif()
