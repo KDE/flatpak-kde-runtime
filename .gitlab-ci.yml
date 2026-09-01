@@ -24,5 +24,5 @@ publish-to-flathub:
   script:
     # Trigger publishing to Flathub
     - flat-manager-client -v create "$FLAT_MANAGER_ADDRESS" "${RELEASE_CHANNEL}" --build-log-url ${CI_PIPELINE_URL} > publish_build.txt
-    - flat-manager-client -v commit --end-of-life="We strongly recommend moving to the latest stable version of the Platform and SDK" --wait "$(cat publish_build.txt)
+    - flat-manager-client -v commit --end-of-life="We strongly recommend moving to the latest stable version of the Platform and SDK" --wait "$(cat publish_build.txt)"
     - flat-manager-client -v publish --wait "$(cat publish_build.txt)"
