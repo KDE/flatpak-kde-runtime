@@ -40,14 +40,6 @@ This will retarget it to the latest version of the tracked tags.
 
 The file `cxx-rust-cssparser-generated-sources.json` contains a list of the
 sources required by Cargo for building the `cxx-rust-cssparser` module. This
-file was generated using [flatpak-cargo-generator.py](https://github.com/flatpak/flatpak-builder-tools/blob/master/cargo/flatpak-cargo-generator.py). 
-To update the generated dependencies:
+file was generated using [flatpak-cargo-generator.py](https://github.com/flatpak/flatpak-builder-tools/blob/master/cargo/flatpak-cargo-generator.py).
 
-1. Clone
-[cxx-rust-cssparser](https://invent.kde.org/libraries/cxx-rust-cssparser).
-2. `cd cxx-rust-cssparser/rust`
-3. Download the `flatpak-cargo-generator.py` script with `wget` or a similar tool to the working
-directory.
-4. `python flatpak-cargo-generator.py Cargo.lock -o
-cxx-rust-cssparser-generated-sources.json`
-5. Copy the generated file into the `flatpak-kde-runtime` directory.
+You can find `refresh-cargo-deps.sh` script to refresh `cxx-rust-cssparser-generated-sources.json`.
