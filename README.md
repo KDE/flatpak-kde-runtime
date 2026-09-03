@@ -26,6 +26,16 @@ This can generally be built with flatpak-builder as explained in its documentati
 * `make org.kde.Sdk.app` builds the SDK.
 * `flatpak --user install ./repo org.kde.Platform org.kde.Sdk` installs the built SDK.
 
+## Maintaining the BuildStream modules
+
+We need to ensure we are building against the latest stable version of Freedesktop SDK. We can do so by running:
+
+```
+bst source track freedesktop-sdk.bst 
+```
+
+This will retarget it to the latest version of the tracked tags.
+
 ## Updating Generated Rust Dependencies
 
 The file `cxx-rust-cssparser-generated-sources.json` contains a list of the
