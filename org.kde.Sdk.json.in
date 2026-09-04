@@ -481,6 +481,10 @@
                             }
                         },
                         {
+                            "type": "patch",
+                            "path": "01-chttp2-maybe-uninitialized.patch"
+                        },
+                        {
                             "type": "shell",
                             "commands": [
                                 "LICENSES='LICENSE' install-licenses.sh"
