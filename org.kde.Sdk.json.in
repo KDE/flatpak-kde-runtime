@@ -3319,7 +3319,11 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/libraries/cxx-rust-cssparser",
-                    "commit": "f600ba40ac72af880ef988545664993d0b286cef"
+                    "x-checker-data": {
+                        "type": "git"
+                    },
+                    "tag": "v1.1.0",
+                    "commit": "d7bd0b6a6ca1db88a8189aee81498f194f1e45a5"
                 },
                 "cxx-rust-cssparser-generated-sources.json"
             ]
