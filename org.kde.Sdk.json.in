@@ -478,8 +478,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/grpc/grpc",
-                            "tag": "v1.83.1",
-                            "commit": "aae267021b1ac256f8b9038d0ef528c3798cc137",
+                            "tag": "v1.84.0",
+                            "commit": "3252a89f10d8e92997862167ca7d095ecda85973",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^(v[\\d.]+)$"
@@ -1203,8 +1203,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/fcitx/fcitx5-qt",
-                    "tag": "5.1.14",
-                    "commit": "46651831dac2520944f573c14214827c0e87d2a6",
+                    "tag": "5.1.15",
+                    "commit": "272b6b9eba97f0ed97e8a5caaf0bb22c6123f462",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -1225,11 +1225,11 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/libraries/plasma-wayland-protocols.git",
-                    "tag": "v1.21.0",
+                    "tag": "v1.22.0",
                     "x-checker-data": {
                         "type": "git"
                     },
-                    "commit": "4c015e90ae6c88f2ffa766e899387ef431eade49"
+                    "commit": "382dfabda886d3f2f5c067b22e5a22376685ba78"
                 },
                 {
                     "type": "shell",
@@ -3184,8 +3184,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.08.0/src/kio-extras-26.08.0.tar.xz",
-                    "sha256": "3adb4f9189b4b91d57b78d0a894868d8382451134bcfcc4f235027f23db13b3d",
+                    "url": "https://download.kde.org/stable/release-service/26.08.1/src/kio-extras-26.08.1.tar.xz",
+                    "sha256": "8050c3dd33fed06a60dda8205f4e0134d3aac95f0647b1d9c05419845341397c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -3219,8 +3219,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.7.4",
-                    "commit": "8f5f92db32cf485f2fbe19b59ccb2f4f46e69096"
+                    "tag": "v6.7.5",
+                    "commit": "ca217f12ce16a28e601c78b7f2fdceca586725b2"
                 },
                 {
                     "type": "shell",
@@ -3246,8 +3246,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.7.4",
-                    "commit": "eeb0f503466582ad7b68d7e7c7dd365411db5696"
+                    "tag": "v6.7.5",
+                    "commit": "d5b8362bc1d0f1a0059c02e6c75427548fa64bd4"
                 },
                 {
                     "type": "shell",
@@ -3272,8 +3272,8 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.7.4",
-                    "commit": "14a7c9000679f850c317d7a2c06289b18a18ca16"
+                    "tag": "v6.7.5",
+                    "commit": "2a54be10ffe1fcdb7bcc2cbf0b27a915d5f749f5"
                 },
                 {
                     "type": "shell",
@@ -3339,7 +3339,7 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/union.git",
-                    "commit": "80ef8ba52f5abc332c0c876eca2ddda7fe6976bf"
+                    "commit": "e6c188eada1c9ad52aabf743865ea9c24011db24"
                 }
             ]
         },
@@ -3349,8 +3349,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/plasma/6.7.4/ocean-sound-theme-6.7.4.tar.xz",
-                    "sha256": "3d0368e992388fce0015e3622778062a67827b660bae6ab551e873ae18a3045c",
+                    "url": "https://download.kde.org/stable/plasma/6.7.5/ocean-sound-theme-6.7.5.tar.xz",
+                    "sha256": "452e5ab04f5e2d7cbf9357e4e12badf8493aefda437ba130eb38c9e511313b72",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8761,
