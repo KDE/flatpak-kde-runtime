@@ -3339,12 +3339,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/plasma/union.git",
-                    "commit": "e6c188eada1c9ad52aabf743865ea9c24011db24",
+                    "commit": "8e66b3eb156d12cfc2f7596d5e15981bbd69db83",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d]+\\.[\\d]+\\.(?:[0-8]?[0-9]))$"
                     },
-                    "tag": "v6.7.5"
+                    "tag": "v6.7.90"
                 }
             ]
         },
