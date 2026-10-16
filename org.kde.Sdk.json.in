@@ -68,7 +68,7 @@
             "subdirectories": true,
             "autodelete": true,
             "no-autodownload": true,
-            "version": "6.11",
+            "version": "6.12",
             "merge-dirs": "platformthemes;union",
             "add-ld-path": "lib"
         }
