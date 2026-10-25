@@ -7,7 +7,7 @@ include:
 
 lint-manifests:
   stage: validate
-  image: storage.kde.org/vm-images/buildstream
+  image: s3.kde.org/ci-vm-images/buildstream
   tags:
     - VM
     - amd64
@@ -38,7 +38,7 @@ lint-manifests:
     - cp org.kde.Sdk.json checkout/repo-$ARCH/
     - mkdir artifacts/
     - tar czf artifacts/repository-$ARCH.tar.gz -C checkout/ repo-$ARCH/
-    - python3 ci-utilities/sync-s3-folder.py --mode upload --verbose --local ./artifacts/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_PATH/p/$CI_PIPELINE_ID/
+    - python3 ci-utilities/sync-s3-folder.py --mode upload --verbose --local ./artifacts/ --remote s3.kde.org/ci-build-artifacts/$CI_PROJECT_PATH/p/$CI_PIPELINE_ID/
   artifacts:
     when: on_failure
     paths:
@@ -46,7 +46,7 @@ lint-manifests:
 
 build-runtime-amd64:
   extends: .build-runtime
-  image: storage.kde.org/vm-images/buildstream
+  image: s3.kde.org/ci-vm-images/buildstream
   tags:
     - LargeVM
     - amd64
@@ -55,7 +55,7 @@ build-runtime-amd64:
 
 build-runtime-arm64:
   extends: .build-runtime
-  image: storage.kde.org/vm-images/buildstream-arm64
+  image: s3.kde.org/ci-vm-images/buildstream-arm64
   tags:
     - LargeVM
     - arm64
@@ -83,7 +83,7 @@ publish-to-flathub:
   script:
     # Bring in the artifacts
     - mkdir artifacts/
-    - python3 ci-utilities/sync-s3-folder.py --mode download --verbose --local ./artifacts/ --remote storage.kde.org/ci-artifacts/$CI_PROJECT_PATH/p/$CI_PIPELINE_ID/
+    - python3 ci-utilities/sync-s3-folder.py --mode download --verbose --local ./artifacts/ --remote s3.kde.org/ci-build-artifacts/$CI_PROJECT_PATH/p/$CI_PIPELINE_ID/
     - tar -xf ./artifacts/repository-x86_64.tar.gz
     - tar -xf ./artifacts/repository-aarch64.tar.gz
     # Combine them into a single repository
