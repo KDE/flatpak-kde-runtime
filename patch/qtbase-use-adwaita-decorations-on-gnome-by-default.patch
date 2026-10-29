@@ -1,8 +1,7 @@
-diff --git a/src/plugins/platforms/wayland/qwaylandintegration.cpp b/src/plugins/platforms/wayland/qwaylandintegration.cpp
-index 669d47ee3b8b96484092527abaed7c4ba99dd030..4b6814f2c19586cd1cc0a3320f789559a85ff973 100644
---- a/src/plugins/platforms/wayland/qwaylandintegration.cpp
-+++ b/src/plugins/platforms/wayland/qwaylandintegration.cpp
-@@ -93,6 +93,12 @@ QWaylandIntegration::QWaylandIntegration(const QString &platformName)
+diff -Naur a/src/plugins/platforms/wayland/qwaylandintegration.cpp b/src/plugins/platforms/wayland/qwaylandintegration.cpp
+--- a/src/plugins/platforms/wayland/qwaylandintegration.cpp	2026-10-05 17:03:40.000000000 +0200
++++ b/src/plugins/platforms/wayland/qwaylandintegration.cpp	2026-10-27 07:29:09.432131618 +0100
+@@ -97,6 +97,12 @@
      QWaylandWindow::fixedToplevelPositions =
              !qEnvironmentVariableIsSet("QT_WAYLAND_DISABLE_FIXED_POSITIONS");
  

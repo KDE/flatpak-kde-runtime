@@ -1,6 +1,7 @@
---- a/cmake/QtConfig.cmake.in	2024-02-08 21:31:05.000000000 +0530
-+++ b/cmake/QtConfig.cmake.in	2024-02-08 21:31:05.000000000 +0530
-@@ -131,6 +131,8 @@
+diff -Naur a/cmake/QtConfig.cmake.in b/cmake/QtConfig.cmake.in
+--- a/cmake/QtConfig.cmake.in	2026-10-05 17:03:40.000000000 +0200
++++ b/cmake/QtConfig.cmake.in	2026-10-27 07:30:31.838217266 +0100
+@@ -200,6 +200,8 @@
                  ${QT_BUILD_CMAKE_PREFIX_PATH}
                  ${_qt_cmake_dir}
                  ${_qt_additional_packages_prefix_paths}

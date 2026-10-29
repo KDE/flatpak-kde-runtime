@@ -1,7 +1,7 @@
 diff -Naur a/cmake/FindWrapProtoc.cmake b/cmake/FindWrapProtoc.cmake
---- a/cmake/FindWrapProtoc.cmake	2023-11-20 12:56:30.000000000 +0100
-+++ b/cmake/FindWrapProtoc.cmake	2024-02-01 11:02:36.989111511 +0100
-@@ -58,7 +58,7 @@
+--- a/cmake/FindWrapProtoc.cmake	2026-10-21 00:06:31.000000000 +0200
++++ b/cmake/FindWrapProtoc.cmake	2026-10-27 07:32:09.581258789 +0100
+@@ -54,7 +54,7 @@
      endif()
      find_program(__WrapProtoc_protoc_imported_location
          NAMES protoc protoc.exe
