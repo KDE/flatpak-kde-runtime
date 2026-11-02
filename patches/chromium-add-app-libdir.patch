@@ -1,0 +1,25 @@
+From d618cb528e95d4081bfd803cfc57a593add4351f Mon Sep 17 00:00:00 2001
+From: bbhtt <bbhtt.zn0i8@slmail.me>
+Date: Thu, 31 Oct 2024 10:31:10 +0530
+Subject: [PATCH 1/4] chromium-add-app-libdir-patch
+
+---
+ chromium/build/config/linux/pkg-config.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/chromium/build/config/linux/pkg-config.py b/chromium/build/config/linux/pkg-config.py
+index e3e582d2ee3..c2d07d6b94f 100755
+--- a/chromium/build/config/linux/pkg-config.py
++++ b/chromium/build/config/linux/pkg-config.py
+@@ -217,7 +217,7 @@ def main():
+   includes = []
+   cflags = []
+   libs = []
+-  lib_dirs = []
++  lib_dirs = [ "/app/lib" ]
+ 
+   for flag in all_flags[:]:
+     if len(flag) == 0 or MatchesAnyRegexp(flag, strip_out):
+-- 
+2.51.0
+

@@ -1,0 +1,71 @@
+diff -Naur a/chromium/chrome/common/BUILD.gn b/chromium/chrome/common/BUILD.gn
+--- a/chromium/chrome/common/BUILD.gn	2026-07-12 12:03:40.759558228 +0200
++++ b/chromium/chrome/common/BUILD.gn	2026-07-12 14:30:57.123429869 +0200
+@@ -602,6 +602,10 @@
+       "//third_party/widevine/cdm:headers",
+     ]
+   }
++
++  if (is_linux) {
++    deps += [ "//sandbox/linux:sandbox_services" ]
++  }
+ }
+ 
+ # Use a static library here because many test binaries depend on this but don't
+diff -Naur a/chromium/chrome/common/chrome_paths.cc b/chromium/chrome/common/chrome_paths.cc
+--- a/chromium/chrome/common/chrome_paths.cc	2026-07-12 12:03:40.766558252 +0200
++++ b/chromium/chrome/common/chrome_paths.cc	2026-07-12 14:30:57.125165330 +0200
+@@ -39,6 +39,10 @@
+ #include "base/win/registry.h"
+ #endif
+ 
++#if BUILDFLAG(IS_LINUX)
++#include "sandbox/linux/services/flatpak_sandbox.h"
++#endif
++
+ #if BUILDFLAG(ENABLE_WIDEVINE)
+ #include "third_party/widevine/cdm/widevine_cdm_common.h"  // nogncheck
+ #endif
+@@ -438,6 +442,14 @@
+ #endif
+ #if BUILDFLAG(IS_POSIX) && !BUILDFLAG(IS_MAC) && !BUILDFLAG(IS_OPENBSD)
+     case chrome::DIR_POLICY_FILES: {
++#if defined(OS_LINUX)
++      if (sandbox::FlatpakSandbox::GetInstance()->GetSandboxLevel() >
++          sandbox::FlatpakSandbox::SandboxLevel::kNone) {
++        cur = base::FilePath(
++            FILE_PATH_LITERAL("/app/chromium/extensions/policies"));
++        break;
++      }
++#endif
+       cur = base::FilePath(policy::kPolicyPath);
+       break;
+     }
+@@ -454,7 +466,13 @@
+ #endif
+ #if BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS)
+     case chrome::DIR_STANDALONE_EXTERNAL_EXTENSIONS: {
+-      cur = base::FilePath(kFilepathSinglePrefExtensions);
++      if (sandbox::FlatpakSandbox::GetInstance()->GetSandboxLevel() >
++          sandbox::FlatpakSandbox::SandboxLevel::kNone) {
++        cur = base::FilePath(
++            FILE_PATH_LITERAL("/app/chromium/extensions/extensions"));
++      } else {
++        cur = base::FilePath(kFilepathSinglePrefExtensions);
++      }
+       break;
+     }
+ #endif
+@@ -502,6 +520,12 @@
+           "/Library/Application Support/Chromium/NativeMessagingHosts"));
+ #endif
+ #else  // BUILDFLAG(IS_MAC)
++      if (sandbox::FlatpakSandbox::GetInstance()->GetSandboxLevel() >
++          sandbox::FlatpakSandbox::SandboxLevel::kNone) {
++        cur = base::FilePath(FILE_PATH_LITERAL(
++            "/app/chromium/extensions/native-messaging-hosts"));
++        break;
++      }
+ #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
+       cur = base::FilePath(
+           FILE_PATH_LITERAL("/etc/opt/chrome/native-messaging-hosts"));

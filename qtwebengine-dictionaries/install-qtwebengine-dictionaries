@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# applications should set QTWEBENGINE_DICTIONARIES_PATH to this value
+QTWEBENGINE_DICTDIR=${FLATPAK_DEST}/qtwebengine_dictionaries
+
+APP_LOCDIR=${FLATPAK_DEST}/share/locale
+RUNTIME_DICTDIR=/usr/share/hunspell
+
+
+install -dm755 ${QTWEBENGINE_DICTDIR}
+
+# for each hunspell dictionary
+for f in ${RUNTIME_DICTDIR}/*.dic; do
+  loc=$(basename $f | sed 's/\.dic//')
+  loc_short=${loc%_*}
+  echo
+  echo "Converting ${loc} Hunspell dictionary to a QtWebEngine dictionary..."
+
+  # English locales are kept in the app, and are not packaged as locale extensions,
+  # so these should be real files or symlinks to targets in the same folder
+  if [ $loc_short = en ]; then
+
+    # locale is a symlink, dictionary conversion is unneeded, so just create a similar symlink
+    if [ -L $f ]; then
+      real_loc=$(basename $(readlink $f) | sed 's/\.dic//')
+      echo "Skipping conversion: ${loc} dictionary is a symlink to the ${real_loc} dictionary!"
+      ln -s ${real_loc}.bdic ${QTWEBENGINE_DICTDIR}/${loc}.bdic
+
+    else
+      # try to convert and install only if successful
+      if qwebengine_convert_dict $f ${loc}.bdic; then
+        install -Dm644 ${loc}.bdic -t ${QTWEBENGINE_DICTDIR}/
+      fi
+
+    fi
+  else
+    # avoid crashes on tabs and IGNORE directives, https://bugs.chromium.org/p/chromium/issues/detail?id=165056
+    if grep -Pq '^IGNORE|\t' ${RUNTIME_DICTDIR}/${loc}.aff; then
+      echo "Applying workarounds to ${loc} affix file..."
+      cp ${RUNTIME_DICTDIR}/${loc}.{aff,dic} ./
+      sed -i '/^IGNORE/d;s/\t/ /g' ${loc}.aff
+      f=${loc}.dic
+    fi
+
+      # try to convert, install and create symlink if successful
+    if qwebengine_convert_dict $f ${loc}.bdic; then
+      install -Dm644 ${loc}.bdic -t ${APP_LOCDIR}/${loc_short}/qtwebengine_dictionaries/
+      ln -sr ${APP_LOCDIR}/${loc_short}/qtwebengine_dictionaries/${loc}.bdic ${QTWEBENGINE_DICTDIR}/${loc}.bdic
+    fi
+  fi
+done

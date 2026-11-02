@@ -1,0 +1,203 @@
+From 9df4114a3503152cf0802a95eeb1e1fafdd61e8c Mon Sep 17 00:00:00 2001
+From: Cajus Pollmeier <pollmeier@gonicus.de>
+Date: Tue, 20 Oct 2026 12:52:23 +0200
+Subject: [PATCH] Run Linux video capture service with QEventLoop
+
+The PipeWire camera implementation in WebRTC uses gdbus for the
+communication with the xdg-desktop-portal camera endpoint. To use
+a glib event loop, Chromium launches the capture service process
+with the --message-loop-type-ui parameter.
+
+QtWebEngine builds it's embedded Chromium with use_glib=false, which
+leads to a camera service progress that never iterates the glib
+main context. getUserMedia() hangs forever when WebRtcPipeWireCamera
+is enabled.
+
+704c3ce disabled the MessagePumpForUIQt for all subprocesses. Instead
+re-enable it for the camera utility process by introducing a
+MessagePumpForChildProcessQt, to allow the async DBus communication
+to happen. The browser process keeps using the original message pump,
+so nested RunLoops on the UI thread behave as before.
+
+Pick-to: 6.140 6.11
+Fixes: QTBUG-151341
+Change-Id: Icf06d129966d68288b32db01f04ee7e1e74d01cd
+---
+ src/core/browser_main_parts_qt.cpp    | 64 +++++++++++++++++++++++----
+ src/core/browser_main_parts_qt.h      |  3 ++
+ src/core/content_main_delegate_qt.cpp | 21 +++++++++
+ 3 files changed, 79 insertions(+), 9 deletions(-)
+
+diff --git a/src/core/browser_main_parts_qt.cpp b/src/core/browser_main_parts_qt.cpp
+index bff9e27e7..083b8fb5a 100644
+--- a/src/core/browser_main_parts_qt.cpp
++++ b/src/core/browser_main_parts_qt.cpp
+@@ -59,6 +59,7 @@
+ #include "web_usb_detector_qt.h"
+ 
+ #include <QDeadlineTimer>
++#include <QEventLoop>
+ #include <QtGui/qtgui-config.h>
+ #include <QStandardPaths>
+ 
+@@ -141,15 +142,6 @@ public:
+     }
+ 
+ private:
+-    void ensureDelegate()
+-    {
+-        if (!m_delegate) {
+-            auto seqMan = base::CurrentThread::Get()->GetCurrentSequenceManagerImpl();
+-            m_delegate = static_cast<base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl *>(
+-                             seqMan->controller_.get());
+-        }
+-    }
+-
+     void handleScheduledWork()
+     {
+         QDeadlineTimer timer(std::chrono::milliseconds(2));
+@@ -165,10 +157,52 @@ private:
+         ScheduleDelayedWork(more_work_info.delayed_run_time);
+     }
+ 
++protected:
++    virtual void ensureDelegate()
++    {
++        if (!m_delegate) {
++            auto seqMan = base::CurrentThread::Get()->GetCurrentSequenceManagerImpl();
++            m_delegate = static_cast<base::sequence_manager::internal::ThreadControllerWithMessagePumpImpl *>(
++                             seqMan->controller_.get());
++        }
++    }
++
+     Delegate *m_delegate = nullptr;
+     QWebEngineMessagePumpScheduler m_scheduler;
+ };
+ 
++// Message pump that runs the Qt event loop for child processes that have no
++// application provided loop. Keep previous loop for nested children.
++class MessagePumpForChildProcessQt : public MessagePumpForUIQt
++{
++public:
++    void Run(Delegate *delegate) override
++    {
++        Q_ASSERT(!m_delegate || m_delegate == delegate);
++
++        m_delegate = delegate;
++        QEventLoop loop;
++        QEventLoop *previousLoop = std::exchange(m_loop, &loop);
++        m_scheduler.scheduleImmediateWork();
++        loop.exec();
++        m_loop = previousLoop;
++    }
++
++    void Quit() override
++    {
++        if (m_loop) {
++            m_loop->quit();
++        }
++    }
++
++protected:
++    // NOTE: m_delegate is set during Run(), we do not need to ensure a delegate here
++    void ensureDelegate() override {}
++
++private:
++    QEventLoop *m_loop = nullptr;
++};
++
+ #if BUILDFLAG(IS_MAC)
+ class FakeGeolocationSource : public device::SystemGeolocationSource
+ {
+@@ -204,6 +238,18 @@ std::unique_ptr<base::MessagePump> messagePumpFactory()
+ #endif
+ }
+ 
++#if BUILDFLAG(IS_LINUX)
++std::unique_ptr<base::MessagePump> childProcessMessagePumpFactory()
++{
++    static bool primaryPumpCreated = false;
++    if (!primaryPumpCreated) {
++        primaryPumpCreated = true;
++        return std::make_unique<MessagePumpForChildProcessQt>();
++    }
++    return std::make_unique<base::MessagePumpForUI>();
++}
++#endif
++
+ BrowserMainPartsQt::BrowserMainPartsQt() = default;
+ 
+ BrowserMainPartsQt::~BrowserMainPartsQt() = default;
+diff --git a/src/core/browser_main_parts_qt.h b/src/core/browser_main_parts_qt.h
+index a5f17d51a..3c6da6f3b 100644
+--- a/src/core/browser_main_parts_qt.h
++++ b/src/core/browser_main_parts_qt.h
+@@ -36,6 +36,9 @@ class WebRtcEventLogManager;
+ namespace QtWebEngineCore {
+ 
+ std::unique_ptr<base::MessagePump> messagePumpFactory();
++#if BUILDFLAG(IS_LINUX)
++std::unique_ptr<base::MessagePump> childProcessMessagePumpFactory();
++#endif
+ 
+ class BrowserMainPartsQt : public content::BrowserMainParts
+ {
+diff --git a/src/core/content_main_delegate_qt.cpp b/src/core/content_main_delegate_qt.cpp
+index 063a14a03..9e5b254de 100644
+--- a/src/core/content_main_delegate_qt.cpp
++++ b/src/core/content_main_delegate_qt.cpp
+@@ -8,6 +8,7 @@
+ #include "base/i18n/rtl.h"
+ #include "base/logging.h"
+ #include "base/memory/ref_counted_memory.h"
++#include "base/message_loop/message_pump.h"
+ #include "base/no_destructor.h"
+ #include "base/path_service.h"
+ #include "base/strings/string_number_conversions.h"
+@@ -35,6 +36,7 @@
+ #if BUILDFLAG(IS_LINUX)
+ #include "media/audio/audio_manager.h"
+ #include "ui/base/ui_base_switches.h"
++#include "services/video_capture/public/mojom/video_capture_service.mojom.h"
+ #endif
+ 
+ #if BUILDFLAG(IS_WIN)
+@@ -48,9 +50,12 @@
+ #endif
+ 
+ #include <QtCore/qcoreapplication.h>
++#include <QtCore/qabstracteventdispatcher.h>
+ 
+ namespace QtWebEngineCore {
+ 
++extern std::unique_ptr<base::MessagePump> childProcessMessagePumpFactory();
++
+ namespace {
+ 
+ // The logic of this function is based on chrome/common/net/net_resource_provider.cc
+@@ -167,6 +172,22 @@ void ContentMainDelegateQt::PreSandboxStartup()
+ #endif
+     }
+ 
++#if BUILDFLAG(IS_LINUX)
++    // The PipeWire camera WebRTC process is a utility process that is started with
++    // a message loop (--message-loop-type-ui), which is used for the gdbus based
++    // portal communication. As Chromium is built without glib support, there is no
++    // usable event loop for this child process available and we need to provide a
++    // "MessagePumpForUIQt" style pump that provides one.
++    const bool isVideoCaptureService = parsedCommandLine->GetSwitchValueASCII(switches::kProcessType) == switches::kUtilityProcess
++        && parsedCommandLine->GetSwitchValueASCII(switches::kUtilitySubType) == video_capture::mojom::VideoCaptureService::Name_;
++    if (isVideoCaptureService
++        && parsedCommandLine->HasSwitch(switches::kMessageLoopTypeUi)
++        && QAbstractEventDispatcher::instance()
++        && QAbstractEventDispatcher::instance()->inherits("QEventDispatcherGlib")) {
++        base::MessagePump::OverrideMessagePumpForUIFactory(childProcessMessagePumpFactory);
++    }
++#endif
++
+     if (parsedCommandLine->HasSwitch(switches::kApplicationName)) {
+         std::string appName = parsedCommandLine->GetSwitchValueASCII(switches::kApplicationName);
+         appName = QByteArray::fromPercentEncoding(QByteArray::fromStdString(appName)).toStdString();
+-- 
+2.56.0
+

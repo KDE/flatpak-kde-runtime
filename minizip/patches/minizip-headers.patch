@@ -1,0 +1,11 @@
+diff -Naur a/contrib/minizip/Makefile.am b/contrib/minizip/Makefile.am
+--- a/contrib/minizip/Makefile.am	2012-03-27 05:17:41.000000000 +0200
++++ b/contrib/minizip/Makefile.am	2026-05-14 13:30:44.347495566 +0200
+@@ -30,6 +30,7 @@
+ 	ioapi.h \
+ 	mztools.h \
+ 	unzip.h \
++	ints.h \
+ 	zip.h \
+ 	${iowin32_h}
+

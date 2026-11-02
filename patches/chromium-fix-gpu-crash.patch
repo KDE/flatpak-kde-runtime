@@ -1,0 +1,15 @@
+diff --git a/chromium/third_party/webrtc/modules/desktop_capture/linux/wayland/egl_dmabuf.cc b/chromium/third_party/webrtc/modules/desktop_capture/linux/wayland/egl_dmabuf.cc
+index 3a80f4ecc17..4c8ebc4c971 100644
+--- a/chromium/third_party/webrtc/modules/desktop_capture/linux/wayland/egl_dmabuf.cc
++++ b/chromium/third_party/webrtc/modules/desktop_capture/linux/wayland/egl_dmabuf.cc
+@@ -475,10 +475,6 @@ EglDmaBuf::~EglDmaBuf() {
+     EglDestroyContext(egl_.display, egl_.context);
+   }
+ 
+-  if (egl_.display != EGL_NO_DISPLAY) {
+-    EglTerminate(egl_.display);
+-  }
+-
+   if (fbo_) {
+     GlDeleteFramebuffers(1, &fbo_);
+   }

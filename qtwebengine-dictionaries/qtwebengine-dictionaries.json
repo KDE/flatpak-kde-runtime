@@ -1,0 +1,18 @@
+{
+    "name": "qtwebengine-dictionaries",
+    "buildsystem": "simple",
+    "build-options": {
+        "env": {
+            "QT_WEBENGINE_ICU_DATA_DIR": "/app/resources"
+        }
+    },
+    "build-commands": [
+        "./install-qtwebengine-dictionaries"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "path": "install-qtwebengine-dictionaries"
+        }
+    ]
+}

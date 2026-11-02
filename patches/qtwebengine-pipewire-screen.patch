@@ -1,0 +1,38 @@
+From 62744d20311971e98f9813cd55bf6fd901a5c007 Mon Sep 17 00:00:00 2001
+From: Cajus Pollmeier <pollmeier@gonicus.de>
+Date: Mon, 19 Oct 2026 13:36:51 +0200
+Subject: [PATCH] Skip updating delegated desktop media source lists
+
+For capturers that own their picker (e.g. the xdg-desktop-portal),
+StartUpdating() triggers opening the picker dialog. In case of the
+portal, this can be "pick a window" or "pick a screen".
+
+DesktopMediaController did this for both of them before
+desktopMediaRequest was emitted, which lead to two additional
+pickers besides the app requested capture source shown by the
+system.
+
+Pick-to: 6.140 6.11
+Fixes: QTBUG-151340
+Change-Id: I2dbcef31be1ba4a64f702bcd3fbbd3304e4c1a4e
+---
+ src/core/desktop_media_controller.cpp | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/src/core/desktop_media_controller.cpp b/src/core/desktop_media_controller.cpp
+index b73739f75..a80d4573a 100644
+--- a/src/core/desktop_media_controller.cpp
++++ b/src/core/desktop_media_controller.cpp
+@@ -117,7 +117,8 @@ void DesktopMediaListQtPrivate::init()
+         base::OnceCallback<void()> onComplete = base::BindOnce(
+                 [](DesktopMediaListQtPrivate *observer) {
+                     Q_EMIT observer->q_ptr->initialized();
+-                    observer->startUpdating();
++                    if (!observer->mediaList->IsSourceListDelegated())
++                        observer->startUpdating();
+                 },
+                 this);
+         mediaList->Update(std::move(onComplete));
+-- 
+2.56.0
+

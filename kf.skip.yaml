@@ -2,3 +2,11 @@
 # SPDX-License-Identifier: MIT
 
 rust: rust-sdk.bst
+krb5: freedesktop-sdk.bst:components/krb5.bst
+libevent: freedesktop-sdk.bst:components/libevent.bst
+pciutils: freedesktop-sdk.bst:components/pciutils.bst
+org.freedesktop.Sdk.Debug: null
+org.freedesktop.Sdk.Docs: null
+org.freedesktop.Sdk.Locale: null
+org.freedesktop.Sdk.Extension.llvm22: freedesktop-sdk.bst:components/llvm.bst
+org.freedesktop.Sdk.Extension.node24: freedesktop-sdk-extra.bst:components/nodejs.bst
