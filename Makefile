@@ -32,7 +32,7 @@ all: $(REPO)/config $(foreach file, $(wildcard *.json.in), $(subst .json.in,.app
 freedesktop-sdk/utils/flatpak-builder-to-bst.py:
 	git clone --branch aleixpol/fbb-relative-scripts https://gitlab.com/freedesktop-sdk/freedesktop-sdk.git
 
-elements/org.kde.Sdk.bst: org.kde.Sdk.json freedesktop-sdk/utils/flatpak-builder-to-bst.py
+elements/org.kde.Sdk.bst: org.kde.Sdk.json os-release-Makefile freedesktop-sdk/utils/flatpak-builder-to-bst.py
 	python freedesktop-sdk/utils/flatpak-builder-to-bst.py org.kde.Sdk.json --aliases include/aliases.yml --skip kf.skip.yaml
 
 bst-runtime: elements/org.kde.Sdk.bst
