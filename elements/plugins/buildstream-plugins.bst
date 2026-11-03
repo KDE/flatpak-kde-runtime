@@ -4,8 +4,8 @@
 kind: junction
 sources:
 - kind: git_repo
-  url: github:apache/buildstream-plugins.git
-  track: "*.*.*"
-  exclude:
-  - "*dev*"
-  ref: 2.5.0-0-g79649529cffb695d0d22195ed9a4910c80ca6907
+  # https://github.com/apache/buildstream-plugins/pull/118
+  url: github:aleixpol/buildstream-plugins.git
+  track: aleixpol/git-relative-submodules
+  ref: b7bedebb982f621a3e61942fedfa05a450e744de
+  ref-format: sha1
