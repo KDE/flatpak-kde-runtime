@@ -10,7 +10,8 @@
         "org.freedesktop.Sdk.Debug",
         "org.freedesktop.Sdk.Locale",
         "org.freedesktop.Sdk.Docs",
-        "org.freedesktop.Sdk.Extension.node20"
+        "org.freedesktop.Sdk.Extension.node24",
+        "org.freedesktop.Sdk.Extension.llvm22"
     ],
     "platform-extensions": [
         "org.freedesktop.Platform.Locale"
@@ -406,9 +407,9 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "build-options": {
-                "append-path": "/usr/lib/sdk/node20/bin",
+                "append-path": "/usr/lib/sdk/node24/bin",
                 "env": [
-                    "npm_config_nodedir=/usr/lib/sdk/node20"
+                    "npm_config_nodedir=/usr/lib/sdk/node24"
                 ]
             },
             "config-opts": [
@@ -3465,6 +3466,7 @@
                 }
             ]
         },
+        "pyside/pyside.json",
         {
             "name": "os-release",
             "post-install": [

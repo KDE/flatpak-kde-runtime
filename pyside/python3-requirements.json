@@ -1,0 +1,134 @@
+{
+    "name": "python3-requirements",
+    "buildsystem": "simple",
+    "build-commands": [],
+    "modules": [
+        {
+            "name": "python3-build",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"build==1.3.0\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/cb/8c/2b30c12155ad8de0cf641d76a8b396a16d2c36bc6d50b621a62b7c4567c1/build-1.3.0-py3-none-any.whl",
+                    "sha256": "7145f0b5061ba90a1500d60bd1b13ca0a8a4cebdd0cc16ed8adf1c0e739f43b4",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "build",
+                        "packagetype": "bdist_wheel"
+                    }
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/bd/24/12818598c362d7f300f18e74db45963dbcb85150324092410c8b49405e42/pyproject_hooks-1.2.0-py3-none-any.whl",
+                    "sha256": "9e5c6bfa8dcc30091c74b0cf803c81fdd29d94f01992a7707bc97babb1141913",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "pyproject_hooks",
+                        "packagetype": "bdist_wheel"
+                    }
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/share/man/man1"
+            ],
+            "cleanup-platform": [
+                "*"
+            ]
+        },
+        {
+            "name": "python3-distro",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"distro==1.9.0\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/12/b3/231ffd4ab1fc9d679809f356cebee130ac7daa00d6d6f3206dd4fd137e9e/distro-1.9.0-py3-none-any.whl",
+                    "sha256": "7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "distro",
+                        "packagetype": "bdist_wheel"
+                    }
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/share/man/man1"
+            ],
+            "cleanup-platform": [
+                "*"
+            ]
+        },
+        {
+            "name": "patchelf"
+        },
+        {
+            "name": "python3-numpy",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"numpy==2.4.6\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/f3/eb/ebffaa97dc55502df69584a8f0dcf07f69a3e0b3e2323670a2722db9aa39/numpy-2.4.6-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+                    "sha256": "a2c306dea656c12c68f51f4cea133cbe78ca7435eb28c735eac1d3ebe73be6e8",
+                    "only-arches": [
+                        "x86_64"
+                    ],
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "numpy",
+                        "packagetype": "bdist_wheel"
+                    }
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/d5/91/64288395ee1799bd2e0b04a305dce9666da90c961e1f3fe982a05ee1c036/numpy-2.4.6-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+                    "sha256": "40fdc1ae7125e518ea98e53e69a4ebc27e1fd50510c47b7ea130cf21e5e1d42b",
+                    "only-arches": [
+                        "aarch64"
+                    ],
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "numpy",
+                        "packagetype": "bdist_wheel"
+                    }
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/share/man/man1"
+            ]
+        },
+        {
+            "name": "python3-PyOpenGL",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"PyOpenGL\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/de/e4/1ba6f44e491c4eece978685230dde56b14d51a0365bc1b774ddaa94d14cd/pyopengl-3.1.10-py3-none-any.whl",
+                    "sha256": "794a943daced39300879e4e47bd94525280685f42dbb5a998d336cfff151d74f",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "PyOpenGL",
+                        "packagetype": "bdist_wheel"
+                    }
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/share/man/man1"
+            ]
+        }
+    ]
+}

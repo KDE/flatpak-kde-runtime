@@ -1,0 +1,49 @@
+{
+    "name": "pyside-setup",
+    "buildsystem": "simple",
+    "build-options": {
+        "append-path": "/usr/lib/sdk/llvm22/bin",
+        "append-ld-library-path": "/usr/lib/sdk/llvm22/lib"
+    },
+    "build-commands": [
+        "LLVM_INSTALL_DIR=\"$(llvm-config --prefix)\" python3 setup.py build --qtpaths=/usr/bin/qtpaths --ignore-git --parallel=8 --log-level=verbose --flatpak --no-strip",
+        "python3 create_wheels.py --build-dir ./build/qfp-*-release --no-examples",
+        "pip3 install --no-index --no-deps --prefix=${FLATPAK_DEST} ./dist/*.whl",
+        "mkdir -p \"${INSTALL_ROOT:-}$(qtpaths --query QT_INSTALL_LIBS)\"",
+        "cp -a \"$(llvm-config --libdir)\"/libLLVM.so* \"$(llvm-config --libdir)\"/libclang-cpp.so* \"$(llvm-config --libdir)\"/libclang.so* \"${INSTALL_ROOT:-}$(qtpaths --query QT_INSTALL_LIBS)/\""
+    ],
+    "cleanup-platform": [
+        "/bin/pyside6-*",
+        "/bin/shiboken6",
+        "/lib/python*/site-packages/shiboken6_generator*",
+        "/lib/python*/site-packages/PySide6/include",
+        "/lib/python*/site-packages/shiboken6/include",
+        "/lib/libLLVM.so*",
+        "/lib/libclang-cpp.so*",
+        "/lib/libclang.so*",
+        "/lib/*/libLLVM.so*",
+        "/lib/*/libclang-cpp.so*",
+        "/lib/*/libclang.so*"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://code.qt.io/pyside/pyside-setup.git",
+            "tag": "v6.12.0",
+            "commit": "f50facb83fc3dc5f3240c854668c7a6dd93871b2",
+            "x-checker-data": {
+                "type": "git",
+                "tag-pattern": "^v(6\\.12\\.[0-9]+)$"
+            }
+        },
+        {
+            "type": "shell",
+            "commands": [
+                "install-licenses.sh"
+            ]
+        }
+    ],
+    "modules": [
+        "python3-requirements.json"
+    ]
+}
