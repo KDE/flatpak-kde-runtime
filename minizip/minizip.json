@@ -17,10 +17,6 @@
             }
         },
         {
-            "type": "patch",
-            "path": "patches/minizip-headers.patch"
-        },
-        {
             "type": "shell",
             "commands": [
                 "GLOBIGNORE=contrib && rm -rf *",
