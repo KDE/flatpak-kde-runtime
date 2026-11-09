@@ -9,4 +9,4 @@ org.freedesktop.Sdk.Debug: null
 org.freedesktop.Sdk.Docs: null
 org.freedesktop.Sdk.Locale: null
 org.freedesktop.Sdk.Extension.llvm22: freedesktop-sdk.bst:components/llvm.bst
-org.freedesktop.Sdk.Extension.node24: freedesktop-sdk-extra.bst:components/nodejs.bst
+org.freedesktop.Sdk.Extension.node26: freedesktop-sdk-extra.bst:components/nodejs.bst
