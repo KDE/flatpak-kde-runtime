@@ -424,7 +424,6 @@
                 "-DQT_FEATURE_webengine_system_freetype=ON",
                 "-DQT_FEATURE_webengine_system_icu=ON",
                 "-DQT_FEATURE_webengine_system_libxml=ON",
-                "-DQT_FEATURE_webengine_system_re2=ON",
                 "-DQT_FEATURE_webenginedriver=OFF",
                 "-DQT_FEATURE_webengine_webrtc_pipewire=ON",
                 "-DQT_FEATURE_qtpdf_build=ON",
@@ -489,7 +488,6 @@
                     "name": "pciutils"
                 },
                 "python-html5lib/python-html5lib.json",
-                "re2/re2.json",
                 "snappy/snappy.json"
             ]
         },
