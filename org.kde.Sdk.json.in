@@ -430,11 +430,6 @@
                 "-DQT_FEATURE_qtpdf_widgets_build=ON",
                 "-DQT_FEATURE_qtpdf_quick_build=ON"
             ],
-            "post-install": [
-                "mkdir -p ${FLATPAK_DEST}/bin ${FLATPAK_DEST}/lib",
-                "ln -sr ${FLATPAK_DEST}/lib/libexec/QtWebEngineProcess ${FLATPAK_DEST}/bin/QtWebEngineProcess",
-                "ln -sr ${FLATPAK_DEST}/lib/libexec/qwebengine_convert_dict ${FLATPAK_DEST}/bin/qwebengine_convert_dict"
-            ],
             "sources": [
                 {
                     "type": "git",
@@ -3469,9 +3464,6 @@
         "pyside/pyside.json",
         {
             "name": "os-release",
-            "post-install": [
-                "mkdir -p /usr/share/runtime/lib/plugins/"
-            ],
             "sources": [
                 {
                     "type": "file",
