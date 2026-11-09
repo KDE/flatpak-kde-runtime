@@ -3,7 +3,6 @@
 
 rust: rust-sdk.bst
 krb5: freedesktop-sdk.bst:components/krb5.bst
-libevent: freedesktop-sdk.bst:components/libevent.bst
 pciutils: freedesktop-sdk.bst:components/pciutils.bst
 patchelf: freedesktop-sdk.bst:components/patchelf.bst
 org.freedesktop.Sdk.Debug: null

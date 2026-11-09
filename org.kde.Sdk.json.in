@@ -10,7 +10,7 @@
         "org.freedesktop.Sdk.Debug",
         "org.freedesktop.Sdk.Locale",
         "org.freedesktop.Sdk.Docs",
-        "org.freedesktop.Sdk.Extension.node24",
+        "org.freedesktop.Sdk.Extension.node26",
         "org.freedesktop.Sdk.Extension.llvm22"
     ],
     "platform-extensions": [
@@ -407,19 +407,25 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "build-options": {
-                "append-path": "/usr/lib/sdk/node24/bin",
+                "append-path": "/usr/lib/sdk/node26/bin",
                 "env": [
-                    "npm_config_nodedir=/usr/lib/sdk/node24"
+                    "npm_config_nodedir=/usr/lib/sdk/node26"
                 ]
             },
+            "cleanup-platform": [
+                "/lib/libexec/gn",
+                "/lib/libexec/qwebengine_convert_dict",
+                "/bin/qwebengine_convert_dict"
+            ],
             "config-opts": [
                 "-DQT_FEATURE_webengine_kerberos=ON",
                 "-DQT_FEATURE_webengine_proprietary_codecs=ON",
                 "-DQT_FEATURE_webengine_system_ffmpeg=OFF",
                 "-DQT_FEATURE_webengine_system_freetype=ON",
                 "-DQT_FEATURE_webengine_system_icu=ON",
-                "-DQT_FEATURE_webengine_system_libevent=ON",
                 "-DQT_FEATURE_webengine_system_libxml=ON",
+                "-DQT_FEATURE_webengine_system_re2=ON",
+                "-DQT_FEATURE_webenginedriver=OFF",
                 "-DQT_FEATURE_webengine_webrtc_pipewire=ON",
                 "-DQT_FEATURE_qtpdf_build=ON",
                 "-DQT_FEATURE_qtpdf_widgets_build=ON",
@@ -434,8 +440,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwebengine.git",
-                    "tag": "v6.11.3",
-                    "commit": "6de08a0e135c48890ba49f394d969ed5964c1cc5",
+                    "tag": "v6.140.0-rc",
+                    "commit": "d505fc23640d2bd6345e6483eb73daf4e19f5829",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "json",
@@ -456,7 +462,6 @@
                     "paths": [
                         "patches/qtwebengine-flatpak-paths.patch",
                         "patches/flatpak-includedir-dbus.patch",
-                        "patches/qtwebengine-Disbale-xnnpack-on-aarch64.patch",
                         "patches/qtwebengine-pipewire-screen.patch",
                         "patches/qtwebengine-pipewire-camera.patch"
                     ]
@@ -478,9 +483,6 @@
             "modules": [
                 {
                     "name": "krb5"
-                },
-                {
-                    "name": "libevent"
                 },
                 "minizip/minizip.json",
                 {

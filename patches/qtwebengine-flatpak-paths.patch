@@ -1,8 +1,8 @@
 diff --git a/src/core/web_engine_library_info.cpp b/src/core/web_engine_library_info.cpp
-index 5dfb3c042..20dea63eb 100644
 --- a/src/core/web_engine_library_info.cpp
 +++ b/src/core/web_engine_library_info.cpp
-@@ -233,6 +233,7 @@ QString localesPath()
+@@ -232,8 +232,9 @@ QString localesPath()
+ #if defined(Q_OS_DARWIN) && defined(QT_MAC_FRAMEWORK_BUILD)
              candidatePaths << getResourcesPath(frameworkBundle()) % QDir::separator()
                              % "qtwebengine_locales"_L1;
  #endif
@@ -10,7 +10,9 @@ index 5dfb3c042..20dea63eb 100644
              for (auto &p : QLibraryInfo::paths(QLibraryInfo::TranslationsPath))
                  candidatePaths << p % QDir::separator() % "qtwebengine_locales"_L1;
              candidatePaths << fallbackDir();
-@@ -299,6 +300,7 @@ QString dictionariesPath(bool showWarnings)
+         }
+@@ -298,8 +299,9 @@ QString dictionariesPath(bool showWarnings)
+             QString frameworkDictionariesPath =
                      getResourcesPath(frameworkBundle()) % "/qtwebengine_dictionaries"_L1;
              candidatePaths.append(std::move(frameworkDictionariesPath));
  #endif
@@ -18,7 +20,9 @@ index 5dfb3c042..20dea63eb 100644
              for (auto &p : QLibraryInfo::paths(QLibraryInfo::DataPath))
                  candidatePaths.append(p % QDir::separator() % "qtwebengine_dictionaries"_L1);
          }
-@@ -354,6 +356,7 @@ QString resourcesPath()
+ 
+@@ -353,8 +355,9 @@ QString resourcesPath()
+             includeOverrideMessage = true;
  #if defined(Q_OS_DARWIN) && defined(QT_MAC_FRAMEWORK_BUILD)
              candidatePaths << getResourcesPath(frameworkBundle());
  #endif
@@ -26,3 +30,4 @@ index 5dfb3c042..20dea63eb 100644
              for (auto &p : QLibraryInfo::paths(QLibraryInfo::DataPath)) {
                  candidatePaths << p % QDir::separator() % "resources"_L1;
                  candidatePaths << p;
+             }
