@@ -571,13 +571,14 @@
                     ],
                     "sources": [
                         {
-                            "type": "git",
-                            "url": "https://github.com/grpc/grpc",
-                            "tag": "v1.85.1",
-                            "commit": "558b7e3b09e42e2160018732acbbf56c9094c84d",
+                            "type": "archive",
+                            "url": "https://github.com/grpc/grpc/archive/558b7e3b09e42e2160018732acbbf56c9094c84d.tar.gz",
+                            "sha256": "879a431ad0cdefac6886a384ba03bf85c75349d148be340dded8b19120bf0b4d",
                             "x-checker-data": {
-                                "type": "git",
-                                "tag-pattern": "^(v[\\d.]+)$"
+                                "type": "github",
+                                "repo": "grpc/grpc",
+                                "source-archive": "tarball",
+                                "tag-pattern": "^v([\\d.]+)$"
                             }
                         },
                         {
@@ -2135,8 +2136,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://salsa.debian.org/gnome-team/libcanberra/-/archive/upstream/0.30/libcanberra-upstream-0.30.tar.bz2",
-                    "sha256": "cdceb79c79ce6c56e38fa2075c7fd3a2a5213d65db92483e179eb952a4e138fa"
+                    "url": "https://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz",
+                    "sha256": "c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72"
                 },
                 {
                     "type": "patch",
