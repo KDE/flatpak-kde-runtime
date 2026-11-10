@@ -571,14 +571,13 @@
                     ],
                     "sources": [
                         {
-                            "type": "archive",
-                            "url": "https://github.com/grpc/grpc/archive/558b7e3b09e42e2160018732acbbf56c9094c84d.tar.gz",
-                            "sha256": "879a431ad0cdefac6886a384ba03bf85c75349d148be340dded8b19120bf0b4d",
+                            "type": "git",
+                            "url": "https://github.com/grpc/grpc",
+                            "tag": "v1.85.1",
+                            "commit": "558b7e3b09e42e2160018732acbbf56c9094c84d",
                             "x-checker-data": {
-                                "type": "github",
-                                "repo": "grpc/grpc",
-                                "source-archive": "tarball",
-                                "tag-pattern": "^v([\\d.]+)$"
+                                "type": "git",
+                                "tag-pattern": "^(v[\\d.]+)$"
                             }
                         },
                         {
