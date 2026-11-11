@@ -111,6 +111,7 @@
         "/include",
         "/lib/*/cmake",
         "/lib/*/pkgconfig",
+        "/lib/plugins/designer",
         "/lib/metatypes",
         "/lib/mkspecs",
         "/lib/pkgconfig",
@@ -151,7 +152,21 @@
         {
             "name": "qtbase",
             "cleanup-platform": [
-                "/bin"
+                "/bin",
+                "/lib/libexec/cmake_automoc_parser",
+                "/lib/libexec/moc",
+                "/lib/libexec/qlalr",
+                "/lib/libexec/qt-android-runner.py",
+                "/lib/libexec/qt-cmake-private",
+                "/lib/libexec/qt-cmake-standalone-test",
+                "/lib/libexec/qt-internal-configure-examples",
+                "/lib/libexec/qt-internal-configure-tests",
+                "/lib/libexec/qt_cyclonedx_generator.py",
+                "/lib/libexec/qvkgen",
+                "/lib/libexec/rcc",
+                "/lib/libexec/syncqt",
+                "/lib/libexec/tracegen",
+                "/lib/libexec/tracepointgen"
             ],
             "build-options": {
                 "arch": {
@@ -214,6 +229,17 @@
         {
             "name": "qttools",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DQT_FEATURE_designer=OFF",
+                "-DQT_FEATURE_pixeltool=OFF",
+                "-DQT_FEATURE_distancefieldgenerator=OFF",
+                "-DQT_FEATURE_qev=OFF",
+                "-DQT_FEATURE_kmap2qmap=OFF"
+            ],
+            "cleanup": [
+                "/bin/linguist",
+                "/bin/qdbusviewer"
+            ],
             "cleanup-platform": [
                 "/bin/assistant",
                 "/bin/qhelpgenerator",
@@ -224,12 +250,16 @@
                 "/bin/lrelease",
                 "/bin/lupdate",
                 "/bin/lconvert",
-                "/bin/linguist",
+                "/bin/lcheck",
+                "/bin/ltext2id",
+                "/bin/lrelease-pro",
+                "/bin/lupdate-pro",
                 "/bin/qdoc",
-                "/bin/qtattributionsscanner",
                 "/bin/qtplugininfo",
                 "/bin/qtdiag",
-                "/bin/qdbusviewer"
+                "/bin/qtdiag6",
+                "/lib/libexec/qhelpgenerator",
+                "/lib/libexec/qtattributionsscanner"
             ],
             "sources": [
                 {
@@ -321,7 +351,14 @@
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
                 "/bin",
-                "lib/plugins/qmltooling"
+                "/lib/plugins/qmltooling",
+                "/lib/libexec/qmlaotstats",
+                "/lib/libexec/qmlcachegen",
+                "/lib/libexec/qmlimportscanner",
+                "/lib/libexec/qmljsrootgen",
+                "/lib/libexec/qmltyperegistrar",
+                "/lib/plugins/qmllint",
+                "/lib/plugins/qmlls"
             ],
             "sources": [
                 {
@@ -414,6 +451,11 @@
                     "npm_config_nodedir=/usr/lib/sdk/node26"
                 ]
             },
+            "cleanup-platform": [
+                "/lib/libexec/gn",
+                "/lib/libexec/qwebengine_convert_dict",
+                "/resources/qtwebengine_devtools_resources.pak"
+            ],
             "config-opts": [
                 "-DQT_FEATURE_webengine_kerberos=ON",
                 "-DQT_FEATURE_webengine_proprietary_codecs=ON",
@@ -423,14 +465,11 @@
                 "-DQT_FEATURE_webengine_system_libevent=ON",
                 "-DQT_FEATURE_webengine_system_libxml=ON",
                 "-DQT_FEATURE_webengine_webrtc_pipewire=ON",
+                "-DQT_FEATURE_webengine_system_re2=OFF",
+                "-DQT_FEATURE_webenginedriver=OFF",
                 "-DQT_FEATURE_qtpdf_build=ON",
                 "-DQT_FEATURE_qtpdf_widgets_build=ON",
                 "-DQT_FEATURE_qtpdf_quick_build=ON"
-            ],
-            "post-install": [
-                "mkdir -p ${FLATPAK_DEST}/bin ${FLATPAK_DEST}/lib",
-                "ln -sr ${FLATPAK_DEST}/lib/libexec/QtWebEngineProcess ${FLATPAK_DEST}/bin/QtWebEngineProcess",
-                "ln -sr ${FLATPAK_DEST}/lib/libexec/qwebengine_convert_dict ${FLATPAK_DEST}/bin/qwebengine_convert_dict"
             ],
             "sources": [
                 {
@@ -489,7 +528,6 @@
                     "name": "pciutils"
                 },
                 "python-html5lib/python-html5lib.json",
-                "re2/re2.json",
                 "snappy/snappy.json"
             ]
         },
@@ -498,7 +536,9 @@
             "name": "qtgrpc",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
-                "/bin"
+                "/bin",
+                "/lib/libexec/qtgrpcgen",
+                "/lib/libexec/qtprotobufgen"
             ],
             "sources": [
                 {
@@ -568,8 +608,7 @@
                         "/bin/grpc_cpp_plugin",
                         "/bin/protoc*",
                         "/share/grpc",
-                        "/lib/cmake/grpc",
-                        "/lib/libexec/qtgrpcgen"
+                        "/lib/cmake/grpc"
                     ],
                     "sources": [
                         {
@@ -770,7 +809,8 @@
             "name": "qtwayland",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
-                "/bin"
+                "/bin",
+                "/lib/libexec/qtwaylandscanner"
             ],
             "sources": [
                 {
@@ -857,7 +897,8 @@
             "name": "qtscxml",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
-                "/bin"
+                "/bin",
+                "/lib/libexec/qscxmlc"
             ],
             "sources": [
                 {
@@ -972,6 +1013,11 @@
         {
             "name": "qttranslations",
             "buildsystem": "cmake-ninja",
+            "cleanup": [
+                "/usr/translations/assistant_*",
+                "/usr/translations/designer_*",
+                "/usr/translations/linguist_*"
+            ],
             "cleanup-platform": [
                 "/bin"
             ],
@@ -1002,7 +1048,8 @@
             "name": "qtremoteobjects",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
-                "/bin"
+                "/bin",
+                "/lib/libexec/repc"
             ],
             "sources": [
                 {
@@ -1205,7 +1252,8 @@
             "name": "qtquickeffectmaker",
             "buildsystem": "cmake-ninja",
             "cleanup-platform": [
-                "/bin"
+                "/bin",
+                "/lib/qml/QtQuickEffectMaker"
             ],
             "sources": [
                 {
@@ -3471,9 +3519,6 @@
         "pyside/pyside.json",
         {
             "name": "os-release",
-            "post-install": [
-                "mkdir -p /usr/share/runtime/lib/plugins/"
-            ],
             "sources": [
                 {
                     "type": "file",

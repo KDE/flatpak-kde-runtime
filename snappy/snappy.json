@@ -10,11 +10,6 @@
         "-DSNAPPY_BUILD_BENCHMARKS=OFF",
         "-DSNAPPY_ENABLE_RTTI=ON"
     ],
-    "post-install": [
-        "awk '/^#define SNAPPY_MAJOR/ {printf \"%s\", $3}; /^#define SNAPPY_MINOR/ {printf \".%s\", $3}; /^#define SNAPPY_PATCHLEVEL/ {printf \".%s\", $3}' ${FLATPAK_DEST}/include/snappy-stubs-public.h > snappy.version",
-        "sed 's/@@VERSION@@/'$(cat snappy.version)'/' snappy.pc.in > snappy.pc",
-        "install -Dm644 snappy.pc -t ${FLATPAK_DEST}/lib/pkgconfig/"
-    ],
     "sources": [
         {
             "type": "git",
