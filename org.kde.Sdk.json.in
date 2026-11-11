@@ -10,7 +10,7 @@
         "org.freedesktop.Sdk.Debug",
         "org.freedesktop.Sdk.Locale",
         "org.freedesktop.Sdk.Docs",
-        "org.freedesktop.Sdk.Extension.node24",
+        "org.freedesktop.Sdk.Extension.node26",
         "org.freedesktop.Sdk.Extension.llvm22"
     ],
     "platform-extensions": [
@@ -409,9 +409,9 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "build-options": {
-                "append-path": "/usr/lib/sdk/node24/bin",
+                "append-path": "/usr/lib/sdk/node26/bin",
                 "env": [
-                    "npm_config_nodedir=/usr/lib/sdk/node24"
+                    "npm_config_nodedir=/usr/lib/sdk/node26"
                 ]
             },
             "config-opts": [

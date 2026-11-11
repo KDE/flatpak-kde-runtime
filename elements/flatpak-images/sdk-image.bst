@@ -32,6 +32,7 @@ build-depends:
 - freedesktop-sdk.bst:components/python3-sitecustomize.bst
 - freedesktop-sdk.bst:multiarch/multiarch-sdk.bst
 - freedesktop-sdk.bst:integration/split-locales.bst
+- integration/split-qt-translations.bst
 - freedesktop-sdk.bst:integration/split-docs.bst
 - freedesktop-sdk.bst:integration/debug-app-link.bst
 - freedesktop-sdk.bst:integration/flatpak-builder-configuration.bst
