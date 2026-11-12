@@ -18,17 +18,17 @@
     },
     "sources": [
         {
-            "type": "git",
-            "url": "https://invent.kde.org/qt/qt/qtwebview.git",
-            "tag": "v6.11.3",
-            "commit": "b80be6d94ba345bd0e2513ddddf394ee69ca25ca",
+            "type": "archive",
+            "url": "https://files.kde.org/qt/official_releases/qt/6.12/6.12.0/submodules/qtwebview-everywhere-src-6.12.0.tar.xz",
+            "sha256": "bee0642225614d7fc9486a2ca6db7d2c82a28c311404d1503185a360792c504e",
             "x-checker-data": {
-                "is-important": true,
-                "type": "json",
-                "url": "https://invent.kde.org/api/v4/projects/qt%2Fqt%2Fqtwebview/repository/tags",
-                "tag-query": "first(.[].name | match( \"v6.11[\\\\d.]+(-lts-lgpl|-lts)?\" ) | .string)",
-                "version-query": "$tag | sub(\"^v\"; \"\")",
-                "timestamp-query": ".[] | select(.name==$tag) | .commit.created_at"
+                "type": "anitya",
+                "project-id": 7927,
+                "stable-only": false,
+                "versions": {
+                    "<": "6.13.0"
+                }, 
+                "url-template": "https://files.kde.org/qt/official_releases/qt/6.12/$version/submodules/qtlanguageserver-everywhere-src-$version.tar.xz"
             }
         },
         {

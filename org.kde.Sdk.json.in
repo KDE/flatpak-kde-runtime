@@ -462,7 +462,6 @@
                 "-DQT_FEATURE_webengine_system_ffmpeg=OFF",
                 "-DQT_FEATURE_webengine_system_freetype=ON",
                 "-DQT_FEATURE_webengine_system_icu=ON",
-                "-DQT_FEATURE_webengine_system_libevent=ON",
                 "-DQT_FEATURE_webengine_system_libxml=ON",
                 "-DQT_FEATURE_webengine_webrtc_pipewire=ON",
                 "-DQT_FEATURE_webengine_system_re2=OFF",
@@ -475,8 +474,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/qt/qt/qtwebengine.git",
-                    "tag": "v6.11.3",
-                    "commit": "6de08a0e135c48890ba49f394d969ed5964c1cc5",
+                    "tag": "v6.140.0",
+                    "commit": "e081473af432e2b09d17caa3ca3bffd45992a0bd",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "json",
@@ -495,21 +494,20 @@
                 {
                     "type": "patch",
                     "paths": [
-                        "patches/qtwebengine-flatpak-paths.patch",
-                        "patches/flatpak-includedir-dbus.patch",
-                        "patches/qtwebengine-Disbale-xnnpack-on-aarch64.patch",
-                        "patches/qtwebengine-pipewire-screen.patch",
-                        "patches/qtwebengine-pipewire-camera.patch"
+                        "patch/qtwebengine-flatpak-paths.patch",
+                        "patch/flatpak-includedir-dbus.patch",
+                        "patch/qtwebengine-Disbale-xnnpack-on-aarch64.patch",
+                        "patch/qtwebengine-pipewire-screen.patch",
+                        "patch/qtwebengine-pipewire-camera.patch"
                     ]
                 },
                 {
                     "type": "patch",
                     "paths": [
-                        "patches/chromium-add-app-libdir.patch",
-                        "patches/chromium-flatpak-add-initial-sandbox-support.patch",
-                        "patches/chromium-flatpak-adjust-paths-for-the-sandbox.patch",
-                        "patches/chromium-flatpak-expose-widevine-into-the-sandbox.patch",
-                        "patches/chromium-fix-gpu-crash.patch"
+                        "patch/chromium-add-app-libdir.patch",
+                        "patch/chromium-flatpak-add-initial-sandbox-support.patch",
+                        "patch/chromium-flatpak-adjust-paths-for-the-sandbox.patch",
+                        "patch/chromium-flatpak-expose-widevine-into-the-sandbox.patch"
                     ],
                     "options": [
                         "--directory=src/3rdparty"
@@ -519,9 +517,6 @@
             "modules": [
                 {
                     "name": "krb5"
-                },
-                {
-                    "name": "libevent"
                 },
                 "minizip/minizip.json",
                 {
