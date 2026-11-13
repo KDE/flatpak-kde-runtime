@@ -88,8 +88,10 @@
         "--env=ALSA_CONFIG_DIR=/usr/share/alsa",
         "--filesystem=xdg-config/kdeglobals:ro",
         "--talk-name=com.canonical.AppMenu.Registrar",
+        "--talk-name=org.kde.JobViewServer",
         "--talk-name=org.kde.kconfig.notify",
         "--talk-name=org.kde.KGlobalSettings",
+        "--talk-name=org.kde.kuiserver",
         "--sdk=org.kde.Sdk//6.12",
         "--runtime=org.kde.Platform//6.12"
     ],
