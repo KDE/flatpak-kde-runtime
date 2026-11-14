@@ -60,6 +60,14 @@ config:
       //TODO: This is currently only used for gnome platform plugin and should be
         its own extension point
       download-if: on-xdg-desktop-GNOME;on-xdg-desktop-GNOME-classic
+    Extension org.inqlude.PlatformTheme:
+      directory: share/runtime/lib/plugins/
+      subdirectories: true
+      autodelete: true
+      no-autodownload: true
+      version: '%{branch}'
+      merge-dirs: platformthemes;union
+      add-ld-path: lib
 
     # extending from freedesktop SDK as BuildStream flatpak_image doesn't support Extensions inheritance
     # https://gitlab.com/freedesktop-sdk/freedesktop-sdk/-/blob/master/elements/flatpak-images/platform.bst?ref_type=heads#L30
