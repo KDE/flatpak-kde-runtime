@@ -27,8 +27,8 @@
                 "stable-only": false,
                 "versions": {
                     "<": "6.13.0"
-                }, 
-                "url-template": "https://files.kde.org/qt/official_releases/qt/6.12/$version/submodules/qtlanguageserver-everywhere-src-$version.tar.xz"
+                },
+                "url-template": "https://files.kde.org/qt/official_releases/qt/6.12/$version/submodules/qtwebview-everywhere-src-$version.tar.xz"
             }
         },
         {
