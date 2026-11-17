@@ -551,10 +551,6 @@
                     }
                 },
                 {
-                    "type": "patch",
-                    "path": "patch/qtgrpc-find_program-paths.patch"
-                },
-                {
                     "type": "shell",
                     "commands": [
                         "install-licenses.sh"
@@ -563,54 +559,30 @@
             ],
             "modules": [
                 {
-                    "name": "grpc",
+                    "name": "protobuf",
                     "buildsystem": "cmake-ninja",
                     "config-opts": [
-                        "-DgRPC_BUILD_TESTS=OFF",
-                        "-DgRPC_BUILD_CODEGEN=ON",
-                        "-DgRPC_DOWNLOAD_ARCHIVES=OFF",
-                        "-DgRPC_ZLIB_PROVIDER=package",
-                        "-DgRPC_SSL_PROVIDER=package",
-                        "-DgRPC_ABSL_PROVIDER=package",
-                        "-DgRPC_BUILD_GRPC_CSHARP_PLUGIN=OFF",
-                        "-DgRPC_BUILD_GRPC_NODE_PLUGIN=OFF",
-                        "-DgRPC_BUILD_GRPC_OBJECTIVE_C_PLUGIN=OFF",
-                        "-DgRPC_BUILD_GRPC_PHP_PLUGIN=OFF",
-                        "-DgRPC_BUILD_GRPC_PYTHON_PLUGIN=OFF",
-                        "-DgRPC_BUILD_GRPC_RUBY_PLUGIN=OFF",
-                        "-DgRPC_BUILD_GRPCPP_OTEL_PLUGIN=OFF"
+                        "-Dprotobuf_BUILD_TESTS=OFF",
+                        "-Dprotobuf_BUILD_SHARED_LIBS=OFF",
+                        "-Dprotobuf_BUILD_LIBUPB=OFF",
+                        "-Dprotobuf_ABSL_PROVIDER=package",
+                        "-Dprotobuf_LOCAL_DEPENDENCIES_ONLY=ON"
                     ],
                     "cleanup": [
-                        "/bin/adig",
-                        "/bin/ahost",
-                        "/include/upb",
-                        "/include/google/protobuf",
-                        "/include/grpc*",
-                        "/include/re2*",
-                        "/include/utf8_*.h",
-                        "/include/ares*.h",
+                        "/include",
+                        "/lib/*/cmake",
                         "*.pc",
-                        "/lib/*/cmake/utf8_range",
-                        "/lib/*/cmake/protobuf",
-                        "/lib/*/cmake/c-ares",
-                        "/lib/*/cmake/grpc",
-                        "/lib/*/cmake/re2",
-                        "/share/man",
-                        "/share/grpc/roots.pem",
                         "*.a"
                     ],
                     "cleanup-platform": [
-                        "/bin/grpc_cpp_plugin",
-                        "/bin/protoc*",
-                        "/share/grpc",
-                        "/lib/cmake/grpc"
+                        "/bin/protoc*"
                     ],
                     "sources": [
                         {
                             "type": "git",
-                            "url": "https://github.com/grpc/grpc",
-                            "tag": "v1.85.1",
-                            "commit": "558b7e3b09e42e2160018732acbbf56c9094c84d",
+                            "url": "https://github.com/protocolbuffers/protobuf.git",
+                            "tag": "v36.2",
+                            "commit": "2c74169b34066ceb8ddb6b882fcb3fb32d737a55",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^(v[\\d.]+)$"
@@ -2980,33 +2952,7 @@
             ],
             "modules": [
                 {
-                    "name": "qrencode",
-                    "buildsystem": "cmake-ninja",
-                    "config-opts": [
-                        "-DBUILD_SHARED_LIBS=ON",
-                        "-DWITH_TOOLS=OFF",
-                        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
-                    ],
-                    "builddir": true,
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz",
-                            "sha256": "5385bc1b8c2f20f3b91d258bf8ccc8cf62023935df2d2676b5b67049f31a049c",
-                            "x-checker-data": {
-                                "type": "anitya",
-                                "project-id": 12834,
-                                "stable-only": false,
-                                "url-template": "https://github.com/fukuchi/libqrencode/archive/refs/tags/v$version.tar.gz"
-                            }
-                        },
-                        {
-                            "type": "shell",
-                            "commands": [
-                                "LICENSES='COPYING' install-licenses.sh"
-                            ]
-                        }
-                    ]
+                    "name": "qrencode"
                 },
                 {
                     "name": "libdmtx",
