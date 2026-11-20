@@ -1997,36 +1997,6 @@
                         "install-licenses.sh"
                     ]
                 }
-            ],
-            "modules": [
-                {
-                    "name": "utfcpp",
-                    "buildsystem": "cmake-ninja",
-                    "config-opts": [
-                        "-DUTF8_TESTS=OFF"
-                    ],
-                    "cleanup": [
-                        "*"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.2.1.tar.gz",
-                            "sha256": "6d6a5493a111884cc085ee31babfe6d9960c8fb08fc80a64852eaeea8323dbc1",
-                            "x-checker-data": {
-                                "type": "anitya",
-                                "project-id": 20545,
-                                "url-template": "https://github.com/nemtrif/utfcpp/archive/refs/tags/v$version.tar.gz"
-                            }
-                        },
-                        {
-                            "type": "shell",
-                            "commands": [
-                                "LICENSES='LICENSE' install-licenses.sh"
-                            ]
-                        }
-                    ]
-                }
             ]
         },
         {
