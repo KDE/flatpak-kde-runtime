@@ -472,8 +472,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/grpc/grpc",
-                            "tag": "v1.84.1",
-                            "commit": "b0c0c4f8823ba69e7e43aaaf183c30a43e549924",
+                            "tag": "v1.85.3",
+                            "commit": "34b810a1d47a49904b3fdcdc7d1c16d5f34d0c9f",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^(v[\\d.]+)$"
@@ -2011,8 +2011,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.2.1.tar.gz",
-                            "sha256": "6d6a5493a111884cc085ee31babfe6d9960c8fb08fc80a64852eaeea8323dbc1",
+                            "url": "https://github.com/nemtrif/utfcpp/archive/refs/tags/v5.0.0.tar.gz",
+                            "sha256": "42c36e1ef1307b1186996e4644f9999970e26325670b99019f3408bf0d3c952a",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 20545,
