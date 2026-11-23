@@ -472,8 +472,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/grpc/grpc",
-                            "tag": "v1.84.1",
-                            "commit": "b0c0c4f8823ba69e7e43aaaf183c30a43e549924",
+                            "tag": "v1.85.4",
+                            "commit": "ee6c934222c4ad96bbec18845c4d8e8762983189",
                             "x-checker-data": {
                                 "type": "git",
                                 "tag-pattern": "^(v[\\d.]+)$"
